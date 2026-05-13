@@ -1,0 +1,54 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : controlador
+Version: N-2017.09-SP4
+Date   : Thu May 31 10:38:07 2018
+****************************************
+
+
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+
+
+Operating Conditions: typ_1_80V_25C   Library: D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.2999 mW   (71%)
+  Net Switching Power  = 527.5971 uW   (29%)
+                         ---------
+Total Dynamic Power    =   1.8275 mW  (100%)
+
+Cell Leakage Power     =  10.5425 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000        3.9683e-04            0.0000  (   0.00%)
+clock_network  9.3998e-02            0.4417          143.4384            0.5357  (  29.31%)
+register           1.1657        1.0481e-02        3.7838e+03            1.1762  (  64.36%)
+sequential     1.3111e-02        5.8933e-04        1.6196e+03        1.3702e-02  (   0.75%)
+combinational  2.7120e-02        7.4840e-02        4.9957e+03            0.1020  (   5.58%)
+--------------------------------------------------------------------------------------------------
+Total              1.2999 mW         0.5276 mW     1.0542e+04 pW         1.8275 mW
+1

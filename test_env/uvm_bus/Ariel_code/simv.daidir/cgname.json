@@ -1,0 +1,206 @@
+{
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module",
+        1
+    ],
+    "prll_rd_st_mchn": [
+        "prll_rd_st_mchn",
+        "GDATE",
+        "module",
+        27
+    ],
+    "prll_bs_ntrfs_riscv_0000": [
+        "prll_bs_ntrfs_riscv_0000",
+        "VEx0J",
+        "module",
+        30
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module",
+        2
+    ],
+    "tec_riscv_bus": [
+        "tec_riscv_bus",
+        "iVz5Y",
+        "module",
+        31
+    ],
+    "_vcs_unit__3870188216": [
+        "_vcs_unit__3870188216",
+        "h7Juy",
+        "module",
+        3
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        4
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module",
+        5
+    ],
+    "prll_wt_st_mchn": [
+        "prll_wt_st_mchn",
+        "bSefM",
+        "module",
+        28
+    ],
+    "prll_d_reg_0000": [
+        "prll_d_reg_0000",
+        "jJa1f",
+        "module",
+        6
+    ],
+    "prll_d_ltch_0000": [
+        "prll_d_ltch_0000",
+        "eh30K",
+        "module",
+        9
+    ],
+    "prll_d_reg_0001": [
+        "prll_d_reg_0001",
+        "FBWFc",
+        "module",
+        7
+    ],
+    "prll_d_ltch_no_rst_0000": [
+        "prll_d_ltch_no_rst_0000",
+        "iJpid",
+        "module",
+        8
+    ],
+    "fifo_ltch": [
+        "fifo_ltch",
+        "VC4mS",
+        "module",
+        14
+    ],
+    "neg_edge": [
+        "neg_edge",
+        "k0NrH",
+        "module",
+        10
+    ],
+    "fifo_flops": [
+        "fifo_flops",
+        "PSfyd",
+        "module",
+        11
+    ],
+    "fifo_flops_no_full_0000": [
+        "fifo_flops_no_full_0000",
+        "uqp68",
+        "module",
+        12
+    ],
+    "fifo_flops_no_full_0001": [
+        "fifo_flops_no_full_0001",
+        "u2IL7",
+        "module",
+        13
+    ],
+    "bs_ntrfs": [
+        "bs_ntrfs",
+        "tSaKw",
+        "module",
+        23
+    ],
+    "rst_lgc": [
+        "rst_lgc",
+        "WLN4t",
+        "module",
+        16
+    ],
+    "fifo_ltch_no_rst": [
+        "fifo_ltch_no_rst",
+        "UUmPf",
+        "module",
+        15
+    ],
+    "Write_st_Mchn": [
+        "Write_st_Mchn",
+        "atLs2",
+        "module",
+        22
+    ],
+    "ntrpt_cam_fifo": [
+        "ntrpt_cam_fifo",
+        "Guucm",
+        "module",
+        17
+    ],
+    "mem_latch": [
+        "mem_latch",
+        "zUIsQ",
+        "module",
+        18
+    ],
+    "parallel_serial": [
+        "parallel_serial",
+        "maQnz",
+        "module",
+        19
+    ],
+    "bus_if": [
+        "bus_if",
+        "mWbA5",
+        "module",
+        32
+    ],
+    "serializer_0000": [
+        "serializer_0000",
+        "yI6HV",
+        "module",
+        20
+    ],
+    "prll_rgstr": [
+        "prll_rgstr",
+        "hQbYt",
+        "module",
+        26
+    ],
+    "Read_st_Mchn": [
+        "Read_st_Mchn",
+        "LUjI7",
+        "module",
+        21
+    ],
+    "Arbiter": [
+        "Arbiter",
+        "ZQjeY",
+        "module",
+        24
+    ],
+    "bs_ntrfs_n_rbtr": [
+        "bs_ntrfs_n_rbtr",
+        "hSZxw",
+        "module",
+        25
+    ],
+    "prll_bs_ntrfs": [
+        "prll_bs_ntrfs",
+        "qdMtn",
+        "module",
+        29
+    ],
+    "tbench_top": [
+        "tbench_top",
+        "Mk7In",
+        "module",
+        33
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        34
+    ]
+}

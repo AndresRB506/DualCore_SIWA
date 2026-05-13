@@ -1,0 +1,52 @@
+{0.000 1527.440} {1695.130 1527.440} {1695.130 1353.380} {169.355 1353.380} {169.355 172.590} {1732.765 172.590} {1732.765 0.100} {0.000 0.100}
+
+Area de los pads cubierta por dominio PD_PADS
+{0.000 1494.000} {1494.00 1494.0} {1494.0 1314.0} {160.00 1314.0} {160.00 160.00} {14940.00 160.00} {1494.0 0.00} {0.000 0.00}
+
+Die Bounding_box
+
+{0.000 0.000} {1600.000 1494.000}
+
+
+###### Definiciones SRAM a la derecha
+set_fp_rail_voltage_area_constraints  -voltage_area top_riscv_soc/PD_CORE -power_budget 2000 -voltage_supply 1.8 -nets  {VSS VDD_1V8}
+set_fp_rail_voltage_area_constraints -voltage_area top_riscv_soc/PD_CORE -layer METTPL -direction vertical -max_strap 20 -min_strap 4 -min_width 3.000 -spacing minimum
+set_fp_rail_voltage_area_constraints -voltage_area top_riscv_soc/PD_CORE -layer METTP -direction horizontal -max_strap 20 -min_strap 4 -min_width 0.440 -spacing minimum
+set_fp_rail_voltage_area_constraints -voltage_area top_riscv_soc/PD_CORE -ring_nets  {VSS VDD_1V8}  -horizontal_ring_layer { METTP } -vertical_ring_layer { METTPL } -ring_max_width 13 -ring_min_width 8 -extend_strap voltage_area_boundary
+set_fp_rail_voltage_area_constraints -global  -voltage_area top_riscv_soc/PD_CORE -no_routing_over_hard_macros -no_routing_over_soft_macros
+
+
+
+
+###### Definiciones SRAM a la izquierda
+
+Area de voltaje de la SRAM
+
+
+Ara de voltaje de los Level Shifters para UCU
+
+
+create_voltage_area   -coordinate {180.00 580.00 910.00 1320.00 } -is_fixed -power_domain top_riscv_soc/TOP/PD_SRAM -target_utilization 0.90000 -cycle_color
+
+create_voltage_area   -coordinate {0.000 0.000   1494.000 176.000  0.000 176.000   172.000 1320.000  0.000 1320.000   1407.000 1494.000  } -is_fixed -power_domain pad_ring_inst/PD_PADS -target_utilization 0.90000 -cycle_color
+
+create_voltage_area   -coordinate { 210.000 220.000 1540.000 550.000 950.000 550.000 1540.000 1280.000 } -is_fixed -power_domain top_riscv_soc/PD_CORE -target_utilization 0.80000 -cycle_color
+
+
+create_voltage_area   -coordinate {  1418.000 1318.000 1570.000 1404.000 } -is_fixed -power_domain ucu_anlg1/PD_UCU -target_utilization 0.90000 -cycle_color
+
+
+DEfiniciones de rings de alimentacion
+
+set_fp_rail_voltage_area_constraints  -voltage_area top_riscv_soc/PD_CORE -power_budget 300.000 -voltage_supply 1.8 -nets  {VDD_1V8 VSS}
+set_fp_rail_voltage_area_constraints -voltage_area top_riscv_soc/PD_CORE -layer METTPL -direction vertical -max_strap 20 -min_strap 4 -min_width 3.000 -spacing minimum
+set_fp_rail_voltage_area_constraints -voltage_area top_riscv_soc/PD_CORE -layer METTP -direction horizontal -max_strap 20 -min_strap 4 -min_width 3.000 -spacing minimum
+set_fp_rail_voltage_area_constraints -voltage_area top_riscv_soc/PD_CORE -ring_nets  {VDD_1V8 VSS}  -horizontal_ring_layer { METTP } -vertical_ring_layer { METTPL } -ring_max_width 15 -ring_min_width 8 -extend_strap voltage_area_ring
+
+set_fp_rail_voltage_area_constraints -global  -voltage_area top_riscv_soc/PD_CORE -no_routing_over_hard_macros -no_routing_over_soft_macros
+
+synthesize_fp_rail  -synthesize_voltage_areas -voltage_areas  {top_riscv_soc/PD_CORE}  -power_budget 1000 -pad_masters { VDD_1V8:VDDCPADF.FRAM VSS:VDDCPADF.FRAM }
+
+
+
+

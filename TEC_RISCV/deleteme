@@ -1,0 +1,66 @@
+`timescale 1ns / 1ns
+`default_nettype none
+`define PCKG_SZ 16 
+`define BROADCAST {8{1'b1}}
+`define NUM_NTRFS 4
+`define FIFO_DEPTH 4
+`define FIFOS
+`include "../../FIFO_Latches/fifo.sv"
+`include "../../BUS/Library.sv"
+`define LIB
+`include "../Router_library.sv"
+
+module router;
+ //inputs
+  reg clk;
+  reg reset;
+  reg [pck_sz-1:0] data_out_i_in[num_ntrfs-1:0];
+  reg pndng_i_in[num_ntrfs-1:0];
+  reg pop[num_ntrfs-1:0];
+  reg popin[num_ntrfs-1:0];
+ //outputs
+  wire pndng[num_ntrfs-1:0],
+  wire [pck_sz-1:0] data_out[num_ntrfs-1:0]
+ 
+ 
+  int contador = 0;
+
+  int i = 0;
+
+
+  router__bus_gnrtr #(.pck_sz(`PCK_SZ) ,.num_ntrfs(`NUM_NTRFS), .broadcast(`BROADCAST), .fifo_depth(`FIFO_DEPTH)) dut(
+  .clk(clk),
+  .reset(reset),
+  .data_out_i_in(data_out_i_in),
+  .pndng_i_in(pndng_i),
+  .pop(pop),
+  .popin(popin),
+  .pndng(pndng),
+  .data_out(data_out)
+);
+
+initial begin
+  clk=0;
+  select ={`NUM_SLCT_LNS{1'b0}};
+  contador=0;
+end
+
+always #1 clk=~clk;   
+always@(posedge clk)begin
+  prueba();
+end
+
+task prueba ();
+  contador = (contador< (2**`NUM_SLCT_LNS))?contador+1:0;
+  if($time < 20) begin
+    for(int k=0;k < (2**`NUM_SLCT_LNS);k=k+1) begin
+      input_signal[k] = 2*k;
+      $display("input signal %g: %g",k,input_signal[k]);
+    end
+    $display("select: %g salida del mux: %g tiempo %g",out, select, $time);
+    select = contador;
+  end else begin
+    $finish;
+  end
+endtask
+endmodule

@@ -1,0 +1,101 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2_Full64; Runtime version U-2023.03-SP2_Full64;  Mar  5 16:25 2024
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'Test_Files/Assembly_Code/coremark_program.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../TOP/coremark_mem_model.sv, 18
+  Cannot open file 'Test_Files/Assembly_Code/coremark_program.txt' passed as 
+  argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_base...
+UVM_INFO Sequence.svh(34) @ 0: uvm_test_top.env_inst.agent_inst.sequencer_inst@@sec_message [SEQ] New item Delay=500000, SimulationTime=400000
+UVM_INFO Monitor.svh(69) @ 5000: uvm_test_top.env_inst.agent_inst.monitor_inst [MON] t=5000 reset=1
+UVM_INFO Scoreboard.svh(17) @ 5000: uvm_test_top.env_inst.scoreboard_inst [SB] Analisys Port Activity : RST=1
+-----------------------------------
+Name          Type      Size  Value
+-----------------------------------
+mon_sb        mon_sb    -     @639 
+  reset       integral  32    'h1  
+  event_time  integral  32    'h5  
+-----------------------------------
+
+Warning-[STASKW_SFRTMATR] More arguments than required
+Driver.svh, 71
+  Number of arguments (2) passed to place in the format string are more than 
+  the number of format specifiers (1).
+
+UVM_WARNING Driver.svh(71) @ 500000000: uvm_test_top.env_inst.agent_inst.driver_inst [MON] Simulation Delay Finished at 500000        100
+UVM_INFO Driver.svh(48) @ 500000000: uvm_test_top.env_inst.agent_inst.driver_inst [DRV] Se recibe Item para reiniciar 500000
+UVM_INFO Sequence.svh(34) @ 900000000: uvm_test_top.env_inst.agent_inst.sequencer_inst@@sec_message [SEQ] New item Delay=500000, SimulationTime=400000
+UVM_INFO Monitor.svh(69) @ 900005000: uvm_test_top.env_inst.agent_inst.monitor_inst [MON] t=900005000 reset=1
+UVM_INFO Scoreboard.svh(17) @ 900005000: uvm_test_top.env_inst.scoreboard_inst [SB] Analisys Port Activity : RST=1
+-------------------------------------
+Name          Type      Size  Value  
+-------------------------------------
+mon_sb        mon_sb    -     @655   
+  reset       integral  32    'h1    
+  event_time  integral  32    'hdbba5
+-------------------------------------
+
+Warning-[STASKW_SFRTMATR] More arguments than required
+Driver.svh, 71
+  Number of arguments (2) passed to place in the format string are more than 
+  the number of format specifiers (1).
+
+UVM_WARNING Driver.svh(71) @ 1400000000: uvm_test_top.env_inst.agent_inst.driver_inst [MON] Simulation Delay Finished at 1400000        100
+UVM_INFO Driver.svh(48) @ 1400000000: uvm_test_top.env_inst.agent_inst.driver_inst [DRV] Se recibe Item para reiniciar 1400000
+UVM_INFO Sequence.svh(22) @ 1800000000: uvm_test_top.env_inst.agent_inst.sequencer_inst@@sec_message [SEQ] New item Delay=0, SimulationTime=0
+UVM_INFO Driver.svh(42) @ 1800000000: uvm_test_top.env_inst.agent_inst.driver_inst [DRV] Se recibe Item para Detener 1800000
+
+Warning-[STASKW_SFRTMATR] More arguments than required
+Driver.svh, 51
+  Number of arguments (2) passed to place in the format string are more than 
+  the number of format specifiers (1).
+
+UVM_WARNING Driver.svh(51) @ 1800000000: uvm_test_top.env_inst.agent_inst.driver_inst [DRV] Se recibe Item sin reiniciar 1800000        100
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 1800000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+Warning-[STASKW_SFRTMATR] More arguments than required
+test_base.svh, 33
+  Number of arguments (2) passed to place in the format string are more than 
+  the number of format specifiers (1).
+
+UVM_WARNING test_base.svh(33) @ 1800000000: uvm_test_top [TB] Simulation Delay Finished at 1800000        100
+$finish called from file "test_base.svh", line 34.
+$finish at simulation time           1800000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1800000000 ps
+CPU Time:      2.560 seconds;       Data structure size:   3.1Mb
+Tue Mar  5 16:25:23 2024

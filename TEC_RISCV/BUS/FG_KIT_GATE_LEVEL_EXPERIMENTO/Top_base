@@ -1,0 +1,31 @@
+`timescale 1ns / 1ps
+`define PCKG_SZ 32 
+`define BROADCAST {8{1'b1}}
+`define DRVRS 2 
+`define BITS 1 
+`include "Library.sv"
+
+module top_del_sistema(
+ //inputs
+  input clk,
+  input reset,
+  input pndng[`BITS-1:0][`DRVRS-1:0],
+  input [`PCKG_SZ-1:0] D_pop[`BITS-1:0][`DRVRS-1:0],
+ //outputs
+  output push[`BITS-1:0][`DRVRS-1:0],
+  output pop[`BITS-1:0][`DRVRS-1:0],
+  output [`PCKG_SZ-1:0] D_push[`BITS-1:0][`DRVRS-1:0]
+);
+
+ bs_gnrtr_n_rbtr #(.bits(`BITS),.drvrs(`DRVRS),.pckg_sz(`PCKG_SZ),.broadcast(`BROADCAST)) uut(
+  .clk(clk),
+  .reset(reset),
+  .pndng(pndng),
+  .push(push),
+  .pop(pop),
+  .D_pop(D_pop),
+  .D_push(D_push)
+);
+
+
+endmodule

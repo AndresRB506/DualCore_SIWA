@@ -1,0 +1,17 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core
+SystemC=FALSE
+UUM=FALSE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+ENV="SYNOPSYS_SIM_SETUP=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI/design/synopsys_sim.setup" 
+TOP=fifo_flops fifo_ltch fifo_ltch_no_rst ntrpt_cam_fifo mem_latch bs_ntrfs Arbiter bs_ntrfs_n_rbtr prll_rgstr prll_bs_ntrfs ALU latch_tri_rst1_Hard Test_Top 
+OPTION=-ssz -ssv -ssy -ssz -ssv -ssy 
+ELAB_OPTION=-ssz -ssv -ssy -ssz -ssv -ssy 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

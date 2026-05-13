@@ -1,0 +1,218 @@
+; clk_pad
+; pad_ring_inst/clk_pad_inst/Y
+top_riscv_soc/DHC_PD_CORE/BUHDLLX1_G2B13I1
+top_riscv_soc/DHC_PD_CORE/BUHDLLX1_G2B11I1
+top_riscv_soc/DHC_PD_CORE/BUHDLLX1_G2B9I1
+top_riscv_soc/DHC_PD_CORE/BUHDLLX1_G2B7I1
+top_riscv_soc/DHC_PD_CORE/BUHDLLX1_G2B5I1
+top_riscv_soc/DHC_PD_CORE/BUHDLLX2_G2B3I1
+top_riscv_soc/UART/BUHDLLX1_G2B1I1
+; top_riscv_soc/TOP/BUHDLLX12_GB_MV/Q
+top_riscv_soc/TOP/INHDLLX12_G3B13I1
+top_riscv_soc/TOP/INHDLLX12_G3B11I1
+top_riscv_soc/TOP/BUHDLLX8_G3B9I1
+top_riscv_soc/TOP/BUHDLLX4_G3B7I1
+top_riscv_soc/TOP/BUHDLLX2_G3B5I1
+top_riscv_soc/TOP/INHDLLX3_G3B4I1
+top_riscv_soc/TOP/Memory_controller/INHDLLX6_G3B3I1
+top_riscv_soc/TOP/INHDLLX6_G3B3I2
+top_riscv_soc/TOP/Memory_controller/INHDLLX6_G3B2I1
+top_riscv_soc/TOP/INHDLLX3_G3B2I2
+top_riscv_soc/TOP/INHDLLX3_G3B1I1
+top_riscv_soc/TOP/Memory_controller/INHDLLX3_G3B1I2
+top_riscv_soc/TOP/central_control/INHDLLX4_G3B1I3
+; top_riscv_soc/SPI/BUHDLLX12_GB_MV/Q
+top_riscv_soc/SPI/INHDLLX3_G3B4I1
+top_riscv_soc/SPI/INHDLLX6_G3B3I1
+top_riscv_soc/SPI/INHDLLX3_G3B3I2
+top_riscv_soc/SPI/INHDLLX3_G3B2I1
+top_riscv_soc/SPI/INHDLLX8_G3B2I2
+top_riscv_soc/SPI/INHDLLX8_G3B1I1
+top_riscv_soc/SPI/INHDLLX6_G3B1I2
+top_riscv_soc/SPI/INHDLLX12_G3B1I3
+top_riscv_soc/SPI/INHDLLX8_G3B1I4
+top_riscv_soc/SPI/INHDLLX6_G3B1I5
+top_riscv_soc/SPI/INHDLLX12_G3B1I6
+top_riscv_soc/SPI/INHDLLX12_G3B1I7
+; top_riscv_soc/UART/BUHDLLX12_GB_MV/Q
+top_riscv_soc/UART/INHDLLX6_G3B2I1
+top_riscv_soc/UART/INHDLLX3_G3B2I2
+top_riscv_soc/UART/INHDLLX6_G3B1I1
+top_riscv_soc/UART/INHDLLX6_G3B1I2
+top_riscv_soc/UART/INHDLLX8_G3B1I3
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U2/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX3_G4B2I1
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX3_G4B1I1
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX3_G4B1I2
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX3_G4B1I3
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U10/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G4B4I1
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX6_G4B3I1
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G4B2I1
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX3_G4B1I1
+; top_riscv_soc/TOP/U419/Q
+top_riscv_soc/TOP/Bus/INHDLLX12_G4B6I1
+top_riscv_soc/TOP/Bus/INHDLLX3_G4B5I1
+top_riscv_soc/TOP/Bus/INHDLLX6_G4B4I1
+top_riscv_soc/TOP/Bus/INHDLLX3_G4B4I2
+top_riscv_soc/TOP/Bus/INHDLLX4_G4B3I1
+top_riscv_soc/TOP/Bus/INHDLLX3_G4B3I2
+top_riscv_soc/TOP/Bus/INHDLLX3_G4B3I3
+top_riscv_soc/TOP/Bus/INHDLLX6_G4B2I1
+top_riscv_soc/TOP/Bus/INHDLLX3_G4B1I1
+top_riscv_soc/TOP/Bus/INHDLLX3_G4B1I2
+; top_riscv_soc/TOP/U418/Q
+top_riscv_soc/TOP/temporizador_top/INHDLLX12_G4B2I1
+top_riscv_soc/TOP/temporizador_top/INHDLLX4_G4B1I1
+; top_riscv_soc/TOP/U412/Q
+top_riscv_soc/TOP/INHDLLX12_G4B2I1
+top_riscv_soc/TOP/INHDLLX6_G4B1I1
+; top_riscv_soc/TOP/Memory_controller/U314/Q
+; top_riscv_soc/TOP/BUHDLLX4_GB/Q
+; top_riscv_soc/TOP/Bus/fifo_out_mbc/U84/Q
+top_riscv_soc/TOP/Bus/fifo_out_mbc/INHDLLX4_G5B2I1
+top_riscv_soc/TOP/Bus/fifo_out_mbc/INHDLLX8_G5B1I1
+top_riscv_soc/TOP/Bus/fifo_out_mbc/INHDLLX8_G5B1I2
+top_riscv_soc/TOP/Bus/fifo_out_mbc/INHDLLX8_G5B1I3
+; top_riscv_soc/TOP/Bus/fifo_in_mbc/U88/Q
+top_riscv_soc/TOP/Bus/fifo_in_mbc/INHDLLX4_G5B2I1
+top_riscv_soc/TOP/Bus/fifo_in_mbc/INHDLLX6_G5B1I1
+top_riscv_soc/TOP/Bus/fifo_in_mbc/INHDLLX8_G5B1I2
+top_riscv_soc/TOP/Bus/fifo_in_mbc/INHDLLX12_G5B1I3
+; top_riscv_soc/TOP/Bus/fifo_out_spi/U77/Q
+top_riscv_soc/TOP/Bus/fifo_out_spi/INHDLLX3_G5B2I1
+top_riscv_soc/TOP/Bus/fifo_out_spi/INHDLLX6_G5B1I1
+top_riscv_soc/TOP/Bus/fifo_out_spi/INHDLLX8_G5B1I2
+; top_riscv_soc/TOP/Bus/fifo_in_spi/U81/Q
+top_riscv_soc/TOP/Bus/fifo_in_spi/INHDLLX4_G5B2I1
+top_riscv_soc/TOP/Bus/fifo_in_spi/INHDLLX3_G5B2I2
+top_riscv_soc/TOP/Bus/fifo_in_spi/INHDLLX8_G5B1I1
+top_riscv_soc/TOP/Bus/fifo_in_spi/INHDLLX8_G5B1I2
+; top_riscv_soc/TOP/Bus/fifo_out_uart/U80/Q
+top_riscv_soc/TOP/Bus/fifo_out_uart/INHDLLX3_G5B2I1
+top_riscv_soc/TOP/Bus/fifo_out_uart/INHDLLX6_G5B1I1
+top_riscv_soc/TOP/Bus/fifo_out_uart/INHDLLX12_G5B1I2
+; top_riscv_soc/TOP/Bus/fifo_in_uart/U82/Q
+top_riscv_soc/TOP/Bus/fifo_in_uart/INHDLLX3_G5B2I1
+top_riscv_soc/TOP/Bus/fifo_in_uart/INHDLLX6_G5B1I1
+top_riscv_soc/TOP/Bus/fifo_in_uart/INHDLLX8_G5B1I2
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U11/Q
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U12/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G5B2I1
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX4_G5B1I1
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U13/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G5B2I11
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX4_G5B1I11
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U14/Q
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U15/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G5B2I12
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX4_G5B1I12
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U16/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G5B2I13
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX4_G5B1I13
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U17/Q
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U18/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G5B2I14
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX4_G5B1I14
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U19/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G5B2I15
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX4_G5B1I15
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U20/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G5B2I16
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX4_G5B1I16
+; top_riscv_soc/TOP/Reg_file/Reg_csr/U21/Q
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX12_G5B2I17
+top_riscv_soc/TOP/Reg_file/Reg_csr/INHDLLX3_G5B1I1
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U3/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I1
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I1
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U4/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I11
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I1
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U5/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I12
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I11
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U6/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I13
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I12
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U7/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I14
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I11
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U8/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I15
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I13
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U9/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I16
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I14
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U10/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I17
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I15
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U11/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I18
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I16
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U12/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I19
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I17
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U13/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I110
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I18
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U14/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I111
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I19
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U15/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I112
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I110
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U16/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I113
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I111
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U17/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I114
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I112
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U18/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I115
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I12
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U19/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I116
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I113
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U20/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I117
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I13
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U21/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I118
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I14
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U22/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I119
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I114
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U23/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I120
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I115
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U24/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I121
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I15
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U25/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I122
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I116
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U26/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I123
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I16
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U27/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I124
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I17
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U28/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I125
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I117
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U29/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I126
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I118
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U30/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I127
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I18
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U31/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I128
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I119
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U32/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I129
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX6_G5B1I120
+; top_riscv_soc/TOP/Reg_file/Reg_integer/U33/Q
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX12_G5B2I130
+top_riscv_soc/TOP/Reg_file/Reg_integer/INHDLLX4_G5B1I19

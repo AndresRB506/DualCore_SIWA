@@ -1,0 +1,40 @@
+Name:	simv
+State:	S (sleeping)
+Tgid:	6441
+Pid:	6441
+PPid:	26598
+TracerPid:	0
+Uid:	1160250498	1160250498	1160250498	1160250498
+Gid:	1160249857	1160249857	1160249857	1160249857
+Utrace:	0
+FDSize:	64
+Groups:	1160249857 1160251133 1160252545 
+VmPeak:	  425268 kB
+VmSize:	  425204 kB
+VmLck:	       0 kB
+VmHWM:	  245084 kB
+VmRSS:	  245084 kB
+VmData:	  189004 kB
+VmStk:	      88 kB
+VmExe:	   10936 kB
+VmLib:	  115628 kB
+VmPTE:	     832 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	1/257623
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000010002
+SigIgn:	0000000004000006
+SigCgt:	200000c1c08876e9
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	ffffffffffffffff
+Speculation_Store_Bypass:	vulnerable
+Cpus_allowed:	ffff
+Cpus_allowed_list:	0-15
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000003
+Mems_allowed_list:	0-1
+voluntary_ctxt_switches:	76070
+nonvoluntary_ctxt_switches:	2852

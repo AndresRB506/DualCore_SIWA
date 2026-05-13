@@ -1,0 +1,213 @@
+Invoking simulator...
+
+./salida -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" "./salida.daidir"
+*Verdi* Loading libsscore_vcs202303.so
+
+*Verdi* : Enable RPC Server(2472913)
+
+srcTBInvokeSim
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2_Full64; Runtime version U-2023.03-SP2_Full64;  May 16 23:14 2024
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+  ***********       IMPORTANT RELEASE NOTES         ************
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+xterm-256color is Not a valid terminal...
+Verdi>stop -line 6 -file /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh 
+Error-[UCLI-STOP-UNABLE-SET-STOP-POINT] Unable to set breakpoint
+  The setting of line breakpoint in file 
+  /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh
+  line 6 due to 'stop' command was not successful. 
+  Please verify that the 'stop' command arguments are valid and that the 
+  statement/enclosing subprogram at file/line is complete and used in the 
+  design.  Also verify that the statement on which the BP is being added is in
+  a module compiled with line debug capability.  If the BP is being set inside
+  a TF, make sure the design is not compiled with '+vpi+1'.  Please recompile 
+  using the '-debug_access<+options>' switch and incremental options as 
+  required.  Recommended options are '-debug_access' for post-process debug, 
+  '-debug_access+class' for testbench debug, and '-debug_access+all' for all 
+  debug capabilities.  Refer the VCS user guide for more granular options for 
+  debug control under the switch '-debug_access' and refer to '-debug_region' 
+  for region control.
+Verdi>stop -line 74 -file /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh 
+1
+Verdi>run
+*Verdi* Enable Verdi Message Catcher.
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'Test_Files/Assembly_Code/coremark_program.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../TOP/coremark_mem_model.sv, 18
+  Cannot open file 'Test_Files/Assembly_Code/coremark_program.txt' passed as 
+  argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean v_if
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+*Verdi* Enable Verdi Factory Dumping.
+UVM_INFO @ 0: reporter [RNTST] Running test test_base...
+----------------------------------- 
+Initiating Prediction Process...
+----------------------------------- 
+-----------------------------------
+Prediction has Finished...
+-----------------------------------
+prediction Size = 1376
+TEST NAME: test_base
+UVM_INFO Sequence.svh(39) @ 0: uvm_test_top.env_inst.agent_inst.sequencer_inst@@sec_message [SEQ] New item Delay=500000, SimulationTime=300000
+UVM_INFO Scoreboard.svh(47) @ 5000: uvm_test_top.env_inst.scoreboard_inst [SB] Analisys Port Activity : RST=1
+Stop point #1 @ 746955000 ps;  
+Verdi>fsdbDumpvars 1 "test_base.env_inst.inst_cov_collector.write.inst_i"  +all +trace_process;fsdbDumpvars 1 "test_base.env_inst.inst_cov_collector.write"  +all +trace_process;fsdbDumpflush 
+
+*Verdi* ERROR: The #2 argument "test_base.env_inst.inst_cov_collector.write.inst_i" is invalid
+*Verdi* ERROR: Failed to dump because the specified instance or option is not correct
+*Verdi* ERROR: Syntax - fsdbDumpvars [depth] [instance] [option]*
+*Verdi* ERROR: The #2 argument "test_base.env_inst.inst_cov_collector.write" is invalid
+*Verdi* ERROR: Failed to dump because the specified instance or option is not correct
+*Verdi* ERROR: Syntax - fsdbDumpvars [depth] [instance] [option]*
+*Verdi* : Flush all FSDB Files at 746,955,000 ps.
+
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 746955000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 747095000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 747095000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 747235000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 747235000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 747375000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 747375000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 747515000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 747515000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 747655000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 747655000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 747795000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 747795000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 747935000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 747935000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 748075000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 748075000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 748215000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 748215000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 748355000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 748355000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 748495000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 748495000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 748635000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 748635000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 748775000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 748775000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 748915000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 748915000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 749055000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 749055000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 749195000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 749195000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 749335000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 749335000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 749475000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 749475000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 749615000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 749615000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 749755000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 749755000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 749895000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 749895000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 750035000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 750035000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 750175000 ps;  
+Verdi>stop -line 75 -file /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh 
+2
+Verdi>run
+Stop point #2 @ 750175000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 750175000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 750315000 ps;  
+Verdi>run
+Stop point #2 @ 750315000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 750315000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 750455000 ps;  
+Verdi>run
+Stop point #2 @ 750455000 ps;  
+Verdi>run
+UVM_INFO coverage_classes.svh(78) @ 750455000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 14
+Stop point #1 @ 750595000 ps;  
+Verdi>run
+Stop point #2 @ 750595000 ps;  
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 750595000 ps
+CPU Time:     17.560 seconds;       Data structure size:   3.2Mb
+Thu May 16 23:19:26 2024
+debExit

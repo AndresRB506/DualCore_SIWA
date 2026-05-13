@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Dashboard</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.colResizable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    }  });
+  $("table").colResizable({    liveDrag:true,
+    fixed:false,
+    draggingClass:"dragging"
+  });
+});
+</script>
+</head>
+<body><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Dashboard</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-center">
+Date: Tue Nov  6 11:13:54 2018
+<br clear=all>
+User: rmolina
+<br clear=all>
+Version: M-2017.03-SP2-5<br clear=all>
+Command line: urg -full64 -lca -format both -dir ./simv.vdb 
+<br clear=all>
+Number of tests: 1<br clear=all>
+<hr>
+<b>Total Coverage Summary</b>&nbsp;<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td></tr><tr>
+<td class="s3 cl rt"> 33.12</td>
+<td class="s4 cl rt"> 44.13</td>
+<td class="s4 cl rt"> 42.61</td>
+<td class="s1 cl rt"> 18.03</td>
+<td class="s0 cl rt">  9.34</td>
+<td class="s5 cl rt"> 51.46</td>
+</tr></table><br clear=all>
+<hr>
+<b>Hierarchical coverage data for top-level instances</b>&nbsp;<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s1 cl rt"> 12.00</td>
+<td class="s3 cl rt"> 30.46</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 17.53</td>
+<td class="wordwrap"><a href="mod54.html#inst_tag_4281" >ALU</a></td>
+</tr><tr>
+<td class="s1 cl rt"> 17.65</td>
+<td class="s7 cl rt"> 70.59</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wordwrap"><a href="mod47.html#inst_tag_4221" >Arbiter</a></td>
+</tr><tr>
+<td class="s2 cl rt"> 26.63</td>
+<td class="s4 cl rt"> 42.93</td>
+<td class="s4 cl rt"> 45.70</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s4 cl rt"> 44.52</td>
+<td class="wordwrap"><a href="mod80.html#inst_tag_6819" >bs_ntrfs</a></td>
+</tr><tr>
+<td class="s2 cl rt"> 25.72</td>
+<td class="s4 cl rt"> 41.40</td>
+<td class="s4 cl rt"> 44.19</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s4 cl rt"> 43.04</td>
+<td class="wordwrap"><a href="mod52.html#inst_tag_4279" >bs_ntrfs_n_rbtr</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wordwrap"><a href="mod31.html#inst_tag_3016" >fifo_flops</a></td>
+</tr><tr>
+<td class="s2 cl rt"> 20.34</td>
+<td class="s4 cl rt"> 48.95</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"> 32.41</td>
+<td class="wordwrap"><a href="mod60.html#inst_tag_4287" >fifo_ltch</a></td>
+</tr><tr>
+<td class="s0 cl rt">  1.50</td>
+<td class="s0 cl rt">  3.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  3.00</td>
+<td class="wordwrap"><a href="mod43.html#inst_tag_4214" >fifo_ltch_no_rst</a></td>
+</tr><tr>
+<td class="s1 cl rt"> 17.50</td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 20.00</td>
+<td class="wordwrap"><a href="mod83.html#inst_tag_6963" >latch_tri_rst1_Hard</a></td>
+</tr><tr>
+<td class="s2 cl rt"> 24.26</td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"> 47.06</td>
+<td class="wordwrap"><a href="mod26.html#inst_tag_3011" >mem_latch</a></td>
+</tr><tr>
+<td class="s0 cl rt">  1.62</td>
+<td class="s0 cl rt">  4.53</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  1.95</td>
+<td class="wordwrap"><a href="mod59.html#inst_tag_4286" >ntrpt_cam_fifo</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.59</td>
+<td class="s0 cl rt">  2.95</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wordwrap"><a href="mod58.html#inst_tag_4285" >prll_bs_ntrfs</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wordwrap"><a href="mod8.html#inst_tag_52" >prll_rgstr</a></td>
+</tr><tr>
+<td class="s4 cl rt"> 41.84</td>
+<td class="s5 cl rt"> 54.57</td>
+<td class="s4 cl rt"> 45.41</td>
+<td class="s2 cl rt"> 29.22</td>
+<td class="s1 cl rt"> 10.38</td>
+<td class="s6 cl rt"> 69.61</td>
+<td class="wordwrap"><a href="mod44.html#inst_tag_4215" >topcore_tb</a></td>
+</tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wordwrap"><a href="mod1.html#inst_tag_1" >tristategate_negado</a></td>
+</tr></table><br clear=all>
+<hr>
+<b>Total Module Definition Coverage Summary</b>&nbsp;<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td></tr><tr>
+<td class="s1 cl rt"> 18.23</td>
+<td class="s2 cl rt"> 21.45</td>
+<td class="s1 cl rt"> 10.89</td>
+<td class="s2 cl rt"> 20.37</td>
+<td class="s0 cl rt">  9.72</td>
+<td class="s2 cl rt"> 28.74</td>
+</tr></table></div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

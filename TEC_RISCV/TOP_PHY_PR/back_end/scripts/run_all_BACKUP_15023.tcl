@@ -1,0 +1,17 @@
+#set PROY_HOME "/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/FIRST_SPIN/TEC_RISCV/TOP_PHY_PR";
+set PROY_HOME "/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/";
+source $PROY_HOME/common_setup_typ_no_hv.tcl;
+#source $PROY_HOME/common_setup_typ.tcl;
+source $PROY_HOME/user_setup.tcl;
+source ./scripts/icc_setup.tcl;
+<<<<<<< HEAD
+set COMPLETE_COMPILE 0; # Define si seguimos con la biblio MW presente o recargamos todo el disenno desde sintesis DDC
+set CREATE_FLOORPLAN 0; # Si hacemos el floorplan desde cero
+=======
+set COMPLETE_COMPILE 1; # Define si seguimos con la biblio MW presente o recargamos todo el disenno desde sintesis DDC
+set CREATE_FLOORPLAN 1; # Si hacemos el floorplan desde cero
+>>>>>>> upstream/master
+source ./scripts/top_phy_spin_1.tcl;
+
+
+

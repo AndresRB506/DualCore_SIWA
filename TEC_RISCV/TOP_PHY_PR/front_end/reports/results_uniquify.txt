@@ -1,0 +1,514 @@
+Information: Building the design 'mbc' instantiated from design 'top_CPU_riscv' with
+	the parameters "max=13". (HDL-193)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:51: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:52: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:59: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:60: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 114 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           115            |    auto/auto     |
+|           123            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 248 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           249            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 287 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           288            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine mbc_max13 line 181 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     d_read_reg      | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine mbc_max13 line 240 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine mbc_max13 line 287 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     rd_fll_reg      | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|       wen_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|       cen_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|      boot_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|    ld_d_read_reg    | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|     mem_rdy_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|     pop_mbc_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|       psh_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|    error_drs_reg    | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|    cond_sel_reg     | Latch |   4   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   mbc_max13/67   |   16   |    1    |      4       |
+======================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:287: Netlist for always_comb block contains a latch. (ELAB-974)
+Presto compilation completed successfully.
+Information: Building the design 'ALU_2' instantiated from design 'top_CPU_riscv' with
+	the parameters "bits_size=32,cntrl_size=4". (HDL-193)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv:85: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv:88: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv:91: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 100 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           101            |    auto/auto     |
+|            58            |    auto/auto     |
+|            83            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ALU_2_bits_size32_cntrl_size4 line 100 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    shift_cod_reg    | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+| complemento_a_2_reg | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Information: Building the design 'baud' instantiated from design 'uart' with
+	the parameters "XTAL_CLK=20000000,BAUD=19200,CLK_DIV=32,CW=9". (HDL-193)
+
+Inferred memory devices in process
+	in routine baud_XTAL_CLK20000000_BAUD19200_CLK_DIV32_CW9 line 54 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/baud.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    uart_clk_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     clk_div_reg     | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fifo_to_uart_reg' instantiated from design 'uart' with
+	the parameters "pos_array=8,data_fifo=64,byte_out=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'log_ftu' instantiated from design 'uart' with
+	the parameters "pos_array=8,data_fifo=64,byte_out=8". (HDL-193)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv:211: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv:225: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 124 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           128            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 170 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           180            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine log_ftu_pos_array8_data_fifo64_byte_out8 line 81 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cont_byte_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_ftu_pos_array8_data_fifo64_byte_out8 line 94 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   four_eight_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_ftu_pos_array8_data_fifo64_byte_out8 line 105 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pop_en_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_ftu_pos_array8_data_fifo64_byte_out8 line 116 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     p_state_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_ftu_pos_array8_data_fifo64_byte_out8 line 160 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+=================================================================================
+|              block name/line                | Inputs | Outputs | # sel inputs |
+=================================================================================
+| log_ftu_pos_array8_data_fifo64_byte_out8/55 |   8    |    8    |      3       |
+=================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'u_xmit' instantiated from design 'uart' with
+	the parameters "WORD_LEN=8". (HDL-193)
+
+Statistics for case statements in always block at line 78 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            79            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 161 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine u_xmit_WORD_LEN8 line 90 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  bitCell_cntrH_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit_WORD_LEN8 line 106 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| xmit_ShiftRegH_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit_WORD_LEN8 line 124 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    bitCountH_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit_WORD_LEN8 line 137 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      BitP_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit_WORD_LEN8 line 152 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit_WORD_LEN8 line 297 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xmit_doneH_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'u_rec' instantiated from design 'uart' with
+	the parameters "WORD_LEN_PLUS1=9". (HDL-193)
+
+Statistics for case statements in always block at line 140 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           149            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine u_rec_WORD_LEN_PLUS19 line 79 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rec_datH_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|  rec_datSyncH_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec_WORD_LEN_PLUS19 line 91 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  bitCell_cntrH_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec_WORD_LEN_PLUS19 line 106 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    par_dataH_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec_WORD_LEN_PLUS19 line 118 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  recd_bitCntrH_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec_WORD_LEN_PLUS19 line 132 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec_WORD_LEN_PLUS19 line 271 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   rec_readyH_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'log_utf' instantiated from design 'uart' with
+	the parameters "pos_array=8". (HDL-193)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv:173: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 83 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 150 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           159            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine log_utf_pos_array8 line 64 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     push_en_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_utf_pos_array8 line 75 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     p_state_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_utf_pos_array8 line 119 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   enable_reg_reg    | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_utf_pos_array8 line 128 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cont_byte_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_utf_pos_array8 line 142 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'uart_to_fifo_reg' instantiated from design 'uart' with
+	the parameters "pos_array=8,data_fifo=64,byte_out=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Reg_32_bit' instantiated from design 'Banco_registros_latches' with
+	the parameters "width=32,number_reg=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'csr_file' instantiated from design 'Banco_registros_latches' with
+	the parameters "width=32,number_reg=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prll_bs_ntrfs_riscv' instantiated from design 'tec_riscv_bus' with
+	the parameters "drvrs=3,bits=65,id=0,bdcst=3'h7". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prll_bs_ntrfs_riscv' instantiated from design 'tec_riscv_bus' with
+	the parameters "drvrs=3,bits=65,id=1,bdcst=3'h7". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prll_bs_ntrfs_riscv' instantiated from design 'tec_riscv_bus' with
+	the parameters "drvrs=3,bits=65,id=2,bdcst=3'h7". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'fifo_flops_no_full' instantiated from design 'tec_riscv_bus' with
+	the parameters "depth=3,bits=65". (HDL-193)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:263: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:268: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 287 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           288            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_flops_no_full_depth3_bits65 line 308 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fifo_flops_no_full' instantiated from design 'tec_riscv_bus' with
+	the parameters "depth=2,bits=65". (HDL-193)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:263: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:268: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 287 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           288            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_flops_no_full_depth2_bits65 line 308 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'prll_d_rega' instantiated from design 'fifo_to_uart_reg_pos_array8_data_fifo64_byte_out8' with
+	the parameters "8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prll_d_reg_ena' instantiated from design 'uart_to_fifo_reg_pos_array8_data_fifo64_byte_out8' with
+	the parameters "8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Decodificador' instantiated from design 'Reg_32_bit_width32_number_reg32' with
+	the parameters "width=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Decodificador' instantiated from design 'csr_file_width32_number_reg12' with
+	the parameters "width=12". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prll_d_reg' instantiated from design 'prll_bs_ntrfs_riscv_3_65_0_7' with
+	the parameters "65". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prll_intrfs_cntrl_riscv' instantiated from design 'prll_bs_ntrfs_riscv_3_65_0_7' with
+	the parameters "0,3'h7,3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prll_intrfs_cntrl_riscv' instantiated from design 'prll_bs_ntrfs_riscv_3_65_1_7' with
+	the parameters "1,3'h7,3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'prll_intrfs_cntrl_riscv' instantiated from design 'prll_bs_ntrfs_riscv_3_65_2_7' with
+	the parameters "2,3'h7,3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Counter_arb' instantiated from design 'prll_intrfs_cntrl_riscv_0_7_3' with
+	the parameters "3". (HDL-193)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv:522: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine Counter_arb_mx_cnt3 line 518 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/REFRESH/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Uniquified 1364 instances of design 'dff_async_rst'. (OPT-1056)
+Information: Uniquified 201 instances of design 'tri_buf'. (OPT-1056)
+Information: Uniquified 3 instances of design 'Arbiter_st_Mchn'. (OPT-1056)
+Information: Uniquified 3 instances of design 'prll_rd_st_mchn'. (OPT-1056)
+Information: Uniquified 3 instances of design 'prll_wt_st_mchn'. (OPT-1056)
+Information: Uniquified 12 instances of design 'tristate_buffer'. (OPT-1056)
+Information: Uniquified 8 instances of design 'csk_bloque'. (OPT-1056)
+Information: Uniquified 127 instances of design 'latch_tri_rst0_Hard'. (OPT-1056)
+Information: Uniquified 251 instances of design 'latch'. (OPT-1056)
+Information: Uniquified 448 instances of design 'tristategate'. (OPT-1056)
+Information: Uniquified 992 instances of design 'latchtriestado'. (OPT-1056)
+Information: Uniquified 124 instances of design 'latch_tri_estado'. (OPT-1056)
+Information: Uniquified 8 instances of design 'prll_d_rega_bits8'. (OPT-1056)
+Information: Uniquified 64 instances of design 'dff_async_rsta'. (OPT-1056)
+Information: Uniquified 8 instances of design 'prll_d_reg_ena_bits8'. (OPT-1056)
+Information: Uniquified 64 instances of design 'dff_async_rst_ena'. (OPT-1056)
+Information: Uniquified 2 instances of design 'fifo_flops_no_full_depth3_bits65'. (OPT-1056)
+Information: Uniquified 4 instances of design 'fifo_flops_no_full_depth2_bits65'. (OPT-1056)
+Information: Uniquified 3 instances of design 'Decodificador_width32'. (OPT-1056)
+Information: Uniquified 20 instances of design 'prll_d_reg_bits65'. (OPT-1056)
+Information: Uniquified 3 instances of design 'Counter_arb_mx_cnt3'. (OPT-1056)
+1

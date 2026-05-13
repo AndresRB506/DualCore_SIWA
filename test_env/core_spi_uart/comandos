@@ -1,0 +1,39 @@
+#Converting the Assembly Program into a code readable by the memory
+
+python3.9 memory.py Test_Files/Assembly_Code/Aritmeticas/add.o.txt
+
+#python memory.py Test_Files/Assembly_Code/Store_load/Interrupt_UART_Bottom.o.txt
+
+#python memory.py Test_Files/Assembly_Code/brincos/jump.o.txt
+
+#python memory.py Test_Files/Assembly_Code/CSR/CSRRCI.o.txt
+
+#python3.9 memory.py Test_Files/Assembly_Code/SIWAcodeCopy3.o.txt
+
+#python3.9 memory.py Test_Files/Assembly_Code/coremark_program.txt
+
+#python3.9 memory.py Test_Files/Assembly_Code/power_meas/med_app_hf_part_32bit.o.txt
+
+#Compiling the simulation
+
+#vcs -sverilog -Mupdate -debug_all +vcs+flush+all +warn=all -timescale=1ns/10ps -full64 +incdir+../../TEC_RISCV/TOP +incdir+../../TEC_RISCV/SPI +incdir+../../TEC_RISCV/UART top_core_spi_uart.sv
+
+#vcs -ova_cov -cm line+cond+fsm+tgl+assert+branch+property_path -cm_report unencrypted_hierarchies+svpackages+noinitial -sverilog -lca -Mupdate -debug_all +vcs+flush+all +warn=all -timescale=1ns/10ps -full64 +incdir+../../TEC_RISCV/TOP +incdir+../../TEC_RISCV/SPI +incdir+../../TEC_RISCV/UART -CFLAGS -DVCS top_core_spi_uart.sv
+
+#vcs -ova_cov -cm line+cond+fsm+tgl+assert+branch+property_path -cm_report unencrypted_hierarchies+svpackages+noinitial -sverilog -lca -Mupdate -debug_all +vcs+flush+all +warn=all -timescale=1ns/10ps -full64 +incdir+../../TEC_RISCV/TOP +incdir+../../TEC_RISCV/SPI +incdir+../../TEC_RISCV/UART top_core_spi_uart_post_syn.sv
+
+#vcs -ova_cov -cm line+cond+fsm+tgl+assert+branch+property_path -cm_report unencrypted_hierarchies+svpackages+noinitial -sverilog -lca -Mupdate -debug_all +vcs+flush+all +warn=all -timescale=1ns/10ps -full64 +incdir+../../TEC_RISCV/TOP +incdir+../../TEC_RISCV/SPI +incdir+../../TEC_RISCV/UART -sdf typ:Test_Top.uut:../../TEC_RISCV/TOP/Tec_Riscv_pads_phy_no_pg.sdf +sdfverbose +neg_tchk top_core_spi_uart_phy.sv
+
+#Verdi Test
+
+vcs -kdb -ova_cov -cm line+cond+fsm+tgl+assert+branch+property_path -cm_report unencrypted_hierarchies+svpackages+noinitial -sverilog -lca -Mupdate -debug_all +vcs+flush+all +warn=all -timescale=1ns/10ps -full64 -P ${VERDI_HOME}/share/PLI/VCS/linux64/novas.tab ${VERDI_HOME}/share/PLI/VCS/linux64/pli.a +incdir+../../TEC_RISCV/TOP +incdir+../../TEC_RISCV/SPI +incdir+../../TEC_RISCV/UART -CFLAGS -DVCS top_core_spi_uart.sv
+
+
+#Simulating the test
+#./simv -cm line+cond+fsm+tgl+assert+branch+property_path -cm_name add +TESTNAME=add
+#rm -rf csrc/ DVEfiles/ inter.vpd simv.daidir/ swave_compile_done ucli.key vcs.log verilog.dump #ac_check.err log
+
+#Verdi Test
+#./simv -verdi -cm line+cond+fsm+tgl+assert+branch+property_path -cm_name add +TESTNAME=nop_program
+./simv -cm line+cond+fsm+tgl+assert+branch+property_path -cm_name test +TESTNAME=test
+

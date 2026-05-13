@@ -1,0 +1,22 @@
+#################################Read me#####################################################
+#Script to simulate testbenches and to keep the github "clean" of simulation files.
+#Adapt this script to your needs. Here is the template:
+#Command to compile your testbench:
+#
+# vcs -full64 -timescale=1ns/1ns +vcs+flush+all +warn=all +incdir+<path/to/DUT> -sverilog <testbench_filename>
+#
+#Command to simulate:
+#
+#./simv
+#
+#Command to remove unnecesary files:
+#
+#rm -r <all_unnecesary_files>
+#
+###################################Code Starts Here###########################################
+
+vcs -Mupdate -full64 -debug_all -timescale=1ns/10ps +vcs+flush+all +warn=all +incdir+../../TEC_RISCV/TOP -sverilog +define+PROGRAM_FILE=\"Test_Files/Assembly_Code/lbu.o.txt\" +define+PREDICTOR_FILE=\"Test_Files/References/lbu.o.txt\" topcore_tb.sv
+
+./simv -gui
+
+rm -r csrc/ simv.daidir/ DVEfiles/ simv swave_compile_done ucli.key opendatabase.log

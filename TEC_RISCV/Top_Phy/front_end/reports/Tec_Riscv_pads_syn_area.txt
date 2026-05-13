@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : topcore_tecriscv
+Version: N-2017.09-SP4
+Date   : Thu Oct 11 14:47:45 2018
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+    XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db)
+
+Number of ports:                        24582
+Number of nets:                         35025
+Number of cells:                        17398
+Number of combinational cells:           7209
+Number of sequential cells:              6535
+Number of macros/black boxes:               1
+Number of buf/inv:                       2608
+Number of references:                       7
+
+Combinational area:              92395.804228
+Buf/Inv area:                    20595.948230
+Noncombinational area:          241841.890490
+Macro/Black Box area:           500899.062500
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                835136.757218
+Total area:                 undefined
+1

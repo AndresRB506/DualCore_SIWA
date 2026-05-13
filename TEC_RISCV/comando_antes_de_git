@@ -1,0 +1,60 @@
+#Tests
+rm -rvf TOP/Tec_Riscv_pads_phy_no_pg.v;
+rm -rvf TOP/Tec_Riscv_pads_phy_no_pg.sdf;
+rm -rfv TOP/DVEfiles;
+rm -rvf TOP/csrc;
+rm -rvf TOP/inter.vpd;
+rm -rvf TOP/log;
+rm -rvf TOP/simv*;
+rm -rvf TOP/swave_compile_done;
+rm -rvf TOP/ucli.key;
+rm -rvf TOP/inter*;
+rm -rvf TOP/.rest*;
+rm -rvf TOP/.syn*;
+rm -rfv TOP/sdfAnnotateInfo;
+rm -rfv TOP/timescale.txt;
+rm -rfv TOP/ac_check.err;
+rm -rfv TOP_PHY_PR/front_end/db/constraints_top.ddc;
+
+
+#Front end
+rm -rvf TOP_PHY_PR/front_end/source/Tec_Riscv_pads_syn.v;
+rm -rvf TOP_PHY_PR/front_end/source/Tec_Riscv_pads_syn_pg.v;
+cd TOP_PHY_PR/front_end/source;
+rm -v Tec_Riscv_pads_syn.v;
+rm -rvf ../reports/*;
+rm -rvf ../libs/Tec_Riscv_pads.mw;
+rm -rvf ../db/Tec_Riscv_pads*;
+rm -rvf ../work/*;
+rm -rvf BUS_Micro;
+rm -rvf DECO_INSTR;
+rm -rvf FIFO_Latches;
+rm -rvf MBC;
+rm -rvf Register_File;
+rm -rvf SPI;
+rm -rvf UART;
+rm -rvf TOP;
+rm -rf ALU;
+rm -rvf lista.txt;
+cd .. ;
+rm -rvf default.svf command.log icc_output.txt log_dc_shell.log;
+cd ../../;
+#Back end
+cd TOP_PHY_PR/back_end;
+rm -rfv libs/Tec_Riscv_pads.mw;
+rm -rfv reports/*;
+rm -rfv command.log;
+rm -rfv Tec_Riscv_pads_phy.gds;
+rm -rfv pna_output;
+rm -rfv buffer.gcts;
+rm -rvf snapshot;
+rm -rvf net.acts;
+rm -rvf net.gcts;
+rm -rvf log_icc_shell.log;
+rm -rvf icc_gui.output;
+rm -rvf icc_output.txt;
+rm -rvf top_riscv_tec_pads_port_map*;
+rm -rvf legalizer_debug_plots;
+rm -rfv db/Tec_Riscv_pads_phy*;
+rm -rf top_riscv_tec_pads_zener*;
+cd ../../;

@@ -1,0 +1,603 @@
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db"
+Analyzing: "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db"
+Analyzing: "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db"
+Analyzing: "/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db"
+Analyzing: "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db"
+Library analysis succeeded.
+
+TLU+ File = /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/synopsys/v7_0/TLUplus/v7_0_1/xh018_xx43_MET4_METMID_METTHK_max.tlu
+TLU+ File = /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/synopsys/v7_0/TLUplus/v7_0_1/xh018_xx43_MET4_METMID_METTHK_min.tlu
+
+--------- Sanity Check on TLUPlus Files -------------
+1. Checking the conducting layer names in ITF and mapping file ... 
+[ Passed! ]
+2. Checking the via layer names in ITF and mapping file ... 
+[ Passed! ]
+3. Checking the consistency of Min Width and Min Spacing between MW-tech and ITF ... 
+[ Passed! ]
+----------------- Check Ends ------------------
+Information: Running optimization using a maximum of 4 cores. (OPT-1500)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | N-2017.09-DWBB_201709.4 |     *     |
+| Licensed DW Building Blocks        | N-2017.09-DWBB_201709.4 |     *     |
+============================================================================
+
+
+Information: There are 565 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'topcore_tecriscv'
+
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer MET1 : 0.00025 0.00019 (RCEX-011)
+Information: Library Derived Res for layer MET1 : 0.00047 0.00029 (RCEX-011)
+Information: Library Derived Cap for layer MET2 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET2 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer MET3 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET3 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer MET4 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET4 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer METTP : 0.00023 0.00017 (RCEX-011)
+Information: Library Derived Res for layer METTP : 0.00014 6.9e-05 (RCEX-011)
+Information: Library Derived Cap for layer METTPL : 0.00039 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METTPL : 4.4e-06 2.6e-06 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00025 0.00019 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00034 0.0002 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00032 0.00022 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00027 0.00016 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.0051 0.0023 (RCEX-011)
+  Loading target library 'D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C'
+  Loading target library 'D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C'
+  Loading target library 'IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C'
+  Loading target library 'XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C'
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db.alib'
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db.alib' (placeholder)
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db.alib' (placeholder)
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db.alib' (placeholder)
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db.alib' (placeholder)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'control'
+ Implement Synthetic for 'control'.
+  Processing 'top_spi'
+Information: The register 'data_push_reg[64]' is a constant and will be removed. (OPT-1206)
+Information: The register 'data_push_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: The register 'data_push_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'data_push_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_config_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_tx_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_tx_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_tx_reg[60]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_tx_reg[59]' is a constant and will be removed. (OPT-1206)
+Information: The register 'tspi_data_tx_reg[63]' is a constant and will be removed. (OPT-1206)
+Information: In design 'top_spi', the register 'tspi_data_config_reg[2]' is removed because it is merged to 'tspi_data_config_reg[4]'. (OPT-1215)
+Information: In design 'top_spi', the register 'tspi_data_config_reg[0]' is removed because it is merged to 'tspi_data_config_reg[4]'. (OPT-1215)
+ Implement Synthetic for 'top_spi'.
+Information: The register 'bst_addr_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'bst_addr_reg[1]' is a constant and will be removed. (OPT-1206)
+  Processing 'Reg_32_bit_width32_number_reg32'
+  Processing 'csr_file_width32_number_reg12'
+  Processing 'fifo_flops_no_full_depth2_bits65_0'
+Information: Added key list 'DesignWare' to design 'fifo_flops_no_full_depth2_bits65_0'. (DDB-72)
+  Processing 'fifo_flops_no_full_depth2_bits65_2'
+Information: Added key list 'DesignWare' to design 'fifo_flops_no_full_depth2_bits65_2'. (DDB-72)
+  Processing 'prll_bs_ntrfs_riscv_3_65_2_7'
+  Processing 'prll_d_reg_bits65_0'
+  Processing 'fifo_to_uart_reg_pos_array8_data_fifo64_byte_out8'
+  Processing 'tristate_buffer_0'
+  Processing 'latch_0'
+  Processing 'dff_async_rst_21'
+  Processing 'latch_tri_estado_0'
+  Processing 'DECO_INSTR'
+  Processing 'tec_riscv_bus'
+  Processing 'u_xmit_WORD_LEN8'
+Information: Added key list 'DesignWare' to design 'u_xmit_WORD_LEN8'. (DDB-72)
+ Implement Synthetic for 'u_xmit_WORD_LEN8'.
+  Processing 'prll_bs_ntrfs_riscv_3_65_1_7'
+  Processing 'prll_d_reg_bits65_15'
+  Processing 'CSK_sin_mux'
+  Processing 'csk_bloque_7'
+  Processing 'latchtriestado_0'
+  Processing 'tri_buf_6'
+  Processing 'tristategate_0'
+  Processing 'spi'
+Information: Added key list 'DesignWare' to design 'spi'. (DDB-72)
+Information: The register 'state_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'state_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'state_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'state_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'state_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: In design 'spi', the register 'rx_shiftreg_reg[31]' is removed because it is merged to 'data_read_reg[31]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[30]' is removed because it is merged to 'data_read_reg[30]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[29]' is removed because it is merged to 'data_read_reg[29]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[28]' is removed because it is merged to 'data_read_reg[28]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[27]' is removed because it is merged to 'data_read_reg[27]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[26]' is removed because it is merged to 'data_read_reg[26]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[25]' is removed because it is merged to 'data_read_reg[25]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[24]' is removed because it is merged to 'data_read_reg[24]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[23]' is removed because it is merged to 'data_read_reg[23]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[22]' is removed because it is merged to 'data_read_reg[22]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[21]' is removed because it is merged to 'data_read_reg[21]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[20]' is removed because it is merged to 'data_read_reg[20]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[19]' is removed because it is merged to 'data_read_reg[19]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[18]' is removed because it is merged to 'data_read_reg[18]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[17]' is removed because it is merged to 'data_read_reg[17]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[16]' is removed because it is merged to 'data_read_reg[16]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[15]' is removed because it is merged to 'data_read_reg[15]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[14]' is removed because it is merged to 'data_read_reg[14]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[13]' is removed because it is merged to 'data_read_reg[13]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[12]' is removed because it is merged to 'data_read_reg[12]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[11]' is removed because it is merged to 'data_read_reg[11]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[10]' is removed because it is merged to 'data_read_reg[10]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[9]' is removed because it is merged to 'data_read_reg[9]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[8]' is removed because it is merged to 'data_read_reg[8]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[7]' is removed because it is merged to 'data_read_reg[7]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[6]' is removed because it is merged to 'data_read_reg[6]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[5]' is removed because it is merged to 'data_read_reg[5]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[4]' is removed because it is merged to 'data_read_reg[4]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[3]' is removed because it is merged to 'data_read_reg[3]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[2]' is removed because it is merged to 'data_read_reg[2]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[1]' is removed because it is merged to 'data_read_reg[1]'. (OPT-1215)
+Information: In design 'spi', the register 'rx_shiftreg_reg[0]' is removed because it is merged to 'data_read_reg[0]'. (OPT-1215)
+ Implement Synthetic for 'spi'.
+  Processing 'log_ftu_pos_array8_data_fifo64_byte_out8'
+Information: Added key list 'DesignWare' to design 'log_ftu_pos_array8_data_fifo64_byte_out8'. (DDB-72)
+ Implement Synthetic for 'log_ftu_pos_array8_data_fifo64_byte_out8'.
+  Processing 'prll_bs_ntrfs_riscv_3_65_0_7'
+  Processing 'prll_d_reg_bits65_10'
+  Processing 'Decodificador_width32_1'
+ Implement Synthetic for 'Decodificador_width32_1'.
+Information: Added key list 'DesignWare' to design 'Decodificador_width32_1'. (DDB-72)
+  Processing 'detector_flanco'
+  Processing 'dff_async_rst_86'
+Information: The register 'q_reg' is a constant and will be removed. (OPT-1206)
+  Processing 'tristategate_251'
+  Processing 'Barrel_Shifter'
+Information: Added key list 'DesignWare' to design 'Barrel_Shifter'. (DDB-72)
+ Implement Synthetic for 'Barrel_Shifter'.
+  Processing 'topcore_tecriscv'
+  Processing 'log_utf_pos_array8'
+Information: Added key list 'DesignWare' to design 'log_utf_pos_array8'. (DDB-72)
+ Implement Synthetic for 'log_utf_pos_array8'.
+  Processing 'prll_rd_st_mchn_0'
+ Implement Synthetic for 'prll_rd_st_mchn_0'.
+  Processing 'prll_intrfs_cntrl_riscv_1_7_3'
+  Processing 'Counter_arb_mx_cnt3_0'
+Information: Added key list 'DesignWare' to design 'Counter_arb_mx_cnt3_0'. (DDB-72)
+  Processing 'dff_async_rst_ena_0'
+  Processing 'dff_async_rst_3'
+  Processing 'mbc_max13'
+ Implement Synthetic for 'mbc_max13'.
+  Processing 'fifo_flops_no_full_depth2_bits65_1'
+Information: Added key list 'DesignWare' to design 'fifo_flops_no_full_depth2_bits65_1'. (DDB-72)
+  Processing 'Banco_registros_latches'
+  Processing 'prll_d_reg_bits65_1'
+  Processing 'prll_intrfs_cntrl_riscv_0_7_3'
+  Processing 'prll_d_rega_bits8_0'
+  Processing 'dff_async_rsta_0'
+  Processing 'latch_tri_rst0_Hard_0'
+  Processing 'ALU_2_bits_size32_cntrl_size4'
+Information: Added key list 'DesignWare' to design 'ALU_2_bits_size32_cntrl_size4'. (DDB-72)
+ Implement Synthetic for 'ALU_2_bits_size32_cntrl_size4'.
+  Processing 'uart'
+  Processing 'prll_wt_st_mchn_0'
+ Implement Synthetic for 'prll_wt_st_mchn_0'.
+  Processing 'Decodificador_width32_0'
+ Implement Synthetic for 'Decodificador_width32_0'.
+Information: Added key list 'DesignWare' to design 'Decodificador_width32_0'. (DDB-72)
+  Processing 'Decodificador_width12'
+ Implement Synthetic for 'Decodificador_width12'.
+Information: Added key list 'DesignWare' to design 'Decodificador_width12'. (DDB-72)
+  Processing 'dff_async_rst_704'
+  Processing 'top_CPU_riscv'
+ Implement Synthetic for 'top_CPU_riscv'.
+  Processing 'u_rec_WORD_LEN_PLUS19'
+Information: Added key list 'DesignWare' to design 'u_rec_WORD_LEN_PLUS19'. (DDB-72)
+ Implement Synthetic for 'u_rec_WORD_LEN_PLUS19'.
+  Processing 'latch_entrada'
+  Processing 'uart_to_fifo_reg_pos_array8_data_fifo64_byte_out8'
+  Processing 'csk_bloque_1'
+  Processing 'prll_d_reg_ena_bits8_0'
+  Processing 'dff_async_rst_0'
+  Processing 'fifo_flops_no_full_depth3_bits65_0'
+Information: Added key list 'DesignWare' to design 'fifo_flops_no_full_depth3_bits65_0'. (DDB-72)
+  Processing 'fifo_flops_no_full_depth3_bits65_1'
+Information: Added key list 'DesignWare' to design 'fifo_flops_no_full_depth3_bits65_1'. (DDB-72)
+  Processing 'fifo_flops_no_full_depth2_bits65_3'
+Information: Added key list 'DesignWare' to design 'fifo_flops_no_full_depth2_bits65_3'. (DDB-72)
+  Processing 'Timer'
+ Implement Synthetic for 'Timer'.
+  Processing 'baud_XTAL_CLK20000000_BAUD19200_CLK_DIV32_CW9'
+ Implement Synthetic for 'baud_XTAL_CLK20000000_BAUD19200_CLK_DIV32_CW9'.
+  Processing 'prll_intrfs_cntrl_riscv_2_7_3'
+  Processing 'csk_bloque_0'
+  Processing 'Arbiter_st_Mchn_0'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[25]/C TOP/temporizador_top/count_reg[25]/Q TOP/gte_x_1/*cell*40158/A TOP/gte_x_1/*cell*40158/Q TOP/gte_x_1/*cell*40152/A TOP/gte_x_1/*cell*40152/Q TOP/gte_x_1/*cell*40139/A TOP/gte_x_1/*cell*40139/Q TOP/gte_x_1/*cell*40065/A TOP/gte_x_1/*cell*40065/Q TOP/U414/C TOP/U414/Q 
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[24]/C TOP/temporizador_top/count_reg[24]/Q TOP/gte_x_1/*cell*40158/C TOP/gte_x_1/*cell*40158/Q TOP/gte_x_1/*cell*40152/A TOP/gte_x_1/*cell*40152/Q TOP/gte_x_1/*cell*40139/A TOP/gte_x_1/*cell*40139/Q TOP/gte_x_1/*cell*40065/A TOP/gte_x_1/*cell*40065/Q TOP/U414/C TOP/U414/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/U414'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Information: The register 'TOP/Bus/spi_bs_ntrfs/D_reg_rd/bit_[55].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/spi_bs_ntrfs/D_reg_rd/bit_[56].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/spi_bs_ntrfs/D_reg_rd/bit_[60].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/spi_bs_ntrfs/D_reg_rd/bit_[61].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[0]._dp2_.D_reg/bit_[62].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[0]._dp2_.D_reg/bit_[63].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[0]._dp2_.D_reg/bit_[64].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[1]._dp3_.D_reg/bit_[62].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[1]._dp3_.D_reg/bit_[63].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[1]._dp3_.D_reg/bit_[64].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[2]._dp3_.D_reg/bit_[62].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[2]._dp3_.D_reg/bit_[63].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_mbc/_dp_[2]._dp3_.D_reg/bit_[64].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_spi/_dp_[0]._dp2_.D_reg/bit_[55].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_spi/_dp_[0]._dp2_.D_reg/bit_[56].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_spi/_dp_[0]._dp2_.D_reg/bit_[60].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_spi/_dp_[0]._dp2_.D_reg/bit_[61].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_spi/_dp_[1]._dp3_.D_reg/bit_[55].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_spi/_dp_[1]._dp3_.D_reg/bit_[56].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_spi/_dp_[1]._dp3_.D_reg/bit_[60].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_spi/_dp_[1]._dp3_.D_reg/bit_[61].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_uart/_dp_[0]._dp2_.D_reg/bit_[64].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: The register 'TOP/Bus/fifo_out_uart/_dp_[1]._dp3_.D_reg/bit_[64].prll_regstr_/q_reg' will be removed. (OPT-1207)
+Information: Removing unused design 'dff_async_rst_86'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_216'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_151'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_479'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_480'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_484'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_485'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_414'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_415'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_419'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_420'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_675'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_671'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_674'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_866'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_867'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_868'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_801'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_802'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_803'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_736'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_737'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_738'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1131'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1132'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1136'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1137'. (OPT-1055)
+Information: The register 'TOP/Bus/fifo_in_uart/_dp_[1]._dp3_.D_reg/bit_[64].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_mbc/_dp_[1]._dp3_.D_reg/bit_[60].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_mbc/_dp_[1]._dp3_.D_reg/bit_[61].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_mbc/_dp_[1]._dp3_.D_reg/bit_[64].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_mbc/_dp_[2]._dp3_.D_reg/bit_[60].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_mbc/_dp_[2]._dp3_.D_reg/bit_[61].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_mbc/_dp_[2]._dp3_.D_reg/bit_[64].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_spi/_dp_[0]._dp2_.D_reg/bit_[61].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_spi/_dp_[0]._dp2_.D_reg/bit_[62].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_spi/_dp_[0]._dp2_.D_reg/bit_[63].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_spi/_dp_[0]._dp2_.D_reg/bit_[64].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_spi/_dp_[1]._dp3_.D_reg/bit_[61].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_spi/_dp_[1]._dp3_.D_reg/bit_[62].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_spi/_dp_[1]._dp3_.D_reg/bit_[63].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_spi/_dp_[1]._dp3_.D_reg/bit_[64].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/spi_bs_ntrfs/D_reg_wt/bit_[61].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/spi_bs_ntrfs/D_reg_wt/bit_[62].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/spi_bs_ntrfs/D_reg_wt/bit_[63].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/spi_bs_ntrfs/D_reg_wt/bit_[64].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/uart_bs_ntrfs/D_reg_wt/bit_[64].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/mbc_bs_ntrfs/D_reg_wt/bit_[60].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/mbc_bs_ntrfs/D_reg_wt/bit_[61].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/mbc_bs_ntrfs/D_reg_wt/bit_[64].prll_regstr_/q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'SPI/spi1/conf_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: Removing unused design 'dff_async_rst_21'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_346'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_347'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_348'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_349'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_281'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_282'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_283'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_284'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_606'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_609'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_610'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_541'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_544'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_545'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_932'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1063'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1064'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1065'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1066'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1194'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1197'. (OPT-1055)
+Information: Removing unused design 'dff_async_rst_1198'. (OPT-1055)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: The register 'SPI/spi1/conf_reg[4]' will be removed. (OPT-1207)
+Information: Added key list 'DesignWare' to design 'top_CPU_riscv'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'top_spi'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'Timer'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'baud_XTAL_CLK20000000_BAUD19200_CLK_DIV32_CW9'. (DDB-72)
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[25]/C TOP/temporizador_top/count_reg[25]/Q TOP/*cell*40158/A TOP/*cell*40158/Q TOP/*cell*40152/A TOP/*cell*40152/Q TOP/*cell*40139/A TOP/*cell*40139/Q TOP/*cell*40065/A TOP/*cell*40065/Q TOP/U414/C TOP/U414/Q 
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[24]/C TOP/temporizador_top/count_reg[24]/Q TOP/*cell*40158/C TOP/*cell*40158/Q TOP/*cell*40152/A TOP/*cell*40152/Q TOP/*cell*40139/A TOP/*cell*40139/Q TOP/*cell*40065/A TOP/*cell*40065/Q TOP/U414/C TOP/U414/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/U414'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+Information: Added key list 'DesignWare' to design 'csk_bloque_7'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'csk_bloque_6'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'csk_bloque_0'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'csk_bloque_1'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'csk_bloque_2'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'csk_bloque_3'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'csk_bloque_4'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'csk_bloque_5'. (DDB-72)
+Information: The register 'TOP/Bus/fifo_out_mbc/count_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'TOP/Bus/fifo_in_mbc/count_reg[2]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Global Optimizations
+  ------------------------------
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:11  867742.7      2.13      64.5       0.4                           305541.6875
+    0:01:13  869117.9      1.12      34.6       0.4                           305694.9375
+    0:01:13  869117.9      1.12      34.6       0.4                           305694.9375
+    0:01:15  870156.5      0.77      24.0       0.4                           305827.3750
+    0:01:15  870156.5      0.77      24.0       0.4                           305827.3750
+    0:01:24  872505.4      0.30       9.3       0.2                           306156.8750
+    0:01:24  872505.4      0.30       9.3       0.2                           306156.8750
+    0:01:24  872505.4      0.30       9.3       0.2                           306156.8750
+    0:01:32  870681.5      0.30       9.3       0.2                           306155.2812
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/db/QTM/ucu_anlg.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db'
+  Loading design 'topcore_tecriscv'
+Warning: The trip points for the library named XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C differ from those in the library named D_CELLS_HDLL_LPMOS_typ_1_80V_25C. (TIM-164)
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[31]/C TOP/temporizador_top/count_reg[31]/Q TOP/U198/A TOP/U198/Q TOP/U293/B TOP/U293/Q TOP/U414/C TOP/U414/Q 
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[26]/C TOP/temporizador_top/count_reg[26]/Q TOP/U199/A TOP/U199/Q TOP/U201/B TOP/U201/Q TOP/U290/A TOP/U290/Q TOP/U293/C TOP/U293/Q TOP/U414/C TOP/U414/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/U414'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer MET1 : 0.00025 0.00019 (RCEX-011)
+Information: Library Derived Res for layer MET1 : 0.00047 0.00029 (RCEX-011)
+Information: Library Derived Cap for layer MET2 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET2 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer MET3 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET3 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer MET4 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET4 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer METTP : 0.00023 0.00017 (RCEX-011)
+Information: Library Derived Res for layer METTP : 0.00014 6.9e-05 (RCEX-011)
+Information: Library Derived Cap for layer METTPL : 0.00039 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METTPL : 4.4e-06 2.6e-06 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00025 0.00019 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00034 0.0002 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00032 0.00022 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00027 0.00016 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.0051 0.0023 (RCEX-011)
+
+...25%...50%...75%...100% done.
+
+
+ Collecting Buffer Trees ... Found 263
+
+ Processing Buffer Trees ... 
+
+    [27]  10% ...
+    [54]  20% ...
+    [81]  30% ...
+    [108]  40% ...
+    [135]  50% ...
+    [162]  60% ...
+    [189]  70% ...
+    [216]  80% ...
+    [243]  90% ...
+    [263] 100% Done ...
+
+
+Information: Automatic high-fanout synthesis deletes 6536 cells. (HFS-802)
+Information: Automatic high-fanout synthesis adds 2000 new cells. (PSYN-864)
+
+
+
+  Beginning Timing Optimizations
+  ------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:56  837500.1      1.78      54.9      95.0                           302896.7500
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+    0:02:00  837309.0      1.78      54.8      74.6                           302793.2500
+    0:02:02  833036.5      1.65      50.7      75.3                           302043.1875
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ------------------------------------
+    0:02:04  833036.6      1.65      50.7      75.2                           302042.9688
+    0:02:06  833129.4      1.12      33.0      75.2                           302054.9375
+    0:02:06  833129.4      1.12      33.0      75.2                           302054.9375
+    0:02:09  834323.6      0.54      15.4      77.6                           302260.2188
+    0:02:09  834323.6      0.54      15.4      77.6                           302260.2188
+    0:02:10  834321.1      0.50      15.0      77.6                           302257.6562
+    0:02:10  834321.1      0.50      15.0      77.6                           302257.6562
+    0:02:12  834717.5      0.33       9.6      78.2                           302318.5938
+    0:02:12  834717.5      0.33       9.6      78.2                           302318.5938
+    0:02:12  834752.6      0.33       9.6      78.2                           302325.4688
+    0:02:12  834752.6      0.33       9.6      78.2                           302325.4688
+    0:02:14  835144.0      0.36       9.9      78.2                           302380.9062
+    0:02:14  835144.0      0.36       9.9      78.2                           302380.9062
+    0:02:14  835144.0      0.35       9.9      78.2                           302380.9062
+    0:02:15  835171.6      0.35       9.9      78.2                           302384.5625
+    0:02:15  835171.6      0.35       9.9      78.2                           302384.5625
+    0:02:15  835171.6      0.35       9.9      78.2                           302384.5625
+    0:02:17  833957.3      0.34       9.7      78.2                           302200.9062
+
+
+  Beginning High Effort Optimization Phase
+  ----------------------------------------
+
+
+  Beginning Timing Optimization
+  -----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:17  833957.3      0.34       9.7      78.2                           302200.9062
+    0:02:17  833957.3      0.34       9.7      78.2                           302200.9062
+    0:02:20  833582.1      0.35       9.5       0.1                           301832.2500
+    0:02:21  833582.1      0.35       9.5       0.1                           301832.2500
+    0:02:21  833679.9      0.31       9.1       0.1                           301844.8125
+    0:02:21  833679.9      0.31       9.1       0.1                           301844.8125
+    0:02:22  833930.8      0.29       8.5       0.1                           301877.0000
+
+
+  High Effort Optimization Phase Complete
+  ---------------------------------------
+
+Information: State dependent leakage is now switched from off to on.
+    0:02:27  836005.6      0.28       8.4       0.1                           492397.5000
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db'
+  Loading target library 'D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C'
+  Loading target library 'D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C'
+  Loading target library 'IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C'
+  Loading target library 'XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C'
+1

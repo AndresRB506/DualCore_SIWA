@@ -1,0 +1,13 @@
+#LEF layer name   Milkyway Layer number
+MET1	16
+VIA1	17
+MET2	18
+VIA2	27
+MET3	28
+VIA3	29
+MET4	31
+METTP	33
+VIATP	51
+METTPL	35
+VIATPL	36
+

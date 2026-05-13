@@ -1,0 +1,36 @@
+##############################################################################################
+#########               Primera colocacion  						######### 
+########       Se definen areas de voltaje    ########################
+##############################################################################################
+## Se debe bloquear el ruteo sobre la SRAM, y se genera una zona de exclusion a su alrededr
+## Leer manual de la XSPRAMLP_2048X32_M8P para detalles
+## HTTML en file:///mnt/vol_NFS_Zener/WD_ESPEC/achacon/Herramientas/X-FAB/XH018/xh018/spram/XSPRAMBLP_256X32_M8P/v4_0_1/doc/XSPRAMBLP_256X32_M8P.html#TIMING_PARAMETERS
+##
+#Vamos a crear las areas de voltaje 
+#Tratando de hacer coincidir la PD_TOP con la PD_CORE
+
+#Evitamos que se pongan celdas en la zona de MultiVoltaje
+#mv_no_cells_at_default_va  true
+#create_voltage_area   -power_domain PD_TOP
+# Este es BBOX reportado por la creacion: Voltage area geometry : {189.420 188.245} {1497.020 1330.645}
+
+get_attribute [get_core_area] bbox
+get_attribute [get_die_area] bbox
+## BBOX Area reportada para el CORE {189.420 188.245} {1497.020 1330.645}
+## BBOX Area reportada para el DIE {0.000 0.000} {1520.000 1520.000}
+
+#create_voltage_area   -coordinate {182.280 181.800  1497.720 592.12  926.680 592.12   1497.720 1337.640  } -is_fixed -power_domain top_riscv_soc/PD_CORE -guard_band_x $CELL_HEIGHT -guard_band_y $CELL_HEIGHT -target_utilization 0.80000 -cycle_color
+
+#create_voltage_area   -coordinate {182.280 181.800  1497.720 589.480 926.680 589.480   1497.720 1337.640  } -is_fixed -power_domain top_riscv_soc/PD_CORE -guard_band_x 1.0 -guard_band_y 1.0 -target_utilization 0.80000 -cycle_color
+
+# 166 CELL_HEIGHTS
+create_voltage_area   -coordinate {189.420 188.245  1497.020 582.485 933.1 582.485   1497.020 1330.645  } -is_fixed -power_domain top_riscv_soc/PD_CORE -guard_band_x 1.0 -guard_band_y 1.0 -target_utilization 0.80000 -cycle_color
+
+#create_voltage_area   -coordinate {182.280 593.12 906.68 1337.640 } -is_fixed -guard_band_x $CELL_HEIGHT  -guard_band_y $CELL_HEIGHT -power_domain top_riscv_soc/TOP/PD_SRAM -target_utilization 0.90000 -cycle_color
+#create_voltage_area   -coordinate {182.280 593.12 906.68 1337.640 } -is_fixed -guard_band_x 1.0  -guard_band_y 1.0 -power_domain top_riscv_soc/TOP/PD_SRAM -target_utilization 0.90000 -cycle_color
+
+create_voltage_area   -coordinate {189.420 584.485 913.1 1330.645 } -is_fixed -guard_band_x 1.0  -guard_band_y 1.0 -power_domain top_riscv_soc/TOP/PD_SRAM -target_utilization 0.90000 -cycle_color
+
+#create_voltage_area   -coordinate {   0.000 0.000   1353.000 167.000  0.000 167.000   167.000 1353.000  0.000 1353.000   1338.000 1519.995  } -is_fixed -power_domain pad_ring_inst/PD_PADS -target_utilization 0.80000 -cycle_color
+
+create_voltage_area   -coordinate {   0.000 0.000   1353.000 167.000  0.000 167.000   167.000 1353.000  0.000 1353.000   1338.000 1520.0  } -is_fixed -power_domain pad_ring_inst/PD_PADS -target_utilization 0.80000 -cycle_color

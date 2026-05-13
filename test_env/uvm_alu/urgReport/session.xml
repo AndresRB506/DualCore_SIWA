@@ -1,0 +1,36 @@
+<session version="1.1" release="M-2017.03-SP2-5" timestp="2018-11-10 20:54:11 GMT">
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="346/350" />
+    <metric name="Group" value="99.9872%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="tbench_top.intf::ALU">
+      <metric name="Group" value="99.9872%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="0/0" />
+      <score name="Score" value="0.00" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="0/0" />
+      <score name="Score" value="0.00" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="0/0" />
+      <score name="Score" value="-nan" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>

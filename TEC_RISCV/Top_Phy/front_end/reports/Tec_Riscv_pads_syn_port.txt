@@ -1,0 +1,151 @@
+ 
+****************************************
+Report : port
+Design : topcore_tecriscv
+Version: N-2017.09-SP4
+Date   : Thu Oct 11 14:47:46 2018
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+MISO           in      0.0000   0.0000    1.43    0.10   --         
+RX_UART        in      0.0000   0.0000    1.43    0.10   --         
+Reg_GPIO_int[0]
+               in      0.0000   0.0000    1.43    0.10   --         
+Reg_GPIO_int[1]
+               in      0.0000   0.0000    1.43    0.10   --         
+Reg_GPIO_int[2]
+               in      0.0000   0.0000    1.43    0.10   --         
+Reg_GPIO_int[3]
+               in      0.0000   0.0000    1.43    0.10   --         
+Reg_GPIO_int[4]
+               in      0.0000   0.0000    1.43    0.10   --         
+Reg_GPIO_int[5]
+               in      0.0000   0.0000    1.43    0.10   --         
+Reg_GPIO_int[6]
+               in      0.0000   0.0000    1.43    0.10   --         
+Reg_GPIO_int[7]
+               in      0.0000   0.0000    1.43    0.10   --         
+clk            in      0.0000   0.0000   --      --      --         d
+maip           in      0.0000   0.0000    1.43    0.10   --         
+reset          in      0.0000   0.0000    1.43    0.10   --         
+IS_Config[0]   out     0.0243   0.0000   --      --      --         
+IS_Config[1]   out     0.0243   0.0000   --      --      --         
+IS_Config[2]   out     0.0243   0.0000   --      --      --         
+IS_Config[3]   out     0.0243   0.0000   --      --      --         
+IS_Config[4]   out     0.0243   0.0000   --      --      --         
+IS_Config[5]   out     0.0243   0.0000   --      --      --         
+IS_Config[6]   out     0.0243   0.0000   --      --      --         
+IS_Config[7]   out     0.0243   0.0000   --      --      --         
+IS_Config[8]   out     0.0243   0.0000   --      --      --         
+IS_Config[9]   out     0.0243   0.0000   --      --      --         
+IS_Config[10]  out     0.0243   0.0000   --      --      --         
+IS_Config[11]  out     0.0243   0.0000   --      --      --         
+IS_Config[12]  out     0.0243   0.0000   --      --      --         
+IS_Config[13]  out     0.0243   0.0000   --      --      --         
+IS_Config[14]  out     0.0243   0.0000   --      --      --         
+IS_Config[15]  out     0.0243   0.0000   --      --      --         
+IS_Config[16]  out     0.0243   0.0000   --      --      --         
+IS_Config[17]  out     0.0243   0.0000   --      --      --         
+IS_Config[18]  out     0.0243   0.0000   --      --      --         
+IS_Config[19]  out     0.0243   0.0000   --      --      --         
+IS_Config[20]  out     0.0243   0.0000   --      --      --         
+IS_Config[21]  out     0.0243   0.0000   --      --      --         
+IS_Config[22]  out     0.0243   0.0000   --      --      --         
+IS_Config[23]  out     0.0243   0.0000   --      --      --         
+IS_Config[24]  out     0.0243   0.0000   --      --      --         
+IS_Config[25]  out     0.0243   0.0000   --      --      --         
+IS_Config[26]  out     0.0243   0.0000   --      --      --         
+IS_Config[27]  out     0.0243   0.0000   --      --      --         
+IS_Config[28]  out     0.0243   0.0000   --      --      --         
+IS_Config[29]  out     0.0243   0.0000   --      --      --         
+IS_Config[30]  out     0.0243   0.0000   --      --      --         
+IS_Config[31]  out     0.0243   0.0000   --      --      --         
+IS_Trigger[0]  out     0.0243   0.0000   --      --      --         
+IS_Trigger[1]  out     0.0243   0.0000   --      --      --         
+IS_Trigger[2]  out     0.0243   0.0000   --      --      --         
+IS_Trigger[3]  out     0.0243   0.0000   --      --      --         
+IS_Val[0]      out     0.0243   0.0000   --      --      --         
+IS_Val[1]      out     0.0243   0.0000   --      --      --         
+IS_Val[2]      out     0.0243   0.0000   --      --      --         
+IS_Val[3]      out     0.0243   0.0000   --      --      --         
+IS_Val[4]      out     0.0243   0.0000   --      --      --         
+IS_Val[5]      out     0.0243   0.0000   --      --      --         
+IS_Val[6]      out     0.0243   0.0000   --      --      --         
+IS_Val[7]      out     0.0243   0.0000   --      --      --         
+IS_Val[8]      out     0.0243   0.0000   --      --      --         
+IS_Val[9]      out     0.0243   0.0000   --      --      --         
+IS_Val[10]     out     0.0243   0.0000   --      --      --         
+IS_Val[11]     out     0.0243   0.0000   --      --      --         
+IS_Val[12]     out     0.0243   0.0000   --      --      --         
+IS_Val[13]     out     0.0243   0.0000   --      --      --         
+IS_Val[14]     out     0.0243   0.0000   --      --      --         
+IS_Val[15]     out     0.0243   0.0000   --      --      --         
+IS_Val[16]     out     0.0243   0.0000   --      --      --         
+IS_Val[17]     out     0.0243   0.0000   --      --      --         
+IS_Val[18]     out     0.0243   0.0000   --      --      --         
+IS_Val[19]     out     0.0243   0.0000   --      --      --         
+IS_Val[20]     out     0.0243   0.0000   --      --      --         
+IS_Val[21]     out     0.0243   0.0000   --      --      --         
+IS_Val[22]     out     0.0243   0.0000   --      --      --         
+IS_Val[23]     out     0.0243   0.0000   --      --      --         
+IS_Val[24]     out     0.0243   0.0000   --      --      --         
+IS_Val[25]     out     0.0243   0.0000   --      --      --         
+IS_Val[26]     out     0.0243   0.0000   --      --      --         
+IS_Val[27]     out     0.0243   0.0000   --      --      --         
+IS_Val[28]     out     0.0243   0.0000   --      --      --         
+IS_Val[29]     out     0.0243   0.0000   --      --      --         
+IS_Val[30]     out     0.0243   0.0000   --      --      --         
+IS_Val[31]     out     0.0243   0.0000   --      --      --         
+MOSI           out     0.0243   0.0000   --      --      --         
+Reg_GPIO_en[0] out     0.0243   0.0000   --      --      --         
+Reg_GPIO_en[1] out     0.0243   0.0000   --      --      --         
+Reg_GPIO_en[2] out     0.0243   0.0000   --      --      --         
+Reg_GPIO_en[3] out     0.0243   0.0000   --      --      --         
+Reg_GPIO_en[4] out     0.0243   0.0000   --      --      --         
+Reg_GPIO_en[5] out     0.0243   0.0000   --      --      --         
+Reg_GPIO_en[6] out     0.0243   0.0000   --      --      --         
+Reg_GPIO_en[7] out     0.0243   0.0000   --      --      --         
+Reg_GPIO_out[0]
+               out     0.0243   0.0000   --      --      --         
+Reg_GPIO_out[1]
+               out     0.0243   0.0000   --      --      --         
+Reg_GPIO_out[2]
+               out     0.0243   0.0000   --      --      --         
+Reg_GPIO_out[3]
+               out     0.0243   0.0000   --      --      --         
+Reg_GPIO_out[4]
+               out     0.0243   0.0000   --      --      --         
+Reg_GPIO_out[5]
+               out     0.0243   0.0000   --      --      --         
+Reg_GPIO_out[6]
+               out     0.0243   0.0000   --      --      --         
+Reg_GPIO_out[7]
+               out     0.0243   0.0000   --      --      --         
+SCLK           out     0.0243   0.0000   --      --      --         
+SCS            out     0.0243   0.0000   --      --      --         
+TX_UART        out     0.0243   0.0000   --      --      --         
+full_range_level_shifter[0]
+               out     0.0243   0.0000   --      --      --         
+full_range_level_shifter[1]
+               out     0.0243   0.0000   --      --      --         
+full_range_level_shifter[2]
+               out     0.0243   0.0000   --      --      --         
+full_range_level_shifter[3]
+               out     0.0243   0.0000   --      --      --         
+full_range_level_shifter[4]
+               out     0.0243   0.0000   --      --      --         
+full_range_level_shifter[5]
+               out     0.0243   0.0000   --      --      --         
+full_range_level_shifter[6]
+               out     0.0243   0.0000   --      --      --         
+full_range_level_shifter[7]
+               out     0.0243   0.0000   --      --      --         
+
+1

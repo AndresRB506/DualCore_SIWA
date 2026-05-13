@@ -1,0 +1,19 @@
+source ../synopsys_tools.sh;
+rm -rfv libs/Tec_Riscv_pads.mw;
+rm -rfv reports/*;
+rm -rfv command.log;
+rm -rfv Tec_Riscv_pads_phy.gds;
+rm -rfv pna_output;
+rm -rfv buffer.gcts;
+rm -rvf snapshot;
+rm -rvf net.acts;
+rm -rvf net.gcts;
+rm -rvf log_icc_shell.log;
+rm -rvf icc_gui.output;
+rm -rvf icc_output.txt;
+rm -rvf top_riscv_tec_pads_port_map*;
+rm -rvf legalizer_debug_plots;
+rm -rfv db/Tec_Riscv_pads_phy*;
+mkdir libs
+mkdir reports
+icc_shell -f scripts/run_all.tcl -output_log_file log_icc_shell.log;

@@ -1,0 +1,215 @@
+Found antenna rule mode 1, diode mode 4:
+	metal ratio 0, cut ratio 20,metal gate diffusion length based ratio 0 cut gate length based ratio 0	metal pratio 0, cut pratio 0, metal gate diffusion length based pratio 0, cut gate diffusion length based pratio 0	metal nratio 0, cut nratio 0, metal nratio 0, cut nratio 0
+	layer VIA1: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09	layer VIA1: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer VIA2: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09	layer VIA2: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer VIA3: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09	layer VIA3: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer VIATP: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09	layer VIATP: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer VIATPL: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09	layer VIATPL: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+Found antenna rule mode 4, diode mode 4:
+	metal ratio 400, cut ratio 0,metal gate diffusion length based ratio 0 cut gate length based ratio 0	metal pratio 0, cut pratio 0, metal gate diffusion length based pratio 0, cut gate diffusion length based pratio 0	metal nratio 0, cut nratio 0, metal nratio 0, cut nratio 0
+	layer MET1: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09	layer MET1: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer MET2: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09	layer MET2: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer MET3: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09	layer MET3: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer MET4: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09	layer MET4: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer METTP: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09	layer METTP: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+	layer METTPL: max ratio 200 max pratio 2.14748e+09 max nratio 2.14748e+09	layer METTPL: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+Cell Min-Routing-Layer = MET1
+Cell Max-Routing-Layer = METTPL
+Information: Multiple default contact VIA12D_A found for layer VIA1. (ZRT-021)
+Warning: Ignore 22 top cell ports with no pins. (ZRT-027)
+Found 3 voltage-areas.
+Warning: Conflicting voltage-areas for instance top_riscv_soc/TOP/Memoria_8K. (ZRT-046)
+Via on layer (VIATP) needs more than one tracks
+Warning: Layer MET4 pitch 0.560 may be too small: wire/via-down 0.560, wire/via-up 0.610. (ZRT-026)
+Via on layer (VIATPL) needs more than one tracks
+Warning: Layer METTP pitch 1.120 may be too small: wire/via-down 0.950, wire/via-up 1.430. (ZRT-026)
+Transition layer name: MET4(3)
+Transition layer name: METTP(4)
+Hier-ant-prop: new = 12, old = 0
+
+
+Start checking for open nets ... 
+
+Total number of nets = 9164, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 9164 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used   57  Alloctr   58  Proc 2923 
+Printing options for 'set_route_zrt_common_options'
+-dbin_list_of_nets                                      :	 {}                  
+-extraction_mode                                        :	 parallel            
+-read_user_metal_blockage_layer                         :	 true                
+-verbose_level                                          :	 0                   
+
+Printing options for 'set_route_zrt_detail_options'
+-default_gate_size                                      :	 0.100000            
+-drc_convergence_effort_level                           :	 high                
+
+*****Start reporting antenna related parameters*****
+  Antenna/diode mode:
+    Antenna mode 1; diode mode 4
+      Metal lay (MET1)0; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000
+      Cut lay (VIA1)1; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Metal lay (MET2)1; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000
+      Cut lay (VIA2)2; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Metal lay (MET3)2; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000
+      Cut lay (VIA3)3; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Metal lay (MET4)3; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000
+      Cut lay (VIATP)4; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Metal lay (METTP)4; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000
+      Cut lay (VIATPL)5; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Metal lay (METTPL)5; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000
+    Antenna mode 4; diode mode 4
+      Metal lay (MET1)0; maxRatio 400.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Cut lay (VIA1)1; maxRatio 2147483647.000 maxPRatio 2147483647.000 maxNRatio 2147483647.000
+      Metal lay (MET2)1; maxRatio 400.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Cut lay (VIA2)2; maxRatio 2147483647.000 maxPRatio 2147483647.000 maxNRatio 2147483647.000
+      Metal lay (MET3)2; maxRatio 400.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Cut lay (VIA3)3; maxRatio 2147483647.000 maxPRatio 2147483647.000 maxNRatio 2147483647.000
+      Metal lay (MET4)3; maxRatio 400.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Cut lay (VIATP)4; maxRatio 2147483647.000 maxPRatio 2147483647.000 maxNRatio 2147483647.000
+      Metal lay (METTP)4; maxRatio 400.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+      Cut lay (VIATPL)5; maxRatio 2147483647.000 maxPRatio 2147483647.000 maxNRatio 2147483647.000
+      Metal lay (METTPL)5; maxRatio 200.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000000.000 0.000)
+  Accumulate from metal to cut == false
+  Accumulate from cut to metal == false
+  Top lay antenna ratio fix threshold == -1
+  Antenna max pin count threshold == -1
+  Check PG net == false
+  MergeGate == true
+  Break antenna to port mode == float
+  Break antenna to macro pin mode == normal
+*****End reporting antenna related parameters*****
+
+Begin full DRC check ...
+
+Information: Using 8 threads for routing. (ZRT-444)
+Checked	4/81 Partitions, Violations =	0
+Checked	6/81 Partitions, Violations =	0
+Checked	7/81 Partitions, Violations =	0
+Checked	9/81 Partitions, Violations =	0
+Checked	13/81 Partitions, Violations =	0
+Checked	17/81 Partitions, Violations =	0
+Checked	18/81 Partitions, Violations =	0
+Checked	21/81 Partitions, Violations =	0
+Checked	24/81 Partitions, Violations =	0
+Checked	27/81 Partitions, Violations =	0
+Checked	30/81 Partitions, Violations =	0
+Checked	33/81 Partitions, Violations =	0
+Checked	41/81 Partitions, Violations =	0
+Checked	42/81 Partitions, Violations =	0
+Checked	44/81 Partitions, Violations =	0
+Checked	45/81 Partitions, Violations =	0
+Checked	48/81 Partitions, Violations =	0
+Checked	51/81 Partitions, Violations =	0
+Checked	54/81 Partitions, Violations =	99
+Checked	57/81 Partitions, Violations =	306
+Checked	62/81 Partitions, Violations =	306
+Checked	63/81 Partitions, Violations =	306
+Checked	66/81 Partitions, Violations =	306
+Checked	69/81 Partitions, Violations =	310
+Checked	72/81 Partitions, Violations =	563
+Checked	75/81 Partitions, Violations =	779
+Checked	78/81 Partitions, Violations =	779
+Checked	81/81 Partitions, Violations =	779
+[DRC CHECK] Elapsed real time: 0:00:01 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used   72  Alloctr   74  Proc 2923 
+Start net based rule analysis
+Found 0 antenna instance ports
+End net based rule analysis
+[Antenna analysis] Elapsed real time: 0:00:00 
+[Antenna analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Antenna analysis] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Antenna analysis] Total (MB): Used   72  Alloctr   74  Proc 2923 
+Information: Merged away 608 aligned/redundant DRCs. (ZRT-305)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	171
+	Voltage area : 171
+
+
+Total Wire Length =                    1173654 micron
+Total Number of Contacts =             128639
+Total Number of Wires =                130149
+Total Number of PtConns =              18182
+Total Number of Routed Wires =       130149
+Total Routed Wire Length =           1166514 micron
+Total Number of Routed Contacts =       128639
+	Layer          MET1 :      59368 micron
+	Layer          MET2 :     342012 micron
+	Layer          MET3 :     453145 micron
+	Layer          MET4 :     241077 micron
+	Layer         METTP :      77726 micron
+	Layer        METTPL :        327 micron
+	Via        VIAT6L_R :         28
+	Via        VIA4TD_R :       5482
+	Via   VIA4TD_R(rot) :         13
+	Via        VIA34D_R :      16404
+	Via   VIA34D_R(rot) :          1
+	Via        VIA23D_R :      60526
+	Via           VIA12 :          1
+	Via        VIA12D_R :      33242
+	Via   VIA12D_R(rot) :         56
+	Via        VIA12D_A :      12796
+	Via   VIA12D_A(rot) :         90
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 128639 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 46185   vias)
+        Un-optimized = 100.00% (46185   vias)
+    Layer VIA2       =  0.00% (0      / 60526   vias)
+        Un-optimized = 100.00% (60526   vias)
+    Layer VIA3       =  0.00% (0      / 16405   vias)
+        Un-optimized = 100.00% (16405   vias)
+    Layer VIATP      =  0.00% (0      / 5495    vias)
+        Un-optimized = 100.00% (5495    vias)
+    Layer VIATPL     =  0.00% (0      / 28      vias)
+        Un-optimized = 100.00% (28      vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 128639 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 46185   vias)
+    Layer VIA2       =  0.00% (0      / 60526   vias)
+    Layer VIA3       =  0.00% (0      / 16405   vias)
+    Layer VIATP      =  0.00% (0      / 5495    vias)
+    Layer VIATPL     =  0.00% (0      / 28      vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 128639 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 46185   vias)
+        Un-optimized = 100.00% (46185   vias)
+    Layer VIA2       =  0.00% (0      / 60526   vias)
+        Un-optimized = 100.00% (60526   vias)
+    Layer VIA3       =  0.00% (0      / 16405   vias)
+        Un-optimized = 100.00% (16405   vias)
+    Layer VIATP      =  0.00% (0      / 5495    vias)
+        Un-optimized = 100.00% (5495    vias)
+    Layer VIATPL     =  0.00% (0      / 28      vias)
+        Un-optimized = 100.00% (28      vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 9164, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = 0
+Total number of voltage-area violations = 171
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+1

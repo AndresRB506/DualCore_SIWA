@@ -1,0 +1,74 @@
+########################################################
+# Script UPF que pega explicitamente los VDD necesarios para PADS, y Level Shifters
+##########################################################
+
+#  Primero se reconectan los PADs
+
+#Conexion de redes de alimentacion
+
+## Manual aca de pines de memoria
+#file:///mnt/vol_NFS_Zener/WD_ESPEC/achacon/Herramientas/X-FAB/XH018/xh018/spram/XSPRAMBLP_256X32_M8P/v4_0_1/doc/XSPRAMBLP_256X32_M8P.html#PIN_DESCRIPTION
+#derive_pg_connection -power_net VDD_1V8 -power_pin {vdd} -cells "top_riscv_tec_pads/*"
+#derive_pg_connection -power_net VDD_1V8 -power_pin {vdd} -cells "top_riscv_soc/*"
+derive_pg_connection -ground_net VSS -ground_pin {gnd} -cells "top_riscv_soc/*"
+derive_pg_connection -ground_net VSS -ground_pin {gnd} -cells "top_riscv_tec_pads/*"
+### Conexiones a bloque UCU. Por ahora comenntadas
+#derive_pg_connection -power_net VDD_3V3_UCU -power_pin {vdd3e} -cells "ucu_anlg1/*"
+#derive_pg_connection -power_net VDD_1V8 -power_pin {vdd} -cells "ucu_anlg1/*"
+#derive_pg_connection -ground_net VSS -ground_pin {gnd} -cells "ucu_anlg1/*"
+
+derive_pg_connection -power_net VDD_1V8_PADS -power_pin {VDD} -cells "pad_ring_inst/*"
+derive_pg_connection -power_net VDD_3V3_PADS -power_pin {VDDO} -cells "pad_ring_inst/*"
+derive_pg_connection -power_net VDD_3V3_PADS -power_pin {VDDR} -cells "pad_ring_inst/*"
+derive_pg_connection -ground_net VSS -ground_pin {GNDO} -cells "pad_ring_inst/*"
+derive_pg_connection -ground_net VSS -ground_pin {GNDR} -cells "pad_ring_inst/*"
+derive_pg_connection -power_net VDD_1V8SRAM -power_pin {VDD18M} -cells "top_riscv_soc/TOP/Memoria_8K"
+derive_pg_connection -ground_net VSS -ground_pin {VSSM} -cells "top_riscv_soc/TOP/Memoria_8K"
+### Conexiones a bloque UCU. Por ahora comenntadas
+#set_voltage 3.3 -object_list {pad_ring_inst/VDD_3V3_PADS ucu_anlg1/VDD_3V3_UCU VDD_3V3_UCU VDD_3V3_PADS};
+#set_voltage 1.8 -object_list {ucu_anlg1/VDD_1V8 top_riscv_soc/TOP/VDD_1V8SRAM pad_ring_inst/VDD_1V8_PADS VDD_1V8SRAM VDD_1V8};
+#set_voltage 0.0 -object_list {ucu_anlg1/VSS top_riscv_soc/TOP/VSS pad_ring_inst/VSS top_riscv_soc/VSS VSS};
+set_voltage 3.3 -object_list {pad_ring_inst/VDD_3V3_PADS VDD_3V3_PADS};
+set_voltage 1.8 -object_list {top_riscv_soc/TOP/VDD_1V8SRAM pad_ring_inst/VDD_1V8_PADS VDD_1V8SRAM VDD_1V8};
+set_voltage 0.0 -object_list {top_riscv_soc/TOP/VSS pad_ring_inst/VSS top_riscv_soc/VSS VSS};
+## Pegamos los pads fisicos de alimentacion a las redes creadas (power nets) por derive_pg_connection -create
+## Conectamos VDD_1V8_PADS y VDD_3V3_PADS a los corners
+connect_supply_net VDD_1V8_PADS -ports {corner*/VDD}
+connect_supply_net VDD_3V3_PADS -ports {corner*/VDDO corner*/VDDR}
+## Conectamos VDD_1V8_PADS a los modulos internos de los PADS de alimentacion
+connect_supply_net VDD_1V8_PADS -ports {vdd_1v8_pad_*/VDD}
+connect_supply_net VDD_1V8_PADS -ports {vdd_1v8_sram_*/VDD}
+connect_supply_net VDD_1V8_PADS -ports {vdd_1v8_core_*/VDD}
+
+#Conectamos las alimentaciones aisladas para los cores (nucleo RISCV y SRAM)
+connect_supply_net VDD_1V8 -ports {vdd_1v8_core_*/VDDC}
+connect_supply_net VDD_1V8SRAM -ports {vdd_1v8_sram_*/VDDC}
+#Todos los puertos de alimentacion del anillo a VDD_3V3_PADS
+connect_supply_net VDD_3V3_PADS -ports {vdd_1v8_pad_*/VDDO vdd_1v8_pad_*/VDDR}
+connect_supply_net VDD_3V3_PADS -ports {vdd_1v8_sram_*/VDDO vdd_1v8_sram_*/VDDR}
+connect_supply_net VDD_3V3_PADS -ports {vdd_1v8_core_*/VDDO vdd_1v8_core_*/VDDR}
+connect_supply_net VDD_3V3_PADS -ports {vdd_3v3_pad*/VDDOR}
+### Conexiones a bloque UCU. Por ahora comenntadas
+#connect_supply_net VDD_3V3_UCU -ports {vdd_3v3_ucu*/VDDI}
+
+#Conectamos los VDD de los PADs fisicos VSS
+connect_supply_net VDD_1V8_PADS -ports {vss*/VDD}
+connect_supply_net VDD_3V3_PADS -ports {vss*/VDDO vss*/VDDR}
+#Conectamos las tierras de los PADs fisicos VSS
+connect_supply_net VSS -ports {vss*/GNDOR}
+connect_supply_net VSS -ports {corner*/GNDO}
+connect_supply_net VSS -ports {corner*/GNDR}
+connect_supply_net VSS -ports {vdd_*/GNDR}
+connect_supply_net VSS -ports {vdd_*/GNDO}
+
+
+
+
+
+
+
+
+
+
+
+

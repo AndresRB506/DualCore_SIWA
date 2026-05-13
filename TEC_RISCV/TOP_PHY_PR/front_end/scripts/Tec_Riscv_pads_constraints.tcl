@@ -1,0 +1,85 @@
+##################################################################################
+# Title:        Tec_Riscv_pads_constraints.tcl 
+# Library:	XFAB-180nm
+# Project:	RISC-V
+# Institution:	Instituto Tecnologico de Costa Rica. DCILab.
+#
+###################################################################################
+
+#create a collection of all the clock nets
+set ALL_IN_EX_CLK_NAME [remove_from_collection [all_inputs] [get_ports clk]]
+#create a collection of all outputs
+set ALL_OUT_NAME [all_outputs]
+#name of the library characterization to be used 1.8V 25°C
+# Inputs and outputs are the same pads for now
+# Luego l o mejoramos para los que irán a level shifters
+
+
+# Create a clock with a period in ns
+set CLK_PER 50
+create_clock -period $CLK_PER -name CLK [get_ports clk]
+set_clock_uncertainty -setup 1 [get_clocks CLK]
+set_clock_uncertainty -hold 1 [get_clocks CLK]
+set_clock_transition 0.1 [get_clocks CLK]
+#set_clock_latency -source 2 [get_clocks CLK]
+set_clock_latency 1 [get_clocks CLK]
+
+# Configuración de las redes de propagación de reloj y reset
+set_dont_touch_network [get_clocks CLK]
+#set_dont_touch_network [get_ports reset]
+
+# Configuración del retardo de las sañales de entrada, excepto el reloj
+set_input_delay -max [expr $CLK_PER * 0.4] -clock CLK [remove_from_collection [all_inputs] [get_ports clk]]
+set_input_delay -min 0.1 -clock CLK [remove_from_collection [all_inputs] [get_ports clk]]
+
+# Configuración del retardo de las sañales de salida, excepto el reloj
+set_output_delay -max [expr $CLK_PER * 0.4] -clock CLK [ all_outputs ] 
+set_output_delay -min -0.1 -clock CLK [ all_outputs ]
+
+#Cargas que suponemos nos manejan y a quien manejamos (los PADS y salidas LS al bloque de la UCU )
+
+set DRIVING_CELL "ICF";
+set DRIVE_PIN "$LIB_NAME_PADS/$DRIVING_CELL/Y";
+set OUTPUT_CELL "BT2SF";
+set OUTPUT_CELL_PORT_NAME "A";
+
+#Carga que suponemos deben manejarse a partir de los puertos de entrada
+set INPUT_CELL "INHDLLX2";
+set INPUT_CELL_DRIVE_NAME "A" ;
+
+
+# Configuración de la celda que maneja todos los puertos de entrada
+set_driving_cell -lib_cell $DRIVING_CELL -library $LIB_NAME_PADS  [remove_from_collection [all_inputs] [get_ports clk]]
+
+#Suponemos a la entrada que no se podran manejar mas de 10 puertos A de un INVHDLL2X
+set MAX_LOAD_IN [expr [load_of $LIB_NAME_STD_CELLS/$INPUT_CELL/$INPUT_CELL_DRIVE_NAME] * 10]
+set_max_capacitance $MAX_LOAD_IN  [remove_from_collection [all_inputs] [get_ports clk]]
+
+#Cada sennal solo deberia manejar un pad o un LS
+set MAX_LOAD_OUT [expr [load_of $LIB_NAME_PADS/$OUTPUT_CELL/$OUTPUT_CELL_PORT_NAME] * 1]
+set_load [expr $MAX_LOAD_OUT *1 ] [ all_outputs ]
+
+#Encontramos la maxima transicion en nuestra driving cell y ajustamos la maxima carga que puede colocar el DC
+
+set MAX_TRANS [get_attribute $DRIVE_PIN max_transition]; 
+set CONSERVATIVE_MAX_TRANS [expr $MAX_TRANS / 2.0];
+set_max_transition $CONSERVATIVE_MAX_TRANS [remove_from_collection [all_inputs] [get_ports clk]]; 
+
+## No restrinjamos a la herramientas
+#set_max_fanout 10 $current_design
+
+#set_operating_conditions -library $LIB_NAME_PADS typ_3_30V_3_30V_25C
+#characterize -constraints -verbose [get_cells *_pad_inst]
+
+# Configuracion de las condiciones de operacion
+set_operating_conditions TYPICAL -library $LIB_NAME_STD_CELLS
+
+if {![shell_is_in_topographical_mode]} {
+	set_wire_load_model -name 1k -library $LIB_NAME;
+	set_wire_load_mode top;
+}
+
+
+if {![shell_is_in_topographical_mode]} {
+	set_switching_activity -toggle_rate 0.25 -static_probability 0.5 -base_clock clk [remove_from_collection [all_inputs] [get_ports clk]];
+}

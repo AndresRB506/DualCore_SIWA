@@ -1,0 +1,13 @@
+
+prueba.o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	00c00113          	li	sp,12
+   10058:	00100193          	li	gp,1
+   1005c:	00310233          	add	tp,sp,gp
+   10060:	003202b3          	add	t0,tp,gp
+   10064:	00010337          	lui	t1,0x10
+   10068:	fff30313          	addi	t1,t1,-1 # ffff <_start-0x55>

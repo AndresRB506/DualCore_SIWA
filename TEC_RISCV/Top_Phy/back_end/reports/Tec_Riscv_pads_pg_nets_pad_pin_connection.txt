@@ -1,0 +1,23 @@
+Cell routed_cell.err existed already. Delete it ...
+Using [2 x 2] Fat Wire Table for MET1
+Using [2 x 2] Fat Wire Table for MET2
+Using [2 x 2] Fat Wire Table for MET3
+Using [2 x 2] Fat Wire Table for MET4
+Using [2 x 2] Fat Wire Table for METTP
+**** WARNING: No Image Cell !! 
+
+Net[VDD] out of bound, no ports/wires/vias
+Checking [VSS]:
+	There are no floating shapes
+	ERROR: There are 14104 floating pins
+Checking [VDD_1V8SRAM]:
+	There are no floating shapes
+	All the pins are connected.
+	No errors are found.
+Checking [VDD_3V3]:
+	There are no floating shapes
+	ERROR: There are 605 floating pins
+Net[VDD_1V8] out of bound, no ports/wires/vias
+Checked 3 nets, 2 have Errors
+Update error cell ...
+1

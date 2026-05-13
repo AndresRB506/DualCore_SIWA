@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module Instance :: topcore_tb.uut.TOP.central_control</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.colResizable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  westLayout = $('div.ui-layout-west').layout({
+    north__paneSelector: ".ui-layout-west-inner-north",
+    center__paneSelector: ".ui-layout-west-inner-center", 
+    north__size: 100,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+  $("table").colResizable({    liveDrag:true,
+    fixed:false,
+    draggingClass:"dragging"
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+</div>
+<div class="ui-layout-west">
+<div class="ui-layout-west-inner-center">
+<div name='inst_tag_5263'>
+<a name="inst_tag_5263"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_5263" >topcore_tb.uut.TOP.central_control</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s1 cl rt"> 19.21</td>
+<td class="s0 cl rt"><a href="mod71.html#Line" >  9.48</a></td>
+<td class="s2 cl rt"><a href="mod71.html#Cond" > 22.22</a></td>
+<td class="s4 cl rt"><a href="mod71.html#Toggle" > 48.57</a></td>
+<td class="s0 cl rt"><a href="mod71.html#FSM" >  6.13</a></td>
+<td class="s0 cl rt"><a href="mod71.html#Branch" >  9.62</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s2 cl rt"> 22.06</td>
+<td class="s0 cl rt">  9.95</td>
+<td class="s2 cl rt"> 22.22</td>
+<td class="s5 cl rt"> 57.66</td>
+<td class="s0 cl rt">  6.13</td>
+<td class="s1 cl rt"> 14.33</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s4 cl rt"> 45.46</td>
+<td class="s5 cl rt"> 56.52</td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="s2 cl rt"> 28.80</td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"> 46.51</td>
+<td><a href="mod46.html#inst_tag_4220" >TOP</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_8.html#inst_tag_1598" id="tag_urg_inst_1598">st0</a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_8.html#inst_tag_1599" id="tag_urg_inst_1599">st1</a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_8.html#inst_tag_1600" id="tag_urg_inst_1600">st2</a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_8.html#inst_tag_1601" id="tag_urg_inst_1601">st3</a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_8.html#inst_tag_1602" id="tag_urg_inst_1602">st4</a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_8.html#inst_tag_1603" id="tag_urg_inst_1603">st5</a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_8.html#inst_tag_1604" id="tag_urg_inst_1604">st6</a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_8.html#inst_tag_1605" id="tag_urg_inst_1605">st7</a></td>
+<td class="s9 cl rt"> 95.83</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+</div>
+<div class="ui-layout-west-inner-north">
+<a href="mod71.html" >Go back</a><br clear=all>
+<span class=titlename>Module Instances:</span>
+<br clear=all>
+<a href="#inst_tag_5263"  onclick="showContent('inst_tag_5263')">topcore_tb.uut.TOP.central_control</a><br>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+</div>
+<div class="ui-layout-center-inner-north">
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

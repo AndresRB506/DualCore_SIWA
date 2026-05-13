@@ -1,0 +1,19 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   ASSERT            
+ 98.86  98.86 --     tbench_top 
+  
+  ----------------
+  SCORE  LINE   ASSERT     
+   98.85  98.85 --     DUT 
+    
+    ----------------
+    SCORE  LINE   ASSERT         
+     99.27  99.27 --     inst_BS 
+  
+  ----------------
+  SCORE  LINE   ASSERT      
+  100.00 100.00 --     intf 
+

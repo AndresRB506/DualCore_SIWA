@@ -1,0 +1,98 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_U-2023.03-SP2
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = TRUE
+powerDumped = 0
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+postSimFile = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter_1.fsdb
+syncTime = 519375000
+viewport = 201 161 1440 752 0 0 361 1705
+activeNode = "test_base.env_inst.agent_inst.monitor_inst.Backdoor_access"
+activeScope = "test_base.env_inst.agent_inst.monitor_inst.Backdoor_access"
+activeFile = "Monitor.svh#inc___vcs_unit__1__200#"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 96
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = True
+SourceVerticalScrollLines = 5
+Scope1 = "test_base.env_inst.agent_inst.monitor_inst.Backdoor_access"
+Scope2 = "tb_top.dut_if"
+Scope3 = "tb_top"
+Scope4 = "tb_top.dut_wr"
+Scope5 = "fifo_flops"
+rangeSelection = 101 101 1 9 1 1
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-simflow" "-dbdir" "./salida.daidir" 
+invokeDir = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src
+[hb.sourceTab.1]
+scope = test_base.env_inst.agent_inst.monitor_inst.Backdoor_access
+File = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/Monitor.svh#inc___vcs_unit__1__200#
+Line = 97
+[nMemoryManager]
+WaveformFile = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter_1.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 25 1279 257 349 124
+primaryWindow = TRUE
+SessionFile = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
+fsaRegMask = TRUE
+fsaCoreMask = TRUE
+fsaSfsmMask = TRUE
+fsaEcrMask = TRUE
+tPropMask = TRUE

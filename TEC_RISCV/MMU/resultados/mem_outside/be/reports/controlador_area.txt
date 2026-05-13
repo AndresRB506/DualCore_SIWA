@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : controlador
+Version: N-2017.09-SP4
+Date   : Thu May 31 10:38:07 2018
+****************************************
+
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+
+Number of ports:                          680
+Number of nets:                          2652
+Number of cells:                         2036
+Number of combinational cells:           1282
+Number of sequential cells:               752
+Number of macros/black boxes:               1
+Number of buf/inv:                        244
+Number of references:                      70
+
+Combinational area:              51961.936921
+Buf/Inv area:                     5975.781699
+Noncombinational area:           64691.323380
+Macro/Black Box area:               10.035200
+Net Interconnect area:            7777.240476
+                                       (No wire load specified)
+
+Total cell area:                116663.295500
+Total area:                     124440.535977
+1

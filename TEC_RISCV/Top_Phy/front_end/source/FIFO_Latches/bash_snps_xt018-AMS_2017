@@ -1,0 +1,98 @@
+##### BASH Synopsys XFAB ############################################
+# Actualizado al 22-05-2017 (ACR). Se actualizan herramientas 2015, kits AMS XH018 de XFAB
+# Actualizado al 28-11-2014 (ACR). Se actualizan herramientas 2014, kits de XFAB
+# Bash para definir caminos a las herramientas de Synopsys (ACR 8-10-2012)
+
+# User specific aliases and functions
+SNPSLMD_LICENSE_FILE=27000@172.21.16.253
+export SNPSLMD_LICENSE_FILE 
+SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps
+export SYNOPSYS_HOME
+
+
+######### Variables para el PyCells Studio, OA cell lybrary ######
+
+source $SYNOPSYS_HOME/PyCell_Studio/latest/quickstart/bashrc
+# User specific aliases and functions
+
+### VAriables de ruta para las aplicaciones de Synopsys ####
+## Custom Compiler
+PATH=$PATH:${SYNOPSYS_HOME}/customcompiler/L-2016.06-7/bin
+export PATH
+
+#Custom Designer
+#PATH=$PATH:${SYNOPSYS_HOME}/customdesigner/J-2014.12-SP2-2/bin
+#export PATH
+
+#WaveViewer
+PATH=$PATH:${SYNOPSYS_HOME}/WaveView/I-2013.12-SP2-2/bin
+export PATH
+
+# Design Compiler
+PATH=$PATH:$SYNOPSYS_HOME/syn/L-2016.03-SP3/bin
+export PATH
+
+#path para ICValidator
+ICV_HOME_DIR=${SYNOPSYS_HOME}/icvalidator/L-2016.06-SP2-3
+export ICV_HOME_DIR
+PATH=$PATH:${ICV_HOME_DIR}/bin/AMD.64
+export PATH
+
+#HSPICE
+PATH=$PATH:${SYNOPSYS_HOME}/hspice/L-2016.06-SP1-2/hspice/bin
+export PATH
+
+#IC Compiler
+PATH=$PATH:${SYNOPSYS_HOME}/icc/L-2016.03-SP3/bin
+export PATH
+
+PATH=$PATH:${SYNOPSYS_HOME}/mw/L-2016.03-SP3/bin    
+export PATH
+
+#PrimeTime
+PATH=$PATH:${SYNOPSYS_HOME}/pts/K-2015.06-SP3-3çbin     
+export PATH
+
+#StarRC
+PATH=$PATH:${SYNOPSYS_HOME}/starrc/K-2015.12-SP3-2/bin  
+export PATH
+
+
+#################
+###  Nueva version de VCS Mixed, 64 bits
+VCS_HOME=${SYNOPSYS_HOME}/vcs-mx2/latest
+export VCS_HOME
+PATH=$PATH:${VCS_HOME}/bin
+export PATH
+
+#################
+
+
+PATH=$PATH:/datos/mentor/mgc/ams_2008_2a/questasim/v6.4c/bin
+export PATH
+
+########### Para el kit XC06 de XFAB ##################
+#FTK_KIT_DIR=/datos/Synopsys/PDKs/xc06/XFAB_snps_CustomDesigner_kit_v2_0_7
+#export FTK_KIT_DIR
+
+########### Para el kit xt018 de XFAB, AMS ##################
+FTK_KIT_DIR=/mnt/vol_NFS_Zener/tools/synopsys/pdks/xt018-ams/v1_0_2
+export FTK_KIT_DIR
+
+####   Hay que definir la ruta al disenno aca, dentro del HOME con una variable propia
+DESIGN_HOME=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI
+export DESIGN_HOME
+
+SYNOPSYS_SIM_SETUP=$DESIGN_HOME/design/synopsys_sim.setup
+export SYNOPSYS_SIM_SETUP
+
+#HSPICE_MODELS=$FTK_KIT_DIR/design/Hspice
+#export HSPICE_MODELS
+
+##### ICV 
+#XFAB_SYNOPSYS_RUNSET=$FTK_KIT_DIR/xh018/synopsys/v5_1/ICValidator/v5_1_2/
+#export XFAB_SYNOPSYS_RUNSET
+
+
+
+

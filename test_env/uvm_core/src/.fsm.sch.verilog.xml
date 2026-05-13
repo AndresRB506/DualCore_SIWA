@@ -1,0 +1,62 @@
+<Command name="schRTLInfo"  delimiter="."  >
+<RTLBlock >
+<RTLInfo   name="STATE_0"  type="2"  fileName="../../Verificacion_RISCV_TEC/test_env/core_spi_uart/IS25WP032D.v"  >
+    <Seg beginLine="1356"  endLine="3680"  />
+  </RTLInfo>
+ <Instance name="tb_top.dut_wr.mem"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_1"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../UART/scrs/log_utf.sv"  >
+    <Seg beginLine="144"  endLine="186"  />
+  </RTLInfo>
+ <RTLInfo   name="p_state_2"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../UART/scrs/log_utf.sv"  >
+    <Seg beginLine="77"  endLine="99"  />
+  </RTLInfo>
+ <Instance name="tb_top.dut_wr.uut.UART.log_utf"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_3"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../SPI/top_spi.sv"  >
+    <Seg beginLine="99"  endLine="869"  />
+  </RTLInfo>
+ <Instance name="tb_top.dut_wr.uut.SPI"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_4"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../UART/scrs/u_rec.sv"  >
+    <Seg beginLine="134"  endLine="233"  />
+  </RTLInfo>
+ <Instance name="tb_top.dut_wr.uut.UART.u_rec"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_5"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../UART/scrs/u_xmit.sv"  >
+    <Seg beginLine="154"  endLine="253"  />
+  </RTLInfo>
+ <Instance name="tb_top.dut_wr.uut.UART.u_xmit"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_6"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../UART/scrs/log_ftu.sv"  >
+    <Seg beginLine="162"  endLine="215"  />
+  </RTLInfo>
+ <RTLInfo   name="p_state_7"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../UART/scrs/log_ftu.sv"  >
+    <Seg beginLine="118"  endLine="139"  />
+  </RTLInfo>
+ <Instance name="tb_top.dut_wr.uut.UART.log_ftu"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_8"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../SPI/spi.sv"  >
+    <Seg beginLine="236"  endLine="332"  />
+  </RTLInfo>
+ <Instance name="tb_top.dut_wr.uut.SPI.spi1"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="user_verbosity_9"  type="2"  fileName="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv"  >
+    <Seg beginLine="47"  endLine="197"  />
+  </RTLInfo>
+ <Instance name="uvm_custom_install_verdi_recording"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_10"  type="2"  fileName="../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../MBC/MBC.sv"  >
+    <Seg beginLine="242"  endLine="269"  />
+  </RTLInfo>
+ <Instance name="tb_top.dut_wr.uut.TOP.Memory_controller"  />
+</RTLBlock>
+ </Command>

@@ -1,0 +1,46 @@
+Running PRESTO HDLC
+Compiling source file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/top_riscv_tec_pads.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/topcore_tecriscv.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:129: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:152: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:341: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:342: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:364: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:442: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:443: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:471: The delay specification for gate instantiation is ignored. (VER-970)
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../DECO_INSTR/DECO_INSTR.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Banco_de_registros_latches.v
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v:191: Parameter keyword used in local parameter declaration. (VER-329)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v:204: Parameter keyword used in local parameter declaration. (VER-329)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v:558: Parameter keyword used in local parameter declaration. (VER-329)
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:180: the undeclared symbol 'ld_d_read_clk' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:192: Parameter keyword used in local parameter declaration. (VER-329)
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:167: the undeclared symbol 'csr_write' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:168: the undeclared symbol 'rst_tmr' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:266: the undeclared symbol 'clk_bus' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:294: the undeclared symbol 'clk_timer' assumed to have the default net type, which is 'wire'. (VER-936)
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/top_spi.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/uart.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/baud.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/detector_flanco.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/fifo_to_uart_reg.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/uart_to_fifo_reg.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP_PADS/pad_ring.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP_PADS/ucu_anlg.sv
+Presto compilation completed successfully.
+1

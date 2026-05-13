@@ -1,0 +1,112 @@
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 4 cores. (OPT-1500)
+
+Information: There are 525 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db.alib'
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db.alib' (placeholder)
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db.alib' (placeholder)
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db.alib' (placeholder)
+Loaded alib file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/work/alib-52/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db.alib' (placeholder)
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[31]/C TOP/temporizador_top/count_reg[31]/Q TOP/U198/A TOP/U198/Q TOP/U293/B TOP/U293/Q TOP/U414/C TOP/U414/Q 
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[26]/C TOP/temporizador_top/count_reg[26]/Q TOP/U199/A TOP/U199/Q TOP/U201/B TOP/U201/Q TOP/U290/A TOP/U290/Q TOP/U293/C TOP/U293/Q TOP/U414/C TOP/U414/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/U414'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+  Loading design 'topcore_tecriscv'
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[31]/C TOP/temporizador_top/count_reg[31]/Q TOP/U198/A TOP/U198/Q TOP/U293/B TOP/U293/Q TOP/U414/C TOP/U414/Q 
+Information: Timing loop detected. (OPT-150)
+	TOP/temporizador_top/count_reg[26]/C TOP/temporizador_top/count_reg[26]/Q TOP/U199/A TOP/U199/Q TOP/U201/B TOP/U201/Q TOP/U290/A TOP/U290/Q TOP/U293/C TOP/U293/Q TOP/U414/C TOP/U414/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/U414'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg[1]'
+         to break a timing loop. (OPT-314)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer MET1 : 0.00025 0.00019 (RCEX-011)
+Information: Library Derived Res for layer MET1 : 0.00047 0.00029 (RCEX-011)
+Information: Library Derived Cap for layer MET2 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET2 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer MET3 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET3 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer MET4 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET4 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer METTP : 0.00023 0.00017 (RCEX-011)
+Information: Library Derived Res for layer METTP : 0.00014 6.9e-05 (RCEX-011)
+Information: Library Derived Cap for layer METTPL : 0.00039 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METTPL : 4.4e-06 2.6e-06 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00025 0.00019 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00034 0.0002 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00032 0.00022 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00027 0.00016 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.0051 0.0023 (RCEX-011)
+
+
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:13  836005.6      0.28       8.4       0.1                           301905.2188
+
+
+  Beginning Area Optimization
+  -----------------------------
+    0:00:30  835136.8      0.28       8.4       0.1                           301803.2188
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:31  835136.8      0.28       8.4       0.1                           301803.2188
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db'
+1

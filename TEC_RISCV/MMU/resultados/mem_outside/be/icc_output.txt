@@ -1,0 +1,101 @@
+icc_shell> gui_start
+ + VUE INFO: Please click Verification->IC Validator VUE in LayoutWindow menu
+to launch VUE.
+
+ + VUE ERROR: couldn't open socket: address already in use
+
+ + VUE INFO: Found a usable port: 2446
+
+Information: Loaded Icv extension from /mnt/vol_NFS_Zener/tools/synopsys/apps/icvalidator/N-2017.12-SP1-2 (GUI-024)
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+icc_shell> open_mw_lib /mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/high_density/Back_end/db/be/controlador/controlador.mw
+{controlador.mw}
+icc_shell> ::iccGUI::open_mw_cel  controlador_routing
+icc_shell> open_mw_cel controlador_routing
+Preparing data for query................... 
+Warning: No valid link library found; check the link_library variable. (IFS-008)
+Information: Opened "controlador_routing.CEL;1" from "/mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/high_density/Back_end/db/be/controlador/controlador.mw" library. (MWUI-068)
+{controlador_routing}
+icc_shell> 
+icc_shell> 
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/icc/L-2016.03-SP3/libraries/syn/gtech.db'
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Error: Fail to rebuild timing design from database (UID-841)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clocks matching '*'. (UID-109)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/synopsys_ICC/v1_0_1/xh018-IO_CELLS_FC1V8-synopsys_ICCompiler-v1_0_1/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_FC1V8. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Error: No valid link library specified, please check library setup. (PSYN-958)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clocks matching '*'. (UID-109)
+icc_shell> gui_change_highlight -color yellow -collection [get_nets CLK_sys*]
+icc_shell> exit
+
+Thank you...
+

@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : timing
+        -path full_clock
+        -delay min
+        -physical
+        -derate
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -crosstalk_delta
+        -capacitance
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Wed Mar 27 16:04:05 2019
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+  Startpoint: top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__0___dp2__D_reg/bit__17__prll_regstr_/q_reg
+              (rising edge-triggered flip-flop clocked by CLK')
+  Endpoint: top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__1___dp3__D_reg/bit__17__prll_regstr_/q_reg
+            (rising edge-triggered flip-flop clocked by CLK')
+  Path Group: CLK
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+   ao - always_on
+
+  Point                                       Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock CLK' (rise edge)                                                                                   25.000     25.000                                            
+  clock network delay (ideal)                                                                               0.000     25.000                                            
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__0___dp2__D_reg/bit__17__prll_regstr_/q_reg/C (DFRRQHDLLX0)
+                                                                   0.000     0.050     0.000                0.000     25.000 r    (818.86,293.52)                       1.80
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__0___dp2__D_reg/bit__17__prll_regstr_/q_reg/Q (DFRRQHDLLX0)
+                                                                             0.136                          0.501     25.501 r    (824.68,294.06)                       1.80
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__0___dp2__D_reg/bit__17__prll_regstr_/q (net)
+                                                2        0.005                                              0.000     25.501 r    [0.00,0.01]                           
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__0___dp2__D_reg/bit__17__prll_regstr_/q (dff_async_rst_718)        0.000     25.501 r    (netlink)                             
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__0___dp2__D_reg/D_out[17] (net)
+                                                         0.005                                              0.000     25.501 r    [0.00,0.01]                           
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__0___dp2__D_reg/D_out[17] (prll_d_reg_bits65_10)                   0.000     25.501 r    (netlink)                             
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/q[17] (net)          0.005                                              0.000     25.501 r    [0.00,0.01]                           
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__1___dp3__D_reg/D_in[17] (prll_d_reg_bits65_9)                     0.000     25.501 r    (netlink)                             
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__1___dp3__D_reg/D_in[17] (net)
+                                                         0.005                                              0.000     25.501 r    [0.00,0.01]                           
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__1___dp3__D_reg/bit__17__prll_regstr_/data (dff_async_rst_653)     0.000     25.501 r    (netlink)                             
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__1___dp3__D_reg/bit__17__prll_regstr_/data (net)
+                                                         0.005                                              0.000     25.501 r    [0.00,0.01]                           
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__1___dp3__D_reg/bit__17__prll_regstr_/q_reg/D (DFRRQHDLLX0)
+                                                                   0.000     0.136     0.000                0.000 *   25.501 r    (826.99,293.76)                       1.80
+  data arrival time                                                                                                   25.501                                            
+
+  clock CLK' (rise edge)                                                                                   25.000     25.000                                            
+  clock network delay (ideal)                                                                               0.000     25.000                                            
+  clock uncertainty                                                                                         0.100     25.100                                            
+  top_riscv_soc/TOP/Bus/fifo_in_mbc/u_dp__1___dp3__D_reg/bit__17__prll_regstr_/q_reg/C (DFRRQHDLLX0)        0.000     25.100 r                                          
+  library hold time                                                                                        -0.059     25.041                                            
+  data required time                                                                                                  25.041                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                  25.041                                            
+  data arrival time                                                                                                  -25.501                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                          0.459                                            
+
+
+1

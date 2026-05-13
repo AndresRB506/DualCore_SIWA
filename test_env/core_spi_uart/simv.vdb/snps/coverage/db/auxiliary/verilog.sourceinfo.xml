@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="R-2020.12-SP2"  />
+      <fileinfo name="top_core_spi_uart.sv"  id="0"  timestamp="1740036691"  />
+      <fileinfo name="../../TEC_RISCV/TOP/topcore_tecriscv.sv"  id="1"  timestamp="1630961504"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv"  id="2"  timestamp="1646228053"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro.sv"  id="3"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv"  id="4"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../FIFO_Latches/fifo.sv"  id="5"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../DECO_INSTR/DECO_INSTR.sv"  id="6"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../ALU/ALU_2.sv"  id="7"  timestamp="1630961499"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../ALU/ALU_Library.sv"  id="8"  timestamp="1630961499"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../Register_File/Banco_de_registros_latches.v"  id="9"  timestamp="1630961566"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../Register_File/Biblioteca.v"  id="10"  timestamp="1630961566"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../MBC/MBC.sv"  id="11"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../TOP/control.sv"  id="12"  timestamp="1630961504"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../TOP/coremark_mem_model.sv"  id="13"  timestamp="1646229250"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../SPI/top_spi.sv"  id="14"  timestamp="1630961566"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../SPI/spi.sv"  id="15"  timestamp="1630961566"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/uart.sv"  id="16"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/baud.sv"  id="17"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/detector_flanco.sv"  id="18"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/fifo_to_uart_reg.sv"  id="19"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/log_ftu.sv"  id="20"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/log_utf.sv"  id="21"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/uart_to_fifo_reg.sv"  id="22"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/u_rec.sv"  id="23"  timestamp="1630961649"  />
+      <fileinfo name="../../TEC_RISCV/TOP/../UART/scrs/u_xmit.sv"  id="24"  timestamp="1630961649"  />
+      <fileinfo name="Status.sv"  id="25"  timestamp="1729200287"  />
+      <fileinfo name="IS25WP032D.v"  id="26"  timestamp="1630961463"  />
+      <fileinfo name="coverage_classes.sv"  id="27"  timestamp="1630961460"  />
+      <fileinfo name="instruction_class.sv"  id="28"  timestamp="1630961488"  />
+      <fileinfo name="Reference_Model.sv"  id="29"  timestamp="1728429662"  />
+      <fileinfo name="Selfcheck.sv"  id="30"  timestamp="1729200663"  />
+    </srcinfo>

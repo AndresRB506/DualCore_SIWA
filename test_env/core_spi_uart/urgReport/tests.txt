@@ -1,0 +1,12 @@
+Tests
+
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 33.12  44.13  42.61  18.03   9.34  51.46 
+
+
+Total tests in report: 1
+-------------------------------------------------------------------------------
+Data from the following tests was used to generate this report
+simv/test 
+

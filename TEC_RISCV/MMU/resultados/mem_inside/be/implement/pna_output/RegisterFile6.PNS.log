@@ -1,0 +1,21 @@
+
+Name of design : RegisterFile6
+Number of cell instance masters in the library : 39
+Number of cell instances in the design : 7135
+Target IR drop : 180.000 mV
+Processing net VDD ...
+Average power dissipation in RegisterFile6 :  1000.00 mW
+Power supply voltage :     1.80 V
+Average current in RegisterFile6 :   555.56 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 32
+Maximum IR drop in RegisterFile6 : 33.47 mV
+Maximum current in RegisterFile6 : 31.018 mA
+Processing net VSS ...
+Average power dissipation in RegisterFile6 :  1000.00 mW
+Power supply voltage :     1.80 V
+Average current in RegisterFile6 :   555.56 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 32
+Maximum IR drop in RegisterFile6 : 32.72 mV
+Maximum current in RegisterFile6 : 30.966 mA
+Memory usage for design data :      39362.560 Kbytes
+Overall takes     0.11 seconds

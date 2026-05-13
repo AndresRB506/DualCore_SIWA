@@ -1,0 +1,135 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/sim_files/core_sim_files/Test_Top.vcd -design V1} {gui_open_db -file /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_RTL/TEC_RISCV/test_env/test_SPI/top_spi.vcd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1222
+gui_set_state_value -category Layout -key child_console_size_y -value 172
+gui_set_state_value -category Layout -key child_data_coltype -value 50
+gui_set_state_value -category Layout -key child_data_colvalue -value 110
+gui_set_state_value -category Layout -key child_data_colvariable -value 150
+gui_set_state_value -category Layout -key child_data_size_x -value 265
+gui_set_state_value -category Layout -key child_data_size_y -value 315
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 199
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 87
+gui_set_state_value -category Layout -key child_hier_size_x -value 231
+gui_set_state_value -category Layout -key child_hier_size_y -value 315
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 728
+gui_set_state_value -category Layout -key child_source_size_y -value 310
+gui_set_state_value -category Layout -key child_wave_colname -value 169
+gui_set_state_value -category Layout -key child_wave_colvalue -value 169
+gui_set_state_value -category Layout -key child_wave_docknewline -value false
+gui_set_state_value -category Layout -key child_wave_left -value 342
+gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_wave_right -value 833
+gui_set_state_value -category Layout -key child_wave_size_x -value 1206
+gui_set_state_value -category Layout -key child_wave_size_y -value 355
+gui_set_state_value -category Layout -key main_pos_x -value 12
+gui_set_state_value -category Layout -key main_pos_y -value 104
+gui_set_state_value -category Layout -key main_size_x -value 1234
+gui_set_state_value -category Layout -key main_size_y -value 690
+gui_set_state_value -category Layout -key stand_source_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_source_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_source_child_size_x -value 729
+gui_set_state_value -category Layout -key stand_source_child_size_y -value 310
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1185
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 496
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 58
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 90
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1238
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 690
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd2|DLPane.1|pages|Data.1|hbox|textfilter -value_type string -value pc
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value ./simv
+gui_state_default_create -off
+
+# Begin command logging
+gui_set_pref_value -category {Globals} -key {smart_resize} -value {false}
+gui_set_pref_value -category {Globals} -key {smart_resize} -value {true}
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_list_expand -id  Hier.1   Test_Top
+gui_list_select -id Hier.1 -current_item_name Test_Top -current_item_type Scope  -selected  { Test_Top   }
+gui_list_select -id Hier.1 -current_item_name Test_Top.uut -current_item_type Scope  -selected  { Test_Top.uut   }
+gui_list_expand -id  Hier.1   Test_Top.uut
+gui_list_select -id Hier.1 -current_item_name Test_Top.uut.Alu -current_item_type Scope  -selected  { Test_Top.uut.Alu   }
+gui_list_select -id Hier.1 -current_item_name Test_Top.uut.central_control -current_item_type Scope  -selected  { Test_Top.uut.central_control   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.central_control.clk   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.central_control.clk  Test_Top.uut.central_control.reset   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.central_control.clk  Test_Top.uut.central_control.reset  {Test_Top.uut.central_control.nxt_state[7:0]}   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.central_control.clk  Test_Top.uut.central_control.reset  {Test_Top.uut.central_control.nxt_state[7:0]}  {Test_Top.uut.central_control.cur_state[7:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { Test_Top.uut.central_control.clk Test_Top.uut.central_control.reset {Test_Top.uut.central_control.nxt_state[7:0]} {Test_Top.uut.central_control.cur_state[7:0]} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name Test_Top.uut.Memory_controller -current_item_type Scope  -selected  { Test_Top.uut.Memory_controller   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.Memory_controller.clk   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.Memory_controller.clk  Test_Top.uut.Memory_controller.reset   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.Memory_controller.clk  Test_Top.uut.Memory_controller.reset  {Test_Top.uut.Memory_controller.d_write[31:0]}   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.Memory_controller.clk  Test_Top.uut.Memory_controller.reset  {Test_Top.uut.Memory_controller.d_write[31:0]}  Test_Top.uut.Memory_controller.enable   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.Memory_controller.clk  Test_Top.uut.Memory_controller.reset  {Test_Top.uut.Memory_controller.d_write[31:0]}  Test_Top.uut.Memory_controller.enable  Test_Top.uut.Memory_controller.r_w   }
+gui_list_select -id Data.1 -selected  { Test_Top.uut.Memory_controller.clk  Test_Top.uut.Memory_controller.reset  {Test_Top.uut.Memory_controller.d_write[31:0]}  Test_Top.uut.Memory_controller.enable  Test_Top.uut.Memory_controller.r_w  {Test_Top.uut.Memory_controller.d_read[31:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { Test_Top.uut.Memory_controller.clk Test_Top.uut.Memory_controller.reset {Test_Top.uut.Memory_controller.d_write[31:0]} Test_Top.uut.Memory_controller.enable Test_Top.uut.Memory_controller.r_w {Test_Top.uut.Memory_controller.d_read[31:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { Test_Top.uut.Memory_controller.clk   }
+gui_list_select -id Wave.1 -selected  { Test_Top.uut.Memory_controller.clk  Test_Top.uut.Memory_controller.reset   }
+gui_list_select -id Wave.1 -selected  { Test_Top.uut.Memory_controller.reset   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { Test_Top.uut.Memory_controller.clk   }
+gui_list_action -id  Wave.1 Test_Top.uut.Memory_controller.clk
+gui_get_drivers -id Wave.1 -signal Test_Top.uut.Memory_controller.clk
+gui_clear_drivers_loads -selected -id  TopLevel.1
+gui_list_select -id Wave.1 -selected  { Test_Top.uut.Memory_controller.clk   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {Test_Top.uut.Memory_controller.d_write[31:0]}   }
+gui_sim_continue  
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 0 13284465
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_zoom_timerange -id  Wave.1 9689653 11503399
+gui_wv_zoom_timerange -id  Wave.1 10260047 10556760
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  page
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_zoom_timerange -id  Wave.1 15439246 15731214
+gui_wv_zoom_timerange -id  Wave.1 15511294 15711685
+gui_wv_zoom_timerange -id  Wave.1 15530426 15573067
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_close_window -window TopLevel.2

@@ -1,0 +1,500 @@
+#Scamos las filas bordeando el dominio de voltaje por el lado derecho de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{885 593.960} {908 1337.640}}
+#Sacamos las filas bordeando el dominio de voltaje en la base de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{182 593.960} {885 620.00}}
+#
+create_fp_placement -timing_driven -no_hier;
+set_undoable_attribute [get_cells -all top_riscv_soc/TOP/Memoria_8K] is_fixed true
+refine_placement -congestion_effort low;
+legalize_placement;
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start RulerTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {303.180 593.985} -scale 0.7978
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+create_fp_placement -timing_driven -no_hier;
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+::iccGUI::open_mw_cel  floorplan_ends1
+current_mw_cel {floorplan_ends1.CEL;4}
+open_mw_cel  pad_ring_placed
+source ./scripts/create_voltage_areas_def_v2.tcl
+copy_mw_cel -from pad_ring_placed -to voltage_domains_created
+close_mw_cel pad_ring_placed
+open_mw_cel  voltage_domains_created
+## Generamos el halo alrededor de la SRAM (el unico hard macro)
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N
+#set HALO_SRAM_RIGHT [expr 4 * $CELL_HEIGHT]
+#set HALO_SRAM_LEFT [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_TOP [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_BOTTOM [expr 4 * $CELL_HEIGHT]
+#set_keepout_margin -type hard -all_macros -outer {$HALO_SRAM_LEFT $HALO_SRAM_BOTTOM $HALO_SRAM_RIGHT $HALO_SRAM_TOP};
+set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+#set_keepout_margin               [-type hard | soft] [-outer {lx by rx ty}]
+# Bloquemos ruteo y la colocamos dentro de su zona de voltaje como un macro fijo
+#La SRAM queda fija en la esquina superior del core
+#Hay que estar seguros de que la SRAM queda totalmente dentro de la zona de voltaje que le definimos
+#Esto lista los puntos de anclaje del area del core
+#get_attribute [get_core_area] points
+#Tenemos la SRAM mirando al ESTE, la colocamos con pines hacia abajdo
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+#El bounidng box lo obtenemos del BB definido de la macro
+#set BBOX_SRAM [get_attribute [get_cells -hierarchical Memoria_8K] bbox]
+#Tenemos que ver donde queda la SRAM primero para definir este BBOX
+#create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage #                     metal4Blockage metal5Blockage metal6Blockage  } -bbox $BBOX_SRAM {RB_1037824 RB_1037825 RB_1037826 RB_1037827 RB_1037828 RB_1037829}
+# Esta colocacion es temporal, solo para analisis de congestion
+#create_fp_placement -timing_driven -no_legalize ;
+#Nos aseguramos de los pines a la UCU esten todos a la derecha
+close_mw_cel pre_power
+#Partimos de la esquina superior del area de core, que se puede obtener asi
+#get_attribute [get_core_area] bbox
+## BBOX Area reportada para el CORE {182.280 181.800} {1497.720 1337.640}
+## Iniciamos 200 micrometros mas abajo
+# 10 micrometros sobre el borde del core
+set base_coordinates {1497.720 1237.640}
+source ./scripts/place_ports.tcl
+source ./scripts/allocate_ports_rdy.tcl
+#Scamos las filas bordeando el dominio de voltaje por el lado derecho de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{885 593.960} {908 1337.640}}
+#Sacamos las filas bordeando el dominio de voltaje en la base de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{182 593.960} {885 620.00}}
+#
+create_fp_placement -timing_driven -no_hier;
+open_mw_cel  pad_ring_placed
+source ./scripts/create_voltage_areas_def_v2.tcl
+copy_mw_cel -from pad_ring_placed -to voltage_domains_created
+close_mw_cel pad_ring_placed
+open_mw_cel  voltage_domains_created
+change_working_design_stack {voltage_domains_created.CEL;6}
+change_working_design_stack {voltage_domains_created.CEL;7}
+set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N
+#set HALO_SRAM_RIGHT [expr 4 * $CELL_HEIGHT]
+#set HALO_SRAM_LEFT [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_TOP [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_BOTTOM [expr 4 * $CELL_HEIGHT]
+#set_keepout_margin -type hard -all_macros -outer {$HALO_SRAM_LEFT $HALO_SRAM_BOTTOM $HALO_SRAM_RIGHT $HALO_SRAM_TOP};
+set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+#set_keepout_margin               [-type hard | soft] [-outer {lx by rx ty}]
+# Bloquemos ruteo y la colocamos dentro de su zona de voltaje como un macro fijo
+#La SRAM queda fija en la esquina superior del core
+#Hay que estar seguros de que la SRAM queda totalmente dentro de la zona de voltaje que le definimos
+#Esto lista los puntos de anclaje del area del core
+#get_attribute [get_core_area] points
+#Tenemos la SRAM mirando al ESTE, la colocamos con pines hacia abajdo
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+#El bounidng box lo obtenemos del BB definido de la macro
+#set BBOX_SRAM [get_attribute [get_cells -hierarchical Memoria_8K] bbox]
+#Tenemos que ver donde queda la SRAM primero para definir este BBOX
+#create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage #                     metal4Blockage metal5Blockage metal6Blockage  } -bbox $BBOX_SRAM {RB_1037824 RB_1037825 RB_1037826 RB_1037827 RB_1037828 RB_1037829}
+# Esta colocacion es temporal, solo para analisis de congestion
+#create_fp_placement -timing_driven -no_legalize ;
+#Nos aseguramos de los pines a la UCU esten todos a la derecha
+close_mw_cel pre_power
+#Partimos de la esquina superior del area de core, que se puede obtener asi
+#get_attribute [get_core_area] bbox
+## BBOX Area reportada para el CORE {182.280 181.800} {1497.720 1337.640}
+## Iniciamos 200 micrometros mas abajo
+# 10 micrometros sobre el borde del core
+set base_coordinates {1497.720 1237.640}
+source ./scripts/place_ports.tcl
+source ./scripts/allocate_ports_rdy.tcl
+#Scamos las filas bordeando el dominio de voltaje por el lado derecho de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{885 593.960} {908 1337.640}}
+#Sacamos las filas bordeando el dominio de voltaje en la base de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{182 593.960} {885 620.00}}
+#
+create_fp_placement -timing_driven -no_hier;
+close_mw_cel "voltage_domains_created.CEL;7"
+open_mw_cel  pad_ring_placed
+source ./scripts/create_voltage_areas_def_v2.tcl
+copy_mw_cel -from pad_ring_placed -to voltage_domains_created
+close_mw_cel pad_ring_placed
+open_mw_cel  voltage_domains_created
+## Generamos el halo alrededor de la SRAM (el unico hard macro)
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N
+#set HALO_SRAM_RIGHT [expr 4 * $CELL_HEIGHT]
+#set HALO_SRAM_LEFT [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_TOP [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_BOTTOM [expr 4 * $CELL_HEIGHT]
+#set_keepout_margin -type hard -all_macros -outer {$HALO_SRAM_LEFT $HALO_SRAM_BOTTOM $HALO_SRAM_RIGHT $HALO_SRAM_TOP};
+set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+#set_keepout_margin               [-type hard | soft] [-outer {lx by rx ty}]
+# Bloquemos ruteo y la colocamos dentro de su zona de voltaje como un macro fijo
+#La SRAM queda fija en la esquina superior del core
+#Hay que estar seguros de que la SRAM queda totalmente dentro de la zona de voltaje que le definimos
+#Esto lista los puntos de anclaje del area del core
+#get_attribute [get_core_area] points
+#Tenemos la SRAM mirando al ESTE, la colocamos con pines hacia abajdo
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+#El bounidng box lo obtenemos del BB definido de la macro
+#set BBOX_SRAM [get_attribute [get_cells -hierarchical Memoria_8K] bbox]
+#Tenemos que ver donde queda la SRAM primero para definir este BBOX
+#create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage #                     metal4Blockage metal5Blockage metal6Blockage  } -bbox $BBOX_SRAM {RB_1037824 RB_1037825 RB_1037826 RB_1037827 RB_1037828 RB_1037829}
+# Esta colocacion es temporal, solo para analisis de congestion
+#create_fp_placement -timing_driven -no_legalize ;
+#Nos aseguramos de los pines a la UCU esten todos a la derecha
+close_mw_cel pre_power
+#Partimos de la esquina superior del area de core, que se puede obtener asi
+#get_attribute [get_core_area] bbox
+## BBOX Area reportada para el CORE {182.280 181.800} {1497.720 1337.640}
+## Iniciamos 200 micrometros mas abajo
+# 10 micrometros sobre el borde del core
+set base_coordinates {1497.720 1237.640}
+source ./scripts/place_ports.tcl
+source ./scripts/allocate_ports_rdy.tcl
+#Scamos las filas bordeando el dominio de voltaje por el lado derecho de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{885 589.480} {908 1337.640}}
+#Sacamos las filas bordeando el dominio de voltaje en la base de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{182 589.480} {885 620.00}}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start RulerTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+create_fp_placement -timing_driven -no_hier;
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start RulerTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {903.150 904.065} -scale 1.5957
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {903.150 193.995} -scale 1.5957
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {213.820 623.230} -scale 1.5957
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {473.915 618.440} -scale 1.5957
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+close_mw_cel "voltage_domains_created.CEL;8"
+open_mw_cel  pad_ring_placed
+source ./scripts/create_voltage_areas_def_v2.tcl
+copy_mw_cel -from pad_ring_placed -to voltage_domains_created
+close_mw_cel pad_ring_placed
+open_mw_cel  voltage_domains_created
+## Generamos el halo alrededor de la SRAM (el unico hard macro)
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N
+#set HALO_SRAM_RIGHT [expr 4 * $CELL_HEIGHT]
+#set HALO_SRAM_LEFT [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_TOP [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_BOTTOM [expr 4 * $CELL_HEIGHT]
+#set_keepout_margin -type hard -all_macros -outer {$HALO_SRAM_LEFT $HALO_SRAM_BOTTOM $HALO_SRAM_RIGHT $HALO_SRAM_TOP};
+set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+#set_keepout_margin               [-type hard | soft] [-outer {lx by rx ty}]
+# Bloquemos ruteo y la colocamos dentro de su zona de voltaje como un macro fijo
+#La SRAM queda fija en la esquina superior del core
+#Hay que estar seguros de que la SRAM queda totalmente dentro de la zona de voltaje que le definimos
+#Esto lista los puntos de anclaje del area del core
+#get_attribute [get_core_area] points
+#Tenemos la SRAM mirando al ESTE, la colocamos con pines hacia abajdo
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+#El bounidng box lo obtenemos del BB definido de la macro
+#set BBOX_SRAM [get_attribute [get_cells -hierarchical Memoria_8K] bbox]
+#Tenemos que ver donde queda la SRAM primero para definir este BBOX
+#create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage #                     metal4Blockage metal5Blockage metal6Blockage  } -bbox $BBOX_SRAM {RB_1037824 RB_1037825 RB_1037826 RB_1037827 RB_1037828 RB_1037829}
+# Esta colocacion es temporal, solo para analisis de congestion
+#create_fp_placement -timing_driven -no_legalize ;
+#Nos aseguramos de los pines a la UCU esten todos a la derecha
+close_mw_cel pre_power
+#Partimos de la esquina superior del area de core, que se puede obtener asi
+#get_attribute [get_core_area] bbox
+## BBOX Area reportada para el CORE {182.280 181.800} {1497.720 1337.640}
+## Iniciamos 200 micrometros mas abajo
+# 10 micrometros sobre el borde del core
+set base_coordinates {1497.720 1237.640}
+source ./scripts/place_ports.tcl
+source ./scripts/allocate_ports_rdy.tcl
+#
+create_fp_placement -timing_driven -no_hier;
+report_voltage_area
+report_voltage_area -all
+close_mw_cel "voltage_domains_created.CEL;9"
+open_mw_cel  pad_ring_placed
+copy_mw_cel -from pad_ring_placed -to voltage_domains_created
+close_mw_cel pad_ring_placed
+open_mw_cel  voltage_domains_created
+## Generamos el halo alrededor de la SRAM (el unico hard macro)
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N
+#set HALO_SRAM_RIGHT [expr 4 * $CELL_HEIGHT]
+#set HALO_SRAM_LEFT [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_TOP [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_BOTTOM [expr 4 * $CELL_HEIGHT]
+#set_keepout_margin -type hard -all_macros -outer {$HALO_SRAM_LEFT $HALO_SRAM_BOTTOM $HALO_SRAM_RIGHT $HALO_SRAM_TOP};
+#set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+set_keepout_margin -type hard -all_macros -outer {1 1 1 1};
+#set_keepout_margin               [-type hard | soft] [-outer {lx by rx ty}]
+# Bloquemos ruteo y la colocamos dentro de su zona de voltaje como un macro fijo
+#La SRAM queda fija en la esquina superior del core
+#Hay que estar seguros de que la SRAM queda totalmente dentro de la zona de voltaje que le definimos
+#Esto lista los puntos de anclaje del area del core
+#get_attribute [get_core_area] points
+#Tenemos la SRAM mirando al ESTE, la colocamos con pines hacia abajdo
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+#El bounidng box lo obtenemos del BB definido de la macro
+#set BBOX_SRAM [get_attribute [get_cells -hierarchical Memoria_8K] bbox]
+#Tenemos que ver donde queda la SRAM primero para definir este BBOX
+#create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage #                     metal4Blockage metal5Blockage metal6Blockage  } -bbox $BBOX_SRAM {RB_1037824 RB_1037825 RB_1037826 RB_1037827 RB_1037828 RB_1037829}
+# Esta colocacion es temporal, solo para analisis de congestion
+#create_fp_placement -timing_driven -no_legalize ;
+#Nos aseguramos de los pines a la UCU esten todos a la derecha
+close_mw_cel pre_power
+#Partimos de la esquina superior del area de core, que se puede obtener asi
+#get_attribute [get_core_area] bbox
+## BBOX Area reportada para el CORE {182.280 181.800} {1497.720 1337.640}
+## Iniciamos 200 micrometros mas abajo
+# 10 micrometros sobre el borde del core
+set base_coordinates {1497.720 1237.640}
+source ./scripts/place_ports.tcl
+source ./scripts/allocate_ports_rdy.tcl
+#
+create_fp_placement -timing_driven -no_hier;
+close_mw_cel "voltage_domains_created.CEL;10"
+open_mw_cel  pad_ring_placed
+source ./scripts/create_voltage_areas_def_v2.tcl
+copy_mw_cel -from pad_ring_placed -to voltage_domains_created
+close_mw_cel pad_ring_placed
+open_mw_cel  voltage_domains_created
+set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N
+#set HALO_SRAM_RIGHT [expr 4 * $CELL_HEIGHT]
+#set HALO_SRAM_LEFT [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_TOP [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_BOTTOM [expr 4 * $CELL_HEIGHT]
+#set_keepout_margin -type hard -all_macros -outer {$HALO_SRAM_LEFT $HALO_SRAM_BOTTOM $HALO_SRAM_RIGHT $HALO_SRAM_TOP};
+#set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+set_keepout_margin -type hard -all_macros -outer {1 1 1 1};
+#set_keepout_margin               [-type hard | soft] [-outer {lx by rx ty}]
+# Bloquemos ruteo y la colocamos dentro de su zona de voltaje como un macro fijo
+#La SRAM queda fija en la esquina superior del core
+#Hay que estar seguros de que la SRAM queda totalmente dentro de la zona de voltaje que le definimos
+#Esto lista los puntos de anclaje del area del core
+#get_attribute [get_core_area] points
+#Tenemos la SRAM mirando al ESTE, la colocamos con pines hacia abajdo
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+#El bounidng box lo obtenemos del BB definido de la macro
+#set BBOX_SRAM [get_attribute [get_cells -hierarchical Memoria_8K] bbox]
+#Tenemos que ver donde queda la SRAM primero para definir este BBOX
+#create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage #                     metal4Blockage metal5Blockage metal6Blockage  } -bbox $BBOX_SRAM {RB_1037824 RB_1037825 RB_1037826 RB_1037827 RB_1037828 RB_1037829}
+# Esta colocacion es temporal, solo para analisis de congestion
+#create_fp_placement -timing_driven -no_legalize ;
+#Nos aseguramos de los pines a la UCU esten todos a la derecha
+close_mw_cel pre_power
+#Partimos de la esquina superior del area de core, que se puede obtener asi
+#get_attribute [get_core_area] bbox
+## BBOX Area reportada para el CORE {182.280 181.800} {1497.720 1337.640}
+## Iniciamos 200 micrometros mas abajo
+# 10 micrometros sobre el borde del core
+set base_coordinates {1497.720 1237.640}
+source ./scripts/place_ports.tcl
+source ./scripts/allocate_ports_rdy.tcl
+#
+create_fp_placement -timing_driven -no_hier;
+close_mw_cel "voltage_domains_created.CEL;11"
+open_mw_cel  pad_ring_placed
+source ./scripts/create_voltage_areas_def_v2.tcl
+copy_mw_cel -from pad_ring_placed -to voltage_domains_created
+close_mw_cel pad_ring_placed
+open_mw_cel  voltage_domains_created
+## Generamos el halo alrededor de la SRAM (el unico hard macro)
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N
+#set HALO_SRAM_RIGHT [expr 4 * $CELL_HEIGHT]
+#set HALO_SRAM_LEFT [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_TOP [expr 1 * $CELL_HEIGHT]
+#set HALO_SRAM_BOTTOM [expr 4 * $CELL_HEIGHT]
+#set_keepout_margin -type hard -all_macros -outer {$HALO_SRAM_LEFT $HALO_SRAM_BOTTOM $HALO_SRAM_RIGHT $HALO_SRAM_TOP};
+#set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+set_keepout_margin -type hard -all_macros -outer {1 1 1 1};
+#set_keepout_margin               [-type hard | soft] [-outer {lx by rx ty}]
+# Bloquemos ruteo y la colocamos dentro de su zona de voltaje como un macro fijo
+#La SRAM queda fija en la esquina superior del core
+#Hay que estar seguros de que la SRAM queda totalmente dentro de la zona de voltaje que le definimos
+#Esto lista los puntos de anclaje del area del core
+#get_attribute [get_core_area] points
+#Tenemos la SRAM mirando al ESTE, la colocamos con pines hacia abajdo
+#set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N -anchor_bound tl
+#El bounidng box lo obtenemos del BB definido de la macro
+#set BBOX_SRAM [get_attribute [get_cells -hierarchical Memoria_8K] bbox]
+#Tenemos que ver donde queda la SRAM primero para definir este BBOX
+#create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage #                     metal4Blockage metal5Blockage metal6Blockage  } -bbox $BBOX_SRAM {RB_1037824 RB_1037825 RB_1037826 RB_1037827 RB_1037828 RB_1037829}
+# Esta colocacion es temporal, solo para analisis de congestion
+#create_fp_placement -timing_driven -no_legalize ;
+#Nos aseguramos de los pines a la UCU esten todos a la derecha
+close_mw_cel pre_power
+#Partimos de la esquina superior del area de core, que se puede obtener asi
+#get_attribute [get_core_area] bbox
+## BBOX Area reportada para el CORE {182.280 181.800} {1497.720 1337.640}
+## Iniciamos 200 micrometros mas abajo
+# 10 micrometros sobre el borde del core
+set base_coordinates {1497.720 1237.640}
+source ./scripts/place_ports.tcl
+source ./scripts/allocate_ports_rdy.tcl
+#
+create_fp_placement -timing_driven -no_hier;
+save_mw_cel  -design "voltage_domains_created.CEL;12"
+cut_row -within {{885 589.480} {908 1337.640}}
+#Sacamos las filas bordeando el dominio de voltaje en la base de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{182 589.480} {885 620.00}}
+cut_row -within {{182 589.480} {885 621.00}}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start RulerTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {293.650 622.285} -scale 0.798
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+set_undoable_attribute [get_cells -all top_riscv_soc/TOP/Memoria_8K] is_fixed true
+refine_placement -congestion_effort low;
+legalize_placement;
+save_mw_cel -as floorplan_ends;
+copy_mw_cel -from  floorplan_ends -to floorplan_ends1;
+close_mw_cel  voltage_domains_created
+close_mw_cel floorplan_ends;
+## Vamos por aca
+open_mw_cel floorplan_ends1;
+#Trabajamos sobre otra celda y verificamos librerias
+#check_library;
+#check_tlu_files;
+#list_libs;
+#########################################################################################################
+############################### Creacion de los anillos y pads de VDD y VSS ############################
+###############################    Basados en dominios UPF                 ############################
+##(Si no se usa UPF, estas son las directivas)
+##derive_pg_connection -power_pin VDD -power_net VDD -ground_net VSS -ground_pin VSS
+derive_pg_connection
+derive_pg_connection -tie
+#derive_pg_connection -power_net VDD -ground_net VSS -tie
+set pns_commit_lower_layer_first true
+source ./scripts/power_nets_syn.tcl
+#para prevenir que los straps no queden alineados con las correas de alimentacion
+#set_fp_rail_strategy -align_strap_with_m1_rail true ; #-std_cell_rail_connect_layer MET1 -put_strap_in_std_cell_row true
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer METTPL
+#
+#set_pnet_options -partial {METTP METTPL}
+set_pnet_options -complete {METTP METTPL}
+set_fp_rail_strategy -align_strap_with_m1_rail true
+synthesize_fp_rail  -synthesize_voltage_areas -voltage_areas  {top_riscv_soc/PD_CORE}  -power_budget 1000 -pad_masters { VDD_1V8:VDDCPADF.FRAM VSS:GNDORPADF.FRAM }
+#save_mw_cel -as fp_rail_synthesized_not_committed
+commit_fp_rail
+save_mw_cel -as power_rail_rdy
+create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage metal4Blockage metal5Blockage metal6Blockage} -bbox {{885.360 593.120} {893.200 1337.360}}
+set_route_zrt_common_options -read_user_metal_blockage_layer true
+save_mw_cel -as power_rail_rdy_metal_blockage
+#set_preroute_drc_strategy -treat_fat_blockage_as_fat_wire -report_fail -min_layer MET1 -max_layer METTPL
+#set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer MET2
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer METTPL
+preroute_instances
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer METTPL
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+save_mw_cel -as first_preroute_std_cells
+save_mw_cel -as first_preroute_std_cells
+#analyze_fp_rail
+#set_pnet_options ...; # (en caso que sea necesario bloquear algo)
+create_fp_placement -timing_driven -no_hierarchy_gravity -incremental all;
+refine_placement -congestion_effort high;
+legalize_placement;
+insert_stdcell_filler  -cell_with_metal FEED25HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+insert_stdcell_filler  -cell_with_metal FEED15HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+insert_stdcell_filler  -cell_with_metal FEED10HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+insert_stdcell_filler  -cell_with_metal FEED7HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+insert_stdcell_filler  -cell_with_metal  FEED5HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+insert_stdcell_filler  -cell_with_metal FEED3HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+insert_stdcell_filler  -cell_with_metal FEED2HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+insert_stdcell_filler  -cell_with_metal FEED1HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer MET3
+preroute_instances
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+remove_stdcell_filler -stdcell
+save_mw_cel -as powerplan_rail_ends
+#preroute_standard_cells -nets VDD -mode net -connect horizontal
+#######################
+#  Place and Routing  #
+#######################
+## Abrimos otra celda MW temporal
+copy_mw_cel -from  powerplan_rail_ends -to powerplan_ends1
+close_mw_cel floorplan_ends1
+open_mw_cel powerplan_ends1
+################################ Place_Optimization ################################################
+set compile_instance_name_prefix place
+place_opt -effort high
+legalize_placement -effort medium
+####################   Volvemos a poner los puertos !!!   ####################
+#Volvemos a poner los puertos !!!
+source ./scripts/allocate_ports_rdy.tcl
+#Hasta aca todo bien. Celdas conectadas a VDD VSS
+################################################################################Reports
+create_qor_snapshot -timing -constraint -congestion -name Place
+report_qor_snapshot  > $PROY_HOME_PHY/reports/place.qor_snapshot.rpt
+report_qor > $PROY_HOME_PHY/reports/place.qor
+report_constraint -all > $PROY_HOME_PHY/reports/place.con
+report_timing -capacitance -transition_time -input_pins -nets -delay_type max > $PROY_HOME_PHY/reports/place.max.tim
+report_timing -capacitance -transition_time -input_pins -nets -delay_type min > $PROY_HOME_PHY/reports/place.min.tim
+################################################################################Save_Milkyway_Cel
+copy_mw_cel -from powerplan_ends1 -to clock_tree_placed
+################################################################################
+close_mw_cel powerplan_ends1
+open_mw_cel clock_tree_placed
+derive_pg_connection
+derive_pg_connection -tie
+set_route_zrt_common_options -read_user_metal_blockage_layer true
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer MET2
+preroute_instances
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+#ANTENNATS configuration
+#source xx018.ante.rules
+source $TECH_ROOT/xh018/synopsys/v6_3/techMW/v6_3_1_1/xh018-synopsys-techMW-v6_3_1_1/xx018.ante.rules
+report_antenna_rules
+#set_route_zrt_detail_options -diode_libcell_names ANTENNATS -insert_diodes_during_routing true
+#Estime el retardo de cada path usando el comando route_zrt_global y utilice el comando set_route_zrt para asegurar que se tomen en cuenta los path groups
+#set_route_zrt_common_options -plan_group_aware all_routing
+#Genere un estimado del retarso de los cables en el diseño usando el comando route_zrt_global -effort ultra
+route_zrt_global -effort ultra
+#optimize el posicionamiento de las celdas para mejorar los resultados de timing usando el comando optimize_fp_timing
+optimize_fp_timing
+#verifique nuevamente cuál es el peor camino Max en el diseño usando el comando report_timing ¿Nota algún cambio?
+#report_timing -nets -capacitance -transition_time -input_pin;
+#Hasta aca todo bien. Celdas conectadas a VDD VSS
+#Vamos a definir las opciones para el Z Router
+#set_route_zrt_common_options -default true
+set_route_zrt_global_options -timing_driven true
+set_route_zrt_global_options -effort high
+set_route_zrt_track_options -timing_driven true
+set_route_zrt_detail_options -drc_convergence_effort_level high
+####
+#Reducir la cantidad de buffers e inversores, sin afectar la calidad del resultado
+###
+set_buffer_opt_strategy -effort low
+set_route_zrt_detail_options -default_gate_size 0.1
+## Preparamos y ejecutamos la sintesis del arbol de reloj
+#create_clock -period 50 -name CLK [get_ports clk_pad]
+#create_clock -period $CLK_PER -name CLK [get_ports clk_pad]
+set_clock_tree_options -clock_trees [get_clocks] -insert_boundary_cell true -ocv_clustering true -buffer_relocation true -buffer_sizing true -gate_relocation true -gate_sizing true
+set cts_use_debug_mode true
+set cts_do_characterization true
+clock_opt -fix_hold_all_clocks -congestion > ./reports/cts_report.txt
+save_mw_cel clock_tree_placed
+copy_mw_cel -from clock_tree_placed  -to routed_cell
+close_mw_cel clock_tree_placed
+open_mw_cel routed_cell
+######
+#report_timing -nets -capacitance -transition_time -input_pin;
+set_dont_touch_network [get_clocks]
+route_zrt_auto -max_detail_route_iterations 40 ; #30
+verify_zrt_route
+verify_zrt_route > ./reports/report_first_zroute.txt;
+psynopt -congestion
+route_zrt_auto -max_detail_route_iterations 40; #30
+route_opt -effort high -incremental
+verify_zrt_route > ./reports/report_second_zroute.txt;
+route_zrt_detail -incremental true -max_number_iterations 40; #30
+focal_opt -drc_nets all
+remove_zrt_redundant_shapes -report_changed_nets true
+verify_zrt_route -antenna true
+# Insertamos diodos si hay errores aun de Antena
+#insert_diode -prefix fixAntx
+#Vamos a verificar DRC de ruteo
+verify_zrt_route -antenna true  > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_drc_route.txt"
+verify_pg_nets > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_pg_nets.txt"
+## Vamos a correr DRC y LVS antes de rellenar
+#Definimos opciones para el ICV
+# change_names  -rule  verilog  -hierarchy
+#write_verilog "$PROY_HOME_PHY/db/$DESIGN_NAME\_phy_sim.v"
+save_mw_cel routed_cell
+copy_mw_cel -from routed_cell -to routed_cell_no_fill
+verify_lvs -max_error 100 -check_floating_port_on_null_net -check_open_locator -check_short_locator -check_child_blockage
+verify_lvs -max_error 100 -check_floating_port_on_null_net -check_open_locator -check_short_locator -check_child_blockage
+change_names  -rule  verilog  -hierarchy
+write_verilog "$PROY_HOME_PHY/db/$DESIGN_NAME\_phy_sim.v"
+change_names  -rule  verilog  -hierarchy
+write_verilog "$PROY_HOME_PHY/db/$DESIGN_NAME\_phy_sim_no_fill.v"

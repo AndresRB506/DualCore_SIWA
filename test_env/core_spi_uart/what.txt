@@ -1,0 +1,673 @@
+                         Chronologic VCS (TM)
+      Version M-2017.03-SP2-5_Full64 -- Mon Mar 25 19:14:29 2019
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'top_core_spi_uart.sv'
+Parsing included file '../../TEC_RISCV/TOP/topcore_tecriscv.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../FIFO_Latches/fifo.sv'.
+Back to file '../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv'.
+Back to file '../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro.sv'.
+Back to file '../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../DECO_INSTR/DECO_INSTR.sv'.
+Back to file '../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../ALU/ALU_2.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../ALU/ALU_Library.sv'.
+Back to file '../../TEC_RISCV/TOP/../ALU/ALU_2.sv'.
+Back to file '../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../Register_File/Banco_de_registros_latches.v'.
+Parsing included file '../../TEC_RISCV/TOP/../Register_File/Biblioteca.v'.
+Back to file '../../TEC_RISCV/TOP/../Register_File/Banco_de_registros_latches.v'.
+Back to file '../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../MBC/MBC.sv'.
+Back to file '../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../TOP/control.sv'.
+Back to file '../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../TOP/XSPRAMLP_2048X32_M8P.sv'.
+Back to file '../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv'.
+Back to file '../../TEC_RISCV/TOP/topcore_tecriscv.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../SPI/top_spi.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../SPI/spi.sv'.
+Back to file '../../TEC_RISCV/TOP/../SPI/top_spi.sv'.
+Back to file '../../TEC_RISCV/TOP/topcore_tecriscv.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/baud.sv'.
+Back to file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/detector_flanco.sv'.
+Back to file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/fifo_to_uart_reg.sv'.
+Back to file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/log_ftu.sv'.
+Back to file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/log_utf.sv'.
+Back to file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/uart_to_fifo_reg.sv'.
+Back to file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/u_rec.sv'.
+Back to file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Parsing included file '../../TEC_RISCV/TOP/../UART/scrs/u_xmit.sv'.
+Back to file '../../TEC_RISCV/TOP/../UART/scrs/uart.sv'.
+Back to file '../../TEC_RISCV/TOP/topcore_tecriscv.sv'.
+Back to file 'top_core_spi_uart.sv'.
+Parsing included file 'Status.sv'.
+
+Warning-[RVOSFD] Return value discarded
+Status.sv, 6
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Status.sv", 6
+  Source info:     $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Status.sv, 1589
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Status.sv", 1589
+  Source info:     $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Status.sv, 1638
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Status.sv", 1638
+  Source info:    $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Status.sv, 1640
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Status.sv", 1640
+  Source info:    $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Status.sv, 1645
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Status.sv", 1645
+  Source info:     $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Status.sv, 1646
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Status.sv", 1646
+  Source info:     $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Status.sv, 1653
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Status.sv", 1653
+  Source info:     $fgets(line,out);
+
+Back to file 'top_core_spi_uart.sv'.
+Parsing included file 'IS25WP032D.v'.
+Back to file 'top_core_spi_uart.sv'.
+Parsing included file 'coverage_classes.sv'.
+Back to file 'top_core_spi_uart.sv'.
+Parsing included file 'instruction_class.sv'.
+Back to file 'top_core_spi_uart.sv'.
+Parsing included file 'Reference_Model.sv'.
+
+Warning-[IPDW] Identifier previously declared
+Reference_Model.sv, 52
+  Second declaration for identifier 'mcause2' ignored
+  Identifier 'mcause2' previously declared as logic. [Reference_Model.sv, 22]
+
+
+Warning-[RVOSFD] Return value discarded
+Reference_Model.sv, 95
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Reference_Model.sv", 95
+  Source info:      $fgets(instruction_str,file);
+
+Back to file 'top_core_spi_uart.sv'.
+Parsing included file 'Selfcheck.sv'.
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 58
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 58
+  Source info:             $fgets(filler,file_s);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 112
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 112
+  Source info:           $fgets(filler,file_s);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 170
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 170
+  Source info:             $fgets(filler,file_s);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 275
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 275
+  Source info:             $fgets(filler,file_s);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 307
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 307
+  Source info:       $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 325
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 325
+  Source info:           $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 327
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 327
+  Source info:             $fgets(line,out); //discard line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 335
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 335
+  Source info:           $fgets(line,out); //x2 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 338
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 338
+  Source info:           $fgets(line,out); //x3 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 341
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 341
+  Source info:           $fgets(line,out); //x4 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 344
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 344
+  Source info:           $fgets(line,out); //x5 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 347
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 347
+  Source info:           $fgets(line,out); //x6 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 350
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 350
+  Source info:           $fgets(line,out); //x7 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 353
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 353
+  Source info:           $fgets(line,out); //x8 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 356
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 356
+  Source info:           $fgets(line,out); //x9 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 359
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 359
+  Source info:           $fgets(line,out); //x10 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 362
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 362
+  Source info:           $fgets(line,out); //x11 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 365
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 365
+  Source info:           $fgets(line,out); //x12 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 368
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 368
+  Source info:           $fgets(line,out); //x13 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 371
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 371
+  Source info:           $fgets(line,out); //x14 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 374
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 374
+  Source info:           $fgets(line,out); //x15 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 377
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 377
+  Source info:           $fgets(line,out); //x16 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 380
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 380
+  Source info:           $fgets(line,out); //x17 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 383
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 383
+  Source info:           $fgets(line,out); //x18 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 386
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 386
+  Source info:           $fgets(line,out); //x19 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 389
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 389
+  Source info:           $fgets(line,out); //x20 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 392
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 392
+  Source info:           $fgets(line,out); //x21 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 395
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 395
+  Source info:           $fgets(line,out); //x22 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 398
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 398
+  Source info:           $fgets(line,out); //x23 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 401
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 401
+  Source info:           $fgets(line,out); //x24 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 404
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 404
+  Source info:           $fgets(line,out); //x25 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 407
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 407
+  Source info:           $fgets(line,out); //x26 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 410
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 410
+  Source info:           $fgets(line,out); //x27 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 413
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 413
+  Source info:           $fgets(line,out); //x28 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 416
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 416
+  Source info:           $fgets(line,out); //x29 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 419
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 419
+  Source info:           $fgets(line,out); //x30 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 422
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 422
+  Source info:           $fgets(line,out); //x31 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 425
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 425
+  Source info:           $fgets(line,out); //mip_mie line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 428
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 428
+  Source info:           $fgets(line,out); //mepc line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 431
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 431
+  Source info:           $fgets(line,out); //mcause1 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 434
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 434
+  Source info:           $fgets(line,out); //mcause2 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 437
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 437
+  Source info:           $fgets(line,out); //gpio line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 440
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 440
+  Source info:           $fgets(line,out); //mvtec line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 443
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 443
+  Source info:           $fgets(line,out); //timer_comp line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 446
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 446
+  Source info:           $fgets(line,out); //timer_valor line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 449
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 449
+  Source info:           $fgets(line,out); //full_shift line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 452
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 452
+  Source info:           $fgets(line,out); //IS_Val line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 455
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 455
+  Source info:           $fgets(line,out); //IS_config line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 458
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 458
+  Source info:           $fgets(line,out); //IS_trigger line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 493
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 493
+  Source info:       $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 513
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 513
+  Source info:           $fgets(line,out); //x1 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 516
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 516
+  Source info:           $fgets(line,out); //x2 line && x3 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 521
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 521
+  Source info:           $fgets(line,out); //x4 line && x5 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 526
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 526
+  Source info:           $fgets(line,out); //x6 line && x7 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 531
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 531
+  Source info:           $fgets(line,out); //x8 line && x9 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 536
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 536
+  Source info:           $fgets(line,out); //x10 line && x11 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 541
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 541
+  Source info:           $fgets(line,out); //x12 line && x13 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 546
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 546
+  Source info:           $fgets(line,out); //x14 line && x15 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 551
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 551
+  Source info:           $fgets(line,out); //x16 line && x17 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 556
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 556
+  Source info:           $fgets(line,out); //x18 line && x19 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 561
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 561
+  Source info:           $fgets(line,out); //x20 line && x21 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 566
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 566
+  Source info:           $fgets(line,out); //x22 line && x23 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 571
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 571
+  Source info:           $fgets(line,out); //x24 line && x25 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 576
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 576
+  Source info:           $fgets(line,out); //x26 line && x27 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 581
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 581
+  Source info:           $fgets(line,out); //x28 line && x29 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 586
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 586
+  Source info:           $fgets(line,out); //x30 line && x31 line
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 616
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 616
+  Source info:     $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 621
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 621
+  Source info:       $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 641
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 641
+  Source info:     $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+Selfcheck.sv, 649
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "Selfcheck.sv", 649
+  Source info:       $fgets(line,out);
+
+Back to file 'top_core_spi_uart.sv'.
+
+Error-[IND] Identifier not declared
+top_core_spi_uart.sv, 174
+  Identifier 'spi_predict' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+
+Warning-[RVOSFD] Return value discarded
+top_core_spi_uart.sv, 250
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "top_core_spi_uart.sv", 250
+  Source info:                 $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+top_core_spi_uart.sv, 295
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "top_core_spi_uart.sv", 295
+  Source info:         $fgets(line,out);
+
+
+Warning-[RVOSFD] Return value discarded
+top_core_spi_uart.sv, 531
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "top_core_spi_uart.sv", 531
+  Source info:                         $fgets(filler,file_s);
+
+
+Warning-[RVOSFD] Return value discarded
+top_core_spi_uart.sv, 554
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "top_core_spi_uart.sv", 554
+  Source info:             $fgets(filler,file_s);
+
+
+Warning-[RVOSFD] Return value discarded
+top_core_spi_uart.sv, 635
+  System function '$fgets' is invoked as task, its return value is discarded.
+  "top_core_spi_uart.sv", 635
+  Source info:         $fgets(filler,out);
+
+85 warnings
+1 error
+CPU time: .343 seconds to compile

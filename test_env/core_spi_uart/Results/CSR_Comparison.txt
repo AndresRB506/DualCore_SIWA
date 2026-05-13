@@ -1,0 +1,5 @@
+---Prediction--RTL Result----
+
+Instruction: 000000b3
+PC: 00000000, 00000000
+CSR0: 00010004, 00000004

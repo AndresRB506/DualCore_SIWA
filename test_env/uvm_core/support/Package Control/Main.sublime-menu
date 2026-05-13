@@ -1,0 +1,41 @@
+[
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Package Control",
+                        "children":
+                        [
+                            {
+                                "command": "package_control_open_default_settings",
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "package_control_open_user_settings",
+                                "caption": "Settings – User"
+                            },
+                            {
+                                "command": "package_control_edit_settings",
+                                "caption": "Settings"
+                            },
+                            { "caption": "-" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "caption": "Package Control",
+                "mnemonic": "C",
+                "command": "show_overlay",
+                "args": {"overlay": "command_palette", "text": "Package Control: "}
+            }
+        ]
+    }
+]

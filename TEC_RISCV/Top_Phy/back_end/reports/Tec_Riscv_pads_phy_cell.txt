@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : cell
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Tue Oct  2 12:51:11 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                    Reference      Library         Area   Attributes  V:T:P
+--------------------------------------------------------------------------------
+pad_ring_inst           pad_ring                       0.000000
+                                                              b, h, n     1.80:25.00:1.00
+top_riscv_soc           topcore_tecriscv               830381.221261
+                                                              b, h, n     1.80:25.00:1.00
+--------------------------------------------------------------------------------
+Total 2 cells                                             830381.221261
+1

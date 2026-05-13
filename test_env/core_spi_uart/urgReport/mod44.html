@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: topcore_tb</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_topcore_tb'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_topcore_tb')">topcore_tb</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s0 cl rt">  7.26</td>
+<td class="s1 cl rt"><a href="mod44.html#Line" > 16.03</a></td>
+<td class="s0 cl rt"><a href="mod44.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod44.html#Toggle" >  1.90</a></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod44.html#Branch" > 11.11</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/top_core_spi_uart.sv')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/top_core_spi_uart.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod44.html#inst_tag_4215"  onclick="showContent('inst_tag_4215')">topcore_tb</a></td>
+<td class="s0 cl rt">  7.26</td>
+<td class="s1 cl rt"><a href="mod44.html#Line" > 16.03</a></td>
+<td class="s0 cl rt"><a href="mod44.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod44.html#Toggle" >  1.90</a></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod44.html#Branch" > 11.11</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_topcore_tb'>
+<hr>
+<a name="inst_tag_4215"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_4215" >topcore_tb</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s0 cl rt">  7.26</td>
+<td class="s1 cl rt"><a href="mod44.html#Line" > 16.03</a></td>
+<td class="s0 cl rt"><a href="mod44.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod44.html#Toggle" >  1.90</a></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod44.html#Branch" > 11.11</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s4 cl rt"> 41.84</td>
+<td class="s5 cl rt"> 54.57</td>
+<td class="s4 cl rt"> 45.41</td>
+<td class="s2 cl rt"> 29.22</td>
+<td class="s1 cl rt"> 10.38</td>
+<td class="s6 cl rt"> 69.61</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<span class=inst>none</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod2_0.html#inst_tag_2" id="tag_urg_inst_2">mem</a></td>
+<td class="s1 cl rt"> 14.49</td>
+<td class="s1 cl rt"> 15.44</td>
+<td class="s0 cl rt">  6.37</td>
+<td class="s0 cl rt">  5.00</td>
+<td class="s2 cl rt"> 20.00</td>
+<td class="s2 cl rt"> 25.66</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod6.html#inst_tag_6" id="tag_urg_inst_6">uut</a></td>
+<td class="s4 cl rt"> 46.57</td>
+<td class="s6 cl rt"> 62.89</td>
+<td class="s5 cl rt"> 57.62</td>
+<td class="s3 cl rt"> 30.24</td>
+<td class="s1 cl rt"> 10.20</td>
+<td class="s7 cl rt"> 71.92</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_topcore_tb'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod44.html" >topcore_tb</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s1"><td class="lf">TOTAL</td><td></td><td>131</td><td>21</td><td>16.03</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>126</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s0"><td class="lf">ALWAYS</td><td>129</td><td>32</td><td>3</td><td>9.38</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>172</td><td>11</td><td>11</td><td>100.00</td></tr>
+<tr class="s1"><td class="lf">ROUTINE</td><td>194</td><td>46</td><td>5</td><td>10.87</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>270</td><td>40</td><td>0</td><td>0.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+125                     
+126        2/2          always #25 clk=~clk;
+127                     
+128                     always @(posedge clk)begin
+129        1/1          	prueba();
+130        1/1              rx_uart_monitor(TX_UART,19200);
+131        1/1              if(complete_uart_rx_data == 64'h8898968088888888) begin
+132        <font color = "red">0/1     ==>          if (loaded_data_flag == 0) begin</font>
+133        <font color = "red">0/1     ==>              out = $fopen(&quot;uart_data.txt&quot;,&quot;r&quot;);</font>
+134        <font color = "red">0/1     ==>              while (!$feof(out)) begin</font>
+135        <font color = "red">0/1     ==>                  $fgets(line,out);</font>
+136        <font color = "red">0/1     ==>                  data = line.atohex();</font>
+137        <font color = "red">0/1     ==>                  uart_tx_data_queue.push_back(data);</font>
+138                                 end
+                   <font color = "red">==>  WHILE_FALSE</font>
+139                                 //data = uart_tx_data_queue.pop_back();
+140        <font color = "red">0/1     ==>              loaded_data_flag = 1;</font>
+141                             end
+                   <font color = "red">==>  MISSING_ELSE</font>
+142        <font color = "red">0/1     ==>          if (loaded_data_flag == 1) begin</font>
+143        <font color = "red">0/1     ==>              if((uart_busy == 0) &amp;&amp; (tx_byte_count == 0)) begin</font>
+144        <font color = "red">0/1     ==>                  if(uart_tx_data_queue.size() &gt; 0) begin</font>
+145        <font color = "red">0/1     ==>                      tx_byte_queue.delete();</font>
+146        <font color = "red">0/1     ==>                      data = uart_tx_data_queue.pop_front();</font>
+147        <font color = "red">0/1     ==>                      $display(&quot;The packet to be sent through UART is: %h&quot;, data);</font>
+148        <font color = "red">0/1     ==>                      $display(&quot;-----------------------------------&quot;);</font>
+149        <font color = "red">0/1     ==>                      tx_byte_queue.push_back(data[7:0]);</font>
+150        <font color = "red">0/1     ==>                      tx_byte_queue.push_back(data[15:8]);</font>
+151        <font color = "red">0/1     ==>                      tx_byte_queue.push_back(data[23:16]);</font>
+152        <font color = "red">0/1     ==>                      tx_byte_queue.push_back(data[31:24]);</font>
+153        <font color = "red">0/1     ==>                      tx_byte_queue.push_back(data[39:32]);</font>
+154        <font color = "red">0/1     ==>                      tx_byte_queue.push_back(data[47:40]);</font>
+155        <font color = "red">0/1     ==>                      tx_byte_queue.push_back(data[55:48]);</font>
+156        <font color = "red">0/1     ==>                      tx_byte_queue.push_back(data[63:56]);</font>
+157                                     end
+                   <font color = "red">==>  MISSING_ELSE</font>
+158                                 end
+                   <font color = "red">==>  MISSING_ELSE</font>
+159        <font color = "red">0/1     ==>              tx_uart_driver(19200,tx_byte_queue[tx_byte_count],RX_UART,uart_busy);</font>
+160        <font color = "red">0/1     ==>              if((uart_busy == 0) &amp;&amp; (uart_tx_data_queue.size() == 0) &amp;&amp; (tx_byte_count == 0)) begin</font>
+161        <font color = "red">0/1     ==>                  $display(&quot;-----------------------------------&quot;);</font>
+162        <font color = "red">0/1     ==>                  $display(&quot;Transmission has ended. Finishing test...&quot;);</font>
+163        <font color = "red">0/1     ==>                  $display(&quot;-----------------------------------&quot;);</font>
+164        <font color = "red">0/1     ==>                  complete_uart_rx_data = 0;</font>
+165        <font color = "red">0/1     ==>                  finish = 1;</font>
+166                                 end
+                   <font color = "red">==>  MISSING_ELSE</font>
+167                             end
+                   <font color = "red">==>  MISSING_ELSE</font>
+168                         end
+                        MISSING_ELSE
+169                     end
+170                     
+171                     task prueba();
+172        1/1          if ($time&lt;4000000)begin
+173        1/1              reset &lt;=1;
+174        1/1              maip &lt;= 0; //ENTRADA NUEVA
+175                       end
+176                       else begin
+177        1/1              reset &lt;=0;
+178        1/1              out = $fopen(&quot;temp.txt&quot;,&quot;r+&quot;);
+179        1/1              while(!$feof(out)) begin
+180        1/1                  $fgets(line,out);
+181                         end
+                   <font color = "red">==>  WHILE_FALSE</font>
+182        1/1              $fclose(out);
+183        1/1              if(($time &gt;40000000) || /*(finish == 1)*/(line == &quot;FINISH&quot;))begin
+184        1/1                  selfcheck(inst_queue,prediction,executed_inst,exe_inst_queue,csr_predict);
+185        1/1              	$finish;
+186                         end
+                        MISSING_ELSE
+187                       end
+188                     endtask : prueba
+189                     
+190                     task rx_uart_monitor(input logic rx_bit, input int baud_rate); //Even parity bit is used
+191                     
+192                         int total_cycle;
+193                     
+194        1/1              total_cycle = 20000000/baud_rate; //20MHZ / baud_rate
+195                     
+196        1/1              if ((rx_bit == 0) &amp;&amp; (data_count == 0)) begin // Start Bit
+197        <font color = "red">0/1     ==>      	if(total_cycle == rx_cycle_count) begin</font>
+198        <font color = "red">0/1     ==>      		$display(&quot;Start bit found!&quot;);</font>
+199        <font color = "red">0/1     ==>      		rx_cycle_count = 0;</font>
+200        <font color = "red">0/1     ==>      		data_count++;</font>
+201                         	end
+202                         	else begin
+203        <font color = "red">0/1     ==>      		rx_cycle_count++;</font>
+204                         	end
+205                         end
+206        1/1             	else if ((data_count &gt; 0) &amp;&amp; (data_count &lt; 9)) begin // 8bit Data
+207        <font color = "red">0/1     ==>     		if(total_cycle == rx_cycle_count) begin</font>
+208        <font color = "red">0/1     ==>     			$display(&quot;Data bit found: %h&quot;,(data_count - 1));</font>
+209        <font color = "red">0/1     ==>     			uart_rx_data[data_count - 1] = rx_bit;</font>
+210        <font color = "red">0/1     ==>      		rx_cycle_count = 0;</font>
+211        <font color = "red">0/1     ==>      		data_count++;</font>
+212                         	end
+213                         	else begin
+214        <font color = "red">0/1     ==>      		rx_cycle_count++;</font>
+215                         	end
+216                         end
+217        1/1              else if(data_count == 9) begin // Even Parity bit
+218        <font color = "red">0/1     ==>      	if(total_cycle == rx_cycle_count) begin</font>
+219        <font color = "red">0/1     ==>      		$display(&quot;Parity bit found: %b&quot;,rx_bit);</font>
+220        <font color = "red">0/1     ==>      		even_parity = rx_bit;</font>
+221        <font color = "red">0/1     ==>      		uart_rx_data[data_count - 1] = rx_bit;</font>
+222        <font color = "red">0/1     ==>      		rx_cycle_count = 0;</font>
+223        <font color = "red">0/1     ==>      		data_count++;</font>
+224                         	end
+225                         	else begin
+226        <font color = "red">0/1     ==>      		rx_cycle_count++;</font>
+227                         	end
+228                         end
+229        1/1              else if((rx_bit == 1) &amp;&amp; (data_count == 10)) begin
+230        <font color = "red">0/1     ==>      	if(total_cycle == rx_cycle_count) begin</font>
+231        <font color = "red">0/1     ==>      		$display(&quot;Stop bit has been found!!&quot;);</font>
+232        <font color = "red">0/1     ==>      		$display(&quot;-----------------------------------&quot;);</font>
+233        <font color = "red">0/1     ==>  			$display(&quot;UART Transaction Succesful...&quot;);</font>
+234        <font color = "red">0/1     ==>  			$display(&quot;-----------------------------------&quot;);</font>
+235        <font color = "red">0/1     ==>  			$display(&quot;Data received (hex): %h&quot;,uart_rx_data);</font>
+236        <font color = "red">0/1     ==>              $display(&quot;Data received (bin): %b&quot;,uart_rx_data);</font>
+237        <font color = "red">0/1     ==>  			$display(&quot;Parity bit received: %b&quot;,even_parity);</font>
+238        <font color = "red">0/1     ==>  			if(even_parity == (^uart_rx_data)) begin</font>
+239        <font color = "red">0/1     ==>  				$display(&quot;The parity check bit is correct&quot;);</font>
+240        <font color = "red">0/1     ==>                  $display(&quot;-----------------------------------&quot;);</font>
+241        <font color = "red">0/1     ==>                  rx_byte_queue.push_back(uart_rx_data);</font>
+242        <font color = "red">0/1     ==>                  if(rx_byte_count &lt; 7) begin</font>
+243        <font color = "red">0/1     ==>                      rx_byte_count++;</font>
+244                                     end
+245                                     else begin
+246        <font color = "red">0/1     ==>                      complete_uart_rx_data = {rx_byte_queue[7],rx_byte_queue[6],rx_byte_queue[5],rx_byte_queue[4],rx_byte_queue[3],rx_byte_queue[2],rx_byte_queue[1],rx_byte_queue[0]};</font>
+247        <font color = "red">0/1     ==>                      $display(&quot;The packet recieved is: %h&quot;,complete_uart_rx_data);</font>
+248        <font color = "red">0/1     ==>                      $display(&quot;-----------------------------------&quot;);</font>
+249        <font color = "red">0/1     ==>                      rx_byte_count = 0;</font>
+250                                     end
+251                     			end
+252                     			else begin
+253        <font color = "red">0/1     ==>  				$display(&quot;Error in the parity bit&quot;);</font>
+254        <font color = "red">0/1     ==>  			end;</font>
+255        <font color = "red">0/1     ==>      		rx_cycle_count = 0;</font>
+256        <font color = "red">0/1     ==>      		data_count = 0;</font>
+257                         	end
+258                         	else begin
+259        <font color = "red">0/1     ==>      		rx_cycle_count++;</font>
+260                         	end
+261                         end
+                        MISSING_ELSE
+262                     
+263                     endtask : rx_uart_monitor
+264                     
+265                     task tx_uart_driver(input int baud_rate, input logic [7:0] uart_tx_data, output logic tx_bit, output logic busy);
+266                     
+267                         int total_cycle;
+268                         logic [31:0] data;
+269                     
+270        <font color = "red">0/1     ==>      total_cycle = 20000000/baud_rate; //20MHZ / baud_rate</font>
+271                     
+272        <font color = "red">0/1     ==>      if(sent_data_count == 0) begin</font>
+273        <font color = "red">0/1     ==>          if (tx_cycle_count &lt; total_cycle) begin //Start bit</font>
+274        <font color = "red">0/1     ==>              tx_bit = 0;</font>
+275        <font color = "red">0/1     ==>              tx_cycle_count++;</font>
+276                             end
+277                             else begin
+278        <font color = "red">0/1     ==>              $display(&quot;-----------------------------------&quot;);</font>
+279        <font color = "red">0/1     ==>              $display(&quot;Sending data through UART...&quot;);</font>
+280        <font color = "red">0/1     ==>              $display(&quot;Byte to be sent: %h&quot;,uart_tx_data);</font>
+281        <font color = "red">0/1     ==>              $display(&quot;-----------------------------------&quot;);</font>
+282        <font color = "red">0/1     ==>              sent_data_count++;</font>
+283        <font color = "red">0/1     ==>              tx_cycle_count = 0;</font>
+284                             end
+285        <font color = "red">0/1     ==>          busy = 1;</font>
+286                         end
+287        <font color = "red">0/1     ==>      else if((sent_data_count &gt; 0) &amp;&amp; (sent_data_count &lt; 9)) begin</font>
+288        <font color = "red">0/1     ==>          if (tx_cycle_count &lt; total_cycle) begin //Data bits</font>
+289        <font color = "red">0/1     ==>              tx_bit = uart_tx_data[(sent_data_count - 1)];</font>
+290        <font color = "red">0/1     ==>              tx_cycle_count++;</font>
+291                             end
+292                             else begin
+293        <font color = "red">0/1     ==>              sent_data_count++;</font>
+294        <font color = "red">0/1     ==>              tx_cycle_count = 0;</font>
+295                             end
+296        <font color = "red">0/1     ==>          busy = 1;</font>
+297                         end
+298        <font color = "red">0/1     ==>      else if(sent_data_count == 9) begin // Even Parity bit</font>
+299        <font color = "red">0/1     ==>          if(tx_cycle_count &lt; total_cycle) begin</font>
+300        <font color = "red">0/1     ==>              tx_bit = ^uart_tx_data;</font>
+301        <font color = "red">0/1     ==>              tx_cycle_count++;</font>
+302                             end
+303                             else begin
+304        <font color = "red">0/1     ==>              sent_data_count++;</font>
+305        <font color = "red">0/1     ==>              tx_cycle_count = 0;</font>
+306                             end
+307        <font color = "red">0/1     ==>          busy = 1;</font>
+308                         end
+309        <font color = "red">0/1     ==>      else if(sent_data_count &gt; 9) begin // Stop bit</font>
+310        <font color = "red">0/1     ==>          if(tx_cycle_count &lt; total_cycle) begin</font>
+311        <font color = "red">0/1     ==>              tx_bit = 1;</font>
+312        <font color = "red">0/1     ==>              tx_cycle_count++;</font>
+313        <font color = "red">0/1     ==>              busy = 1;</font>
+314                             end
+315                             else begin
+316        <font color = "red">0/1     ==>              sent_data_count = 0;</font>
+317        <font color = "red">0/1     ==>              tx_cycle_count = 0;</font>
+318        <font color = "red">0/1     ==>              $display(&quot;-----------------------------------&quot;);</font>
+319        <font color = "red">0/1     ==>              $display(&quot;UART Transaction Succesful...&quot;);</font>
+320        <font color = "red">0/1     ==>              $display(&quot;-----------------------------------&quot;);</font>
+321        <font color = "red">0/1     ==>              busy = 0;</font>
+322        <font color = "red">0/1     ==>              if(tx_byte_count &lt; 7) begin</font>
+323        <font color = "red">0/1     ==>                  tx_byte_count++;</font>
+324                                 end
+325                                 else begin
+326        <font color = "red">0/1     ==>                  tx_byte_count = 0;</font>
+327                                 end
+328                             end
+329                         end
+                   <font color = "red">==>  MISSING_ELSE</font>
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod44.html" >topcore_tb</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s0"><td class="lf">Conditions</td><td>3</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">Logical</td><td>3</td><td>0</td><td>0.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       143
+ EXPRESSION ((uart_busy == 1'b0) &amp;&amp; (tx_byte_count == 0))
+             ---------1---------    ----------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod44.html" >topcore_tb</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s2">
+<td>Totals</td>
+<td class="rt">25</td>
+<td class="rt">5</td>
+<td class="rt">20.00 </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">578</td>
+<td class="rt">11</td>
+<td class="rt">1.90  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">289</td>
+<td class="rt">5</td>
+<td class="rt">1.73  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">289</td>
+<td class="rt">6</td>
+<td class="rt">2.08  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s2">
+<td>Signals</td>
+<td class="rt">25</td>
+<td class="rt">5</td>
+<td class="rt">20.00 </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">578</td>
+<td class="rt">11</td>
+<td class="rt">1.90  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">289</td>
+<td class="rt">5</td>
+<td class="rt">1.73  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">289</td>
+<td class="rt">6</td>
+<td class="rt">2.08  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>MISO</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>RX_UART</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>MOSI</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SCLK</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SCS</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>TX_UART</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gpio[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>full_range_level_shifter[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>IS_Val[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>IS_Config[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>IS_Trigger[3:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>maip</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>Reg_GPIO_en[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>Reg_GPIO_int[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>Reg_GPIO_out[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>selfcheck_pc[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>uart_rx_data[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>even_parity</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>complete_uart_rx_data[63:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>data[63:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>loaded_data_flag</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>uart_busy</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>finish</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod44.html" >topcore_tb</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s1">
+<td>Branches</td>
+<td></td>
+<td class="rt">9</td>
+<td class="rt">1</td>
+<td class="rt">11.11 </td>
+</tr><tr class="s1">
+<td>IF</td>
+<td class="rt">131</td>
+<td class="rt">9</td>
+<td class="rt">1</td>
+<td class="rt">11.11 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+131            if(complete_uart_rx_data == 64'h8898968088888888) begin
+               <font color = "red">-1-</font>  
+132                if (loaded_data_flag == 0) begin
+                   <font color = "red">-2-</font>  
+133                    out = $fopen("uart_data.txt","r");
+           <font color = "red">            ==></font>
+134                    while (!$feof(out)) begin
+135                        $fgets(line,out);
+136                        data = line.atohex();
+137                        uart_tx_data_queue.push_back(data);
+138                    end
+139                    //data = uart_tx_data_queue.pop_back();
+140                    loaded_data_flag = 1;
+141                end
+                   MISSING_ELSE
+           <font color = "red">        ==></font>
+142                if (loaded_data_flag == 1) begin
+                   <font color = "red">-3-</font>  
+143                    if((uart_busy == 0) && (tx_byte_count == 0)) begin
+                       <font color = "red">-4-</font>  
+144                        if(uart_tx_data_queue.size() > 0) begin
+                           <font color = "red">-5-</font>  
+145                            tx_byte_queue.delete();
+           <font color = "red">                    ==></font>
+146                            data = uart_tx_data_queue.pop_front();
+147                            $display("The packet to be sent through UART is: %h", data);
+148                            $display("-----------------------------------");
+149                            tx_byte_queue.push_back(data[7:0]);
+150                            tx_byte_queue.push_back(data[15:8]);
+151                            tx_byte_queue.push_back(data[23:16]);
+152                            tx_byte_queue.push_back(data[31:24]);
+153                            tx_byte_queue.push_back(data[39:32]);
+154                            tx_byte_queue.push_back(data[47:40]);
+155                            tx_byte_queue.push_back(data[55:48]);
+156                            tx_byte_queue.push_back(data[63:56]);
+157                        end
+                           MISSING_ELSE
+           <font color = "red">                ==></font>
+158                    end
+                       MISSING_ELSE
+           <font color = "red">            ==></font>
+159                    tx_uart_driver(19200,tx_byte_queue[tx_byte_count],RX_UART,uart_busy);
+160                    if((uart_busy == 0) && (uart_tx_data_queue.size() == 0) && (tx_byte_count == 0)) begin
+                       <font color = "red">-6-</font>  
+161                        $display("-----------------------------------");
+           <font color = "red">                ==></font>
+162                        $display("Transmission has ended. Finishing test...");
+163                        $display("-----------------------------------");
+164                        complete_uart_rx_data = 0;
+165                        finish = 1;
+166                    end
+                       MISSING_ELSE
+           <font color = "red">            ==></font>
+167                end
+                   MISSING_ELSE
+           <font color = "red">        ==></font>
+168            end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_4215">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_topcore_tb">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

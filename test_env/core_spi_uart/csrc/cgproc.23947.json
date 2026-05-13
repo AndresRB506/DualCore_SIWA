@@ -1,0 +1,55 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                4.3732860088348389,
+                3.757428,
+                0.182972,
+                273540,
+                288508,
+                1552684833.19363
+            ],
+            "end_perf": [
+                4.4067699909210205,
+                3.7604280000000001,
+                0.19097,
+                277704,
+                288508
+            ],
+            "nQuads": 86,
+            "nMops": 52
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "checksum": 0,
+            "bytes": 14271,
+            "mode": 4
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [],
+    "stat": {
+        "peak_mem_kb": 288508,
+        "ru_self_end": {
+            "ru_maxrss_kb": 127612,
+            "ru_utime_sec": 3.7714259999999999,
+            "ru_stime_sec": 0.19497,
+            "ru_minflt": 50954,
+            "ru_majflt": 0,
+            "ru_nvcsw": 975,
+            "ru_nivcsw": 271
+        },
+        "ru_childs_end": {
+            "ru_maxrss_kb": 60728,
+            "ru_utime_sec": 0.0069979999999999999,
+            "ru_stime_sec": 0.024996000000000001,
+            "ru_minflt": 4744,
+            "ru_majflt": 0,
+            "ru_nvcsw": 34,
+            "ru_nivcsw": 20
+        }
+    }
+}

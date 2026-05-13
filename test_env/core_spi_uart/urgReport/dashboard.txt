@@ -1,0 +1,41 @@
+Dashboard
+
+Date: Tue Nov  6 11:14:01 2018
+
+User: rmolina
+
+Version: M-2017.03-SP2-5
+Command line: urg -full64 -lca -format both -dir ./simv.vdb 
+
+Number of tests: 1
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 33.12  44.13  42.61  18.03   9.34  51.46 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME                
+ 12.00  30.46   0.00   0.00 --      17.53 ALU                 
+ 17.65  70.59   0.00   0.00 --       0.00 Arbiter             
+ 26.63  42.93  45.70   0.00   0.00  44.52 bs_ntrfs            
+ 25.72  41.40  44.19   0.00   0.00  43.04 bs_ntrfs_n_rbtr     
+  0.00   0.00   0.00   0.00 --       0.00 fifo_flops          
+ 20.34  48.95   0.00   0.00 --      32.41 fifo_ltch           
+  1.50   3.00   0.00   0.00 --       3.00 fifo_ltch_no_rst    
+ 17.50  50.00   0.00   0.00 --      20.00 latch_tri_rst1_Hard 
+ 24.26  50.00   0.00   0.00 --      47.06 mem_latch           
+  1.62   4.53   0.00   0.00 --       1.95 ntrpt_cam_fifo      
+  0.59   2.95   0.00   0.00   0.00   0.00 prll_bs_ntrfs       
+  0.00   0.00 --       0.00 --       0.00 prll_rgstr          
+ 41.84  54.57  45.41  29.22  10.38  69.61 topcore_tb          
+  0.00 --       0.00   0.00 --       0.00 tristategate_negado 
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 18.23  21.45  10.89  20.37   9.72  28.74 
+

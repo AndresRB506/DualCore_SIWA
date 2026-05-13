@@ -1,0 +1,510 @@
+ 
+****************************************
+Report : area
+Design : CMB
+Version: N-2017.09-SP4
+Date   : Tue Jun 26 18:17:04 2018
+****************************************
+
+Library(s) Used:
+
+    XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/mem/lib/XSPRAMLP_2048X32_M8P.db)
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+
+Number of ports:                          568
+Number of nets:                           634
+Number of cells:                            3
+Number of combinational cells:              1
+Number of sequential cells:                 0
+Number of macros/black boxes:               1
+Number of buf/inv:                          0
+Number of references:                       3
+
+Combinational area:              61310.666852
+Buf/Inv area:                     7445.761754
+Noncombinational area:           66800.232941
+Macro/Black Box area:           500904.080100
+Net Interconnect area:            8894.187508
+                                       (No wire load specified)
+
+Total cell area:                629014.979892
+Total area:                     637909.167400
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                Local cell area
+                                  --------------------  ----------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-   Black-
+                                  Total        Total    national    national    boxes        Design
+--------------------------------  -----------  -------  ----------  ----------  -----------  ----------------------------------------------------------------------------------------------------------------------------------------
+CMB                               629014.9799    100.0      7.5264      0.0000  500899.0625  CMB
+inst_controller                   128108.3910     20.4   4392.1704      0.0000       0.0000  controlador_bus_sz80_Adrs_Data_sz32_Intr_D_sz72_cod_sz8_mem_adrs_sz11_bs_adrs_sz24_cant_io5_fifo_int_depth3_watch_dog_sz32_fifo_int_sz72
+inst_controller/Watch_DG_Counter    4783.1345      0.8    709.4904   1900.8793       0.0000  cnt_watch_dog_watch_dg_size32
+inst_controller/Watch_DG_Counter/add_267_S2
+                                     927.5648      0.1    927.5648      0.0000       0.0000  cnt_watch_dog_watch_dg_size32_DW01_inc_0
+inst_controller/Watch_DG_Counter/gte_268
+                                    1245.2000      0.2   1245.2000      0.0000       0.0000  cnt_watch_dog_watch_dg_size32_DW_cmp_0
+inst_controller/error_manejador     9524.6666      1.5   3044.0832   6480.5833       0.0000  error_handler_dat_size72
+inst_controller/fifo_int           16555.8653      2.6   2177.1737    262.9240       0.0000  fifo_depth3_bits72
+inst_controller/fifo_int/u_dp__0___dp2__D_reg
+                                    4711.8793      0.7     29.8056      0.0000       0.0000  prll_d_reg_bits72_0
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__0__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_0
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__10__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_206
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__11__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_205
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__12__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_204
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__13__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_203
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__14__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_202
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__15__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_201
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__16__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_200
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__17__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_199
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__18__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_198
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__19__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_197
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__1__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_215
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__20__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_196
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__21__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_195
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__22__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_194
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__23__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_193
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__24__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_192
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__25__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_191
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__26__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_190
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__27__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_189
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__28__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_188
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__29__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_187
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__2__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_214
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__30__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_186
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__31__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_185
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__32__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_184
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__33__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_183
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__34__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_182
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__35__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_181
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__36__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_180
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__37__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_179
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__38__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_178
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__39__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_177
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__3__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_213
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__40__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_176
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__41__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_175
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__42__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_174
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__43__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_173
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__44__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_172
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__45__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_171
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__46__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_170
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__47__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_169
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__48__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_168
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__49__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_167
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__4__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_212
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__50__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_166
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__51__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_165
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__52__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_164
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__53__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_163
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__54__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_162
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__55__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_161
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__56__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_160
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__57__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_159
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__58__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_158
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__59__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_157
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__5__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_211
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__60__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_156
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__61__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_155
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__62__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_154
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__63__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_153
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__64__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_152
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__65__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_151
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__66__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_150
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__67__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_149
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__68__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_148
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__69__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_147
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__6__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_210
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__70__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_146
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__71__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_145
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__7__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_209
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__8__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_208
+inst_controller/fifo_int/u_dp__0___dp2__D_reg/bit__9__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_207
+inst_controller/fifo_int/u_dp__1___dp3__D_reg
+                                    4701.9441      0.7     19.8704      0.0000       0.0000  prll_d_reg_bits72_2
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__0__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_144
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__10__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_134
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__11__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_133
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__12__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_132
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__13__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_131
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__14__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_130
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__15__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_129
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__16__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_128
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__17__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_127
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__18__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_126
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__19__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_125
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__1__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_143
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__20__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_124
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__21__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_123
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__22__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_122
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__23__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_121
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__24__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_120
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__25__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_119
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__26__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_118
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__27__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_117
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__28__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_116
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__29__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_115
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__2__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_142
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__30__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_114
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__31__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_113
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__32__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_112
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__33__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_111
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__34__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_110
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__35__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_109
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__36__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_108
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__37__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_107
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__38__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_106
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__39__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_105
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__3__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_141
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__40__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_104
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__41__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_103
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__42__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_102
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__43__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_101
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__44__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_100
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__45__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_99
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__46__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_98
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__47__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_97
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__48__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_96
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__49__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_95
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__4__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_140
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__50__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_94
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__51__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_93
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__52__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_92
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__53__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_91
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__54__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_90
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__55__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_89
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__56__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_88
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__57__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_87
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__58__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_86
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__59__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_85
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__5__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_139
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__60__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_84
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__61__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_83
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__62__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_82
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__63__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_81
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__64__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_80
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__65__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_79
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__66__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_78
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__67__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_77
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__68__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_76
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__69__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_75
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__6__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_138
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__70__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_74
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__71__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_73
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__7__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_137
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__8__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_136
+inst_controller/fifo_int/u_dp__1___dp3__D_reg/bit__9__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_135
+inst_controller/fifo_int/u_dp__2___dp3__D_reg
+                                    4701.9441      0.7     19.8704      0.0000       0.0000  prll_d_reg_bits72_1
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__0__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_72
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__10__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_62
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__11__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_61
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__12__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_60
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__13__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_59
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__14__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_58
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__15__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_57
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__16__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_56
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__17__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_55
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__18__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_54
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__19__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_53
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__1__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_71
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__20__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_52
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__21__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_51
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__22__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_50
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__23__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_49
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__24__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_48
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__25__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_47
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__26__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_46
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__27__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_45
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__28__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_44
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__29__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_43
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__2__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_70
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__30__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_42
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__31__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_41
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__32__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_40
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__33__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_39
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__34__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_38
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__35__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_37
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__36__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_36
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__37__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_35
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__38__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_34
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__39__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_33
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__3__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_69
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__40__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_32
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__41__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_31
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__42__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_30
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__43__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_29
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__44__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_28
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__45__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_27
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__46__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_26
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__47__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_25
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__48__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_24
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__49__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_23
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__4__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_68
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__50__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_22
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__51__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_21
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__52__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_20
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__53__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_19
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__54__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_18
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__55__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_17
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__56__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_16
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__57__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_15
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__58__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_14
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__59__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_13
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__5__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_67
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__60__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_12
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__61__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_11
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__62__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_10
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__63__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_9
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__64__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_8
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__65__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_7
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__66__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_6
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__67__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_5
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__68__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_4
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__69__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_3
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__6__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_66
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__70__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_2
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__71__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_1
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__7__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_65
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__8__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_64
+inst_controller/fifo_int/u_dp__2___dp3__D_reg/bit__9__prll_regstr_
+                                      65.0288      0.0      7.4264     57.6024       0.0000  dff_async_rst_63
+inst_controller/gen_sgnl             872.7712      0.1    234.0272    638.7440       0.0000  mem_sgnl_gen
+inst_controller/maq_bus            28578.4351      4.5   9008.8713  19569.5637       0.0000  bus_fsm_data_size32_adrs_to_mem_size11_inf_size8_bus_size80_d_intr_size72_adrs_bs_size24_fifo_int_size72
+inst_controller/maq_core           63369.0336     10.1  22207.5466  25505.4198       5.0176  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11
+inst_controller/maq_core/add_224    1887.7440      0.3   1887.7440      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_inc_0
+inst_controller/maq_core/gte_218    2592.5608      0.4   2592.5608      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_4
+inst_controller/maq_core/gte_253    1188.0976      0.2   1188.0976      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_2
+inst_controller/maq_core/gte_259    1188.0976      0.2   1188.0976      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_1
+inst_controller/maq_core/gte_89     1188.0976      0.2   1188.0976      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_7
+inst_controller/maq_core/lt_89_G5   1158.2920      0.2   1158.2920      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_6
+inst_controller/maq_core/sub_91     1289.6320      0.2   1289.6320      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_5
+inst_controller/maq_core/sub_91_G2
+                                    1289.6320      0.2   1289.6320      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_4
+inst_controller/maq_core/sub_91_G3
+                                    1289.6320      0.2   1289.6320      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_3
+inst_controller/maq_core/sub_91_G4
+                                    1289.6320      0.2   1289.6320      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_2
+inst_controller/maq_core/sub_91_G5
+                                    1289.6320      0.2   1289.6320      0.0000       0.0000  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_1
+inst_controller/verf_algn             32.3144      0.0     32.3144      0.0000       0.0000  algnmnt_vrfr
+--------------------------------  -----------  -------  ----------  ----------  -----------  ----------------------------------------------------------------------------------------------------------------------------------------
+Total                                                   61310.6669  66800.2329  500904.0801
+
+1

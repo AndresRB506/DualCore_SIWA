@@ -1,0 +1,17 @@
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3767 designs)            /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/source/TOP_PADS/top_riscv_tec_pads.db, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library) /mnt/vol_NFS_Zener/tools/synopsys/apps/syn2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+  ucu_anlg (library)          /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/Top_Phy/front_end/db/QTM/ucu_anlg.db
+
+1

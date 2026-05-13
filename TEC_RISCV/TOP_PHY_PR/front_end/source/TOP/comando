@@ -1,0 +1,9 @@
+source ../TOP_PHY_PR/synopsys_tools.sh; 
+rm -rfv DVEfiles csrc inter.vpd log simv* swave_compile_done ucli.key inter* .rest* .syn* timescale.txt Tec_Riscv_pads_phy_no_pg.v Tec_Riscv_pads_syn.v Tec_Riscv_pads_phy_no_pg.sdf;
+cp -v ../TOP_PHY_PR/front_end/source/Tec_Riscv_pads_syn.v .
+cp -v ../TOP_PHY_PR/back_end/db/Tec_Riscv_pads_phy_no_pg.v Tec_Riscv_pads_phy_no_pg.v;
+cp -v ../TOP_PHY_PR/back_end/db/Tec_Riscv_pads_phy.sdf Tec_Riscv_pads_phy_no_pg.sdf;
+#vcs -Mupdate  Test_Top_CPU_with_spi_uart.sv   -full64 -debug_all -sverilog -l log +lint=TFIPC-L +lint=PCWM 
+#vcs -Mupdate  Test_Top_CPU_post_logic_syn.sv    -full64 -debug_all -sverilog -l log +lint=TFIPC-L +lint=PCWM 
+#vcs -Mupdate  Test_Top_CPU_post_logic_syn_pads.sv    -full64 -debug_all -sverilog -l log +lint=TFIPC-L +lint=PCWM 
+vcs -Mupdate Test_Top_CPU_post_logic_phy.sv  -full64 -debug_all -sverilog -l log +lint=TFIPC-L +lint=PCWM -sdf typ:Test_Top.uut:Tec_Riscv_pads_phy_no_pg.sdf +sdfverbose +neg_tchk -diag timescale

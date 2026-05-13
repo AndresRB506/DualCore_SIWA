@@ -1,0 +1,8 @@
+set PROY_HOME "/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy";
+source $PROY_HOME/common_setup_typ.tcl;
+source $PROY_HOME/user_setup.tcl;
+source ./scripts/icc_setup.tcl;
+source ./scripts/top_phy_final.tcl
+
+
+

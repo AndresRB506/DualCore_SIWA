@@ -1,0 +1,104 @@
+Information: Updating graph... (UID-83)
+Information: Timing loop detected. (OPT-150)
+	top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/trn_chng_buf/b_tri/E top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/trn_chng_buf/b_tri/Q top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_/C top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_/Q top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/U2/B top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/U2/Q 
+Information: Timing loop detected. (OPT-150)
+	top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_/C top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_/Q top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/U2/A top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/U2/Q top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/trn_chng_buf/b_tri/E top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/trn_chng_buf/b_tri/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : qor
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Wed Mar 27 16:04:04 2019
+****************************************
+
+
+  Timing Path Group 'CLK'
+  -----------------------------------
+  Levels of Logic:              1.000
+  Critical Path Length:         4.517
+  Critical Path Slack:          0.000
+  Critical Path Clk Period:    50.000
+  Total Negative Slack:         0.000
+  No. of Violating Paths:       0.000
+  Worst Hold Violation:         0.000
+  Total Hold Violation:         0.000
+  No. of Hold Violations:       0.000
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       3698
+  Hierarchical Port Count:      34957
+  Leaf Cell Count:              11652
+  Buf/Inv Cell Count:             762
+  Buf Cell Count:                 178
+  Inv Cell Count:                 584
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      8163
+  Sequential Cell Count:         3480
+  Macro Count:                      9
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:       73658.723
+  Noncombinational Area:   245089.982
+  Buf/Inv Area:              6944.761
+  Total Buffer Area:         2593.917
+  Total Inverter Area:       4350.844
+  Macro/Black Box Area:    500899.062
+  Net Area:                 21080.102
+  Net XLength        :     503790.656
+  Net YLength        :     481108.250
+  -----------------------------------
+  Cell Area:               819647.767
+  Design Area:             840727.870
+  Net Length        :      984898.875
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          9323
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: zener
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   0.000
+  Logic Optimization:                 0.000
+  Mapping Optimization:              54.161
+  -----------------------------------------
+  Overall Compile Time:              55.823
+  Overall Compile Wall Clock Time:   36.788
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

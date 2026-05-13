@@ -1,0 +1,66 @@
+
+//Este modulo alambra los Level Shifter con primitivas
+//Se envia al modulo analogico de la UCU
+//Autor: Alfonso Chacon ROdriguez
+//Fecha Oct 2, 2018
+// Revision 1.0
+
+// Para simulaciones RTL descomentar este include
+
+// `include /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/verilog/v2_1_0/D_CELLS_HDMV.v"
+
+module ucu_anlg (
+// Entradas a 1.8 V
+	input clk,
+	input reset,
+	input [7:0] 	full_range_level_shifter,
+	input [31:0] 	IS_Val,
+	input [31:0]	IS_Config,
+	input [3:0]	IS_Trigger, 
+ // Salidas  3.3 V
+	output clk_HV, 
+	output reset_HV,
+	output [7:0] 	full_range_level_shifter_HV,
+	output [31:0] 	IS_Val_HV,
+	output [31:0]	IS_Config_HV,
+	output [3:0]	IS_Trigger_HV 
+);
+
+
+// Se conectan a manos todos los convertidores de voltaje
+
+LSHVFU3VHDX1 clk_HV_inst (.A(clk), .Q(clk_HV));
+LSHVFU3VHDX1 reset_HV_inst (.A(reset), .Q(reset_HV));
+
+genvar ls_FRLS_i, ls_ISVal_i,ls_IS_Config_i,ls_IS_Trigger_i;
+
+generate
+  for (ls_FRLS_i=0; ls_FRLS_i<8; ls_FRLS_i=ls_FRLS_i+1)
+	begin:ls_FRLS_bit
+		LSHVFU3VHDX1 FRLS_HV_inst (.A(full_range_level_shifter[ls_FRLS_i]), .Q(full_range_level_shifter_HV[ls_FRLS_i])); 
+        end
+endgenerate 
+
+generate
+  for (ls_ISVal_i=0; ls_ISVal_i<32; ls_ISVal_i=ls_ISVal_i+1)
+	begin:ls_ISVal_bit
+		LSHVFU3VHDX1 IS_Val_HV_inst (.A(IS_Val[ls_ISVal_i]), .Q(IS_Val_HV[ls_ISVal_i])); 
+        end
+endgenerate 
+
+generate
+  for (ls_IS_Config_i=0; ls_IS_Config_i<32; ls_IS_Config_i=ls_IS_Config_i+1)
+	begin:ls_IS_Config_bit
+		LSHVFU3VHDX1 IS_Config_HV_inst (.A(IS_Config[ls_IS_Config_i]), .Q(IS_Config_HV[ls_IS_Config_i])); 
+        end
+endgenerate 
+
+generate
+  for (ls_IS_Trigger_i=0; ls_IS_Trigger_i<4; ls_IS_Trigger_i=ls_IS_Trigger_i+1)
+	begin:ls_IS_Trigger_bit
+		LSHVFU3VHDX1 IS_Trigger_HV_inst (.A(IS_Trigger[ls_IS_Trigger_i]), .Q(IS_Trigger_HV[ls_IS_Trigger_i])); 
+        end
+endgenerate
+
+
+endmodule

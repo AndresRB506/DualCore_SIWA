@@ -1,0 +1,171 @@
+Geometry mapping begins.
+Removing all the files with the prefix floorplan_ends1 in the directory ./pna_output
+Parasitics Operating Condition is max
+Using [2 x 2] Fat Wire Table for MET1
+Using [2 x 2] Fat Wire Table for MET2
+Using [2 x 2] Fat Wire Table for MET3
+Using [2 x 2] Fat Wire Table for MET4
+Using [2 x 2] Fat Wire Table for METTP
+TLU+ based extraction:
+Resistance based on max model.
+Using operating temperature of  25.00 degree Celsius.
+Getting the info of via resistance from TLU+ model
+lower mask id 1, upper mask id 2, via layer 17, resistivity 6.750000
+lower mask id 2, upper mask id 3, via layer 27, resistivity 6.750000
+lower mask id 3, upper mask id 4, via layer 29, resistivity 6.750000
+lower mask id 5, upper mask id 6, via layer 36, resistivity 1.800000
+lower mask id 4, upper mask id 5, via layer 51, resistivity 3.200000
+Ignoring all CONN views
+Warning: No power/ground pads are specified and no virtual pads are defined. (PNA-138)
+Number of pad instances: 0
+Geometry mapping took     0.19 seconds
+
+Name of design : floorplan_ends1
+Number of cell instance masters in the library : 55
+Number of cell instances in the design : 1253
+Power Network Synthesis Begins ...
+Target IR drop : 180.000 mV
+Processing net VDD ...
+Average power dissipation in floorplan_ends1 :  1000.00 mW
+Power supply voltage :     1.80 V
+Average current in floorplan_ends1 :   555.56 mA
+25 percent of initial power plan synthesis is done.
+50 percent of initial power plan synthesis is done.
+75 percent of initial power plan synthesis is done.
+95 percent of initial power plan synthesis is done.
+100 percent of initial power plan synthesis is done.
+Performing Wire Cutting and Resizing of net VDD for Honoring Blockage Constraints
+Processing 6x3 straps
+Number of power pads reaching to the power ports of the leaf cells or blocks: 18
+Total assigned virtual connection port current is 555.555570
+Total assigned connected port current is 0.000000
+Total assigned current is 555.555570
+Total floating virtual connection port current is 0.000000
+Total floating connected port current is 0.000000
+Simulation begin ...
+Virtual Pad at (123.420 3.750) layer METTPL Supplies   84.00 mA Current (15.12%)
+Virtual Pad at (123.420 298.010) layer METTPL Supplies   83.82 mA Current (15.09%)
+Virtual Pad at (179.420 3.750) layer METTPL Supplies   80.37 mA Current (14.47%)
+Virtual Pad at (179.420 298.010) layer METTPL Supplies   80.00 mA Current (14.40%)
+Virtual Pad at (67.420 3.750) layer METTPL Supplies   72.05 mA Current (12.97%)
+Virtual Pad at (67.420 298.010) layer METTPL Supplies   71.62 mA Current (12.89%)
+Virtual Pad at (250.970 128.750) layer METTP Supplies    7.99 mA Current (1.44%)
+Virtual Pad at (250.970 170.190) layer METTP Supplies    7.97 mA Current (1.44%)
+Virtual Pad at (3.750 170.190) layer METTP Supplies    7.67 mA Current (1.38%)
+Virtual Pad at (3.750 128.750) layer METTP Supplies    7.63 mA Current (1.37%)
+Virtual Pad at (250.970 88.430) layer METTP Supplies    7.55 mA Current (1.36%)
+Virtual Pad at (250.970 211.630) layer METTP Supplies    7.48 mA Current (1.35%)
+Virtual Pad at (3.750 211.630) layer METTP Supplies    7.16 mA Current (1.29%)
+Virtual Pad at (3.750 88.430) layer METTP Supplies    7.15 mA Current (1.29%)
+Virtual Pad at (250.970 251.950) layer METTP Supplies    6.10 mA Current (1.10%)
+Virtual Pad at (250.970 46.990) layer METTP Supplies    5.84 mA Current (1.05%)
+Virtual Pad at (3.750 251.950) layer METTP Supplies    5.67 mA Current (1.02%)
+Virtual Pad at (3.750 46.990) layer METTP Supplies    5.48 mA Current (0.99%)
+Total Current from Straps Ends:    0.00 mA (0.00%)
+Total Current from Virtual Pads:  555.56 mA (100.00%)
+Maximum IR drop in floorplan_ends1 : 61.04 mV
+Maximum current in floorplan_ends1 : 83.998 mA
+Maximum EM of wires in floorplan_ends1 : 1.546585e+02 A/cm, layer METTP
+Maximum EM of vias in floorplan_ends1 : 6.214055e+06 A/cm_square, layer VIATPL
+The PNS synthesizes the net VDD successfully
+The maximum IR drop of the synthesized net VDD is  61.039 mV
+Processing net VSS ...
+Average power dissipation in floorplan_ends1 :  1000.00 mW
+Power supply voltage :     1.80 V
+Average current in floorplan_ends1 :   555.56 mA
+Performing Wire Cutting of net VSS for Honoring Blockage Constraints
+Number of power pads reaching to the power ports of the leaf cells or blocks: 18
+Total assigned virtual connection port current is 555.555570
+Total assigned connected port current is 0.000000
+Total assigned current is 555.555570
+Total floating virtual connection port current is 0.000000
+Total floating connected port current is 0.000000
+Simulation begin ...
+Virtual Pad at (130.180 295.220) layer METTPL Supplies   82.25 mA Current (14.80%)
+Virtual Pad at (130.180 6.540) layer METTPL Supplies   82.19 mA Current (14.79%)
+Virtual Pad at (74.180 6.540) layer METTPL Supplies   73.48 mA Current (13.23%)
+Virtual Pad at (74.180 295.220) layer METTPL Supplies   73.10 mA Current (13.16%)
+Virtual Pad at (186.180 6.540) layer METTPL Supplies   68.74 mA Current (12.37%)
+Virtual Pad at (186.180 295.220) layer METTPL Supplies   68.52 mA Current (12.33%)
+Virtual Pad at (13.500 172.450) layer METTP Supplies   10.65 mA Current (1.92%)
+Virtual Pad at (13.500 131.010) layer METTP Supplies   10.62 mA Current (1.91%)
+Virtual Pad at (13.500 90.690) layer METTP Supplies   10.15 mA Current (1.83%)
+Virtual Pad at (13.500 213.890) layer METTP Supplies   10.13 mA Current (1.82%)
+Virtual Pad at (241.220 131.010) layer METTP Supplies    9.18 mA Current (1.65%)
+Virtual Pad at (241.220 172.450) layer METTP Supplies    9.17 mA Current (1.65%)
+Virtual Pad at (241.220 90.690) layer METTP Supplies    8.83 mA Current (1.59%)
+Virtual Pad at (241.220 213.890) layer METTP Supplies    8.74 mA Current (1.57%)
+Virtual Pad at (13.500 49.250) layer METTP Supplies    8.13 mA Current (1.46%)
+Virtual Pad at (13.500 254.210) layer METTP Supplies    7.78 mA Current (1.40%)
+Virtual Pad at (241.220 49.250) layer METTP Supplies    7.10 mA Current (1.28%)
+Virtual Pad at (241.220 254.210) layer METTP Supplies    6.79 mA Current (1.22%)
+Total Current from Straps Ends:    0.00 mA (0.00%)
+Total Current from Virtual Pads:  555.56 mA (100.00%)
+Maximum IR drop in floorplan_ends1 : 58.57 mV
+Maximum current in floorplan_ends1 : 82.249 mA
+Maximum EM of wires in floorplan_ends1 : 1.971645e+02 A/cm, layer METTP
+Maximum EM of vias in floorplan_ends1 : 6.073453e+06 A/cm_square, layer VIATPL
+The PPS synthesizes the net VSS successfully
+The maximum IR drop of the synthesized net VSS is  58.570
+
+The statistics of PNS results
+Global Constraints Setting
+Remove Floating Segments:	On
+Use Stack Via:			On
+Same PG Width Sizing:		On
+Optimize Track Usage:		Off
+Keep Ring Outside Core Area:	Off
+No Straps Over Hard Macros:	Off
+No Straps Over Plan Groups:	Off
+No Straps Over Soft Macros:	Off
+Ignore Blockage:		Off
+Target IR drop :  180.00 mV
+Net name : VDD
+IR drop of the synthesized net :   61.04 mV
+Core ring segment: Horizontal: METTP, Width: 1.080 microns
+Core ring segment: Vertical: METTPL, Width: 6.000 microns
+Layer: METTPL, Direction: Vertical, # of Straps: 3, PG spacing
+The maximum width of straps: 3.000 microns
+The average width of straps: 3.000 microns
+Layer: METTP, Direction: Horizontal, # of Straps: 6, PG spacing
+The maximum width of straps: 0.540 microns
+The average width of straps: 0.540 microns
+The percentage of routing tracks used by the power net VDD for layer METTPL: 23.84%
+The percentage of routing tracks used by the power net VDD for layer METTP: 9.78%
+The percentage of routing tracks used by the power net VDD for layer MET4: 0.00%
+The percentage of routing tracks used by the power net VDD for layer MET3: 0.00%
+The percentage of routing tracks used by the power net VDD for layer MET2: 0.00%
+The percentage of routing tracks used by the power net VDD for layer MET1: 0.00%
+The average percentage of routing tracks used by net VDD : 5.60%
+Net name : VSS
+IR drop of the synthesized net :   58.57 mV
+Core ring segment: Horizontal: METTP, Width: 1.080 microns
+Core ring segment: Vertical: METTPL, Width: 6.000 microns
+Layer: METTPL, Direction: Vertical, # of Straps: 3, PG spacing
+The maximum width of straps: 3.000 microns
+The average width of straps: 3.000 microns
+Layer: METTP, Direction: Horizontal, # of Straps: 6, PG spacing
+The maximum width of straps: 0.540 microns
+The average width of straps: 0.540 microns
+The percentage of routing tracks used by the power net VSS for layer METTPL: 25.51%
+The percentage of routing tracks used by the power net VSS for layer METTP: 9.01%
+The percentage of routing tracks used by the power net VSS for layer MET4: 0.00%
+The percentage of routing tracks used by the power net VSS for layer MET3: 0.00%
+The percentage of routing tracks used by the power net VSS for layer MET2: 0.00%
+The percentage of routing tracks used by the power net VSS for layer MET1: 0.00%
+The average percentage of routing tracks used by net VSS : 5.75%
+Generating instance power and IR drop file ./pna_output/floorplan_ends1.inst_hl.pna
+Maximum instance IR drop : 119.609 mV at inst_ALU/U66 (143.600 186.160)
+Memory usage for design data :      36528.128 Kbytes
+Generating Power Routing Tcl commands file ./pna_output/create_pns_pg.tcl
+Overall takes     0.03 seconds
+Please read floorplan_ends1.PNS.log for detail information
+Creating PNS Replay file ./pna_output/pns_replay.tcl
+Power network synthesis is done successfully.
+Reading power network analysis highlight file: ./pna_output/floorplan_ends1.VDD.pw_hl.pna ...
+Setting the IR threshold of drop ratio display to 0.100 mV
+Successfully create error file ./pna_output/VDD.VD.report
+Successfully loaded voltage drop map
+Report display map data ...
+Successfully created the VD report file icc_gui.output
+1

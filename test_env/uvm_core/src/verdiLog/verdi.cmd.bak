@@ -1,0 +1,104 @@
+simSetSimulator "-vcssv" -exec "./salida" -args " " -uvmDebug on
+debImport "-i" "-simflow" "-dbdir" "./salida.daidir"
+srcTBInvokeSim
+verdiSetActWin -dock widgetDock_<Stack>
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiDockWidgetSetCurTab -dock widgetDock_<Decl._Tree>
+verdiSetActWin -dock widgetDock_<Decl._Tree>
+verdiDockWidgetSetCurTab -dock widgetDock_<Inst._Tree>
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+wvCreateWindow
+srcHBSelect "tb_top.dut_wr._if" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBDrag -win $_nTrace1
+wvDumpScope "tb_top.dut_wr._if"
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 0)}
+wvRenameGroup -win $_nWave3 {G1} {_if(wrapper_if)}
+wvAddSignal -win $_nWave3 "/tb_top/dut_wr/_if/clk" "/tb_top/dut_wr/_if/reset" \
+           "/tb_top/dut_wr/_if/gpio\[7:0\]" \
+           "/tb_top/dut_wr/_if/full_range_level_shifter\[7:0\]" \
+           "/tb_top/dut_wr/_if/IS_Val\[31:0\]" \
+           "/tb_top/dut_wr/_if/IS_Config\[31:0\]" \
+           "/tb_top/dut_wr/_if/IS_Trigger\[3:0\]" "/tb_top/dut_wr/_if/maip" \
+           "/tb_top/dut_wr/_if/Reg_GPIO_en\[7:0\]" \
+           "/tb_top/dut_wr/_if/Reg_GPIO_int\[7:0\]" \
+           "/tb_top/dut_wr/_if/Reg_GPIO_out\[7:0\]" \
+           "/tb_top/dut_wr/_if/TX_UART" "/tb_top/dut_wr/_if/RX_UART"
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 0)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 13)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 13)}
+wvSetPosition -win $_nWave3 {("G2" 0)}
+srcTBRunSim
+srcTBSimBreak
+wvZoomAll -win $_nWave3
+verdiSetActWin -win $_nWave3
+wvZoom -win $_nWave3 469728233.195364 767604673.758278
+wvZoom -win $_nWave3 470221406.110139 595980499.394151
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+verdiDockWidgetSetCurTab -dock windowDock_InteractiveConsole_2
+verdiSetActWin -win $_InteractiveConsole_2
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcSignalView -off
+srcHBSelect "tb_top.dut_wr.uut.TOP.Memory_controller" -win $_nTrace1
+srcHBSelect "tb_top.dut_wr.uut.TOP.Reg_file" -win $_nTrace1
+srcSetScope "tb_top.dut_wr.uut.TOP.Reg_file" -delim "." -win $_nTrace1
+srcHBSelect "tb_top.dut_wr.uut.TOP.Reg_file" -win $_nTrace1
+srcHBSelect "tb_top.dut_wr.uut.TOP.Memory_controller" -win $_nTrace1
+srcHBSelect "tb_top.dut_wr.uut.TOP.Memory_controller" -win $_nTrace1
+srcHBSelect "tb_top.dut_wr.uut.TOP.Memory_controller" -win $_nTrace1
+srcHBSelect "tb_top.dut_wr.uut.TOP" -win $_nTrace1
+srcSetScope "tb_top.dut_wr.uut.TOP" -delim "." -win $_nTrace1
+srcHBSelect "tb_top.dut_wr.uut.TOP" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Local>
+verdiDockWidgetSetCurTab -dock widgetDock_<Member>
+verdiDockWidgetSetCurTab -dock widgetDock_<Local>
+srcSignalView -on
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcHBSelect "tb_top.dut_wr.uut.TOP.Reg_file" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_top.dut_wr.uut.TOP.Reg_file" -win $_nTrace1
+srcSetScope "tb_top.dut_wr.uut.TOP.Reg_file" -delim "." -win $_nTrace1
+srcHBSelect "tb_top.dut_wr.uut.TOP.Reg_file" -win $_nTrace1
+srcSignalViewExpand "tb_top.dut_wr.uut.TOP.Reg_file.reg_write_data\[31:0\]"
+verdiSetActWin -dock widgetDock_<Signal_List>
+srcSignalViewCollapse "tb_top.dut_wr.uut.TOP.Reg_file.reg_write_data\[31:0\]"
+srcSignalViewSelect "tb_top.dut_wr.uut.TOP.Reg_file.reg_write_data\[31:0\]"
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "width" -line 19 -pos 1 -win $_nTrace1
+srcSelect -win $_nTrace1 -range {19 19 4 9 1 1}
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSignalViewSelect "tb_top.dut_wr.uut.TOP.Reg_file.write"
+verdiSetActWin -dock widgetDock_<Signal_List>
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiSetActWin -win $_nWave3
+wvScrollDown -win $_nWave3 3
+srcSignalViewSelect "tb_top.dut_wr.uut.TOP.Reg_file.write"
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 0)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 2)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 3)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 5)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 6)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 7)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 8)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 9)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 10)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 11)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 12)}
+verdiSetActWin -dock widgetDock_<Signal_List>
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 13)}
+wvSetPosition -win $_nWave3 {("G2" 0)}
+wvSetPosition -win $_nWave3 {("_if(wrapper_if)" 0)}
+wvSetPosition -win $_nWave3 {("G2" 0)}
+wvAddSignal -win $_nWave3 "/tb_top/dut_wr/uut/TOP/Reg_file/write"
+wvSetPosition -win $_nWave3 {("G2" 0)}
+wvSetPosition -win $_nWave3 {("G2" 1)}
+wvSetPosition -win $_nWave3 {("G2" 1)}
+wvScrollDown -win $_nWave3 1
+verdiSetActWin -win $_nWave3
+srcTBRunSim
+srcTBSimBreak
+wvZoom -win $_nWave3 757492119.084104 762905589.987058
+wvZoom -win $_nWave3 760799355.446998 762896627.286884
+wvZoom -win $_nWave3 761071931.339998 762893154.982416
+wvZoom -win $_nWave3 761237771.241114 762890139.711387

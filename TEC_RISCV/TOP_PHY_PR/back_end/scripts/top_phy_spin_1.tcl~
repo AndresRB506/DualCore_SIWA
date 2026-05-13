@@ -1,0 +1,578 @@
+#################################################################################
+# Title:		ac97_phy.tcl
+# Description:	Script de sintesis fisica para IC Compiler
+#				
+# Dependencies: Ninguna.
+# Project:		RISCV
+# Author:		Reinaldo Castro Gonzalez
+# Institution:	Instituto Tecnologico de Costa Rica. DCILab.
+# Date:			28 de Marzo de 2018
+# Notes:		Basado en los scripts del Dr. Juan Agustin Rodriguez para la
+#				integracion del proyecto SiRPA. 2014
+# Version:		1.1
+# Revision:		28/05/2018 Original
+#
+#                       31/07/2018 ACR
+#			Se ajustan directorios y variables para compartir con las usadas para la sintesis logica
+#
+###############################################################################################################.
+
+remove_design -designs
+#Vamos a correr multicore
+set_host_options -max_cores 8;
+
+
+#Para corregir error en los handles de las redes de alimentacion
+#Debe correrse antes de cargar el netist compilado
+
+set upf_create_implicit_supply_sets false
+
+######################################3 Creamos biblioteca MilkyWay ############################
+
+
+source -echo -verbose "$PROY_HOME_PHY/scripts/crear_mw.tcl"
+saif_map -start 
+
+# Definir VSS y VDD
+#set mw_logic0_net VSS
+#set mw_logic1_net VDD_1V8
+
+# Definiciones pitch (altura) de celdas estandar
+#
+set BASIC_TRACK 0.56;
+set CELL_HEIGHT [expr $BASIC_TRACK * 8];
+
+#------------------------------------------------------------------------------
+########################### Crear o Cargar el Diseño ###############################
+#------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------
+# Importar el Gate-Level-Netlist obtenido en la Síntesis RTL o el DDC. 
+#------------------------------------------------------------------------------
+
+# Se eliminan los siguientes warnings para disminuir el ruído visual que provocan (ver nota 2)
+
+suppress_message {UID-401 SDC-3 SDC-4 HDUEDIT-104 ZRT-038 ZRT-311}
+
+# Creamos el floorplan basico, anillo de pads, con rellenos y se definen conexiones UPF
+source ./scripts/create_basic_design_spin_1.tcl
+
+# Se Crean las areas de voltaje
+#Pero primero borramos si viene algo de un  MW viejo.
+#Se supone que el script anterior deja abierta la celda MW pad_ring_placed
+remove_voltage_area -all
+source ./scripts/create_voltage_areas_spin_1.tcl
+puts "Se generaron las zonas de voltaje";
+save_mw_cel pad_ring_placed
+copy_mw_cel -from pad_ring_placed -to voltage_domains_created
+close_mw_cel pad_ring_placed
+
+open_mw_cel  voltage_domains_created
+
+## Indicaciones para colocar la SRAM (el unico hard macro)
+
+set_fp_macro_options top_riscv_soc/TOP/Memoria_8K -legal_orientations N;
+
+
+# Bloquemos ruteo y la colocamos dentro de su zona de voltaje como un macro fijo
+#La SRAM queda fija en la esquina superior del core
+#Hay que estar seguros de que la SRAM queda totalmente dentro de la zona de voltaje que le definimos
+#Esto lista los puntos de anclaje del area del core
+#get_attribute [get_core_area] points
+
+# Esta colocacion es temporal, solo para analisis de congestion
+#create_fp_placement -timing_driven -no_legalize ;
+#Nos aseguramos de los pines a la UCU esten todos a la derecha
+close_mw_cel pre_power
+
+#Partimos de la esquina superior del area de core, que se puede obtener asi
+#get_attribute [get_core_area] bbox
+## BBOX Area reportada para el CORE {189.420 188.245} {1497.020 1330.645}
+## BBOX Area reportada para el DIE {0.000 0.000} {1520.000 1520.000}
+## Iniciamos 200 micrometros mas abajo
+# 10 micrometros sobre el borde del core
+
+#Este script genera un archivo allocate_port.tcl que coloca los puertos necesarios a la derecha para
+#Conectar el bloque de la UCU
+source ./scripts/gen_port_locator_script.tcl
+puts "Se colocan los puertos";
+#
+create_fp_placement -timing_driven -no_hier;
+#get_attribute [get_core_area] bbox
+## Estas areas para cortar filas se averiguan despues de crear los anillos
+puts "Se hace el colocamiento inicial de las celdas y las SRAM";
+
+#Sacamos las filas bordeando el dominio de voltaje por el lado derecho de la SRAM para que prerutear VDDs ni VSS ahi
+cut_row -within {{893 582.485} {918 1330.925}}
+
+#Sacamos las filas bordeando el dominio de voltaje en la base de la SRAM sobre los riels de VDDs y VSS ahi
+#cut_row -within {{189.420 537.685} {915 1330.925}} ;#(10 filas de STD CELLS)
+cut_row -within {{189.420 551.125} {915 1330.925}}; #(7 filas de STD CELLS)
+
+#Sacamos las filas en los rieles inferiores VDDs ni VSS ahi
+#cut_row -within {{189.420 188.245} {1474.620 233.045}}; #(10 filas de STD CELLS)
+cut_row -within {{189.420 188.245} {1474.620 219.605}}; #(7 filas de STD CELLS)
+
+#Sacamos las filas en los rieles superiores VDDs ni VSS ahi
+#cut_row -within {{189.420 1290.325} {1474.620  1330.925}}; #(10 filas de STD CELLS)
+cut_row -within {{189.420 1299.285} {1474.620  1330.925}}; #(8 filas de STD CELLS)
+# Sacamos las filas en los rieles laterales de VDD y VSS
+
+## Pensar en quitar algunas filas hacia la izquierda del anillo de alimentacion
+
+## Estas areas para cortar filas se han calculado despues de crear los anillos
+# QUizas mejor mover esta seccion para despues
+
+## La SRAM queda fija en una posicion
+set_undoable_attribute [get_cells -all top_riscv_soc/TOP/Memoria_8K] is_fixed true;
+# Definimos el halo alrededor de la SRAM
+#set_keepout_margin               [-type hard | soft] [-outer {lx by rx ty}]
+set_keepout_margin -type hard -all_macros -outer {1 8.96 8.96 1};
+report_power_pin_info [get_cells * -hier] > ./reports/report_power_pin_after_initial_placement.txt
+
+# Refinamos un poco la colocacion
+refine_placement -congestion_effort low;
+puts "Se refina la colocacion inicial, con esfuerzo bajo de mejorar la congestion";
+legalize_placement;
+puts "Se legaliza el resultado de la colocacion";
+
+#set_undoable_attribute [get_cells -all top_riscv_soc/TOP/Memoria_8K] is_fixed true
+
+
+#GUardamos en una celda intermedia
+
+save_mw_cel -as floorplan_ends;
+
+copy_mw_cel -from  floorplan_ends -to floorplan_ends1;
+close_mw_cel  voltage_domains_created
+close_mw_cel floorplan_ends;
+## Vamos por aca
+open_mw_cel floorplan_ends1;
+
+#Trabajamos sobre otra celda y verificamos librerias
+
+#check_library;
+#check_tlu_files;
+#list_libs;
+
+#########################################################################################################
+############################### Creacion de los anillos y pads de VDD y VSS ############################
+###############################    Basados en dominios UPF                 ############################
+
+ 
+##(Si no se usa UPF, estas son las directivas)
+##derive_pg_connection -power_pin VDD -power_net VDD -ground_net VSS -ground_pin VSS
+#derive_pg_connection -power_net VDD -ground_net VSS -tie
+#Usamos en este caso UPF
+derive_pg_connection
+derive_pg_connection -tie
+
+
+set pns_commit_lower_layer_first true;
+
+source ./scripts/power_nets_syn_spin_1.tcl
+#para prevenir que los straps no queden alineados con las correas de alimentacion
+
+#set_fp_rail_strategy -align_strap_with_m1_rail true ; #-std_cell_rail_connect_layer MET1 -put_strap_in_std_cell_row true
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer METTPL
+#
+#set_pnet_options -partial {METTP METTPL}
+set_pnet_options -complete {METTP METTPL}
+set_fp_rail_strategy -align_strap_with_m1_rail true 
+synthesize_fp_rail  -synthesize_voltage_areas -voltage_areas  {top_riscv_soc/PD_CORE}  -power_budget 1000 -pad_masters { VDD_1V8:VDDCPADF.FRAM VSS:GNDORPADF.FRAM }
+
+#save_mw_cel -as fp_rail_synthesized_not_committed
+
+commit_fp_rail
+save_mw_cel -as power_rail_rdy
+puts "Se generan los rieles de alimentacion";
+#Primer bloqueo para evitar rutear sobre SRAM
+
+create_routing_blockage -layers {metal1Blockage metal2Blockage metal3Blockage metal4Blockage metal5Blockage metal6Blockage} -bbox {{893.060 589.765} {904.820 1330.085}}
+
+#Bloqueo que evita ruteo por el area de pads que va a la UCU
+
+create_routing_blockage -layers {metal1Blockage via1Blockage metal2Blockage via2Blockage metal3Blockage via3Blockage metal4Blockage via4Blockage metal5Blockage via5Blockage metal6Blockage} -bbox {{1212.820 1360.325} {1520.000 1388.325}}
+
+# Para que el router honre los bloqueos
+
+set_route_zrt_common_options -read_user_metal_blockage_layer true
+
+
+save_mw_cel -as power_rail_rdy_metal_blockage
+################### Estrategia inicial de conexion de redes PG ###################################
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer METTPL
+######################### Se generan redes para poder corregir conexion de la SRAM ###############
+#create_net_shape -net VDD_1V8SRAM -type wire -route_type pg_macro_io_pin_conn -layer METTP -origin {170.00 595.000} -width 10 -length 723
+#create_net_shape -net VDD_1V8SRAM -type wire -route_type pg_macro_io_pin_conn -layer METTPL -origin {175.00 590.000} -width 10 -length 102 -vertical
+create_net_shape -net VDD_1V8SRAM -type wire -route_type pg_macro_io_pin_conn -layer METTP -origin {165.00 595.000} -width 10 -length 723
+create_net_shape -net VDD_1V8SRAM -type wire -route_type pg_macro_io_pin_conn -layer METTPL -origin {170.00 590.000} -width 10 -length 102 -vertical
+
+## Se conectan las dos formas que se han generado para alimentacion
+#create_preroute_vias  -nets VDD_1V8SRAM -from_layer METTP -to_layer METTPL \
+#		-from_object_macro_io_pin_connection -to_object_macro_io_pin_connection -within {{170 590} {181 601}};
+create_preroute_vias  -nets VDD_1V8SRAM -from_layer METTP -to_layer METTPL \
+		-from_object_macro_io_pin_connection -to_object_macro_io_pin_connection -within {{165 590} {176 601}};
+
+save_mw_cel -as power_rail_rdy_metal_vss_extra
+######################### Se generan redes para conectar VSS de pines PI de pads de entrada ###############
+#set NET_VSS_WIDTH [expr 4 * $BASIC_TRACK]
+create_net_shape -net VSS -type wire -route_type pg_macro_io_pin_conn -layer METTP -origin {179.00 605.000} -width 4 -length 45
+create_net_shape -net VSS -type wire -route_type pg_macro_io_pin_conn -layer METTPL -origin {180.00 603.000} -width 4 -length 749 -vertical
+create_net_shape -net VSS -type wire -route_type pg_macro_io_pin_conn -layer METTP -origin {179.00 1350.000} -width 4 -length 723
+
+## Se conectan las dos formas que se han generado para la linea extra VSS
+puts "Se generan las conexiones de PG de los pads a los rieles";
+
+create_preroute_vias  -nets VSS -from_layer METTP -to_layer METTPL \
+		-from_object_macro_io_pin_connection -to_object_macro_io_pin_connection -within {{178 602} {186 610}};
+
+create_preroute_vias  -nets VSS -from_layer METTP -to_layer METTPL \
+		-from_object_macro_io_pin_connection -to_object_macro_io_pin_connection -within {{178.00 1347.00} {186.00 1356.00}};
+
+puts "Se generan las conexiones de PG de la SRAM";
+
+################ Primera conexion de Redes PG de Instancias (SRAM, PADS) y Celdas Estandar ########
+################   Solo en esta ocasion de hace conexion de PADs y SRAM. ##########################
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer METTPL
+preroute_instances
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+
+puts "Se Genera el primer preruteo PG a las celdas estandar";
+
+save_mw_cel -as first_preroute_std_cells
+
+#analyze_fp_rail; # Para ver resultados de la red completa. Decomentar en las primeras revisions
+
+#set_pnet_options ...; # (en caso que sea necesario bloquear algo)
+
+create_fp_placement -timing_driven -no_hierarchy_gravity -incremental all;
+puts "Se hace una recolocacion incremental, ya con los rieles de alimentacion conectados";
+
+refine_placement -congestion_effort high;
+puts "Se refina la recolocacion incremental, con esfuerzo en mejorar la congestion";
+legalize_placement;
+puts "Se legaliza la recolocacion incremental, con esfuerzo en mejorar la congestion";
+
+#Colocamos rellenos para prerutear alimentaciones
+#add_end_cap -lib_cell DECAP5HDLL -respect_blockage -respect_keepout
+#insert_stdcell_filler  -avoid_layers {METTP METTPL} -cell_with_metal FEED25HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+#insert_stdcell_filler  -avoid_layers {METTP METTPL} -cell_with_metal FEED15HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+#insert_stdcell_filler  -avoid_layers {METTP METTPL} -cell_with_metal FEED10HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}  
+#insert_stdcell_filler  -avoid_layers {METTP METTPL} -cell_with_metal FEED7HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+#insert_stdcell_filler  -avoid_layers {METTP METTPL} -cell_with_metal  FEED5HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+#insert_stdcell_filler  -avoid_layers {METTP METTPL} -cell_with_metal FEED3HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+#insert_stdcell_filler  -avoid_layers {METTP METTPL} -cell_with_metal FEED2HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+#insert_stdcell_filler  -cell_with_metal FEED1HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -cell_with_metal FEED25HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -cell_with_metal FEED15HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -cell_with_metal FEED10HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}  
+insert_stdcell_filler   -cell_with_metal FEED7HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -cell_with_metal  FEED5HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -cell_with_metal FEED3HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -cell_with_metal FEED2HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer MET2
+preroute_instances -ignore_pads
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+
+puts "Rellenso preliminares para hacer segundo prerruteo PG en celdas estandar"
+#Scamos para los ruteos y sintesis de reloj
+
+remove_stdcell_filler -stdcell
+
+#######Save_Milkyway_Cell
+save_mw_cel -as powerplan_rail_ends
+
+#preroute_standard_cells -nets VDD -mode net -connect horizontal
+
+#######################
+#  Place and Routing  #
+#######################
+
+## Abrimos otra celda MW temporal 
+
+copy_mw_cel -from  powerplan_rail_ends -to powerplan_ends1
+close_mw_cel floorplan_ends1
+open_mw_cel powerplan_ends1
+verify_pg_nets -pad_pin_connection at_least_one
+###############################################################
+
+puts "Hasta aca la verificacion de PG deberia ser correcta para las celdas y los pads";
+
+################################ Place_Optimization ################################################
+set compile_instance_name_prefix place
+
+place_opt -effort high
+legalize_placement -effort medium
+puts "La optimizacion de la colocacion termina aca"
+####################   Volvemos a poner los puertos !!!   ####################
+#Volvemos a poner los puertos !!!
+source -echo -verbose "./scripts/allocate_ports.tcl"
+#Hasta aca todo bien. Celdas conectadas a VDD VSS
+################################################################################Reports
+create_qor_snapshot -timing -constraint -congestion -name Place
+report_qor_snapshot  > $PROY_HOME_PHY/reports/place.qor_snapshot.rpt
+report_qor > $PROY_HOME_PHY/reports/place.qor
+report_constraint -all > $PROY_HOME_PHY/reports/place.con
+report_timing -capacitance -transition_time -input_pins -nets -delay_type max > $PROY_HOME_PHY/reports/place.max.tim
+report_timing -capacitance -transition_time -input_pins -nets -delay_type min > $PROY_HOME_PHY/reports/place.min.tim
+################################################################################Save_Milkyway_Cel
+save_mw_cel powerplan_ends1
+copy_mw_cel -from powerplan_ends1 -to clock_tree_placed
+################################################################################
+close_mw_cel powerplan_ends1
+open_mw_cel clock_tree_placed
+
+puts "Vamos a iniciar la colocacion del reloj";
+
+derive_pg_connection
+derive_pg_connection -tie
+set_route_zrt_common_options -read_user_metal_blockage_layer true
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer METTPL
+preroute_instances -ignore_pads
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+
+#ANTENNATS configuration 
+#source xx018.ante.rules
+source $TECH_ROOT/xh018/synopsys/v6_3/techMW/v6_3_1_1/xh018-synopsys-techMW-v6_3_1_1/xx018.ante.rules
+report_antenna_rules
+#set_route_zrt_detail_options -diode_libcell_names ANTENNATS -insert_diodes_during_routing true
+
+puts "Cargamos reglas de antena";
+#Estime el retardo de cada path usando el comando route_zrt_global y utilice el comando set_route_zrt para asegurar que se tomen en cuenta los path groups
+#set_route_zrt_common_options -plan_group_aware all_routing
+
+#Genere un estimado del retarso de los cables en el diseño usando el comando route_zrt_global -effort ultra
+route_zrt_global -effort ultra
+puts "Definimos enrutado inicial, esfuerzo maximo";
+#optimize el posicionamiento de las celdas para mejorar los resultados de timing usando el comando optimize_fp_timing
+optimize_fp_timing
+#verifique nuevamente cuál es el peor camino Max en el diseño usando el comando report_timing ¿Nota algún cambio?
+#report_timing -nets -capacitance -transition_time -input_pin;
+
+#Hasta aca todo bien. Celdas conectadas a VDD VSS
+
+#Vamos a definir las opciones para el Z Router
+
+set_route_zrt_global_options -timing_driven true
+set_route_zrt_global_options -effort high
+set_route_zrt_track_options -timing_driven true
+set_route_zrt_detail_options -drc_convergence_effort_level high
+
+####
+#Reducir la cantidad de buffers e inversores, sin afectar la calidad del resultado
+###
+set_buffer_opt_strategy -effort low
+set_route_zrt_detail_options -default_gate_size 0.1
+
+## Preparamos y ejecutamos la sintesis del arbol de reloj
+set_clock_tree_options -clock_trees [get_clocks] -insert_boundary_cell true -ocv_clustering true -buffer_relocation true -buffer_sizing true -gate_relocation true -gate_sizing true
+
+set cts_use_debug_mode true
+set cts_do_characterization true
+
+clock_opt -fix_hold_all_clocks -congestion > ./reports/cts_report.txt
+
+puts "Se coloca el reloj";
+save_mw_cel clock_tree_placed
+
+copy_mw_cel -from clock_tree_placed  -to routed_cell
+close_mw_cel clock_tree_placed
+
+open_mw_cel routed_cell 
+
+######
+
+#report_timing -nets -capacitance -transition_time -input_pin;
+
+set_dont_touch_network [get_clocks]
+
+route_zrt_auto -max_detail_route_iterations 40 ; #30
+verify_zrt_route
+verify_zrt_route > ./reports/report_first_zroute.txt;
+
+puts "Primer enrutamiento"
+
+psynopt -congestion
+
+route_zrt_auto -max_detail_route_iterations 40; #30
+route_opt -effort high -incremental
+verify_zrt_route > ./reports/report_second_zroute.txt;
+
+route_zrt_detail -incremental true -max_number_iterations 40; #30
+focal_opt -drc_nets all
+route_opt -effort high -incremental
+
+remove_zrt_redundant_shapes -report_changed_nets true
+verify_zrt_route -antenna true
+# Insertamos diodos si hay errores aun de Antena
+
+#insert_diode -prefix fixAntx
+#Vamos a verificar DRC de ruteo
+verify_zrt_route -antenna true  > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_drc_route.txt"
+verify_pg_nets > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_pg_nets.txt"
+## Vamos a correr DRC y LVS antes de rellenar
+#Definimos opciones para el ICV
+
+
+change_names  -rule  verilog  -hierarchy
+write_verilog "$PROY_HOME_PHY/db/$DESIGN_NAME\_phy_sim_no_fill.v"
+save_mw_cel routed_cell
+
+copy_mw_cel -from routed_cell -to routed_cell_no_fill
+
+## source fix_shorts.tcl
+puts "Enrutamiento terminado";
+
+derive_pg_connection
+derive_pg_connection -tie
+#Volvemos a revisar el ruteo de las celdas estandar
+set_preroute_drc_strategy -honor_shapes_of_nets all -report_fail -min_layer MET1 -max_layer MET2
+#preroute_instances -ignore_pads
+puts "Ya no conectamos mas los ruteos de PADS ni de macros"
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect horizontal; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect horizontal; # -extend_to_boundaries_and_generate_pins
+verify_pg_nets 
+
+#source ./scripts/lvs_no_open_ports_not_connected.tcl ; #Descomentar para revisar si no se rompe nada
+
+## Hasta aca no hay errores de conexion VDD, VSS (verify_pg_nets correcto)
+puts "NUeva reconexion de PG"
+## Volvemos a poner los rellenos
+
+#set_left_right_filler_rule
+## Insertamos las celdas de relleno. Segun man page, deben conectarse de mayor a menor
+#Segun ICC Implementation Guide. Se colocan antesde los ruteos
+#Primero los capacitores
+#add_end_cap -lib_cell DECAP5HDLL -respect_blockage -respect_keepout
+#add_end_cap -lib_cell DECAP3HDLL
+#insert_stdcell_filler  -avoid_layers {METTP METTPL} -cell_with_metal FEED25HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -avoid_layers {METTP METTPL} -cell_with_metal FEED25HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}
+insert_stdcell_filler   -avoid_layers {METTP METTPL} -cell_with_metal FEED15HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -avoid_layers {METTP METTPL} -cell_with_metal FEED10HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA}  
+insert_stdcell_filler   -avoid_layers {METTP METTPL} -cell_with_metal FEED7HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -avoid_layers {METTP METTPL} -cell_with_metal  FEED5HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -avoid_layers {METTP METTPL} -cell_with_metal FEED3HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+insert_stdcell_filler   -avoid_layers {METTP METTPL} -cell_with_metal FEED2HDLL  -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} ;
+
+#insert_stdcell_filler  -cell_with_metal FEED1HDLL -voltage_area {top_riscv_soc/PD_CORE DEFAULT_VA} 
+
+#Se deben prerutear alimentaciones de las celdas estandar otra vez
+derive_pg_connection
+derive_pg_connection -tie
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect horizontal; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect horizontal; # -extend_to_boundaries_and_generate_pins
+verify_pg_nets 
+
+source ./scripts/lvs_no_open_ports_not_connected.tcl
+
+change_names  -rule  verilog  -hierarchy
+write_verilog "$PROY_HOME_PHY/db/$DESIGN_NAME\_phy_sim_no_well_fill.v"
+
+## Guardames celda ruteada, faltan rellenos finales e insertar vias redundantes. revision DRC y LVS final
+save_mw_cel routed_cell
+copy_mw_cel -from  routed_cell -to design_routed_ends
+close_mw_cel routed_cell
+open_mw_cel design_routed_ends
+
+
+
+####Rellenos de NWELL
+insert_well_filler -layer NWELL -higher_edge max -lower_edge min
+
+#derive_pg_connection
+derive_pg_connection 
+derive_pg_connection -tie
+#Volvemos a revisar el ruteo de las celdas estandar
+set_preroute_drc_strategy -max_layer MET1
+#preroute_instances
+preroute_standard_cells -nets VDD_1V8 -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+preroute_standard_cells -nets VSS -fill_empty_rows -remove_floating_pieces -connect both; # -extend_to_boundaries_and_generate_pins
+verify_lvs -max_error 150 -check_floating_port_on_null_net -check_open_locator -check_short_locator -check_child_blockage
+#derive_pg_connection 
+#derive_pg_connection -tie
+#set_preroute_drc_strategy -min_layer MET1 -max_layer MET2
+
+
+verify_pg_nets -pad_pin_connection at_least_one > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_pg_nets_pad_pin_connection.txt"
+#Verificamos que nada se rompiera
+verify_pg_nets
+#verify_pg_nets -pad_pin_connection all
+
+# Revisamos el diseno
+check_mv_design -verbose > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_chk_phy.txt"
+change_names  -rule  verilog  -hierarchy
+write_verilog  -unconnected_ports \
+		-macro_definition \
+               -no_cover_cells \
+               -no_unconnected_cells \
+               -no_flip_chip_bump_cells \
+               -no_physical_only_cells \
+               -supply_statement  none $TOP_FILE_PHY_NO_PG
+
+change_names  -rule  verilog  -hierarchy
+write_verilog -pg \
+		-macro_definition \
+             -unconnected_ports \
+	     -diode_ports \ 
+             -no_cover_cells \
+             -no_unconnected_cells \
+             -no_flip_chip_bump_cells \
+             -supply_statement  none $TOP_FILE_PHY
+extract_rc
+write_parasitics -output $TOP_FILE_PHY_SPEF
+write_sdc $TOP_FILE_PHY_SDC
+write_sdf $TOP_FILE_PHY_SDF
+#corregir qui
+write_def -output $TOP_FILE_PHY_DEF
+
+save_mw_cel -as top
+#save_mw_cel -as top.FILL
+
+
+save_mw_cel design_routed_ends
+close_mw_cel design_routed_ends
+
+close_mw_cel top
+open_mw_cel -readonly top
+## Escribimos GDS
+set_write_stream_options \
+             -child_depth 6 \
+             -output_filling fill \
+		-output_pin {text geometry} \
+             -map_layer $TECH_GDS_MAP_FILE \
+             -pin_name_mag 0.5 \
+             -output_polygon_pin \
+             -keep_data_type
+
+## Recordar cambiar el diseno antes de sacar
+current_design top
+#write_stream -lib_name $TOP_CEL -format gds ../../results/${TOP_CEL_NAME}.gds
+
+#SOlo guardamos la celda completa final
+write_stream  -cells top -format gds $TOP_FILE_GDS > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_gds_out.txt"
+#write_stream  -cells design_routed_ends -format gds $TOP_FILE_GDS > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_gds_out.txt"
+report_power -analysis_effort high > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_phy_power.txt"
+report_area > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_phy_area.txt"
+report_cell > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_phy_cell.txt"
+report_qor > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_phy_qor.txt"
+report_timing > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_phy_timing.txt"
+report_port > "$PROY_HOME_PHY/reports/$DESIGN_NAME\_phy_port.txt"
+#set anotar "\$asic/db/be/alu/add_subt/Francis/$design_name\_phy.sdf"
+#set string_replace "sed -i \"s/endmodule/initial\ \\\$sdf\_annotate\(\\\"$anotar\\\"\)\\\\; \\n endmodule/g\" $design_home/$design_name\_phy_sim.v"
+#exec /bin/sh -c "$string_replace"
+save_mw_cel -as design_completed
+#------------------------------------------------------------------------------
+# Nota 2: Mensajes suprimidos
+#------------------------------------------------------------------------------
+
+# SDC-3: 		La restricción "set_wire_load_mode", no es compatible con icc_shell.
+# SDC-4: 		La restricción "set_wire_load_model", es ignorada.
+# UID-401: 		Los atributos de regla de diseño de la celda de conducción se establecerán en el puerto
+# HDUEDIT-104: 	Se ingresó un comando que cambió la base de datos pero no tiene soporte para deshacer,
+# 				por lo que se borró la pila de deshacer actual.

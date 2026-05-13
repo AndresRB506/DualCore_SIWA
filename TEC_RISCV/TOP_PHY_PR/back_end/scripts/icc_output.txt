@@ -1,0 +1,81 @@
+Initializing gui preferences from file  /mnt/vol_NFS_Zener/WD_ESPEC/achacon/.synopsys_icc_prefs.tcl
+icc_shell> gui_start
+ + VUE INFO: Please click Verification->IC Validator VUE in LayoutWindow menu
+to launch VUE.
+
+ + VUE INFO: Found a usable port: 2445
+
+Information: Loaded Icv extension from /mnt/vol_NFS_Zener/tools/synopsys/apps/icvalidator/N-2017.12-SP1-2 (GUI-024)
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+icc_shell> set PROY_HOME "/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/FIRST_SPIN/TEC_RISCV/TOP_PHY_PR";
+/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/FIRST_SPIN/TEC_RISCV/TOP_PHY_PR
+icc_shell> source $PROY_HOME/common_setup_typ_no_hv.tcl;
+RM-Info: Running script /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/FIRST_SPIN/TEC_RISCV/TOP_PHY_PR/common_setup_typ_no_hv.tcl
+
+RM-Info: Completed script /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/FIRST_SPIN/TEC_RISCV/TOP_PHY_PR/common_setup_typ_no_hv.tcl
+
+icc_shell> #source $PROY_HOME/common_setup_typ.tcl;
+icc_shell> source $PROY_HOME/user_setup.tcl;
+RM-Info: Running script /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/FIRST_SPIN/TEC_RISCV/TOP_PHY_PR/user_setup.tcl
+
+icc_shell> source ./scripts/icc_setup.tcl;
+Error: could not open script file "./scripts/icc_setup.tcl" (CMD-015)
+icc_shell> ls
+.                                 fix_vdd_ports.tcl
+..                                fix_vdd_ports.tcl~
+Bounnding_polygon_PD_PADS.txt     fix_vdd_ports_mv.tcl
+Memoria_Instanciar.odt            gen_port_locator_script.tcl
+allocate_ports.tcl                gen_port_locator_script.tcl~
+allocate_ports.tcl~               history-12-38-22-10-2018.txt
+allocate_ports_rdy.tcl            history-12-38-22-10-2018.txt~
+allocate_ports_rdy.tcl~           icc_output.txt
+command.log                       icc_setup.tcl
+crear_mw.tcl                      lvs_drc.tcl
+create_basic_design.tcl           pad_filling.tcl
+create_basic_design_def.tcl~      pad_filling.tcl~
+create_basic_design_def_v2.tcl    pad_insertion.tcl
+create_basic_design_def_v2.tcl~   place_ports.tcl
+create_basic_design_mv.tcl        place_ports.tcl~
+create_pads.tcl                   place_ports_old.tcl
+create_pads.tcl~                  power_nets_syn.tcl
+create_pads_def_v2.tcl            power_nets_syn.tcl~
+create_pads_mv.tcl                power_nets_syn_v2.tcl
+create_voltage_areas_def.tcl      run_all.tcl
+create_voltage_areas_def_v2.tcl   run_all.tcl~
+create_voltage_areas_def_v2.tcl~  set_pad_attributes_on_cells.tcl
+create_voltage_areas_def_v3.tcl   top_phy_def_v2.tcl
+create_voltage_areas_def_v3.tcl~  top_phy_def_v2.tcl~
+create_voltage_areas_mv.tcl       top_phy_definitive.tcl
+filenames.log                     vdd_sram.txt
+fix_shorts.tcl                    vdd_sram.txt~
+fix_shorts.tcl~                   xfab_lib_rams.tcl
+fix_vdd_fillers.tcl               xfab_mw_rams.tcl
+fix_vdd_fillers.tcl~
+icc_shell> cd ..
+icc_shell> source ./scripts/icc_setup.tcl;
+
+
+                I am ready...
+
+icc_shell> cd $TECH_ROOT/xh018/synopsys/v6_3/techMW/v6_3_1_1/xh018-synopsys-techMW-v6_3_1_1
+icc_shell> ls
+.
+..
+xh018_in.map
+xh018_out.map
+xh018_xx31_HD_MET3_METMID.tf
+xh018_xx31_MET3_METMID.tf
+xh018_xx33_HD_MET3_METMID_METTHK.tf
+xh018_xx33_MET3_METMID_METTHK.tf
+xh018_xx41_HD_MET4_METMID.tf
+xh018_xx41_MET4_METMID.tf
+xh018_xx43_HD_MET4_METMID_METTHK.tf
+xh018_xx43_HD_MET4_METMID_METTHK_lef_in_layer_map.txt
+xh018_xx43_MET4_METMID_METTHK.tf
+xh018_xx51_HD_MET5_METMID.tf
+xh018_xx51_MET5_METMID.tf
+xx018.ante.rules
+icc_shell> pwd
+/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/synopsys/v6_3/techMW/v6_3_1_1/xh018-synopsys-techMW-v6_3_1_1
+icc_shell> 
+Exit IC Compiler!

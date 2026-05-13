@@ -1,0 +1,82 @@
+//-------------------------------------------------------------------------
+//						alu_test - www.verificationguide.com 
+//-------------------------------------------------------------------------
+
+`include "alu_env.sv"
+class alu_model_base_test extends uvm_test;
+
+  `uvm_component_utils(alu_model_base_test)
+  
+  //---------------------------------------
+  // env instance 
+  //--------------------------------------- 
+  alu_model_env env;
+  int  file; 
+  
+  //---------------------------------------
+  // constructor
+  //---------------------------------------
+  function new(string name = "alu_model_base_test",uvm_component parent=null);
+    super.new(name,parent);
+  endfunction : new
+
+  //---------------------------------------
+  // build_phase
+  //---------------------------------------
+  virtual function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+
+    // Create the env
+    env = alu_model_env::type_id::create("env", this);
+  endfunction : build_phase
+  
+  //---------------------------------------
+  // end_of_elobaration phase
+  //---------------------------------------  
+  virtual function void end_of_elaboration();
+    //print's the topology
+    print();
+  endfunction
+
+  //---------------------------------------
+  // end_of_elobaration phase
+  //---------------------------------------   
+  
+ function void report_phase(uvm_phase phase);
+   uvm_report_server svr;
+   super.report_phase(phase);
+   svr = uvm_report_server::get_server();
+   if(svr.get_severity_count(UVM_FATAL)+svr.get_severity_count(UVM_ERROR)>0) begin
+     `uvm_info(get_type_name(), "---------------------------------------", UVM_NONE)
+     `uvm_info(get_type_name(), "----            TEST FAIL          ----", UVM_NONE)
+     `uvm_info(get_type_name(), "---------------------------------------", UVM_NONE)
+      file = $fopen ("file.txt", "a");
+      $fdisplay(file, "FAIL");
+      $fdisplay(file, "---------------------------------------------");
+      $fdisplay(file, " ");
+      $fclose(file);
+    end
+    else begin
+     `uvm_info(get_type_name(), "---------------------------------------", UVM_NONE)
+     `uvm_info(get_type_name(), "----           TEST PASS           ----", UVM_NONE)
+     `uvm_info(get_type_name(), "---------------------------------------", UVM_NONE)
+      file = $fopen ("file.txt", "a");
+      $fdisplay(file, "PASS");
+      $fdisplay(file, "Total coverage %e",$get_coverage());
+      $display("Total coverage %e",$get_coverage());
+      $fdisplay(file, "---------------------------------------------");
+      $fdisplay(file, " ");
+      $fclose(file);
+    end
+
+/*  begin
+      int  results_file;
+      results_file = $fopen ("file.log", "a");
+      uvm_top.set_report_default_file(results_file);
+      uvm_top.set_report_severity_action (UVM_INFO, UVM_DISPLAY | UVM_LOG);
+    end*/
+
+  endfunction 
+
+endclass : alu_model_base_test
+

@@ -1,0 +1,569 @@
+294      
+0 uvm_pkg.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/uvm_pkg.sv
+0 uvm_macros.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/uvm_macros.svh
+0 macros/uvm_version_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_version_defines.svh
+0 macros/uvm_global_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_global_defines.svh
+0 macros/uvm_message_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_message_defines.svh
+0 macros/uvm_phase_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_phase_defines.svh
+0 macros/uvm_object_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_object_defines.svh
+0 macros/uvm_printer_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_printer_defines.svh
+0 macros/uvm_tlm_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_tlm_defines.svh
+0 tlm1/uvm_tlm_imps.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_tlm_imps.svh
+0 macros/uvm_sequence_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_sequence_defines.svh
+0 macros/uvm_callback_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_callback_defines.svh
+0 macros/uvm_reg_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_reg_defines.svh
+0 macros/uvm_deprecated_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/macros/uvm_deprecated_defines.svh
+0 dpi/uvm_dpi.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dpi/uvm_dpi.svh
+0 dpi/uvm_hdl.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dpi/uvm_hdl.svh
+0 dpi/uvm_svcmd_dpi.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dpi/uvm_svcmd_dpi.svh
+0 dpi/uvm_regex.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dpi/uvm_regex.svh
+0 base/uvm_base.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_base.svh
+0 base/uvm_coreservice.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_coreservice.svh
+0 base/uvm_version.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_version.svh
+0 base/uvm_object_globals.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_object_globals.svh
+0 base/uvm_misc.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_misc.svh
+0 base/uvm_object.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_object.svh
+0 base/uvm_pool.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_pool.svh
+0 base/uvm_queue.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_queue.svh
+0 base/uvm_factory.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_factory.svh
+0 base/uvm_registry.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_registry.svh
+0 base/uvm_spell_chkr.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_spell_chkr.svh
+0 base/uvm_resource.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_resource.svh
+0 base/uvm_resource_specializations.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_resource_specializations.svh
+0 base/uvm_resource_db.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_resource_db.svh
+0 base/uvm_config_db.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_config_db.svh
+0 base/uvm_printer.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_printer.svh
+0 base/uvm_comparer.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_comparer.svh
+0 base/uvm_packer.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_packer.svh
+0 base/uvm_links.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_links.svh
+0 base/uvm_tr_database.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_tr_database.svh
+0 base/uvm_tr_stream.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_tr_stream.svh
+0 base/uvm_recorder.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_recorder.svh
+0 base/uvm_event_callback.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_event_callback.svh
+0 base/uvm_event.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_event.svh
+0 base/uvm_barrier.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_barrier.svh
+0 base/uvm_callback.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_callback.svh
+0 base/uvm_report_message.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_report_message.svh
+0 base/uvm_report_catcher.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_report_catcher.svh
+0 base/uvm_report_server.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_report_server.svh
+0 base/uvm_report_handler.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_report_handler.svh
+0 base/uvm_report_object.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_report_object.svh
+0 base/uvm_transaction.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_transaction.svh
+0 base/uvm_phase.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_phase.svh
+0 base/uvm_domain.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_domain.svh
+0 base/uvm_bottomup_phase.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_bottomup_phase.svh
+0 base/uvm_topdown_phase.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_topdown_phase.svh
+0 base/uvm_task_phase.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_task_phase.svh
+0 base/uvm_common_phases.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_common_phases.svh
+0 base/uvm_runtime_phases.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_runtime_phases.svh
+0 base/uvm_component.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_component.svh
+0 base/uvm_root.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_root.svh
+0 base/uvm_objection.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_objection.svh
+0 base/uvm_heartbeat.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_heartbeat.svh
+0 base/uvm_globals.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_globals.svh
+0 base/uvm_cmdline_processor.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_cmdline_processor.svh
+0 base/uvm_traversal.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_traversal.svh
+0 dap/uvm_dap.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dap/uvm_dap.svh
+0 dap/uvm_set_get_dap_base.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dap/uvm_set_get_dap_base.svh
+0 dap/uvm_simple_lock_dap.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dap/uvm_simple_lock_dap.svh
+0 dap/uvm_get_to_lock_dap.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dap/uvm_get_to_lock_dap.svh
+0 dap/uvm_set_before_get_dap.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/dap/uvm_set_before_get_dap.svh
+0 tlm1/uvm_tlm.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_tlm.svh
+0 tlm1/uvm_tlm_ifs.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_tlm_ifs.svh
+0 tlm1/uvm_sqr_ifs.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_sqr_ifs.svh
+0 base/uvm_port_base.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/base/uvm_port_base.svh
+0 tlm1/uvm_imps.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_imps.svh
+0 tlm1/uvm_ports.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_ports.svh
+0 tlm1/uvm_exports.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_exports.svh
+0 tlm1/uvm_analysis_port.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_analysis_port.svh
+0 tlm1/uvm_tlm_fifo_base.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_tlm_fifo_base.svh
+0 tlm1/uvm_tlm_fifos.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_tlm_fifos.svh
+0 tlm1/uvm_tlm_req_rsp.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_tlm_req_rsp.svh
+0 tlm1/uvm_sqr_connections.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm1/uvm_sqr_connections.svh
+0 comps/uvm_comps.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_comps.svh
+0 comps/uvm_pair.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_pair.svh
+0 comps/uvm_policies.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_policies.svh
+0 comps/uvm_in_order_comparator.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_in_order_comparator.svh
+0 comps/uvm_algorithmic_comparator.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_algorithmic_comparator.svh
+0 comps/uvm_random_stimulus.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_random_stimulus.svh
+0 comps/uvm_subscriber.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_subscriber.svh
+0 comps/uvm_monitor.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_monitor.svh
+0 comps/uvm_driver.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_driver.svh
+0 comps/uvm_push_driver.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_push_driver.svh
+0 comps/uvm_scoreboard.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_scoreboard.svh
+0 comps/uvm_agent.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_agent.svh
+0 comps/uvm_env.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_env.svh
+0 comps/uvm_test.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/comps/uvm_test.svh
+0 seq/uvm_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_seq.svh
+0 seq/uvm_sequence_item.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequence_item.svh
+0 seq/uvm_sequencer_base.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequencer_base.svh
+0 seq/uvm_sequencer_analysis_fifo.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequencer_analysis_fifo.svh
+0 seq/uvm_sequencer_param_base.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequencer_param_base.svh
+0 seq/uvm_sequencer.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequencer.svh
+0 seq/uvm_push_sequencer.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_push_sequencer.svh
+0 seq/uvm_sequence_base.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequence_base.svh
+0 seq/uvm_sequence.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequence.svh
+0 seq/uvm_sequence_library.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequence_library.svh
+0 seq/uvm_sequence_builtin.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/seq/uvm_sequence_builtin.svh
+0 tlm2/uvm_tlm2.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2.svh
+0 tlm2/uvm_tlm2_defines.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_defines.svh
+0 tlm2/uvm_tlm2_time.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_time.svh
+0 tlm2/uvm_tlm2_generic_payload.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_generic_payload.svh
+0 tlm2/uvm_tlm2_ifs.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_ifs.svh
+0 tlm2/uvm_tlm2_imps.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_imps.svh
+0 tlm2/uvm_tlm2_ports.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_ports.svh
+0 tlm2/uvm_tlm2_exports.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_exports.svh
+0 tlm2/uvm_tlm2_sockets_base.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_sockets_base.svh
+0 tlm2/uvm_tlm2_sockets.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/tlm2/uvm_tlm2_sockets.svh
+0 reg/uvm_reg_model.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_model.svh
+0 reg/uvm_reg_item.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_item.svh
+0 reg/uvm_reg_adapter.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_adapter.svh
+0 reg/uvm_reg_predictor.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_predictor.svh
+0 reg/uvm_reg_sequence.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_sequence.svh
+0 reg/uvm_reg_cbs.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_cbs.svh
+0 reg/uvm_reg_backdoor.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_backdoor.svh
+0 reg/uvm_reg_field.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_field.svh
+0 reg/uvm_vreg_field.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_vreg_field.svh
+0 reg/uvm_reg.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg.svh
+0 reg/uvm_reg_indirect.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_indirect.svh
+0 reg/uvm_reg_fifo.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_fifo.svh
+0 reg/uvm_reg_file.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_file.svh
+0 reg/uvm_mem_mam.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_mem_mam.svh
+0 reg/uvm_vreg.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_vreg.svh
+0 reg/uvm_mem.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_mem.svh
+0 reg/uvm_reg_map.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_map.svh
+0 reg/uvm_reg_block.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/uvm_reg_block.svh
+0 reg/sequences/uvm_reg_hw_reset_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/sequences/uvm_reg_hw_reset_seq.svh
+0 reg/sequences/uvm_reg_bit_bash_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/sequences/uvm_reg_bit_bash_seq.svh
+0 reg/sequences/uvm_mem_walk_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/sequences/uvm_mem_walk_seq.svh
+0 reg/sequences/uvm_mem_access_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/sequences/uvm_mem_access_seq.svh
+0 reg/sequences/uvm_reg_access_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/sequences/uvm_reg_access_seq.svh
+0 reg/sequences/uvm_reg_mem_shared_access_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/sequences/uvm_reg_mem_shared_access_seq.svh
+0 reg/sequences/uvm_reg_mem_built_in_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/sequences/uvm_reg_mem_built_in_seq.svh
+0 reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+0 reg/snps_uvm_reg_bank.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/reg/snps_uvm_reg_bank.svh
+0 vcs/snps_reg.svh
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/vcs/snps_reg.svh
+0 ../BUS_Micro/Bus_Micro_lib.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../BUS_Micro/Bus_Micro_lib.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/../BUS_Micro/Bus_Micro_lib.sv
+0 ../FIFO_Latches/fifo.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../FIFO_Latches/fifo.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/../FIFO_Latches/fifo.sv
+38
++incdir+../../../TEC_RISCV/BUS_Micro
++incdir+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src
++itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/vcsdp.tab
++memcbk
++vcs+flush+all
++vcsd
++vpi
++warn=all
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -DVCS -O -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dpi/uvm_dpi.cc
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/liberrorinf.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libsnpsmalloc.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/include
+-Xpiyushb1=0x80
+-debug_access+all+dmptf+bc
+-debug_access+r
+-debug_region=cell+lib
+-full64
+-gen_obj
+-lca
+-picarchive
+-sverilog
+-timescale=1ns/1ns
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/BUS_Micro/Bus_Micro.sv
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/uvm.sv
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/bin/vcs1
+testbench.sv
+55
+sysc_uni_pwd=/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_bus/Ariel_code
+XDG_SESSION_COOKIE=1cbc5570a79fabc6ec9552bd00000016-1540477897.347657-374783919
+VNCDESKTOP=zener:1 (rmolina)
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UVM_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2
+UNAME=/bin/uname
+TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64
+SYSFONT=latarcyrheb-sun16
+SYNOPSYS_SIM_SETUP=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI/design/synopsys_sim.setup
+SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps
+SYNOPSYS=/datos/Synopsys/
+SSH_TTY=/dev/pts/0
+SSH_CONNECTION=172.21.134.176 63153 172.21.16.5 22
+SSH_CLIENT=172.21.134.176 63153 22
+SSH_AUTH_SOCK=/tmp/keyring-B4gH0a/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=7973
+SNPS_VCS_CLANG_PATH=/fs/src/interfaces/LLVM_Project/QSCM/opt/llvm-3.9.1/linux64
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/7972,unix/unix:/tmp/.ICE-unix/7972
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PYTHONPATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/pylib:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/plat_linux_gcc52_64/pyext:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/plat_linux_gcc52_64/lib:.:
+PYTHONHOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/plat_linux_gcc52_64/3rd
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-rmolina
+OA_PLUGIN_PATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/plat_linux_gcc52_64/3rd/oa/data/plugins:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/quickstart:
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+ICV_HOME_DIR=/mnt/vol_NFS_Zener/tools/synopsys/apps/icvalidator/L-2016.06-SP2-3
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/local/ESTUDIANTES/rmolina/.gtkrc-1.2-gnome2
+GNOME_KEYRING_SOCKET=/tmp/keyring-B4gH0a/socket
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+FTK_KIT_DIR=/mnt/vol_NFS_Zener/tools/synopsys/pdks/xt018-ams/v1_0_2
+DESIGN_HOME=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-5XLbfgWn78,guid=ad2646390c767aab66877a95000020c4
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+CNI_ROOT=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262
+CNI_LOG_DEFAULT=/dev/null
+0
+169
+1540530366 bus_device_uarttospi_test.sv
+1540530366 bus_device_uarttombc_test.sv
+1540530366 bus_device_spitouart_test.sv
+1540530366 bus_device_spitombc_test.sv
+1540530366 bus_device_mbctouart_test.sv
+1540530366 bus_device_mbctospi_test.sv
+1540530366 bus_device_uart_test.sv
+1540530366 bus_device_spi_test.sv
+1540530366 bus_device_mbc_test.sv
+1540530366 bus_scoreboard.sv
+1540530366 bus_monitor.sv
+1541711607 bus_driver.sv
+1540530366 bus_sequence.sv
+1540530366 bus_sequencer.sv
+1540530366 bus_seq_item.sv
+1540530366 bus_agent.sv
+1540530366 bus_env.sv
+1540530366 bus_base_test.sv
+1541711450 bus_interface.sv
+1540316649 ../../../TEC_RISCV/BUS_Micro/../FIFO_Latches/fifo.sv
+1540316649 ../../../TEC_RISCV/BUS_Micro/../BUS_Micro/Bus_Micro_lib.sv
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/vcs/snps_reg.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/snps_uvm_reg_bank.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/sequences/uvm_reg_mem_built_in_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/sequences/uvm_reg_access_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/sequences/uvm_mem_access_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/sequences/uvm_mem_walk_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/sequences/uvm_reg_bit_bash_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/sequences/uvm_reg_hw_reset_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_block.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_map.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_mem.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_vreg.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_mem_mam.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_file.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_fifo.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_indirect.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_vreg_field.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_field.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_backdoor.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_cbs.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_sequence.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_predictor.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_adapter.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_item.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/reg/uvm_reg_model.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_sockets.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_sockets_base.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_exports.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_ports.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_imps.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_ifs.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_generic_payload.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_time.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm2/uvm_tlm2.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequence_builtin.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequence_library.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequence.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequence_base.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_push_sequencer.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequencer.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequencer_param_base.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequencer_analysis_fifo.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequencer_base.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_sequence_item.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/seq/uvm_seq.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_test.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_env.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_agent.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_scoreboard.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_push_driver.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_driver.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_monitor.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_subscriber.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_random_stimulus.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_algorithmic_comparator.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_in_order_comparator.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_policies.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_pair.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/comps/uvm_comps.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_sqr_connections.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_tlm_req_rsp.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_tlm_fifos.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_tlm_fifo_base.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_analysis_port.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_exports.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_ports.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_imps.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_port_base.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_sqr_ifs.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_tlm_ifs.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_tlm.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dap/uvm_set_before_get_dap.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dap/uvm_get_to_lock_dap.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dap/uvm_simple_lock_dap.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dap/uvm_set_get_dap_base.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dap/uvm_dap.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_traversal.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_cmdline_processor.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_globals.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_heartbeat.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_objection.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_root.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_component.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_runtime_phases.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_common_phases.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_task_phase.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_topdown_phase.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_bottomup_phase.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_domain.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_phase.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_transaction.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_report_object.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_report_handler.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_report_server.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_report_catcher.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_report_message.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_callback.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_barrier.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_event.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_event_callback.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_recorder.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_tr_stream.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_tr_database.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_links.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_packer.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_comparer.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_printer.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_config_db.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_resource_db.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_resource_specializations.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_resource.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_spell_chkr.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_registry.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_factory.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_queue.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_pool.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_object.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_misc.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_object_globals.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_version.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_coreservice.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_base.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dpi/uvm_regex.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dpi/uvm_svcmd_dpi.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dpi/uvm_hdl.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dpi/uvm_dpi.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_deprecated_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_reg_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_callback_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_sequence_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/tlm1/uvm_tlm_imps.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_tlm_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_printer_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_object_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_phase_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_message_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_global_defines.svh
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/macros/uvm_version_defines.svh
+1519361125 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/uvm_macros.svh
+1519361125 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/uvm_pkg.sv
+1541712699 testbench.sv
+1540316649 /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/BUS_Micro/Bus_Micro.sv
+1519361125 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/uvm.sv
+1519358599 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/vcsdp.tab
+6
+1519358624 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dpi/uvm_dpi.cc
+0 
+1519359937 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvirsim.so
+1519359429 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/liberrorinf.so
+1519359412 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libsnpsmalloc.so
+1519359683 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvfs.so
+1541712716 simv.daidir

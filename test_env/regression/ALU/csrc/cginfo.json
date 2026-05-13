@@ -1,0 +1,256 @@
+{
+    "MlibObjs": {},
+    "CompileProcesses": [
+        "cgproc.29462.json"
+    ],
+    "NameTable": {
+        "_vcs_DPI_package": [
+            "_vcs_DPI_package",
+            "uM9F1",
+            "module",
+            1
+        ],
+        "vcs_paramclassrepository": [
+            "vcs_paramclassrepository",
+            "hEeZs",
+            "module",
+            2
+        ],
+        "ALU_2": [
+            "ALU_2",
+            "EyNJN",
+            "module",
+            8
+        ],
+        "_vcs_unit__3835651635": [
+            "_vcs_unit__3835651635",
+            "y3yDu",
+            "module",
+            3
+        ],
+        "alu_if": [
+            "alu_if",
+            "tmda9",
+            "module",
+            9
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module",
+            4
+        ],
+        "tristate_buffer": [
+            "tristate_buffer",
+            "MAbZJ",
+            "module",
+            6
+        ],
+        "uvm_pkg": [
+            "uvm_pkg",
+            "zr7M1",
+            "module",
+            5
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            11
+        ],
+        "csk_bloque": [
+            "csk_bloque",
+            "Eiy7n",
+            "module",
+            7
+        ],
+        "tbench_top": [
+            "tbench_top",
+            "Mk7In",
+            "module",
+            10
+        ]
+    },
+    "PrevCompiledModules": {
+        "tristate_buffer": {
+            "MAbZJ_d": {
+                "mod": "tristate_buffer",
+                "bytes": 12964,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/MAbZJ_d.o"
+            }
+        },
+        "uvm_pkg": {
+            "zr7M1_d": {
+                "mod": "uvm_pkg",
+                "bytes": 7281380,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/zr7M1_d.o"
+            }
+        },
+        "vcs_paramclassrepository": {
+            "hEeZs_d": {
+                "mod": "vcs_paramclassrepository",
+                "bytes": 7179324,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/hEeZs_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "mod": "...MASTER...",
+                "bytes": 8765,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/amcQw_d.o"
+            }
+        },
+        "csk_bloque": {
+            "Eiy7n_d": {
+                "mod": "csk_bloque",
+                "bytes": 13828,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/Eiy7n_d.o"
+            }
+        },
+        "ALU_2": {
+            "EyNJN_d": {
+                "mod": "ALU_2",
+                "bytes": 225707,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/EyNJN_d.o"
+            }
+        },
+        "_vcs_unit__3835651635": {
+            "y3yDu_d": {
+                "mod": "_vcs_unit__3835651635",
+                "bytes": 736412,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/y3yDu_d.o"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "mod": "std",
+                "bytes": 42847,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/reYIK_d.o"
+            }
+        },
+        "alu_if": {
+            "tmda9_d": {
+                "mod": "alu_if",
+                "bytes": 89637,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/tmda9_d.o"
+            }
+        },
+        "tbench_top": {
+            "Mk7In_d": {
+                "mod": "tbench_top",
+                "bytes": 18682,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/Mk7In_d.o"
+            }
+        },
+        "_vcs_DPI_package": {
+            "uM9F1_d": {
+                "mod": "_vcs_DPI_package",
+                "bytes": 31994,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/uM9F1_d.o"
+            }
+        }
+    },
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 8.3467310000000001,
+            "ru_nivcsw": 2419,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.32095099999999999,
+            "ru_nvcsw": 1011,
+            "ru_minflt": 65332,
+            "ru_maxrss_kb": 150556
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.005999,
+            "ru_nivcsw": 35,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.040993000000000002,
+            "ru_nvcsw": 32,
+            "ru_minflt": 4162,
+            "ru_maxrss_kb": 68536
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0079979999999999999,
+            "ru_nivcsw": 48,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.045992999999999999,
+            "ru_nvcsw": 48,
+            "ru_minflt": 4822,
+            "ru_maxrss_kb": 153812
+        },
+        "nMops": 452871,
+        "nQuads": 143708,
+        "totalObjSize": 376160,
+        "ru_self_end": {
+            "ru_utime_sec": 9.8105080000000005,
+            "ru_nivcsw": 2431,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.378942,
+            "ru_nvcsw": 1112,
+            "ru_minflt": 81572,
+            "ru_maxrss_kb": 158368
+        },
+        "mopSpeed": 309385.24105789332,
+        "quadSpeed": 98176.156614019739,
+        "mop/quad": 3.1513276922648705,
+        "outputSizePerQuad": 2.6175299913713919,
+        "peak_mem_kb": 308288,
+        "Frontend(%)": 85.079498431681614,
+        "CodeGen(%)": 14.920501568318381
+    },
+    "CurCompileUdps": {},
+    "PEModules": [],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 376160
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "vcs_paramclassrepository",
+        "_vcs_DPI_package",
+        "_vcs_unit__3835651635",
+        "std",
+        "uvm_pkg",
+        "tristate_buffer",
+        "csk_bloque",
+        "ALU_2",
+        "alu_if",
+        "tbench_top"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "Misc": {
+        "csrc": "csrc",
+        "cwd": "/mnt/vol_NFS_Zener/WD_ESPEC/jmontero/regresion/Verificacion_RISCV_TEC/test_env/regression/ALU",
+        "csrc_abs": "/mnt/vol_NFS_Zener/WD_ESPEC/jmontero/regresion/Verificacion_RISCV_TEC/test_env/regression/ALU/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/mnt/vol_NFS_Zener/WD_ESPEC/jmontero/regresion/Verificacion_RISCV_TEC/test_env/regression/ALU/simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.30"
+    },
+    "CompileStatus": "Successful"
+}

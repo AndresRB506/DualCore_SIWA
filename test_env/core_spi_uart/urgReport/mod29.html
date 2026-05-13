@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: u_xmit</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_u_xmit'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_u_xmit')">u_xmit</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s2 cl rt"> 28.61</td>
+<td class="s5 cl rt"><a href="mod29.html#Line" > 53.19</a></td>
+<td class="s3 cl rt"><a href="mod29.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod29.html#Toggle" >  6.52</a></td>
+<td class="s0 cl rt"><a href="mod29.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod29.html#Branch" > 50.00</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../UART/scrs/u_xmit.sv')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../UART/scrs/u_xmit.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod29.html#inst_tag_3014"  onclick="showContent('inst_tag_3014')">topcore_tb.uut.UART.u_xmit</a></td>
+<td class="s2 cl rt"> 28.61</td>
+<td class="s5 cl rt"><a href="mod29.html#Line" > 53.19</a></td>
+<td class="s3 cl rt"><a href="mod29.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod29.html#Toggle" >  6.52</a></td>
+<td class="s0 cl rt"><a href="mod29.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod29.html#Branch" > 50.00</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_u_xmit'>
+<hr>
+<a name="inst_tag_3014"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy12.html#tag_urg_inst_3014" >topcore_tb.uut.UART.u_xmit</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s2 cl rt"> 28.61</td>
+<td class="s5 cl rt"><a href="mod29.html#Line" > 53.19</a></td>
+<td class="s3 cl rt"><a href="mod29.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod29.html#Toggle" >  6.52</a></td>
+<td class="s0 cl rt"><a href="mod29.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod29.html#Branch" > 50.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s2 cl rt"> 28.61</td>
+<td class="s5 cl rt"> 53.19</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="s0 cl rt">  6.52</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s5 cl rt"> 50.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s0 cl rt">  1.36</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  1.36</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod55.html#inst_tag_4282" >UART</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td colspan=7>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_u_xmit'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod29.html" >u_xmit</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">TOTAL</td><td></td><td>94</td><td>50</td><td>53.19</td></tr>
+<tr class="s4"><td class="lf">ALWAYS</td><td>79</td><td>5</td><td>2</td><td>40.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>91</td><td>6</td><td>5</td><td>83.33</td></tr>
+<tr class="s6"><td class="lf">ALWAYS</td><td>107</td><td>9</td><td>6</td><td>66.67</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>125</td><td>7</td><td>5</td><td>71.43</td></tr>
+<tr class="s5"><td class="lf">ALWAYS</td><td>138</td><td>6</td><td>3</td><td>50.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>153</td><td>4</td><td>4</td><td>100.00</td></tr>
+<tr class="s3"><td class="lf">ALWAYS</td><td>163</td><td>53</td><td>21</td><td>39.62</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>298</td><td>4</td><td>4</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+78                      always_comb begin
+79         1/1            case (xmitDataSelH)
+80         <font color = "red">0/1     ==>  	x_STARTbit: uart_xmitH = LO; // Data output</font>
+81         1/1          	x_STOPbit:  uart_xmitH = HI;
+82         <font color = "red">0/1     ==>  	x_ShiftReg: uart_xmitH = xmit_ShiftRegH[0];</font>
+83         <font color = "red">0/1     ==>  	x_PAR:      uart_xmitH = BitP; // Send parity bit</font>
+                        MISSING_DEFAULT
+84                        endcase
+85                      end
+86                      
+87                      //
+88                      // Bit Cell time Counter----------------------------------------------------------
+89                      //
+90                      always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+91         1/1          	if (sys_rst_l) 
+92         1/1          	    bitCell_cntrH &lt;= 0;
+93         1/1          	else if (flag_sincr) begin
+94         1/1          		if (countEnaH) 
+95         <font color = "red">0/1     ==>  			bitCell_cntrH &lt;= bitCell_cntrH + 1;</font>
+96                      		else 
+97         1/1          		    bitCell_cntrH &lt;= 0;
+98                          end
+                        MISSING_ELSE
+99                      end
+100                     
+101                     //
+102                     // Shift Register------------------------------------------------------------------
+103                     //
+104                     // The LSB must be shifted out first
+105                     //
+106                     always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+107        1/1            	if (sys_rst_l) 
+108        1/1              	xmit_ShiftRegH &lt;= 0;
+109        1/1            	else if (flag_sincr) begin
+110        1/1          		if (load_shiftRegH) 
+111        <font color = "red">0/1     ==>  		   xmit_ShiftRegH &lt;= xmit_dataH;</font>
+112        1/1          		else if (shiftEnaH) begin
+113        <font color = "red">0/1     ==>  			xmit_ShiftRegH[6:0] &lt;= xmit_ShiftRegH[7:1];</font>
+114        <font color = "red">0/1     ==>  			xmit_ShiftRegH[7]   &lt;= HI;</font>
+115                     		end 
+116                     		else 
+117        1/1          		   xmit_ShiftRegH &lt;= xmit_ShiftRegH;
+118                         end
+                        MISSING_ELSE
+119                     end    
+120                     //
+121                     // Transmitted bit counter---------------------------------------------------------
+122                     //
+123                     //
+124                     always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+125        1/1            	if (sys_rst_l) 
+126        1/1              	bitCountH &lt;= 0;
+127        1/1              else if (flag_sincr) begin 
+128        1/1          	  	if (rst_bitCountH) 
+129        1/1          	    	bitCountH &lt;= 0;
+130        <font color = "red">0/1     ==>  	  	else if (ena_bitCountH) </font>
+131        <font color = "red">0/1     ==>  	    	bitCountH &lt;= bitCountH + 1;</font>
+                   <font color = "red">==>  MISSING_ELSE</font>
+132                         end
+                        MISSING_ELSE
+133                     end
+134                     
+135                     // Detect parity bit -----------------------------------------------
+136                     
+137                     always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+138        1/1            	if (sys_rst_l) 
+139        1/1              	BitP &lt;= 1'b0;
+140        1/1            	else if (flag_sincr &amp;&amp; xmitH) begin // Si hay un dato nuevo
+141        <font color = "red">0/1     ==>          if(^xmit_dataH[7:0]==1'b0)</font>
+142        <font color = "red">0/1     ==>          	BitP&lt;= 1'b0;</font>
+143                             else 
+144        <font color = "red">0/1     ==>          	BitP&lt;= 1'b1;</font>
+145                         end
+                        MISSING_ELSE
+146                     end
+147                     //
+148                     // STATE MACHINE--------------------------------------------------------------------
+149                     //
+150                     
+151                     // State Variable
+152                     always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+153        1/1            	if (sys_rst_l) 
+154        1/1              	state &lt;= x_IDLE;
+155        1/1            	else if (flag_sincr) begin 
+156        1/1              	state &lt;= next_state;
+157                         end
+                        MISSING_ELSE
+158                     end
+159                     
+160                     // Next State, Output Decode
+161                     always_comb begin   
+162                     	// Defaults
+163        1/1          	next_state 		= state;
+164        1/1          	load_shiftRegH	= LO;
+165        1/1          	countEnaH       = LO;
+166        1/1          	shiftEnaH       = LO;
+167        1/1          	rst_bitCountH   = LO;
+168        1/1          	ena_bitCountH   = LO;
+169        1/1              xmitDataSelH    = x_STOPbit;
+170        1/1          	xmit_doneInH	= LO;
+171                     	
+172                     
+173        1/1          	case (state)
+174                         	
+175                     		//
+176                     		// x_IDLE 000
+177                     		// wait for the start command
+178                     		//
+179                     		x_IDLE: begin
+180        1/1          			if (xmitH) begin 
+181        <font color = "red">0/1     ==>                  next_state = x_START;</font>
+182        <font color = "red">0/1     ==>  				load_shiftRegH = HI;</font>
+183        <font color = "red">0/1     ==>  				rst_bitCountH = HI;  ///Para resetear word_len</font>
+184                                     //xmit_doneInH  = HI; 
+185                     			end 
+186                     			else begin
+187        1/1          				next_state    = x_IDLE;
+188        1/1          				rst_bitCountH = HI; 
+189        1/1                          xmit_doneInH  = HI;     
+190                             	end
+191                     		end
+192                      
+193                     		//
+194                     		// x_START  001
+195                     		// send start bit 
+196                     		//
+197                     		x_START: begin 
+198        <font color = "red">0/1     ==>              xmitDataSelH    = x_STARTbit;  //xmitH=LO</font>
+199        <font color = "red">0/1     ==>  			if (bitCell_cntrH == 4'hF) begin</font>
+200        <font color = "red">0/1     ==>  				next_state = x_WAIT;</font>
+201        <font color = "red">0/1     ==>  				ena_bitCountH = HI; //1more bit sent</font>
+202                     		    end
+203                     			else begin 
+204        <font color = "red">0/1     ==>  				next_state = x_START;</font>
+205        <font color = "red">0/1     ==>  				countEnaH  = HI; // allow to count up</font>
+206                     			end				
+207                     		end
+208                     
+209                     
+210                     		//
+211                     		// x_WAIT  010
+212                     		// wait 1 bit-cell time before sending
+213                     		// data on the xmit pin
+214                     		//
+215                     		x_WAIT: begin 
+216        <font color = "red">0/1     ==>              xmitDataSelH    = x_ShiftReg;  </font>
+217                     			// 1 bit-cell time wait completed
+218        <font color = "red">0/1     ==>  			if (bitCell_cntrH == 4'hE) begin</font>
+219        <font color = "red">0/1     ==>  				if (bitCountH == WORD_LEN) </font>
+220        <font color = "red">0/1     ==>  					next_state = x_PARITY;</font>
+221                     				else begin
+222        <font color = "red">0/1     ==>  					next_state = x_SHIFT;</font>
+223        <font color = "red">0/1     ==>  					ena_bitCountH = HI; //1more bit sent</font>
+224                     				end
+225                     			// bit-cell wait not complete
+226                     			end 
+227                     			else begin
+228        <font color = "red">0/1     ==>  				next_state = x_WAIT;</font>
+229        <font color = "red">0/1     ==>  				countEnaH  = HI;</font>
+230                     			end		
+231                     		end
+232                     
+233                     
+234                     
+235                     		//
+236                     		// x_SHIFT   011
+237                     		// shift out the next bit
+238                     		//
+239                     		x_SHIFT: begin 
+240        <font color = "red">0/1     ==>              xmitDataSelH    = x_ShiftReg;</font>
+241        <font color = "red">0/1     ==>  			next_state = x_WAIT;</font>
+242        <font color = "red">0/1     ==>  			shiftEnaH  = HI; // shift out next bit</font>
+243                     		end
+244                     
+245                     
+246                             //
+247                             //x_PARITY   100
+248                             //Error detection
+249                             //
+250                             x_PARITY: begin
+251        <font color = "red">0/1     ==>              xmitDataSelH    = x_PAR; //uart_xmitH=HI</font>
+252        <font color = "red">0/1     ==>              if (bitCell_cntrH == 4'hF) begin</font>
+253        <font color = "red">0/1     ==>                  next_state   = x_STOP;</font>
+254                                 end else begin
+255        <font color = "red">0/1     ==>                  next_state = x_PARITY;</font>
+256        <font color = "red">0/1     ==>                  countEnaH = HI; //allow bit cell cntr</font>
+257                                 end 
+258                             end
+259                                   
+260                             
+261                     		//
+262                     		// x_STOP
+263                     		// send stop bit
+264                     		//
+265                     		x_STOP: begin //101
+266        <font color = "red">0/1     ==>              xmitDataSelH    = x_STOPbit; //uart_xmitH=HI</font>
+267        <font color = "red">0/1     ==>  			if (bitCell_cntrH == 4'hF) begin</font>
+268        <font color = "red">0/1     ==>  				next_state   = x_IDLE;</font>
+269        <font color = "red">0/1     ==>                  rst_bitCountH  = HI;    </font>
+270        <font color = "red">0/1     ==>                  xmit_doneInH  = HI; </font>
+271                     			end else begin
+272        <font color = "red">0/1     ==>  				next_state = x_STOP;</font>
+273        <font color = "red">0/1     ==>  				countEnaH = HI; //allow bit cell cntr</font>
+274                     			end
+275                     		end
+276                     
+277                     
+278                     
+279                     		default: begin
+280        1/1          			next_state     = x_START;
+281        1/1          			load_shiftRegH = X;
+282        1/1          			countEnaH      = X;
+283        1/1                      shiftEnaH      = X;
+284        1/1                      rst_bitCountH  = X;
+285        1/1                      ena_bitCountH  = X;
+286        1/1                      xmitDataSelH   = x_STOPbit;
+287        1/1                      xmit_doneInH   = X;
+288                     		end
+289                     
+290                         endcase
+291                     
+292                     end
+293                     
+294                     
+295                     // register the state machine outputs
+296                     // to eliminate ciritical-path/glithces
+297                     always_ff @(posedge sys_clk or posedge sys_rst_l)
+298        1/1            	if (sys_rst_l) 
+299        1/1              	xmit_doneH &lt;= 0;
+300        1/1            	else if (flag_sincr) begin // Atraso de una señal de reloj
+301        1/1              	xmit_doneH&lt;= xmit_doneInH;   
+302                       	end
+                        MISSING_ELSE
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod29.html" >u_xmit</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s3"><td class="lf">Conditions</td><td>3</td><td>1</td><td>33.33</td></tr>
+<tr class="s3"><td class="lf">Logical</td><td>3</td><td>1</td><td>33.33</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       140
+ EXPRESSION (flag_sincr &amp;&amp; xmitH)
+             -----1----    --2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod29.html" >u_xmit</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s1">
+<td>Totals</td>
+<td class="rt">20</td>
+<td class="rt">2</td>
+<td class="rt">10.00 </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">92</td>
+<td class="rt">6</td>
+<td class="rt">6.52  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">46</td>
+<td class="rt">3</td>
+<td class="rt">6.52  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">46</td>
+<td class="rt">3</td>
+<td class="rt">6.52  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s2">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">2</td>
+<td class="rt">28.57 </td>
+</tr><tr class="s2">
+<td>Port Bits</td>
+<td class="rt">28</td>
+<td class="rt">6</td>
+<td class="rt">21.43 </td>
+</tr><tr class="s2">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">14</td>
+<td class="rt">3</td>
+<td class="rt">21.43 </td>
+</tr><tr class="s2">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">14</td>
+<td class="rt">3</td>
+<td class="rt">21.43 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">13</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">64</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">32</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">32</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>sys_clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>flag_sincr</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>sys_rst_l</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>xmitH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>xmit_dataH[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>uart_xmitH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>xmit_doneH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>next_state[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>state[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>xmitDataSelH[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>load_shiftRegH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>shiftEnaH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bitCell_cntrH[4:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>countEnaH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>xmit_ShiftRegH[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bitCountH[3:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rst_bitCountH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ena_bitCountH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>xmit_doneInH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>BitP</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod29.html" >u_xmit</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: state</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">6</td>
+<td class="rt">1</td>
+<td class="rt">16.67 </td>
+<td>(Not included in score)</td>
+</tr><tr class="s0">
+<td>Transitions</td>
+<td class="rt">11</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: state</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>x_IDLE</td>
+<td class="rt">154</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_START</td>
+<td class="rt">280</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_WAIT</td>
+<td class="rt">200</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_SHIFT</td>
+<td class="rt">222</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_PARITY</td>
+<td class="rt">220</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_STOP</td>
+<td class="rt">253</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>x_IDLE->x_START</td>
+<td class="rt">181</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_START->x_IDLE</td>
+<td class="rt">154</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_START->x_WAIT</td>
+<td class="rt">200</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_WAIT->x_IDLE</td>
+<td class="rt">154</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_WAIT->x_SHIFT</td>
+<td class="rt">222</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_WAIT->x_PARITY</td>
+<td class="rt">220</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_SHIFT->x_IDLE</td>
+<td class="rt">154</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_SHIFT->x_WAIT</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_PARITY->x_IDLE</td>
+<td class="rt">154</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_PARITY->x_STOP</td>
+<td class="rt">253</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>x_STOP->x_IDLE</td>
+<td class="rt">154</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod29.html" >u_xmit</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Branches</td>
+<td></td>
+<td class="rt">42</td>
+<td class="rt">21</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s4">
+<td>CASE</td>
+<td class="rt">79</td>
+<td class="rt">5</td>
+<td class="rt">2</td>
+<td class="rt">40.00 </td>
+</tr><tr class="s7">
+<td>IF</td>
+<td class="rt">91</td>
+<td class="rt">4</td>
+<td class="rt">3</td>
+<td class="rt">75.00 </td>
+</tr><tr class="s6">
+<td>IF</td>
+<td class="rt">107</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s6">
+<td>IF</td>
+<td class="rt">125</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">138</td>
+<td class="rt">4</td>
+<td class="rt">2</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">153</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s1">
+<td>CASE</td>
+<td class="rt">173</td>
+<td class="rt">13</td>
+<td class="rt">2</td>
+<td class="rt">15.38 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">298</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+79           case (xmitDataSelH)
+             <font color = "red">-1-</font>  
+80         	x_STARTbit: uart_xmitH = LO; // Data output
+           <font color = "red">	==></font>
+81         	x_STOPbit:  uart_xmitH = HI;
+           <font color = "green">	==></font>
+82         	x_ShiftReg: uart_xmitH = xmit_ShiftRegH[0];
+           <font color = "red">	==></font>
+83         	x_PAR:      uart_xmitH = BitP; // Send parity bit
+           <font color = "red">	==></font>
+           	MISSING_DEFAULT
+           <font color = "green">	==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>x_STARTbit </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>x_STOPbit </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_ShiftReg </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_PAR </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+91         	if (sys_rst_l) 
+           	<font color = "green">-1-</font>  
+92         	    bitCell_cntrH <= 0;
+           <font color = "green">	    ==></font>
+93         	else if (flag_sincr) begin
+           	     <font color = "green">-2-</font>  
+94         		if (countEnaH) 
+           		<font color = "red">-3-</font>  
+95         			bitCell_cntrH <= bitCell_cntrH + 1;
+           <font color = "red">			==></font>
+96         		else 
+97         		    bitCell_cntrH <= 0;
+           <font color = "green">		    ==></font>
+98             end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+107          	if (sys_rst_l) 
+             	<font color = "green">-1-</font>  
+108            	xmit_ShiftRegH <= 0;
+           <font color = "green">    	==></font>
+109          	else if (flag_sincr) begin
+             	     <font color = "green">-2-</font>  
+110        		if (load_shiftRegH) 
+           		<font color = "red">-3-</font>           
+111        		   xmit_ShiftRegH <= xmit_dataH;
+           <font color = "red">		   ==></font>
+112        		else if (shiftEnaH) begin
+           		     <font color = "red">-4-</font>      
+113        			xmit_ShiftRegH[6:0] <= xmit_ShiftRegH[7:1];
+           <font color = "red">			==></font>
+114        			xmit_ShiftRegH[7]   <= HI;
+115        		end 
+116        		else 
+117        		   xmit_ShiftRegH <= xmit_ShiftRegH;
+           <font color = "green">		   ==></font>
+118            end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+125          	if (sys_rst_l) 
+             	<font color = "green">-1-</font>  
+126            	bitCountH <= 0;
+           <font color = "green">    	==></font>
+127            else if (flag_sincr) begin 
+                    <font color = "green">-2-</font>  
+128        	  	if (rst_bitCountH) 
+           	  	<font color = "red">-3-</font>  
+129        	    	bitCountH <= 0;
+           <font color = "green">	    	==></font>
+130        	  	else if (ena_bitCountH) 
+           	  	     <font color = "red">-4-</font>  
+131        	    	bitCountH <= bitCountH + 1;
+           <font color = "red">	    	==></font>
+           	    	MISSING_ELSE
+           <font color = "red">	    	==></font>
+132            end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+138          	if (sys_rst_l) 
+             	<font color = "green">-1-</font>  
+139            	BitP <= 1'b0;
+           <font color = "green">    	==></font>
+140          	else if (flag_sincr && xmitH) begin // Si hay un dato nuevo
+             	     <font color = "red">-2-</font>  
+141                if(^xmit_dataH[7:0]==1'b0)
+                   <font color = "red">-3-</font>  
+142                	BitP<= 1'b0;
+           <font color = "red">        	==></font>
+143                else 
+144                	BitP<= 1'b1;
+           <font color = "red">        	==></font>
+145            end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+153          	if (sys_rst_l) 
+             	<font color = "green">-1-</font>  
+154            	state <= x_IDLE;
+           <font color = "green">    	==></font>
+155          	else if (flag_sincr) begin 
+             	     <font color = "green">-2-</font>  
+156            	state <= next_state;
+           <font color = "green">    	==></font>
+157            end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+173        	case (state)
+           	<font color = "red">-1-</font>  
+174            	
+175        		//
+176        		// x_IDLE 000
+177        		// wait for the start command
+178        		//
+179        		x_IDLE: begin
+180        			if (xmitH) begin 
+           			<font color = "red">-2-</font>  
+181                        next_state = x_START;
+           <font color = "red">                ==></font>
+182        				load_shiftRegH = HI;
+183        				rst_bitCountH = HI;  ///Para resetear word_len
+184                        //xmit_doneInH  = HI; 
+185        			end 
+186        			else begin
+187        				next_state    = x_IDLE;
+           <font color = "green">				==></font>
+188        				rst_bitCountH = HI; 
+189                        xmit_doneInH  = HI;     
+190                	end
+191        		end
+192         
+193        		//
+194        		// x_START  001
+195        		// send start bit 
+196        		//
+197        		x_START: begin 
+198                    xmitDataSelH    = x_STARTbit;  //xmitH=LO
+199        			if (bitCell_cntrH == 4'hF) begin
+           			<font color = "red">-3-</font>  
+200        				next_state = x_WAIT;
+           <font color = "red">				==></font>
+201        				ena_bitCountH = HI; //1more bit sent
+202        		    end
+203        			else begin 
+204        				next_state = x_START;
+           <font color = "red">				==></font>
+205        				countEnaH  = HI; // allow to count up
+206        			end				
+207        		end
+208        
+209        
+210        		//
+211        		// x_WAIT  010
+212        		// wait 1 bit-cell time before sending
+213        		// data on the xmit pin
+214        		//
+215        		x_WAIT: begin 
+216                    xmitDataSelH    = x_ShiftReg;  
+217        			// 1 bit-cell time wait completed
+218        			if (bitCell_cntrH == 4'hE) begin
+           			<font color = "red">-4-</font>  
+219        				if (bitCountH == WORD_LEN) 
+           				<font color = "red">-5-</font>  
+220        					next_state = x_PARITY;
+           <font color = "red">					==></font>
+221        				else begin
+222        					next_state = x_SHIFT;
+           <font color = "red">					==></font>
+223        					ena_bitCountH = HI; //1more bit sent
+224        				end
+225        			// bit-cell wait not complete
+226        			end 
+227        			else begin
+228        				next_state = x_WAIT;
+           <font color = "red">				==></font>
+229        				countEnaH  = HI;
+230        			end		
+231        		end
+232        
+233        
+234        
+235        		//
+236        		// x_SHIFT   011
+237        		// shift out the next bit
+238        		//
+239        		x_SHIFT: begin 
+240                    xmitDataSelH    = x_ShiftReg;
+           <font color = "red">            ==></font>
+241        			next_state = x_WAIT;
+242        			shiftEnaH  = HI; // shift out next bit
+243        		end
+244        
+245        
+246                //
+247                //x_PARITY   100
+248                //Error detection
+249                //
+250                x_PARITY: begin
+251                    xmitDataSelH    = x_PAR; //uart_xmitH=HI
+252                    if (bitCell_cntrH == 4'hF) begin
+                       <font color = "red">-6-</font>  
+253                        next_state   = x_STOP;
+           <font color = "red">                ==></font>
+254                    end else begin
+255                        next_state = x_PARITY;
+           <font color = "red">                ==></font>
+256                        countEnaH = HI; //allow bit cell cntr
+257                    end 
+258                end
+259                      
+260                
+261        		//
+262        		// x_STOP
+263        		// send stop bit
+264        		//
+265        		x_STOP: begin //101
+266                    xmitDataSelH    = x_STOPbit; //uart_xmitH=HI
+267        			if (bitCell_cntrH == 4'hF) begin
+           			<font color = "red">-7-</font>  
+268        				next_state   = x_IDLE;
+           <font color = "red">				==></font>
+269                        rst_bitCountH  = HI;    
+270                        xmit_doneInH  = HI; 
+271        			end else begin
+272        				next_state = x_STOP;
+           <font color = "red">				==></font>
+273        				countEnaH = HI; //allow bit cell cntr
+274        			end
+275        		end
+276        
+277        
+278        
+279        		default: begin
+280        			next_state     = x_START;
+           <font color = "green">			==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>x_IDLE </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>x_IDLE </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_START </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_START </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_WAIT </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_WAIT </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_WAIT </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_SHIFT </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_PARITY </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_PARITY </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_STOP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>x_STOP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+298          	if (sys_rst_l) 
+             	<font color = "green">-1-</font>  
+299            	xmit_doneH <= 0;
+           <font color = "green">    	==></font>
+300          	else if (flag_sincr) begin // Atraso de una señal de reloj
+             	     <font color = "green">-2-</font>  
+301            	xmit_doneH<= xmit_doneInH;   
+           <font color = "green">    	==></font>
+302          	end
+             	MISSING_ELSE
+           <font color = "green">  	==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_3014">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_u_xmit">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

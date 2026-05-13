@@ -1,0 +1,35 @@
+.section .text
+.globl _start
+.equ valor, 0x00000004
+_start:
+        auipc ra,valor
+        auipc sp,valor
+        auipc gp,valor
+        auipc tp,valor
+        auipc t0,valor
+        auipc t1,valor
+        auipc t2,valor
+        auipc s0,valor
+        auipc s1,valor
+        auipc a0,valor
+        auipc a1,valor
+        auipc a2,valor
+        auipc a3,valor
+        auipc a4,valor
+        auipc a5,valor
+        auipc a6,valor
+        auipc a7,valor
+        auipc s2,valor
+        auipc s3,valor
+        auipc s4,valor
+        auipc s5,valor
+        auipc s6,valor
+        auipc s7,valor
+        auipc s8,valor
+        auipc s9,valor
+        auipc s10,valor
+        auipc s11,valor
+        auipc t3,valor
+        auipc t4,valor
+        auipc t5,valor
+        auipc t6,valor

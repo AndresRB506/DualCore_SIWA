@@ -1,0 +1,4 @@
+set_object_boundary -boundary {  { 229.2800 225.9200 } { 709.2000 225.9200 } { 709.2000 42.2400 } { 229.2800 42.2400 } } [get_plan_groups { inst_controller/maq_bus } ]
+set_object_boundary -boundary {  { 709.2000 225.9200 } { 988.0800 225.9200 } { 988.0800 42.2400 } { 709.2000 42.2400 } } [get_plan_groups { inst_controller/fifo_int } ]
+set_object_boundary -boundary {  { 988.0800 983.0400 } { 988.0800 225.9200 } { 40.0000 225.9200 } { 40.0000 983.0400 } { 281.3600 983.0400 } { 281.3600 246.9650 } { 986.4000 246.9650 } { 986.4000 983.0400 } } [get_plan_groups { inst_controller/maq_core } ]
+

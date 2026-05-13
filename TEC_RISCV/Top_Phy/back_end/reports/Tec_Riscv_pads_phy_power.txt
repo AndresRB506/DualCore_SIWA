@@ -1,0 +1,145 @@
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV. (PSYN-878)
+Warning: The 'ELSGT3VDHSHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSVTDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDLLSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHHHDX3' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHSHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDFRSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSBTUDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSGTDHHHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Warning: The 'ucu_anlg' cell in the 'ucu_anlg' technology library is being 
+	marked as "dont_use". (PSYN-039)
+Warning: The 'ucu_anlg' cell in the 'ucu_anlg' technology library does not 
+	have corresponding physical cell description. (PSYN-024)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db, D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db, ucu_anlg.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3738 designs)            top.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library)
+                              /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  ucu_anlg (library)          /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/front_end/db/QTM/ucu_anlg.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+Warning: Cell pad_ring_inst/clk_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/reset_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/MISO_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/RX_UART_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/maip_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/MOSI_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/SCLK_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/SCS_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/TX_UART_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_0__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_1__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_2__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_3__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_4__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_5__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_6__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_7__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/clk_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/reset_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MISO_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/RX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/maip_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MOSI_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCLK_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCS_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/TX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/pad_bit_0__inout_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:APR00DF).   (LIBSETUP-751)
+Information: A total of 17 operating conditions have been inferred.  (LIBSETUP-754)
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	top_riscv_soc/TOP/U6/A top_riscv_soc/TOP/U6/Q top_riscv_soc/TOP/U100/B top_riscv_soc/TOP/U100/Q top_riscv_soc/TOP/U101/C top_riscv_soc/TOP/U101/Q top_riscv_soc/TOP/temporizador_top/count_reg_31_/C top_riscv_soc/TOP/temporizador_top/count_reg_31_/Q 
+Information: Timing loop detected. (OPT-150)
+	top_riscv_soc/TOP/temporizador_top/count_reg_26_/C top_riscv_soc/TOP/temporizador_top/count_reg_26_/Q top_riscv_soc/TOP/U7/A top_riscv_soc/TOP/U7/Q top_riscv_soc/TOP/U9/B top_riscv_soc/TOP/U9/Q top_riscv_soc/TOP/U97/A top_riscv_soc/TOP/U97/Q top_riscv_soc/TOP/U100/C top_riscv_soc/TOP/U100/Q top_riscv_soc/TOP/U101/C top_riscv_soc/TOP/U101/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/U101'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Tue Oct  2 12:51:11 2018
+****************************************
+
+
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+    XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db)
+    IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db)
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.2315 mW   (73%)
+  Net Switching Power  = 467.0601 uW   (27%)
+                         ---------
+Total Dynamic Power    =   1.6986 mW  (100%)
+
+Cell Leakage Power     = 493.9800 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad         7.3411e-02        3.2460e-02        2.0485e+03            0.1059  (   6.32%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box      7.6491e-05        1.5806e-03        4.6182e+05        2.1189e-03  (   0.13%)
+clock_network  2.2384e-02            0.2384           84.8679            0.2608  (  15.57%)
+register           1.0312        9.3989e-03        7.4384e+03            1.0407  (  62.12%)
+sequential     3.8982e-02        8.3563e-03        5.4781e+03        4.7344e-02  (   2.83%)
+combinational  6.5409e-02            0.1530        1.7112e+04            0.2184  (  13.04%)
+--------------------------------------------------------------------------------------------------
+Total              1.2315 mW         0.4432 mW     4.9398e+05 pW         1.6752 mW
+1

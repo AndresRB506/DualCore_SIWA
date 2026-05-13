@@ -1,0 +1,14 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version M-2017.03-SP2-5_Full64; Runtime version M-2017.03-SP2-5_Full64;  Mar 27 16:22 2019
+Doing SDF annotation ...... Done
+VCD+ Writer M-2017.03-SP2-5_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+The file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP/inter.vpd' was opened successfully.
+4000000 ps
+404000000 ps
+804000000 ps
+1204000000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1204000000 ps
+CPU Time:      3.170 seconds;       Data structure size:  16.1Mb
+Wed Mar 27 16:24:31 2019

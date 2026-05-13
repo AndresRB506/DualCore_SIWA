@@ -1,0 +1,225 @@
+global coverage_group 0 $unit::inst_fetch_cov_collector::inst_c __coverage_inst_fetch_cov_collector.inst_c unused_inst_fetch_cov_collector_inst_c_loop_label $unit 0 1 0 1 $unit::../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../ALU/ALU_2.sv::../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../ALU/ALU_Library.sv...@531695411 0  ( 0 
+)
+ 1 1
+ 0 84 /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh
+ 6 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_15
+0
+0
+0
+64
+0
+ 0
+
+3
+0
+1
+0
+ 3 cp1 8 0 0 0 0 0 163 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn 163 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 7 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_8
+ 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_8
+ 0
+ 0
+ 0
+ 0
+ 9 1 1 0 0 1 1 6 r_type 11 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 i_type 12 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 s_type 13 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 b_type 14 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 auipc_type 15 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 jal_type 16 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 jalr_type 17 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 l_type 18 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_6 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 lui_type 19 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_7 0 0 0 0 0 0 0
+ 0
+
+ 3 cp2 21 0 0 0 0 0 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_9 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_9 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 3 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_8
+ 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_8
+ 0
+ 0
+ 0
+ 0
+ 7 1 1 0 0 1 1 7 b_func3 24 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 6 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_a 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_b 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_c 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_d 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_e 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_f 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 l_func3 25 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 5 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_a 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_b 0 0 0 0 0 0 0
+ 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_10 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_c 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_d 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 s_func3 26 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 3 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_a 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_b 0 0 0 0 0 0 0
+ 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_10 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 i_func3 27 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 7 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_a 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_b 0 0 0 0 0 0 0
+ 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_10 0 0 0 0 0 0 0
+ 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_11 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_c 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_e 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_f 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 i_sr_func3 28 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_d 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 r_func3 29 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 6 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_b 0 0 0 0 0 0 0
+ 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_10 0 0 0 0 0 0 0
+ 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_11 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_c 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_e 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_f 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 14 r_sr_add_func3 30 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 2 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_a 0 0 0 0 0 0 0
+ 1 1 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_d 0 0 0 0 0 0 0
+ 0
+
+ 3 cp3 32 0 0 0 0 0 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_12 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_12 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 7 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_8
+ 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_8
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 7 i_func7 35 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 2 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_13 0 0 0 0 0 0 0
+ 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_14 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 r_func7 36 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 2 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_13 0 0 0 0 0 0 0
+ 1 1 166 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_14 0 0 0 0 0 0 0
+ 0
+
+ 13 cp1_x_cp2_cp3 0 38 0 0 -1 0 0 0 0 3 0 1 2 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_8
+ 165 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_inst_c_fn_8
+ 0
+ 0
+ 0
+ 11 1 1 0 0 -1 0 0 1 1 1 s 41 0 1 0 1 3 1 0 0 1 6 s_type 0 0 0 0 0 1 0 1 1 7 s_func3 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 1 r 42 0 1 0 1 3 1 0 0 1 6 r_type 0 0 0 0 0 1 0 1 1 7 r_func3 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 1 i 43 0 1 0 1 3 1 0 0 1 6 i_type 0 0 0 0 0 1 0 1 1 7 i_func3 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 5 r_3_7 44 0 1 0 1 5 1 0 0 1 6 r_type 0 0 0 0 0 1 0 1 1 14 r_sr_add_func3 0 0 0 0 0 0 0 1 0 2 1 7 r_func7 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 5 i_3_7 45 0 1 0 1 5 1 0 0 1 6 i_type 0 0 0 0 0 1 0 1 1 10 i_sr_func3 0 0 0 0 0 0 0 1 0 2 1 7 i_func7 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 1 b 46 0 1 0 1 3 1 0 0 1 6 b_type 0 0 0 0 0 1 0 1 1 7 b_func3 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 1 l 47 0 1 0 1 3 1 0 0 1 6 l_type 0 0 0 0 0 1 0 1 1 7 l_func3 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 3 lui 48 0 1 0 1 1 1 0 0 1 8 lui_type 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 4 jalr 49 0 1 0 1 1 1 0 0 1 9 jalr_type 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 3 jal 50 0 1 0 1 1 1 0 0 1 8 jal_type 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 5 auipc 51 0 1 0 1 1 1 0 0 1 10 auipc_type 0 0 0 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 $unit::inst_fetch_cov_collector::rd_cg __coverage_inst_fetch_cov_collector.rd_cg unused_inst_fetch_cov_collector_rd_cg_loop_label $unit 0 1 0 1 $unit::../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../ALU/ALU_2.sv::../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../ALU/ALU_Library.sv...@531695411 0  ( 0 
+)
+ 0 56 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 5 rd_cp 57 0 0 0 0 0 162 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_rd_cg_fn 162 _vcs_unit__531695411_inst_fetch_cov_collector_11_0::_vcs_unit__531695411_inst_fetch_cov_collector_11_0__vcs_unit__531695411_inst_fetch_cov_collector_11_0_rd_cg_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 5 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

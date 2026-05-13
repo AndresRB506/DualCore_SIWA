@@ -1,0 +1,1330 @@
+Initializing gui preferences from file  /mnt/vol_NFS_Zener/WD_ESPEC/achacon/.synopsys_icc_prefs.tcl
+icc_shell> gui_start
+ + VUE INFO: Please click Verification->IC Validator VUE in LayoutWindow menu
+to launch VUE.
+
+ + VUE ERROR: couldn't open socket: address already in use
+
+ + VUE ERROR: couldn't open socket: address already in use
+
+ + VUE INFO: Found a usable port: 2447
+
+Information: Loaded Icv extension from /mnt/vol_NFS_Zener/tools/synopsys/apps/icvalidator/N-2017.12-SP1-2 (GUI-024)
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+icc_shell> remove_design -designs
+1
+icc_shell> #Vamos a correr multicore
+icc_shell> set_host_options -max_cores 6;
+1
+icc_shell> #Para corregir error en los handles de las redes de alimentacion
+icc_shell> #Debe correrse antes de cargar el netist compilado
+icc_shell> set upf_create_implicit_supply_sets false
+false
+icc_shell> ######################################3 Creamos biblioteca MilkyWay ############################
+icc_shell> source -echo -verbose "$PROY_HOME_PHY/scripts/crear_mw.tcl"
+Error: can't read "PROY_HOME_PHY": no such variable
+        Use error_info for more info. (CMD-013)
+icc_shell> saif_map -start
+Information: The SAIF name mapping information database is now active. (PWR-602)
+1
+icc_shell> # Definir VSS y VDD
+icc_shell> #set mw_logic0_net VSS
+icc_shell> #set mw_logic1_net VDD
+icc_shell> #------------------------------------------------------------------------------
+icc_shell> ########################### Crear o Cargar el Diseño ###############################
+icc_shell> #------------------------------------------------------------------------------
+icc_shell> #------------------------------------------------------------------------------
+icc_shell> # Importar el Gate-Level-Netlist obtenido en la Síntesis RTL o el DDC.
+icc_shell> #------------------------------------------------------------------------------
+icc_shell> # Se eliminan los siguientes warnings para disminuir el ruído visual que provocan (ver nota 2)
+icc_shell> suppress_message {UID-401 SDC-3 SDC-4 HDUEDIT-104 ZRT-038 ZRT-311}
+icc_shell> #Estos archivos vienen en formato ddc del directorio $PROY_HOME_SYN/db
+icc_shell> import_designs -format ddc -top $TOP_MODULE $TOP_FILE_DDC;
+Error: can't read "TOP_MODULE": no such variable
+        Use error_info for more info. (CMD-013)
+icc_shell> current_design $TOP_MODULE;
+Error: can't read "TOP_MODULE": no such variable
+        Use error_info for more info. (CMD-013)
+icc_shell> #Vamos a cargar la estrategia UPF
+icc_shell> # Resolución de múltiples instancias y enlaze a las bibliotecas físicas.
+icc_shell> uniquify_fp_mw_cel
+Error: Current design is not defined. (UID-4)
+Error: 0
+        Use error_info for more info. (CMD-013)
+icc_shell> link -force
+Error: Current design is not defined. (UID-4)
+0
+icc_shell> ##################################################################################################
+icc_shell> ##### Si el diesnno viene en DDC no hace falta cargar el ambiente UPF
+icc_shell> ####################################################################################################
+icc_shell> #load_upf $PROY_HOME_SYN/db/Tec_Riscv_pads_upf.upf
+icc_shell> ################################################################################################
+icc_shell> ##################################################################################################
+icc_shell> ##              Conexiones a VDD y GND de todos los dominios ##################
+icc_shell> ##################################################################################################
+icc_shell> save_mw_cel -as pre_power
+Error: Cannot get cellId for the current design. (UIG-2)
+0
+icc_shell> set PROY_HOME "/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy";
+/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy
+icc_shell> source $PROY_HOME/common_setup_typ.tcl;
+RM-Info: Running script /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/common_setup_typ.tcl
+
+RM-Info: Completed script /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/common_setup_typ.tcl
+
+icc_shell> source $PROY_HOME/user_setup.tcl;
+RM-Info: Running script /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/user_setup.tcl
+
+icc_shell> source ./scripts/icc_setup.tcl;
+
+
+                I am ready...
+
+icc_shell> remove_design -designs
+1
+icc_shell> #Vamos a correr multicore
+icc_shell> set_host_options -max_cores 6;
+1
+icc_shell> #Para corregir error en los handles de las redes de alimentacion
+icc_shell> #Debe correrse antes de cargar el netist compilado
+icc_shell> set upf_create_implicit_supply_sets false
+false
+icc_shell> ######################################3 Creamos biblioteca MilkyWay ############################
+icc_shell> source -echo -verbose "$PROY_HOME_PHY/scripts/crear_mw.tcl"
+###################################################################################################
+### Title:              crear_mw.tcl                                                     
+### Description:        Script que crea la base de datos Milkyway para el Galaxy de Synopsys
+###                     contiene las referenicas de las bibliotecas fisicas de la tecnologia     
+### Dependencies:       Ninguna.                                                                 
+### Project:            Microcontrolador RISCV                                                   
+### Author:             Reinaldo Castro Gonzalez                                                 
+### Institution:        Instituto Tecnologico de Costa Rica. DCILab                              
+### Date:               26 de Febrero de 2018                                                    
+### Notes:              Se debe correr el script common_setup.tcl antes                                                                  
+### Version:            2.0                                                                      
+### Revision:           23/05/2018                                                               
+####################################################################################################
+# Especificar los archivos TLUplus, que son utilizados para extraer el archivo ".spef" (capacitancias parasitas)
+set_tlu_plus_files -max_tluplus $TLUPLUS_MAX_FILE -min_tluplus $TLUPLUS_MIN_FILE -tech2itf_map $MAP_FILE
+1
+set MW_DESIGN_LIBRARY_NAME $PROY_HOME_PHY/libs/$DESIGN_NAME.mw; # Esta ruta debe existir
+/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/libs/Tec_Riscv_pads.mw
+# Se comprueba si existe la biblioteca mw, si esta la abre, si no la crea.
+set comprobar_lib [file exists $MW_DESIGN_LIBRARY_NAME];
+1
+if {$comprobar_lib == 0} { 
+# Se crea la db de cero
+create_mw_lib -technology $TECH_FILE -mw_reference_library $MW_REFERENCE_LIB_DIRS -hier_separator {/}  -bus_naming_style {[%d]} $MW_DESIGN_LIBRARY_NAME;
+open_mw_lib $MW_DESIGN_LIBRARY_NAME
+} else { 
+# Se abre la libreria
+open_mw_lib $MW_DESIGN_LIBRARY_NAME}
+{Tec_Riscv_pads.mw}
+puts "Se abrio la base de datos $DESIGN_NAME.mw"
+Se abrio la base de datos Tec_Riscv_pads.mw
+icc_shell> saif_map -start
+Information: The SAIF name mapping information database is currently active. (PWR-602)
+1
+icc_shell> # Definir VSS y VDD
+icc_shell> #set mw_logic0_net VSS
+icc_shell> #set mw_logic1_net VDD
+icc_shell> #------------------------------------------------------------------------------
+icc_shell> ########################### Crear o Cargar el Diseño ###############################
+icc_shell> #------------------------------------------------------------------------------
+icc_shell> #------------------------------------------------------------------------------
+icc_shell> # Importar el Gate-Level-Netlist obtenido en la Síntesis RTL o el DDC.
+icc_shell> #------------------------------------------------------------------------------
+icc_shell> # Se eliminan los siguientes warnings para disminuir el ruído visual que provocan (ver nota 2)
+icc_shell> suppress_message {UID-401 SDC-3 SDC-4 HDUEDIT-104 ZRT-038 ZRT-311}
+icc_shell> #Estos archivos vienen en formato ddc del directorio $PROY_HOME_SYN/db
+icc_shell> import_designs -format ddc -top $TOP_MODULE $TOP_FILE_DDC;
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/gtech.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/standard.sldb'
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV. (PSYN-878)
+Warning: The 'ELSGT3VDHSHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSVTDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDLLSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHHHDX3' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHSHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDFRSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSBTUDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSGTDHHHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+  Loading link library 'D_CELLS_HDLL_LPMOS_typ_1_80V_25C'
+  Loading link library 'D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C'
+  Loading link library 'D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C'
+  Loading link library 'IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C'
+  Loading link library 'XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C'
+  Loading link library 'gtech'
+Reading ddc file '/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/front_end/db/Tec_Riscv_pads.ddc'.
+Loaded 3723 designs.
+Current design is 'top_riscv_tec_pads'.
+Current design is 'top_riscv_tec_pads'.
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/clk_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/reset_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MISO_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/RX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/maip_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MOSI_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCLK_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCS_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/TX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/pad_bit_0__inout_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BBC2SF).   (LIBSETUP-751)
+Information: A total of 17 operating conditions have been inferred.  (LIBSETUP-754)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3723 designs)            /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/front_end/db/Tec_Riscv_pads.ddc, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library) /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+Info: Creating auto CEL.
+Preparing data for query................... 
+Information: Performing CEL netlist consistency check. (MWDC-118)
+Information: CEL consistency check PASSED. (MWDC-119)
+Information: Saved design named top_riscv_tec_pads. (UIG-5)
+Preparing data for query................... 
+1
+icc_shell> current_design $TOP_MODULE;
+Current design is 'top_riscv_tec_pads'.
+{top_riscv_tec_pads}
+icc_shell> #Vamos a cargar la estrategia UPF
+icc_shell> # Resolución de múltiples instancias y enlaze a las bibliotecas físicas.
+icc_shell> uniquify_fp_mw_cel
+1
+icc_shell> link -force
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3723 designs)            /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/front_end/db/Tec_Riscv_pads.ddc, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library) /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+1
+icc_shell> ##################################################################################################
+icc_shell> ##### Si el diesnno viene en DDC no hace falta cargar el ambiente UPF
+icc_shell> ####################################################################################################
+icc_shell> #load_upf $PROY_HOME_SYN/db/Tec_Riscv_pads_upf.upf
+icc_shell> ################################################################################################
+icc_shell> ##################################################################################################
+icc_shell> ##              Conexiones a VDD y GND de todos los dominios ##################
+icc_shell> ##################################################################################################
+icc_shell> save_mw_cel -as pre_power
+Information: Saved design named pre_power. (UIG-5)
+1
+icc_shell> derive_pg_connection -create_nets
+Warning: Supply net VDD_3V3_PADS is not connected to any domain element. (UPF-502)
+Warning: Supply net VDD_3V3_UCU is not connected to any domain element. (UPF-502)
+Information: Power net VDD_1V8 is created for UPF supply net(s):  VDD_1V8 top_riscv_soc/VDD_1V8 ucu_anlg1/VDD_1V8
+Warning: Power or ground net creation is skipped for supply net VDD_3V3_PADS because it is not connected to any power domain or domain element. (UPF-500)
+Information: Power net VDD_1V8_PADS is created for UPF supply net(s):  VDD_1V8_PADS pad_ring_inst/VDD_1V8_PADS
+Warning: Power or ground net creation is skipped for supply net VDD_3V3_UCU because it is not connected to any power domain or domain element. (UPF-500)
+Information: Power net VDD_1V8SRAM is created for UPF supply net(s):  VDD_1V8SRAM top_riscv_soc/TOP/VDD_1V8SRAM
+Information: Ground net VSS is created for UPF supply net(s):  VSS pad_ring_inst/VSS top_riscv_soc/VSS ucu_anlg1/VSS top_riscv_soc/TOP/VSS
+Information: Total 4 power/ground net(s) have been created.
+1
+icc_shell> connect_supply_net pad_ring_inst/VDD_3V3_PADS -ports {pad_ring_inst/pad_bit_?__inout_pad_inst/VDDR}
+1
+icc_shell> connect_supply_net pad_ring_inst/VDD_3V3_PADS -ports {pad_ring_inst/pad_bit_?__inout_pad_inst/VDDO}
+1
+icc_shell> #connect_supply_net pad_ring_inst/VDD_1V8_PADS -ports {pad_ring_inst/*_pad_inst/VDD}
+icc_shell> connect_supply_net pad_ring_inst/VDD_3V3_PADS -ports {pad_ring_inst/*_pad_inst/VDDO}
+Error: The pin 'pad_ring_inst/pad_bit_3__inout_pad_inst/VDDO' was connected by supply net 'pad_ring_inst/VDD_3V3_PADS' previously,     and will not be reconnected. (MWUI-490)
+0
+icc_shell> connect_supply_net pad_ring_inst/VDD_3V3_PADS -ports {pad_ring_inst/*_pad_inst/VDDR}
+Error: The pin 'pad_ring_inst/pad_bit_3__inout_pad_inst/VDDR' was connected by supply net 'pad_ring_inst/VDD_3V3_PADS' previously,     and will not be reconnected. (MWUI-490)
+0
+icc_shell> # Reconexion de los Level Shifter
+icc_shell> connect_supply_net ucu_anlg1/VDD_3V3_UCU -ports {ucu_anlg1/*/vdd3e}
+1
+icc_shell> #connect_supply_net ucu_anlg1/VDD_1V8 -ports {ucu_anlg1/*/vdd}
+icc_shell> #connect_supply_net pad_ring_inst/VDD_3V3_PADS -ports {pad_ring_inst/VDD_3V3_PADS}
+icc_shell> #connect_supply_net ucu_anlg1/VDD_3V3_UCU -ports {ucu_anlg1/VDD_3V3_UCU}
+icc_shell> #connect_supply_net VDD_3V3_PADS -ports {VDD_3V3_PADS}
+icc_shell> #connect_supply_net VDD_3V3_UCU -ports {VDD_3V3_UCU}
+icc_shell> #Conexion de redes de alimentacion
+icc_shell> ## Manual aca de pines de memoria
+icc_shell> #file:///mnt/vol_NFS_Zener/WD_ESPEC/achacon/Herramientas/X-FAB/XH018/xh018/spram/XSPRAMBLP_256X32_M8P/v4_0_1/doc/XSPRAMBLP_256X32_M8P.html#PIN_DESCRIPTION
+icc_shell> derive_pg_connection -power_net VDD_1V8 -power_pin {vdd} -cells "top_riscv_soc/*"
+Information: connected 13928 power ports and 0 ground ports
+1
+icc_shell> derive_pg_connection -ground_net VSS -ground_pin {gnd} -cells "top_riscv_soc/*"
+Information: connected 0 power ports and 13928 ground ports
+1
+icc_shell> derive_pg_connection -power_net VDD_3V3_UCU -power_pin {vdd3e} -cells "ucu_anlg1/*"
+Information: connected 78 power ports and 0 ground ports
+1
+icc_shell> derive_pg_connection -power_net VDD_1V8 -power_pin {vdd} -cells "ucu_anlg1/*"
+Information: connected 78 power ports and 0 ground ports
+1
+icc_shell> derive_pg_connection -ground_net VSS -ground_pin {gnd} -cells "ucu_anlg1/*"
+Information: connected 0 power ports and 78 ground ports
+1
+icc_shell> derive_pg_connection -power_net VDD_1V8_PADS -power_pin {VDD} -cells "pad_ring_inst/*"
+Information: connected 17 power ports and 0 ground ports
+1
+icc_shell> derive_pg_connection -power_net VDD_3V3_PADS -power_pin {VDDO} -cells "pad_ring_inst/*"
+Information: connected 17 power ports and 0 ground ports
+1
+icc_shell> derive_pg_connection -power_net VDD_3V3_PADS -power_pin {VDDR} -cells "pad_ring_inst/*"
+Information: connected 17 power ports and 0 ground ports
+1
+icc_shell> derive_pg_connection -ground_net VSS -ground_pin {GNDO} -cells "pad_ring_inst/*"
+Information: connected 0 power ports and 17 ground ports
+1
+icc_shell> derive_pg_connection -ground_net VSS -ground_pin {GNDR} -cells "pad_ring_inst/*"
+Information: connected 0 power ports and 17 ground ports
+1
+icc_shell> #derive_pg_connection -power_net top_riscv_soc/VDD_1V8SRAM -power_pin {VDD18M} -cells "top_riscv_soc/TOP/Memoria_8K"
+icc_shell> derive_pg_connection -power_net VDD_1V8SRAM -power_pin {VDD18M} -cells "top_riscv_soc/TOP/Memoria_8K"
+Error: PG connection to pin top_riscv_soc/TOP/Memoria_8K/VDD18M is skipped because power net VDD_1V8SRAM is not available in the power domain top_riscv_soc/PD_CORE. (MV-539)
+Information: connected 0 power ports and 0 ground ports
+1
+icc_shell> derive_pg_connection -ground_net VSS -ground_pin {VSSM} -cells "top_riscv_soc/TOP/Memoria_8K"
+Information: connected 0 power ports and 1 ground ports
+1
+icc_shell> set_voltage 3.3 -object_list {pad_ring_inst/VDD_3V3_PADS ucu_anlg1/VDD_3V3_UCU VDD_3V3_UCU VDD_3V3_PADS};
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV. (PSYN-878)
+Warning: The 'ELSGT3VDHSHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSVTDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDLLSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHHHDX3' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHSHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDFRSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSBTUDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSGTDHHHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD_3V3_UCU'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD_1V8_PADS'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD_3V3_PADS'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Ground net 'VSS'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD_1V8'. (MWDC-285)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db, D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3723 designs)            top_riscv_tec_pads.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library) /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+1
+icc_shell> set_voltage 1.8 -object_list {ucu_anlg1/VDD_1V8 top_riscv_soc/TOP/VDD_1V8SRAM pad_ring_inst/VDD_1V8_PADS VDD_1V8SRAM VDD_1V8};
+1
+icc_shell> set_voltage 0.0 -object_list {ucu_anlg1/VSS top_riscv_soc/TOP/VSS pad_ring_inst/VSS top_riscv_soc/VSS VSS};
+1
+icc_shell> check_mv_design -power_nets -verbose
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/clk_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/reset_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MISO_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/RX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/maip_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MOSI_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCLK_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCS_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/TX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: A total of 9 operating conditions have been inferred.  (LIBSETUP-754)
+--------------------------------------------------------------------------------
+       Power/Ground Pin Connection Checks
+--------------------------------------------------------------------------------
+
+Power/Ground Connection Summary:
+
+P/G net name                P/G pin count
+--------------------------------------------------------------------
+Power net "VDD_1V8":              14006
+Power net "VDD_3V3_PADS":         34
+Power net "VDD_1V8_PADS":         17
+Power net "VDD_3V3_UCU":          78
+Power net "VDD_1V8SRAM":          0
+Unconnected power pins:           1
+
+Ground net "VSS":                 14041
+Unconnected ground pins:          0
+--------------------------------------------------------------------
+
+Detail list of unconnected power/ground pins: 
+--------------------------------------------------------------------
+     top_riscv_soc/TOP/Memoria_8K/VDD18M 
+--------------------------------------------------------------------
+
+Detail list of unconnected back-bias power/ground pins: 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+Warning: Total 20 power pin(s) are found having connections inconsistent with their power domain(s). (MV-511)
+
+Detail Power/Ground Connection Violations:
+    P/G Pin Name                                 Current P/G Net     Required P/G Net
+------------------------------------------------------------------------------------------------
+ pad_ring_inst/maip_pad_inst/VDDO              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/MOSI_pad_inst/VDDR              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/MOSI_pad_inst/VDDO              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/SCLK_pad_inst/VDDR              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/SCLK_pad_inst/VDDO              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/SCS_pad_inst/VDDR               'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/SCS_pad_inst/VDDO               'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/TX_UART_pad_inst/VDDR           'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/TX_UART_pad_inst/VDDO           'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/clk_pad_inst/VDDR               'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/clk_pad_inst/VDDO               'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/reset_pad_inst/VDDR             'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/reset_pad_inst/VDDO             'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/MISO_pad_inst/VDDR              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/MISO_pad_inst/VDDO              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/RX_UART_pad_inst/VDDR           'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/RX_UART_pad_inst/VDDO           'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/maip_pad_inst/VDDR              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ ucu_anlg1/clk_HV_inst/vdd                     'VDD_1V8'           'VDD_1V8_PADS'
+ ucu_anlg1/reset_HV_inst/vdd                   'VDD_1V8'           'VDD_1V8_PADS'
+------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+       Supply Operating Voltage Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+Please review report above for warnings and errors.
+0
+icc_shell> derive_pg_connection -power_net VDD_1V8SRAM -power_pin {VDD18M} -cells "top_riscv_soc/TOP/Memoria_8K"
+Error: PG connection to pin top_riscv_soc/TOP/Memoria_8K/VDD18M is skipped because power net VDD_1V8SRAM is not available in the power domain top_riscv_soc/PD_CORE. (MV-539)
+Information: connected 0 power ports and 0 ground ports
+1
+icc_shell> derive_pg_connection -power_net top_riscv_soc/VDD_1V8SRAM -power_pin {VDD18M} -cells "top_riscv_soc/TOP/Memoria_8K"
+Information: connected 1 power ports and 0 ground ports
+1
+icc_shell> check_mv_design -power_nets -verbose
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV. (PSYN-878)
+Warning: The 'ELSGT3VDHSHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSVTDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDLLSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHHHDX3' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHSHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDFRSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSBTUDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSGTDHHHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD_3V3_UCU'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD_1V8_PADS'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD_3V3_PADS'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Power net 'top_riscv_soc/VDD_1V8SRAM'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Ground net 'VSS'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD_1V8'. (MWDC-285)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db, D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3723 designs)            top_riscv_tec_pads.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library) /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/clk_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/reset_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MISO_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/RX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/maip_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MOSI_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCLK_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCS_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/TX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: A total of 9 operating conditions have been inferred.  (LIBSETUP-754)
+--------------------------------------------------------------------------------
+       Power/Ground Pin Connection Checks
+--------------------------------------------------------------------------------
+
+Power/Ground Connection Summary:
+
+P/G net name                P/G pin count
+--------------------------------------------------------------------
+Power net "VDD_1V8":              14006
+Power net "VDD_3V3_PADS":         34
+Power net "VDD_1V8_PADS":         17
+Power net "VDD_3V3_UCU":          78
+Power net "VDD_1V8SRAM":          0
+Other power nets:                 1
+Unconnected power pins:           0
+
+Ground net "VSS":                 14041
+Unconnected ground pins:          0
+--------------------------------------------------------------------
+
+Detail list of unconnected power/ground pins: 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+Detail list of unconnected back-bias power/ground pins: 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+Warning: Total 21 power pin(s) are found having connections inconsistent with their power domain(s). (MV-511)
+
+Detail Power/Ground Connection Violations:
+    P/G Pin Name                                 Current P/G Net     Required P/G Net
+------------------------------------------------------------------------------------------------
+ pad_ring_inst/maip_pad_inst/VDDO              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/MOSI_pad_inst/VDDR              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/MOSI_pad_inst/VDDO              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/SCLK_pad_inst/VDDR              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/SCLK_pad_inst/VDDO              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/SCS_pad_inst/VDDR               'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/SCS_pad_inst/VDDO               'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/TX_UART_pad_inst/VDDR           'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/TX_UART_pad_inst/VDDO           'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ top_riscv_soc/TOP/Memoria_8K/VDD18M           'top_riscv_soc/VDD_1V8SRAM' 'VDD_1V8SRAM'
+ pad_ring_inst/clk_pad_inst/VDDR               'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/clk_pad_inst/VDDO               'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/reset_pad_inst/VDDR             'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/reset_pad_inst/VDDO             'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/MISO_pad_inst/VDDR              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/MISO_pad_inst/VDDO              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/RX_UART_pad_inst/VDDR           'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/RX_UART_pad_inst/VDDO           'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ pad_ring_inst/maip_pad_inst/VDDR              'VDD_3V3_PADS'      'VDD_1V8_PADS'
+ ucu_anlg1/clk_HV_inst/vdd                     'VDD_1V8'           'VDD_1V8_PADS'
+ ucu_anlg1/reset_HV_inst/vdd                   'VDD_1V8'           'VDD_1V8_PADS'
+------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+       Supply Operating Voltage Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+Please review report above for warnings and errors.
+0
+icc_shell> 
+Warning: Failed in axGetCellBoundaryBBox!
+ (PNA-199)
+Cannot get the cell boundary
+The tools cannot set the default pitch and computed the estimated routing area
+Error: Cannot get wire directions from the top metal layer.
+ (PNA-099)
+Error: Cannot get wire directions from the top metal layer.
+ (PNA-099)
+Warning: No voltage_area objects matched '*' (SEL-004)
+icc_shell> create_voltage_area
+icc_shell> create_voltage_area -PD_UCU
+Error: unknown option '-PD_UCU' (CMD-010)
+icc_shell> create_voltage_area -name PD_UCU
+icc_shell> save_mw_cel -as pre_power
+Information: Performing CEL netlist consistency check. (MWDC-118)
+Information: CEL consistency check PASSED. (MWDC-119)
+Information: Saved design named pre_power. (UIG-5)
+1
+icc_shell> derive_pg_connection -create_nets
+Information: Total 0 power/ground net(s) have been created.
+1
+icc_shell> #Revisamos cuales se han creado
+icc_shell> #report_cell_physical -connections
+icc_shell> #Ahora pegamos los pines y lo sties
+icc_shell> source ./scripts/fix_vdd_ports.tcl
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+Information: connected 0 power ports and 0 ground ports
+1
+icc_shell> #derive_pg_connection
+icc_shell> derive_pg_connection -tie
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/clk_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/reset_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MISO_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/RX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/maip_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MOSI_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCLK_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCS_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/TX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: A total of 9 operating conditions have been inferred.  (LIBSETUP-754)
+Information: punch top port for net VDD_1V8.
+Information: punch top port for net VDD_3V3_PADS.
+Information: punch top port for net VDD_1V8_PADS.
+Information: punch top port for net VDD_3V3_UCU.
+Information: punch top port for net VDD_1V8SRAM.
+Information: punch top port for net VSS.
+
+Total 0 tie-high pin(s) are reconnected in Milkyway database.
+Total 17 tie-low pin(s) are reconnected in Milkyway database.
+1
+icc_shell> ## Este script deberia remendar todas las malas conexiones a las alimentaciones
+icc_shell> ## Revisar cuidadosamente
+icc_shell> #verify_pg_connections
+icc_shell> ##############################################################################################
+icc_shell> #derive_pg_connection -power_net VDD -power_pin vdd -ground_net VSS -ground_pin gnd
+icc_shell> #derive_pg_connection -power_net "VDD" -ground_net "VSS" -tie
+icc_shell> # Lectura del archivo de restricciones de temporizado
+icc_shell> read_sdc -version Latest $TOP_FILE_SDC;
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV. (PSYN-878)
+Warning: The 'ELSGT3VDHSHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSVTDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDLLSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHHHDX3' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHSHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDFRSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSBTUDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSGTDHHHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Warning: Could not find a valid driver for the hierarchical Power net 'top_riscv_soc/VDD_1V8SRAM'. (MWDC-285)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db, D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3723 designs)            top_riscv_tec_pads.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library) /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+Warning: Cell pad_ring_inst/clk_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/reset_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/MISO_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/RX_UART_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/maip_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/MOSI_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/SCLK_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/SCS_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/TX_UART_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_0__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_1__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_2__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_3__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_4__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_5__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_6__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_7__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Floorplan loading succeeded.
+ Info: hierarchy_separator was changed to /
+
+Reading SDC version 2.0...
+Using operating conditions 'TYPICAL' found in library 'D_CELLS_HDLL_LPMOS_typ_1_80V_25C'.
+ Info: hierarchy_separator was changed to /
+1
+icc_shell> ##############################################################################################
+icc_shell> ###################### Creacion del plano de piso y anillo de pads ###########################
+icc_shell> ##############################################################################################
+icc_shell> #Usaremos la estrategia para las celdas compactas
+icc_shell> # Este script genera el plan de piso con el anillo de pads y pines
+icc_shell> source ./scripts/create_pads.tcl
+Information: Performing CEL netlist consistency check. (MWDC-118)
+Information: CEL consistency check PASSED. (MWDC-119)
+Information: Saved design named pad_ring_unplaced. (UIG-5)
+Preparing data for query................... 
+Information: Opened "pad_ring_unplaced.CEL;1" from "/mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/libs/Tec_Riscv_pads.mw" library. (MWUI-068)
+Creating cell 'cornerlb' in design 'top_riscv_tec_pads'.
+Creating cell 'cornerlu' in design 'top_riscv_tec_pads'.
+Creating cell 'vss_1_left' in design 'top_riscv_tec_pads'.
+Creating cell 'vss_1_up' in design 'top_riscv_tec_pads'.
+Creating cell 'vss_1_bottom' in design 'top_riscv_tec_pads'.
+Creating cell 'vss_2_up' in design 'top_riscv_tec_pads'.
+Creating cell 'vss_2_bottom' in design 'top_riscv_tec_pads'.
+Creating cell 'vdd_1v8_1_left' in design 'top_riscv_tec_pads'.
+Creating cell 'vdd_1v8_1_up' in design 'top_riscv_tec_pads'.
+Creating cell 'vdd_1v8_1_down' in design 'top_riscv_tec_pads'.
+Creating cell 'vdd_1v8_1_sram_left' in design 'top_riscv_tec_pads'.
+Creating cell 'vdd_3v3_1_pad_up' in design 'top_riscv_tec_pads'.
+Creating cell 'vdd_3v3_1_pad_down' in design 'top_riscv_tec_pads'.
+Error: extra positional option 'set_pin_physical_constraints' (CMD-012)
+Error: unknown option '-pin_name' (CMD-010)
+Error: extra positional option '*HV' (CMD-012)
+Error: unknown option '-side' (CMD-010)
+Error: extra positional option '3' (CMD-012)
+icc_shell> set_fp_strategy -unit_tile_name "hdll";
+1
+icc_shell> set_fp_placement_strategy -virtual_IPO on
+Setting virtual_IPO = true
+1
+icc_shell> create_floorplan  -control_type width_and_height -core_width 1500 -core_height 1120 -core_utilization 0.8 -left_io2core 20 -bottom_io2core 20 -right_io2core 20 -top_io2core 20;
+26 pins are constrained in TDF table
+There are 95 pins in total
+26 pads are constrained in TDF table
+There are 28 IO pads 2 corner pads in total
+Core aspect ratio adjusted to 0.747
+Core Utilization adjusted to 0.502
+Start to create wire tracks ...
+GRC reference (175520,175520), dimensions (4480, 4480)
+Start to place pads/pins ...
+Info: all the IO pins are purged, since both pad and pin exist.
+Information: The orientation of Library cell "CORNERSF" is "E". (APLUI-043)
+Information: The orientation of Library cell "GNDORPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "VDDCPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "VDDORPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "ICF" is "E". (APLUI-043)
+Information: The orientation of Library cell "BT2SF" is "E". (APLUI-043)
+Information: The orientation of Library cell "BBC2SF" is "E". (APLUI-043)
+ERROR : No such pad/pin vdd_3v3_1_ucu_up; Constraint ignored.
+ERROR : No such pad/pin vdd_3v3_1_ucu_down; Constraint ignored.
+There are 0 pads constrained by min IO spacing.
+Right core spacing increased, pad limited.
+Corner cornerlu was not assigned a side, it will not be placed.
+Corner cornerlb was not assigned a side, it will not be placed.
+
+Running IO Placement Refinement...
+
+IO Placement Refinement Completed Successfully.
+
+Place pads/pins successfully
+Increase Left/Right to core distance by 0.235
+Pad Limited detected in Bottom/Top sides.
+Enlarge core width to 1577.52 by 77.84
+Core aspect ratio adjusted to 0.710
+Core Utilization adjusted to 0.477
+Pad limited detected. Try fixed die size floor plan ...
+Start to create wire tracks ...
+GRC reference (175520,175520), dimensions (4480, 4480)
+Start to place pads/pins ...
+Information: The orientation of Library cell "CORNERSF" is "E". (APLUI-043)
+Information: The orientation of Library cell "GNDORPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "VDDCPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "VDDORPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "ICF" is "E". (APLUI-043)
+Information: The orientation of Library cell "BT2SF" is "E". (APLUI-043)
+Information: The orientation of Library cell "BBC2SF" is "E". (APLUI-043)
+ERROR : No such pad/pin vdd_3v3_1_ucu_up; Constraint ignored.
+ERROR : No such pad/pin vdd_3v3_1_ucu_down; Constraint ignored.
+There are 0 pads constrained by min IO spacing.
+Right core spacing increased, pad limited.
+Corner cornerlu was not assigned a side, it will not be placed.
+Corner cornerlb was not assigned a side, it will not be placed.
+
+Running IO Placement Refinement...
+
+IO Placement Refinement Completed Successfully.
+
+Place pads/pins successfully
+Increase Left/Right to core distance by 0.425
+Pad Limited detected in Bottom/Top sides.
+Enlarge core width to 1643.6 by 66.08
+Core aspect ratio adjusted to 0.681
+Core Utilization adjusted to 0.458
+Pad limited detected. Try fixed die size floor plan ...
+Start to create wire tracks ...
+GRC reference (175520,175520), dimensions (4480, 4480)
+Start to place pads/pins ...
+Information: The orientation of Library cell "CORNERSF" is "E". (APLUI-043)
+Information: The orientation of Library cell "GNDORPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "VDDCPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "VDDORPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "ICF" is "E". (APLUI-043)
+Information: The orientation of Library cell "BT2SF" is "E". (APLUI-043)
+Information: The orientation of Library cell "BBC2SF" is "E". (APLUI-043)
+ERROR : No such pad/pin vdd_3v3_1_ucu_up; Constraint ignored.
+ERROR : No such pad/pin vdd_3v3_1_ucu_down; Constraint ignored.
+There are 0 pads constrained by min IO spacing.
+Right core spacing increased, pad limited.
+Corner cornerlu was not assigned a side, it will not be placed.
+Corner cornerlb was not assigned a side, it will not be placed.
+
+Running IO Placement Refinement...
+
+IO Placement Refinement Completed Successfully.
+
+Place pads/pins successfully
+Increase Left/Right to core distance by 0.545
+Pad Limited detected in Bottom/Top sides.
+Enlarge core width to 1699.6 by 56
+Core aspect ratio adjusted to 0.659
+Core Utilization adjusted to 0.443
+Pad limited detected. Try fixed die size floor plan ...
+Start to create wire tracks ...
+GRC reference (175520,175520), dimensions (4480, 4480)
+Start to place pads/pins ...
+Information: The orientation of Library cell "CORNERSF" is "E". (APLUI-043)
+Information: The orientation of Library cell "GNDORPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "VDDCPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "VDDORPADF" is "E". (APLUI-043)
+Information: The orientation of Library cell "ICF" is "E". (APLUI-043)
+Information: The orientation of Library cell "BT2SF" is "E". (APLUI-043)
+Information: The orientation of Library cell "BBC2SF" is "E". (APLUI-043)
+ERROR : No such pad/pin vdd_3v3_1_ucu_up; Constraint ignored.
+ERROR : No such pad/pin vdd_3v3_1_ucu_down; Constraint ignored.
+There are 0 pads constrained by min IO spacing.
+Right core spacing increased, pad limited.
+Corner cornerlu was not assigned a side, it will not be placed.
+Corner cornerlb was not assigned a side, it will not be placed.
+
+Running IO Placement Refinement...
+
+IO Placement Refinement Completed Successfully.
+
+Place pads/pins successfully
+Increase Left/Right to core distance by 0.175
+Pad Limited detected in Bottom/Top sides.
+Enlarge core width to 1746.64 by 47.04
+Warning: Pad cells edges are now open for terminal placement (FPHSM-0019)
+Information: During terminal creation, some port-connected pins were detected as possible or likely candidates to be a PAD-type pin.  A tcl script, set_pad_attributes_on_cell_pad_ring_unplaced.tcl, has been created with a set_attribute command for each possible pin candidate. Some pins in this script may not actually be PAD-type pins.  Please edit this fileand correct any lines which are not correctly setting the value (true or false).  Then source this tcl script and then re-run the command which produced this message (place_fp_pins, initialize_floorplan, or initialize_rectilinear_block) again so that terminals are correctly processed.  The command has assumed that all candidate pins which are on padcells or bumpcells are to have terminals stacked onto the corresponding pins.  It has also assumed that all candidate pins which are on hard macros are to to have terminals created on the cell boundary.  If you are happy with these assumptions, you may forego the sourcing of the generated script and just accept the initial results .  If that does not give you satisfactory results, then use set_pin_physical_constraints to explicitly specify terminal locations. (FPHSM-1854)
+Number of terminals created: 95.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Name                Original Ports
+pad_ring_unplaced               95
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Completed pin assignment.
+Elapsed =    0:00:01, CPU =    0:00:00
+Planner Summary:
+This floorplan is created by using tile name (hdll).
+        Row Direction = HORIZONTAL
+        Control Parameter =  Width & Height
+        Core Utilization = 0.443
+        Number Of Rows = 250
+        Core Width = 1746.64
+        Core Height = 1120
+        Aspect Ratio = 0.659
+        Double Back ON
+        Flip First Row = NO
+        Start From First Row = NO
+Planner run through successfully.
+1
+icc_shell> save_mw_cel -as pad_ring_placed.CEL
+Information: Performing CEL netlist consistency check. (MWDC-118)
+Information: CEL consistency check PASSED. (MWDC-119)
+Information: Saved design named pad_ring_placed. (UIG-5)
+1
+icc_shell> close_mw_cel pad_ring_unplaced.CEL
+1
+icc_shell> open_mw_cel  pad_ring_placed
+Information: Opened "pad_ring_placed.CEL;1" from "/mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/libs/Tec_Riscv_pads.mw" library. (MWUI-068)
+{pad_ring_placed}
+icc_shell> ::iccGUI::open_mw_cel  pad_ring_placed
+icc_shell> current_mw_cel {pad_ring_placed.CEL;1}
+{pad_ring_placed}
+icc_shell> 
+Preparing data for query................... 
+icc_shell> set_keepout_margin -type -all_macros -outer {10 10 10 10}
+Warning: Invalid value specified for -type. (PSYN-676)
+1
+icc_shell> set_keepout_margin -type hard -all_macros -outer {10 10 10 10}
+1
+icc_shell> create_fp_placement -timing_driven -no_hier;
+Warning: No scan chain found. (VFP-425)
+CPU time for freeing timing design =    0:00:00
+Elapsed time for freeing timing design =    0:00:00
+num_cpus = 6
+Reference Point: Lower Left-hand corner of Core Base Array
+Reference Point: Lower Left-hand corner of Core Base Array
+Reference Point: Lower Left-hand corner of Core Base Array
+Reference Point: Lower Left-hand corner of Core Base Array
+Reference Point: Lower Left-hand corner of Core Base Array
+flip_chip = 0
+*** Performing global placement...
+Transferring Data From Milkyway...
+Number of plan group pins = 0
+1 macro cells have user defined keepout margin.
+  32 blocks freed
+  0 bytes freed
+Placement Effort Level: Low
+Placement Design Stats
+Num std     cells  = 14006 (fixed = 0)
+Num macros  cells  = 1 (fixed = 0)
+Num IOs     cells  = 30
+Num bump    cells  = 0
+Num LS/ISO  cells  = 0
+Num no type cells  = 0
+Num other   cells  = 0
+Num cells with no net connections = 36
+A macro with most pins (82) is top_riscv_soc/TOP/Memoria_8K
+Num non-zero wt nets = 11279
+Num     zero wt nets = 0
+A net with highest fanout (42) is top_riscv_soc/TOP/Bus/fifo_in_spi/n1
+grouping macros ...
+0 macro arrays generated automatically.
+0 array cells created
+Processed large HM top_riscv_soc/TOP/Memoria_8K
+start placement with 6 threads
+coarse place 0% done.
+coarse place 20% done.
+coarse place 40% done.
+  2 blocks freed
+start placement with 6 threads
+coarse place 60% done.
+coarse place 80% done.
+coarse place 100% done.
+Transferring Data to Milkyway ...
+Calculating timing weight ...
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV. (PSYN-878)
+Warning: The 'ELSGT3VDHSHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSVTDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDLLSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHHHDX3' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHSHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDFRSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSBTUDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSGTDHHHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Warning: Could not find a valid driver for the hierarchical Power net 'top_riscv_soc/VDD_1V8SRAM'. (MWDC-285)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db, D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3723 designs)            pad_ring_placed.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library) /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+(Running rc extraction with virtual route...)
+Information: The design has horizontal rows, and Y-symmetry has been used for sites. (MWDC-217)
+Floorplan loading succeeded.
+
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/clk_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/reset_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MISO_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/RX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/maip_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MOSI_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCLK_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCS_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/TX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: A total of 9 operating conditions have been inferred.  (LIBSETUP-754)
+Warning: The trip points for the library named XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C differ from those in the library named D_CELLS_HDLL_LPMOS_typ_1_80V_25C. (TIM-164)
+Information: Fail to create cell ucu_anlg1/ls_ISVal_bit_11__IS_Val_HV_inst in dpi.
+  Loading design 'top_riscv_tec_pads'
+Error: Failed to get the matching voltage area for power domain pad_ring_inst/PD_PADS. (MV-609)
+Error: Failed to get the matching voltage area for power domain top_riscv_soc/PD_CORE. (MV-609)
+Error: Failed to get the matching voltage area for power domain ucu_anlg1/PD_UCU. (MV-609)
+Error: Consistency check between power domains and voltage areas failed. (MV-502)
+Error: extract_rc has abnormally terminated.  (OPT-100)
+rc extraction finished.
+CPU time for rc extraction =    0:00:03
+Elapsed time for rc extraction =    0:00:04
+Running virtual ipo...
+Information: Using 6 cores for timing computations. (TIM-270)
+Information: Timing loop detected. (OPT-150)
+        top_riscv_soc/TOP/temporizador_top/count_reg_31_/C top_riscv_soc/TOP/temporizador_top/count_reg_31_/Q top_riscv_soc/TOP/U194/A top_riscv_soc/TOP/U194/Q top_riscv_soc/TOP/U289/B top_riscv_soc/TOP/U289/Q top_riscv_soc/TOP/U414/C top_riscv_soc/TOP/U414/Q 
+Information: Timing loop detected. (OPT-150)
+        top_riscv_soc/TOP/temporizador_top/count_reg_26_/C top_riscv_soc/TOP/temporizador_top/count_reg_26_/Q top_riscv_soc/TOP/U195/A top_riscv_soc/TOP/U195/Q top_riscv_soc/TOP/U197/B top_riscv_soc/TOP/U197/Q top_riscv_soc/TOP/U286/A top_riscv_soc/TOP/U286/Q top_riscv_soc/TOP/U289/C top_riscv_soc/TOP/U289/Q top_riscv_soc/TOP/U414/C top_riscv_soc/TOP/U414/Q 
+VIPO: Initializing VR service.
+
+TLU+ File = /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/synopsys/v7_0/TLUplus/v7_0_1/xh018_xx43_MET4_METMID_METTHK_max.tlu
+TLU+ File = /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/synopsys/v7_0/TLUplus/v7_0_1/xh018_xx43_MET4_METMID_METTHK_min.tlu
+
+--------- Sanity Check on TLUPlus Files -------------
+1. Checking the conducting layer names in ITF and mapping file ... 
+[ Passed! ]
+2. Checking the via layer names in ITF and mapping file ... 
+[ Passed! ]
+3. Checking the consistency of Min Width and Min Spacing between MW-tech and ITF ... 
+[ Passed! ]
+----------------- Check Ends ------------------
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer MET1 : 0.00025 0.00019 (RCEX-011)
+Information: Library Derived Res for layer MET1 : 0.00047 0.00029 (RCEX-011)
+Information: Library Derived Cap for layer MET2 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET2 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer MET3 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET3 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer MET4 : 0.00028 0.0002 (RCEX-011)
+Information: Library Derived Res for layer MET4 : 0.00041 0.00023 (RCEX-011)
+Information: Library Derived Cap for layer METTP : 0.00023 0.00017 (RCEX-011)
+Information: Library Derived Res for layer METTP : 0.00014 6.9e-05 (RCEX-011)
+Information: Library Derived Cap for layer METTPL : 0.00039 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METTPL : 4.4e-06 2.6e-06 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00025 0.00019 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00034 0.0002 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00032 0.00022 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00027 0.00016 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.0051 0.0023 (RCEX-011)
+VIPO: detected placement blockages, 28 hard, 0 soft.
+VIPO: initializing estimation model ...
+VIPO: estimation model initialized, cpuTime = 0 sec.
+VIPO: estimating delays and capacitances ...
+VIPO: delays and capacitances estimated, cpuTime = 0 sec.
+virtual ipo finished.
+CPU time for virtual ipo =    0:00:15
+Elapsed time for virtual ipo =    0:00:05
+Warning: High fanout net synthesis has not performed on the design yet. (VFP-432)
+
+  Timing Path Group (none)
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          3.14
+  Critical Path Slack:         uninit
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       3722
+  Hierarchical Port Count:      32532
+  Leaf Cell Count:              14024
+  Buf/Inv Cell Count:            2746
+  Buf Cell Count:                 262
+  Inv Cell Count:                2484
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     10469
+  Sequential Cell Count:         3546
+  Macro Count:                      9
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:        98773.96
+  Noncombinational Area:    243360.11
+  Buf/Inv Area:              22095.00
+  Total Buffer Area:          2857.52
+  Total Inverter Area:       19237.48
+  Macro/Black Box Area:     500899.06
+  Net Area:                  21917.68
+  Net XLength        :           0.00
+  Net YLength        :           0.00
+  -----------------------------------
+  Cell Area:                843033.14
+  Design Area:              864950.82
+  Net Length        :            0.00
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         11325
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+CPU time for timing report =    0:00:00
+Elapsed time for timing report =    0:00:00
+Info: worst slack in the design is 1048576.000000
+Turning off virtual ipo...
+VIPO: All original annotations are removed.
+virtual ipo turned off.
+CPU time for turning off virtual ipo =    0:00:00
+Elapsed time for turning off virtual ipo =    0:00:00
+CPU time for freeing timing design =    0:00:09
+Elapsed time for freeing timing design =    0:00:10
+No timing violation found. Will not run timing-driven placement.
+Reference Point: Lower Left-hand corner of Core Base Array
+Number of plan group pins = 0
+  6 blocks freed
+  0 bytes freed
+*********************************************
+Report     : Virtual Flat Placement
+Design     : pad_ring_placed
+Version    : N-2017.09-SP4
+Date       : Tue Oct  9 17:05:44 2018
+*********************************************
+
+Total wirelength: 1075092.65
+Number of 100x100 tracks cell density regions: 600
+Number of low (< 10%) cell density regions: 0 (0.000%)
+Number of high (> 200%) cell density regions: 0 (0.000%)
+Maximum cell density: 100.00% (at 234 1193 289 1246)
+Checking hard macro to hard macro overlaps...
+Number of hard macro to hard macro overlaps: 0
+Checking hard macro to std cell overlaps...
+Number of hard macro to std cell overlaps: 0
+Checking plan group to plan group overlaps...
+Number of plan group to plan group overlaps: 0
+Number of TL cells overlapping PG: 0
+Number of cells violating core area: 0
+Total number of cells violating plan group or core area: 0
+*** global placement done.
+Begin Overlap Removal...
+Reference Point: Lower Left-hand corner of Core Base Array
+[begin initializing data for legality checker]
+
+Initializing Data Structure ...
+INFO: legalizer_via_spacing_check_mode 0
+  Reading technology information ...
+    Technology table contains 6 routable metal layers
+    This is considered as a 6-metal-layer design
+    Reading library information from DB ...
+  Reading misc information ...
+    array <hdll> has 0 vertical and 250 horizontal rows
+  Checking information read in ...
+    design style = Horizontal masters, Horizontal rows
+
+  Preprocessing design ...
+    splitting rows by natural obstacles ...
+... design style 0
+... number of base array 1 0
+INFO:... use original rows...
+[end initializing data for legality checker]
+Information: Running legalization in Fast-Mode! (DPI-029)
+Error: cell instance ucu_anlg1/ls_ISVal_bit_11__IS_Val_HV_inst (lib_cell: LSHVFU3VHDX1) has a data problem! (DPI-031)
+Error: Fast Mode Legalization failed in loading cells!  (DPI-011)
+Warning: lib cell "CORNERSF" of size (299 sites x 38 rows) will be treated as macro cell because it is larger than 6 site heights (default threshold). (PSYN-442)
+Warning: lib cell "GNDORPADF" of size (150 sites x 36 rows) will be treated as macro cell because it is larger than 6 site heights (default threshold). (PSYN-442)
+Warning: lib cell "VDDCPADF" of size (150 sites x 36 rows) will be treated as macro cell because it is larger than 6 site heights (default threshold). (PSYN-442)
+Warning: lib cell "VDDORPADF" of size (150 sites x 36 rows) will be treated as macro cell because it is larger than 6 site heights (default threshold). (PSYN-442)
+Warning: lib cell "ICF" of size (150 sites x 36 rows) will be treated as macro cell because it is larger than 6 site heights (default threshold). (PSYN-442)
+Warning: lib cell "BT2SF" of size (150 sites x 36 rows) will be treated as macro cell because it is larger than 6 site heights (default threshold). (PSYN-442)
+Warning: lib cell "BBC2SF" of size (150 sites x 36 rows) will be treated as macro cell because it is larger than 6 site heights (default threshold). (PSYN-442)
+Error: An error has occurred in the execution of the detailed placer. (PSYN-060)
+Legalize Placement failed
+Failed in legalize
+0
+icc_shell> refine_placement -congestion_effort low;
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV. (PSYN-878)
+Warning: The 'ELSGT3VDHSHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSVTDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDLLSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHHHDX3' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHSHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDFRSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSBTUDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSGTDHHHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+        have corresponding logical cell description. (PSYN-025)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Warning: Could not find a valid driver for the hierarchical Power net 'top_riscv_soc/VDD_1V8SRAM'. (MWDC-285)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db, D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3723 designs)            pad_ring_placed.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library) /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library) /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library) /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+Information: The design has horizontal rows, and Y-symmetry has been used for sites. (MWDC-217)
+Floorplan loading succeeded.
+Information: Using 6 cores for placement. (OPT-1505)
+
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/clk_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/reset_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MISO_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/RX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/maip_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MOSI_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCLK_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCS_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:1.8 (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/TX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: A total of 9 operating conditions have been inferred.  (LIBSETUP-754)
+Information: Fail to create cell ucu_anlg1/ls_ISVal_bit_11__IS_Val_HV_inst in dpi.
+  Loading design 'top_riscv_tec_pads'
+Information: Timing loop detected. (OPT-150)
+        top_riscv_soc/TOP/temporizador_top/count_reg_31_/C top_riscv_soc/TOP/temporizador_top/count_reg_31_/Q top_riscv_soc/TOP/U194/A top_riscv_soc/TOP/U194/Q top_riscv_soc/TOP/U289/B top_riscv_soc/TOP/U289/Q top_riscv_soc/TOP/U414/C top_riscv_soc/TOP/U414/Q 
+Information: Timing loop detected. (OPT-150)
+        top_riscv_soc/TOP/temporizador_top/count_reg_26_/C top_riscv_soc/TOP/temporizador_top/count_reg_26_/Q top_riscv_soc/TOP/U195/A top_riscv_soc/TOP/U195/Q top_riscv_soc/TOP/U197/B top_riscv_soc/TOP/U197/Q top_riscv_soc/TOP/U286/A top_riscv_soc/TOP/U286/Q top_riscv_soc/TOP/U289/C top_riscv_soc/TOP/U289/Q top_riscv_soc/TOP/U414/C top_riscv_soc/TOP/U414/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_31_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_26_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_27_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_30_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_24_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_28_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_23_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_22_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_18_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_19_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_15_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_14_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_13_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_12_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_9_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_10_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_11_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_8_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_6_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_5_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_4_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_3_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_2_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_7_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_20_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_16_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_21_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_17_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_25_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_29_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/temporizador_top/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Information: Design 'top_riscv_tec_pads' has no optimization constraints set. (OPT-108)
+Error: Failed to get the matching voltage area for power domain pad_ring_inst/PD_PADS. (MV-609)
+Error: Failed to get the matching voltage area for power domain top_riscv_soc/PD_CORE. (MV-609)
+Error: Failed to get the matching voltage area for power domain ucu_anlg1/PD_UCU. (MV-609)
+Error: Consistency check between power domains and voltage areas failed. (MV-502)
+Error: refine_placement has abnormally terminated.  (OPT-100)
+
+Information: Fail to create cell ucu_anlg1/ls_ISVal_bit_11__IS_Val_HV_inst in dpi.
+  Loading design 'top_riscv_tec_pads'
+Error: Failed to get the matching voltage area for power domain pad_ring_inst/PD_PADS. (MV-609)
+Error: Failed to get the matching voltage area for power domain top_riscv_soc/PD_CORE. (MV-609)
+Error: Failed to get the matching voltage area for power domain ucu_anlg1/PD_UCU. (MV-609)
+Error: Consistency check between power domains and voltage areas failed. (MV-502)
+Error: legalize_placement has abnormally terminated.  (OPT-100)
+1
+icc_shell> legalize_placement;
+Information: Fail to create cell ucu_anlg1/ls_ISVal_bit_11__IS_Val_HV_inst in dpi.
+  Loading design 'top_riscv_tec_pads'
+Error: Failed to get the matching voltage area for power domain pad_ring_inst/PD_PADS. (MV-609)
+Error: Failed to get the matching voltage area for power domain top_riscv_soc/PD_CORE. (MV-609)
+Error: Failed to get the matching voltage area for power domain ucu_anlg1/PD_UCU. (MV-609)
+Error: Consistency check between power domains and voltage areas failed. (MV-502)
+Error: legalize_placement has abnormally terminated.  (OPT-100)
+0
+icc_shell> 

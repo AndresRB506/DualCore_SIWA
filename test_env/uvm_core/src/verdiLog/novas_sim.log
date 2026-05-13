@@ -1,0 +1,116 @@
+Invoking simulator...
+
+./salida -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" "./salida.daidir"
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2_Full64; Runtime version U-2023.03-SP2_Full64;  Aug  7 12:44 2024
+
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+  ***********       IMPORTANT RELEASE NOTES         ************
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+*Verdi* Loading libsscore_vcs202303.so
+
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP2, Linux x86_64/64bit, 08/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+
+*Verdi* : Create FSDB file '/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter_1.fsdb'
+
+*Verdi* : Flush all FSDB Files at 0 ps.
+
+*Verdi* : Enable RPC Server(2534277)
+
+srcTBInvokeSim
+xterm-256color is Not a valid terminal...
+Verdi>fsdbDumpvars 1 "tb_top.dut_if"  +all +trace_process;fsdbDumpflush 
+
+Releasing License for VCS-BASE-RUNTIME
+Attempting to Re-Acquire License for VCS-BASE-RUNTIME
+Re-Acquired License for VCS-BASE-RUNTIME, continuing....
+*Verdi* : Begin traversing the scope (tb_top.dut_if), layer (1).
+*Verdi* : Enable +trace_process and +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : Flush all FSDB Files at 0 ps.
+
+Verdi>run
+*Verdi* Enable Verdi Message Catcher.
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'Test_Files/Assembly_Code/coremark_program.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../TOP/coremark_mem_model.sv, 18
+  Cannot open file 'Test_Files/Assembly_Code/coremark_program.txt' passed as 
+  argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean v_if
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+*Verdi* Enable Verdi Factory Dumping.
+UVM_INFO @ 0: reporter [RNTST] Running test test_base...
+----------------------------------- 
+Initiating Prediction Process...
+----------------------------------- 
+-----------------------------------
+Prediction has Finished...
+-----------------------------------
+prediction Size = 1376
+TEST NAME: test_base
+UVM_INFO Sequence.svh(39) @ 0: uvm_test_top.env_inst.agent_inst.sequencer_inst@@sec_message [SEQ] New item Delay=500000, SimulationTime=300000
+UVM_INFO Scoreboard.svh(47) @ 5000: uvm_test_top.env_inst.scoreboard_inst [SB] Analisys Port Activity : RST=1
+Monitor.svh, 101 :       @(posedge v_if.clk);
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 519375000 ps
+CPU Time:      4.090 seconds;       Data structure size:   3.2Mb
+Wed Aug  7 12:49:01 2024
+debExit

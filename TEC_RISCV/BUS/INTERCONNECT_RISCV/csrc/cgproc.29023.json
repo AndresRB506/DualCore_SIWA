@@ -1,0 +1,224 @@
+{
+    "reusePaths": {},
+    "Modules": {
+        "prll_intrfs_cntrl": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "bs_gnrtr": {},
+        "parallel_serial": {},
+        "...MASTER...": {},
+        "bs_ntrfs_n_rbtr": {},
+        "std": {},
+        "prll_bs_gnrtr_n_rbtr_fifo": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "serializer_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "bs_ntrfs": {},
+        "Sim_bs_systm": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Read_st_Mchn": {},
+        "fifo_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "bs_ntrfs_n_rbtr_fpga": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "bs_gnrtr_n_rbtr": {},
+        "prll_bs_ntrfs_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Write_st_Mchn": {},
+        "prll_rgstr": {},
+        "prll_d_reg_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "prll_bs_ntrfs_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "parallel_serial_fpga": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "serializer_fpga_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "bs_gnrtr_n_rbtr_fpga": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "Q8L9d_d": {
+            "mod": "prll_intrfs_cntrl",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "Q8L9d_d.o",
+            "bytes": 49501,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "ZDrgJ_d": {
+            "mod": "bs_gnrtr_n_rbtr_fpga",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "ZDrgJ_d.o",
+            "bytes": 35323,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 10667
+        },
+        "yI6HV_d": {
+            "mod": "serializer_0000",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "yI6HV_d.o",
+            "bytes": 35720,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "hgzvm_d": {
+            "mod": "fifo_0000",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "hgzvm_d.o",
+            "bytes": 21568,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "sacCs_d": {
+            "mod": "Sim_bs_systm",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "sacCs_d.o",
+            "bytes": 204331,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "FBWFc_d": {
+            "mod": "prll_d_reg_0001",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "FBWFc_d.o",
+            "bytes": 98819,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "a0Jd3_d": {
+            "mod": "bs_ntrfs_n_rbtr_fpga",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "a0Jd3_d.o",
+            "bytes": 39745,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "Hg0I9_d": {
+            "mod": "parallel_serial_fpga",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "Hg0I9_d.o",
+            "bytes": 8915,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "qrG0J_d": {
+            "mod": "prll_bs_ntrfs_0000",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "qrG0J_d.o",
+            "bytes": 15783,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "Bt8DC_d": {
+            "mod": "prll_bs_ntrfs_0001",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "Bt8DC_d.o",
+            "bytes": 30256,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "VerLn_d": {
+            "mod": "prll_bs_gnrtr_n_rbtr_fifo",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "VerLn_d.o",
+            "bytes": 15178,
+            "archive": "archive.3/_29023_archive_1.a"
+        },
+        "jJ08y_d": {
+            "mod": "serializer_fpga_0000",
+            "checksum": 4294967295,
+            "mode": 4,
+            "out": "jJ08y_d.o",
+            "bytes": 44113,
+            "archive": "archive.3/_29023_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.3/_29023_archive_1.a",
+            "objects": [
+                [
+                    "yI6HV_d.o",
+                    35720
+                ],
+                [
+                    "Q8L9d_d.o",
+                    49501
+                ],
+                [
+                    "FBWFc_d.o",
+                    98819
+                ],
+                [
+                    "qrG0J_d.o",
+                    15783
+                ],
+                [
+                    "Bt8DC_d.o",
+                    30256
+                ],
+                [
+                    "hgzvm_d.o",
+                    21568
+                ],
+                [
+                    "VerLn_d.o",
+                    15178
+                ],
+                [
+                    "Hg0I9_d.o",
+                    8915
+                ],
+                [
+                    "jJ08y_d.o",
+                    44113
+                ],
+                [
+                    "a0Jd3_d.o",
+                    39745
+                ],
+                [
+                    "ZDrgJ_d.o",
+                    35323
+                ],
+                [
+                    "sacCs_d.o",
+                    204331
+                ]
+            ],
+            "size": 599252
+        }
+    ]
+}

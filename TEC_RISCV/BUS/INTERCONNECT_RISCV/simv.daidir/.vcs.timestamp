@@ -1,0 +1,102 @@
+0 
+32
++itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/vcsdp.tab
++memcbk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/liberrorinf.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mupdate
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/include
+-Xpiyushb1=0x80
+-debug_access+all+dmptf+bc
+-debug_access+class+driver+dmptf+bc
+-debug_region=cell+lib
+-debug_region=cell+lib
+-full64
+-gen_obj
+-picarchive
+-sverilog
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/bin/vcs1
+Test_base.sv
+56
+sysc_uni_pwd=/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/INTERCONEXIONES/BACKUP/INTERCONNECT_RISCV
+XTERM_VERSION=X.Org 6.8.99.903(253)
+XTERM_SHELL=/bin/bash
+XTERM_LOCALE=en_US.UTF-8
+XDG_SESSION_COOKIE=1cbc5570a79fabc6ec9552bd00000016-1518463665.788336-984163801
+VNCDESKTOP=zener:15 (rgarcia)
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64
+SYSFONT=latarcyrheb-sun16
+SYNOPSYS_SIM_SETUP=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI/design/synopsys_sim.setup
+SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps
+SSH_TTY=/dev/pts/18
+SSH_CONNECTION=172.21.134.48 52779 172.21.16.5 22
+SSH_CLIENT=172.21.134.48 52779 22
+SSH_AUTH_SOCK=/tmp/keyring-2gRsRg/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=29684
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/29683,unix/unix:/tmp/.ICE-unix/29683
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PYTHONPATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/pylib:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/plat_linux_gcc44x_64/pyext:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/plat_linux_gcc44x_64/lib:.:
+PYTHONHOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/plat_linux_gcc44x_64/3rd
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-rgarcia
+OA_PLUGIN_PATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/plat_linux_gcc44x_64/3rd/oa/data/plugins:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/quickstart:
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=en_US.UTF-8
+KDEDIRS=/usr
+ICV_HOME_DIR=/mnt/vol_NFS_Zener/tools/synopsys/apps/icvalidator/L-2016.06-SP2-3
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/local/ESTUDIANTES/rgarcia/.gtkrc-1.2-gnome2
+GNOME_KEYRING_SOCKET=/tmp/keyring-2gRsRg/socket
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GIO_LAUNCHED_DESKTOP_FILE_PID=30708
+GIO_LAUNCHED_DESKTOP_FILE=/home/local/ESTUDIANTES/rgarcia/Desktop/gnome-terminal.desktop
+FTK_KIT_DIR=/mnt/vol_NFS_Zener/tools/synopsys/pdks/xt018-ams/v1_0_2
+DESIGN_HOME=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4R7wSlsUR2,guid=d63c07b292ca9f595bdf4b70000e64d0
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+CNI_ROOT=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio
+CNI_LOG_DEFAULT=/dev/null
+0
+3
+1521495796 Library.sv
+1520967766 Test_base.sv
+1491441830 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/vcsdp.tab
+4
+0 
+1491441825 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/libvirsim.so
+1491441836 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/liberrorinf.so
+1491441837 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/K-2015.09-SP2-3/linux64/lib/libsnpsmalloc.so
+1521495810 simv.daidir

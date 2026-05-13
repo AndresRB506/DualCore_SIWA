@@ -1,0 +1,95 @@
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3700 designs)            top.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library)
+                              /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/trn_chng_buf/b_tri/E top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/trn_chng_buf/b_tri/Q top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_/C top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_/Q top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/U2/B top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/U2/Q 
+Information: Timing loop detected. (OPT-150)
+	top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_/C top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_/Q top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/U2/A top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/U2/Q top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/trn_chng_buf/b_tri/E top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/trn_chng_buf/b_tri/Q 
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/spi_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_0_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/mbc_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'C' and 'Q' on cell 'top_riscv_soc/TOP/Bus/uart_bs_ntrfs/prll_cntrl/arb_cntr/count_reg_1_'
+         to break a timing loop. (OPT-314)
+Information: Input delay ('rise') on clock port 'CLK' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'CLK' will be added to the clock's propagated skew. (TIM-112)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Wed Mar 27 16:17:48 2019
+****************************************
+
+
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+    XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db)
+    IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db)
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.2177 mW   (62%)
+  Net Switching Power  = 759.0154 uW   (38%)
+                         ---------
+Total Dynamic Power    =   1.9768 mW  (100%)
+
+  Leakage Power from Non-physical-only Cell
+                       = 494.1517 nW   (99%)
+  Leakage Power from Physical-only Cell
+                       =   3.1249 nW    (1%)
+                         ---------
+Cell Leakage Power     = 497.2766 nW  (100%)
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad         7.4822e-02        7.3475e-03        3.4287e+03        8.2173e-02  (   4.16%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000        5.9538e-03        4.6182e+05        6.4157e-03  (   0.32%)
+clock_network  9.6467e-02            0.5047          460.4178            0.6012  (  30.40%)
+register           0.9819        1.0774e-02        9.9176e+03            0.9927  (  50.21%)
+sequential     1.8167e-02        1.0466e-02        2.2285e+03        2.8635e-02  (   1.45%)
+combinational  4.6359e-02            0.2198        1.6299e+04            0.2662  (  13.46%)
+--------------------------------------------------------------------------------------------------
+Total              1.2177 mW         0.7590 mW     4.9415e+05 pW         1.9772 mW
+1

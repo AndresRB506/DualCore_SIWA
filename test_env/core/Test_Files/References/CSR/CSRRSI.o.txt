@@ -1,0 +1,121 @@
+0000000000000000000 core-0   :00010054 (010108b7) lui         a7, 16842752       
+ra       :0xd3d11030
+sp       :0x7fffff64 gp       :0x67a901f6
+tp       :0x237d63ed t0       :0xab925c06
+t1       :0x9eba4580 t2       :0x269076f6
+s0       :0x254de5a9 s1       :0x4885b5fb
+a0       :0x51921921 a1       :0x32b59e90
+a2       :0xe39d743c a3       :0x64e0d7dd
+a4       :0xb80ba0c1 a5       :0x9f667ded
+a6       :0xaf72d55f a7       :0x01010000
+s2       :0x997bd007 s3       :0xbe21e6e2
+s4       :0xde0bc244 s5       :0x05e750ef
+s6       :0x2ead7c12 s7       :0xdf3ccc92
+s8       :0xe853e161 s9       :0x41649c3e
+s10      :0xc2288ea0 s11      :0xc4ac80a9
+t3       :0x5de9223f t4       :0xa4a28f36
+t5       :0x4d00812e t6       :0x63c9fc6f
+0000000000000000001 core-0   :00010058 (10188893) addi        a7, a7, 257        
+ra       :0xd3d11030
+sp       :0x7fffff64 gp       :0x67a901f6
+tp       :0x237d63ed t0       :0xab925c06
+t1       :0x9eba4580 t2       :0x269076f6
+s0       :0x254de5a9 s1       :0x4885b5fb
+a0       :0x51921921 a1       :0x32b59e90
+a2       :0xe39d743c a3       :0x64e0d7dd
+a4       :0xb80ba0c1 a5       :0x9f667ded
+a6       :0xaf72d55f a7       :0x01010101
+s2       :0x997bd007 s3       :0xbe21e6e2
+s4       :0xde0bc244 s5       :0x05e750ef
+s6       :0x2ead7c12 s7       :0xdf3ccc92
+s8       :0xe853e161 s9       :0x41649c3e
+s10      :0xc2288ea0 s11      :0xc4ac80a9
+t3       :0x5de9223f t4       :0xa4a28f36
+t5       :0x4d00812e t6       :0x63c9fc6f
+0000000000000000002 core-0   :0001005c (00189073) fsflags     zero, a7           
+ra       :0xd3d11030
+sp       :0x7fffff64 gp       :0x67a901f6
+tp       :0x237d63ed t0       :0xab925c06
+t1       :0x9eba4580 t2       :0x269076f6
+s0       :0x254de5a9 s1       :0x4885b5fb
+a0       :0x51921921 a1       :0x32b59e90
+a2       :0xe39d743c a3       :0x64e0d7dd
+a4       :0xb80ba0c1 a5       :0x9f667ded
+a6       :0xaf72d55f a7       :0x01010101
+s2       :0x997bd007 s3       :0xbe21e6e2
+s4       :0xde0bc244 s5       :0x05e750ef
+s6       :0x2ead7c12 s7       :0xdf3ccc92
+s8       :0xe853e161 s9       :0x41649c3e
+s10      :0xc2288ea0 s11      :0xc4ac80a9
+t3       :0x5de9223f t4       :0xa4a28f36
+t5       :0x4d00812e t6       :0x63c9fc6f
+0000000000000000003 core-0   :00010060 (00289073) fsrm        zero, a7           
+ra       :0xd3d11030
+sp       :0x7fffff64 gp       :0x67a901f6
+tp       :0x237d63ed t0       :0xab925c06
+t1       :0x9eba4580 t2       :0x269076f6
+s0       :0x254de5a9 s1       :0x4885b5fb
+a0       :0x51921921 a1       :0x32b59e90
+a2       :0xe39d743c a3       :0x64e0d7dd
+a4       :0xb80ba0c1 a5       :0x9f667ded
+a6       :0xaf72d55f a7       :0x01010101
+s2       :0x997bd007 s3       :0xbe21e6e2
+s4       :0xde0bc244 s5       :0x05e750ef
+s6       :0x2ead7c12 s7       :0xdf3ccc92
+s8       :0xe853e161 s9       :0x41649c3e
+s10      :0xc2288ea0 s11      :0xc4ac80a9
+t3       :0x5de9223f t4       :0xa4a28f36
+t5       :0x4d00812e t6       :0x63c9fc6f
+0000000000000000004 core-0   :00010064 (00389073) fscsr       zero, a7           
+ra       :0xd3d11030
+sp       :0x7fffff64 gp       :0x67a901f6
+tp       :0x237d63ed t0       :0xab925c06
+t1       :0x9eba4580 t2       :0x269076f6
+s0       :0x254de5a9 s1       :0x4885b5fb
+a0       :0x51921921 a1       :0x32b59e90
+a2       :0xe39d743c a3       :0x64e0d7dd
+a4       :0xb80ba0c1 a5       :0x9f667ded
+a6       :0xaf72d55f a7       :0x01010101
+s2       :0x997bd007 s3       :0xbe21e6e2
+s4       :0xde0bc244 s5       :0x05e750ef
+s6       :0x2ead7c12 s7       :0xdf3ccc92
+s8       :0xe853e161 s9       :0x41649c3e
+s10      :0xc2288ea0 s11      :0xc4ac80a9
+t3       :0x5de9223f t4       :0xa4a28f36
+t5       :0x4d00812e t6       :0x63c9fc6f
+0000000000000000005 core-0   :00010068 (0000    ) csrrw       zero, uie, a7      
+ra       :0xd3d11030
+sp       :0x7fffff64 gp       :0x67a901f6
+tp       :0x237d63ed t0       :0xab925c06
+t1       :0x9eba4580 t2       :0x269076f6
+s0       :0x254de5a9 s1       :0x4885b5fb
+a0       :0x51921921 a1       :0x32b59e90
+a2       :0xe39d743c a3       :0x64e0d7dd
+a4       :0xb80ba0c1 a5       :0x9f667ded
+a6       :0xaf72d55f a7       :0x01010101
+s2       :0x997bd007 s3       :0xbe21e6e2
+s4       :0xde0bc244 s5       :0x05e750ef
+s6       :0x2ead7c12 s7       :0xdf3ccc92
+s8       :0xe853e161 s9       :0x41649c3e
+s10      :0xc2288ea0 s11      :0xc4ac80a9
+t3       :0x5de9223f t4       :0xa4a28f36
+t5       :0x4d00812e t6       :0x63c9fc6f
+TRAP     :illegal_instruction pc:0x10068 badaddr:0x10068
+instret  :                 5 time     :0x000004b4c625e44e
+pc       :0x00010068 fcsr     :0x00000001
+ra       :0xd3d11030
+sp       :0x7fffff64 gp       :0x67a901f6
+tp       :0x237d63ed t0       :0xab925c06
+t1       :0x9eba4580 t2       :0x269076f6
+s0       :0x254de5a9 s1       :0x4885b5fb
+a0       :0x51921921 a1       :0x32b59e90
+a2       :0xe39d743c a3       :0x64e0d7dd
+a4       :0xb80ba0c1 a5       :0x9f667ded
+a6       :0xaf72d55f a7       :0x01010101
+s2       :0x997bd007 s3       :0xbe21e6e2
+s4       :0xde0bc244 s5       :0x05e750ef
+s6       :0x2ead7c12 s7       :0xdf3ccc92
+s8       :0xe853e161 s9       :0x41649c3e
+s10      :0xc2288ea0 s11      :0xc4ac80a9
+t3       :0x5de9223f t4       :0xa4a28f36
+t5       :0x4d00812e t6       :0x63c9fc6f

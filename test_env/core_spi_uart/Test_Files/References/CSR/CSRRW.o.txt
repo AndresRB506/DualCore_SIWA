@@ -1,0 +1,104 @@
+0000000000000000000 core-0   :00010054 (fff00093) addi        ra, zero, -1       
+ra       :0xffffffff
+sp       :0x7fffff64 gp       :0x287cf23b
+tp       :0x96dd704b t0       :0x891f6b31
+t1       :0x2acec202 t2       :0x87f5b52f
+s0       :0x4c76c48f s1       :0x6e6a6387
+a0       :0xa2a18287 a1       :0xaf5c34ad
+a2       :0xff367c71 a3       :0xfc098e89
+a4       :0xff27d3af a5       :0xe6b494d3
+a6       :0x76be6fbc a7       :0x91669d89
+s2       :0xebd6c92d s3       :0x7fa96541
+s4       :0xfe2ed521 s5       :0xf4145379
+s6       :0xf31cb50c s7       :0x6d82bb3d
+s8       :0xfbce6e04 s9       :0xd92ca77a
+s10      :0xc4db816b s11      :0xb8987e83
+t3       :0x4044c643 t4       :0x559da53f
+t5       :0xbbfa8ef7 t6       :0x4b590f69
+0000000000000000001 core-0   :00010058 (00109073) fsflags     zero, ra           
+ra       :0xffffffff
+sp       :0x7fffff64 gp       :0x287cf23b
+tp       :0x96dd704b t0       :0x891f6b31
+t1       :0x2acec202 t2       :0x87f5b52f
+s0       :0x4c76c48f s1       :0x6e6a6387
+a0       :0xa2a18287 a1       :0xaf5c34ad
+a2       :0xff367c71 a3       :0xfc098e89
+a4       :0xff27d3af a5       :0xe6b494d3
+a6       :0x76be6fbc a7       :0x91669d89
+s2       :0xebd6c92d s3       :0x7fa96541
+s4       :0xfe2ed521 s5       :0xf4145379
+s6       :0xf31cb50c s7       :0x6d82bb3d
+s8       :0xfbce6e04 s9       :0xd92ca77a
+s10      :0xc4db816b s11      :0xb8987e83
+t3       :0x4044c643 t4       :0x559da53f
+t5       :0xbbfa8ef7 t6       :0x4b590f69
+0000000000000000002 core-0   :0001005c (00209073) fsrm        zero, ra           
+ra       :0xffffffff
+sp       :0x7fffff64 gp       :0x287cf23b
+tp       :0x96dd704b t0       :0x891f6b31
+t1       :0x2acec202 t2       :0x87f5b52f
+s0       :0x4c76c48f s1       :0x6e6a6387
+a0       :0xa2a18287 a1       :0xaf5c34ad
+a2       :0xff367c71 a3       :0xfc098e89
+a4       :0xff27d3af a5       :0xe6b494d3
+a6       :0x76be6fbc a7       :0x91669d89
+s2       :0xebd6c92d s3       :0x7fa96541
+s4       :0xfe2ed521 s5       :0xf4145379
+s6       :0xf31cb50c s7       :0x6d82bb3d
+s8       :0xfbce6e04 s9       :0xd92ca77a
+s10      :0xc4db816b s11      :0xb8987e83
+t3       :0x4044c643 t4       :0x559da53f
+t5       :0xbbfa8ef7 t6       :0x4b590f69
+0000000000000000003 core-0   :00010060 (00309073) fscsr       zero, ra           
+ra       :0xffffffff
+sp       :0x7fffff64 gp       :0x287cf23b
+tp       :0x96dd704b t0       :0x891f6b31
+t1       :0x2acec202 t2       :0x87f5b52f
+s0       :0x4c76c48f s1       :0x6e6a6387
+a0       :0xa2a18287 a1       :0xaf5c34ad
+a2       :0xff367c71 a3       :0xfc098e89
+a4       :0xff27d3af a5       :0xe6b494d3
+a6       :0x76be6fbc a7       :0x91669d89
+s2       :0xebd6c92d s3       :0x7fa96541
+s4       :0xfe2ed521 s5       :0xf4145379
+s6       :0xf31cb50c s7       :0x6d82bb3d
+s8       :0xfbce6e04 s9       :0xd92ca77a
+s10      :0xc4db816b s11      :0xb8987e83
+t3       :0x4044c643 t4       :0x559da53f
+t5       :0xbbfa8ef7 t6       :0x4b590f69
+0000000000000000004 core-0   :00010064 (0000    ) csrrw       zero, uie, ra      
+ra       :0xffffffff
+sp       :0x7fffff64 gp       :0x287cf23b
+tp       :0x96dd704b t0       :0x891f6b31
+t1       :0x2acec202 t2       :0x87f5b52f
+s0       :0x4c76c48f s1       :0x6e6a6387
+a0       :0xa2a18287 a1       :0xaf5c34ad
+a2       :0xff367c71 a3       :0xfc098e89
+a4       :0xff27d3af a5       :0xe6b494d3
+a6       :0x76be6fbc a7       :0x91669d89
+s2       :0xebd6c92d s3       :0x7fa96541
+s4       :0xfe2ed521 s5       :0xf4145379
+s6       :0xf31cb50c s7       :0x6d82bb3d
+s8       :0xfbce6e04 s9       :0xd92ca77a
+s10      :0xc4db816b s11      :0xb8987e83
+t3       :0x4044c643 t4       :0x559da53f
+t5       :0xbbfa8ef7 t6       :0x4b590f69
+TRAP     :illegal_instruction pc:0x10064 badaddr:0x10064
+instret  :                 4 time     :0x000004b4c6cff092
+pc       :0x00010064 fcsr     :0x000000ff
+ra       :0xffffffff
+sp       :0x7fffff64 gp       :0x287cf23b
+tp       :0x96dd704b t0       :0x891f6b31
+t1       :0x2acec202 t2       :0x87f5b52f
+s0       :0x4c76c48f s1       :0x6e6a6387
+a0       :0xa2a18287 a1       :0xaf5c34ad
+a2       :0xff367c71 a3       :0xfc098e89
+a4       :0xff27d3af a5       :0xe6b494d3
+a6       :0x76be6fbc a7       :0x91669d89
+s2       :0xebd6c92d s3       :0x7fa96541
+s4       :0xfe2ed521 s5       :0xf4145379
+s6       :0xf31cb50c s7       :0x6d82bb3d
+s8       :0xfbce6e04 s9       :0xd92ca77a
+s10      :0xc4db816b s11      :0xb8987e83
+t3       :0x4044c643 t4       :0x559da53f
+t5       :0xbbfa8ef7 t6       :0x4b590f69

@@ -1,0 +1,50 @@
+Warning: Reference Library Inconsistent With Main Library
+Reference Library: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL (MWLIBP-300)
+Warning: Inconsistent Data for Layer 122
+        Main Library (Tec_Riscv_pads.mw)|       Reference Library (xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL)
+        Layer Name     BNIMP        |   _strm_layer330
+        Mask Name      bnimp        |   corner   (MWLIBP-319)
+Warning: Reference Library Inconsistent With Main Library
+Reference Library: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V (MWLIBP-300)
+Warning: Inconsistent Data for Layer 122
+        Main Library (Tec_Riscv_pads.mw)|       Reference Library (xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V)
+        Layer Name     BNIMP        |   _strm_layer330
+        Mask Name      bnimp        |   corner   (MWLIBP-319)
+Warning: Reference Library Inconsistent With Main Library
+Reference Library: /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw (MWLIBP-300)
+Warning: Inconsistent Data for Layer 122
+        Main Library (Tec_Riscv_pads.mw)|       Reference Library (XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw)
+        Layer Name     BNIMP        |   _strm_layer330
+        Mask Name      bnimp        |   corner   (MWLIBP-319)
+Information: Using 8 threads for routing. (ZRT-444)
+Found antenna rule mode 1, diode mode 4:
+        metal ratio 0, cut ratio 20,metal gate diffusion length based ratio 0 cut gate length based ratio 0     metal pratio 0, cut pratio 0, metal gate diffusion length based pratio 0, cut gate diffusion length based pratio 0      metal nratio 0, cut nratio 0, metal nratio 0, cut nratio 0
+        layer VIA1: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09  layer VIA1: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer VIA2: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09  layer VIA2: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer VIA3: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09  layer VIA3: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer VIATP: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09 layer VIATP: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer VIATPL: max ratio 20 max pratio 2.14748e+09 max nratio 2.14748e+09        layer VIATPL: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+Found antenna rule mode 4, diode mode 4:
+        metal ratio 400, cut ratio 0,metal gate diffusion length based ratio 0 cut gate length based ratio 0    metal pratio 0, cut pratio 0, metal gate diffusion length based pratio 0, cut gate diffusion length based pratio 0      metal nratio 0, cut nratio 0, metal nratio 0, cut nratio 0
+        layer MET1: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09 layer MET1: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer MET2: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09 layer MET2: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer MET3: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09 layer MET3: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer MET4: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09 layer MET4: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer METTP: max ratio 400 max pratio 2.14748e+09 max nratio 2.14748e+09        layer METTP: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+        layer METTPL: max ratio 200 max pratio 2.14748e+09 max nratio 2.14748e+09       layer METTPL: max gate length based ratio 0 max gate length based pratio 0 max gate length based nratio 0, diode ratio {0 0 0 1e+07}
+Cell Min-Routing-Layer = MET1
+Cell Max-Routing-Layer = METTPL
+Information: Multiple default contact VIA12D_A found for layer VIA1. (ZRT-021)
+Warning: Ignore 22 top cell ports with no pins. (ZRT-027)
+Found 3 voltage-areas.
+Warning: Conflicting voltage-areas for instance top_riscv_soc/TOP/Memoria_8K. (ZRT-046)
+Via on layer (VIATP) needs more than one tracks
+Warning: Layer MET4 pitch 0.560 may be too small: wire/via-down 0.560, wire/via-up 0.610. (ZRT-026)
+Via on layer (VIATPL) needs more than one tracks
+Warning: Layer METTP pitch 1.120 may be too small: wire/via-down 0.950, wire/via-up 1.430. (ZRT-026)
+Transition layer name: MET4(3)
+Transition layer name: METTP(4)
+Hier-ant-prop: new = 12, old = 0
+Updating the database ...
+Information: RC extraction has been freed. (PSYN-503)
+

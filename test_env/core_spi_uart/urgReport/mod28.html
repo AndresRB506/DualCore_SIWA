@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: u_rec</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_u_rec'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_u_rec')">u_rec</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s2 cl rt"> 29.86</td>
+<td class="s5 cl rt"><a href="mod28.html#Line" > 57.50</a></td>
+<td class="s3 cl rt"><a href="mod28.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod28.html#Toggle" >  5.68</a></td>
+<td class="s0 cl rt"><a href="mod28.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod28.html#Branch" > 52.78</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../UART/scrs/u_rec.sv')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../UART/scrs/u_rec.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod28.html#inst_tag_3013"  onclick="showContent('inst_tag_3013')">topcore_tb.uut.UART.u_rec</a></td>
+<td class="s2 cl rt"> 29.86</td>
+<td class="s5 cl rt"><a href="mod28.html#Line" > 57.50</a></td>
+<td class="s3 cl rt"><a href="mod28.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod28.html#Toggle" >  5.68</a></td>
+<td class="s0 cl rt"><a href="mod28.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod28.html#Branch" > 52.78</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_u_rec'>
+<hr>
+<a name="inst_tag_3013"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy12.html#tag_urg_inst_3013" >topcore_tb.uut.UART.u_rec</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s2 cl rt"> 29.86</td>
+<td class="s5 cl rt"><a href="mod28.html#Line" > 57.50</a></td>
+<td class="s3 cl rt"><a href="mod28.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod28.html#Toggle" >  5.68</a></td>
+<td class="s0 cl rt"><a href="mod28.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod28.html#Branch" > 52.78</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s2 cl rt"> 29.86</td>
+<td class="s5 cl rt"> 57.50</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="s0 cl rt">  5.68</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s5 cl rt"> 52.78</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s0 cl rt">  1.36</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  1.36</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod55.html#inst_tag_4282" >UART</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td colspan=7>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_u_rec'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod28.html" >u_rec</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">TOTAL</td><td></td><td>80</td><td>46</td><td>57.50</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>80</td><td>6</td><td>6</td><td>100.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>92</td><td>6</td><td>5</td><td>83.33</td></tr>
+<tr class="s6"><td class="lf">ALWAYS</td><td>107</td><td>5</td><td>3</td><td>60.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>119</td><td>7</td><td>6</td><td>85.71</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>133</td><td>4</td><td>4</td><td>100.00</td></tr>
+<tr class="s3"><td class="lf">ALWAYS</td><td>142</td><td>48</td><td>18</td><td>37.50</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>272</td><td>4</td><td>4</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+79                      always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+80         1/1            if (sys_rst_l) begin
+81         1/1               rec_datSyncH &lt;= 1'b1;
+82         1/1               rec_datH     &lt;= 1'b1;
+83                        end 
+84         1/1            else if (flag_sincr)begin
+85         1/1               rec_datSyncH &lt;= uart_dataH;
+86         1/1               rec_datH     &lt;= rec_datSyncH;
+87                        end
+                        MISSING_ELSE
+88                      end
+89                      
+90                      // Bit-cell counter
+91                      always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+92         1/1            if (sys_rst_l) 
+93         1/1              bitCell_cntrH &lt;= 0;
+94         1/1            else if (flag_sincr)begin
+95         1/1          	  if (cntr_resetH) 
+96         1/1          		bitCell_cntrH &lt;= 0;
+97                      	  else 
+98         <font color = "red">0/1     ==>  		bitCell_cntrH &lt;= bitCell_cntrH + 1;</font>
+99                        end
+                        MISSING_ELSE
+100                     end
+101                     
+102                     // Shifte Register to hold the incoming 
+103                     // serial data
+104                     // LSB is shifted in first
+105                     //
+106                     always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+107        1/1            if (sys_rst_l) 
+108        1/1              par_dataH &lt;= 0;
+109        1/1            else if(shiftH &amp;&amp; flag_sincr) begin                 //cuando esta activa en alto desplaza el dato una posición
+110        <font color = "red">0/1     ==>      par_dataH[7:0] &lt;= par_dataH[8:1];</font>
+111        <font color = "red">0/1     ==>      par_dataH[8]   &lt;= rec_datH; // bit que va entrando al deserializador</font>
+112                       end
+                        MISSING_ELSE
+113                     end
+114                     
+115                     // RECEIVED BIT Counter
+116                     // This coutner keeps track of the number of
+117                     // bits received
+118                     always_ff @(posedge sys_clk or posedge sys_rst_l)begin
+119        1/1            if (sys_rst_l) 
+120        1/1              recd_bitCntrH &lt;= 0;
+121        1/1            else if (flag_sincr)begin
+122        1/1          	  if (countH) 
+123        <font color = "red">0/1     ==>  		recd_bitCntrH &lt;= recd_bitCntrH + 1;</font>
+124        1/1          	  else if (rstCountH) 
+125        1/1          		recd_bitCntrH &lt;= 0;
+                   <font color = "red">==>  MISSING_ELSE</font>
+126                       end
+                        MISSING_ELSE
+127                     end
+128                     
+129                     
+130                     
+131                     // State Machine - Next State Assignment
+132                     always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+133        1/1            if (sys_rst_l) 
+134        1/1              state &lt;= r_START;
+135        1/1            else if (flag_sincr)
+136        1/1              state &lt;= next_state;
+                        MISSING_ELSE
+137                     end
+138                     
+139                     // State Machine - Next State and Output Decode
+140                     always_comb begin
+141                       // default
+142        1/1            next_state  = state;
+143        1/1            cntr_resetH = HI;
+144        1/1            shiftH      = LO;
+145        1/1            countH      = LO;
+146        1/1            rstCountH   = LO;
+147        1/1            rec_readyInH= LO;
+148        1/1            parity_error= LO;
+149        1/1            case (state)
+150                          
+151                         //
+152                         // START
+153                         // Wait for the start bit
+154                         // 
+155                         r_START: begin //001
+156        1/1                if (~rec_datH ) begin
+157        <font color = "red">0/1     ==>          next_state = r_CENTER; // bit de inicio 0</font>
+158                             //parity_error = LO;
+159                           end 
+160                           else begin 
+161        1/1                  next_state = r_START;
+162        1/1                  rstCountH  = HI; // place the bit counter in rst state
+163                             //rec_readyInH = HI; // by default, we're ready ///######VERIFICAR
+164                           end
+165                         end
+166                     
+167                         //
+168                     	// CENTER
+169                     	// Find the center of the bit-cell 
+170                     	// A bit cell is composed of 16 system-clock 
+171                     	// ticks
+172                     	//
+173                         r_CENTER: begin //010
+174        <font color = "red">0/1     ==>        if (bitCell_cntrH == 4'h4) begin</font>
+175                             // if after having waited 1/2 bit cell,
+176                      	  // it is still 0, then it is a genuine start bit
+177        <font color = "red">0/1     ==>          if (~rec_datH) begin</font>
+178        <font color = "red">0/1     ==>            next_state = r_WAIT;</font>
+179        <font color = "red">0/1     ==>            countH = HI;</font>
+180                             end   
+181                     		 // otherwise, could have been a false noise
+182                             else 
+183        <font color = "red">0/1     ==>            next_state = r_START;</font>
+184                           end 
+185                           else begin
+186        <font color = "red">0/1     ==>          next_state  = r_CENTER;</font>
+187        <font color = "red">0/1     ==>  	      cntr_resetH = LO;  // allow counter to tick          </font>
+188                           end
+189                         end
+190                     
+191                     
+192                         //
+193                     	// WAIT
+194                     	// Wait a bit-cell time before sampling the
+195                     	// state of the data pin
+196                     	//
+197                     	  r_WAIT: begin //011
+198        <font color = "red">0/1     ==>  		  if (bitCell_cntrH == 4'hE) begin</font>
+199        <font color = "red">0/1     ==>          if (recd_bitCntrH == WORD_LEN_PLUS1) begin </font>
+200        <font color = "red">0/1     ==>            next_state = r_PARITY; // we've sampled all 8 bits</font>
+201        <font color = "red">0/1     ==>            shiftH = HI;</font>
+202                             end
+203                             else begin
+204        <font color = "red">0/1     ==>            next_state = r_SAMPLE;</font>
+205                             end
+206                           end 
+207                           else begin
+208        <font color = "red">0/1     ==>          next_state  = r_WAIT;</font>
+209        <font color = "red">0/1     ==>          cntr_resetH = LO;  // allow counter to tick </font>
+210                           end
+211                         end
+212                     
+213                         // 
+214                     	// SAMPLE
+215                     	// Sample the state of the RECEIVE data pin 
+216                        	//
+217                     	  r_SAMPLE: begin//100
+218        <font color = "red">0/1     ==>  		  shiftH = HI; // shift in the serial data</font>
+219        <font color = "red">0/1     ==>  		  countH = HI; // one more bit received</font>
+220        <font color = "red">0/1     ==>  		  next_state = r_WAIT;</font>
+221                     	  end	
+222                         
+223                         //
+224                         //x_PARITY   100
+225                         //Error detection
+226                         //
+227                         r_PARITY: begin
+228        <font color = "red">0/1     ==>        if (bitCell_cntrH == 4'hE) begin</font>
+229        <font color = "red">0/1     ==>          if (^par_dataH[7:0] == par_dataH[8]) //If the Exclusive-OR of data bits equals the expected value, then no error was detected.  Otherwise, an error is detected.</font>
+230        <font color = "red">0/1     ==>            parity_error = LO; // no error</font>
+231                             else 
+232        <font color = "red">0/1     ==>            parity_error = HI; </font>
+233        <font color = "red">0/1     ==>          next_state = r_STOP;</font>
+234                           end
+235                           else begin
+236        <font color = "red">0/1     ==>          next_state = r_PARITY; </font>
+237        <font color = "red">0/1     ==>          cntr_resetH = LO;</font>
+238                           end
+239                                 
+240                         end
+241                       
+242                         // 
+243                         // STOP
+244                         // make sure that we've seen the stop
+245                         // bit
+246                         //
+247                         r_STOP: begin//101
+248        <font color = "red">0/1     ==>  		  next_state = r_START;</font>
+249        <font color = "red">0/1     ==>  		  if (parity_error == 1'b1)  // \</font>
+250        <font color = "red">0/1     ==>  		    rec_readyInH = LO;       //  \ logic to discard write a data in case thereis parity error</font>
+251                     		  else                        ///
+252        <font color = "red">0/1     ==>  		    rec_readyInH = HI;       ///</font>
+253        <font color = "red">0/1     ==>        rstCountH = HI; </font>
+254                         end
+255                     
+256                         default: begin
+257        1/1                next_state  = r_START;
+258        1/1                cntr_resetH = X;
+259        1/1          	    shiftH      = X;
+260        1/1          	    countH      = X;
+261        1/1                rstCountH   = X;
+262        1/1                rec_readyInH  = X;
+263        1/1                parity_error = LO;
+264                         end
+265                       endcase
+266                     
+267                     end
+268                     
+269                     // register the state machine outputs
+270                     // to eliminate ciritical-path/glithces
+271                     always_ff @(posedge sys_clk or posedge sys_rst_l) begin
+272        1/1            if (sys_rst_l) 
+273        1/1              rec_readyH &lt;= 0;
+274        1/1            else if (flag_sincr)
+275        1/1              rec_readyH &lt;= rec_readyInH;
+                        MISSING_ELSE
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod28.html" >u_rec</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s3"><td class="lf">Conditions</td><td>3</td><td>1</td><td>33.33</td></tr>
+<tr class="s3"><td class="lf">Logical</td><td>3</td><td>1</td><td>33.33</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       109
+ EXPRESSION (shiftH &amp;&amp; flag_sincr)
+             ---1--    -----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod28.html" >u_rec</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s1">
+<td>Totals</td>
+<td class="rt">19</td>
+<td class="rt">2</td>
+<td class="rt">10.53 </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">88</td>
+<td class="rt">5</td>
+<td class="rt">5.68  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">44</td>
+<td class="rt">2</td>
+<td class="rt">4.55  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">44</td>
+<td class="rt">3</td>
+<td class="rt">6.82  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Ports</td>
+<td class="rt">6</td>
+<td class="rt">2</td>
+<td class="rt">33.33 </td>
+</tr><tr class="s1">
+<td>Port Bits</td>
+<td class="rt">26</td>
+<td class="rt">5</td>
+<td class="rt">19.23 </td>
+</tr><tr class="s1">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">13</td>
+<td class="rt">2</td>
+<td class="rt">15.38 </td>
+</tr><tr class="s2">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">13</td>
+<td class="rt">3</td>
+<td class="rt">23.08 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">13</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">62</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">31</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">31</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>sys_rst_l</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>sys_clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>flag_sincr</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>uart_dataH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rec_dataH[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rec_readyH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>next_state[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>state[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rec_datH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rec_datSyncH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bitCell_cntrH[3:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cntr_resetH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>par_dataH[8:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>shiftH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>recd_bitCntrH[3:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>countH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rstCountH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rec_readyInH</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>parity_error</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod28.html" >u_rec</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: state</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">6</td>
+<td class="rt">1</td>
+<td class="rt">16.67 </td>
+<td>(Not included in score)</td>
+</tr><tr class="s0">
+<td>Transitions</td>
+<td class="rt">11</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: state</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>r_START</td>
+<td class="rt">134</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_CENTER</td>
+<td class="rt">157</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_WAIT</td>
+<td class="rt">178</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_SAMPLE</td>
+<td class="rt">204</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_PARITY</td>
+<td class="rt">200</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_STOP</td>
+<td class="rt">233</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>r_START->r_CENTER</td>
+<td class="rt">157</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_CENTER->r_START</td>
+<td class="rt">134</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_CENTER->r_WAIT</td>
+<td class="rt">178</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_WAIT->r_START</td>
+<td class="rt">134</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_WAIT->r_SAMPLE</td>
+<td class="rt">204</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_WAIT->r_PARITY</td>
+<td class="rt">200</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_SAMPLE->r_START</td>
+<td class="rt">134</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_SAMPLE->r_WAIT</td>
+<td class="rt">220</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_PARITY->r_START</td>
+<td class="rt">134</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_PARITY->r_STOP</td>
+<td class="rt">233</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>r_STOP->r_START</td>
+<td class="rt">134</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod28.html" >u_rec</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Branches</td>
+<td></td>
+<td class="rt">36</td>
+<td class="rt">19</td>
+<td class="rt">52.78 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">80</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s7">
+<td>IF</td>
+<td class="rt">92</td>
+<td class="rt">4</td>
+<td class="rt">3</td>
+<td class="rt">75.00 </td>
+</tr><tr class="s6">
+<td>IF</td>
+<td class="rt">107</td>
+<td class="rt">3</td>
+<td class="rt">2</td>
+<td class="rt">66.67 </td>
+</tr><tr class="s6">
+<td>IF</td>
+<td class="rt">119</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">133</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s1">
+<td>CASE</td>
+<td class="rt">149</td>
+<td class="rt">15</td>
+<td class="rt">2</td>
+<td class="rt">13.33 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">272</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+80           if (sys_rst_l) begin
+             <font color = "green">-1-</font>  
+81              rec_datSyncH <= 1'b1;
+           <font color = "green">     ==></font>
+82              rec_datH     <= 1'b1;
+83           end 
+84           else if (flag_sincr)begin
+                  <font color = "green">-2-</font>  
+85              rec_datSyncH <= uart_dataH;
+           <font color = "green">     ==></font>
+86              rec_datH     <= rec_datSyncH;
+87           end
+             MISSING_ELSE
+           <font color = "green">  ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+92           if (sys_rst_l) 
+             <font color = "green">-1-</font>  
+93             bitCell_cntrH <= 0;
+           <font color = "green">    ==></font>
+94           else if (flag_sincr)begin
+                  <font color = "green">-2-</font>  
+95         	  if (cntr_resetH) 
+           	  <font color = "red">-3-</font>  
+96         		bitCell_cntrH <= 0;
+           <font color = "green">		==></font>
+97         	  else 
+98         		bitCell_cntrH <= bitCell_cntrH + 1;
+           <font color = "red">		==></font>
+99           end
+             MISSING_ELSE
+           <font color = "green">  ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+107          if (sys_rst_l) 
+             <font color = "green">-1-</font>  
+108            par_dataH <= 0;
+           <font color = "green">    ==></font>
+109          else if(shiftH && flag_sincr) begin                 //cuando esta activa en alto desplaza el dato una posición
+                  <font color = "red">-2-</font>     
+110            par_dataH[7:0] <= par_dataH[8:1];
+           <font color = "red">    ==></font>
+111            par_dataH[8]   <= rec_datH; // bit que va entrando al deserializador
+112          end
+             MISSING_ELSE
+           <font color = "green">  ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+119          if (sys_rst_l) 
+             <font color = "green">-1-</font>  
+120            recd_bitCntrH <= 0;
+           <font color = "green">    ==></font>
+121          else if (flag_sincr)begin
+                  <font color = "green">-2-</font>  
+122        	  if (countH) 
+           	  <font color = "red">-3-</font>  
+123        		recd_bitCntrH <= recd_bitCntrH + 1;
+           <font color = "red">		==></font>
+124        	  else if (rstCountH) 
+           	       <font color = "red">-4-</font>  
+125        		recd_bitCntrH <= 0;
+           <font color = "green">		==></font>
+           		MISSING_ELSE
+           <font color = "red">		==></font>
+126          end
+             MISSING_ELSE
+           <font color = "green">  ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+133          if (sys_rst_l) 
+             <font color = "green">-1-</font>  
+134            state <= r_START;
+           <font color = "green">    ==></font>
+135          else if (flag_sincr)
+                  <font color = "green">-2-</font>  
+136            state <= next_state;
+           <font color = "green">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+149          case (state)
+             <font color = "red">-1-</font>  
+150             
+151            //
+152            // START
+153            // Wait for the start bit
+154            // 
+155            r_START: begin //001
+156              if (~rec_datH ) begin
+                 <font color = "red">-2-</font>  
+157                next_state = r_CENTER; // bit de inicio 0
+           <font color = "red">        ==></font>
+158                //parity_error = LO;
+159              end 
+160              else begin 
+161                next_state = r_START;
+           <font color = "green">        ==></font>
+162                rstCountH  = HI; // place the bit counter in rst state
+163                //rec_readyInH = HI; // by default, we're ready ///######VERIFICAR
+164              end
+165            end
+166        
+167            //
+168        	// CENTER
+169        	// Find the center of the bit-cell 
+170        	// A bit cell is composed of 16 system-clock 
+171        	// ticks
+172        	//
+173            r_CENTER: begin //010
+174              if (bitCell_cntrH == 4'h4) begin
+                 <font color = "red">-3-</font>  
+175                // if after having waited 1/2 bit cell,
+176         	  // it is still 0, then it is a genuine start bit
+177                if (~rec_datH) begin
+                   <font color = "red">-4-</font>  
+178                  next_state = r_WAIT;
+           <font color = "red">          ==></font>
+179                  countH = HI;
+180                end   
+181        		 // otherwise, could have been a false noise
+182                else 
+183                  next_state = r_START;
+           <font color = "red">          ==></font>
+184              end 
+185              else begin
+186                next_state  = r_CENTER;
+           <font color = "red">        ==></font>
+187        	      cntr_resetH = LO;  // allow counter to tick          
+188              end
+189            end
+190        
+191        
+192            //
+193        	// WAIT
+194        	// Wait a bit-cell time before sampling the
+195        	// state of the data pin
+196        	//
+197        	  r_WAIT: begin //011
+198        		  if (bitCell_cntrH == 4'hE) begin
+           		  <font color = "red">-5-</font>  
+199                if (recd_bitCntrH == WORD_LEN_PLUS1) begin 
+                   <font color = "red">-6-</font>  
+200                  next_state = r_PARITY; // we've sampled all 8 bits
+           <font color = "red">          ==></font>
+201                  shiftH = HI;
+202                end
+203                else begin
+204                  next_state = r_SAMPLE;
+           <font color = "red">          ==></font>
+205                end
+206              end 
+207              else begin
+208                next_state  = r_WAIT;
+           <font color = "red">        ==></font>
+209                cntr_resetH = LO;  // allow counter to tick 
+210              end
+211            end
+212        
+213            // 
+214        	// SAMPLE
+215        	// Sample the state of the RECEIVE data pin 
+216           	//
+217        	  r_SAMPLE: begin//100
+218        		  shiftH = HI; // shift in the serial data
+           <font color = "red">		  ==></font>
+219        		  countH = HI; // one more bit received
+220        		  next_state = r_WAIT;
+221        	  end	
+222            
+223            //
+224            //x_PARITY   100
+225            //Error detection
+226            //
+227            r_PARITY: begin
+228              if (bitCell_cntrH == 4'hE) begin
+                 <font color = "red">-7-</font>  
+229                if (^par_dataH[7:0] == par_dataH[8]) //If the Exclusive-OR of data bits equals the expected value, then no error was detected.  Otherwise, an error is detected.
+                   <font color = "red">-8-</font>  
+230                  parity_error = LO; // no error
+           <font color = "red">          ==></font>
+231                else 
+232                  parity_error = HI; 
+           <font color = "red">          ==></font>
+233                next_state = r_STOP;
+234              end
+235              else begin
+236                next_state = r_PARITY; 
+           <font color = "red">        ==></font>
+237                cntr_resetH = LO;
+238              end
+239                    
+240            end
+241          
+242            // 
+243            // STOP
+244            // make sure that we've seen the stop
+245            // bit
+246            //
+247            r_STOP: begin//101
+248        		  next_state = r_START;
+249        		  if (parity_error == 1'b1)  // \
+           		  <font color = "red">-9-</font>  
+250        		    rec_readyInH = LO;       //  \ logic to discard write a data in case thereis parity error
+           <font color = "red">		    ==></font>
+251        		  else                        ///
+252        		    rec_readyInH = HI;       ///
+           <font color = "red">		    ==></font>
+253              rstCountH = HI; 
+254            end
+255        
+256            default: begin
+257              next_state  = r_START;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>-9-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>r_START </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>r_START </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_CENTER </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_CENTER </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_CENTER </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_WAIT </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_WAIT </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_WAIT </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_SAMPLE </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_PARITY </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_PARITY </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_PARITY </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_STOP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>r_STOP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+272          if (sys_rst_l) 
+             <font color = "green">-1-</font>  
+273            rec_readyH <= 0;
+           <font color = "green">    ==></font>
+274          else if (flag_sincr)
+                  <font color = "green">-2-</font>  
+275            rec_readyH <= rec_readyInH;
+           <font color = "green">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_3013">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_u_rec">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

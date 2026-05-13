@@ -1,0 +1,139 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Tue Oct  2 12:49:07 2018
+****************************************
+
+Information: Some cells in the design are using inferred operating conditions.
+
+  Startpoint: top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_GPIO/q_reg
+              (positive level-sensitive latch clocked by CLK)
+  Endpoint: top_riscv_soc/TOP/pc_reg_12_
+            (rising edge-triggered flip-flop clocked by CLK')
+  Path Group: CLK
+  Path Type: max
+
+  Point                                       Fanout       Cap     Trans      Incr       Path      Voltage
+  --------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00      
+  clock network delay (ideal)                                                 1.00       1.00      
+  time given to startpoint                                                   24.50      25.50      
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_GPIO/q_reg/D (DLHRQHDLLX1)
+                                                                    0.12      0.00      25.50 f    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_GPIO/q_reg/Q (DLHRQHDLLX1)
+                                                                    0.12      0.51      26.01 f    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_GPIO/q (net)
+                                                2         0.01                0.00      26.01 f    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_GPIO/q (latch_282)
+                                                                              0.00      26.01 f    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Q_GPIO[1] (net)      0.01                0.00      26.01 f    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_tristategate_lectura_normal/input_x (tristategate_358)
+                                                                              0.00      26.01 f    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_tristategate_lectura_normal/input_x (net)
+                                                          0.01                0.00      26.01 f    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_tristategate_lectura_normal/output_x_tri/A (BTHHDLLX2)
+                                                                    0.12      0.00      26.01 f    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_tristategate_lectura_normal/output_x_tri/Q (BTHHDLLX2)
+                                                                    0.29      0.57      26.58 f    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_tristategate_lectura_normal/output_x (net)
+                                                3         0.08                0.00      26.58 f    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_tristategate_lectura_normal/output_x (tristategate_358)
+                                                                              0.00      26.58 f    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Dout1[1] (net)       0.08                0.00      26.58 f    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Dout1[1] (csr_file_width32_number_reg12)
+                                                                              0.00      26.58 f    
+  top_riscv_soc/TOP/Reg_file/CSR[1] (net)                 0.08                0.00      26.58 f    
+  top_riscv_soc/TOP/Reg_file/CSR[1] (Banco_registros_latches)                 0.00      26.58 f    
+  top_riscv_soc/TOP/CSR[1] (net)                          0.08                0.00      26.58 f    
+  top_riscv_soc/TOP/U480/C (AO222HDLLX1)                            0.29      0.00      26.58 f    1.80
+  top_riscv_soc/TOP/U480/Q (AO222HDLLX1)                            0.45      1.25      27.83 f    1.80
+  top_riscv_soc/TOP/alu_b[1] (net)             14         0.10                0.00      27.83 f    
+  top_riscv_soc/TOP/Alu/B[1] (ALU_2_bits_size32_cntrl_size4)                  0.00      27.83 f    
+  top_riscv_soc/TOP/Alu/B[1] (net)                        0.10                0.00      27.83 f    
+  top_riscv_soc/TOP/Alu/inst_BS/B[1] (Barrel_Shifter)                         0.00      27.83 f    
+  top_riscv_soc/TOP/Alu/inst_BS/B[1] (net)                0.10                0.00      27.83 f    
+  top_riscv_soc/TOP/Alu/inst_BS/U8/B (NO2HDLLX1)                    0.45      0.00      27.83 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U8/Q (NO2HDLLX1)                    0.71      0.68      28.51 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n50 (net)       5         0.04                0.00      28.51 r    
+  top_riscv_soc/TOP/Alu/inst_BS/U15/A (INHDLLX1)                    0.71      0.00      28.51 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U15/Q (INHDLLX1)                    0.28      0.35      28.86 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n78 (net)       4         0.03                0.00      28.86 f    
+  top_riscv_soc/TOP/Alu/inst_BS/U16/A (NO2HDLLX1)                   0.28      0.00      28.86 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U16/Q (NO2HDLLX1)                   0.49      0.46      29.32 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n53 (net)       3         0.03                0.00      29.32 r    
+  top_riscv_soc/TOP/Alu/inst_BS/U17/A (INHDLLX1)                    0.49      0.00      29.32 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U17/Q (INHDLLX1)                    0.29      0.36      29.68 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n81 (net)       5         0.04                0.00      29.68 f    
+  top_riscv_soc/TOP/Alu/inst_BS/U18/B (NO2HDLLX1)                   0.29      0.00      29.68 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U18/Q (NO2HDLLX1)                   0.47      0.45      30.13 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n1 (net)        3         0.03                0.00      30.13 r    
+  top_riscv_soc/TOP/Alu/inst_BS/U19/C (AN21HDLLX1)                  0.47      0.00      30.13 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U19/Q (AN21HDLLX1)                  0.31      0.26      30.40 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n67 (net)       4         0.03                0.00      30.40 f    
+  top_riscv_soc/TOP/Alu/inst_BS/U20/C (AN22HDLLX1)                  0.31      0.00      30.40 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U20/Q (AN22HDLLX1)                  1.06      0.94      31.33 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n123 (net)      5         0.07                0.00      31.33 r    
+  top_riscv_soc/TOP/Alu/inst_BS/U163/A (INHDLLX1)                   1.06      0.00      31.33 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U163/Q (INHDLLX1)                   0.47      0.57      31.90 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n120 (net)      4         0.06                0.00      31.90 f    
+  top_riscv_soc/TOP/Alu/inst_BS/U170/A (NO2HDLLX1)                  0.47      0.00      31.90 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U170/Q (NO2HDLLX1)                  3.79      3.05      34.95 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/n136 (net)     32         0.26                0.00      34.95 r    
+  top_riscv_soc/TOP/Alu/inst_BS/genblk4_20__inst_buffer_s/enable (tristate_buffer_2)
+                                                                              0.00      34.95 r    
+  top_riscv_soc/TOP/Alu/inst_BS/genblk4_20__inst_buffer_s/enable (net)
+                                                          0.26                0.00      34.95 r    
+  top_riscv_soc/TOP/Alu/inst_BS/genblk4_20__inst_buffer_s/output_x_tri_12_/E (BTHHDLLX2)
+                                                                    3.79      0.00      34.95 r    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/genblk4_20__inst_buffer_s/output_x_tri_12_/Q (BTHHDLLX2)
+                                                                    0.20      1.56      36.51 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/genblk4_20__inst_buffer_s/output_x[12] (net)
+                                                1         0.05                0.00      36.51 f    
+  top_riscv_soc/TOP/Alu/inst_BS/genblk4_20__inst_buffer_s/output_x[12] (tristate_buffer_2)
+                                                                              0.00      36.51 f    
+  top_riscv_soc/TOP/Alu/inst_BS/out_x_0__12_ (net)        0.05                0.00      36.51 f    
+  top_riscv_soc/TOP/Alu/inst_BS/U98/IN0 (MU2HDLLX1)                 0.20      0.00      36.51 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/U98/Q (MU2HDLLX1)                   0.09      0.44      36.95 f    1.80
+  top_riscv_soc/TOP/Alu/inst_BS/Y[12] (net)     1         0.01                0.00      36.95 f    
+  top_riscv_soc/TOP/Alu/inst_BS/Y[12] (Barrel_Shifter)                        0.00      36.95 f    
+  top_riscv_soc/TOP/Alu/final_shift[12] (net)             0.01                0.00      36.95 f    
+  top_riscv_soc/TOP/Alu/U422/C (AN22HDLLX1)                         0.09      0.00      36.95 f    1.80
+  top_riscv_soc/TOP/Alu/U422/Q (AN22HDLLX1)                         0.30      0.20      37.15 r    1.80
+  top_riscv_soc/TOP/Alu/n360 (net)              1         0.00                0.00      37.15 r    
+  top_riscv_soc/TOP/Alu/U424/C (OA211HDLLX1)                        0.30      0.00      37.15 r    1.80
+  top_riscv_soc/TOP/Alu/U424/Q (OA211HDLLX1)                        0.19      0.46      37.61 r    1.80
+  top_riscv_soc/TOP/Alu/n363 (net)              2         0.02                0.00      37.61 r    
+  top_riscv_soc/TOP/Alu/U425/B (AN32HDLLX1)                         0.19      0.00      37.61 r    1.80
+  top_riscv_soc/TOP/Alu/U425/Q (AN32HDLLX1)                         0.37      0.30      37.90 f    1.80
+  top_riscv_soc/TOP/Alu/OUT[12] (net)           3         0.02                0.00      37.90 f    
+  top_riscv_soc/TOP/Alu/OUT[12] (ALU_2_bits_size32_cntrl_size4)               0.00      37.90 f    
+  top_riscv_soc/TOP/alu_out[12] (net)                     0.02                0.00      37.90 f    
+  top_riscv_soc/TOP/U503/C (AO222HDLLX1)                            0.37      0.00      37.90 f    1.80
+  top_riscv_soc/TOP/U503/Q (AO222HDLLX1)                            0.13      0.86      38.76 f    1.80
+  top_riscv_soc/TOP/pc_pre[12] (net)            1         0.01                0.00      38.76 f    
+  top_riscv_soc/TOP/pc_reg_12_/D (DFRRQHDLLX0)                      0.13      0.00      38.76 f    1.80
+  data arrival time                                                                     38.76      
+
+  clock CLK' (rise edge)                                                     25.00      25.00      
+  clock network delay (ideal)                                                 1.00      26.00      
+  clock uncertainty                                                          -0.10      25.90      
+  top_riscv_soc/TOP/pc_reg_12_/C (DFRRQHDLLX0)                                0.00      25.90 r    
+  library setup time                                                         -0.43      25.47      
+  data required time                                                                    25.47      
+  --------------------------------------------------------------------------------------------------------
+  data required time                                                                    25.47      
+  data arrival time                                                                    -38.76      
+  --------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                     -13.29      
+
+
+1

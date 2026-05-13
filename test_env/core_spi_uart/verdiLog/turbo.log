@@ -1,0 +1,9 @@
+Command Line: /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/platform/LINUXAMD64/bin/Novas -i -simflow -simBin ./simv -simDelim -cm line+cond+fsm+tgl+assert+branch+property_path -cm_name test +TESTNAME=test
+uname(Linux redhat003 4.18.0-553.36.1.el8_10.x86_64 #1 SMP Fri Jan 10 05:56:06 EST 2025 x86_64)
+type= DS_SCOPE element= 1 field= 1
+VERILOG topcore_tb
+VERILOG uut
+-----
+second field= DebussyLib
+third field= topcore_tecriscv
+au time 54074.045681 679.864696 486.885977 delta 283484160 283484160 total 772136960 772136960

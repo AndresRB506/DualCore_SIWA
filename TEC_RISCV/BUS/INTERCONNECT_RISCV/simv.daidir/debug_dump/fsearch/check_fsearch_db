@@ -1,0 +1,14 @@
+#!/bin/sh -h 
+dir_name=`dirname $0`
+if [ "${dir_name}" = "." ]; then
+    cd $dir_name
+    dir_name=`pwd`
+fi
+if [ -d $dir_name/../../../../../../../../../.. ]; then
+    cd $dir_name/../../../../../../../../../..
+fi
+if [ -f /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/INTERCONEXIONES/BACKUP/INTERCONNECT_RISCV/simv.daidir/debug_dump/fsearch/.create_fsearch_db ]; then
+    if [ ! -f /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/INTERCONEXIONES/BACKUP/INTERCONNECT_RISCV/simv.daidir/debug_dump/fsearch/fsearch.db ]; then
+        /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/INTERCONEXIONES/BACKUP/INTERCONNECT_RISCV/simv.daidir/debug_dump/fsearch/.create_fsearch_db
+    fi
+fi

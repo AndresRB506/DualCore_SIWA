@@ -1,0 +1,93 @@
+##################################################################################
+# Title:        Tec_Riscv_pads_constraints.tcl 
+# Library:	XFAB-180nm
+# Project:	RISC-V
+# Institution:	Instituto Tecnologico de Costa Rica. DCILab.
+#
+###################################################################################
+#create a collection of all the clock nets
+set ALL_IN_EX_CLK_NAME [remove_from_collection [all_inputs] [get_ports clk]]
+{reset MISO RX_UART maip Reg_GPIO_int[7] Reg_GPIO_int[6] Reg_GPIO_int[5] Reg_GPIO_int[4] Reg_GPIO_int[3] Reg_GPIO_int[2] Reg_GPIO_int[1] Reg_GPIO_int[0]}
+#create a collection of all outputs
+set ALL_OUT_NAME [all_outputs]
+{MOSI SCLK SCS TX_UART full_range_level_shifter[7] full_range_level_shifter[6] full_range_level_shifter[5] full_range_level_shifter[4] full_range_level_shifter[3] full_range_level_shifter[2] full_range_level_shifter[1] full_range_level_shifter[0] IS_Val[31] IS_Val[30] IS_Val[29] IS_Val[28] IS_Val[27] IS_Val[26] IS_Val[25] IS_Val[24] IS_Val[23] IS_Val[22] IS_Val[21] IS_Val[20] IS_Val[19] IS_Val[18] IS_Val[17] IS_Val[16] IS_Val[15] IS_Val[14] IS_Val[13] IS_Val[12] IS_Val[11] IS_Val[10] IS_Val[9] IS_Val[8] IS_Val[7] IS_Val[6] IS_Val[5] IS_Val[4] IS_Val[3] IS_Val[2] IS_Val[1] IS_Val[0] IS_Config[31] IS_Config[30] IS_Config[29] IS_Config[28] IS_Config[27] IS_Config[26] IS_Config[25] IS_Config[24] IS_Config[23] IS_Config[22] IS_Config[21] IS_Config[20] IS_Config[19] IS_Config[18] IS_Config[17] IS_Config[16] IS_Config[15] IS_Config[14] IS_Config[13] IS_Config[12] IS_Config[11] IS_Config[10] IS_Config[9] IS_Config[8] IS_Config[7] IS_Config[6] IS_Config[5] IS_Config[4] IS_Config[3] IS_Config[2] IS_Config[1] IS_Config[0] IS_Trigger[3] IS_Trigger[2] IS_Trigger[1] IS_Trigger[0] Reg_GPIO_en[7] Reg_GPIO_en[6] Reg_GPIO_en[5] Reg_GPIO_en[4] Reg_GPIO_en[3] Reg_GPIO_en[2] Reg_GPIO_en[1] Reg_GPIO_en[0] Reg_GPIO_out[7] Reg_GPIO_out[6] Reg_GPIO_out[5] Reg_GPIO_out[4] Reg_GPIO_out[3] Reg_GPIO_out[2] Reg_GPIO_out[1] Reg_GPIO_out[0]}
+#name of the library characterization to be used 1.8V 25°C
+# Inputs and outputs are the same pads for now
+# Luego l o mejoramos para los que irán a level shifters
+# Create a clock with a period in ns
+set CLK_PER 50
+50
+create_clock -period $CLK_PER -name CLK [get_ports clk]
+1
+set_clock_uncertainty -setup 1 [get_clocks CLK]
+1
+set_clock_uncertainty -hold 1 [get_clocks CLK]
+1
+set_clock_transition 0.1 [get_clocks CLK]
+1
+#set_clock_latency -source 2 [get_clocks CLK]
+set_clock_latency 1 [get_clocks CLK]
+1
+# Configuración de las redes de propagación de reloj y reset
+set_dont_touch_network [get_clocks CLK]
+1
+#set_dont_touch_network [get_ports reset]
+# Configuración del retardo de las sañales de entrada, excepto el reloj
+set_input_delay -max [expr $CLK_PER * 0.4] -clock CLK [remove_from_collection [all_inputs] [get_ports clk]]
+1
+set_input_delay -min 0.1 -clock CLK [remove_from_collection [all_inputs] [get_ports clk]]
+1
+# Configuración del retardo de las sañales de salida, excepto el reloj
+set_output_delay -max [expr $CLK_PER * 0.4] -clock CLK [ all_outputs ] 
+1
+set_output_delay -min -0.1 -clock CLK [ all_outputs ]
+1
+#Cargas que suponemos nos manejan y a quien manejamos (los PADS y salidas LS al bloque de la UCU )
+set DRIVING_CELL "ICF";
+ICF
+set DRIVE_PIN "$LIB_NAME_PADS/$DRIVING_CELL/Y";
+IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C/ICF/Y
+set OUTPUT_CELL "BT2SF";
+BT2SF
+set OUTPUT_CELL_PORT_NAME "A";
+A
+#Carga que suponemos deben manejarse a partir de los puertos de entrada
+set INPUT_CELL "INHDLLX2";
+INHDLLX2
+set INPUT_CELL_DRIVE_NAME "A" ;
+A
+# Configuración de la celda que maneja todos los puertos de entrada
+set_driving_cell -lib_cell $DRIVING_CELL -library $LIB_NAME_PADS  [remove_from_collection [all_inputs] [get_ports clk]]
+1
+#Suponemos a la entrada que no se podran manejar mas de 10 puertos A de un INVHDLL2X
+set MAX_LOAD_IN [expr [load_of $LIB_NAME_STD_CELLS/$INPUT_CELL/$INPUT_CELL_DRIVE_NAME] * 10]
+0.09887
+set_max_capacitance $MAX_LOAD_IN  [remove_from_collection [all_inputs] [get_ports clk]]
+1
+#Cada sennal solo deberia manejar un pad o un LS
+set MAX_LOAD_OUT [expr [load_of $LIB_NAME_PADS/$OUTPUT_CELL/$OUTPUT_CELL_PORT_NAME] * 1]
+0.02433
+set_load [expr $MAX_LOAD_OUT *1 ] [ all_outputs ]
+1
+#Encontramos la maxima transicion en nuestra driving cell y ajustamos la maxima carga que puede colocar el DC
+set MAX_TRANS [get_attribute $DRIVE_PIN max_transition]; 
+2.851940
+set CONSERVATIVE_MAX_TRANS [expr $MAX_TRANS / 2.0];
+1.42597
+set_max_transition $CONSERVATIVE_MAX_TRANS [remove_from_collection [all_inputs] [get_ports clk]]; 
+1
+## No restrinjamos a la herramientas
+#set_max_fanout 10 $current_design
+#set_operating_conditions -library $LIB_NAME_PADS typ_3_30V_3_30V_25C
+#characterize -constraints -verbose [get_cells *_pad_inst]
+# Configuracion de las condiciones de operacion
+set_operating_conditions TYPICAL -library $LIB_NAME_STD_CELLS
+Using operating conditions 'TYPICAL' found in library 'D_CELLS_HDLL_LPMOS_typ_1_80V_25C'.
+1
+if {![shell_is_in_topographical_mode]} {
+	set_wire_load_model -name 1k -library $LIB_NAME;
+	set_wire_load_mode top;
+}
+if {![shell_is_in_topographical_mode]} {
+	set_switching_activity -toggle_rate 0.25 -static_probability 0.5 -base_clock clk [remove_from_collection [all_inputs] [get_ports clk]];
+}

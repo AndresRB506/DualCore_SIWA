@@ -1,0 +1,1352 @@
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00000000000000000000000000000000
+El dato B es= 00000000000000000000000000000000
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11011110011010101110110010011100
+El dato B es= 01110011010111101000110000000011
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Prueba AND
+El dato A es= 10101010011010000011001110101111
+El dato B es= 11100110100000111111101111001101
+El valor de Negative= 1
+El valor del Resultado= 10100010000000000011001110001101
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10110110011101010000100110100110
+El dato B es= 10000011000000101101011110111011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 00011101101001111100000100111111
+El dato B es= 11000011100111110110001000010100
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 10111111010010100111010001110111
+El dato B es= 10001000001011110101000101111010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Equal
+El dato A es= 01111110001111111001011100100110
+El dato B es= 11110010010110000101111100011110
+El valor de Zero es= 0
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 11100111100110101110100101001101
+El dato B es= 10001011100001101110011000110010
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU
+ 
+Prueba Greater
+El dato A es= 00011001100001011011110000010001
+El dato B es= 11101111000010000101010010001011
+El valor de Zero es= 1
+---------------------------
+Pruebas de funcionamiento de la ALU
+Pruebas de funcionamiento de la ALU

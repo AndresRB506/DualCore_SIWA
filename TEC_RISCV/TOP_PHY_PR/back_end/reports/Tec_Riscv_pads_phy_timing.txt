@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Wed Mar 27 16:18:18 2019
+****************************************
+
+ * Some/all delay information is back-annotated.
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 25/25/25
+
+Information: Percent of Arnoldi-based delays = 27.66%
+
+  Startpoint: top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q_reg
+              (positive level-sensitive latch clocked by CLK')
+  Endpoint: top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/q_reg
+            (positive level-sensitive latch clocked by CLK')
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock CLK' (rise edge)                                 25.00      25.00      
+  clock network delay (propagated)                        2.48      27.48      
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q_reg/G (DLHRQHDLLX0)
+                                                          0.00      27.48 r    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q_reg/Q (DLHRQHDLLX0)
+                                                          1.99      29.47 r    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q (latch_240)
+                                                          0.00      29.47 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/Out_latch (latch_tri_rst0_Hard_116)
+                                                          0.00      29.47 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/U68/Q (MU2HDLLX0)
+                                                          0.78 &    30.25 r    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/In (latch_tri_rst0_Hard_108)
+                                                          0.00      30.25 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/d (latch_138)
+                                                          0.00      30.25 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/q_reg/D (DLHRQHDLLX0)
+                                                          0.00 &    30.25 r    1.80
+  data arrival time                                                 30.25      
+
+  clock CLK' (rise edge)                                 25.00      25.00      
+  clock network delay (propagated)                        2.45      27.45      
+  clock uncertainty                                      -0.10      27.35      
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/q_reg/G (DLHRQHDLLX0)
+                                                          0.00      27.35 r    
+  time borrowed from endpoint                             2.90      30.25      
+  data required time                                                30.25      
+  ------------------------------------------------------------------------------------
+  data required time                                                30.25      
+  data arrival time                                                -30.25      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00      
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  CLK' nominal pulse width                               25.00                 
+  clock latency difference                               -0.19                 
+  library setup time                                     -0.09                 
+  --------------------------------------------------------------
+  max time borrow                                        24.72                 
+  --------------------------------------------------------------
+  actual time borrow                                      2.90                 
+  clock uncertainty                                      -0.10                 
+  --------------------------------------------------------------
+  time given to startpoint                                2.80                 
+  --------------------------------------------------------------
+
+
+1

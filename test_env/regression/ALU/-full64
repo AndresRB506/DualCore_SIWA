@@ -1,0 +1,25 @@
+Command: vcs -l -full64 -ova_cov -cm line+cond+fsm+tgl+path+assert+branch+property_path \
+-cm_pp -cm_report unencrypted_hierarchies+svpackages+noinitial -lca -debug_all -timescale=1ns/1ns \
++vcs+flush+all +warn=all -debug_access+r -sverilog +incdir+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/uvm.sv \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/dpi/uvm_dpi.cc \
+-CFLAGS -DVCS design.sv testbench.sv
+                         Chronologic VCS (TM)
+      Version M-2017.03-SP2-5_Full64 -- Mon Nov  5 12:00:03 2018
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+

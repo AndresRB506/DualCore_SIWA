@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+cp -r ../../../BUS_Micro/ .
+cp -r ../../../DECO_INSTR/ .
+cp -r ../../../FIFO_Latches/ .
+cp -r ../../../MBC/ .
+cp -r ../../../Register_File/ .
+cp -r ../../../SPI/ .
+cp -r ../../../UART/ .
+cp -r ../../../TOP/ .
+cp -r ../../../TOPCORE/ .
+=======
+rm -v Tec_Riscv_pads_syn.v;
+rm -rvf ../reports/*;
+rm -rvf ../libs/Tec_Riscv_pads.mw;
+rm -rvf ../db/Tec_Riscv_pads*;
+rm -rvf ../work/*;
+rm -rvf BUS_Micro;
+rm -rvf DECO_INSTR;
+rm -rvf FIFO_Latches;
+rm -rvf MBC;
+rm -rvf Register_File;
+rm -rvf SPI;
+rm -rvf UART;
+rm -rvf TOP;
+cp -rvf ../../../BUS_Micro .;
+cp -rvf ../../../DECO_INSTR .;
+cp -rvf ../../../FIFO_Latches .;
+cp -rvf ../../../MBC .;
+cp -rvf ../../../Register_File .;
+cp -rvf ../../../SPI .;
+cp -rvf ../../../UART .;
+cp -rvf ../../../TOP .;
+sed -i 's:`include "\.\./TOP/XSPRAMLP://`include "\.\./TOP/XSPRAMLP:' TOP/TecRiscv_top_CPU.sv;
+>>>>>>> upstream/master

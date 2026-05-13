@@ -1,0 +1,110 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = FALSE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 3
+VerdiVersion = Verdi_U-2023.03-SP2
+[KeyNote]
+Line1 = invoke directory: /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src
+Line2 = command line: -elab ./salida.daidir/kdb.elab++ -ba 
+Line3 = current trace scope: test_base.env_inst.inst_cov_collector.write
+Line4 = memo:
+Line5 = Save Open Database Information: No
+Line6 = Path Option: Absolute Paths
+Line7 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = TRUE
+powerDumped = 0
+breakpoint_count = 5
+BP1 = stop -line 65 -file /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh
+BP2 = stop -line 66 -file /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh
+BP3 = stop -line 67 -file /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh
+BP4 = stop -line 52 -file /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/Monitor_cov.svh
+BP5 = stop -line 57 -file /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/Monitor_cov.svh
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+postSimFile = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter.fsdb
+syncTime = 746955000
+viewport = 48 157 1440 752 0 0 314 1918
+activeNode = "test_base.env_inst.inst_cov_collector.write"
+activeScope = "test_base.env_inst.inst_cov_collector.write"
+activeFile = "coverage_classes.svh#inc___vcs_unit__1__198#"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 10
+baMode = True
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = True
+SourceVerticalScrollLines = 5
+Scope1 = "test_base.env_inst.inst_cov_collector.write"
+Scope2 = "tb_top.dut_wr.uut.TOP.Deco"
+Scope3 = "test_base.env_inst.agent_cov.monitor_inst.Backdoor_access"
+Scope4 = "uvm_pkg"
+Scope5 = "uvm_custom_install_verdi_recording.retrieve_reg_map_info._reg.configure.blk_parent.add_reg.rg.get_offset.map.do_print.regs.get_rights.map.Xinit_address_mapX.unnamed$$_2.rg_.get_default_map.unnamed$$_0.map.get_reg_map_info.rg.get_local_map.map.get_register\
+s.regs.do_print.f.get_access.map.m_adapter.m_item.local_map.m_regs_by_offset.get_fields.fields.convert2string.reg_.add_field.field.configure.parent.m_fields.__m_uvm_field_automation.unnamed$$_0.local_data__.create.tmp.m_parent.XatomicX"
+Scope6 = "test_base.env_inst.inst_cov_collector"
+Scope7 = "test_base.env_inst.inst_cov_collector.inst"
+Scope8 = "fifo_flops"
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-simflow" "-dbdir" "./salida.daidir" 
+invokeDir = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src
+[hb.sourceTab.1]
+scope = test_base.env_inst.inst_cov_collector.write
+File = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/coverage_classes.svh#inc___vcs_unit__1__198#
+Line = 11
+[nMemoryManager]
+WaveformFile = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 25 1233 255 349 124
+primaryWindow = TRUE
+SessionFile = /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/support/Sessions/Coverage.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
+fsaRegMask = TRUE
+fsaCoreMask = TRUE
+fsaSfsmMask = TRUE
+fsaEcrMask = TRUE
+tPropMask = TRUE

@@ -1,0 +1,3278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: mbc</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_mbc'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_mbc')">mbc</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s4 cl rt"> 46.00</td>
+<td class="s5 cl rt"><a href="mod78.html#Line" > 53.26</a></td>
+<td class="s5 cl rt"><a href="mod78.html#Cond" > 57.50</a></td>
+<td class="s3 cl rt"><a href="mod78.html#Toggle" > 38.49</a></td>
+<td class="s2 cl rt"><a href="mod78.html#FSM" > 24.49</a></td>
+<td class="s5 cl rt"><a href="mod78.html#Branch" > 56.25</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../MBC/MBC.sv')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../MBC/MBC.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod78.html#inst_tag_6817"  onclick="showContent('inst_tag_6817')">topcore_tb.uut.TOP.Memory_controller</a></td>
+<td class="s4 cl rt"> 46.00</td>
+<td class="s5 cl rt"><a href="mod78.html#Line" > 53.26</a></td>
+<td class="s5 cl rt"><a href="mod78.html#Cond" > 57.50</a></td>
+<td class="s3 cl rt"><a href="mod78.html#Toggle" > 38.49</a></td>
+<td class="s2 cl rt"><a href="mod78.html#FSM" > 24.49</a></td>
+<td class="s5 cl rt"><a href="mod78.html#Branch" > 56.25</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_mbc'>
+<hr>
+<a name="inst_tag_6817"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_6817" >topcore_tb.uut.TOP.Memory_controller</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s4 cl rt"> 46.00</td>
+<td class="s5 cl rt"><a href="mod78.html#Line" > 53.26</a></td>
+<td class="s5 cl rt"><a href="mod78.html#Cond" > 57.50</a></td>
+<td class="s3 cl rt"><a href="mod78.html#Toggle" > 38.49</a></td>
+<td class="s2 cl rt"><a href="mod78.html#FSM" > 24.49</a></td>
+<td class="s5 cl rt"><a href="mod78.html#Branch" > 56.25</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s4 cl rt"> 42.23</td>
+<td class="s5 cl rt"> 52.21</td>
+<td class="s4 cl rt"> 44.23</td>
+<td class="s3 cl rt"> 39.77</td>
+<td class="s2 cl rt"> 24.49</td>
+<td class="s5 cl rt"> 50.45</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s4 cl rt"> 45.46</td>
+<td class="s5 cl rt"> 56.52</td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="s2 cl rt"> 28.80</td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"> 46.51</td>
+<td><a href="mod46.html#inst_tag_4220" >TOP</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod4.html#inst_tag_4" id="tag_urg_inst_4">mux_sel_rd</a></td>
+<td class="s2 cl rt"> 21.94</td>
+<td class="s2 cl rt"> 27.27</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s4 cl rt"> 47.14</td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"> 13.33</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_mbc'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod78.html" >mbc</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">TOTAL</td><td></td><td>261</td><td>139</td><td>53.26</td></tr>
+<tr class="s5"><td class="lf">ALWAYS</td><td>67</td><td>12</td><td>7</td><td>58.33</td></tr>
+<tr class="s3"><td class="lf">ALWAYS</td><td>115</td><td>9</td><td>3</td><td>33.33</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>182</td><td>4</td><td>4</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>240</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s5"><td class="lf">ALWAYS</td><td>248</td><td>23</td><td>12</td><td>52.17</td></tr>
+<tr class="s5"><td class="lf">ALWAYS</td><td>286</td><td>210</td><td>110</td><td>52.38</td></tr>
+</table>
+<pre class="code"><br clear=all>
+66                      always_comb begin
+67         1/1            case (cond_sel)// synopsys infer_mux
+68                          0: begin
+69         1/1                cond &lt;= keep_boot;
+70                          end
+71                          1: begin
+72         1/1                cond &lt;= finish_boot;
+73                          end
+74                          2: begin
+75         1/1                cond &lt;= pndng;
+76                          end
+77                          3: begin
+78         1/1                cond &lt;= enable;
+79                          end
+80                          4: begin
+81         <font color = "red">0/1     ==>        cond &lt;= error_adrs;</font>
+82                          end
+83                          5: begin
+84         <font color = "red">0/1     ==>        cond &lt;= HoB;</font>
+85                          end
+86                          6: begin
+87         <font color = "red">0/1     ==>        cond &lt;= r_w;</font>
+88                          end
+89                          7: begin
+90         <font color = "red">0/1     ==>        cond &lt;= to_io;</font>
+91                          end
+92                          8: begin
+93         1/1                cond &lt;= cln_rd;
+94                          end
+95                          9: begin
+96         <font color = "red">0/1     ==>        cond &lt;= cln_wd;</font>
+97                          end
+98                          default: begin
+99         1/1                cond &lt;= 3;
+100                         end
+101                       endcase
+102                     end
+103                     
+104                     // Logica para la memoria
+105                     logic boot;
+106                     logic [31:0] proc_write;
+107                     logic [31:0] d_read_pre;
+108                     logic ld_d_read;
+109                     assign clk_mem = ~clk&amp;~cen;
+110                     
+111                     assign a = (boot)?d_pop[33+max:34]:address[max-1:2];
+112                     assign d =(boot)?d_pop[31:0]:proc_write[31:0];
+113                     
+114                     always_comb begin
+115        1/1            case({b,h}) 
+116                         0: begin
+117        1/1                proc_write &lt;= d_write[31:0];
+118                         end
+119                         1: begin
+120        <font color = "red">0/1     ==>        proc_write &lt;= (address[1])?{d_write[15:0],d_read[15:0]}:{d_read[31:16],d_write[15:0]};</font>
+121                         end
+122                         2: begin
+123        <font color = "red">0/1     ==>        case(address[1:0])</font>
+124                             0:begin
+125        <font color = "red">0/1     ==>             proc_write &lt;= {d_read[31:8],d_write[7:0]};</font>
+126                             end
+127                             1:begin
+128        <font color = "red">0/1     ==>             proc_write &lt;= {d_read[31:16],d_write[7:0],d_read[7:0]};</font>
+129                             end
+130                             2:begin
+131        <font color = "red">0/1     ==>             proc_write &lt;= {d_read[31:24],d_write[7:0],d_read[15:0]};</font>
+132                             end
+133                             3:begin
+134        <font color = "red">0/1     ==>             proc_write &lt;= {d_write[7:0],d_read[23:0]};</font>
+135                             end
+                   <font color = "red">==>  MISSING_DEFAULT</font>
+136                           endcase
+137                         end
+138                         default : begin
+139        1/1                proc_write &lt;= 0;
+140                         end
+141                       endcase
+142                     end
+143                     
+144                     mux_rd mux_sel_rd (.b(b),.h(h),.rd_fll(rd_fll),.sign_ext(sign_ext),.d_read_pre(d_read_pre),.q(q),.address(address[1:0]));
+145                     //always_comb begin
+146                     //  case({{b&amp;~rd_fll},{h&amp;~rd_fll}})
+147                     //    0:begin
+148                     //      d_read_pre &lt;= q[31:0];
+149                     //    end
+150                     //    1:begin
+151                     //      if (~address[1])begin
+152                     //        d_read_pre &lt;= (sign_ext)?{{16{q[15]}},q[15:0]}:{{16{1'b0}},q[15:0]};
+153                     //      end else begin
+154                     //        d_read_pre &lt;= (sign_ext)?{{16{q[31]}},q[31:16]}:{{16{1'b0}},q[31:16]};
+155                     //      end
+156                     //    end
+157                     //    2:begin
+158                     //      case(address[1:0])
+159                     //        0: begin
+160                     //          d_read_pre &lt;= (sign_ext)?{{24{q[7]}},q[7:0]}:{{24{1'b0}},q[7:0]};
+161                     //        end
+162                     //        1: begin
+163                     //          d_read_pre &lt;= (sign_ext)?{{24{q[15]}},q[15:8]}:{{24{1'b0}},q[15:8]};
+164                     //        end
+165                     //        2: begin
+166                     //          d_read_pre &lt;= (sign_ext)?{{24{q[23]}},q[23:16]}:{{24{1'b0}},q[23:16]};
+167                     //        end
+168                     //        3: begin
+169                     //          d_read_pre &lt;= (sign_ext)?{{24{q[31]}},q[31:24]}:{{24{1'b0}},q[31:24]};
+170                     //        end
+171                     //      endcase
+172                     //    end
+173                     //    default: begin
+174                     //      d_read_pre &lt;= q[31:0];
+175                     //    end
+176                     //  endcase
+177                     //end
+178                     
+179                     //reg ld_d_read_clk;
+180                     assign ld_d_read_clk = ld_d_read &amp; ~clk;
+181                     always@(ld_d_read_clk or reset) begin
+182        1/1            if(reset) begin
+183        1/1              d_read &lt;=0;
+184                       end else begin
+185        1/1              if (ld_d_read)begin
+186        1/1                d_read &lt;= d_read_pre;
+187                         end
+                        MISSING_ELSE
+188                       end
+189                     end
+190                     
+191                     
+192                     parameter bt_init =5'd0;
+193                     parameter bt_psh =5'd4;
+194                     parameter bt_png =5'd6;
+195                     parameter bt_kp =5'd8;
+196                     parameter bt_wr =5'd9;
+197                     parameter bt_pop =5'd10;
+198                     parameter bt_fns =5'd11;
+199                     parameter cln_fifo =5'd19;
+200                     parameter mem_rdy_st =5'd1;
+201                     parameter mem_cln_rd =5'd3;
+202                     parameter mem_cln_wd =5'd7;
+203                     parameter mem_op0 =5'd12;
+204                     parameter mem_io =5'd13;
+205                     parameter mem_w_io =5'd14;
+206                     parameter mem_op1 =5'd15;
+207                     parameter mem_r0 =5'd2;
+208                     parameter mem_w0 =5'd16;
+209                     parameter mem_w1 =5'd5;
+210                     parameter mem_w2 =5'd17;
+211                     parameter mem_w3 =5'd20;
+212                     parameter mem_error =5'd18;
+213                     
+214                     //////////////////////////////////////////
+215                     // Lógica para el push de datos al bus //
+216                     /////////////////////////////////////////
+217                     
+218                     //always@(*) begin
+219                     //  case(address[24:23])
+220                     //    1:  d_psh[64:62] &lt;= 2;
+221                     //    0,2,3:  d_psh[64:62] &lt;= 1;
+222                     //  endcase
+223                     //end
+224                     assign d_psh[64:62] = (address[24:23] == 2'b01)? 2'b10:2'b01;
+225                     assign d_psh[61:60] = 0;
+226                     assign d_psh[59:57] = (boot)? 3'b111 :{~r_w,h,b};
+227                     assign d_psh[56:32] = address[24:0];
+228                     assign d_psh[31:0]  = d_write[31:0];
+229                     
+230                     ////////////////////////
+231                     // Máquina de estados //
+232                     ////////////////////////
+233                     
+234                     
+235                     // lógica de siguiente estado
+236                     reg [4:0] state;
+237                     reg [4:0] nxt_state;
+238                     
+239                     always@(posedge clk or posedge reset) begin
+240        1/1            if(reset)begin
+241        1/1              state &lt;= 0;
+242                       end else begin 
+243        1/1              state &lt;= nxt_state;
+244                       end
+245                     end
+246                     
+247                     always@(*) begin
+248        1/1              case(state)
+249        1/1                bt_init:      nxt_state &lt;= bt_psh;
+250        1/1                bt_psh:       nxt_state &lt;= bt_png;
+251        1/1                bt_png:       nxt_state &lt;= (cond)?bt_kp:bt_png;
+252        1/1                bt_kp:        nxt_state &lt;= (cond)?bt_wr:bt_fns;
+253        1/1                bt_wr:        nxt_state &lt;= bt_pop;
+254        1/1                bt_pop:       nxt_state &lt;= bt_psh;
+255        1/1                bt_fns:       nxt_state &lt;= (cond)?cln_fifo:bt_pop;
+256        1/1                cln_fifo:     nxt_state &lt;= mem_rdy_st;
+257        1/1                mem_rdy_st:      nxt_state &lt;= (cond)?mem_cln_rd:mem_rdy;
+258        1/1                mem_cln_rd:   nxt_state &lt;= (cond)?mem_r0:mem_cln_wd;
+259        <font color = "red">0/1     ==>        mem_cln_wd:   nxt_state &lt;= (cond)?mem_w1:mem_op0;</font>
+260        <font color = "red">0/1     ==>        mem_op0:      nxt_state &lt;= (cond)?mem_error:mem_io;</font>
+261        <font color = "red">0/1     ==>        mem_io:       nxt_state &lt;= (cond)?mem_w_io:mem_op1;</font>
+262        <font color = "red">0/1     ==>        mem_w_io:     nxt_state &lt;= mem_rdy_st;</font>
+263        <font color = "red">0/1     ==>        mem_op1:      nxt_state &lt;= (cond)?mem_r0:mem_w0;</font>
+264        1/1                mem_r0:       nxt_state &lt;= mem_rdy_st;
+265        <font color = "red">0/1     ==>        mem_w0:       nxt_state &lt;= (cond)?mem_w2:mem_w1;</font>
+266        <font color = "red">0/1     ==>        mem_w1:       nxt_state &lt;= mem_rdy_st;</font>
+267        <font color = "red">0/1     ==>        mem_w2:       nxt_state &lt;= mem_w3;</font>
+268        <font color = "red">0/1     ==>        mem_w3:       nxt_state &lt;= mem_w1;</font>
+269        <font color = "red">0/1     ==>        mem_error:    nxt_state &lt;= (cond)?mem_rdy_st:mem_error;</font>
+270        <font color = "red">0/1     ==>        default: nxt_state&lt;=bt_init;</font>
+271                         endcase
+272                     end
+273                     //lógica de salida
+274                     parameter s_keep_boot = 0;
+275                     parameter s_finish_boot = 1;
+276                     parameter s_pndng = 2;
+277                     parameter s_enable = 3;
+278                     parameter s_error_adrs = 4;
+279                     parameter s_HoB = 5;
+280                     parameter s_r_w = 6;
+281                     parameter s_to_io = 7;
+282                     parameter s_cln_rd = 8;
+283                     parameter s_cln_wd = 9;
+284                     
+285                     always_comb begin
+286        1/1            case(state)
+287                         bt_init: begin
+288        1/1                wen &lt;=1;
+289        1/1                cen &lt;=1;
+290        1/1                boot &lt;=1;
+291        1/1                ld_d_read &lt;=0;
+292        1/1                mem_rdy &lt;=0;
+293        1/1                pop_mbc &lt;=0;
+294        1/1                psh &lt;=0;
+295        1/1                error_drs&lt;=0;
+296        1/1                cond_sel &lt;=s_pndng;
+297        1/1                rd_fll &lt;=0;
+298                         end
+299                         bt_psh: begin 
+300        1/1                wen &lt;=1;
+301        1/1                cen &lt;=1;
+302        1/1                boot &lt;=1;
+303        1/1                ld_d_read &lt;=0;
+304        1/1                mem_rdy &lt;=0;
+305        1/1                pop_mbc &lt;=0;
+306        1/1                psh &lt;=1;
+307        1/1                error_drs &lt;=0;
+308        1/1                cond_sel &lt;=s_pndng;
+309        1/1                rd_fll &lt;=0;
+310                         end
+311                         bt_png: begin 
+312        1/1                wen&lt;=1;
+313        1/1                cen&lt;=1;
+314        1/1                boot&lt;=1;
+315        1/1                ld_d_read&lt;=0;
+316        1/1                mem_rdy&lt;=0;
+317        1/1                pop_mbc&lt;=0;
+318        1/1                psh&lt;=0;
+319        1/1                error_drs&lt;=0;
+320        1/1                cond_sel&lt;=s_pndng;
+321        1/1                rd_fll &lt;=0;
+322                         end
+323                         bt_kp: begin 
+324        1/1                wen&lt;=1;
+325        1/1                cen&lt;=1;
+326        1/1                boot&lt;=1;
+327        1/1                ld_d_read&lt;=0;
+328        1/1                mem_rdy&lt;=0;
+329        1/1                pop_mbc&lt;=0;
+330        1/1                psh&lt;=0;
+331        1/1                error_drs&lt;=0;
+332        1/1                cond_sel&lt;=s_keep_boot;
+333        1/1                rd_fll &lt;=0;
+334                         end
+335                         bt_wr: begin 
+336        1/1                wen&lt;=0;
+337        1/1                cen&lt;=0;
+338        1/1                boot&lt;=1;
+339        1/1                ld_d_read&lt;=0;
+340        1/1                mem_rdy&lt;=0;
+341        1/1                pop_mbc&lt;=0;
+342        1/1                psh&lt;=0;
+343        1/1                error_drs&lt;=0;
+344        1/1                cond_sel&lt;=s_pndng;
+345        1/1                rd_fll &lt;=0;
+346                         end
+347                         bt_pop: begin 
+348        1/1                wen&lt;=1;
+349        1/1                cen&lt;=1;
+350        1/1                boot&lt;=1;
+351        1/1                ld_d_read&lt;=0;
+352        1/1                mem_rdy&lt;=0;
+353        1/1                pop_mbc&lt;=1;
+354        1/1                psh&lt;=0;
+355        1/1                error_drs&lt;=0;
+356        1/1                cond_sel&lt;=s_pndng;
+357        1/1                rd_fll &lt;=0;
+358                         end
+359                         bt_fns: begin 
+360        1/1                wen&lt;=1;
+361        1/1                cen&lt;=1;
+362        1/1                boot&lt;=1;
+363        1/1                ld_d_read&lt;=0;
+364        1/1                mem_rdy&lt;=0;
+365        1/1                pop_mbc&lt;=0;
+366        1/1                psh&lt;=0;
+367        1/1                error_drs&lt;=0;
+368        1/1                cond_sel&lt;=s_finish_boot;
+369        1/1                rd_fll &lt;=0;
+370                         end
+371                         cln_fifo: begin 
+372        1/1                wen&lt;=1;
+373        1/1                cen&lt;=1;
+374        1/1                boot&lt;=1;
+375        1/1                ld_d_read&lt;=0;
+376        1/1                mem_rdy&lt;=0;
+377        1/1                pop_mbc&lt;=1;
+378        1/1                psh&lt;=0;
+379        1/1                error_drs&lt;=0;
+380        1/1                cond_sel&lt;=s_finish_boot;
+381        1/1                rd_fll &lt;=0;
+382                         end
+383                         mem_rdy_st: begin 
+384        1/1                wen&lt;=1;
+385        1/1                cen&lt;=1;
+386        1/1                boot&lt;=0;
+387        1/1                ld_d_read&lt;=0;
+388        1/1                mem_rdy&lt;=1;
+389        1/1                pop_mbc&lt;=0;
+390        1/1                psh&lt;=0;
+391        1/1                error_drs&lt;=0;
+392        1/1                cond_sel&lt;=s_enable;
+393                         end
+394                         mem_cln_rd: begin 
+395        1/1                wen&lt;=1;
+396        1/1                cen&lt;=1;
+397        1/1                boot&lt;=0;
+398        1/1                ld_d_read&lt;=0;
+399        1/1                mem_rdy&lt;=0;
+400        1/1                pop_mbc&lt;=0;
+401        1/1                psh&lt;=0;
+402        1/1                error_drs&lt;=0;
+403        1/1                cond_sel&lt;=s_cln_rd;
+404        1/1                rd_fll &lt;=0;
+405                         end
+406                         mem_cln_wd: begin 
+407        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+408        <font color = "red">0/1     ==>        cen&lt;=1;</font>
+409        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+410        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+411        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+412        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+413        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+414        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+415        <font color = "red">0/1     ==>        cond_sel&lt;=s_cln_wd;</font>
+416        <font color = "red">0/1     ==>        rd_fll &lt;=0;</font>
+417                         end
+418                         mem_op0: begin 
+419        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+420        <font color = "red">0/1     ==>        cen&lt;=1;</font>
+421        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+422        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+423        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+424        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+425        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+426        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+427        <font color = "red">0/1     ==>        cond_sel&lt;=s_error_adrs;</font>
+428        <font color = "red">0/1     ==>        rd_fll &lt;=0;</font>
+429                         end
+430                         mem_io: begin 
+431        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+432        <font color = "red">0/1     ==>        cen&lt;=1;</font>
+433        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+434        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+435        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+436        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+437        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+438        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+439        <font color = "red">0/1     ==>        cond_sel&lt;=s_to_io;</font>
+440        <font color = "red">0/1     ==>        rd_fll &lt;=0;</font>
+441                         end
+442                         mem_w_io: begin 
+443        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+444        <font color = "red">0/1     ==>        cen&lt;=1;</font>
+445        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+446        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+447        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+448        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+449        <font color = "red">0/1     ==>        psh&lt;=1;</font>
+450        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+451        <font color = "red">0/1     ==>        cond_sel&lt;=s_enable;</font>
+452        <font color = "red">0/1     ==>        rd_fll &lt;=0;</font>
+453                         end
+454                         mem_op1: begin 
+455        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+456        <font color = "red">0/1     ==>        cen&lt;=1;</font>
+457        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+458        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+459        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+460        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+461        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+462        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+463        <font color = "red">0/1     ==>        cond_sel&lt;=s_r_w;</font>
+464        <font color = "red">0/1     ==>        rd_fll &lt;=0;</font>
+465                         end
+466                         mem_r0: begin 
+467        1/1                wen&lt;=1;
+468        1/1                cen&lt;=0;
+469        1/1                boot&lt;=0;
+470        1/1                ld_d_read&lt;=1;
+471        1/1                mem_rdy&lt;=0;
+472        1/1                pop_mbc&lt;=0;
+473        1/1                psh&lt;=0;
+474        1/1                error_drs&lt;=0;
+475        1/1                cond_sel&lt;=s_enable;
+476        1/1                rd_fll &lt;=0;
+477                         end
+478                         mem_w0: begin 
+479        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+480        <font color = "red">0/1     ==>        cen&lt;=1;</font>
+481        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+482        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+483        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+484        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+485        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+486        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+487        <font color = "red">0/1     ==>        cond_sel&lt;=s_HoB;</font>
+488        <font color = "red">0/1     ==>        rd_fll &lt;=0;</font>
+489                         end
+490                         mem_w1: begin 
+491        <font color = "red">0/1     ==>        wen&lt;=0;</font>
+492        <font color = "red">0/1     ==>        cen&lt;=0;</font>
+493        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+494        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+495        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+496        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+497        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+498        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+499        <font color = "red">0/1     ==>        cond_sel&lt;=s_enable;</font>
+500        <font color = "red">0/1     ==>        rd_fll &lt;=0;</font>
+501                         end
+502                         mem_w2: begin 
+503        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+504        <font color = "red">0/1     ==>        cen&lt;=0;</font>
+505        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+506        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+507        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+508        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+509        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+510        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+511        <font color = "red">0/1     ==>        cond_sel&lt;=s_enable;</font>
+512        <font color = "red">0/1     ==>        rd_fll &lt;=1;</font>
+513                         end
+514                         mem_w3: begin 
+515        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+516        <font color = "red">0/1     ==>        cen&lt;=1;</font>
+517        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+518        <font color = "red">0/1     ==>        ld_d_read&lt;=1;</font>
+519        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+520        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+521        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+522        <font color = "red">0/1     ==>        error_drs&lt;=0;</font>
+523        <font color = "red">0/1     ==>        cond_sel&lt;=s_enable;</font>
+524        <font color = "red">0/1     ==>        rd_fll &lt;=1;</font>
+525                         end
+526                         mem_error: begin 
+527        <font color = "red">0/1     ==>        wen&lt;=1;</font>
+528        <font color = "red">0/1     ==>        cen&lt;=1;</font>
+529        <font color = "red">0/1     ==>        boot&lt;=0;</font>
+530        <font color = "red">0/1     ==>        ld_d_read&lt;=0;</font>
+531        <font color = "red">0/1     ==>        mem_rdy&lt;=0;</font>
+532        <font color = "red">0/1     ==>        pop_mbc&lt;=0;</font>
+533        <font color = "red">0/1     ==>        psh&lt;=0;</font>
+534        <font color = "red">0/1     ==>        error_drs&lt;=1;</font>
+535        <font color = "red">0/1     ==>        cond_sel&lt;=s_enable;</font>
+536        <font color = "red">0/1     ==>        rd_fll &lt;=0;</font>
+537                         end
+                        MISSING_DEFAULT
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod78.html" >mbc</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">Conditions</td><td>40</td><td>23</td><td>57.50</td></tr>
+<tr class="s5"><td class="lf">Logical</td><td>40</td><td>23</td><td>57.50</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       51
+ EXPRESSION ((address[24:23] == 2'b0) ? 0 : 1)
+             ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       52
+ EXPRESSION ((address[21:max] == 9'b0) ? 0 : 1)
+             ------------1------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       59
+ EXPRESSION ((d_pop[61:60] == 2'b1) ? 1 : 0)
+             -----------1----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       60
+ EXPRESSION ((d_pop[59:57] == 3'h3) ? 1 : 0)
+             -----------1----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       111
+ EXPRESSION (boot ? d_pop[(33 + max):34] : address[(max - 1):2])
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       112
+ EXPRESSION (boot ? d_pop[31:0] : proc_write[31:0])
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       120
+ EXPRESSION (address[1] ? ({d_write[15:0], d_read[15:0]}) : ({d_read[31:16], d_write[15:0]}))
+             -----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       224
+ EXPRESSION ((address[24:23] == 2'b1) ? 2'b10 : 2'b1)
+             ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       226
+ EXPRESSION (boot ? 3'b111 : ({(~r_w), h, b}))
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       251
+ EXPRESSION (cond ? bt_kp : bt_png)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       252
+ EXPRESSION (cond ? bt_wr : bt_fns)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       255
+ EXPRESSION (cond ? cln_fifo : bt_pop)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       257
+ EXPRESSION (cond ? mem_cln_rd : mem_rdy)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       258
+ EXPRESSION (cond ? mem_r0 : mem_cln_wd)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       259
+ EXPRESSION (cond ? mem_w1 : mem_op0)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       260
+ EXPRESSION (cond ? mem_error : mem_io)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       261
+ EXPRESSION (cond ? mem_w_io : mem_op1)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION (cond ? mem_r0 : mem_w0)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       265
+ EXPRESSION (cond ? mem_w2 : mem_w1)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       269
+ EXPRESSION (cond ? mem_rdy_st : mem_error)
+             --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod78.html" >mbc</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s3">
+<td>Totals</td>
+<td class="rt">48</td>
+<td class="rt">18</td>
+<td class="rt">37.50 </td>
+</tr><tr class="s3">
+<td>Total Bits</td>
+<td class="rt">808</td>
+<td class="rt">311</td>
+<td class="rt">38.49 </td>
+</tr><tr class="s3">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">404</td>
+<td class="rt">161</td>
+<td class="rt">39.85 </td>
+</tr><tr class="s3">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">404</td>
+<td class="rt">150</td>
+<td class="rt">37.13 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Ports</td>
+<td class="rt">24</td>
+<td class="rt">9</td>
+<td class="rt">37.50 </td>
+</tr><tr class="s3">
+<td>Port Bits</td>
+<td class="rt">614</td>
+<td class="rt">235</td>
+<td class="rt">38.27 </td>
+</tr><tr class="s3">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">307</td>
+<td class="rt">122</td>
+<td class="rt">39.74 </td>
+</tr><tr class="s3">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">307</td>
+<td class="rt">113</td>
+<td class="rt">36.81 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Signals</td>
+<td class="rt">24</td>
+<td class="rt">9</td>
+<td class="rt">37.50 </td>
+</tr><tr class="s3">
+<td>Signal Bits</td>
+<td class="rt">194</td>
+<td class="rt">76</td>
+<td class="rt">39.18 </td>
+</tr><tr class="s4">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">97</td>
+<td class="rt">39</td>
+<td class="rt">40.21 </td>
+</tr><tr class="s3">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">97</td>
+<td class="rt">37</td>
+<td class="rt">38.14 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>address[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>address[6:2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>address[7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>address[24:8]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_write[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>b</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>h</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>enable</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>r_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_pop[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[4:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[5]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[23:20]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q[31:24]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>sign_ext</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d_read[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[5]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[23:20]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_read[31:24]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>a[10:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_psh[33:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_psh[38:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_psh[39]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_psh[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_psh[59:57]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>d_psh[64:60]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>psh</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mem_rdy</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pop_mbc</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>error_drs</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>clk_mem</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>sl</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>wen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>cond</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>cond_sel[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>cond_sel[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cond_sel[3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>error_adrs</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bad_addrs</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>to_io</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>up_mem</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>mslgn</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>mh</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>mw</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cln_rd</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>keep_boot</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>spi</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>boot_end</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>finish_boot</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>HoB</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cln_wd</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rd_fll</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>boot</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>proc_write[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>d_read_pre[4:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>d_read_pre[5]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>d_read_pre[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>d_read_pre[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>d_read_pre[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>d_read_pre[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>d_read_pre[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>d_read_pre[23:20]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>d_read_pre[31:24]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ld_d_read</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ld_d_read_clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>state[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>nxt_state[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod78.html" >mbc</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: state</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">21</td>
+<td class="rt">11</td>
+<td class="rt">52.38 </td>
+<td>(Not included in score)</td>
+</tr><tr class="s2">
+<td>Transitions</td>
+<td class="rt">49</td>
+<td class="rt">12</td>
+<td class="rt">24.49 </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: state</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>bt_init</td>
+<td class="rt">270</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>mem_rdy_st</td>
+<td class="rt">256</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>mem_r0</td>
+<td class="rt">258</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>mem_cln_rd</td>
+<td class="rt">257</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_psh</td>
+<td class="rt">249</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w1</td>
+<td class="rt">259</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_png</td>
+<td class="rt">250</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_cln_wd</td>
+<td class="rt">258</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_kp</td>
+<td class="rt">251</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_wr</td>
+<td class="rt">252</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_pop</td>
+<td class="rt">253</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_fns</td>
+<td class="rt">252</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_op0</td>
+<td class="rt">259</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_io</td>
+<td class="rt">260</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w_io</td>
+<td class="rt">261</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_op1</td>
+<td class="rt">261</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w0</td>
+<td class="rt">263</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w2</td>
+<td class="rt">265</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_error</td>
+<td class="rt">260</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>cln_fifo</td>
+<td class="rt">255</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w3</td>
+<td class="rt">267</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>bt_init->bt_psh</td>
+<td class="rt">249</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_rdy_st->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>mem_rdy_st->mem_cln_rd</td>
+<td class="rt">257</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_r0->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>mem_r0->mem_rdy_st</td>
+<td class="rt">264</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_cln_rd->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>mem_cln_rd->mem_r0</td>
+<td class="rt">258</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_cln_rd->mem_cln_wd</td>
+<td class="rt">258</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>bt_psh->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_psh->bt_png</td>
+<td class="rt">250</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w1->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w1->mem_rdy_st</td>
+<td class="rt">266</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>bt_png->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_png->bt_kp</td>
+<td class="rt">251</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_cln_wd->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_cln_wd->mem_w1</td>
+<td class="rt">259</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_cln_wd->mem_op0</td>
+<td class="rt">259</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>bt_kp->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_kp->bt_wr</td>
+<td class="rt">252</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_kp->bt_fns</td>
+<td class="rt">252</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>bt_wr->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_wr->bt_pop</td>
+<td class="rt">253</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>bt_pop->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_pop->bt_psh</td>
+<td class="rt">254</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>bt_fns->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>bt_fns->bt_pop</td>
+<td class="rt">255</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>bt_fns->cln_fifo</td>
+<td class="rt">255</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_op0->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_op0->mem_io</td>
+<td class="rt">260</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_op0->mem_error</td>
+<td class="rt">260</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_io->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_io->mem_w_io</td>
+<td class="rt">261</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_io->mem_op1</td>
+<td class="rt">261</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w_io->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w_io->mem_rdy_st</td>
+<td class="rt">262</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_op1->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_op1->mem_r0</td>
+<td class="rt">263</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_op1->mem_w0</td>
+<td class="rt">263</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w0->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w0->mem_w1</td>
+<td class="rt">265</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w0->mem_w2</td>
+<td class="rt">265</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w2->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w2->mem_w3</td>
+<td class="rt">267</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_error->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_error->mem_rdy_st</td>
+<td class="rt">269</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>cln_fifo->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>cln_fifo->mem_rdy_st</td>
+<td class="rt">256</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w3->bt_init</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>mem_w3->mem_w1</td>
+<td class="rt">268</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod78.html" >mbc</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Branches</td>
+<td></td>
+<td class="rt">96</td>
+<td class="rt">54</td>
+<td class="rt">56.25 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">51</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">52</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">59</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">60</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">111</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">112</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">224</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">226</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>CASE</td>
+<td class="rt">67</td>
+<td class="rt">11</td>
+<td class="rt">6</td>
+<td class="rt">54.55 </td>
+</tr><tr class="s2">
+<td>CASE</td>
+<td class="rt">115</td>
+<td class="rt">9</td>
+<td class="rt">2</td>
+<td class="rt">22.22 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">182</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">240</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s4">
+<td>CASE</td>
+<td class="rt">248</td>
+<td class="rt">33</td>
+<td class="rt">16</td>
+<td class="rt">48.48 </td>
+</tr><tr class="s5">
+<td>CASE</td>
+<td class="rt">286</td>
+<td class="rt">22</td>
+<td class="rt">12</td>
+<td class="rt">54.55 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+51         assign to_io = (address[24:23] == 0)?0:1;
+                                               <font color = "red">-1-</font>  
+                                               <font color = "green">==></font>  
+                                               <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+52         assign up_mem = (address[21:max] == 0)?0:1;
+                                                 <font color = "red">-1-</font>  
+                                                 <font color = "green">==></font>  
+                                                 <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+59         assign spi = (d_pop[61:60]==1)?1:0;
+                                         <font color = "green">-1-</font>  
+                                         <font color = "green">==></font>  
+                                         <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+60         assign boot_end = (d_pop[59:57] == 3)?1:0;
+                                                <font color = "green">-1-</font>  
+                                                <font color = "green">==></font>  
+                                                <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+111        assign a = (boot)?d_pop[33+max:34]:address[max-1:2];
+                            <font color = "green">-1-</font>  
+                            <font color = "green">==></font>  
+                            <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+112        assign d =(boot)?d_pop[31:0]:proc_write[31:0];
+                           <font color = "green">-1-</font>  
+                           <font color = "green">==></font>  
+                           <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+224        assign d_psh[64:62] = (address[24:23] == 2'b01)? 2'b10:2'b01;
+                                                          <font color = "red">-1-</font>  
+                                                          <font color = "red">==></font>  
+                                                          <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+226        assign d_psh[59:57] = (boot)? 3'b111 :{~r_w,h,b};
+                                       <font color = "green">-1-</font>  
+                                       <font color = "green">==></font>  
+                                       <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+67           case (cond_sel)// synopsys infer_mux
+             <font color = "red">-1-</font>  
+68             0: begin
+69               cond <= keep_boot;
+           <font color = "green">      ==></font>
+70             end
+71             1: begin
+72               cond <= finish_boot;
+           <font color = "green">      ==></font>
+73             end
+74             2: begin
+75               cond <= pndng;
+           <font color = "green">      ==></font>
+76             end
+77             3: begin
+78               cond <= enable;
+           <font color = "green">      ==></font>
+79             end
+80             4: begin
+81               cond <= error_adrs;
+           <font color = "red">      ==></font>
+82             end
+83             5: begin
+84               cond <= HoB;
+           <font color = "red">      ==></font>
+85             end
+86             6: begin
+87               cond <= r_w;
+           <font color = "red">      ==></font>
+88             end
+89             7: begin
+90               cond <= to_io;
+           <font color = "red">      ==></font>
+91             end
+92             8: begin
+93               cond <= cln_rd;
+           <font color = "green">      ==></font>
+94             end
+95             9: begin
+96               cond <= cln_wd;
+           <font color = "red">      ==></font>
+97             end
+98             default: begin
+99               cond <= 3;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>0 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3 </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>4 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>5 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>6 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>7 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>8 </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>9 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+115          case({b,h}) 
+             <font color = "red">-1-</font>  
+116            0: begin
+117              proc_write <= d_write[31:0];
+           <font color = "green">      ==></font>
+118            end
+119            1: begin
+120              proc_write <= (address[1])?{d_write[15:0],d_read[15:0]}:{d_read[31:16],d_write[15:0]};
+                                           <font color = "red">-2-</font>  
+                                           <font color = "red">==></font>  
+                                           <font color = "red">==></font>  
+121            end
+122            2: begin
+123              case(address[1:0])
+                 <font color = "red">-3-</font>  
+124                0:begin
+125                   proc_write <= {d_read[31:8],d_write[7:0]};
+           <font color = "red">           ==></font>
+126                end
+127                1:begin
+128                   proc_write <= {d_read[31:16],d_write[7:0],d_read[7:0]};
+           <font color = "red">           ==></font>
+129                end
+130                2:begin
+131                   proc_write <= {d_read[31:24],d_write[7:0],d_read[15:0]};
+           <font color = "red">           ==></font>
+132                end
+133                3:begin
+134                   proc_write <= {d_write[7:0],d_read[23:0]};
+           <font color = "red">           ==></font>
+135                end
+                   MISSING_DEFAULT
+           <font color = "red">        ==></font>
+136              endcase
+137            end
+138            default : begin
+139              proc_write <= 0;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>0 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>1 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2 </td>
+<td align=center nowrap>-</td>
+<td align=center>0 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2 </td>
+<td align=center nowrap>-</td>
+<td align=center>1 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2 </td>
+<td align=center nowrap>-</td>
+<td align=center>2 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2 </td>
+<td align=center nowrap>-</td>
+<td align=center>3 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2 </td>
+<td align=center nowrap>-</td>
+<td align=center>MISSING_DEFAULT</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+182          if(reset) begin
+             <font color = "green">-1-</font>  
+183            d_read <=0;
+           <font color = "green">    ==></font>
+184          end else begin
+185            if (ld_d_read)begin
+               <font color = "green">-2-</font>  
+186              d_read <= d_read_pre;
+           <font color = "green">      ==></font>
+187            end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+240          if(reset)begin
+             <font color = "green">-1-</font>  
+241            state <= 0;
+           <font color = "green">    ==></font>
+242          end else begin 
+243            state <= nxt_state;
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+248            case(state)
+               <font color = "red">-1-</font>  
+249              bt_init:      nxt_state <= bt_psh;
+           <font color = "green">      ==></font>
+250              bt_psh:       nxt_state <= bt_png;
+           <font color = "green">      ==></font>
+251              bt_png:       nxt_state <= (cond)?bt_kp:bt_png;
+                                                  <font color = "green">-2-</font>  
+                                                  <font color = "green">==></font>  
+                                                  <font color = "green">==></font>  
+252              bt_kp:        nxt_state <= (cond)?bt_wr:bt_fns;
+                                                  <font color = "green">-3-</font>  
+                                                  <font color = "green">==></font>  
+                                                  <font color = "green">==></font>  
+253              bt_wr:        nxt_state <= bt_pop;
+           <font color = "green">      ==></font>
+254              bt_pop:       nxt_state <= bt_psh;
+           <font color = "green">      ==></font>
+255              bt_fns:       nxt_state <= (cond)?cln_fifo:bt_pop;
+                                                  <font color = "green">-4-</font>  
+                                                  <font color = "green">==></font>  
+                                                  <font color = "green">==></font>  
+256              cln_fifo:     nxt_state <= mem_rdy_st;
+           <font color = "green">      ==></font>
+257              mem_rdy_st:      nxt_state <= (cond)?mem_cln_rd:mem_rdy;
+                                                     <font color = "green">-5-</font>  
+                                                     <font color = "green">==></font>  
+                                                     <font color = "green">==></font>  
+258              mem_cln_rd:   nxt_state <= (cond)?mem_r0:mem_cln_wd;
+                                                  <font color = "green">-6-</font>  
+                                                  <font color = "green">==></font>  
+                                                  <font color = "green">==></font>  
+259              mem_cln_wd:   nxt_state <= (cond)?mem_w1:mem_op0;
+                                                  <font color = "red">-7-</font>  
+                                                  <font color = "red">==></font>  
+                                                  <font color = "red">==></font>  
+260              mem_op0:      nxt_state <= (cond)?mem_error:mem_io;
+                                                  <font color = "red">-8-</font>  
+                                                  <font color = "red">==></font>  
+                                                  <font color = "red">==></font>  
+261              mem_io:       nxt_state <= (cond)?mem_w_io:mem_op1;
+                                                  <font color = "red">-9-</font>  
+                                                  <font color = "red">==></font>  
+                                                  <font color = "red">==></font>  
+262              mem_w_io:     nxt_state <= mem_rdy_st;
+           <font color = "red">      ==></font>
+263              mem_op1:      nxt_state <= (cond)?mem_r0:mem_w0;
+                                                  <font color = "red">-10-</font>  
+                                                  <font color = "red">==></font>  
+                                                  <font color = "red">==></font>  
+264              mem_r0:       nxt_state <= mem_rdy_st;
+           <font color = "green">      ==></font>
+265              mem_w0:       nxt_state <= (cond)?mem_w2:mem_w1;
+                                                  <font color = "red">-11-</font>  
+                                                  <font color = "red">==></font>  
+                                                  <font color = "red">==></font>  
+266              mem_w1:       nxt_state <= mem_rdy_st;
+           <font color = "red">      ==></font>
+267              mem_w2:       nxt_state <= mem_w3;
+           <font color = "red">      ==></font>
+268              mem_w3:       nxt_state <= mem_w1;
+           <font color = "red">      ==></font>
+269              mem_error:    nxt_state <= (cond)?mem_rdy_st:mem_error;
+                                                  <font color = "red">-12-</font>  
+                                                  <font color = "red">==></font>  
+                                                  <font color = "red">==></font>  
+270              default: nxt_state<=bt_init;
+           <font color = "red">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>-9-</th><th nowrap width=80>-10-</th><th nowrap width=80>-11-</th><th nowrap width=80>-12-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>bt_init </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_psh </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_png </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_png </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_kp </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_kp </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_wr </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_pop </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_fns </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_fns </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>cln_fifo </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>mem_rdy_st </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>mem_rdy_st </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>mem_cln_rd </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>mem_cln_rd </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_cln_wd </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_cln_wd </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_op0 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_op0 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_io </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_io </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w_io </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_op1 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_op1 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>mem_r0 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w0 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w0 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w1 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w2 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w3 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_error </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_error </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+286          case(state)
+             <font color = "red">-1-</font>  
+287            bt_init: begin
+288              wen <=1;
+           <font color = "green">      ==></font>
+289              cen <=1;
+290              boot <=1;
+291              ld_d_read <=0;
+292              mem_rdy <=0;
+293              pop_mbc <=0;
+294              psh <=0;
+295              error_drs<=0;
+296              cond_sel <=s_pndng;
+297              rd_fll <=0;
+298            end
+299            bt_psh: begin 
+300              wen <=1;
+           <font color = "green">      ==></font>
+301              cen <=1;
+302              boot <=1;
+303              ld_d_read <=0;
+304              mem_rdy <=0;
+305              pop_mbc <=0;
+306              psh <=1;
+307              error_drs <=0;
+308              cond_sel <=s_pndng;
+309              rd_fll <=0;
+310            end
+311            bt_png: begin 
+312              wen<=1;
+           <font color = "green">      ==></font>
+313              cen<=1;
+314              boot<=1;
+315              ld_d_read<=0;
+316              mem_rdy<=0;
+317              pop_mbc<=0;
+318              psh<=0;
+319              error_drs<=0;
+320              cond_sel<=s_pndng;
+321              rd_fll <=0;
+322            end
+323            bt_kp: begin 
+324              wen<=1;
+           <font color = "green">      ==></font>
+325              cen<=1;
+326              boot<=1;
+327              ld_d_read<=0;
+328              mem_rdy<=0;
+329              pop_mbc<=0;
+330              psh<=0;
+331              error_drs<=0;
+332              cond_sel<=s_keep_boot;
+333              rd_fll <=0;
+334            end
+335            bt_wr: begin 
+336              wen<=0;
+           <font color = "green">      ==></font>
+337              cen<=0;
+338              boot<=1;
+339              ld_d_read<=0;
+340              mem_rdy<=0;
+341              pop_mbc<=0;
+342              psh<=0;
+343              error_drs<=0;
+344              cond_sel<=s_pndng;
+345              rd_fll <=0;
+346            end
+347            bt_pop: begin 
+348              wen<=1;
+           <font color = "green">      ==></font>
+349              cen<=1;
+350              boot<=1;
+351              ld_d_read<=0;
+352              mem_rdy<=0;
+353              pop_mbc<=1;
+354              psh<=0;
+355              error_drs<=0;
+356              cond_sel<=s_pndng;
+357              rd_fll <=0;
+358            end
+359            bt_fns: begin 
+360              wen<=1;
+           <font color = "green">      ==></font>
+361              cen<=1;
+362              boot<=1;
+363              ld_d_read<=0;
+364              mem_rdy<=0;
+365              pop_mbc<=0;
+366              psh<=0;
+367              error_drs<=0;
+368              cond_sel<=s_finish_boot;
+369              rd_fll <=0;
+370            end
+371            cln_fifo: begin 
+372              wen<=1;
+           <font color = "green">      ==></font>
+373              cen<=1;
+374              boot<=1;
+375              ld_d_read<=0;
+376              mem_rdy<=0;
+377              pop_mbc<=1;
+378              psh<=0;
+379              error_drs<=0;
+380              cond_sel<=s_finish_boot;
+381              rd_fll <=0;
+382            end
+383            mem_rdy_st: begin 
+384              wen<=1;
+           <font color = "green">      ==></font>
+385              cen<=1;
+386              boot<=0;
+387              ld_d_read<=0;
+388              mem_rdy<=1;
+389              pop_mbc<=0;
+390              psh<=0;
+391              error_drs<=0;
+392              cond_sel<=s_enable;
+393            end
+394            mem_cln_rd: begin 
+395              wen<=1;
+           <font color = "green">      ==></font>
+396              cen<=1;
+397              boot<=0;
+398              ld_d_read<=0;
+399              mem_rdy<=0;
+400              pop_mbc<=0;
+401              psh<=0;
+402              error_drs<=0;
+403              cond_sel<=s_cln_rd;
+404              rd_fll <=0;
+405            end
+406            mem_cln_wd: begin 
+407              wen<=1;
+           <font color = "red">      ==></font>
+408              cen<=1;
+409              boot<=0;
+410              ld_d_read<=0;
+411              mem_rdy<=0;
+412              pop_mbc<=0;
+413              psh<=0;
+414              error_drs<=0;
+415              cond_sel<=s_cln_wd;
+416              rd_fll <=0;
+417            end
+418            mem_op0: begin 
+419              wen<=1;
+           <font color = "red">      ==></font>
+420              cen<=1;
+421              boot<=0;
+422              ld_d_read<=0;
+423              mem_rdy<=0;
+424              pop_mbc<=0;
+425              psh<=0;
+426              error_drs<=0;
+427              cond_sel<=s_error_adrs;
+428              rd_fll <=0;
+429            end
+430            mem_io: begin 
+431              wen<=1;
+           <font color = "red">      ==></font>
+432              cen<=1;
+433              boot<=0;
+434              ld_d_read<=0;
+435              mem_rdy<=0;
+436              pop_mbc<=0;
+437              psh<=0;
+438              error_drs<=0;
+439              cond_sel<=s_to_io;
+440              rd_fll <=0;
+441            end
+442            mem_w_io: begin 
+443              wen<=1;
+           <font color = "red">      ==></font>
+444              cen<=1;
+445              boot<=0;
+446              ld_d_read<=0;
+447              mem_rdy<=0;
+448              pop_mbc<=0;
+449              psh<=1;
+450              error_drs<=0;
+451              cond_sel<=s_enable;
+452              rd_fll <=0;
+453            end
+454            mem_op1: begin 
+455              wen<=1;
+           <font color = "red">      ==></font>
+456              cen<=1;
+457              boot<=0;
+458              ld_d_read<=0;
+459              mem_rdy<=0;
+460              pop_mbc<=0;
+461              psh<=0;
+462              error_drs<=0;
+463              cond_sel<=s_r_w;
+464              rd_fll <=0;
+465            end
+466            mem_r0: begin 
+467              wen<=1;
+           <font color = "green">      ==></font>
+468              cen<=0;
+469              boot<=0;
+470              ld_d_read<=1;
+471              mem_rdy<=0;
+472              pop_mbc<=0;
+473              psh<=0;
+474              error_drs<=0;
+475              cond_sel<=s_enable;
+476              rd_fll <=0;
+477            end
+478            mem_w0: begin 
+479              wen<=1;
+           <font color = "red">      ==></font>
+480              cen<=1;
+481              boot<=0;
+482              ld_d_read<=0;
+483              mem_rdy<=0;
+484              pop_mbc<=0;
+485              psh<=0;
+486              error_drs<=0;
+487              cond_sel<=s_HoB;
+488              rd_fll <=0;
+489            end
+490            mem_w1: begin 
+491              wen<=0;
+           <font color = "red">      ==></font>
+492              cen<=0;
+493              boot<=0;
+494              ld_d_read<=0;
+495              mem_rdy<=0;
+496              pop_mbc<=0;
+497              psh<=0;
+498              error_drs<=0;
+499              cond_sel<=s_enable;
+500              rd_fll <=0;
+501            end
+502            mem_w2: begin 
+503              wen<=1;
+           <font color = "red">      ==></font>
+504              cen<=0;
+505              boot<=0;
+506              ld_d_read<=0;
+507              mem_rdy<=0;
+508              pop_mbc<=0;
+509              psh<=0;
+510              error_drs<=0;
+511              cond_sel<=s_enable;
+512              rd_fll <=1;
+513            end
+514            mem_w3: begin 
+515              wen<=1;
+           <font color = "red">      ==></font>
+516              cen<=1;
+517              boot<=0;
+518              ld_d_read<=1;
+519              mem_rdy<=0;
+520              pop_mbc<=0;
+521              psh<=0;
+522              error_drs<=0;
+523              cond_sel<=s_enable;
+524              rd_fll <=1;
+525            end
+526            mem_error: begin 
+527              wen<=1;
+           <font color = "red">      ==></font>
+528              cen<=1;
+529              boot<=0;
+530              ld_d_read<=0;
+531              mem_rdy<=0;
+532              pop_mbc<=0;
+533              psh<=0;
+534              error_drs<=1;
+535              cond_sel<=s_enable;
+536              rd_fll <=0;
+537            end
+               MISSING_DEFAULT
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>bt_init </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_psh </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_png </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_kp </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_wr </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_pop </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>bt_fns </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>cln_fifo </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>mem_rdy_st </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>mem_cln_rd </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_cln_wd </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_op0 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_io </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w_io </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_op1 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>mem_r0 </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w0 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w1 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w2 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_w3 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>mem_error </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_6817">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_mbc">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

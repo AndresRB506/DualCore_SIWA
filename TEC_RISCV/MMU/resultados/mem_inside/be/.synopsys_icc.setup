@@ -1,0 +1,85 @@
+####################################################################################################
+# Title:	.synopsys_icc_setup
+# Description:	Restricciones y configuraciones para que la herramienta ICC pueda ubicar las biblio-
+# 		tecas y el ambiente para la sintesis fisica.
+# 			
+# Dependencies: Ninguna.
+# Library:	XFAB-180nm (xh018)
+# Project:	RISC-V
+# Author:	Reinaldo Castro Gonzalez
+# Institution:	Instituto Tecnologico de Costa Rica. DCILab.
+# Date:		25 de enero de 2018
+# Notes: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# Version:	1.0
+# Revision:	25/01/2018
+#
+####################################################################################################
+
+set cache_read ""
+set cache_write ""
+ 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#  Library Setup
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Modificacion del serch path: las "" definen una lista y permiten variable substitution
+# $nombre_variable -> valor. 
+
+set tech_home "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/xh018";
+set home_base "/mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/Back_end";	# Por defecto se define el directorio local como directorio madre para el proyecto.
+			# Asegurese de que esto es lo que pretende. Caso contrario reemplace la variable $PWD
+			# por la ruta de su eleccion.
+set search_path "$home_base"
+# El comando siguente concatena al search path los directorios listados
+set search_path [concat $search_path $tech_home/xh018/synopsys/v6_3/techMW/v6_3_1_1/xh018-synopsys-techMW-v6_3_1_1/ \
+            				$tech_home/xh018/synopsys/v7_0/TLUplus/v7_0_1/ \
+             				$tech_home/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/ \
+             				$tech_home/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/ \
+             				$tech_home/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL/ \
+	     				$tech_home/diglibs/IO_CELLS_FC1V8/v1_0/liberty_LPMOS/v1_0_1/PVT_1_80V_1_80V_range/PVT_1_80V_1_80V_range/ \
+	     				$tech_home/xh018/diglibs/IO_CELLS_FC1V8/v1_0/dc_shell_symb/v1_0_0/ \
+                        /mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/mem/milk/XSPRAMLP_2048X32_M8P\
+                        /mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/mem/lib \
+                        /mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/Back_end/source \
+					$proy_home/scripts $proy_home/db $proy_home/source/* ];
+
+
+# El comando set establece un valor para una variable. 
+
+set synthetic_library "dw_foundation.sldb D_CELLS_HDLL.sdb IO_CELLS_FC1V8.sdb"
+set target_library "D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db IO_CELLS_FC1V8_LPMOS_typ_1_80V_1_80V_25C.db";
+set link_library "* $target_library $synthetic_library $symbol_library XSPRAMLP_2048X32_M8P.db";
+set symbol_library [concat "D_CELLS_HDLL.sdb IO_CELLS_FC1V8.sdb"]
+
+
+# Para comentar al final de una linea es necesario utilizar ; y luego #.
+
+############ NO editar desde aqui para abajo ######## 
+#####################################################
+echo "\n\nSettings:"
+echo "search_path:       $search_path"
+echo "link_library:      $link_library"
+echo "target_library:    $target_library"
+echo "symbol_library:    $symbol_library"
+
+# define_design_lib DEFAULT -path ./analyzed
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#  History
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+history keep 800
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#  Aliases
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+alias h history
+alias rc "report_constraint -all_violators"
+alias rt report_timing
+alias ra report_area
+alias page_on {set sh_enable_page_mode true}
+alias page_off {set sh_enable_page_mode false}
+alias fr "remove_design -designs"

@@ -1,0 +1,2620 @@
+0000000000000000000 core-0   :00010054 (000010b7) lui         ra, 4096           
+ra       :0x00001000
+sp       :0x7fffff64 gp       :0xa4ca3c3a
+tp       :0xe144357e t0       :0x359bab58
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000001 core-0   :00010058 (11108093) addi        ra, ra, 273        
+ra       :0x00001111
+sp       :0x7fffff64 gp       :0xa4ca3c3a
+tp       :0xe144357e t0       :0x359bab58
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000002 core-0   :0001005c (7ff10137) lui         sp, 2146500608     
+ra       :0x00001111
+sp       :0x7ff10000 gp       :0xa4ca3c3a
+tp       :0xe144357e t0       :0x359bab58
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000003 core-0   :00010060 (f6410113) addi        sp, sp, -156       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0xa4ca3c3a
+tp       :0xe144357e t0       :0x359bab58
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000004 core-0   :00010064 (000021b7) lui         gp, 8192           
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002000
+tp       :0xe144357e t0       :0x359bab58
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000005 core-0   :00010068 (22218193) addi        gp, gp, 546        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0xe144357e t0       :0x359bab58
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000006 core-0   :0001006c (00003237) lui         tp, 12288          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003000 t0       :0x359bab58
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000007 core-0   :00010070 (33320213) addi        tp, tp, 819        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x359bab58
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000008 core-0   :00010074 (000042b7) lui         t0, 16384          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004000
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000009 core-0   :00010078 (44428293) addi        t0, t0, 1092       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0xe57b2d80 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000010 core-0   :0001007c (00005337) lui         t1, 20480          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005000 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000011 core-0   :00010080 (55530313) addi        t1, t1, 1365       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0xc3e892d6
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000012 core-0   :00010084 (000063b7) lui         t2, 24576          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006000
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000013 core-0   :00010088 (66638393) addi        t2, t2, 1638       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0xec2187bd s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000014 core-0   :0001008c (00007437) lui         s0, 28672          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007000 s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000015 core-0   :00010090 (77740413) addi        s0, s0, 1911       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x3b7189ab
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000016 core-0   :00010094 (000094b7) lui         s1, 36864          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00009000
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000017 core-0   :00010098 (88848493) addi        s1, s1, -1912      
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0xd3a7d2e5 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000018 core-0   :0001009c (0000a537) lui         a0, 40960          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x0000a000 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000019 core-0   :000100a0 (99950513) addi        a0, a0, -1639      
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0xf8e1f8af
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000020 core-0   :000100a4 (0000b5b7) lui         a1, 45056          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000b000
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000021 core-0   :000100a8 (aaa58593) addi        a1, a1, -1366      
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x4cc3abf8 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000022 core-0   :000100ac (0000c637) lui         a2, 49152          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000c000 a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000023 core-0   :000100b0 (bbb60613) addi        a2, a2, -1093      
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x108e1387
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000024 core-0   :000100b4 (0000d6b7) lui         a3, 53248          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000d000
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000025 core-0   :000100b8 (ccc68693) addi        a3, a3, -820       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x53bb039c a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000026 core-0   :000100bc (0000e737) lui         a4, 57344          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000e000 a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000027 core-0   :000100c0 (ddd70713) addi        a4, a4, -547       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x16b40832
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000028 core-0   :000100c4 (0000f7b7) lui         a5, 61440          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000f000
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000029 core-0   :000100c8 (eee78793) addi        a5, a5, -274       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x7eea2db2 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000030 core-0   :000100cc (00010837) lui         a6, 65536          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x00010000 a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000031 core-0   :000100d0 (fff80813) addi        a6, a6, -1         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x5de3adb2
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000032 core-0   :000100d4 (000108b7) lui         a7, 65536          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x00010000
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000033 core-0   :000100d8 (f1188893) addi        a7, a7, -239       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x626614e9 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000034 core-0   :000100dc (0000f937) lui         s2, 61440          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000f000 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000035 core-0   :000100e0 (e2290913) addi        s2, s2, -478       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x6695299e
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000036 core-0   :000100e4 (0000e9b7) lui         s3, 57344          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000e000
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000037 core-0   :000100e8 (d3398993) addi        s3, s3, -717       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0xb79fa854 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000038 core-0   :000100ec (0000da37) lui         s4, 53248          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000d000 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000039 core-0   :000100f0 (c44a0a13) addi        s4, s4, -956       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0xd0f16c99
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000040 core-0   :000100f4 (0000cab7) lui         s5, 49152          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000c000
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000041 core-0   :000100f8 (b55a8a93) addi        s5, s5, -1195      
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x12d9b51b s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000042 core-0   :000100fc (0000bb37) lui         s6, 45056          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000b000 s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000043 core-0   :00010100 (a66b0b13) addi        s6, s6, -1434      
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0xccf91c37
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000044 core-0   :00010104 (0000abb7) lui         s7, 40960          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x0000a000
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000045 core-0   :00010108 (977b8b93) addi        s7, s7, -1673      
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x69e83c90 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000046 core-0   :0001010c (00009c37) lui         s8, 36864          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00009000 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000047 core-0   :00010110 (888c0c13) addi        s8, s8, -1912      
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x3c7c3e09
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000048 core-0   :00010114 (00007cb7) lui         s9, 28672          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007000
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000049 core-0   :00010118 (799c8c93) addi        s9, s9, 1945       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x8e311fb0 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000050 core-0   :0001011c (00006d37) lui         s10, 24576         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x00006000 s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000051 core-0   :00010120 (6aad0d13) addi        s10, s10, 1706     
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0xeb5aad9a
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000052 core-0   :00010124 (00005db7) lui         s11, 20480         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x00005000
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000053 core-0   :00010128 (5bbd8d93) addi        s11, s11, 1467     
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0xf5f53efb t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000054 core-0   :0001012c (00004e37) lui         t3, 16384          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x00004000 t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000055 core-0   :00010130 (4cce0e13) addi        t3, t3, 1228       
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0xd3cbe19e
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000056 core-0   :00010134 (00003eb7) lui         t4, 12288          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x00003000
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000057 core-0   :00010138 (3dde8e93) addi        t4, t4, 989        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0xc6782c80 t6       :0xf452148c
+0000000000000000058 core-0   :0001013c (00002f37) lui         t5, 8192           
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x00002000 t6       :0xf452148c
+0000000000000000059 core-0   :00010140 (2eef0f13) addi        t5, t5, 750        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0xf452148c
+0000000000000000060 core-0   :00010144 (00001fb7) lui         t6, 4096           
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x00001000
+0000000000000000061 core-0   :00010148 (1fff8f93) addi        t6, t6, 511        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000062 core-0   :0001014c (00111023) sh          ra, 0(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000063 core-0   :00010150 (00311123) sh          gp, 2(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000064 core-0   :00010154 (00411223) sh          tp, 4(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000065 core-0   :00010158 (00511323) sh          t0, 6(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000066 core-0   :0001015c (00611423) sh          t1, 8(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000067 core-0   :00010160 (00711523) sh          t2, 10(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000068 core-0   :00010164 (00811623) sh          s0, 12(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000069 core-0   :00010168 (00911723) sh          s1, 14(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000070 core-0   :0001016c (00a11823) sh          a0, 16(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000071 core-0   :00010170 (00b11923) sh          a1, 18(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000072 core-0   :00010174 (00c11a23) sh          a2, 20(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000073 core-0   :00010178 (00d11b23) sh          a3, 22(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000074 core-0   :0001017c (00e11c23) sh          a4, 24(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000075 core-0   :00010180 (00f11d23) sh          a5, 26(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000076 core-0   :00010184 (01011e23) sh          a6, 28(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000077 core-0   :00010188 (01111f23) sh          a7, 30(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000078 core-0   :0001018c (03211023) sh          s2, 32(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000079 core-0   :00010190 (03311123) sh          s3, 34(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000080 core-0   :00010194 (03411223) sh          s4, 36(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000081 core-0   :00010198 (03511323) sh          s5, 38(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000082 core-0   :0001019c (03611423) sh          s6, 40(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000083 core-0   :000101a0 (03711523) sh          s7, 42(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000084 core-0   :000101a4 (03811623) sh          s8, 44(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000085 core-0   :000101a8 (03911723) sh          s9, 46(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000086 core-0   :000101ac (03a11823) sh          s10, 48(sp)        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000087 core-0   :000101b0 (03b11923) sh          s11, 50(sp)        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000088 core-0   :000101b4 (03c11a23) sh          t3, 52(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000089 core-0   :000101b8 (03d11b23) sh          t4, 54(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000090 core-0   :000101bc (03e11c23) sh          t5, 56(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000091 core-0   :000101c0 (03f11d23) sh          t6, 58(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000092 core-0   :000101c4 (000000b3) add         ra, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000093 core-0   :000101c8 (000001b3) add         gp, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000094 core-0   :000101cc (00000233) add         tp, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000095 core-0   :000101d0 (000002b3) add         t0, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000096 core-0   :000101d4 (00000333) add         t1, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000097 core-0   :000101d8 (000003b3) add         t2, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000098 core-0   :000101dc (00000433) add         s0, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000099 core-0   :000101e0 (000004b3) add         s1, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000100 core-0   :000101e4 (00000533) add         a0, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000101 core-0   :000101e8 (000005b3) add         a1, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000102 core-0   :000101ec (00000633) add         a2, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000103 core-0   :000101f0 (000006b3) add         a3, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000104 core-0   :000101f4 (00000733) add         a4, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000105 core-0   :000101f8 (000007b3) add         a5, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000106 core-0   :000101fc (00000833) add         a6, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000107 core-0   :00010200 (000008b3) add         a7, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000108 core-0   :00010204 (00000933) add         s2, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000109 core-0   :00010208 (000009b3) add         s3, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000110 core-0   :0001020c (00000a33) add         s4, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000111 core-0   :00010210 (00000ab3) add         s5, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000112 core-0   :00010214 (00000b33) add         s6, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000113 core-0   :00010218 (00000bb3) add         s7, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000114 core-0   :0001021c (00000c33) add         s8, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000115 core-0   :00010220 (00000cb3) add         s9, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000116 core-0   :00010224 (00000d33) add         s10, zero, zero    
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000117 core-0   :00010228 (00000db3) add         s11, zero, zero    
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000118 core-0   :0001022c (00000e33) add         t3, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000119 core-0   :00010230 (00000eb3) add         t4, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000120 core-0   :00010234 (00000f33) add         t5, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x000011ff
+0000000000000000121 core-0   :00010238 (00000fb3) add         t6, zero, zero     
+ra       :0x00000000
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000122 core-0   :0001023c (00015083) lhu         ra, 0(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00000000
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000123 core-0   :00010240 (00215183) lhu         gp, 2(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00000000 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000124 core-0   :00010244 (00415203) lhu         tp, 4(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00000000
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000125 core-0   :00010248 (00615283) lhu         t0, 6(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00000000 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000126 core-0   :0001024c (00815303) lhu         t1, 8(sp)          
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00000000
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000127 core-0   :00010250 (00a15383) lhu         t2, 10(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00000000 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000128 core-0   :00010254 (00c15403) lhu         s0, 12(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00000000
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000129 core-0   :00010258 (00e15483) lhu         s1, 14(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00000000 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000130 core-0   :0001025c (01015503) lhu         a0, 16(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x00000000
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000131 core-0   :00010260 (01215583) lhu         a1, 18(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x00000000 a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000132 core-0   :00010264 (01415603) lhu         a2, 20(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x00000000
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000133 core-0   :00010268 (01615683) lhu         a3, 22(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x00000000 a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000134 core-0   :0001026c (01815703) lhu         a4, 24(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x00000000
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000135 core-0   :00010270 (01a15783) lhu         a5, 26(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x00000000 a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000136 core-0   :00010274 (01c15803) lhu         a6, 28(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x00000000
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000137 core-0   :00010278 (01e15883) lhu         a7, 30(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x00000000 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000138 core-0   :0001027c (02015903) lhu         s2, 32(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x00000000
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000139 core-0   :00010280 (02215983) lhu         s3, 34(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x00000000 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000140 core-0   :00010284 (02415a03) lhu         s4, 36(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x00000000
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000141 core-0   :00010288 (02615a83) lhu         s5, 38(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x00000000 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000142 core-0   :0001028c (02815b03) lhu         s6, 40(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00000000
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000143 core-0   :00010290 (02a15b83) lhu         s7, 42(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00000000 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000144 core-0   :00010294 (02c15c03) lhu         s8, 44(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00000000
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000145 core-0   :00010298 (02e15c83) lhu         s9, 46(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x00000000 s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000146 core-0   :0001029c (03015d03) lhu         s10, 48(sp)        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x00000000
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000147 core-0   :000102a0 (03215d83) lhu         s11, 50(sp)        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x00000000 t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000148 core-0   :000102a4 (03415e03) lhu         t3, 52(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x00000000
+t5       :0x00000000 t6       :0x00000000
+0000000000000000149 core-0   :000102a8 (03615e83) lhu         t4, 54(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x00000000 t6       :0x00000000
+0000000000000000150 core-0   :000102ac (03815f03) lhu         t5, 56(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x00000000
+0000000000000000151 core-0   :000102b0 (03a15f83) lhu         t6, 58(sp)         
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+0000000000000000152 core-0   :000102b4 (0000    ) illegal                        
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff
+TRAP     :illegal_instruction pc:0x102b4 badaddr:0x102b4
+instret  :               152 time     :0x000004b4c7e2b3a1
+pc       :0x000102b4 fcsr     :0x00000000
+ra       :0x00001111
+sp       :0x7ff0ff64 gp       :0x00002222
+tp       :0x00003333 t0       :0x00004444
+t1       :0x00005555 t2       :0x00006666
+s0       :0x00007777 s1       :0x00008888
+a0       :0x00009999 a1       :0x0000aaaa
+a2       :0x0000bbbb a3       :0x0000cccc
+a4       :0x0000dddd a5       :0x0000eeee
+a6       :0x0000ffff a7       :0x0000ff11
+s2       :0x0000ee22 s3       :0x0000dd33
+s4       :0x0000cc44 s5       :0x0000bb55
+s6       :0x0000aa66 s7       :0x00009977
+s8       :0x00008888 s9       :0x00007799
+s10      :0x000066aa s11      :0x000055bb
+t3       :0x000044cc t4       :0x000033dd
+t5       :0x000022ee t6       :0x000011ff

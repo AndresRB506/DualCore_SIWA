@@ -1,0 +1,150 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -max_delay
+        -min_delay
+        -max_capacitance
+        -max_transition
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Tue Oct  2 12:49:06 2018
+****************************************
+
+
+   max_delay/setup ('CLK' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   top_riscv_soc/TOP/pc_reg_12_/D   25.465   38.758 f      -13.292  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_22_/D   25.465   38.365 f      -12.899  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_24_/D   25.465   38.365 f      -12.899  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_0_/D   25.466    38.362 f      -12.896  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_1_/D   25.465    38.357 f      -12.891  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_5_/D   25.465    38.357 f      -12.891  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_6_/D   25.465    38.357 f      -12.891  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_23_/D   25.465   38.357 f      -12.891  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_3_/D   25.465    38.355 f      -12.890  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_4_/D   25.465    38.347 f      -12.882  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_2_/D   25.465    38.333 f      -12.868  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_25_/D   25.465   38.316 f      -12.851  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_27_/D   25.465   38.316 f      -12.851  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_29_/D   25.465   38.316 f      -12.851  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_30_/D   25.465   38.313 f      -12.848  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_26_/D   25.465   38.308 f      -12.843  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_20_/D   25.465   38.308 f      -12.843  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_31_/D   25.465   38.306 f      -12.841  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_7_/D   25.465    38.300 f      -12.835  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_9_/D   25.465    38.300 f      -12.835  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_11_/D   25.465   38.300 f      -12.835  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_14_/D   25.465   38.300 f      -12.835  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_15_/D   25.465   38.300 f      -12.835  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_16_/D   25.465   38.300 f      -12.835  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_17_/D   25.465   38.300 f      -12.835  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_18_/D   25.465   38.256 f      -12.791  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_10_/D   25.465   38.248 f      -12.783  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_13_/D   25.465   38.248 f      -12.783  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_19_/D   25.465   38.248 f      -12.783  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_21_/D   25.465   38.248 f      -12.783  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_28_/D   25.465   38.207 f      -12.742  (VIOLATED)
+   top_riscv_soc/TOP/pc_reg_8_/D   25.465    38.197 f      -12.732  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[0]   25.083   30.920 f    -5.837  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[7]   25.083   30.860 f    -5.777  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[5]   25.083   30.859 f    -5.776  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[6]   25.083   30.859 f    -5.776  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[2]   25.083   30.855 f    -5.772  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[4]   25.083   30.855 f    -5.772  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[3]   25.083   30.853 f    -5.770  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[1]   25.083   30.828 f    -5.745  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[24]   24.997   30.652 f   -5.655  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[25]   24.997   30.652 f   -5.655  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[26]   24.997   30.652 f   -5.655  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[27]   24.997   30.652 f   -5.655  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[28]   24.997   30.652 f   -5.655  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[29]   24.997   30.652 f   -5.655  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[30]   24.997   30.652 f   -5.655  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[31]   24.997   30.646 f   -5.649  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[8]   25.099   30.563 f    -5.465  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[9]   25.099   30.563 f    -5.465  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[10]   25.099   30.563 f   -5.465  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[11]   25.099   30.563 f   -5.465  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[12]   25.099   30.563 f   -5.465  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[13]   25.099   30.563 f   -5.465  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[14]   25.099   30.562 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[15]   25.099   30.562 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[16]   25.099   30.561 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[17]   25.099   30.561 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[18]   25.099   30.561 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[19]   25.099   30.561 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[20]   25.099   30.561 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[21]   25.099   30.561 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[22]   25.099   30.561 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Memoria_8K/D[23]   25.099   30.561 f   -5.463  (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_5__rf5_latches_Mip_analogic/latch1/q_reg/D   25.738   27.378 r   -1.640 (VIOLATED)
+   top_riscv_soc/SPI/spi1/MISO1_reg/D   25.754   27.376 r   -1.623  (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_0__rf11_latch_GPIO/q_reg/D   25.498   26.685 f   -1.187 (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_GPIO/q_reg/D   25.498   26.685 f   -1.187 (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_5__rf11_latch_GPIO/q_reg/D   25.498   26.685 f   -1.187 (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_6__rf11_latch_GPIO/q_reg/D   25.498   26.685 f   -1.187 (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_GPIO/q_reg/D   25.498   26.685 f   -1.187 (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_2__rf11_latch_GPIO/q_reg/D   25.506   26.688 f   -1.183 (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_3__rf11_latch_GPIO/q_reg/D   25.506   26.688 f   -1.183 (VIOLATED)
+   top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_4__rf11_latch_GPIO/q_reg/D   25.506   26.688 f   -1.183 (VIOLATED)
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   MISO_pad                    1.426          7.376         -5.950  (VIOLATED)
+       PORT :  MISO_pad        1.426          7.376         -5.950  (VIOLATED)
+   RX_UART_pad                 1.426          7.376         -5.950  (VIOLATED)
+       PORT :  RX_UART_pad     1.426          7.376         -5.950  (VIOLATED)
+   maip_pad                    1.426          7.376         -5.950  (VIOLATED)
+       PORT :  maip_pad        1.426          7.376         -5.950  (VIOLATED)
+   reset_pad                   1.426          7.376         -5.950  (VIOLATED)
+       PORT :  reset_pad       1.426          7.376         -5.950  (VIOLATED)
+   gpio_pad[0]                 1.426          6.763         -5.337  (VIOLATED)
+   gpio_pad[1]                 1.426          6.763         -5.337  (VIOLATED)
+   gpio_pad[2]                 1.426          6.763         -5.337  (VIOLATED)
+   gpio_pad[3]                 1.426          6.763         -5.337  (VIOLATED)
+   gpio_pad[4]                 1.426          6.763         -5.337  (VIOLATED)
+   gpio_pad[5]                 1.426          6.763         -5.337  (VIOLATED)
+   gpio_pad[6]                 1.426          6.763         -5.337  (VIOLATED)
+   gpio_pad[7]                 1.426          6.763         -5.337  (VIOLATED)
+   MOSI_pad                    1.426          6.606         -5.180  (VIOLATED)
+   SCLK_pad                    1.426          6.606         -5.180  (VIOLATED)
+   SCS_pad                     1.426          6.606         -5.180  (VIOLATED)
+   TX_UART_pad                 1.426          6.606         -5.180  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      16               -87.220  
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   MISO_pad                    0.099          1.808         -1.709  (VIOLATED)
+   RX_UART_pad                 0.099          1.808         -1.709  (VIOLATED)
+   maip_pad                    0.099          1.808         -1.709  (VIOLATED)
+   reset_pad                   0.099          1.808         -1.709  (VIOLATED)
+   gpio_pad[0]                 0.099          1.765         -1.667  (VIOLATED)
+   gpio_pad[1]                 0.099          1.765         -1.667  (VIOLATED)
+   gpio_pad[2]                 0.099          1.765         -1.667  (VIOLATED)
+   gpio_pad[3]                 0.099          1.765         -1.667  (VIOLATED)
+   gpio_pad[4]                 0.099          1.765         -1.667  (VIOLATED)
+   gpio_pad[5]                 0.099          1.765         -1.667  (VIOLATED)
+   gpio_pad[6]                 0.099          1.765         -1.667  (VIOLATED)
+   gpio_pad[7]                 0.099          1.765         -1.667  (VIOLATED)
+   MOSI_pad                    0.099          1.708         -1.610  (VIOLATED)
+   SCLK_pad                    0.099          1.708         -1.610  (VIOLATED)
+   SCS_pad                     0.099          1.708         -1.610  (VIOLATED)
+   TX_UART_pad                 0.099          1.708         -1.610  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      16               -26.608  
+
+1

@@ -1,0 +1,218 @@
+ 
+****************************************
+Report : design
+        -physical
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Wed Mar 27 16:04:04 2019
+****************************************
+
+****************************** P&R Summary ********************************
+Date : Wed Mar 27 16:04:04 2019
+Machine Host Name: zener
+Working Directory: /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end
+Library Name:      Tec_Riscv_pads.mw
+Cell Name:         powerplan_ends1.CEL;1
+Design Statistics:
+    Number of Macro Cells:         1
+    Number of Module Cells:        11634
+    Number of Pins:                67121
+    Number of IO Pad Cells:        33
+    Number of IO Pins:             76
+    Number of Nets:                9002
+    Average Pins Per Net (Signal): 4.82594
+
+Chip Utilization:
+    Total Macro Cell Area:         503767.04
+    Total Std Cell Area:           319729.00
+    Total Blockage Area:           778766.64
+    Total Pad Cell Area:           499298.00
+    Core Size:     width 1285.20, height 1142.40; area 1381847.04
+    Pad Core Size: width 1360.00, height 1200.00; area 1632000.00
+    Chip Size:     width 1520.00, height 1520.00; area 2310400.00
+    Std cells utilization:         53.02% 
+    Cell/Core Ratio:               59.59%
+    Cell/Chip Ratio:               57.25%
+    Number of Cell Rows:            240
+
+Master Instantiation:
+	MasterName	Type	InstCount
+	=================================
+	BTHHDLLX1	STD	2470
+	DFRRQHDLLX0	STD	1937
+	DLHRQHDLLX0	STD	1275
+	AN22HDLLX0	STD	585
+	BTHHDLLX2	STD	547
+	INHDLLX0	STD	521
+	AO22HDLLX1	STD	477
+	NA2HDLLX0	STD	438
+	NO2HDLLX0	STD	409
+	AO222HDLLX0	STD	257
+	ON21HDLLX0	STD	241
+	LOGIC0HDLL	STD	201
+	AN21HDLLX0	STD	173
+	AN211HDLLX0	STD	134
+	MU2HDLLX0	STD	119
+	AN32HDLLX0	STD	118
+	ON211HDLLX0	STD	109
+	NA3HDLLX0	STD	90
+	NA4HDLLX0	STD	89
+	BUHDLLX1	STD	78
+	AN31HDLLX0	STD	78
+	DFRRHDLLX0	STD	77
+	NO3HDLLX0	STD	68
+	DFRSQHDLLX0	STD	66
+	INHDLLX1	STD	62
+	ON22HDLLX0	STD	61
+	AND2HDLLX0	STD	55
+	BUHDLLX0	STD	52
+	DLHQHDLLX0	STD	47
+	BUHDLLX6	STD	44
+	NA22HDLLX0	STD	43
+	ON31HDLLX0	STD	43
+	NO2I1HDLLX0	STD	41
+	MU2IHDLLX0	STD	41
+	OA22HDLLX0	STD	40
+	NO2HDLLX1	STD	37
+	AN222HDLLX0	STD	33
+	AND2HDLLX1	STD	32
+	DLLQHDLLX0	STD	32
+	FAHDLLX0	STD	30
+	NO2I1HDLLX1	STD	25
+	AN221HDLLX0	STD	21
+	EO2HDLLX0	STD	21
+	OA21HDLLX0	STD	21
+	DFFRQHDLLX0	STD	20
+	NA2I1HDLLX0	STD	20
+	NA3I2HDLLX0	STD	20
+	NO4I3HDLLX0	STD	17
+	OA211HDLLX0	STD	16
+	AO21HDLLX0	STD	15
+	NO3HDLLX2	STD	14
+	NO3I2HDLLX0	STD	13
+	NO2HDLLX2	STD	11
+	NA4I3HDLLX0	STD	11
+	DFRQHDLLX0	STD	10
+	AND3HDLLX0	STD	8
+	OR2HDLLX0	STD	8
+	DLHQHDLLX1	STD	7
+	AO211HDLLX0	STD	7
+	AN321HDLLX0	STD	6
+	NO3HDLLX1	STD	5
+	ON321HDLLX0	STD	5
+	OA32HDLLX0	STD	5
+	NO22HDLLX0	STD	5
+	CAGHDLLX0	STD	4
+	BUHDLLX4	STD	4
+	AO32HDLLX0	STD	4
+	NO3I2HDLLX1	STD	3
+	DFFRHDLLX0	STD	3
+	NA4I2HDLLX0	STD	3
+	ON222HDLLX0	STD	3
+	AN222HDLLX1	STD	2
+	NA2I1HDLLX1	STD	2
+	NA2HDLLX1	STD	2
+	OR3HDLLX0	STD	2
+	AND4HDLLX0	STD	2
+	NO4I2HDLLX0	STD	2
+	AN33HDLLX0	STD	2
+	OA31HDLLX0	STD	2
+	AO31HDLLX0	STD	2
+	EN3HDLLX0	STD	2
+	OR4HDLLX0	STD	2
+	ON211HDLLX1	STD	1
+	NA22HDLLX1	STD	1
+	AN211HDLLX1	STD	1
+	LOGIC1HDLL	STD	1
+	NO2I1HDLLX2	STD	1
+	AO222HDLLX1	STD	1
+	OA22HDLLX1	STD	1
+	NO2I1HDLLX4	STD	1
+	DFRSHDLLX0	STD	1
+	DFFRSQHDLLX0	STD	1
+	DFRRSQHDLLX0	STD	1
+	AO32HDLLX1	STD	1
+	DLHSQHDLLX0	STD	1
+	AN22HDLLX2	STD	1
+	NA2HDLLX2	STD	1
+	MU2IHDLLX2	STD	1
+	NA4I3HDLLX2	STD	1
+	INHDLLX4	STD	1
+	EO3HDLLX0	STD	1
+	NO3I1HDLLX0	STD	1
+	NA3I1HDLLX0	STD	1
+	OA222HDLLX0	STD	1
+	NA4I1HDLLX0	STD	1
+	DFRHDLLX0	STD	1
+	ON33HDLLX0	STD	1
+	DFFSQHDLLX0	STD	1
+	ON21HDLLX2	STD	1
+	XSPRAMLP_2048X32_M8P	MACRO	1
+	FILLER01F	IO	26
+	FILLER10F	IO	20
+	FILLER20F	IO	14
+	BBC2SF		IO	8
+	GNDORPADF	IO	6
+	ICF		IO	5
+	VDDCPADF	IO	5
+	BT2SF		IO	4
+	VDDPADF		IO	3
+	VDDORPADF	IO	2
+	CORNERSF	CORNER	2
+	=================================
+
+Timing/Optimization Information:
+
+Global Routing Information:
+
+Track Assignment Information:
+
+Detailed Routing Information:
+
+DRC information: 
+      Total error number: 0
+
+Ring Wiring Statistics:
+    metal5 Wire Length(count):               4979.52(6)
+    metal6 Wire Length(count):               4444.16(6)
+  ==============================================
+    Total Wire Length(count):                9423.68(12)
+    Number of via5 Contacts:             12
+  ==============================================
+    Total Number of Contacts:       12
+
+Stripe Wiring Statistics:
+    metal5 Wire Length(count):              14931.28(20)
+    metal6 Wire Length(count):              13472.32(20)
+  ==============================================
+    Total Wire Length(count):               28403.60(40)
+    Number of via5 Contacts:            196
+  ==============================================
+    Total Number of Contacts:      196
+
+User Wiring Statistics:
+
+PG follow-pin Wiring Statistics:
+    metal1 Wire Length(count):             188293.02(241)
+    metal2 Wire Length(count):                 31.55(4)
+    metal3 Wire Length(count):                 31.65(4)
+    metal4 Wire Length(count):                 48.62(6)
+    metal5 Wire Length(count):                536.67(165)
+  ==============================================
+    Total Wire Length(count):              188941.51(420)
+    Number of via1 Contacts:           1874
+    Number of via2 Contacts:           1874
+    Number of via3 Contacts:           1865
+    Number of via4 Contacts:           1858
+    Number of via5 Contacts:           1697
+  ==============================================
+    Total Number of Contacts:     9168
+
+Signal Wiring Statistics:
+      Mask Name      Contact Code    Number Of Contacts    Percentage
+
+  Horizontal/Vertical Wire Distribution:
+    Layer      Hor. Wire (% of Hor.)     Ver. Wire (% of Ver.)
+  ==============================================================
+    Total              0.00                      0.00
+1

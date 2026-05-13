@@ -1,0 +1,5 @@
+//////////////////////UART Report//////////////////////////
+
+---Data received through the UART port---
+Prediction | RTL Result
+4433f211   | 4433f211

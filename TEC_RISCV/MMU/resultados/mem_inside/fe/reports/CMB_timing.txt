@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CMB
+Version: N-2017.09-SP4
+Date   : Thu Jun 21 16:58:09 2018
+****************************************
+
+Operating Conditions: typ_1_80V_25C   Library: D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+Wire Load Model Mode: enclosed
+
+  Startpoint: inst_controller/gen_sgnl/rdy_to_dvc_reg
+              (falling edge-triggered flip-flop clocked by reloj)
+  Endpoint: inst_controller/maq_core/Data_Read_core_reg_0_
+            (rising edge-triggered flip-flop clocked by reloj)
+  Path Group: reloj
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CMB                100k                  D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+  controlador_bus_sz80_Adrs_Data_sz32_Intr_D_sz72_cod_sz8_mem_adrs_sz11_bs_adrs_sz24_cant_io5_fifo_int_depth3_watch_dog_sz32_fifo_int_sz72
+                     30k                   D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+  core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11
+                     10k                   D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock reloj (fall edge)                                25.00      25.00
+  clock network delay (ideal)                             3.00      28.00
+  inst_controller/gen_sgnl/rdy_to_dvc_reg/CN (DFFRQHDLLX0)
+                                                          0.00      28.00 f
+  inst_controller/gen_sgnl/rdy_to_dvc_reg/Q (DFFRQHDLLX0)
+                                                          0.57      28.57 r
+  inst_controller/gen_sgnl/rdy_to_dvc (mem_sgnl_gen)      0.00      28.57 r
+  inst_controller/U39/Q (INHDLLX0)                        0.10      28.67 f
+  inst_controller/U7/Q (NO2HDLLX0)                        3.74      32.41 r
+  inst_controller/maq_core/RDY (core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11)
+                                                          0.00      32.41 r
+  inst_controller/maq_core/U913/Q (NA2HDLLX0)             0.29      32.70 f
+  inst_controller/maq_core/U912/Q (INHDLLX0)              0.27      32.97 r
+  inst_controller/maq_core/U198/Q (AN33HDLLX0)            0.24      33.21 f
+  inst_controller/maq_core/U199/Q (ON21HDLLX0)            0.39      33.59 r
+  inst_controller/maq_core/U853/Q (INHDLLX0)              0.96      34.56 f
+  inst_controller/maq_core/U849/Q (NO3HDLLX0)             1.03      35.59 r
+  inst_controller/maq_core/U24/Q (NO3I2HDLLX0)            3.18      38.76 r
+  inst_controller/maq_core/U844/Q (AN22HDLLX0)            0.33      39.10 f
+  inst_controller/maq_core/U842/Q (NA4HDLLX0)             0.39      39.48 r
+  inst_controller/maq_core/Data_Read_core_reg_0_/D (DFRRQHDLLX0)
+                                                          0.00      39.48 r
+  data arrival time                                                 39.48
+
+  clock reloj (rise edge)                                50.00      50.00
+  clock network delay (ideal)                             3.00      53.00
+  clock uncertainty                                      -0.50      52.50
+  inst_controller/maq_core/Data_Read_core_reg_0_/C (DFRRQHDLLX0)
+                                                          0.00      52.50 r
+  library setup time                                     -0.17      52.33
+  data required time                                                52.33
+  --------------------------------------------------------------------------
+  data required time                                                52.33
+  data arrival time                                                -39.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.85
+
+
+1

@@ -1,0 +1,19 @@
+simSetSimulator "-vcssv" -exec \
+           "/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv" \
+           -args \
+           "-cm line+cond+fsm+tgl+assert+branch+property_path -cm_name nop +TESTNAME=nop_program"
+debImport "-dbdir" \
+          "/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv.daidir"
+debLoadSimResult \
+           /mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/sim_files/core_sim_files/pre_synth_nop_program_test.fsdb
+wvCreateWindow
+srcHBSelect "topcore_tb.uut" -win $_nTrace1
+srcHBSelect "topcore_tb.uut" -win $_nTrace1
+srcHBAddObjectToWave -clipboard
+wvDrop -win $_nWave2
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 3944259225.712777 4472380786.694825
+wvZoom -win $_nWave2 3993334935.708220 4032930110.818806
+verdiDockWidgetRestore -dock windowDock_nWave_2
+debExit

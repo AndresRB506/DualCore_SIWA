@@ -1,0 +1,272 @@
+{
+    "fifo_ltch_no_rst": [
+        "fifo_ltch_no_rst",
+        "UUmPf",
+        "module",
+        12
+    ],
+    "_vcs_unit__984821673": [
+        "_vcs_unit__984821673",
+        "it71i",
+        "module",
+        46
+    ],
+    "XSPRAMLP_2048X32_M8P_DFF": [
+        "XSPRAMLP_2048X32_M8P_DFF",
+        "Dagb4",
+        "udp",
+        45
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "tec_riscv_bus": [
+        "tec_riscv_bus",
+        "iVz5Y",
+        "module",
+        28
+    ],
+    "parallel_serial": [
+        "parallel_serial",
+        "maQnz",
+        "module",
+        16
+    ],
+    "prll_d_reg_0001": [
+        "prll_d_reg_0001",
+        "FBWFc",
+        "module",
+        4
+    ],
+    "serializer_0000": [
+        "serializer_0000",
+        "yI6HV",
+        "module",
+        17
+    ],
+    "prll_wt_st_mchn": [
+        "prll_wt_st_mchn",
+        "bSefM",
+        "module",
+        25
+    ],
+    "prll_d_ltch_no_rst_0000": [
+        "prll_d_ltch_no_rst_0000",
+        "iJpid",
+        "module",
+        5
+    ],
+    "prll_d_reg_0000": [
+        "prll_d_reg_0000",
+        "jJa1f",
+        "module",
+        3
+    ],
+    "ALU_2": [
+        "ALU_2",
+        "EyNJN",
+        "module",
+        34
+    ],
+    "prll_d_ltch_0000": [
+        "prll_d_ltch_0000",
+        "eh30K",
+        "module",
+        6
+    ],
+    "fifo_ltch": [
+        "fifo_ltch",
+        "VC4mS",
+        "module",
+        11
+    ],
+    "neg_edge": [
+        "neg_edge",
+        "k0NrH",
+        "module",
+        7
+    ],
+    "fifo_flops": [
+        "fifo_flops",
+        "PSfyd",
+        "module",
+        8
+    ],
+    "fifo_flops_no_full_0000": [
+        "fifo_flops_no_full_0000",
+        "uqp68",
+        "module",
+        9
+    ],
+    "rst_lgc": [
+        "rst_lgc",
+        "WLN4t",
+        "module",
+        13
+    ],
+    "Decodificador": [
+        "Decodificador",
+        "h8nEf",
+        "module",
+        38
+    ],
+    "ntrpt_cam_fifo": [
+        "ntrpt_cam_fifo",
+        "Guucm",
+        "module",
+        14
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        44
+    ],
+    "fifo_flops_no_full_0001": [
+        "fifo_flops_no_full_0001",
+        "u2IL7",
+        "module",
+        10
+    ],
+    "mem_latch": [
+        "mem_latch",
+        "zUIsQ",
+        "module",
+        15
+    ],
+    "Read_st_Mchn": [
+        "Read_st_Mchn",
+        "LUjI7",
+        "module",
+        18
+    ],
+    "DECO_INSTR": [
+        "DECO_INSTR",
+        "DCgbR",
+        "module",
+        29
+    ],
+    "prll_bs_ntrfs_riscv_0000": [
+        "prll_bs_ntrfs_riscv_0000",
+        "VEx0J",
+        "module",
+        27
+    ],
+    "Write_st_Mchn": [
+        "Write_st_Mchn",
+        "atLs2",
+        "module",
+        19
+    ],
+    "Arbiter": [
+        "Arbiter",
+        "ZQjeY",
+        "module",
+        21
+    ],
+    "bs_ntrfs": [
+        "bs_ntrfs",
+        "tSaKw",
+        "module",
+        20
+    ],
+    "Decodificador_0000": [
+        "Decodificador_0000",
+        "ZR4r6",
+        "module",
+        39
+    ],
+    "bs_ntrfs_n_rbtr": [
+        "bs_ntrfs_n_rbtr",
+        "hSZxw",
+        "module",
+        22
+    ],
+    "prll_rgstr": [
+        "prll_rgstr",
+        "hQbYt",
+        "module",
+        23
+    ],
+    "Banco_registros_latches": [
+        "Banco_registros_latches",
+        "pGJY8",
+        "module",
+        41
+    ],
+    "prll_bs_ntrfs": [
+        "prll_bs_ntrfs",
+        "qdMtn",
+        "module",
+        26
+    ],
+    "prll_rd_st_mchn": [
+        "prll_rd_st_mchn",
+        "GDATE",
+        "module",
+        24
+    ],
+    "tristategate": [
+        "tristategate",
+        "CVIdu",
+        "module",
+        35
+    ],
+    "Barrel_Shifter_0000": [
+        "Barrel_Shifter_0000",
+        "ex7vW",
+        "module",
+        30
+    ],
+    "csk_bloque": [
+        "csk_bloque",
+        "Eiy7n",
+        "module",
+        31
+    ],
+    "CSK_sin_mux_0000": [
+        "CSK_sin_mux_0000",
+        "UIEu2",
+        "module",
+        32
+    ],
+    "Test_Top": [
+        "Test_Top",
+        "bvISK",
+        "module",
+        43
+    ],
+    "ALU": [
+        "ALU",
+        "trjvP",
+        "module",
+        33
+    ],
+    "tristategate_negado": [
+        "tristategate_negado",
+        "FPiqB",
+        "module",
+        36
+    ],
+    "latch_tri_rst1_Hard": [
+        "latch_tri_rst1_Hard",
+        "BWpax",
+        "module",
+        37
+    ],
+    "csr_file_0000": [
+        "csr_file_0000",
+        "hITfz",
+        "module",
+        40
+    ],
+    "mbc": [
+        "mbc",
+        "HS8JQ",
+        "module",
+        42
+    ]
+}

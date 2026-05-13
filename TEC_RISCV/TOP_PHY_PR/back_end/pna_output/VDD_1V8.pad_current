@@ -1,0 +1,6 @@
+Pad Cell vdd_1v8_core_up at (941.000 1360.000) Supplies   27.99 mA Current (33.57%)
+Pad Cell vdd_1v8_core_down_2 at (1129.000 0.000) Supplies   26.53 mA Current (31.82%)
+Pad Cell vdd_1v8_core_down_1 at (659.000 0.000) Supplies   17.97 mA Current (21.55%)
+Pad Cell vdd_1v8_core_left at (0.000 295.000) Supplies   10.89 mA Current (13.06%)
+Total Current from Pad Cells:   83.39 mA (100.00%)
+Total Current from Virtual Pads:    0.00 mA (0.00%)

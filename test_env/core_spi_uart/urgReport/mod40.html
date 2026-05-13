@@ -1,0 +1,3786 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: prll_bs_ntrfs_riscv</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_prll_bs_ntrfs_riscv'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_prll_bs_ntrfs_riscv')">prll_bs_ntrfs_riscv</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s8 cl rt"> 84.19</td>
+<td class="s10 cl rt"><a href="mod40.html#Line" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod40.html#Cond" >100.00</a></td>
+<td class="s5 cl rt"><a href="mod40.html#Toggle" > 52.57</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro.sv')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod40.html#inst_tag_3157"  onclick="showContent('inst_tag_3157')">topcore_tb.uut.TOP.Bus.uart_bs_ntrfs</a></td>
+<td class="s6 cl rt"> 64.44</td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3157_Line" >100.00</a></td>
+<td class="s6 cl rt"><a href="mod40.html#inst_tag_3157_Cond" > 66.67</a></td>
+<td class="s2 cl rt"><a href="mod40.html#inst_tag_3157_Toggle" > 26.65</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod40.html#inst_tag_3155"  onclick="showContent('inst_tag_3155')">topcore_tb.uut.TOP.Bus.mbc_bs_ntrfs</a></td>
+<td class="s7 cl rt"> 76.96</td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3155_Line" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3155_Cond" >100.00</a></td>
+<td class="s3 cl rt"><a href="mod40.html#inst_tag_3155_Toggle" > 30.88</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod40.html#inst_tag_3156"  onclick="showContent('inst_tag_3156')">topcore_tb.uut.TOP.Bus.spi_bs_ntrfs</a></td>
+<td class="s8 cl rt"> 80.39</td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3156_Line" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3156_Cond" >100.00</a></td>
+<td class="s4 cl rt"><a href="mod40.html#inst_tag_3156_Toggle" > 41.18</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='inst_tag_3157'>
+<hr>
+<a name="inst_tag_3157"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy6.html#tag_urg_inst_3157" >topcore_tb.uut.TOP.Bus.uart_bs_ntrfs</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 64.44</td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3157_Line" >100.00</a></td>
+<td class="s6 cl rt"><a href="mod40.html#inst_tag_3157_Cond" > 66.67</a></td>
+<td class="s2 cl rt"><a href="mod40.html#inst_tag_3157_Toggle" > 26.65</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 61.32</td>
+<td class="s8 cl rt"> 82.73</td>
+<td class="s9 cl rt"> 92.39</td>
+<td class="s3 cl rt"> 39.09</td>
+<td class="s1 cl rt"> 11.11</td>
+<td class="s8 cl rt"> 81.28</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4261" id="tag_urg_inst_4261">D_reg_rd</a></td>
+<td class="s8 cl rt"> 89.12</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 67.35</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4262" id="tag_urg_inst_4262">D_reg_wt</a></td>
+<td class="s4 cl rt"> 41.70</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  8.42</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6714" id="tag_urg_inst_6714">bit_[0].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6724" id="tag_urg_inst_6724">bit_[10].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6725" id="tag_urg_inst_6725">bit_[11].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6726" id="tag_urg_inst_6726">bit_[12].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6727" id="tag_urg_inst_6727">bit_[13].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6728" id="tag_urg_inst_6728">bit_[14].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6729" id="tag_urg_inst_6729">bit_[15].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6730" id="tag_urg_inst_6730">bit_[16].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6731" id="tag_urg_inst_6731">bit_[17].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6732" id="tag_urg_inst_6732">bit_[18].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6733" id="tag_urg_inst_6733">bit_[19].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6715" id="tag_urg_inst_6715">bit_[1].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6734" id="tag_urg_inst_6734">bit_[20].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6735" id="tag_urg_inst_6735">bit_[21].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6736" id="tag_urg_inst_6736">bit_[22].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6737" id="tag_urg_inst_6737">bit_[23].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6738" id="tag_urg_inst_6738">bit_[24].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6739" id="tag_urg_inst_6739">bit_[25].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6740" id="tag_urg_inst_6740">bit_[26].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6741" id="tag_urg_inst_6741">bit_[27].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6742" id="tag_urg_inst_6742">bit_[28].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6743" id="tag_urg_inst_6743">bit_[29].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6716" id="tag_urg_inst_6716">bit_[2].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6744" id="tag_urg_inst_6744">bit_[30].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6745" id="tag_urg_inst_6745">bit_[31].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6746" id="tag_urg_inst_6746">bit_[32].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6747" id="tag_urg_inst_6747">bit_[33].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6748" id="tag_urg_inst_6748">bit_[34].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6749" id="tag_urg_inst_6749">bit_[35].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6750" id="tag_urg_inst_6750">bit_[36].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6751" id="tag_urg_inst_6751">bit_[37].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6752" id="tag_urg_inst_6752">bit_[38].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6753" id="tag_urg_inst_6753">bit_[39].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6717" id="tag_urg_inst_6717">bit_[3].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6754" id="tag_urg_inst_6754">bit_[40].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6755" id="tag_urg_inst_6755">bit_[41].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6756" id="tag_urg_inst_6756">bit_[42].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6757" id="tag_urg_inst_6757">bit_[43].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6758" id="tag_urg_inst_6758">bit_[44].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6759" id="tag_urg_inst_6759">bit_[45].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6760" id="tag_urg_inst_6760">bit_[46].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6761" id="tag_urg_inst_6761">bit_[47].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6762" id="tag_urg_inst_6762">bit_[48].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6763" id="tag_urg_inst_6763">bit_[49].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6718" id="tag_urg_inst_6718">bit_[4].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6764" id="tag_urg_inst_6764">bit_[50].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6765" id="tag_urg_inst_6765">bit_[51].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6766" id="tag_urg_inst_6766">bit_[52].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6767" id="tag_urg_inst_6767">bit_[53].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6768" id="tag_urg_inst_6768">bit_[54].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6769" id="tag_urg_inst_6769">bit_[55].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6770" id="tag_urg_inst_6770">bit_[56].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6771" id="tag_urg_inst_6771">bit_[57].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6772" id="tag_urg_inst_6772">bit_[58].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6773" id="tag_urg_inst_6773">bit_[59].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6719" id="tag_urg_inst_6719">bit_[5].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6774" id="tag_urg_inst_6774">bit_[60].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6775" id="tag_urg_inst_6775">bit_[61].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6776" id="tag_urg_inst_6776">bit_[62].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6777" id="tag_urg_inst_6777">bit_[63].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_5.html#inst_tag_6778" id="tag_urg_inst_6778">bit_[64].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6720" id="tag_urg_inst_6720">bit_[6].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6721" id="tag_urg_inst_6721">bit_[7].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6722" id="tag_urg_inst_6722">bit_[8].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6723" id="tag_urg_inst_6723">bit_[9].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod35.html#inst_tag_3027" id="tag_urg_inst_3027">prll_cntrl</a></td>
+<td class="s5 cl rt"> 59.16</td>
+<td class="s7 cl rt"> 79.49</td>
+<td class="s7 cl rt"> 74.51</td>
+<td class="s5 cl rt"> 59.43</td>
+<td class="s1 cl rt"> 11.11</td>
+<td class="s7 cl rt"> 71.25</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_3155'>
+<hr>
+<a name="inst_tag_3155"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy4.html#tag_urg_inst_3155" >topcore_tb.uut.TOP.Bus.mbc_bs_ntrfs</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 76.96</td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3155_Line" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3155_Cond" >100.00</a></td>
+<td class="s3 cl rt"><a href="mod40.html#inst_tag_3155_Toggle" > 30.88</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 72.57</td>
+<td class="s9 cl rt"> 98.72</td>
+<td class="s9 cl rt"> 98.37</td>
+<td class="s5 cl rt"> 50.77</td>
+<td class="s1 cl rt"> 16.67</td>
+<td class="s9 cl rt"> 98.30</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4257" id="tag_urg_inst_4257">D_reg_rd</a></td>
+<td class="s8 cl rt"> 88.95</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.84</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4258" id="tag_urg_inst_4258">D_reg_wt</a></td>
+<td class="s7 cl rt"> 79.25</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"> 37.76</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6580" id="tag_urg_inst_6580">bit_[0].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6590" id="tag_urg_inst_6590">bit_[10].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6591" id="tag_urg_inst_6591">bit_[11].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6592" id="tag_urg_inst_6592">bit_[12].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6593" id="tag_urg_inst_6593">bit_[13].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6594" id="tag_urg_inst_6594">bit_[14].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6595" id="tag_urg_inst_6595">bit_[15].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6596" id="tag_urg_inst_6596">bit_[16].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6597" id="tag_urg_inst_6597">bit_[17].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6598" id="tag_urg_inst_6598">bit_[18].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6599" id="tag_urg_inst_6599">bit_[19].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6581" id="tag_urg_inst_6581">bit_[1].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6600" id="tag_urg_inst_6600">bit_[20].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6601" id="tag_urg_inst_6601">bit_[21].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6602" id="tag_urg_inst_6602">bit_[22].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6603" id="tag_urg_inst_6603">bit_[23].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6604" id="tag_urg_inst_6604">bit_[24].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6605" id="tag_urg_inst_6605">bit_[25].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6606" id="tag_urg_inst_6606">bit_[26].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6607" id="tag_urg_inst_6607">bit_[27].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6608" id="tag_urg_inst_6608">bit_[28].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6609" id="tag_urg_inst_6609">bit_[29].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6582" id="tag_urg_inst_6582">bit_[2].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6610" id="tag_urg_inst_6610">bit_[30].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6611" id="tag_urg_inst_6611">bit_[31].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6612" id="tag_urg_inst_6612">bit_[32].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6613" id="tag_urg_inst_6613">bit_[33].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6614" id="tag_urg_inst_6614">bit_[34].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6615" id="tag_urg_inst_6615">bit_[35].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6616" id="tag_urg_inst_6616">bit_[36].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6617" id="tag_urg_inst_6617">bit_[37].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6618" id="tag_urg_inst_6618">bit_[38].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6619" id="tag_urg_inst_6619">bit_[39].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6583" id="tag_urg_inst_6583">bit_[3].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6620" id="tag_urg_inst_6620">bit_[40].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6621" id="tag_urg_inst_6621">bit_[41].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6622" id="tag_urg_inst_6622">bit_[42].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6623" id="tag_urg_inst_6623">bit_[43].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6624" id="tag_urg_inst_6624">bit_[44].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6625" id="tag_urg_inst_6625">bit_[45].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6626" id="tag_urg_inst_6626">bit_[46].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6627" id="tag_urg_inst_6627">bit_[47].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6628" id="tag_urg_inst_6628">bit_[48].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6629" id="tag_urg_inst_6629">bit_[49].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6584" id="tag_urg_inst_6584">bit_[4].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6630" id="tag_urg_inst_6630">bit_[50].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6631" id="tag_urg_inst_6631">bit_[51].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6632" id="tag_urg_inst_6632">bit_[52].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6633" id="tag_urg_inst_6633">bit_[53].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6634" id="tag_urg_inst_6634">bit_[54].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6635" id="tag_urg_inst_6635">bit_[55].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6636" id="tag_urg_inst_6636">bit_[56].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6637" id="tag_urg_inst_6637">bit_[57].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6638" id="tag_urg_inst_6638">bit_[58].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6639" id="tag_urg_inst_6639">bit_[59].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6585" id="tag_urg_inst_6585">bit_[5].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6640" id="tag_urg_inst_6640">bit_[60].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6641" id="tag_urg_inst_6641">bit_[61].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6642" id="tag_urg_inst_6642">bit_[62].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6643" id="tag_urg_inst_6643">bit_[63].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6644" id="tag_urg_inst_6644">bit_[64].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6586" id="tag_urg_inst_6586">bit_[6].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6587" id="tag_urg_inst_6587">bit_[7].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6588" id="tag_urg_inst_6588">bit_[8].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6589" id="tag_urg_inst_6589">bit_[9].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod35.html#inst_tag_3025" id="tag_urg_inst_3025">prll_cntrl</a></td>
+<td class="s7 cl rt"> 76.17</td>
+<td class="s9 cl rt"> 92.31</td>
+<td class="s9 cl rt"> 94.12</td>
+<td class="s8 cl rt"> 87.74</td>
+<td class="s1 cl rt"> 16.67</td>
+<td class="s9 cl rt"> 90.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_3156'>
+<hr>
+<a name="inst_tag_3156"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy5.html#tag_urg_inst_3156" >topcore_tb.uut.TOP.Bus.spi_bs_ntrfs</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s8 cl rt"> 80.39</td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3156_Line" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod40.html#inst_tag_3156_Cond" >100.00</a></td>
+<td class="s4 cl rt"><a href="mod40.html#inst_tag_3156_Toggle" > 41.18</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 74.34</td>
+<td class="s9 cl rt"> 98.29</td>
+<td class="s9 cl rt"> 99.46</td>
+<td class="s5 cl rt"> 59.17</td>
+<td class="s1 cl rt"> 16.67</td>
+<td class="s9 cl rt"> 98.09</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4259" id="tag_urg_inst_4259">D_reg_rd</a></td>
+<td class="s8 cl rt"> 84.18</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 52.55</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4260" id="tag_urg_inst_4260">D_reg_wt</a></td>
+<td class="s8 cl rt"> 88.78</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"> 66.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6647" id="tag_urg_inst_6647">bit_[0].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6657" id="tag_urg_inst_6657">bit_[10].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6658" id="tag_urg_inst_6658">bit_[11].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6659" id="tag_urg_inst_6659">bit_[12].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6660" id="tag_urg_inst_6660">bit_[13].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6661" id="tag_urg_inst_6661">bit_[14].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6662" id="tag_urg_inst_6662">bit_[15].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6663" id="tag_urg_inst_6663">bit_[16].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6664" id="tag_urg_inst_6664">bit_[17].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6665" id="tag_urg_inst_6665">bit_[18].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6666" id="tag_urg_inst_6666">bit_[19].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6648" id="tag_urg_inst_6648">bit_[1].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6667" id="tag_urg_inst_6667">bit_[20].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6668" id="tag_urg_inst_6668">bit_[21].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6669" id="tag_urg_inst_6669">bit_[22].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6670" id="tag_urg_inst_6670">bit_[23].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6671" id="tag_urg_inst_6671">bit_[24].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6672" id="tag_urg_inst_6672">bit_[25].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6673" id="tag_urg_inst_6673">bit_[26].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6674" id="tag_urg_inst_6674">bit_[27].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6675" id="tag_urg_inst_6675">bit_[28].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6676" id="tag_urg_inst_6676">bit_[29].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6649" id="tag_urg_inst_6649">bit_[2].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6677" id="tag_urg_inst_6677">bit_[30].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6678" id="tag_urg_inst_6678">bit_[31].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6679" id="tag_urg_inst_6679">bit_[32].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6680" id="tag_urg_inst_6680">bit_[33].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6681" id="tag_urg_inst_6681">bit_[34].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6682" id="tag_urg_inst_6682">bit_[35].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6683" id="tag_urg_inst_6683">bit_[36].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6684" id="tag_urg_inst_6684">bit_[37].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6685" id="tag_urg_inst_6685">bit_[38].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6686" id="tag_urg_inst_6686">bit_[39].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6650" id="tag_urg_inst_6650">bit_[3].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6687" id="tag_urg_inst_6687">bit_[40].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6688" id="tag_urg_inst_6688">bit_[41].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6689" id="tag_urg_inst_6689">bit_[42].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6690" id="tag_urg_inst_6690">bit_[43].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6691" id="tag_urg_inst_6691">bit_[44].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6692" id="tag_urg_inst_6692">bit_[45].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6693" id="tag_urg_inst_6693">bit_[46].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6694" id="tag_urg_inst_6694">bit_[47].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6695" id="tag_urg_inst_6695">bit_[48].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6696" id="tag_urg_inst_6696">bit_[49].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6651" id="tag_urg_inst_6651">bit_[4].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6697" id="tag_urg_inst_6697">bit_[50].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6698" id="tag_urg_inst_6698">bit_[51].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6699" id="tag_urg_inst_6699">bit_[52].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6700" id="tag_urg_inst_6700">bit_[53].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6701" id="tag_urg_inst_6701">bit_[54].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6702" id="tag_urg_inst_6702">bit_[55].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6703" id="tag_urg_inst_6703">bit_[56].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6704" id="tag_urg_inst_6704">bit_[57].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6705" id="tag_urg_inst_6705">bit_[58].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6706" id="tag_urg_inst_6706">bit_[59].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6652" id="tag_urg_inst_6652">bit_[5].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6707" id="tag_urg_inst_6707">bit_[60].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6708" id="tag_urg_inst_6708">bit_[61].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6709" id="tag_urg_inst_6709">bit_[62].bus_buf</a></td>
+<td class="s8 cl rt"> 88.89</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6710" id="tag_urg_inst_6710">bit_[63].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_4.html#inst_tag_6711" id="tag_urg_inst_6711">bit_[64].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6653" id="tag_urg_inst_6653">bit_[6].bus_buf</a></td>
+<td class="s7 cl rt"> 77.78</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6654" id="tag_urg_inst_6654">bit_[7].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6655" id="tag_urg_inst_6655">bit_[8].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_3.html#inst_tag_6656" id="tag_urg_inst_6656">bit_[9].bus_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod35.html#inst_tag_3026" id="tag_urg_inst_3026">prll_cntrl</a></td>
+<td class="s7 cl rt"> 76.56</td>
+<td class="s8 cl rt"> 89.74</td>
+<td class="s9 cl rt"> 98.04</td>
+<td class="s8 cl rt"> 89.62</td>
+<td class="s1 cl rt"> 16.67</td>
+<td class="s8 cl rt"> 88.75</td>
+</tr></table><br clear=all>
+</div>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_prll_bs_ntrfs_riscv'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod40.html" >prll_bs_ntrfs_riscv</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>100</td><td>1</td><td>1</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+99                        always@(*)begin
+100        1/1              ld_r &lt;= ~bs_grnt &amp;&amp; wrt;
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod40.html" >prll_bs_ntrfs_riscv</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">Conditions</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">Logical</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       100
+ EXPRESSION (((~bs_grnt)) &amp;&amp; wrt)
+             ------1-----    -2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod40.html" >prll_bs_ntrfs_riscv</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s6">
+<td>Totals</td>
+<td class="rt">16</td>
+<td class="rt">10</td>
+<td class="rt">62.50 </td>
+</tr><tr class="s5">
+<td>Total Bits</td>
+<td class="rt">544</td>
+<td class="rt">286</td>
+<td class="rt">52.57 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">272</td>
+<td class="rt">142</td>
+<td class="rt">52.21 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">272</td>
+<td class="rt">144</td>
+<td class="rt">52.94 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>Port Bits</td>
+<td class="rt">404</td>
+<td class="rt">210</td>
+<td class="rt">51.98 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">202</td>
+<td class="rt">104</td>
+<td class="rt">51.49 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">202</td>
+<td class="rt">106</td>
+<td class="rt">52.48 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Signals</td>
+<td class="rt">6</td>
+<td class="rt">5</td>
+<td class="rt">83.33 </td>
+</tr><tr class="s5">
+<td>Signal Bits</td>
+<td class="rt">140</td>
+<td class="rt">76</td>
+<td class="rt">54.29 </td>
+</tr><tr class="s5">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">70</td>
+<td class="rt">38</td>
+<td class="rt">54.29 </td>
+</tr><tr class="s5">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">70</td>
+<td class="rt">38</td>
+<td class="rt">54.29 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>D_push[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bus[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>trn_chng</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>wrt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_pop[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>rst_r</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rst_w</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ld_w</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bs_grnt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ld_r</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_3157'>
+<a name="inst_tag_3157_Line"></a>
+<b>Line Coverage for Instance : <a href="mod40.html#inst_tag_3157" >topcore_tb.uut.TOP.Bus.uart_bs_ntrfs</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>100</td><td>1</td><td>1</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+99                        always@(*)begin
+100        1/1              ld_r &lt;= ~bs_grnt &amp;&amp; wrt;
+</pre>
+<hr>
+<a name="inst_tag_3157_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod40.html#inst_tag_3157" >topcore_tb.uut.TOP.Bus.uart_bs_ntrfs</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s6"><td class="lf">Conditions</td><td>3</td><td>2</td><td>66.67</td></tr>
+<tr class="s6"><td class="lf">Logical</td><td>3</td><td>2</td><td>66.67</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       100
+ EXPRESSION (((~bs_grnt)) &amp;&amp; wrt)
+             ------1-----    -2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_3157_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod40.html#inst_tag_3157" >topcore_tb.uut.TOP.Bus.uart_bs_ntrfs</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s3">
+<td>Totals</td>
+<td class="rt">16</td>
+<td class="rt">5</td>
+<td class="rt">31.25 </td>
+</tr><tr class="s2">
+<td>Total Bits</td>
+<td class="rt">544</td>
+<td class="rt">145</td>
+<td class="rt">26.65 </td>
+</tr><tr class="s2">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">272</td>
+<td class="rt">71</td>
+<td class="rt">26.10 </td>
+</tr><tr class="s2">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">272</td>
+<td class="rt">74</td>
+<td class="rt">27.21 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s2">
+<td>Ports</td>
+<td class="rt">10</td>
+<td class="rt">2</td>
+<td class="rt">20.00 </td>
+</tr><tr class="s3">
+<td>Port Bits</td>
+<td class="rt">404</td>
+<td class="rt">138</td>
+<td class="rt">34.16 </td>
+</tr><tr class="s3">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">202</td>
+<td class="rt">68</td>
+<td class="rt">33.66 </td>
+</tr><tr class="s3">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">202</td>
+<td class="rt">70</td>
+<td class="rt">34.65 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Signals</td>
+<td class="rt">6</td>
+<td class="rt">3</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">140</td>
+<td class="rt">7</td>
+<td class="rt">5.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">70</td>
+<td class="rt">3</td>
+<td class="rt">4.29  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">70</td>
+<td class="rt">4</td>
+<td class="rt">5.71  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>D_push[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bus[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>trn_chng</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>wrt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_pop[64:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>rst_r</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rst_w</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ld_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bs_grnt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[64:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ld_r</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_3155'>
+<a name="inst_tag_3155_Line"></a>
+<b>Line Coverage for Instance : <a href="mod40.html#inst_tag_3155" >topcore_tb.uut.TOP.Bus.mbc_bs_ntrfs</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>100</td><td>1</td><td>1</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+99                        always@(*)begin
+100        1/1              ld_r &lt;= ~bs_grnt &amp;&amp; wrt;
+</pre>
+<hr>
+<a name="inst_tag_3155_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod40.html#inst_tag_3155" >topcore_tb.uut.TOP.Bus.mbc_bs_ntrfs</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">Conditions</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">Logical</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       100
+ EXPRESSION (((~bs_grnt)) &amp;&amp; wrt)
+             ------1-----    -2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_3155_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod40.html#inst_tag_3155" >topcore_tb.uut.TOP.Bus.mbc_bs_ntrfs</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s6">
+<td>Totals</td>
+<td class="rt">16</td>
+<td class="rt">10</td>
+<td class="rt">62.50 </td>
+</tr><tr class="s3">
+<td>Total Bits</td>
+<td class="rt">544</td>
+<td class="rt">168</td>
+<td class="rt">30.88 </td>
+</tr><tr class="s3">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">272</td>
+<td class="rt">83</td>
+<td class="rt">30.51 </td>
+</tr><tr class="s3">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">272</td>
+<td class="rt">85</td>
+<td class="rt">31.25 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s3">
+<td>Port Bits</td>
+<td class="rt">404</td>
+<td class="rt">150</td>
+<td class="rt">37.13 </td>
+</tr><tr class="s3">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">202</td>
+<td class="rt">74</td>
+<td class="rt">36.63 </td>
+</tr><tr class="s3">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">202</td>
+<td class="rt">76</td>
+<td class="rt">37.62 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Signals</td>
+<td class="rt">6</td>
+<td class="rt">5</td>
+<td class="rt">83.33 </td>
+</tr><tr class="s1">
+<td>Signal Bits</td>
+<td class="rt">140</td>
+<td class="rt">18</td>
+<td class="rt">12.86 </td>
+</tr><tr class="s1">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">70</td>
+<td class="rt">9</td>
+<td class="rt">12.86 </td>
+</tr><tr class="s1">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">70</td>
+<td class="rt">9</td>
+<td class="rt">12.86 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>D_push[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[64:61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bus[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>trn_chng</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>wrt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_pop[56:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[59:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[61:60]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>rst_r</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rst_w</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ld_w</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bs_grnt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[56:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[59:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[61:60]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ld_r</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_3156'>
+<a name="inst_tag_3156_Line"></a>
+<b>Line Coverage for Instance : <a href="mod40.html#inst_tag_3156" >topcore_tb.uut.TOP.Bus.spi_bs_ntrfs</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>100</td><td>1</td><td>1</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+99                        always@(*)begin
+100        1/1              ld_r &lt;= ~bs_grnt &amp;&amp; wrt;
+</pre>
+<hr>
+<a name="inst_tag_3156_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod40.html#inst_tag_3156" >topcore_tb.uut.TOP.Bus.spi_bs_ntrfs</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">Conditions</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">Logical</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       100
+ EXPRESSION (((~bs_grnt)) &amp;&amp; wrt)
+             ------1-----    -2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_3156_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod40.html#inst_tag_3156" >topcore_tb.uut.TOP.Bus.spi_bs_ntrfs</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s6">
+<td>Totals</td>
+<td class="rt">16</td>
+<td class="rt">10</td>
+<td class="rt">62.50 </td>
+</tr><tr class="s4">
+<td>Total Bits</td>
+<td class="rt">544</td>
+<td class="rt">224</td>
+<td class="rt">41.18 </td>
+</tr><tr class="s4">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">272</td>
+<td class="rt">111</td>
+<td class="rt">40.81 </td>
+</tr><tr class="s4">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">272</td>
+<td class="rt">113</td>
+<td class="rt">41.54 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s3">
+<td>Port Bits</td>
+<td class="rt">404</td>
+<td class="rt">150</td>
+<td class="rt">37.13 </td>
+</tr><tr class="s3">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">202</td>
+<td class="rt">74</td>
+<td class="rt">36.63 </td>
+</tr><tr class="s3">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">202</td>
+<td class="rt">76</td>
+<td class="rt">37.62 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Signals</td>
+<td class="rt">6</td>
+<td class="rt">5</td>
+<td class="rt">83.33 </td>
+</tr><tr class="s5">
+<td>Signal Bits</td>
+<td class="rt">140</td>
+<td class="rt">74</td>
+<td class="rt">52.86 </td>
+</tr><tr class="s5">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">70</td>
+<td class="rt">37</td>
+<td class="rt">52.86 </td>
+</tr><tr class="s5">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">70</td>
+<td class="rt">37</td>
+<td class="rt">52.86 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>D_push[56:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[59:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[61:60]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_push[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bus[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>bus[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>trn_chng</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>wrt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INOUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>D_pop[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_pop[64:61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>rst_r</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rst_w</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ld_w</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bs_grnt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bus_pre_w[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bus_pre_w[64:61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ld_r</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_3155">
+    <li>
+      <a href="#inst_tag_3155_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_3155_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_3155_Toggle">Toggle</a>    </li>
+  </ul>
+  <ul name="inst_tag_3156">
+    <li>
+      <a href="#inst_tag_3156_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_3156_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_3156_Toggle">Toggle</a>    </li>
+  </ul>
+  <ul name="inst_tag_3157">
+    <li>
+      <a href="#inst_tag_3157_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_3157_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_3157_Toggle">Toggle</a>    </li>
+  </ul>
+  <ul name="tag_prll_bs_ntrfs_riscv">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

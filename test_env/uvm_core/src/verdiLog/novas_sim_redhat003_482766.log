@@ -1,0 +1,239 @@
+Invoking simulator...
+
+./salida -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" "./salida.daidir"
+*Verdi* Loading libsscore_vcs202303.so
+
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP2, Linux x86_64/64bit, 08/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+
+*Verdi* : Create FSDB file '/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter.fsdb'
+
+*Verdi* : Flush all FSDB Files at 0 ps.
+
+*Verdi* : Enable RPC Server(482823)
+
+srcTBInvokeSim
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2_Full64; Runtime version U-2023.03-SP2_Full64;  Jun 27 19:03 2024
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+  ***********       IMPORTANT RELEASE NOTES         ************
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+xterm-256color is Not a valid terminal...
+Verdi>fsdbDumpvars 1 "tb_top.dut_if"  +all +trace_process;fsdbDumpvars 1 "tb_top.dut_wr._if"  +all +trace_process;fsdbDumpflush 
+
+*Verdi* : Begin traversing the scope (tb_top.dut_if), layer (1).
+*Verdi* : Enable +trace_process and +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the scope (tb_top.dut_wr._if), layer (1).
+*Verdi* : Enable +trace_process and +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : Flush all FSDB Files at 0 ps.
+
+Verdi>run
+*Verdi* Enable Verdi Message Catcher.
+
+Warning-[STASKW_CO1] Cannot open file
+  The file 'Test_Files/Assembly_Code/coremark_program.txt' could not be 
+  opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+
+Warning-[STASKW_RMCOF] Cannot open file
+../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../TOP/coremark_mem_model.sv, 18
+  Cannot open file 'Test_Files/Assembly_Code/coremark_program.txt' passed as 
+  argument to $readmem.
+  Please verify that the first argument to $readmem is a file that exists with
+  proper permissions.
+
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean v_if
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+UVM_INFO /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean ral_csr
+*Verdi* Enable Verdi Factory Dumping.
+UVM_INFO @ 0: reporter [RNTST] Running test test_base...
+----------------------------------- 
+Initiating Prediction Process...
+----------------------------------- 
+-----------------------------------
+Prediction has Finished...
+-----------------------------------
+prediction Size = 1376
+TEST NAME: test_base
+UVM_INFO Sequence.svh(39) @ 0: uvm_test_top.env_inst.agent_inst.sequencer_inst@@sec_message [SEQ] New item Delay=500000, SimulationTime=300000
+UVM_INFO Scoreboard.svh(47) @ 5000: uvm_test_top.env_inst.scoreboard_inst [SB] Analisys Port Activity : RST=1
+UVM_INFO coverage_classes.svh(79) @ 746955000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 747095000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 747235000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 747375000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 747515000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 747655000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 747795000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 747935000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 748075000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 748215000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 748355000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 748495000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 748635000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 748775000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 748915000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 749055000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 749195000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 749335000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 749475000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 749615000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 749755000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 749895000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 750035000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 750175000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 750315000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 750455000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 750595000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 750735000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 750875000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 751015000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 751155000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 49
+UVM_INFO coverage_classes.svh(79) @ 751295000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 54
+UVM_INFO coverage_classes.svh(79) @ 751425000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 54
+UVM_INFO coverage_classes.svh(79) @ 751555000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 54
+UVM_INFO coverage_classes.svh(79) @ 751695000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 751825000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 751965000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 752105000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 752245000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 752375000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 752505000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 752645000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 752775000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 752915000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 753045000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 753185000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 753325000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 753465000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 753605000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 753745000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 753885000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 754025000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 754165000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 754305000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 754445000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 754585000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 754725000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 754865000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 755005000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 755145000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 755285000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 755425000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 755565000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 755705000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 755845000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 755985000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 756125000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 756265000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 756405000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 756545000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 756685000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 756825000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 756965000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 757105000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 757245000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 757385000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 757515000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 757645000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 757785000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 757915000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 758055000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 758195000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 758335000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 758465000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 758595000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 758735000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 758865000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 759005000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 759135000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 759275000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 759415000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 759555000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 759695000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 759835000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 759975000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 760115000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 760255000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 760395000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 760535000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 760675000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 760815000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 760955000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 761095000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 761235000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+uvm_callback.svh, 1069 :       m_obj = obj;
+Verdi>fsdbDumpvars 1 "tb_top.dut_wr.uut.TOP.Reg_file.write"  +all +trace_process;fsdbDumpflush 
+
+*Verdi* : Dumping the signal (tb_top.dut_wr.uut.TOP.Reg_file.write).
+*Verdi* : Flush all FSDB Files at 761,265,000 ps.
+
+Verdi>run
+UVM_INFO coverage_classes.svh(79) @ 761375000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 761515000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 761655000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 761795000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 761935000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 762075000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 762215000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 762355000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 762495000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 762635000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 762775000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 762915000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 763055000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 763195000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 763335000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 763475000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 763605000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 763735000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+UVM_INFO coverage_classes.svh(79) @ 763875000: uvm_test_top.env_inst.inst_cov_collector [uvm_test_top.env_inst.inst_cov_collector] OLD Coverage 61
+uvm_reg_item.svh, 43 :   `uvm_object_utils(uvm_reg_item)

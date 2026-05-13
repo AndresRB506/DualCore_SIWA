@@ -1,0 +1,140 @@
+22       
+0 ../BUS_Micro/Bus_Micro.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../BUS_Micro/Bus_Micro.sv
+0 ../BUS_Micro/Bus_Micro_lib.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../BUS_Micro/Bus_Micro_lib.sv
+0 ../FIFO_Latches/fifo.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../FIFO_Latches/fifo.sv
+0 ../DECO_INSTR/DECO_INSTR.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../DECO_INSTR/DECO_INSTR.sv
+0 ../ALU/ALU_2.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../ALU/ALU_2.sv
+0 ../ALU/ALU_Library.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../ALU/ALU_Library.sv
+0 ../Register_File/Banco_de_registros_latches.v
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../Register_File/Banco_de_registros_latches.v
+0 ../Register_File/Biblioteca.v
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../Register_File/Biblioteca.v
+0 ../MBC/MBC.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../MBC/MBC.sv
+0 ../TOP/control.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../TOP/control.sv
+0 ../TOP/XSPRAMLP_2048X32_M8P.sv
+0 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/etc/systemverilog/../TOP/XSPRAMLP_2048X32_M8P.sv
+35
++define+PROGRAM_FILE=""Test_Files/Assembly_Code/Aritmeticas/addi.o.txt""
++incdir+../../TEC_RISCV/TOP
++itf+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/vcsdp.tab
++memcbk
++vcs+flush+all
++vcsd
++vpi
++warn=all
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/liberrorinf.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libsnpsmalloc.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mupdate
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/include
+-Xpiyushb1=0x80
+-debug_access+all+dmptf+bc
+-debug_region=cell+lib
+-full64
+-gen_obj
+-picarchive
+-sverilog
+-timescale=1ns/10ps
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/bin/vcs1
+topcore_tb.sv
+54
+sysc_uni_pwd=/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core
+XDG_SESSION_COOKIE=1cbc5570a79fabc6ec9552bd00000016-1537982759.392551-794899301
+VNCDESKTOP=zener:14 (rmolina)
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UVM_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2
+UNAME=/bin/uname
+TOOL_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64
+SYSFONT=latarcyrheb-sun16
+SYNOPSYS_SIM_SETUP=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI/design/synopsys_sim.setup
+SYNOPSYS_HOME=/mnt/vol_NFS_Zener/tools/synopsys/apps
+SYNOPSYS=/datos/Synopsys/
+SSH_TTY=/dev/pts/14
+SSH_CONNECTION=172.21.134.116 50151 172.21.16.5 22
+SSH_CLIENT=172.21.134.116 50151 22
+SSH_AUTH_SOCK=/tmp/keyring-OYPjA4/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=30812
+SNPS_VCS_CLANG_PATH=/fs/src/interfaces/LLVM_Project/QSCM/opt/llvm-3.9.1/linux64
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/30811,unix/unix:/tmp/.ICE-unix/30811
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PYTHONPATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/pylib:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/plat_linux_gcc52_64/pyext:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/plat_linux_gcc52_64/lib:.:
+PYTHONHOME=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/plat_linux_gcc52_64/3rd
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-rmolina
+OA_PLUGIN_PATH=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/plat_linux_gcc52_64/3rd/oa/data/plugins:/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262/quickstart:
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+ICV_HOME_DIR=/mnt/vol_NFS_Zener/tools/synopsys/apps/icvalidator/L-2016.06-SP2-3
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/local/ESTUDIANTES/rmolina/.gtkrc-1.2-gnome2
+GNOME_KEYRING_SOCKET=/tmp/keyring-OYPjA4/socket
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+FTK_KIT_DIR=/mnt/vol_NFS_Zener/tools/synopsys/pdks/xt018-ams/v1_0_2
+DESIGN_HOME=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-XvW3lAQ4j2,guid=e458ee01698ffbb97e3b2fc300002837
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+CNI_ROOT=/mnt/vol_NFS_Zener/tools/synopsys/apps/PyCell_Studio/N-2017.12_Py262
+CNI_LOG_DEFAULT=/dev/null
+0
+17
+1538427285 Reference_Model.sv
+1538171826 Selfcheck.sv
+1537919782 Status.sv
+1537399748 ../../TEC_RISCV/TOP/../TOP/XSPRAMLP_2048X32_M8P.sv
+1538427352 ../../TEC_RISCV/TOP/../TOP/control.sv
+1538427352 ../../TEC_RISCV/TOP/../MBC/MBC.sv
+1537920015 ../../TEC_RISCV/TOP/../Register_File/Biblioteca.v
+1537920015 ../../TEC_RISCV/TOP/../Register_File/Banco_de_registros_latches.v
+1537822777 ../../TEC_RISCV/TOP/../ALU/ALU_Library.sv
+1537399744 ../../TEC_RISCV/TOP/../ALU/ALU_2.sv
+1537471253 ../../TEC_RISCV/TOP/../DECO_INSTR/DECO_INSTR.sv
+1537399745 ../../TEC_RISCV/TOP/../FIFO_Latches/fifo.sv
+1537399745 ../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv
+1538427352 ../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro.sv
+1538427352 ../../TEC_RISCV/TOP/TecRiscv_top_CPU.sv
+1538441966 topcore_tb.sv
+1519358599 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/vcsdp.tab
+5
+0 
+1519359937 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvirsim.so
+1519359429 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/liberrorinf.so
+1519359412 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libsnpsmalloc.so
+1519359683 /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvfs.so
+1538441981 simv.daidir

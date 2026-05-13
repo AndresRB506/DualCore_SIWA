@@ -1,0 +1,29 @@
+Cell design_routed_ends.err existed already. Delete it ...
+Using [2 x 2] Fat Wire Table for MET1
+Using [2 x 2] Fat Wire Table for MET2
+Using [2 x 2] Fat Wire Table for MET3
+Using [2 x 2] Fat Wire Table for MET4
+Using [2 x 2] Fat Wire Table for METTP
+Checking [VDD_1V8_PADS]:
+	There are no floating shapes
+	All the pins are connected.
+	No errors are found.
+Checking [VDD_3V3_PADS]:
+	There are no floating shapes
+	All the pins are connected.
+	No errors are found.
+Checking [VDD_1V8SRAM]:
+	There are no floating shapes
+	All the pins are connected.
+	No errors are found.
+Checking [VDD_1V8]:
+	There are no floating shapes
+	All the pins are connected.
+	No errors are found.
+Checking [VSS]:
+	There are no floating shapes
+	All the pins are connected.
+	No errors are found.
+Checked 5 nets, 0 have Errors
+Update error cell ...
+1

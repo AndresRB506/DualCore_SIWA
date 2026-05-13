@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1710818407.687463786, "rt":13.30, "ut":13.06, "st":0.53}}
+{"vcselab":{"timestamp_begin":1710818421.071663497, "rt":0.64, "ut":0.37, "st":0.07}}
+{"link":{"timestamp_begin":1710818421.771813245, "rt":0.53, "ut":0.18, "st":0.10}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1710818406.748221748}
+{"VCS_COMP_START_TIME": 1710818406.748221748}
+{"VCS_COMP_END_TIME": 1710818422.598121411}
+{"VCS_USER_OPTIONS": "-kdb -ova_cov -cm line+cond+fsm+tgl+assert+branch+property_path -ntb_opts uvm-1.2 -cm_report unencrypted_hierarchies+svpackages+noinitial -sverilog -lca -Mupdate -debug_all +vcs+flush+all +warn=all -timescale=1ns/10ps -full64 -P /mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/share/PLI/VCS/linux64/novas.tab /mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/share/PLI/VCS/linux64/pli.a +incdir+../../Verificacion_RISCV_TEC/TEC_RISCV/TOP +incdir+../../TEC_RISCV/SPI +incdir+../../TEC_RISCV/UART -CFLAGS -DVCS testbench.svh -o salida +UVM_VERBOSITY=UVM_DEBUG"}
+{"vcs1": {"peak_mem": 560216}}
+{"vcselab": {"peak_mem": 259520}}

@@ -1,0 +1,6 @@
+source ../Top_Phy/synopsys_tools.sh; 
+rm -rfv DVEfiles csrc inter.vpd log simv* swave_compile_done ucli.key inter* .rest* .syn*;
+cp -v ../Top_Phy/front_end/source/Tec_Riscv_pads_syn.v .
+#vcs -Mupdate  Test_Top_CPU_with_spi_uart.sv   -full64 -debug_all -sverilog -l log +lint=TFIPC-L +lint=PCWM 
+vcs -Mupdate  Test_Top_CPU_post_logic_syn.sv    -full64 -debug_all -sverilog -l log +lint=TFIPC-L +lint=PCWM 
+#vcs -Mupdate  Test_Top_CPU_post_logic_syn_pads.sv    -full64 -debug_all -sverilog -l log +lint=TFIPC-L +lint=PCWM 

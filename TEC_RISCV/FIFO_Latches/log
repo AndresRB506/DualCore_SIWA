@@ -1,0 +1,36 @@
+Command: vcs -Mupdate Test_memLatch.sv -full64 -debug_all -sverilog -l log
+                         Chronologic VCS (TM)
+      Version M-2017.03-SP2-5_Full64 -- Tue Jul 17 14:08:28 2018
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'Test_memLatch.sv'
+Parsing included file 'Memory_latch.sv'.
+Back to file 'Test_memLatch.sv'.
+Top Level Modules:
+       Sim_Mem
+TimeScale is 1 ps / 1 ps
+Starting vcs inline pass...
+1 unique modules to generate
+recompiling module Sim_Mem
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   objs/amcQw_d.o   _1525_archive_1.so \
+_prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libzerosoft_rt_stubs.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvirsim.so /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/liberrorinf.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libsnpsmalloc.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvfs.so    /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvcsnew.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libsimprofile.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libuclinative.so \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/libvcsucli.so -Wl,-no-whole-archive \
+/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/latest/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .879 seconds to compile + .661 seconds to elab + .267 seconds to link

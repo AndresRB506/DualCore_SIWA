@@ -1,0 +1,104 @@
+0000000000000000000 core-0   :00010054 (010108b7) lui         a7, 16842752       
+ra       :0x744e5eae
+sp       :0x7fffff64 gp       :0x50860cdb
+tp       :0xa52ed6a2 t0       :0x10a76c3a
+t1       :0xd7689d03 t2       :0x0da2dbc0
+s0       :0x1dc146a7 s1       :0xa7f86502
+a0       :0xd8761454 a1       :0xa9a99733
+a2       :0x246d6a13 a3       :0xa42abf26
+a4       :0xf137e49f a5       :0x9e289dd4
+a6       :0x43cf8983 a7       :0x01010000
+s2       :0x16ea030c s3       :0x95d67f8c
+s4       :0x2f580c86 s5       :0x77af2e51
+s6       :0xf3f64791 s7       :0x8b522ac7
+s8       :0x69b0b0f3 s9       :0x42fdda57
+s10      :0x793f3a62 s11      :0xa824dd5a
+t3       :0x793bdc2f t4       :0x860f4440
+t5       :0x731d415c t6       :0x9086b8ff
+0000000000000000001 core-0   :00010058 (10188893) addi        a7, a7, 257        
+ra       :0x744e5eae
+sp       :0x7fffff64 gp       :0x50860cdb
+tp       :0xa52ed6a2 t0       :0x10a76c3a
+t1       :0xd7689d03 t2       :0x0da2dbc0
+s0       :0x1dc146a7 s1       :0xa7f86502
+a0       :0xd8761454 a1       :0xa9a99733
+a2       :0x246d6a13 a3       :0xa42abf26
+a4       :0xf137e49f a5       :0x9e289dd4
+a6       :0x43cf8983 a7       :0x01010101
+s2       :0x16ea030c s3       :0x95d67f8c
+s4       :0x2f580c86 s5       :0x77af2e51
+s6       :0xf3f64791 s7       :0x8b522ac7
+s8       :0x69b0b0f3 s9       :0x42fdda57
+s10      :0x793f3a62 s11      :0xa824dd5a
+t3       :0x793bdc2f t4       :0x860f4440
+t5       :0x731d415c t6       :0x9086b8ff
+0000000000000000002 core-0   :0001005c (00189073) fsflags     zero, a7           
+ra       :0x744e5eae
+sp       :0x7fffff64 gp       :0x50860cdb
+tp       :0xa52ed6a2 t0       :0x10a76c3a
+t1       :0xd7689d03 t2       :0x0da2dbc0
+s0       :0x1dc146a7 s1       :0xa7f86502
+a0       :0xd8761454 a1       :0xa9a99733
+a2       :0x246d6a13 a3       :0xa42abf26
+a4       :0xf137e49f a5       :0x9e289dd4
+a6       :0x43cf8983 a7       :0x01010101
+s2       :0x16ea030c s3       :0x95d67f8c
+s4       :0x2f580c86 s5       :0x77af2e51
+s6       :0xf3f64791 s7       :0x8b522ac7
+s8       :0x69b0b0f3 s9       :0x42fdda57
+s10      :0x793f3a62 s11      :0xa824dd5a
+t3       :0x793bdc2f t4       :0x860f4440
+t5       :0x731d415c t6       :0x9086b8ff
+0000000000000000003 core-0   :00010060 (001ff4f3) csrrci      s1, fflags, 31     
+ra       :0x744e5eae
+sp       :0x7fffff64 gp       :0x50860cdb
+tp       :0xa52ed6a2 t0       :0x10a76c3a
+t1       :0xd7689d03 t2       :0x0da2dbc0
+s0       :0x1dc146a7 s1       :0x00000001
+a0       :0xd8761454 a1       :0xa9a99733
+a2       :0x246d6a13 a3       :0xa42abf26
+a4       :0xf137e49f a5       :0x9e289dd4
+a6       :0x43cf8983 a7       :0x01010101
+s2       :0x16ea030c s3       :0x95d67f8c
+s4       :0x2f580c86 s5       :0x77af2e51
+s6       :0xf3f64791 s7       :0x8b522ac7
+s8       :0x69b0b0f3 s9       :0x42fdda57
+s10      :0x793f3a62 s11      :0xa824dd5a
+t3       :0x793bdc2f t4       :0x860f4440
+t5       :0x731d415c t6       :0x9086b8ff
+0000000000000000004 core-0   :00010064 (0000    ) illegal                        
+ra       :0x744e5eae
+sp       :0x7fffff64 gp       :0x50860cdb
+tp       :0xa52ed6a2 t0       :0x10a76c3a
+t1       :0xd7689d03 t2       :0x0da2dbc0
+s0       :0x1dc146a7 s1       :0x00000001
+a0       :0xd8761454 a1       :0xa9a99733
+a2       :0x246d6a13 a3       :0xa42abf26
+a4       :0xf137e49f a5       :0x9e289dd4
+a6       :0x43cf8983 a7       :0x01010101
+s2       :0x16ea030c s3       :0x95d67f8c
+s4       :0x2f580c86 s5       :0x77af2e51
+s6       :0xf3f64791 s7       :0x8b522ac7
+s8       :0x69b0b0f3 s9       :0x42fdda57
+s10      :0x793f3a62 s11      :0xa824dd5a
+t3       :0x793bdc2f t4       :0x860f4440
+t5       :0x731d415c t6       :0x9086b8ff
+TRAP     :illegal_instruction pc:0x10064 badaddr:0x10064
+instret  :                 4 time     :0x000004b4c5b477bf
+pc       :0x00010064 fcsr     :0x00000000
+ra       :0x744e5eae
+sp       :0x7fffff64 gp       :0x50860cdb
+tp       :0xa52ed6a2 t0       :0x10a76c3a
+t1       :0xd7689d03 t2       :0x0da2dbc0
+s0       :0x1dc146a7 s1       :0x00000001
+a0       :0xd8761454 a1       :0xa9a99733
+a2       :0x246d6a13 a3       :0xa42abf26
+a4       :0xf137e49f a5       :0x9e289dd4
+a6       :0x43cf8983 a7       :0x01010101
+s2       :0x16ea030c s3       :0x95d67f8c
+s4       :0x2f580c86 s5       :0x77af2e51
+s6       :0xf3f64791 s7       :0x8b522ac7
+s8       :0x69b0b0f3 s9       :0x42fdda57
+s10      :0x793f3a62 s11      :0xa824dd5a
+t3       :0x793bdc2f t4       :0x860f4440
+t5       :0x731d415c t6       :0x9086b8ff

@@ -1,0 +1,105 @@
+#!/bin/sh -f
+
+cd /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1181/bus"
+export DESIGN_HOME="/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src"
+export DISABLE_LIBRARY_MAP_CHECK="1"
+export EDITOR="gedit"
+export FINESIM_HOME="/mnt/vol_synopsys2023/synopsys/finesim/U-2023.03-SP2"
+export FLEXLM_BORROWFILE="/home/jiespinoza/.redhat003-borrow.txt"
+export FTK_KIT_DIR="/mnt/vol_synopsys2023/pdks/xfab/design/xkit"
+export HISTCONTROL="ignoredups"
+export HISTSIZE="1000"
+export HOME="/home/jiespinoza"
+export HOSTNAME="redhat003"
+export ICV_HOME_DIR="/mnt/vol_synopsys2023/synopsys/icvalidator/U-2022.12-SP4"
+export LANG="en_US.UTF-8"
+export LD_LIBRARY_PATH="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/lib:/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/lib:"
+export LESSOPEN="||/usr/bin/lesspipe.sh %s"
+export LOADEDMODULES=""
+export LOGNAME="jiespinoza"
+export LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:"
+export MAIL="/var/spool/mail/jiespinoza"
+export MANPATH=":"
+export MODULEPATH="/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles"
+export MODULEPATH_modshare="/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2"
+export MODULESHOME="/usr/share/Modules"
+export MODULES_CMD="/usr/share/Modules/libexec/modulecmd.tcl"
+export MODULES_RUN_QUARANTINE="LD_LIBRARY_PATH LD_PRELOAD"
+export NOVAS_ENABLE_NOBINDDOC_CHECK=""
+export NOVAS_LC_ALL="C"
+export NOVAS_NO_DUMP_LOGDIR="1"
+export OLDPWD="/home/jiespinoza"
+export OVA_UUM="0"
+export PATH=".:/home/jiespinoza/.local/bin:/home/jiespinoza/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/mnt/vol_synopsys2023/synopsys/asip_designer/U-2023.06-SP1/linux64/bin:/mnt/vol_synopsys2023/synopsys/customcompiler/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/syn/U-2022.12-SP6/bin:/mnt/vol_synopsys2023/synopsys/finesim/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/fusioncompiler/U-2022.12-SP6/bin:/mnt/vol_synopsys2023/synopsys/hspice/U-2023.03-SP2/hspice/bin:/mnt/vol_synopsys2023/synopsys/icc/U-2022.12-SP6/bin:/mnt/vol_synopsys2023/synopsys/icc2/U-2022.12-SP6/bin:/mnt/vol_synopsys2023/synopsys/icvalidator/U-2022.12-SP4/bin:/mnt/vol_synopsys2023/synopsys/lc/U-2022.12-SP6/bin:/mnt/vol_synopsys2023/synopsys/mw/U-2022.12-SP6/bin:/mnt/vol_synopsys2023/synopsys/primesim/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/prime/U-2022.12-SP5/bin:/mnt/vol_synopsys2023/synopsys/primewave/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/siliconsmart/U-2022.12-SP5/bin:/mnt/vol_synopsys2023/synopsys/starrc/U-2022.12-SP5/bin:/mnt/vol_synopsys2023/synopsys/scl/2023.03-SP1/linux64/bin:/mnt/vol_synopsys2023/synopsys/vc_static/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/vcps/U-2023.03-SP2-2/bin:/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/wv/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/xa/U-2023.03-SP2/bin:/mnt/vol_synopsys2023/synopsys/euclide/Euclide-2023.12-SP1-2/linux.gtk.x86_64/eclipse/bin:/mnt/vol_synopsys2023/pdks/xfab/design/xkit/x_all/synopsys/xenv"
+export PWD="/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src"
+export SCRIPT_NAME="vcs"
+export SCRNAME="vcs"
+export SHELL="/bin/bash"
+export SHLVL="3"
+export SILICONSMART_HOME="/mnt/vol_synopsys2023/synopsys/siliconsmart"
+export SNPSLMD_LICENSE_FILE="27000@172.21.9.211"
+export SNPSLMD_QUEUE="TRUE"
+export SNPS_INTERNAL_VCS_LINUX_OS="linux"
+export SNPS_VCS_CLANG_PATH="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/clang"
+export SNPS_VCS_INTERNAL_CURR_PID="1218271"
+export SNPS_VCS_INTERNAL_MAKE="make"
+export SNPS_VCS_INTERNAL_MAKE_OPT=""
+export SNPS_VCS_INTERNAL_MEMPRELOAD_USE_LIBC="1"
+export SNPS_VCS_INTERNAL_ROOT_PID="1218271"
+export SNPS_VCS_INTERNAL_ROOT_START_TIME="1724644321.901357288"
+export SNPS_VCS_INTERNAL_SR_ASLR_RESTART="1"
+export SNPS_VCS_PYTHON3="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/bin/Python-3.6.1/bin/python3"
+export SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW="1"
+export SSH_ASKPASS="/usr/libexec/openssh/gnome-ssh-askpass"
+export SSH_CLIENT="172.21.7.108 54812 22"
+export SSH_CONNECTION="172.21.7.108 54812 172.21.8.7 22"
+export SSH_TTY="/dev/pts/2"
+export SYNOPSYS_HOME="/mnt/vol_synopsys2023/synopsys"
+export SYNOPSYS_SIM="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2"
+export TERM="xterm"
+export TOOL_HOME="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64"
+export TURBO_LOG_DIR="/tmp/vcs_20240826035201_1218271"
+export UNAME="/bin/uname"
+export USER="jiespinoza"
+export UVM_HOME="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2"
+export VCPS_HOME="/mnt/vol_synopsys2023/synopsys/vcps/U-2023.03-SP2-2"
+export VCS_ARCH="linux64"
+export VCS_ARG_ADDED_FOR_TMP="1"
+export VCS_COM="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/bin/vcs1"
+export VCS_DEPTH="0"
+export VCS_EXEC_DONE="1"
+export VCS_HOME="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2"
+export VCS_LCAMSG_PRINT_OFF="1"
+export VCS_MODE_FLAG="64"
+export VCS_MX_HOME_INTERNAL="1"
+export VCS_PATHMAP_PRELOAD_DONE="1"
+export VCS_UVM_HOME="/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2"
+export VC_STATIC_HOME="/mnt/vol_synopsys2023/synopsys/vc_static/U-2023.03-SP2"
+export VERDI_HOME="/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2"
+export VMR_MODE_FLAG="64"
+export XDG_DATA_DIRS="/home/jiespinoza/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop"
+export XDG_RUNTIME_DIR="/run/user/1181"
+export XDG_SESSION_ID="203"
+export _="/usr/bin/time"
+export sysc_uni_pwd="/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src"
+export which_declare="declare -f"
+unset VERDI_ADV_COMPILE
+if [ -z "${ELABCOM_DIAGTOOL_PREFIX}" ] && [ -z "${ELABCOM_DIAGTOOL_POSTFIX}" ];
+then
+    unset TURBO_LOG_DIR ;\rm -rf /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/elabcomLog ;/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/bin/elabcom -logdir /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/elabcomLog  -simvdaidir /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir  -lib /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/work  -saveLevel  -elab /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/kdb -simflow -simdir /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/kdb_libs -topfile /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/.elabcomTopFile -ssz -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/.elabcomReport || echo Fail >& /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/.elabcomReport; \rm -rf /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/work.lib++ /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/kdb_libs/ 
+else
+    unset TURBO_LOG_DIR ;\rm -rf /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/elabcomLog ; ${ELABCOM_DIAGTOOL_PREFIX} /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/bin/elabcom -logdir /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/elabcomLog  -simvdaidir /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir  ${ELABCOM_DIAGTOOL_POSTFIX}  -lib /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/work  -saveLevel  -elab /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/kdb -simflow -simdir /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/kdb_libs -topfile /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/.elabcomTopFile -ssz -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389 
+    status=$?
+    if [ "$status" == 0 ];
+    then
+        echo Success >& /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/.elabcomReport
+    else
+        echo Fail >& /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/.elabcomReport
+    fi
+
+ \rm -rf /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/work.lib++ /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/kdb_libs/ 
+fi
+
+
+sed -i -e 's/^ELAB=FALSE$/ELAB=TRUE/' /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/simv.kdb 

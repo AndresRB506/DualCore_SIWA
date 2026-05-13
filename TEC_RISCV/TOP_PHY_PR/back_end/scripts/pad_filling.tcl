@@ -1,0 +1,24 @@
+## Archivo de relleno de los PADS
+## Estos son los rellenos que tenemos
+## Ver detalle en:
+#file:///mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/data_book/v2_1_0/xh018-IO_CELLS_F3V-data_book/index_Special.html
+## CORNERSF	Corner cell, valid for a small chip with 1mm2 <= EXTENT area size < 100mm2.	27889.00
+##FILLER01F	Filler cell 1um width	160.00
+##FILLER02F	Filler cell 2um width	320.00
+##FILLER05F	Filler cell 5um width	800.00
+##FILLER100F	Filler cell 100um width	16000.00
+##FILLER10F	Filler cell 10um width	1600.00
+##FILLER20F	Filler cell 20um width	3200.00
+##FILLER40F	Filler cell 40um width	6400.00
+##FILLER50F	Filler cell 50um width	8000.00
+##FILLER84F	Filler cell 84um width
+###
+
+
+#Permitimos traslapes de la celda FILLER01F para brechas muy cortas
+#insert_pad_filler -cell "FILLER40F FILLER20F FILLER10F FILLER05F FILLER02F FILLER01F" -overlap_cell "FILLER01F" -voltage_area {pad_ring_inst/PD_PADS} -no_right
+#insert_pad_filler -cell "FILLER40F FILLER20F FILLER10F FILLER05F FILLER02F FILLER01F" -overlap_cell "FILLER01F" ;#-no_right
+#Sacamos el filler de 02F que parece es el que esta generando el problema
+insert_pad_filler -cell "FILLER40F FILLER20F FILLER10F FILLER05F FILLER01F"
+## Por si falla, con este removemos
+##remove_stdcell_filler -pad

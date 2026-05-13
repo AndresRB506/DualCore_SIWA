@@ -1,0 +1,35 @@
+.section .text
+.globl _start
+.equ valor, 0x00000004
+_start:
+        lui ra,valor
+        lui sp,valor
+        lui gp,valor
+        lui tp,valor
+        lui t0,valor
+        lui t1,valor
+        lui t2,valor
+        lui s0,valor
+        lui s1,valor
+        lui a0,valor
+        lui a1,valor
+        lui a2,valor
+        lui a3,valor
+        lui a4,valor
+        lui a5,valor
+        lui a6,valor
+        lui a7,valor
+        lui s2,valor
+        lui s3,valor
+        lui s4,valor
+        lui s5,valor
+        lui s6,valor
+        lui s7,valor
+        lui s8,valor
+        lui s9,valor
+        lui s10,valor
+        lui s11,valor
+        lui t3,valor
+        lui t4,valor
+        lui t5,valor
+        lui t6,valor

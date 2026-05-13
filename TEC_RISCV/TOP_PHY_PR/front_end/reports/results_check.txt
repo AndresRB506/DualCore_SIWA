@@ -1,0 +1,514 @@
+ 
+****************************************
+check_design summary:
+Version:     N-2017.09-SP4
+Date:        Wed Mar 27 15:29:51 2019
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    128
+    Externally driven outputs (LINT-64)                            64
+    Port direction conflicts with RTL (LINT-68)                    64
+
+Cells                                                             162
+    Connected to power or ground (LINT-32)                        162
+
+Nets                                                               40
+    Unloaded nets (LINT-2)                                          8
+    Net type is unknown (LINT-38)                                  32
+--------------------------------------------------------------------------------
+
+Warning: In design 'top_riscv_tec_pads', net 'top_riscv_soc/TOP/negative' driven by pin 'top_riscv_soc/TOP/Alu/Negative' has no loads. (LINT-2)
+Warning: In design 'top_riscv_tec_pads', net 'top_riscv_soc/TOP/carry' driven by pin 'top_riscv_soc/TOP/Alu/Carry' has no loads. (LINT-2)
+Warning: In design 'top_riscv_tec_pads', net 'top_riscv_soc/TOP/overflow' driven by pin 'top_riscv_soc/TOP/Alu/oVerflow' has no loads. (LINT-2)
+Warning: In design 'top_riscv_tec_pads', net 'top_riscv_soc/TOP/D_pop_mbc[62]' driven by pin 'top_riscv_soc/TOP/Bus/D_pop_mbc[62]' has no loads. (LINT-2)
+Warning: In design 'top_riscv_tec_pads', net 'top_riscv_soc/TOP/D_pop_mbc[63]' driven by pin 'top_riscv_soc/TOP/Bus/D_pop_mbc[63]' has no loads. (LINT-2)
+Warning: In design 'top_riscv_tec_pads', net 'top_riscv_soc/TOP/D_pop_mbc[64]' driven by pin 'top_riscv_soc/TOP/Bus/D_pop_mbc[64]' has no loads. (LINT-2)
+Warning: In design 'top_riscv_tec_pads', net 'top_riscv_soc/TOP/RDY' driven by pin 'top_riscv_soc/TOP/Memoria_8K/RDY' has no loads. (LINT-2)
+Warning: In design 'top_riscv_tec_pads', net 'top_riscv_soc/TOP/Reg_file/Reg_integer/conect_deco_latch3[0]' driven by pin 'top_riscv_soc/TOP/Reg_file/Reg_integer/Deco_escritura/out[0]' has no loads. (LINT-2)
+Warning: In design 'top_CPU_riscv', a pin on submodule 'Alu' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Cin' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[0].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[0].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[1].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[1].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[2].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[2].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[3].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[3].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[4].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[4].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[5].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[5].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[6].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[6].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[7].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[7].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[8].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[8].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[9].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[9].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[10].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[10].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[11].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[11].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[12].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[12].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[13].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[13].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[14].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[14].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[15].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[15].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[16].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[16].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[17].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[17].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[18].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[18].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[19].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[19].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[20].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[20].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[21].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[21].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[22].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[22].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[23].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[23].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[24].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[24].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[25].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[25].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[26].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[26].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[27].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[27].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[28].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[28].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[29].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[29].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[30].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[30].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[31].tristategate_zero1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'Reg_32_bit_width32_number_reg32', a pin on submodule 'Regsitros_Zero[31].tristategate_zero2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[6].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[7].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[17].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[18].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[19].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[20].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[21].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[22].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[23].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[24].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[25].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[26].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[27].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[28].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[29].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[30].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Registro_Mie[31].rf6.tristategate_Registro_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_mepc[0].rf7.tristategate_mepc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_mepc[1].rf7.tristategate_mepc' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[8].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[9].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[10].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[11].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[12].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[13].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[14].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[15].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[16].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[17].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[18].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[19].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[20].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[21].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[22].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[23].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[24].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[25].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[26].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[27].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[28].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[29].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[30].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_GPIO[31].rf13.tristategate_zeroo' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_mvtec[0].rf15.tristategate_mvtec' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'Regsitrio_mvtec[1].rf15.tristategate_mvtec' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[8].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[9].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[10].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[11].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[12].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[13].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[14].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[15].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[16].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[17].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[18].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[19].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[20].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[21].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[22].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[23].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[24].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[25].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[26].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[27].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[28].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[29].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[30].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'full_range_level_shift[31].rf17.Zero_tristate_full_range' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[4].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[5].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[6].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[7].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[8].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[9].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[10].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[11].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[12].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[13].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[14].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[15].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[16].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[17].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[18].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[19].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[20].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[21].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[22].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[23].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[24].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[25].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[26].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[27].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[28].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[29].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[30].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'csr_file_width32_number_reg12', a pin on submodule 'IS_Trigge[31].rf19.Zero_tristate_IS_Trigger' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'input_x' is connected to logic 0. 
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[0]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[1]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[2]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[3]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[4]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[5]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[6]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[7]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[8]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[9]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[10]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[11]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[12]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[13]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[14]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[15]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[16]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[17]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[18]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[19]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[20]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[21]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[22]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[23]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[24]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[25]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[26]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[27]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[28]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[29]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[30]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'top_riscv_tec_pads', net 'IS_Val[31]' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'latch_tri_rst0_Hard_4', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_5', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_6', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_7', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_8', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_9', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_10', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_11', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_12', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_13', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_14', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_15', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_16', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_17', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_18', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_19', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_20', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_21', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_22', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_23', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_24', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_25', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_26', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_27', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_28', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_29', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_30', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_31', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_32', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_33', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_34', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_35', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_36', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_37', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_38', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_39', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_40', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_41', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_42', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_43', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_44', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_45', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_46', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_47', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_48', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_49', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_50', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_51', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_52', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_53', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_54', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_55', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_56', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_57', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_58', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_59', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_60', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_61', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_62', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_63', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_64', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_65', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_66', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'latch_tri_rst0_Hard_67', output port 'Out_latch' is driven from the outside. (LINT-64)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[31].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[30].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[29].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[28].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[27].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[26].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[25].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[24].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[23].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[22].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[21].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[20].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[19].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[18].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[17].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[16].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[15].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[14].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[13].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[12].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[11].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[10].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[9].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[8].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[7].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[6].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[5].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[4].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[3].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[2].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[1].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Confi[0].latch_IS_Config', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[31].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[30].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[29].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[28].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[27].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[26].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[25].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[24].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[23].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[22].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[21].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[20].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[19].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[18].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[17].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[16].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[15].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[14].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[13].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[12].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[11].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[10].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[9].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[8].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[7].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[6].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[5].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[4].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[3].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[2].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[1].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'top_riscv_soc/TOP/Reg_file/Reg_csr/IS_Va[0].latch_IS_Val', output port 'Out_latch' is not being used in accordance with its stated direction. (LINT-68)
+1

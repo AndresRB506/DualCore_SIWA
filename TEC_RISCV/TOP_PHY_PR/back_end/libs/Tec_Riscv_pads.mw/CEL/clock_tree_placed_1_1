@@ -1,0 +1,67 @@
+create_power_domain PD_TOP
+create_power_domain pad_ring_inst/PD_PADS
+create_power_domain top_riscv_soc/PD_CORE
+create_power_domain top_riscv_soc/TOP/PD_SRAM
+create_supply_net VDD_1V8 -domain PD_TOP
+create_supply_net VDD_1V8SRAM -domain PD_TOP
+create_supply_net VDD_3V3_PADS -domain PD_TOP
+create_supply_net VDD_1V8_PADS -domain PD_TOP
+create_supply_net VSS -domain PD_TOP
+create_supply_net VDD_3V3_PADS -domain pad_ring_inst/PD_PADS
+create_supply_net VDD_1V8_PADS -domain pad_ring_inst/PD_PADS
+create_supply_net VSS -domain pad_ring_inst/PD_PADS
+create_supply_net VDD_1V8 -domain top_riscv_soc/PD_CORE
+create_supply_net VDD_1V8SRAM -domain top_riscv_soc/PD_CORE
+create_supply_net VSS -domain top_riscv_soc/PD_CORE
+create_supply_net VDD_1V8SRAM -domain top_riscv_soc/TOP/PD_SRAM
+create_supply_net VSS -domain top_riscv_soc/TOP/PD_SRAM
+set_domain_supply_net PD_TOP
+set_domain_supply_net pad_ring_inst/PD_PADS
+set_domain_supply_net top_riscv_soc/PD_CORE
+set_domain_supply_net top_riscv_soc/TOP/PD_SRAM
+create_supply_port VDD_1V8
+create_supply_port VDD_1V8SRAM
+create_supply_port VDD_3V3_PADS
+create_supply_port VDD_1V8_PADS
+create_supply_port VSS
+create_supply_port VDD_3V3_PADS -domain pad_ring_inst/PD_PADS
+create_supply_port VDD_1V8_PADS -domain pad_ring_inst/PD_PADS
+create_supply_port VSS -domain pad_ring_inst/PD_PADS
+create_supply_port VDD_1V8 -domain top_riscv_soc/PD_CORE
+create_supply_port VDD_1V8SRAM -domain top_riscv_soc/PD_CORE
+create_supply_port VSS -domain top_riscv_soc/PD_CORE
+create_supply_port VDD_1V8SRAM -domain top_riscv_soc/TOP/PD_SRAM
+create_supply_port VSS -domain top_riscv_soc/TOP/PD_SRAM
+connect_supply_net VDD_1V8
+connect_supply_net VDD_1V8SRAM
+connect_supply_net pad_ring_inst/VDD_3V3_PADS
+connect_supply_net pad_ring_inst/VDD_3V3_PADS
+connect_supply_net pad_ring_inst/VDD_1V8_PADS
+connect_supply_net pad_ring_inst/VSS
+connect_supply_net top_riscv_soc/VDD_1V8
+connect_supply_net top_riscv_soc/VDD_1V8SRAM
+connect_supply_net top_riscv_soc/VSS
+connect_supply_net top_riscv_soc/TOP/VDD_1V8SRAM
+connect_supply_net top_riscv_soc/TOP/VSS
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+add_port_state
+connect_supply_net VDD_1V8_PADS
+connect_supply_net VDD_3V3_PADS
+connect_supply_net VSS
+set_derived_upf
+set_isolation snps_no_iso_cts__0 -domain top_riscv_soc/PD_CORE
+set_design_attributes
+set_isolation snps_no_iso_cts__4 -domain top_riscv_soc/PD_CORE
+set_isolation snps_no_iso_cts__6 -domain top_riscv_soc/PD_CORE
+set_derived_upf

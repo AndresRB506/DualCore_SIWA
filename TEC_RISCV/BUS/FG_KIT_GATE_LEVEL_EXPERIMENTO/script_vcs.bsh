@@ -1,0 +1,59 @@
+#!/bin/bash 
+
+# para poder correr este script correctamente necesita los siguientes archivos en su main_work_area:
+#   Test_base: este es el archivo base que se usará para generar las permutaciones de los tests
+#   Test_base.sv: este es el archivo base que se usará para generar el vcd de donde se sacarán las señales en las 
+#                 que se insertarán las fallas de stuck at
+#   Top_base: este es el archivo base que se usará para generar la base del sistema a probar.
+#             el nombre del módulo principal del systpema debe llamarse "top_del_sistema"
+#   .synopsys_dc.setup: este archivo contiene variables de inicialización de DC
+#   DC_script.tcl: este es el script que se utilizará para correr DC
+
+########################################################
+# Habilita los escenarios y los directorios de corrida #
+########################################################
+
+# main_working_area: este es pintero a la carpeta central de trabajo del grupo de pruebas
+export main_work_area=`pwd`;
+# setea el ambiente
+source ./bash_snps_xt018-AMS_2017
+
+  export top_file=" ${main_work_area}/Top_base";
+  export top_name="top_del_sistema";
+  export dc_work_area=" ${main_work_area}";
+  export proy_name="DC_run";
+  export xfab_tech="/mnt/vol_NFS_Zener/tools/synopsys/pdks/xt018-ams/xt018";
+  mkdir db reports scripts
+  cp ${main_work_area}/DC_script.tcl scripts/.;
+  echo "Running DC";
+  dc_shell -topo -f scripts/DC_script.tcl  -output_log_file log_dc;
+
+#crea el archivo de comandos con las fallas
+vcs -Mupdate   D_CELLS_LL_no_timing.v Test_base.sv  -full64 -debug_all -sverilog -l log +lint=TFIPC-L;
+./simv >log_simulacion_inicial;
+./vcd_signal_list_generator.pl vcd_file.vcd > Lista_senales;
+grep -v "reset\|clk\|reset" Lista_senales |grep "uut" > Lista_senales_filtrada;
+./list_2_comands.pl  Lista_senales_filtrada > comandos;
+
+## crea el directorio RESULTADOS y los archivos de base necesarios para cada prueba
+
+mkdir RESULTADOS;
+#cp ~/Scripts/netlistgen.pl ${main_work_area};
+./netlistgen.pl comandos Test_base;
+#./netlistgen.pl comandos Top_base;
+ls RESULTADOS/Test_base*|sed "s;RESULTADOS/Test_base;;" >RESULTADOS/lista_Test;
+cd RESULTADOS;
+
+## Para cada uno de los escenarios genera una carpeta para agregar los resultados
+cat lista_Test|while read var; do
+  echo "processing ${var}";
+  mkdir ${var}_results;
+  mv Test_base${var} ${var}_results;
+  cd ${var}_results;
+  echo "running VCS";
+  vcs -Mupdate  Test_base${var}  -full64 -debug_all -sverilog -l log;
+  ./simv > simulation_log;
+  echo "Finished ${var}" >> ../Finished_tests.txt;	
+  rm -rf simv*;
+  cd ..;
+done

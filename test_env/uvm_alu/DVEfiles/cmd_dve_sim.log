@@ -1,0 +1,33 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synopsys::xml set_array_limit <data limit="50" />
+synopsys::xml set_depth_limit <data limit="100" />
+synopsys::xml set_string_limit <data limit="1000" />
+synopsys::xml set_only_active_frame <data value="1" />
+synopsys::xml set_variable_frame_id <data value="1" />
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_alu/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpSQGtI4
+synUtils::sendTool -active {_icl_start_rpc -version "M-2017.03-SP2-5_Full64" -sync_file /tmp/vcs_dve_rpc.dpalacios.14581}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.dpalacios.14581}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+ucliCore::getToolPID
+ucliCore::getToolPID

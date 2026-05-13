@@ -1,0 +1,39 @@
+/*
+######################################################################################
+#   Company          : X-FAB Semiconductor Foundries AG
+#   Address          : Haarbergstr. 67,  D-99097 Erfurt, Germany
+#   File             : xh018_xx43_HD_MET4_METMID_METTHK.tf
+#   @(#)             : technology file
+#   Revision         : V 6.3.1.2
+#   Technology       : XH018  6_metal layers, thick metal module
+#   Metal stack      : MET1-MET2-MET3-MET4-METTP-METTPL
+#   Last modified    : JUL 19 2018 - lya
+#
+######################################################################################
+#  Copyright (c)  Synopsys, Inc. and/or X-FAB Semiconductor Foundries AG . All rights reserved.
+#  This technology file for the Design Kit and the associated documentation are
+#  confidential and proprietary to Synopsys, Inc. and/or to X-FAB Semiconductor Foundries AG.
+#
+#
+#  DISCLAIMER
+#  The information contained herein is provided by Synopsys, Inc. and/or X-FAB Semiconductor
+#  Foundries AG  on an "AS IS" basis without any warranty.
+#
+#  Synopsys, Inc. and/or X-FAB Semiconductor Foundries AG  disclaim any representation that
+#  the information does not infringe any intellectual property rights or proprietary
+#  rights of any third parties.  There are no other warranties given by
+#  Synopsys and/or X-FAB, whether express, implied or statutory, including, without
+#  limitation, implied warranties of merchantability and fitness for a
+#  particular purpose.
+#
+#  Synopsys, Inc. and/or X-FAB Semiconductor Foundries AG  reserve the right to make changes
+#  to the information at any time and without notice.
+#
+######################################################################################
+#
+# Reference documents for file creation:
+# X-FAB XH018 Process & Device Specification: PDS_018_03, Release 6.3.1, December 2016
+# X-FAB XH018      Design Rule Specification: DR_018_03,  Release 6.3.1, December 2016
+#
+######################################################################################
+*/

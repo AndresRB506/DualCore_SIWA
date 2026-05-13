@@ -1,0 +1,153 @@
+ 
+****************************************
+Report : design
+        -physical
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Tue Oct  2 12:49:06 2018
+****************************************
+
+WARNING: Fail to get the cell boundary
+****************************** P&R Summary ********************************
+Date : Tue Oct  2 12:49:06 2018
+Machine Host Name: zener
+Working Directory: /mnt/vol_NFS_Zener/WD_ESPEC/achacon/Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end
+Library Name:      Tec_Riscv_pads.mw
+Cell Name:         powerplan_ends1.CEL;1
+Design Statistics:
+    Number of Macro Cells:         1
+    Number of Module Cells:        13458
+    Number of Pins:                72956
+    Number of IO Pad Cells:        17
+    Number of IO Pins:             17
+    Number of Nets:                10756
+    Average Pins Per Net (Signal): 4.2686
+
+Chip Utilization:
+
+Master Instantiation:
+	MasterName	Type	InstCount
+	=================================
+	BTHHDLLX2	STD	3036
+	INHDLLX1	STD	2328
+	DFRRQHDLLX0	STD	1937
+	DLHQHDLLX0	STD	986
+	AN22HDLLX1	STD	587
+	AO22HDLLX1	STD	467
+	NO2HDLLX1	STD	444
+	NA2HDLLX1	STD	412
+	ON21HDLLX1	STD	272
+	AO222HDLLX1	STD	266
+	LOGIC0HDLL	STD	253
+	DLHRQHDLLX0	STD	214
+	AN21HDLLX1	STD	169
+	BUHDLLX1	STD	145
+	AN211HDLLX1	STD	132
+	AN32HDLLX1	STD	120
+	ON211HDLLX1	STD	119
+	DLHQHDLLX1	STD	118
+	MU2HDLLX1	STD	111
+	NA3HDLLX1	STD	91
+	AND2HDLLX1	STD	82
+	NA4HDLLX1	STD	77
+	AN31HDLLX1	STD	74
+	NO3HDLLX1	STD	72
+	DLHRQHDLLX1	STD	72
+	ON22HDLLX1	STD	66
+	DFRSQHDLLX0	STD	66
+	NO2I1HDLLX1	STD	57
+	MU2IHDLLX1	STD	45
+	ON31HDLLX1	STD	44
+	OA22HDLLX1	STD	39
+	AN222HDLLX1	STD	39
+	DLLQHDLLX1	STD	32
+	FAHDLLX1	STD	30
+	DFRHDLLX1	STD	28
+	NA22HDLLX1	STD	27
+	NA2I1HDLLX1	STD	25
+	NO2HDLLX2	STD	25
+	OA21HDLLX1	STD	22
+	EO2HDLLX1	STD	22
+	DFRQHDLLX0	STD	21
+	DFFRQHDLLX0	STD	20
+	AN221HDLLX1	STD	19
+	OR2HDLLX1	STD	17
+	DFRRHDLLX0	STD	17
+	NA3I2HDLLX1	STD	16
+	NO4I3HDLLX1	STD	16
+	NO3HDLLX2	STD	16
+	DFRRHDLLX1	STD	15
+	NA4I3HDLLX1	STD	15
+	NO3I2HDLLX1	STD	15
+	AO21HDLLX1	STD	13
+	OA211HDLLX1	STD	10
+	DFRQHDLLX1	STD	9
+	AND3HDLLX1	STD	6
+	ON321HDLLX1	STD	5
+	AN321HDLLX1	STD	5
+	AO211HDLLX1	STD	5
+	AO32HDLLX1	STD	5
+	BTHHDLLX1	STD	5
+	CAGHDLLX1	STD	4
+	AO321HDLLX1	STD	4
+	AN22HDLLX2	STD	4
+	NA4I2HDLLX1	STD	3
+	DFFRHDLLX0	STD	3
+	OA32HDLLX1	STD	3
+	DLHHDLLX1	STD	3
+	NO22HDLLX1	STD	3
+	ON33HDLLX1	STD	2
+	AND4HDLLX1	STD	2
+	ON222HDLLX1	STD	2
+	AN32HDLLX2	STD	2
+	EN3HDLLX1	STD	2
+	OR4HDLLX1	STD	2
+	NO4I2HDLLX1	STD	2
+	LOGIC1HDLL	STD	2
+	DLHSQHDLLX1	STD	1
+	NA4I1HDLLX1	STD	1
+	NA3I1HDLLX1	STD	1
+	OA22HDLLX0	STD	1
+	NO2I1HDLLX2	STD	1
+	NO3I1HDLLX1	STD	1
+	DFFSQHDLLX1	STD	1
+	DFRSHDLLX0	STD	1
+	DFFRSQHDLLX0	STD	1
+	DFRRSQHDLLX0	STD	1
+	AO31HDLLX1	STD	1
+	OA31HDLLX1	STD	1
+	NO4HDLLX0	STD	1
+	EO3HDLLX1	STD	1
+	XSPRAMLP_2048X32_M8P	MACRO	1
+	APR00DF		IO	8
+	ICF		IO	5
+	BT2SF		IO	4
+	=================================
+
+Timing/Optimization Information:
+
+Global Routing Information:
+
+Track Assignment Information:
+
+Detailed Routing Information:
+
+DRC information: 
+      Total error number: 0
+
+Ring Wiring Statistics:
+
+Stripe Wiring Statistics:
+
+User Wiring Statistics:
+
+PG follow-pin Wiring Statistics:
+
+Signal Wiring Statistics:
+      Mask Name      Contact Code    Number Of Contacts    Percentage
+
+  Horizontal/Vertical Wire Distribution:
+    Layer      Hor. Wire (% of Hor.)     Ver. Wire (% of Ver.)
+  ==============================================================
+    Total              0.00                      0.00
+1

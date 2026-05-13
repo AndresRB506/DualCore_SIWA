@@ -1,0 +1,1 @@
+vcs -Mupdate  Test_fifo.v  -full64 -debug_all -sverilog -l log

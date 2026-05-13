@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : CMB
+Version: N-2017.09-SP4
+Date   : Thu Jun 21 16:58:08 2018
+****************************************
+
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+    XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/mem/lib/XSPRAMLP_2048X32_M8P.db)
+
+Number of ports:                         5033
+Number of nets:                          9798
+Number of cells:                         5177
+Number of combinational cells:           3740
+Number of sequential cells:              1196
+Number of macros/black boxes:               1
+Number of buf/inv:                        982
+Number of references:                       3
+
+Combinational area:              61310.666852
+Buf/Inv area:                     7445.761754
+Noncombinational area:           66800.232941
+Macro/Black Box area:           500899.062500
+Net Interconnect area:            8473.814228
+
+Total cell area:                629009.962292
+Total area:                     637483.776520
+1

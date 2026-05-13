@@ -1,0 +1,19 @@
+gui_set_mouse_tool_option -tool AdvancedRouteTool -option {SpecifyNets} -value {ByNetNames}
+gui_set_mouse_tool_option -tool AdvancedRouteTool -option {BusOrNetNames} -value { VDD_1V8SRAM}
+gui_set_mouse_tool_option -tool AdvancedRouteTool -option {HorizontalLayer} -value {METTP}
+gui_set_mouse_tool_option -tool AdvancedRouteTool -option {VerticalLayer} -value {METTPL}
+gui_set_mouse_tool_option -tool AdvancedRouteTool -option {VerticalWidth} -value {4}
+gui_set_mouse_tool_option -tool AdvancedRouteTool -option {VerticalPitch} -value {6.5}
+gui_set_mouse_tool_option -tool AdvancedRouteTool -option {HorizontalWidth} -value {4}
+gui_set_mouse_tool_option -tool AdvancedRouteTool -option {HorizontalPitch} -value {4.46}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {890.365 609.570} -scale 0.1347
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {169.400 611.050} -scale 0.1347
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {169.670 691.980} -scale 0.1347
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -apply
+
+create_preroute_vias  -nets VDD_1V8SRAM -from_layer METTP -to_layer METTPL
+                 -from_object_strap \
+                 -to_object_strap \
+
+
+create_net_shape -net VDD_1V8SRAM -type wire -route_type pg_macro_io_pin_conn -layer METTP -bbox { {180.00 590.000} {890.0 600.00} }

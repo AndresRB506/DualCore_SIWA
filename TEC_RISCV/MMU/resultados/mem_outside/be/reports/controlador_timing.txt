@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : controlador
+Version: N-2017.09-SP4
+Date   : Thu May 31 10:38:07 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: typ_1_80V_25C   Library: D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 25/25/25
+
+Information: Percent of Arnoldi-based delays = 20.78%
+
+  Startpoint: gen_sgnl_rdy_to_dvc_reg
+              (falling edge-triggered flip-flop clocked by CLK_sys)
+  Endpoint: maq_core/D_sys_core_reg_18_
+            (rising edge-triggered flip-flop clocked by CLK_sys)
+  Path Group: CLK_sys
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_sys (fall edge)                              25.00      25.00
+  clock network delay (propagated)                        3.17      28.17
+  gen_sgnl_rdy_to_dvc_reg/CN (DFFRQHDLLX0)                0.00      28.17 f
+  gen_sgnl_rdy_to_dvc_reg/Q (DFFRQHDLLX0)                 0.93      29.11 r
+  U1742/Q (AND2HDLLX0)                                    2.60 &    31.70 r
+  maq_core/RDY (core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11)
+                                                          0.00      31.70 r
+  maq_core/U1174/Q (INHDLLX0)                             0.45 &    32.15 f
+  maq_core/U1205/Q (NO2HDLLX0)                            0.92 &    33.08 r
+  maq_core/U31/Q (AND3HDLLX0)                             2.62 &    35.70 r
+  maq_core/U1401/Q (AN31HDLLX1)                           1.73 &    37.43 f
+  maq_core/U1402/Q (NO2HDLLX1)                            2.94 &    40.37 r
+  maq_core/U1425/Q (AO222HDLLX0)                          0.50 &    40.87 r
+  maq_core/D_sys_core_reg_18_/D (DFRRQHDLLX0)             0.00 &    40.87 r
+  data arrival time                                                 40.87
+
+  clock CLK_sys (rise edge)                              50.00      50.00
+  clock network delay (propagated)                        3.20      53.20
+  clock uncertainty                                      -0.50      52.70
+  maq_core/D_sys_core_reg_18_/C (DFRRQHDLLX0)             0.00      52.70 r
+  library setup time                                     -0.17      52.54
+  data required time                                                52.54
+  --------------------------------------------------------------------------
+  data required time                                                52.54
+  data arrival time                                                -40.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.66
+
+
+1

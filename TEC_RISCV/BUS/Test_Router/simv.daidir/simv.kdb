@@ -1,0 +1,16 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/BUS/Test_Router
+SystemC=FALSE
+UUM=FALSE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=fifo_ltch fifo_ltch_no_rst ntrpt_cam_fifo mem_latch bs_gnrtr bs_gnrtr_n_rbtr prll_rgstr prll_bs_gnrtr_n_rbtr_fifo bs_ntrfs_n_rbtr_fpga auxiliar_flg_gnrtr Or_prmtrzbl router__bus_gnrtr router 
+OPTION=-ssz -ssv -ssy -ssz -ssv -ssy 
+ELAB_OPTION=-ssz -ssv -ssy -ssz -ssv -ssy 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

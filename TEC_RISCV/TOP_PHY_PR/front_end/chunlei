@@ -1,0 +1,771 @@
+
+library("ucu_anlg") {
+  technology("cmos");
+  delay_model : "table_lookup";
+  voltage_unit : 1V;
+  time_unit : "1ns";
+  
+  lu_table_template("scalar_template") {
+    variable_1 : "scalar_tlu_var";
+    index_1("  1.000000");
+  }
+  
+  lu_table_template("inslew_outcap") {
+    variable_1 : "input_net_transition";
+    index_1("0.000000e+00,  1.000000");
+    variable_2 : "total_output_net_capacitance";
+    index_2("0.000000e+00,  1.000000");
+  }
+  operating_conditions("nominal") {
+    process : 1.000000
+    voltage : 1.800000
+    temperature : 25.000000
+  }
+  default_operating_conditions : "nominal";
+  bus_naming_style : "%s[%d]";
+  capacitive_load_unit(1000.000000, ff);
+  date : "Mar 01, 2018";
+  current_unit : 1uA;
+  pulling_resistance_unit : 10ohm;
+  leakage_power_unit : 1pW;
+  default_output_pin_cap : 0.000000;
+  default_inout_pin_cap : 0.000000;
+  slew_lower_threshold_pct_fall : 20.000000;
+  slew_upper_threshold_pct_fall : 80.000000;
+  slew_lower_threshold_pct_rise : 20.000000;
+  slew_upper_threshold_pct_rise : 80.000000;
+  input_threshold_pct_fall : 50.000000;
+  input_threshold_pct_rise : 50.000000;
+  output_threshold_pct_fall : 50.000000;
+  output_threshold_pct_rise : 50.000000;
+  slew_derate_from_library : 1.000000;
+  nom_process : 1.000000;
+  nom_voltage : 1.800000;
+  nom_temperature : 25.000000;
+  
+  cell(ucu_anlg) {
+    
+    type("db2lib_bus_type0") {
+      base_type : array;
+      data_type : bit;
+      bit_from : 31;
+      bit_to : 0;
+    }
+    
+    type("db2lib_bus_type1") {
+      base_type : array;
+      data_type : bit;
+      bit_from : 3;
+      bit_to : 0;
+    }
+    
+    type("db2lib_bus_type2") {
+      base_type : array;
+      data_type : bit;
+      bit_from : 7;
+      bit_to : 0;
+    }
+    
+    bus("IS_Config") {
+      bus_type : db2lib_bus_type0;
+      direction : input;
+      
+      pin("IS_Config[31]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+        
+        timing() {
+          timing_type : "combinational_rise";
+          timing_sense : "positive_unate";
+          related_pin : "reset ";
+          
+          rise_transition("inslew_outcap") {
+            index_1("0.000000e+00,  1.000000");
+            index_2("0.000000e+00,  1.000000");
+            values("0.000000e+00,0.000000e+00"\
+                   "1.000000e+00,1.000000e+00");
+          }
+          
+          cell_rise("scalar_template") {
+            values("1.000000e+00");
+          }
+        }
+        
+        timing() {
+          timing_type : "combinational_fall";
+          timing_sense : "positive_unate";
+          related_pin : "reset ";
+          
+          fall_transition("inslew_outcap") {
+            index_1("0.000000e+00,  1.000000");
+            index_2("0.000000e+00,  1.000000");
+            values("0.000000e+00,0.000000e+00"\
+                   "1.000000e+00,1.000000e+00");
+          }
+          
+          cell_fall("scalar_template") {
+            values("1.000000e+00");
+          }
+        }
+      }
+      
+      pin("IS_Config[30]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[29]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[28]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[27]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[26]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[25]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[24]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[23]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[22]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[21]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[20]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[19]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[18]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[17]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[16]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[15]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[14]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[13]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[12]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[11]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[10]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[9]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[8]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[7]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[6]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[5]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[4]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[3]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[2]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[1]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Config[0]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+    }
+    
+    bus("IS_Trigger") {
+      bus_type : db2lib_bus_type1;
+      direction : input;
+      
+      pin("IS_Trigger[3]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+        
+        timing() {
+          timing_type : "combinational_rise";
+          timing_sense : "positive_unate";
+          related_pin : "reset ";
+          
+          rise_transition("inslew_outcap") {
+            index_1("0.000000e+00,  1.000000");
+            index_2("0.000000e+00,  1.000000");
+            values("0.000000e+00,0.000000e+00"\
+                   "1.000000e+00,1.000000e+00");
+          }
+          
+          cell_rise("scalar_template") {
+            values("1.000000e+00");
+          }
+        }
+        
+        timing() {
+          timing_type : "combinational_fall";
+          timing_sense : "positive_unate";
+          related_pin : "reset ";
+          
+          fall_transition("inslew_outcap") {
+            index_1("0.000000e+00,  1.000000");
+            index_2("0.000000e+00,  1.000000");
+            values("0.000000e+00,0.000000e+00"\
+                   "1.000000e+00,1.000000e+00");
+          }
+          
+          cell_fall("scalar_template") {
+            values("1.000000e+00");
+          }
+        }
+      }
+      
+      pin("IS_Trigger[2]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Trigger[1]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Trigger[0]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+    }
+    
+    bus("IS_Val") {
+      bus_type : db2lib_bus_type0;
+      direction : input;
+      
+      pin("IS_Val[31]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+        
+        timing() {
+          timing_type : "combinational_rise";
+          timing_sense : "positive_unate";
+          related_pin : "reset ";
+          
+          rise_transition("inslew_outcap") {
+            index_1("0.000000e+00,  1.000000");
+            index_2("0.000000e+00,  1.000000");
+            values("0.000000e+00,0.000000e+00"\
+                   "1.000000e+00,1.000000e+00");
+          }
+          
+          cell_rise("scalar_template") {
+            values("1.000000e+00");
+          }
+        }
+        
+        timing() {
+          timing_type : "combinational_fall";
+          timing_sense : "positive_unate";
+          related_pin : "reset ";
+          
+          fall_transition("inslew_outcap") {
+            index_1("0.000000e+00,  1.000000");
+            index_2("0.000000e+00,  1.000000");
+            values("0.000000e+00,0.000000e+00"\
+                   "1.000000e+00,1.000000e+00");
+          }
+          
+          cell_fall("scalar_template") {
+            values("1.000000e+00");
+          }
+        }
+      }
+      
+      pin("IS_Val[30]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[29]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[28]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[27]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[26]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[25]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[24]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[23]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[22]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[21]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[20]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[19]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[18]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[17]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[16]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[15]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[14]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[13]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[12]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[11]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[10]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[9]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[8]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[7]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[6]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[5]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[4]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[3]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[2]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[1]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("IS_Val[0]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+    }
+    
+    bus("full_range_level_shifter") {
+      bus_type : db2lib_bus_type2;
+      direction : input;
+      
+      pin("full_range_level_shifter[7]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+        
+        timing() {
+          timing_type : "combinational_rise";
+          timing_sense : "positive_unate";
+          related_pin : "reset ";
+          
+          rise_transition("inslew_outcap") {
+            index_1("0.000000e+00,  1.000000");
+            index_2("0.000000e+00,  1.000000");
+            values("0.000000e+00,0.000000e+00"\
+                   "1.000000e+00,1.000000e+00");
+          }
+          
+          cell_rise("scalar_template") {
+            values("1.000000e+00");
+          }
+        }
+        
+        timing() {
+          timing_type : "combinational_fall";
+          timing_sense : "positive_unate";
+          related_pin : "reset ";
+          
+          fall_transition("inslew_outcap") {
+            index_1("0.000000e+00,  1.000000");
+            index_2("0.000000e+00,  1.000000");
+            values("0.000000e+00,0.000000e+00"\
+                   "1.000000e+00,1.000000e+00");
+          }
+          
+          cell_fall("scalar_template") {
+            values("1.000000e+00");
+          }
+        }
+      }
+      
+      pin("full_range_level_shifter[6]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("full_range_level_shifter[5]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("full_range_level_shifter[4]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("full_range_level_shifter[3]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("full_range_level_shifter[2]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("full_range_level_shifter[1]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+      
+      pin("full_range_level_shifter[0]") {
+        direction : input;
+        max_capacitance : 0.098870;
+        max_transition : 2.661600;
+        capacitance : 1.000000;
+      }
+    }
+    timing_model_type : qtm;
+    interface_timing : true;
+    
+    pin("clk") {
+      direction : input;
+      max_capacitance : 0.098870;
+      max_transition : 2.661600;
+    }
+    
+    pin("reset") {
+      direction : input;
+      max_capacitance : 0.098870;
+      max_transition : 2.661600;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+gui_exclusion -set_force true
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_cov_databases -value {/mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_UART/final/simv.vdb /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_alu/simv.vdb /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_UART/simv.vdb}
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_uartorigen/dump.vcd -design V1} {gui_open_db -file /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_UART/final/dump.vcd -design V1} {gui_open_db -file /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_UART/final/dump.vcd -design V2} {gui_open_db -file /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_UART/final/dump.vcd.vpd -design V1} {gui_open_db -file /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_UART/dump.vcd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1338
+gui_set_state_value -category Layout -key child_console_size_y -value 179
+gui_set_state_value -category Layout -key child_covdetail_docknewline -value false
+gui_set_state_value -category Layout -key child_covdetail_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_covdetail_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_covdetail_size_x -value 1144
+gui_set_state_value -category Layout -key child_covdetail_size_y -value 383
+gui_set_state_value -category Layout -key child_coveragetable_docknewline -value false
+gui_set_state_value -category Layout -key child_coveragetable_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_coveragetable_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_coveragetable_size_x -value 1144
+gui_set_state_value -category Layout -key child_coveragetable_size_y -value 383
+gui_set_state_value -category Layout -key child_data_coltype -value 94
+gui_set_state_value -category Layout -key child_data_colvalue -value 88
+gui_set_state_value -category Layout -key child_data_colvariable -value 187
+gui_set_state_value -category Layout -key child_data_size_x -value 308
+gui_set_state_value -category Layout -key child_data_size_y -value 409
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 167
+gui_set_state_value -category Layout -key child_hier_size_y -value 409
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 882
+gui_set_state_value -category Layout -key child_source_size_y -value 404
+gui_set_state_value -category Layout -key child_wave_colname -value 183
+gui_set_state_value -category Layout -key child_wave_colvalue -value 183
+gui_set_state_value -category Layout -key child_wave_left -value 370
+gui_set_state_value -category Layout -key child_wave_right -value 902
+gui_set_state_value -category Layout -key cov_main_pos_x -value 18
+gui_set_state_value -category Layout -key cov_main_pos_y -value 67
+gui_set_state_value -category Layout -key cov_main_size_x -value 1357
+gui_set_state_value -category Layout -key cov_main_size_y -value 738
+gui_set_state_value -category Layout -key main_pos_x -value 3
+gui_set_state_value -category Layout -key main_pos_y -value 52
+gui_set_state_value -category Layout -key main_size_x -value 1357
+gui_set_state_value -category Layout -key main_size_y -value 738
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1282
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 561
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 80
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 73
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1357
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 738
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key names -value_type string -value {Group,    , ,  ,   ,Score,Assert,Covergroup,}
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key orders -value_type string -value 4,0,1,2,3,5,6,7,
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key widths -value_type string -value 220,0,25,0,0,125,125,125,
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key names -value_type string -value {Name,    , ,  ,   ,Score,Line,Assert,}
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key orders -value_type string -value 4,0,1,2,3,5,6,7,
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key widths -value_type string -value 220,0,25,0,0,125,125,125,
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key names -value_type string -value {Name,    , ,  ,   ,Score,Line,Assert,}
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key orders -value_type string -value 4,0,1,2,3,5,6,7,
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key widths -value_type string -value 220,0,25,0,0,125,125,125,
+gui_create_state_key -category Layout_CovDetail_lnListView -key names -value_type string -value Category,Coverage,
+gui_create_state_key -category Layout_CovDetail_lnListView -key orders -value_type string -value 0,1,
+gui_create_state_key -category Layout_CovDetail_lnListView -key widths -value_type string -value 111,125,
+gui_create_state_key -category Layout_CovDetail_tglListView -key names -value_type string -value {Variable, ,  ,   ,Type,Coverage,Display,}
+gui_create_state_key -category Layout_CovDetail_tglListView -key orders -value_type string -value 3,0,1,2,4,5,6,
+gui_create_state_key -category Layout_CovDetail_tglListView -key widths -value_type string -value 140,25,0,0,50,125,140,
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key names -value_type string -value {Variable, ,  ,   ,0->1,1->0,}
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key orders -value_type string -value 3,0,1,2,4,5,
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key widths -value_type string -value 140,25,0,0,50,50,
+gui_create_state_key -category Layout_CovDetail_fsmListView -key names -value_type string -value {FSM, ,  ,   ,State,Transition,Sequence,}
+gui_create_state_key -category Layout_CovDetail_fsmListView -key orders -value_type string -value 3,0,1,2,5,4,6,
+gui_create_state_key -category Layout_CovDetail_fsmListView -key widths -value_type string -value 66,25,0,0,125,125,125,
+gui_create_state_key -category Layout_CovDetail_fsmlist -key names -value_type string -value {Coverage, ,  ,   ,Transition,}
+gui_create_state_key -category Layout_CovDetail_fsmlist -key orders -value_type string -value 3,0,1,2,4,
+gui_create_state_key -category Layout_CovDetail_fsmlist -key widths -value_type string -value 125,25,0,0,70,
+gui_create_state_key -category Layout_CovDetail_cndListView -key names -value_type string -value {Expression, ,  ,   ,ID,Coverage,Line No.,}
+gui_create_state_key -category Layout_CovDetail_cndListView -key orders -value_type string -value 3,0,1,2,4,5,6,
+gui_create_state_key -category Layout_CovDetail_cndListView -key widths -value_type string -value 320,25,0,0,0,125,63,
+gui_create_state_key -category Layout_CovDetail_brListView -key names -value_type string -value {Name, ,  ,   ,Coverage,Line No.,}
+gui_create_state_key -category Layout_CovDetail_brListView -key orders -value_type string -value 3,0,1,2,4,5,
+gui_create_state_key -category Layout_CovDetail_brListView -key widths -value_type string -value 100,25,0,0,125,63,
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key names -value_type string -value {Assert Name,    , ,  ,   ,Attempts,Real Successes,Failures,Incompletes,Category,Severity,}
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key widths -value_type string -value 110,0,25,0,0,63,106,61,82,67,62,
+gui_create_state_key -category Layout_CovDetail_codeMiddleSplitter -key value1 -value_type integer -value 10
+gui_create_state_key -category Layout_CovDetail_codeMiddleSplitter -key value2 -value_type integer -value 296
+gui_create_state_key -category Layout_CovDetail_cndSplitter -key value1 -value_type integer -value 100
+gui_create_state_key -category Layout_CovDetail_cndSplitter -key value2 -value_type integer -value 197
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key names -value_type string -value {Cover Group Item,    , ,  ,   ,Definition,Score,Goal,Weight,At Least,Per Instance,Overlap,Auto Bin Max,Print Missing,Comment,}
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,12,13,14,
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key widths -value_type string -value 137,0,25,0,0,68,125,30,42,50,74,0,80,76,55,
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key names -value_type string -value {Cover Group Item,    , ,  ,   ,Score,Goal,Weight,At Least,Per Instance,Overlap,Auto Bin Max,Print Missing,Comment,}
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,12,13,
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key widths -value_type string -value 263,0,25,0,0,125,66,78,86,110,0,116,112,91,
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key names -value_type string -value {Bin Name,    , ,  ,   ,Status,Cross,At Least,Size,Hit Count,}
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key orders -value_type string -value 5,0,1,2,3,4,6,7,8,9,
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key widths -value_type string -value 153,0,25,0,0,121,0,62,40,68,
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key names -value_type string -value {Instance,    , ,  ,   ,Assert Name,Attempts,Real Successes,Failures,Incompletes,Category,Severity,}
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key widths -value_type string -value 86,0,25,0,0,112,87,130,110,106,91,86,
+gui_create_state_key -category Layout_CovDetail_funMiddleSplitter -key value1 -value_type integer -value 557
+gui_create_state_key -category Layout_CovDetail_funMiddleSplitter -key value2 -value_type integer -value 557
+gui_create_state_key -category Layout_CovDetail_splitterWithPrefVal -key value1 -value_type integer -value 80
+gui_create_state_key -category Layout_CovDetail_splitterWithPrefVal -key value2 -value_type integer -value 1
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-CFLAGS -DVCS design.sv testbench.sv} {-ucligui -CFLAGS -DVCS design.sv testbench.sv}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_UART
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {./simv /mnt/vol_NFS_Zener/WD_ESPEC/DPalacios/riscv_test/Verificacion_RISCV_TEC/test_env/uvm_UART/simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_cov -hier simv.vdb -testdir {} -test {simv/test} -merge MergedTest
+gui_list_select -id CovHier.1 -current_item_name {/<Function Groups>} -current_item_type {}  { {/<Function Groups>}   } -type { {}  }
+gui_list_expand -id CovHier.1   {/<Function Groups>}
+gui_list_select -id CovHier.1 -current_item_name tbench_top -current_item_type Scope  { {/<Function Groups>}  tbench_top   } -type { {} Scope  }
+gui_list_expand -id CovHier.1   tbench_top
+gui_list_action -id  CovHier.1 tbench_top  -type {Scope}
+gui_list_select -id CovHier.1 -current_item_name tbench_top.DUT -current_item_type Scope  { tbench_top  tbench_top.DUT   } -type { Scope Scope  }
+gui_list_expand -id CovHier.1   tbench_top.DUT
+gui_list_action -id  CovHier.1 tbench_top.DUT  -type {Scope}
+gui_close_window -window Console.1
+gui_show_window -window CoverageTable.1
+gui_show_window -window CovDetail.1
+gui_list_select -id CovHier.1 -current_item_name {/<Function Groups>/alu_if::ALU} -current_item_type {Cover Group}  { tbench_top.DUT  {/<Function Groups>/alu_if::ALU}   } -type { Scope {Cover Group}  }
+gui_list_expand -id CovHier.1   {/<Function Groups>/alu_if::ALU}
+gui_list_action -id  CovHier.1 {/<Function Groups>/alu_if::ALU}  -type {Cover Group}
+gui_list_select -id CovDetail.1 -list covergroup { /alu_if::ALU  /alu_if::ALU/tbench_top.intf::ALU   } -type { {Cover Group} {Cover Group}  }
+gui_open_source -id CovDetail.1  -active  tbench_top.intf::ALUMergedTest  -activate  -type {Cover Group}
+gui_list_expand -id CovDetail.1   /alu_if::ALU/tbench_top.intf::ALU
+gui_list_action -id  CovDetail.1 -list {covergroup} /alu_if::ALU/tbench_top.intf::ALU  -type {Cover Group}
+gui_list_select -id CovDetail.1 -list covergroup { /alu_if::ALU/tbench_top.intf::ALU  tbench_top.intf::ALU.Control   } -type { {Cover Group} {Cover Group}  }
+gui_open_source -id CovDetail.1  -active  tbench_top.intf::ALUMergedTest  -activate  -type {Cover Group}
+gui_list_action -id  CovDetail.1 -list {covergroup} tbench_top.intf::ALU.Control  -type {Cover Group}
+gui_list_select -id CovDetail.1 -list {covergroup detail} { le   }
+gui_exclude_items -id  CovDetail.1  -list { covergroup detail } { le }
+gui_list_select -id CovDetail.1 -list covergroup { tbench_top.intf::ALU.Control  tbench_top.intf::ALU.CnCXZcero   } -type { {Cover Group} {Cover Group}  }
+gui_list_select -id CovDetail.1 -list covergroup { tbench_top.intf::ALU.CnCXZcero  tbench_top.intf::ALU.Control_compa   } -type { {Cover Group} {Cover Group}  }
+gui_list_select -id CovDetail.1 -list {covergroup detail} { equ   }
+gui_exclude_items -id  CovDetail.1  -list { covergroup detail } { equ }
+gui_list_select -id CovDetail.1 -list covergroup { tbench_top.intf::ALU.Control_compa  tbench_top.intf::ALU.Control   } -type { {Cover Group} {Cover Group}  }
+gui_list_select -id CovDetail.1 -list {covergroup detail} { le   }
+gui_exclude_items -id  CovDetail.1  -list { covergroup detail }  -include { le }
+gui_list_select -id CovDetail.1 -list covergroup { tbench_top.intf::ALU.Control  tbench_top.intf::ALU.CnCXZcero   } -type { {Cover Group} {Cover Group}  }
+gui_list_select -id CovDetail.1 -list covergroup { tbench_top.intf::ALU.CnCXZcero  tbench_top.intf::ALU.Control   } -type { {Cover Group} {Cover Group}  }
+#Dve crash log 
+#Encountered Illegal Interrupt SIGXFSZ on Sat Nov 17 19:19:30 2018
+#Version: M-2017.03-SP2-5_Full64
+#Platform: Linux RH 4.0
+#Data of Built: Feb 22 2018 20:45:10

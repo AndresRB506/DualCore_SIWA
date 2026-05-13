@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : controlador
+Version: N-2017.09-SP4
+Date   : Thu May 31 10:38:07 2018
+****************************************
+
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 25/25/25
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   controlador                  0.00       124440.54      -124440.54
+                                                                    (VIOLATED)
+
+
+1

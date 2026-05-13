@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : cell
+Design : CMB
+Version: N-2017.09-SP4
+Date   : Thu Jun 21 16:58:08 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    d - dont_touch
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        LOGIC0HDLL      D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+                                                          7.526400  
+inst_controller           controlador_bus_sz80_Adrs_Data_sz32_Intr_D_sz72_cod_sz8_mem_adrs_sz11_bs_adrs_sz24_cant_io5_fifo_int_depth3_watch_dog_sz32_fifo_int_sz72
+                                                          128103.373392
+                                                                    h, n, p
+memoria                   XSPRAMLP_2048X32_M8P
+                                          XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C
+                                                          500899.062500
+                                                                    b, d
+--------------------------------------------------------------------------------
+Total 3 cells                                             629009.962292
+1

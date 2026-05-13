@@ -1,0 +1,350 @@
+global coverage_group 0 $unit::instruction_coverage_class::instruction_cov __coverage_instruction_coverage_class.instruction_cov unused_instruction_coverage_class_instruction_cov_loop_label $unit 0 0 0 1 $unit::../../TEC_RISCV/TOP/../ALU/ALU_2.sv::../../TEC_RISCV/TOP/../ALU/ALU_Library.sv...@4118157499 0  ( 0 
+)
+ 1 1
+ 123 /mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/coverage_classes.sv
+ 18 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+14
+0
+0
+0
+ 10 opcode_cov 20 0 0 0 0 0 95 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn 95 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 7 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 imm_cov 21 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 12 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 8 imm2_cov 24 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_2 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 20 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_3 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 10 offset_cov 27 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_4 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_4 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 21 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_5 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 12 offset_b_cov 30 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_6 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_6 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 13 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_7 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 10 funct3_cov 33 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_8 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_8 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 3 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 rs1_cov 34 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_9 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_9 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 5 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 2 0 0 1 1 13 ignore_values 35 0 0 2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_a 0 0 0 0 0 0 0
+ 0
+
+ 7 rs2_cov 37 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_b 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_b 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 5 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 2 0 0 1 1 13 ignore_values 38 0 0 2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_a 0 0 0 0 0 0 0
+ 0
+
+ 6 rd_cov 40 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_c 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_c 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 5 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 2 0 0 1 1 13 ignore_values 41 0 0 2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_a 0 0 0 0 0 0 0
+ 0
+
+ 10 funct7_cov 43 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_d 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_d 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 7 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 9 shamt_cov 44 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_e 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_e 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 5 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 csr_reg 45 0 0 0 0 0 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_f 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_f 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 12 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 13 1 1 0 0 1 1 7 mip_mie 46 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 97 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_a 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 mepc 47 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_10 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 mcause1 48 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_11 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 mcause2 49 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_12 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 gpio 50 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_13 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 mvtec 51 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_14 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 comp_timer 52 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_15 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 val_timer 53 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_16 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 24 full_range_level_shifter 54 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_17 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 IS_Val 55 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_18 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 IS_Config 56 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_19 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 IS_Trigger 57 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1a 0 0 0 0 0 0 0
+ 0
+ 1 2 0 0 1 1 13 ignore_values 58 0 0 2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1b 0 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1c 0 0 0 0 0
+ 0
+
+ 8 zimm_cov 60 0 0 0 0 0 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1d 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1d 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 5 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 12 reg_cont_cov 61 0 0 0 0 0 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1e 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1e 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 98 instruction_coverage_class::_vcs_unit__4118157499_instruction_coverage_class_instruction_cov_fn_1f 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 $unit::core_coverage_class::core_cov __coverage_core_coverage_class.core_cov unused_core_coverage_class_core_cov_loop_label $unit 0 1 0 1 $unit::../../TEC_RISCV/TOP/../ALU/ALU_2.sv::../../TEC_RISCV/TOP/../ALU/ALU_Library.sv...@4118157499 0  ( 0 
+)
+ 0 78 0 0 0 1 0 0 0 0  1
+0
+26 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 12 ctrl_fsm_cov 79 0 0 0 0 0 74 core_coverage_class::_vcs_unit__4118157499_core_coverage_class_core_cov_fn 74 core_coverage_class::_vcs_unit__4118157499_core_coverage_class_core_cov_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 1 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 76 core_coverage_class::_vcs_unit__4118157499_core_coverage_class_core_cov_fn_2 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 2 0 0 1 1 13 ignore_values 81 0 0 2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 76 core_coverage_class::_vcs_unit__4118157499_core_coverage_class_core_cov_fn_0 0 76 core_coverage_class::_vcs_unit__4118157499_core_coverage_class_core_cov_fn_1 0 0 0 0 0
+ 0
+
+end_coverage_group

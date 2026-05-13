@@ -1,0 +1,103 @@
+############################################################################################
+# Title:        gen_port_locator_script.tcl
+# Description:	Este script genera un nuevo archivo de texto codificado en tcl. Im-
+#		plementando un script con los comandos para ubicar manualmente los 
+#		puertos/pines del disenno a partir de una coordenada base y un es-
+#		paciamiento definidos 
+# Dependencies: *design_phy.tcl.
+# Library:	XFAB-180nm (xh018)
+# Project:	RISC-V
+# Author:	Reinaldo Castro Gonzalez
+# Institution:	Instituto Tecnologico de Costa Rica. DCILab.
+# Date:		18 de Octubre de 2018
+# Notes:	
+#		
+# Version:	1.1
+#		Fix: A Chacon-Rodriguez. Nov. 15 2018
+#                   Place layer for port connection in line 92
+#############################################################################################
+
+puts "RM-Info: Running script [info script]\n";
+
+#############################################################################################
+#                                   Importante!!!                                           #
+# "base_coordinates" solicita al entorno el nombre del perimetro del core y las coordenadas #
+# del mismo. El atributo "bbox" devuelve un arreglo bidimensional que tiene las coordenadas #
+# {X Y}. Si el area es un rectangulo, la primera coordenada define el extremo inferior izq  #
+# la segunda el extremo derecho. Por ello se solicita el indice 1 (segundo elemento del --  #
+# arreglo). Este script coloca los puertos a partir de la coordenada superior derecha, man- #
+# teniendo la coordenada X y descendiendo en colocado en Y.                                 #
+#############################################################################################
+
+#############################################################################################
+#               Se definen las variables para la ejecucion del script.                      #
+#############################################################################################
+
+
+set base_coordinates [lindex  [get_attribute -class core_area [get_core_areas] bbox] 1];
+set spacing [expr 4 * $BASIC_TRACK];
+set index 20;
+
+# Se crea/abre un archivo para guardar los comandos del script. La ruta al archivo debe existir!
+# Aunque no es necesario que el archivo exista.
+
+set file [open ./scripts/allocate_ports.tcl w 0755]
+
+# Se solicita al sistema la fecha para agregarla al encabezado del script
+set fecha [date]
+
+#############################################################################################
+#                                        Ejecucion                                          #
+#############################################################################################
+
+# Se escribe el encabezado en el archivo creado.
+puts $file "###################################################################################\n\
+# Title:\tallocate_ports.tcl\n\
+# Description:\tEste script ubica manualmente los puertos/pines del disenno a par- \n\
+# \t\t\t\ttir de una coordenada base y un espaciamiento definidos \n\
+# Dependencies:\t*design_phy.tcl.\n\
+# Library:\tXFAB-180nm (xh018)\n\
+# Project:\tRISC-V\n\
+# Author:\tReinaldo Castro Gonzalez\n\
+# Institution:\tInstituto Tecnologico de Costa Rica. DCILab.\n\
+# Date:\t\t$fecha\n\
+# Notes:\tGenerado automaticamente por el script: gen_port_locator_script.tcl\n\
+# \		
+# Version:\t1.0 \n\
+# \		
+###################################################################################\n";
+
+# Se escribe el comando para la impresion en consola del script que se esta ejecuntado
+puts $file "puts \"RM-Info: Running script \[info script\]\\n\";\n";
+
+# Se crea una lista con el nombre de los puertos. Ello con el objetivo de ordenar la 
+# lista, para que los buses esten alineados y no hayan puertos separados.
+
+set port_list {};
+foreach_in_collection each_port [get_ports] {
+	set port_list [concat $port_list [get_attribute -class port $each_port name]];
+	set port_list [lsort -dictionary $port_list];
+}
+
+# Se recorre la lista de puertos creando dos variables para las coordenadas del puerto.
+# Las cuales se pueden actualizar en cada iteracion de acuerdo con algun criterio. En este
+# caso, X es constante y Y es decendiente de acuerdo con la variable de espaciamiento.
+# Se excluye la colocacion de puertos que pueden ser asociados a un pad. Para ello se em-
+# plea
+
+foreach port_name $port_list {
+	set x_pos [format {%0.3f} [expr [lindex $base_coordinates 0] + 0]];
+	set y_pos [format {%0.3f} [expr [lindex $base_coordinates 1] - [expr $spacing * $index]]]; 
+	if {![regexp {[0-9,A-Z,a-z,._-]?(_pad)} "$port_name"]} {
+		puts $file "set_port_location -coordinate {$x_pos $y_pos} -layer_name MET2 -layer_area {-0.28 -0.28 0.28 0.28} $port_name;";
+		incr index;
+	}
+}
+
+unset port_list;
+
+# Se cierra el archivo.
+close $file;
+
+# Se ejecuta el script que acabamos de crear.
+source -echo -verbose "./scripts/allocate_ports.tcl"

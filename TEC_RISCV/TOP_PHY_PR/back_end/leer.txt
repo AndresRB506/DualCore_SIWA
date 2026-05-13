@@ -1,0 +1,1000 @@
+   24  su
+   25  cd ..
+   26  cd back_end/
+   27  ls 
+   28  cd source/
+   29  ls
+   30  ls -l
+   31  icv_nettran -verilog alu_phy.v -outType SPICE -outName alu_phy.sp -wireLog log_wires.txt
+   32  . ../../synopsys_tools.sh
+   33  icv_nettran -verilog alu_phy.v -outType SPICE -outName alu_phy.sp -wireLog log_wires.txt
+   34  icv_nettran -verilog alu_phy.v -outType SPICE -outName alu_phy_2.sp -wireLog log_wires.txt
+   35  exit
+   36  cd ..
+   37  ls
+   38  cd ..
+   39  ls
+   40  cd ALU_PHY_Pads/
+   41  CD ..
+   42  cd ..
+   43  cd ALU_Phy/
+   44  ls
+   45  . synopsys_tools.sh
+   46  cd back_end/
+   47  icc_shell -gui
+   48  cd ..
+   49  cd front_end/
+   50  dc_shell -topo
+   51  ls
+   52  dc_shell -topo
+   53  icv_nettran -help
+   54  icv_netlist -help
+   55  history > ../history.txt
+   56  cd ..
+   57  ls
+   58  cd back_end/source/
+   59  ls-l
+   60  ls -l
+   61   icv_nettran -verilog alu_phy.v -outName alu_phy.sp
+   62  gedit alu_phy.sp
+   63   icv_nettran -verilog alu_phy.v-outType SPICE -outName alu_phy.sp
+   64   icv_nettran -verilog alu_phy.v -outType SPICE -outName alu_phy.sp
+   65  ls
+   66  cd ..
+   67  ls
+   68  icc_shell -gui
+   69  cd source/
+   70   icv_nettran -verilog alu_phy.v -outType SPICE -outName alu_phy.sp
+   71  ls
+   72  gedit log_wires.txt 
+   73   icv_nettran -verilog alu_phy.v -outType SPICE -outName alu_phy.sp -wireLog log_wires.txt
+   74  ls
+   75  ls -l
+   76  less icv_nettran.log 
+   77  less log_wires.txt 
+   78  cd ..
+   79  icc_shell 
+   80  icc_shell -gui
+   81  cd ..
+   82  ls
+   83  exit
+   84  ls
+   85  cd ..
+   86  ls
+   87  cd ..
+   88  ls
+   89  . synopsys_tools.sh
+   90  cd front_end/
+   91  dc_shell -topo
+   92  cd .
+   93  exit
+   94  cd Top_Phy/
+   95  . synopsys_tools.sh
+   96  cd front_end/
+   97  dc_shell -topo
+   98  cd ..
+   99  cd back_end/
+  100  ls
+  101  cd source/
+  102  ls
+  103  cd ..
+  104  cd scripts/
+  105  ls
+  106  gedit icc_setup.tcl&
+  107  cd xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range 
+  108  cd /mnt/vol_NFS_Zener/tools/synopsys/pdks/XFAB_snps_CustomDesigner_kit_2_0_10/xh018/diglibs/D_CELLS_HDMV/v1_0/synopsys_
+  109  cd /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range
+  110  ls
+  111  pwd
+  112  cd ..
+  113  ls
+  114  cd ..
+  115  ls
+  116  cd ..
+  117  ls
+  118  l
+  119  cd ..
+  120  ls
+  121  cd v2_1/
+  122  ls
+  123  cd liberty_LPMOS/
+  124  ls
+  125  cd v2_1_0/
+  126  ls
+  127  cd PVT_3_30V_1_80V_range/
+  128  ls
+  129  read_file -format ddc "$PROY_HOME_SYN/db/$DESIGN_NAME\_pre_compile.dd
+  130  exit
+  131  ls
+  132  cd Top_Phy/
+  133  . synopsys_tools.sh
+  134  cd front_end/
+  135  ls
+  136  cd scripts/
+  137  gedit dc_syn.tcl&
+  138  cd ..
+  139  dc_shell -topo
+  140  cd source/
+  141  cp -r ../../../BUS_Micro/ .
+  142  cp -r ../../../DECO_INSTR/ .
+  143  cp -r ../../../FIFO_Latches/ .
+  144  cp -r ../../../MBC/ .
+  145  cp -r ../../../Register_File/ .
+  146  cp -r ../../../SPI/ .
+  147  cp -r ../../../TOPRISCV_wt_SPI_UART/ .
+  148  cp -r ../../../UART/ .
+  149  ls
+  150  cp -r ../../../TOP/ .
+  151  cd TOP
+  152  ls
+  153  cd ..
+  154  ls
+  155  pwd
+  156  cp -r ../../../BUS_Micro/ .
+  157  cp -r ../../../DECO_INSTR/ .
+  158  cp -r ../../../FIFO_Latches/ .
+  159  cp -r ../../../MBC/ .
+  160  cp -r ../../../Register_File/ .
+  161  cp -r ../../../SPI/ .
+  162  cp -r ../../../TOPRISCV_wt_SPI_UART/ .
+  163  cp -r ../../../UART/ .
+  164  cp -r ../../../TOP/ .
+  165  cd ..
+  166  ls
+  167  gedit ./scripts/run_all.tcl&
+  168  dc_shell -top
+  169  dc_shell -topo
+  170  exit
+  171  cd
+  172  su
+  173  exit
+  174  . bash.vnc
+  175  exit
+  176  cd scripts/
+  177  gedit run_all.tcl&
+  178  cd ..
+  179  ls
+  180  cd ..
+  181  ls
+  182  cd ..
+  183  add *.tcl
+  184  git add *.tcl
+  185  git status
+  186  git reset ALU_PHY_Pads/back_end/.__tmp_pns_undo_file.tcl
+  187  git reset *.tcl
+  188  git status
+  189  cd Top_Phy/
+  190  cd front_end/scripts/
+  191  git add *.tcl
+  192  git status
+  193  git commit -m "UPF actualizad"
+  194  git push origin master
+  195  cd ..
+  196  ls
+  197  cd ..
+  198  . synopsys_tools.sh
+  199  cd $FTK_KIT_DIR 
+  200  ls
+  201  cd ..
+  202  ls
+  203  cd docs/
+  204  ls
+  205  pwd
+  206  cd ..
+  207  ls
+  208  cd XFAB_snps_CustomDesigner_kit_v2_1_0
+  209  ls
+  210  su
+  211  cd
+  212  cd imd/micro_hdl/TEC_RISCV/
+  213  gedit ../como.txt&
+  214  git fetch upstream master
+  215  git merge upstream/master
+  216  cd ..
+  217  cd TEC_RISCV/Top_Phy/front_end/source/
+  218  cp -r ../../../BUS_Micro/ .
+  219  cp -r ../../../DECO_INSTR/ .
+  220  cp -r ../../../FIFO_Latches/ .
+  221  cp -r ../../../MBC/ .
+  222  cp -r ../../../Register_File/ .
+  223  cp -r ../../../SPI/ .
+  224  cp -r ../../../UART/ .
+  225  cp -r ../../../TOP/ .
+  226  cp -r ../../../TOPCORE/ .
+  227  cd ..
+  228  lc_shell 
+  229  ls
+  230  cd ..
+  231  cd front_end/
+  232  git add *.tcl
+  233  git add *.sv
+  234  ls
+  235  git commit -m "UPF Listo, Black Box UCU Listo, TOP_PADS Listo"
+  236  git push origin master
+  237  dc_shell -topo -gui
+  238  cd source/
+  239  ls
+  240  gedit copy-files.txt&
+  241  cp -r ../../../BUS_Micro/ .
+  242  cp -r ../../../DECO_INSTR/ .
+  243  cp -r ../../../FIFO_Latches/ .
+  244  cp -r ../../../MBC/ .
+  245  cp -r ../../../Register_File/ .
+  246  cp -r ../../../SPI/ .
+  247  cp -r ../../../UART/ .
+  248  cp -r ../../../TOP/ .
+  249  cp -r ../../../TOPCORE/ .
+  250  cd ..
+  251  dc_shell -top gui
+  252  dc_shell -top -gui
+  253  cd
+  254  cd imd/micro_hdl/TEC_RISCV/
+  255  cd Top_Phy/
+  256  cd front_end/
+  257  ls
+  258  . ../synopsys_tools.sh
+  259  dc_shell -topo
+  260  gid add *.sv
+  261  git add *.sv
+  262  git add *.tcl
+  263  git commit -m "actualizamos antes de merge con nuevo codigo"
+  264  git push origin master
+  265  dc_shell -topo
+  266  rm *.ddc
+  267  ls
+  268  gem *.log
+  269  rm *.log
+  270  ls
+  271  rm *.txt
+  272  dc_shell -topo
+  273  rm *.ddc
+  274  ls
+  275  cd ..
+  276  ls
+  277  cd front_end/
+  278  ls
+  279  dc_shell -topo 
+  280  dc_shell -help
+  281  dc_shell -64bit -topo
+  282  cd ..
+  283  cd Top_Phy/
+  284  git add *.tcl
+  285  git add *.sv
+  286  git commit "COnexions Level shifters, anillo de pads preliminares"
+  287  git commit -m "Conexions Level shifters, anillo de pads preliminares"
+  288  git pudh origin master
+  289  git push origin master
+  290   git fetch upstream master
+  291  git merge upstream/master
+  292  cd
+  293  cd imd/micro_hdl/TEC_RISCV/Top_Phy/
+  294  . synopsys_tools.sh
+  295  cd front_end/
+  296  dc_shell -topo -gui
+  297  exit
+  298  cd front_end/
+  299  . ../synopsys_tools.sh
+  300  dc_shell -top -gui
+  301  git add source/TOP/spi_trans.tcl
+  302  git add source/TOP/control.sv
+  303  git add source/TOP/Status.sv
+  304  git add source/SPI/top_spi.sv
+  305  git add source/Register_File/Biblioteca.v
+  306  git add source/FIFO_Latches/DC_script.tcl
+  307  git add scripts/run_all.tcl
+  308  dc_shell -top gui&
+  309  dc_shell -top -gui&
+  310  dc_shell -top -gui
+  311  pwd
+  312  dc_shell -top -gui
+  313  exit
+  314  cd ..
+  315  git add *.tcl
+  316  git add *.sv
+  317  git commit -m "actualizado a pads bidireccionales"
+  318  git push origin master
+  319  git add *.tcl
+  320  git add *.sv
+  321  git add back_end/db/*.mw
+  322  cd ..
+  323  cd TEC_RISCV/
+  324   git fetch upstream master
+  325   git merge upstream/master
+  326  git commit -m "start of floor planning"
+  327  git push origin master
+  328   git merge upstream/master
+  329   git fetch upstream master
+  330   git merge upstream/master
+  331  ls
+  332  cd Top_Phy/
+  333  ls
+  334  cd ..
+  335  ls
+  336  cd Top_Phy/
+  337  ls
+  338  cd front_end/
+  339  ls
+  340  cd scripts/
+  341  ls
+  342  cd ..
+  343  ls
+  344  cd ..
+  345  git status
+  346  git add *.tcl
+  347  git add *.sv
+  348  git status
+  349  cd back_end/
+  350  git add *.tcl
+  351  git status
+  352  git add ./scripts/*.tcl
+  353  git status
+  354  cd ..
+  355  ls 
+  356  cd front_end/
+  357  ls
+  358  git add ./source/*.tcl
+  359  git add ./source/*.sv
+  360  git add ./scripts/*.sv
+  361  git add ./scripts/*.tcl
+  362  git status
+  363  git add modified:   db/QTM/ucu_anlg.db
+  364  git add  db/QTM/ucu_anlg.db
+  365  git commit -m "Ultimos cambios"
+  366  git push origin master
+  367   git fetch upstream master
+  368   git merge upstream/master
+  369  git rm Top_Phy/front_end/reports/Tec_Riscv_pads_syn_area.txt
+  370  git rm ./front_end/reports/Tec_Riscv_pads_syn_area.txt
+  371  git rm ./reports/*.txt
+  372  git rm reports/*.txt
+  373  rm reports/check_environment.txt
+  374  git add Top_Phy/front_end/source/Register_File/Banco_de_registros_latches.v
+  375  git add ./source/Register_File/Banco_de_registros_latches.v
+  376  git add source/Register_File/Biblioteca.v
+  377  git add source/Tec_Riscv_pads_syn.v
+  378  git add source/copy-files.txt
+  379  git -commit -m "Antes del merge con TopPhy de Ronny"
+  380  git commit -m "Antes del merge con TopPhy de Ronny"
+  381  git push origin master
+  382   git fetch upstream master
+  383   git merge upstream/master
+  384  gitk
+  385  bg 1
+  386  git rm --cached ../back_end/scripts/icc_setup.tcl~
+  387  git rm --cached Top_Phy/back_end/scripts/run_all.tcl~
+  388  git rm --cached ../back_end/scripts/run_all.tcl~
+  389  git rm --cached ../back_end/scripts/run_all.tcl~Top_Phy/front_end/source/TOP/codigo
+  390  git rm --cached ../source/TOP/codigo
+  391  git rm --cached ./source/TOP/codigo
+  392  source/TOP_PADS/top_riscv_tec_pads.sv~
+  393  git rm --cached ./source/TOP_PADS/top_riscv_tec_pads.sv~
+  394  cd ..
+  395  l
+  396  ls 
+  397  git status
+  398  git commit -m "Para actualizar a TopPhy de Ronny elimanmos algunso archivos"
+  399  gut push origin master
+  400  git push origin master
+  401   git merge upstream/master
+  402  rm -r back
+  403  rm -r scripts/snapshot/*~
+  404  rm  scripts/snapshot/*.*~
+  405  rm  ./front_end/scripts/snapshot/*.*~
+  406  rm  ./front_end/*.*~
+  407  rm front_end/command.log 
+  408  rm front_end/chunlei 
+  409  rm front_end/lc_shell_command.log 
+  410  rm front_end/default.svf 
+  411  rm back_end/reports/*.txt
+  412  rm back_end/command.log 
+  413  rm back_end/db/Tec_Riscv_pads_phy*
+  414  git merge upstream/master
+  415  rm back_end/reports/place.*
+  416  rm back_end/scripts/*.*~
+  417  cd back_end/scripts/
+  418  ls
+  419  cd ..
+  420  cd source/Tec_Riscv_pads_phy.v 
+  421  rm source/Tec_Riscv_pads_phy.v 
+  422  rm ../front_end/source/TOP/memory.py 
+  423  rm ../front_end/source/TOP/codigo 
+  424  rm ../front_end/source/TOP/comando 
+  425  rm ../front_end/source/TOP/mem_model.txt 
+  426  rm ../front_end/source/Register_File/.Banco_de_registros_latches.v.
+  427  rm ../front_end/source/TOP/IS25WP032D.v 
+  428  rm ../front_end/source/TOP_PADS/*.*~
+  429  rm ../front_end/source/TOP_PADS/*.txt
+  430  rm ../front_end/source/pad_ring.sv~ 
+  431  git merge upstream/master
+  432  cd ..
+  433  rm back_end/filenames.log
+  434  rm back_end//icc_output.txt
+  435  rm front_end/scripts/Tec_Riscv_pads_constraints.txt
+  436  git merge upstream/master
+  437  mv user_setup.tcl user_setup_acr.tcl
+  438  mv front_end/source/copy-files.txt front_end/source/copy-files_acr.txt
+  439  mv front_end/source/TOP_PADS/ucu_anlg.sv front_end/source/TOP_PADS/ucu_anlg_ACR.sv
+  440  front_end/source/TOP/spi_trans.tcl
+  441  mv front_end/source/TOP/spi_trans.tcl front_end/source/TOP/spi_trans_ACR.tcl
+  442  mv front_end/source/TOP/control.sv front_end/source/TOP/control_ACR.sv
+  443  mv TOP/Status.sv TOP/Status_ACR.sv
+  444  mv front_end/source/TOP/Status.sv front_end/source/TOP/Status_ACR.sv
+  445  mv front_end/source/SPI/top_spi.sv front_end/source/SPI/top_spi_ACR.sv 
+  446  mv source/Register_File/Biblioteca.v source/Register_File/Biblioteca_ACR.v
+  447  mv front_end/source/Register_File/Biblioteca.v front_end/source/Register_File/Biblioteca_ACR.v
+  448  mv front_end/source/FIFO_Latches/DC_script.tcl front_end/source/FIFO_Latches/DC_script_ACR.tcl
+  449  mv front_end/scripts/run_all.tcl front_end/scripts/run_all_ACR.tcl
+  450  mv front_end/scripts/dc_syn.tcl front_end/scripts/dc_syn_ACR.tcl
+  451  mv front_end/scripts/analyze_rtl.tcl front_end/scripts/analyze_rtl_ACR.tcl
+  452  git add *.tcl
+  453  git add front_end/scripts/*.tcl
+  454  git add front_end/source/*.sv
+  455  status
+  456  git status
+  457  git commit -m "A ver si ser esuelve" 
+  458  ls
+  459  cd front_end/scripts/
+  460  git add analyze_rtl.tcl
+  461  git add dc_syn.tcl
+  462  cd ..
+  463  cd source/
+  464  git add copy-files.txt
+  465  git commit -m "A ver si ser esuelve" 
+  466  cd ..
+  467  git add user_setup.tcl
+  468  git commit -m "A ver si ser esuelve" 
+  469  push origin master
+  470  git push origin master
+  471  git status
+  472  ls
+  473  cd front_end/
+  474  git add source/*.sv
+  475  git add scripts/tcl
+  476  git add scripts/*.tcl
+  477  git add source/TOP_PADS/*.sv
+  478  git commit -m "Actualizamos archivos verilog"
+  479  git push origin master
+  480  l
+  481  ls
+  482  cd source/
+  483  git add *.v
+  484  git commit -m "Verilog con PG" 
+  485  git push origin master
+  486  cd ..
+  487  git add ./*/*.tcl
+  488  git add ./*/*/*.tcl
+  489  git add ./*/*/*.sv
+  490  git status
+  491  git commit -m "Pads de alimentacion conectados, PG nets creadas"
+  492  git push origin master
+  493  cd ..
+  494  ls
+  495  git add ucu_phy/
+  496  git commit -m "Bloque de macro LS para UCU"
+  497  git push origin master
+  498  cd Top_Phy/
+  499  ls
+  500  cd front_end/source/
+  501  cd TOP_PADS/
+  502  ls
+  503  git add top_riscv_tec_pads_hv.sv 
+  504  git commit -m  "copia de seguridad"
+  505  git push origin master
+  506  gedit top_riscv_tec_pads.sv&
+  507  exit
+  508  cd ..
+  509  cd scripts/
+  510  git rm create_UPF_final.tcl*
+  511  git rm create_UPF_final.tcl
+  512  git rm create_UPF_final_explicit_PG.tcl.tcl*
+  513  git rm create_UPF_final_explicit_PG.tcl*
+  514  git rm create_UPF_final_explicit_PG.tcl
+  515  git rm create_UPF_final_explicit_PG.tcl~
+  516  git rm create_UPF_final_explicit_PG.tcl~ 
+  517  git rm create_UPF_final_no_domain_ucu.tcl
+  518  git rm create_UPF_corrected_ACR.tcl
+  519  ls
+  520  rm *.*~
+  521  ls
+  522  git rm create_UPF.*
+  523  git add *.tc
+  524  git add *.tcl
+  525  git commit -m "Actualiza los UPF a los correctos"
+  526  git push origin master
+  527  git fetch upstream master
+  528  git merge upstream/master
+  529  git status
+  530  git merge upstream/master
+  531  git status > errors.txt
+  532  ls
+  533  pwd
+  534  git merge upstream/master 
+  535  git add dc_syn.tcl
+  536  git merge upstream/master 
+  537  git commit -m "Corregimos DC_syn"
+  538  git push origin master
+  539  git merge upstream/master 
+  540  pwd
+  541  cd ..
+  542  . comando_dc.txt 
+  543  cd ..
+  544  git fetch  upstreammaster 
+  545  git merge upstream/master 
+  546  git rm front_end/command.log 
+  547  git rm -f  front_end/command.log 
+  548  git rm -f  front_end/default.svf 
+  549  git merge upstream/master 
+  550  cd front_end/
+  551  cd source/
+  552  source copy-files.txt
+  553  cd ..
+  554  ls
+  555  cd ..
+  556  ls
+  557  git fetch upstream master
+  558  git merge upstream/master 
+  559  ls
+  560  cd ALU
+  561  git fetch upstream master
+  562  git merge upstream/master 
+  563  cd ..
+  564  ls
+  565  cd Top_Phy
+  566  cd front_end/source/
+  567  source copy-files.txt
+  568  git add */*.sv
+  569  git commit -m 
+  570  git commit -m "nuevas versiones de codigo"
+  571  git push origin master
+  572  exit
+  573  cd 
+  574  cd imd/micro_hdl/
+  575  ls
+  576  cd TEC_RISCV/
+  577  ls
+  578  cd Top_Phy/
+  579  ls
+  580  cd back_end/
+  581  ls
+  582  cd scripts/
+  583  ls
+  584  cp top_phy_opt.tcl top_phy_final.tcl
+  585  gedit top_phy_final.tcl 
+  586  pwd
+  587  cd ..
+  588  ls
+  589  ic_shell -gui 
+  590  source ../synopsys_tools.sh
+  591  ic_shell -gui 
+  592  icc_shell -gui 
+  593  cd scripts/
+  594  cd ..
+  595  icc_shell -gui 
+  596  ls
+  597  cd ..
+  598  cp -R back_end/ back_end_ucu/ 
+  599  mv back_end_ucu/ ucu_block
+  600  cd ucu_block/
+  601  ls
+  602  rm *.tcl
+  603  ls
+  604  cd libs/
+  605  ls
+  606  rm -R Tec_Riscv_pads.mw/
+  607  ls
+  608  cd ..
+  609  cd db/
+  610  ls
+  611  pwd
+  612  rm -R *
+  613  ls
+  614  cd ..
+  615  ls
+  616  cd scripts/
+  617  ls
+  618  cp top_phy_final.tcl ucu_anlg_phy.tcl
+  619  gedit ucu_anlg_phy.tcl &
+  620  cd ..
+  621  icc_shell -gui
+  622  ls
+  623  cd ..
+  624  ls
+  625  rm -R ucu_block/
+  626  ls
+  627  cd ..
+  628  ls
+  629  cd Top_Phy/
+  630  ls
+  631  cd front_end/
+  632  s
+  633  ls
+  634  cd work/
+  635  ls
+  636  rm *
+  637  rm -R *
+  638  cd ..
+  639  ls
+  640  cd libs/
+  641  ls
+  642  rm Tec_Riscv_pads.mw/
+  643  rm -R Tec_Riscv_pads.mw/
+  644  cd ..
+  645  ls
+  646  cd db/
+  647  ls
+  648  cd ..
+  649  ls
+  650  cd ..
+  651  cd back_end/
+  652  ls
+  653  cd libs/
+  654  ls
+  655  rm -R Tec_Riscv_pads.mw/
+  656  cd ..
+  657  ls
+  658  rm *.tcl
+  659  cd ..
+  660  cp -R Top_Phy/ ucu_phy
+  661  cd ucu_phy/
+  662  s
+  663  ls
+  664  rm *.*~
+  665  ls
+  666  cd back_end/
+  667  ls
+  668  rm -R snapshot/
+  669  rm -R pna_output/
+  670  ls
+  671  tm *.txt
+  672  rm *.txt
+  673  rm *.log
+  674  ls
+  675  rm icc_gui.output 
+  676  ls
+  677  cd scripts/
+  678  ls
+  679  rm *.*~
+  680  ls
+  681  rm Bounnding_polygon_PD_PADS.txt 
+  682  rm create_pads.tcl 
+  683  rm pad_insertion.tcl 
+  684  rm set_pad_attributes_on_cells.tcl 
+  685  ls
+  686  cd ..
+  687  ls
+  688  gedit user_setup.tcl 
+  689  cd ..
+  690  ls
+  691  cd Top_Phy/
+  692  ls
+  693  cd back_end/
+  694  icc_shell -gui
+  695  pwd
+  696  icc_shell -gui
+  697  cd scripts/
+  698  pico create_pads.tcl
+  699  nano create_pads.tcl
+  700  nano fix_vdd_ports.tcl
+  701  cd ..
+  702  cd front_end/
+  703  ls
+  704  cd scripts/
+  705  nano create_UPF_fab.tcl
+  706  cd ..
+  707  cd back_end/scripts/
+  708  ls
+  709  nano fix_vdd_ports.tcl
+  710  nano top_phy_final.tcl
+  711  nano create_pads.tcl
+  712  git add *.tcl
+  713  pwd
+  714  git commit "Pads orientados"
+  715  git commit -m "Pads orientados"
+  716  git push origin master
+  717  nano create_pads.tcl
+  718  git add *.tcl
+  719  git commit -m "Pads orientados"
+  720  git push origin master
+  721  git add *.tcl
+  722  git add *.txt
+  723  git commit -m "Pads colocados en su dominio de voltaje"
+  724  git push origin master
+  725  git add *.tcl
+  726  git add *.txt
+  727  cd ..
+  728  ls
+  729  cd libs/
+  730  ls
+  731  git add Tec_Riscv_pads.mw/
+  732  git commit -m "FLoor plan del tamano correcto"
+  733  git push origin master
+  734  cd ..
+  735  ls
+  736  cd libs/
+  737  git add Tec_Riscv_pads.mw/
+  738  cd ..
+  739  ls
+  740  cd scripts/
+  741  git add *.tcl
+  742  cd ..
+  743  git commit -m "Voltage areas defined"
+  744  git push origin master
+  745  ls
+  746  git add ./scripts/*.tcl
+  747  git commit -m "Fijamos la SRAM, definimos a los Level Shifters como pines de salida"
+  748  git push origin master
+  749  git add *.tcl
+  750  cd scripts/
+  751  git add *.tcl
+  752  git commit -m "Mejoras a red de potencia. Se integra colocacion de puertos"
+  753  git status
+  754  cd ..
+  755  git add libs/*.mw
+  756  ls
+  757  git reset command.log 
+  758  git status
+  759  cd ..
+  760  cd front_end/
+  761  cd scripts/
+  762  git add *.tcl
+  763  git commit "La biblio MW"
+  764  git commit -m "La biblio MW"
+  765  git push origin master
+  766  git add *.tcl
+  767  cd ..
+  768  ls
+  769  cd libs/
+  770  git add *.mw
+  771  ls
+  772  cd ..
+  773  git commit -m "Por fin, reloj ruteado. Antes de cargar disenno producido por Ronny"
+  774  git push origin master
+  775  cd ..
+  776  cd back_end/scripts/
+  777  git add *.tcl
+  778  git commit -m "Area del dado ajustada a 1520x1520, Power rails ready"
+  779  git push origin master
+  780  cd ..
+  781  cd libs/
+  782  ls
+  783  git add Tec_Riscv_pads.mw/
+  784  git push origin master
+  785  git commit -m "Biblio MW con pads y rings, tamano del dado OK"
+  786  ls
+  787  cd ..
+  788  git push origin master
+  789  top
+  790  cd ..
+  791  cd back_end/scripts/
+  792  git add *.tcl
+  793  git cd ..
+  794  cd ..
+  795  cd libs/
+  796  git add *.mw
+  797  cd ..
+  798  cd scripts/
+  799  git add *.tcl
+  800  cd ..
+  801  cd source/
+  802  ls
+  803  ls -l
+  804  git add *.v
+  805  cd ..
+  806  ls
+  807  cd db/
+  808  git add *.v
+  809  git commit "P&R primera vuelta. Sin extracciones"
+  810  git commit -m "P&R primera vuelta. Sin extracciones"
+  811  git push origin master
+  812  git add *.mw
+  813  cd ..
+  814  cd scripts/
+  815  git add *.tcl
+  816  git commit -m "Se ve la luz"
+  817  git push origin master
+  818  exit
+  819  cd TOP_PHY_PR/
+  820  cd back_end/
+  821  source ../synopsys_tools.sh
+  822  icc_shell -gui
+  823  cd ..
+  824  ls
+  825  cd ..
+  826  ls
+  827  cd FINAL/
+  828  ls
+  829  cd TEC_RISCV/
+  830  ls
+  831  cd TOP_PHY_PR/
+  832  ls
+  833  cd back_end/
+  834  ls
+  835  source ../synopsys_tools.sh
+  836  cd scripts/
+  837  gedit run_all.tcl&
+  838  cd ..
+  839  ls
+  840  icc_shell -gui
+  841  pwd
+  842  icc_shell -gui
+  843  source ../synopsys_tools.sh
+  844  icc_shell -gui
+  845  cd ..
+  846  source ../synopsys_tools.sh
+  847  icc_shell -gui
+  848  source bash.vnc
+  849  exit
+  850  git clone git@github.com:alfonso-chacon-rodriguez/TEC_RISCV.git
+  851  ls
+  852  git clone git@github.com:alfonso-chacon-rodriguez/TEC_RISCV.git
+  853  ls
+  854  cd TEC_RISCV/
+  855  ls
+  856  cd TOP_PHY_PR/
+  857  cd back_end/
+  858  ls
+  859  cd scripts/
+  860  pwd
+  861  add *.tcl
+  862  git add *.tcl
+  863  git commit -m "Nuevo fork"
+  864  git push origin master
+  865  git remote add upstream git@github.com:rgarcia18482/TEC_RISCV.git 
+  866  cd ..
+  867  pwd
+  868  cd back_end/
+  869  ls
+  870  gedit ./scripts/run_all.tcl&
+  871  cd ..
+  872  gedit synopsys_tools.sh&
+  873  cd back_end/
+  874  source ../synopsys_tools.sh
+  875  icc_shell -gui
+  876  cd
+  877  cd imd/
+  878  s
+  879  ls
+  880  cd micro_hdl/
+  881  ls
+  882  mkdir APRIL-SPIN
+  883  cd APRIL-SPIN/
+  884  pwd
+  885  git clone git@github.com:rgarcia18482/TEC_RISCV.git
+  886  ls
+  887  cd TEC_RISCV/
+  888  ls
+  889  cd TOP_PHY_PR/
+  890  ls
+  891  rm *.*~
+  892  cp -R ../../../FINAL/TEC_RISCV/TOP_PHY_PR/back_end/ .
+  893  cp -R ../../../FINAL/TEC_RISCV/TOP_PHY_PR/user_setup.tcl user_setup_acr.tcl 
+  894  ls
+  895  cd back_end/
+  896  ls
+  897  source ../synopsys_tools.sh 
+  898  icc_shell -gui
+  899  cd ..
+  900  ls
+  901  cd ..
+  902  ls
+  903  cd ..
+  904  ls
+  905  cd ..
+  906  ls
+  907  cd FINAL/
+  908  ls
+  909  cd TEC_RISCV/
+  910  ls
+  911  cd ..
+  912  cd APRIL-SPIN/
+  913  cd TEC_RISCV/
+  914  ls
+  915  cd TOP_PHY_PR/
+  916  ls
+  917  cd back_end/
+  918  add *.tcl
+  919  git add *.tcl
+  920  commit -m "Rellenos  colocados en pads"
+  921  git commit -m "Rellenos  colocados en pads"
+  922  git push
+  923  ls
+  924  icc_shell -gui
+  925  pwd
+  926  exit
+  927  source bash.vnc
+  928  exit
+  929  source bash.vnc
+  930  exit
+  931  cd
+  932  ls
+  933  cd imd/
+  934  ls
+  935  cd micro_hdl/
+  936  ls
+  937  cd FIRST_SPIN/
+  938  gedit ../como.txt&
+  939   git fetch upstream master
+  940  ls
+  941  cd TEC_RISCV/
+  942   git fetch upstream master
+  943  git merge upstream/master
+  944  ls
+  945  cd TOP_PHY_PR/
+  946  ls
+  947  cd back_end/scripts/
+  948  ls
+  949  ls -l
+  950  ls
+  951  cd ..
+  952  ls
+  953  cd ..
+  954  ls
+  955  cd ..
+  956  ls
+  957  ls -l
+  958  cd TOP_PHY_PR/back_end/scripts/
+  959  ls -l
+  960  gedit top_phy_def_v2.tcl&
+  961  gedit run_all.tcl&
+  962  source ../../synopsys_tools.sh
+  963  icc_shell -gui
+  964  cd
+  965  cd imd/
+  966  ls
+  967  cd tutorial_
+  968  cd tutorial_design/
+  969  ls
+  970  . synopsys_tools.sh
+  971  cd cells_1/
+  972  ls
+  973  cdesigner -loadAll true&
+  974  cd ..
+  975  ls
+  976  gedit synopsys_tools.sh&
+  977  vncserver -kill :10
+  978  . bash.vnc
+  979  exit
+  980  cd scripts/
+  981  add *.tcl
+  982  git add *.tcl
+  983  cd ..
+  984  ls
+  985  cd db/
+  986  ls
+  987  git add *.v
+  988  cd ..
+  989  ls
+  990  cd libs/
+  991  ls
+  992  git add *.mw
+  993  git status
+  994  git reset *.mw
+  995  cd ..
+  996  cd scripts/
+  997  git add *.tcl
+  998  git status | more
+  999  git commit -m "Con rellenos, ajustado a tamano Alfredo"
+ 1000  git push origin master
+ 1001  git add *.tcl
+ 1002  git commit -m "Correcion con puertos de salida"
+ 1003  git status | more
+ 1004  cd scripts/
+ 1005  git add *.tcl
+ 1006  git status | more
+ 1007  git commit -m "Correcion con puertos de salida"
+ 1008  git push origin master
+ 1009  git status
+ 1010  git status |more
+ 1011  cd
+ 1012  cd $OLDPWD 
+ 1013  cd ..
+ 1014  ls
+ 1015  cd db
+ 1016  ls
+ 1017  cd ..
+ 1018  ls *.gds
+ 1019  ls -la *.gds
+ 1020  ftp anonymous@ftp.xfab.com
+ 1021  sftp anonymous@ftp.xfab.com
+ 1022  sftp ftp.xfab.com
+ 1023  history >leer.txt

@@ -1,0 +1,1 @@
+verify_lvs -ignore_floating_port -ignore_floating_net -use_notch_gap_fill_cell -check_single_pin_net_for_floating_port -check_single_pin_net_for_floating_net -check_floating_port_on_null_net -check_open_locator -check_short_locator -ignore_metal_without_net_name -check_child_blockage

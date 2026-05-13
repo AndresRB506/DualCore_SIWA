@@ -1,0 +1,4 @@
+riscv32-unknown-elf-gcc -nostdlib -nostartfiles -o prueba.o prueba.s;
+riscv32-unknown-elf-objdump -D prueba.o > prueba.objdmp;
+riscv-unknown-elf-elf2hex --bit-width 32 --input prueba.o > prueba.hex;
+

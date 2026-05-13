@@ -1,0 +1,490 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: vhdi_dt_get_type('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+VCS compile option:
+ option[0]: /mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv
+ option[1]: -cm
+ option[2]: line+cond+fsm+tgl+assert+branch+property_path
+ option[3]: -cm_name
+ option[4]: test
+ option[5]: +TESTNAME=test
+ option[6]: -sml=verdi
+ option[7]: +UVM_VERDI_TRACE=UVM_AWARE
+ option[8]: +fsdb+gate=off
+ option[9]: -ucli2Proc
+ option[10]: -ucli
+ option[11]: -l
+ option[12]: /mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/verdiLog/sim.log
+ option[13]: /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/bin/vcs1
+ option[14]: -Mcc=gcc
+ option[15]: -Mcplusplus=g++
+ option[16]: -Masflags=
+ option[17]: -Mcfl= -pipe -DVCS -O -I/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/include 
+ option[18]: -Mxllcflags=
+ option[19]: -Mxcflags= -pipe -I/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/include
+ option[20]: -Mldflags= -rdynamic 
+ option[21]: -Mout=simv
+ option[22]: -Mamsrun=
+ option[23]: -Mvcsaceobjs=
+ option[24]: -Mobjects= /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libvirsim.so /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/liberrorinf.so /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libsnpsmalloc.so /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libvfs.so /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/VCS/linux64/pli.a 
+ option[25]: -Mexternalobj=
+ option[26]: -Msaverestoreobj=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/vcs_save_restore_new.o
+ option[27]: -Mcrt0=
+ option[28]: -Mcrtn=
+ option[29]: -Mcsrc=
+ option[30]: -Mupdate
+ option[31]: -Msyslibs=-ldl -lm 
+ option[32]: -kdb
+ option[33]: -Xufe=2steps
+ option[34]: -ova_cov
+ option[35]: -cm
+ option[36]: line+cond+fsm+tgl+assert+branch+property_path
+ option[37]: -cm_report
+ option[38]: unencrypted_hierarchies+svpackages+noinitial
+ option[39]: -lca
+ option[40]: -debug_access+all+bc
+ option[41]: +vpi
+ option[42]: +vcsd
+ option[43]: +memcbk
+ option[44]: +itf+/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/vcsdp.tab
+ option[45]: -debug_region+cell
+ option[46]: +vcs+flush+all
+ option[47]: +warn=all
+ option[48]: -timescale=1ns/10ps
+ option[49]: -full64
+ option[50]: -P
+ option[51]: /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/VCS/linux64/novas.tab
+ option[52]: -gui
+ option[53]: -ucli
+ option[54]: -sverilog
+ option[55]: -gen_obj
+ option[56]: +incdir+../../TEC_RISCV/TOP
+ option[57]: +incdir+../../TEC_RISCV/SPI
+ option[58]: +incdir+../../TEC_RISCV/UART
+ option[59]: top_core_spi_uart.sv
+ option[60]: timescale=1ns/10ps
+Chronologic Simulation VCS Release R-2020.12-SP2_Full64
+Linux 4.18.0-553.36.1.el8_10.x86_64 #1 SMP Fri Jan 10 05:56:06 EST 2025 x86_64
+CPU cores: 24
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8201 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		262144
+memorylocked		64 kbytes
+maxproc		94941
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+UVM_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/uvm-1.2
+LC_ALL=C
+LD_LIBRARY_PATH=
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+SYS_INST_DIR=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2
+SSH_CONNECTION=172.21.7.108 61037 172.21.8.7 22
+XDG_MENU_PREFIX=gnome-
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+LANG=C
+HISTCONTROL=ignoredups
+DISPLAY=:14
+VNCDESKTOP=redhat003:14 (rmolina003)
+HOSTNAME=redhat003
+VCS_STACK_EXEC=true
+OLDPWD=/mnt/vol_NFS_rh003/profesores/rmolina
+XLIBD_INIT_FILE_PATH=/home/rmolina003/XLIBD.ini
+COLORTERM=truecolor
+SYNOPSYS_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys
+SNPSLMD_LICENSE_FILE=27020@172.21.99.41
+XLIBD_LIBERTY_PATH=/mnt/vol_NFS_rh003/xfab_pdks/design/xkit
+SSH_AUTH_SOCK=/tmp/ssh-EEZIamdiu5FF/agent.1408245
+CNI_ROOT=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/pycells/
+which_declare=declare -f
+XDG_SESSION_ID=44
+NOVAS_SYNC_MOTIF_DISP=
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+USER=rmolina003
+VCS_EXEC_DONE=1
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/9a8a70e2_6d26_40ef_9380_2921b1281f94
+PWD=/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+HOME=/home/rmolina003
+SSH_AGENT_PID=1408315
+SSH_CLIENT=172.21.7.108 61037 22
+VCS_PATHMAP_PRELOAD_DONE=1
+XNLSPATH=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/etc/access/nls
+FINESIM_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/finesim/R-2020.12-SP2-4
+XDG_DATA_DIRS=/home/rmolina003/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XFAB_UTILS=/mnt/vol_NFS_rh003/xfab_pdks/design/xkit/x_all/synopsys/XFAB_AMS_RefKit-synopsys_CustomCompiler/v2_0_2/utilities
+FTK_KIT_DIR=/mnt/vol_NFS_rh003/xfab_pdks/design/xkit
+GJS_DEBUG_OUTPUT=stderr
+SPS_XFONT_PATH=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/XFont
+LOADEDMODULES=
+SSH_TTY=/dev/pts/13
+SILICONSMART_HOME=/home/rmolina003/.local/bin:/home/rmolina003/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/customcompiler/R-2020.12-SP1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/customcompiler/R-2020.12-SP1/linux64/:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/wv/R-2020.12-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icvalidator/R-2020.09-SP3-8/bin/LINUX.64:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/finesim/R-2020.12-SP2-4/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/hspice/R-2020.12-SP2/hspice/bin:/mnt/vol_NFS_rh003/xfab_pdks/design/xkit/x_all/synopsys/xenv:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/syn/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icc/S-2021.06-SP3/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icc2/R-2020.09-SP6/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/syn/R-2020.09-SP5-1/linux64/syn/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/prime/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/mw/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/lc/R-2020.09-SP5/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vc_static/T-2022.06-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/siliconsmart
+VC_STATIC_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vc_static/T-2022.06-1
+MAIL=/var/spool/mail/rmolina003
+SYMBIOTIC_LICENSE=/mnt/vol_NFS_rh003/profesores/rmolina/Symbiotic_EDA/symbiotic-academic-licenses-tech-costa-rica.lic
+LD_NOVERSION=1
+QT_PLUGIN_PATH=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/platform/LINUXAMD64/lib/Qt/plugins
+SHELL=/bin/bash
+TERM=xterm-256color
+VTE_VERSION=5204
+QT_IM_MODULE=ibus
+XMODIFIERS=@im=none
+ICV_HOME_DIR=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icvalidator/R-2020.09-SP3-8
+XDG_CURRENT_DESKTOP=GNOME
+GNOME_TERMINAL_SERVICE=:1.71
+VERDI_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2
+SHLVL=3
+MANPATH=:
+SPS_FONT_PATH=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/font
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+VERDI_ORIGNAL_LD_LIBRARY_PATH=
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LOGNAME=rmolina003
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-QX7yYEKdqp,guid=0ee70093c650635301c2946267b6d423
+SPS_RGB_PATH=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/etc/rgb
+XDG_RUNTIME_DIR=/run/user/1002
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MALLOC_ARENA_MAX=1
+PATH=/bin:/home/rmolina003/.local/bin:/home/rmolina003/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/customcompiler/R-2020.12-SP1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/customcompiler/R-2020.12-SP1/linux64/:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/wv/R-2020.12-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icvalidator/R-2020.09-SP3-8/bin/LINUX.64:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/finesim/R-2020.12-SP2-4/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/hspice/R-2020.12-SP2/hspice/bin:/mnt/vol_NFS_rh003/xfab_pdks/design/xkit/x_all/synopsys/xenv:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/syn/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icc/S-2021.06-SP3/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icc2/R-2020.09-SP6/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/syn/R-2020.09-SP5-1/linux64/syn/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/prime/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/mw/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/lc/R-2020.09-SP5/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vc_static/T-2022.06-1/bin:/home/rmolina003/.local/bin:/home/rmolina003/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/customcompiler/R-2020.12-SP1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/customcompiler/R-2020.12-SP1/linux64/:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/wv/R-2020.12-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icvalidator/R-2020.09-SP3-8/bin/LINUX.64:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/finesim/R-2020.12-SP2-4/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/hspice/R-2020.12-SP2/hspice/bin:/mnt/vol_NFS_rh003/xfab_pdks/design/xkit/x_all/synopsys/xenv:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/syn/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icc/S-2021.06-SP3/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icc2/R-2020.09-SP6/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/syn/R-2020.09-SP5-1/linux64/syn/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/prime/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/mw/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/lc/R-2020.09-SP5/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vc_static/T-2022.06-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/siliconsmart/R-2020.12-SP1-4/bin:/mnt/vol_NFS_rh003/profesores/rmolina/Symbiotic_EDA/symbiotic-20201202A-academic-licenses/bin
+SNPSLMD_QUEUE=TRUE
+VCS_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2
+MODULESHOME=/usr/share/Modules
+HISTSIZE=1000
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/1408245,unix/unix:/tmp/.ICE-unix/1408245
+SYS_PROG_NAME=verdi
+XLIBD_INSTALL_PATH=/mnt/vol_NFS_rh003/xfab_pdks/design/xkit/x_all/utilities/XLIBD/v2_0/bin/linux_x86_64/v2_0_6/bin
+NOVASHLPPATH=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/doc
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1
+}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+BASH_FUNC_ml%%=() {  module ml "$@"
+}
+PS_HWPC=OFF
+NOVAS_LC_ALL=C
+SIMV_DAIDIR_PATH=/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/./simv.daidir
+NOVAS_SIGNAL_BASE_EXTRACTION=1
+SIGNAL_BASE_EXTRACTION=1
+NOVAS_VERDI_SVTB_BETA=1
+VERDI_SVTB_BETA=1
+NOVAS_VERDI_SVTB_ALPHA=1
+VERDI_SVTB_ALPHA=1
+NOVAS_VERDI_TB_HT=1
+VERDI_TB_HT=1
+NOVAS_WAVE_REDRAW_ALLVC=1
+WAVE_REDRAW_ALLVC=1
+NOVAS_TCL_LIBRARY=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/etc/access/tcl86_library
+TCL_LIBRARY=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/etc/access/tcl86_library
+XKEYSYMDB=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/etc/access/XKeysymDB2.1
+XLOCALEDIR=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/etc/access/locale
+NOVAS_SIGNAL_BASED_BA=0
+SIGNAL_BASED_BA=0
+SNPS_SIM_DEFAULT_GUI=verdi
+FSDB_FILE=/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/inter.fsdb
+VCS_UCLI_STDIN_BLOCKING=1
+FSDB_VHDL_PROTECTED=1
+FSDB_RD_IR_ENABLE=1
+FSDB_SVA_STATUS=1
+VCS_STOP_SAFE=1
+DVE_SIM_SELECT_LOOP=on
+FLEXLM_BORROWFILE=/home/rmolina003/.redhat003-borrow.txt
+Runtime command line arguments:
+argv[0]=/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv
+argv[1]=-cm
+argv[2]=line+cond+fsm+tgl+assert+branch+property_path
+argv[3]=-cm_name
+argv[4]=test
+argv[5]=+TESTNAME=test
+argv[6]=-sml=verdi
+argv[7]=+UVM_VERDI_TRACE=UVM_AWARE
+argv[8]=+fsdb+gate=off
+argv[9]=-ucli2Proc
+argv[10]=-ucli
+argv[11]=-l
+argv[12]=/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/verdiLog/sim.log
+293 profile - 100
+          CPU/Mem usage: 0.060 sys,  0.400 user,  375.87M mem
+294 Elapsed time:    0:00:07    Thu Feb 20 01:32:56 2025
+295 pliAppInit
+296 ndpGetenv(FSDB_FILE): /mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/inter.fsdb
+297 ndpGetenv(FSDB_SVA_STATUS): 1
+298 ndpGetenv(FSDB_VHDL_PROTECTED): 1
+299 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+300 FSDB_GATE & FSDB_RTL is disabled.
+301 FSDB_FIELDTYPE is set.
+302 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+303 Enable Parallel Dumping.
+304 pliAppMiscSet: New Sim Round
+305 pliEntryInit
+306 LIBSSCORE=found /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202012.so through $NOVAS_HOME setting.
+307 FSDB Dumper for VCS, Release Verdi_R-2020.12-SP2, Linux x86_64/64bit, 05/23/2021
+308 (C) 1996 - 2021 by Synopsys, Inc.
+309 sps_tcl_fsdbDumpfile_main at 0
+310 argv[0]: /mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/inter.fsdb
+311 *Verdi* : Create FSDB file '/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/inter.fsdb'
+312 [spi_vcs_vd_ppi_create_root]: no upf option
+313 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+314 compile option from '/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/simv.daidir/vcs_rebuild'.
+315   "vcs '-kdb' '-ova_cov' '-cm' 'line+cond+fsm+tgl+assert+branch+property_path' '-cm_report' 'unencrypted_hierarchies+svpackages+noinitial' '-sverilog' '-lca' '-Mupdate' '-debug_all' '+vcs+flush+all' '+warn=all' '-timescale=1ns/10ps' '-full64' '-P' '/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/VCS/linux64/novas.tab' '/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/VCS/linux64/pli.a' '+incdir+../../TEC_RISCV/TOP' '+incdir+../../TEC_RISCV/SPI' '+incdir+../../TEC_RISCV/UART' '-CFLAGS' '-DVCS' 'top_core_spi_uart.sv' '-gui' 2>&1"
+316 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+317 *Verdi* : Flush all FSDB Files at 0 ps.
+318 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+319 *Verdi* : Flush all FSDB Files at 0 ps.
+320 DVDI_is_vir_unload_enabled is enable
+321 FSDB_VCS_ENABLE_NATIVE_VC is enable
+322 sps_tcl_fsdbDumpvars_vd_main
+323 argv[0]: 1
+324 argv[1]: topcore_tb.uut
+325 argv[2]: +all
+326 argv[3]: +trace_process
+327 *Verdi* : Begin traversing the scope (topcore_tb.uut), layer (1).
+328 *Verdi* : Enable +trace_process and +all dumping.
+329 *Verdi* : End of traversing.
+330 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.070 sys,  0.440 user,  473.46M mem
+                   incr: 0.010 sys,  0.000 user,  3.54M mem
+                   accu: 0.010 sys,  0.000 user,  3.54M mem
+              accu incr: 0.010 sys,  0.000 user,  3.54M mem
+
+          Count usage: 26 var,  28 idcode,  26 callback
+                 incr: 26 var,  28 idcode,  26 callback
+                 accu: 26 var,  28 idcode,  26 callback
+            accu incr: 26 var,  28 idcode,  26 callback
+331 Elapsed time:    0:00:45    Thu Feb 20 01:33:34 2025
+332 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.070 sys,  0.440 user,  474.51M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
+                   accu: 0.010 sys,  0.000 user,  4.60M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
+
+          Count usage: 26 var,  28 idcode,  26 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 26 var,  28 idcode,  26 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+333 Elapsed time:    0:00:45    Thu Feb 20 01:33:34 2025
+334 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+335 *Verdi* : Flush all FSDB Files at 0 ps.
+336 sps_call_fsdbDumpfile_main at 0 : top_core_spi_uart.sv(135)
+337 argv[0]: (../../../sim_files/core_sim_files/pre_synth_test_test.fsdb)
+338 *Verdi* WARNING: Env/runtime option has specified fsdbfile name as "/mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/inter.fsdb". Fsdbfile name in task "../../../sim_files/core_sim_files/pre_synth_test_test.fsdb" is ignored.
+339 sps_call_fsdbDumpvars_vd_main at 0 : top_core_spi_uart.sv(136)
+340 argv[0]: (0)
+341 argv[1]: (handle) topcore_tb
+342 *Verdi* : Begin traversing the scope (topcore_tb), layer (0).
+343 *Verdi* : End of traversing.
+344 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.070 sys,  0.550 user,  477.43M mem
+                   incr: 0.000 sys,  0.050 user,  1.02M mem
+                   accu: 0.000 sys,  0.050 user,  1.02M mem
+              accu incr: 0.000 sys,  0.050 user,  1.02M mem
+
+          Count usage: 20184 var,  7321 idcode,  7161 callback
+                 incr: 20158 var,  7293 idcode,  7135 callback
+                 accu: 20158 var,  7293 idcode,  7135 callback
+            accu incr: 20158 var,  7293 idcode,  7135 callback
+345 Elapsed time:    0:00:58    Thu Feb 20 01:33:47 2025
+346 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.070 sys,  0.550 user,  477.43M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.050 user,  1.02M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 20184 var,  7321 idcode,  7161 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 20158 var,  7293 idcode,  7135 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+347 Elapsed time:    0:00:58    Thu Feb 20 01:33:47 2025
+348 sps_tcl_fsdbDumpflush_vd_main at 5264575000 : N/A(0)
+349 *Verdi* : Flush all FSDB Files at 5,264,575,000 ps.
+350 End of simulation at 5264575000
+351 Memory usage: 493.998 M
+352 Elapsed time:   15:01:08    Thu Feb 20 16:33:57 2025
+353 Begin FSDB profile info:
+354 FSDB Writer : bc1(1661822) bcn(215317) mtf/stf(0/5)
+FSDB Writer elapsed time : flush(0.066744) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+355 End FSDB profile info
+356 FSDB closed. Name: /mnt/vol_NFS_rh003/profesores/rmolina/riscv_test_fpga_ver/Verificacion_RISCV_TEC/test_env/core_spi_uart/inter.fsdb Size: 170501
+357 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+358                      - BlockUsed:14 Acquire:2086701 BufferUsed:22183587
+359                      - Flush:9 Expand:0 ProducerWait:0 ConsumerWait:12
+360                      - MainProducerTime:3.972608539 TotalConsumerTime:0.126218694
+361                      - ElapsedTime:54061.484638000
+362 Producer   0 profile - BlockUsed:14 Acquire:2086701 BufferUsed:22183587
+363 Consumer   0 profile - Affinity:-1 CPUTime:0.126218694 LifeTime:54009.686481532 (0.00%)
+364                      - BlockUsed:14 Acquire:2086701 BufferUsed:22183587
+365 SimExit
+366 Elapsed time:   15:01:09    Thu Feb 20 16:33:58 2025
+367 Sim process exit

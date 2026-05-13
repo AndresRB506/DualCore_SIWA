@@ -1,0 +1,6 @@
+#Comando para correr la simulacion, esta unido compilacion con simulacion y generacion de urg report:
+
+vcs -full64 -lca -debug_all -timescale=1ns/1ns +vcs+flush+all +warn=all -debug_access+r -sverilog +incdir+$UVM_HOME/src $UVM_HOME/src/uvm.sv $UVM_HOME/src/dpi/uvm_dpi.cc -CFLAGS -DVCS +incdir+../../../TEC_RISCV/BUS_Micro /mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/BUS_Micro/Bus_Micro.sv testbench.sv
+
+./simv +UVM_TESTNAME=bus_device_spi_test
+

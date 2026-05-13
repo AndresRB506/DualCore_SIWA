@@ -1,0 +1,320 @@
+Loading db file '/mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/mem/lib/XSPRAMLP_2048X32_M8P.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db'
+Warning: The trip points for the library named XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C differ from those in the library named D_CELLS_HDLL_LPMOS_typ_1_80V_25C. (TIM-164)
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : CMB
+Version: N-2017.09-SP4
+Date   : Thu Jun 21 16:58:08 2018
+****************************************
+
+
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+    XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/mem/lib/XSPRAMLP_2048X32_M8P.db)
+
+
+Operating Conditions: typ_1_80V_25C   Library: D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CMB                    100k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+controlador_bus_sz80_Adrs_Data_sz32_Intr_D_sz72_cod_sz8_mem_adrs_sz11_bs_adrs_sz24_cant_io5_fifo_int_depth3_watch_dog_sz32_fifo_int_sz72
+                       30k               D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11
+                       10k               D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+bus_fsm_data_size32_adrs_to_mem_size11_inf_size8_bus_size80_d_intr_size72_adrs_bs_size24_fifo_int_size72
+                       5k                D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+cnt_watch_dog_watch_dg_size32
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+fifo_depth3_bits72     2k                D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+mem_sgnl_gen           0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+error_handler_dat_size72
+                       1k                D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+algnmnt_vrfr           0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+prll_d_reg_bits72_0    0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_0        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+prll_d_reg_bits72_1    0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+prll_d_reg_bits72_2    0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_1        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_2        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_3        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_4        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_5        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_6        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_7        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_8        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_9        0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_10       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_11       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_12       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_13       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_14       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_15       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_16       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_17       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_18       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_19       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_20       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_21       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_22       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_23       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_24       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_25       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_26       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_27       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_28       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_29       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_30       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_31       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_32       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_33       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_34       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_35       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_36       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_37       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_38       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_39       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_40       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_41       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_42       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_43       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_44       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_45       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_46       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_47       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_48       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_49       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_50       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_51       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_52       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_53       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_54       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_55       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_56       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_57       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_58       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_59       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_60       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_61       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_62       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_63       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_64       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_65       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_66       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_67       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_68       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_69       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_70       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_71       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_72       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_73       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_74       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_75       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_76       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_77       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_78       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_79       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_80       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_81       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_82       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_83       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_84       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_85       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_86       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_87       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_88       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_89       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_90       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_91       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_92       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_93       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_94       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_95       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_96       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_97       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_98       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_99       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_100      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_101      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_102      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_103      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_104      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_105      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_106      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_107      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_108      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_109      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_110      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_111      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_112      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_113      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_114      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_115      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_116      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_117      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_118      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_119      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_120      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_121      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_122      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_123      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_124      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_125      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_126      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_127      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_128      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_129      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_130      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_131      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_132      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_133      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_134      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_135      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_136      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_137      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_138      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_139      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_140      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_141      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_142      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_143      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_144      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_145      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_146      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_147      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_148      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_149      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_150      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_151      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_152      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_153      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_154      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_155      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_156      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_157      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_158      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_159      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_160      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_161      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_162      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_163      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_164      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_165      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_166      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_167      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_168      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_169      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_170      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_171      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_172      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_173      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_174      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_175      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_176      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_177      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_178      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_179      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_180      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_181      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_182      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_183      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_184      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_185      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_186      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_187      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_188      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_189      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_190      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_191      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_192      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_193      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_194      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_195      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_196      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_197      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_198      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_199      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_200      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_201      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_202      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_203      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_204      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_205      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_206      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_207      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_208      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_209      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_210      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_211      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_212      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_213      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_214      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+dff_async_rst_215      0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+cnt_watch_dog_watch_dg_size32_DW_cmp_0
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+cnt_watch_dog_watch_dg_size32_DW01_inc_0
+                       0_1k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_1
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_2
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_inc_0
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_4
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_1
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_6
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_2
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_3
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_4
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW01_sub_5
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11_DW_cmp_7
+                       0_5k              D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.2937 mW   (93%)
+  Net Switching Power  = 102.5393 uW    (7%)
+                         ---------
+Total Dynamic Power    =   1.3962 mW  (100%)
+
+Cell Leakage Power     =  88.0430 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box      6.6504e-03        5.3375e-04        7.7439e+04        7.2616e-03  (   0.52%)
+clock_network  1.9677e-04        1.8154e-05            0.9564        2.1493e-04  (   0.02%)
+register           1.1993        4.9191e-03        3.0924e+03            1.2042  (  86.24%)
+sequential     1.4584e-02        1.9484e-04        1.3842e+03        1.4780e-02  (   1.06%)
+combinational  7.2969e-02        9.6873e-02        6.1266e+03            0.1698  (  12.16%)
+--------------------------------------------------------------------------------------------------
+Total              1.2937 mW         0.1025 mW     8.8043e+04 pW         1.3963 mW
+1

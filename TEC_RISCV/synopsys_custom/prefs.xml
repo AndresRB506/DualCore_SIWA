@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- created by Custom Compiler build#  ,on -->
+<file-format version="1.0" name="synopsysPrefs">
+        <preferences>
+                <pref name="dbImportStreamFileName" value="TOP_PHY_PR/back_end/Tec_Riscv_pads_phy.gds"/>
+                <pref name="dbImportStreamLibDir" value="../Prueba"/>
+                <pref name="deDescendMode" value="edit"/>
+                <pref name="dmLibDir" value=".."/>
+                <pref name="leCheckViasDialogMode" value="true"/>
+                <pref name="seCreateInstDialogMode" value="true"/>
+                <pref name="seCreateLabelDialogMode" value="true"/>
+                <pref name="seCreateNoteDialogMode" value="true"/>
+                <pref name="seImportSymbolDialogMode" value="true"/>
+                <pref name="xtNetlistingPrefixes" value="background_netlisting sae_shell_netlist"/>
+                <pref name="xtSAEShellJobLimit" value="2"/>
+                <pref name="xtSAEShellPrefixes" value="sae_shell_results_viewer"/>
+                <pref name="xtSimulationPrefixes" value="HSIM HSPICE Nanosim Spectre VHDL Verilog XA FineSimPro FineSimProSpectre FineSimProVCS HSIMHSPICE XAEldo XAHSPICE XASpectre XAVCSHSPICE"/>
+        </preferences>
+</file-format>

@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : port
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Tue Oct  2 12:51:12 2018
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+MISO_pad       in      0.0000   0.0000    1.43    0.10   --         
+RX_UART_pad    in      0.0000   0.0000    1.43    0.10   --         
+VDD_1V8        in      0.0000   0.0000   --      --      --         
+VDD_1V8SRAM    in      0.0000   0.0000   --      --      --         
+VDD_3V3        in      0.0000   0.0000   --      --      --         
+VSS            in      0.0000   0.0000   --      --      --         
+clk_pad        in      0.0000   0.0000   --      --      --         
+maip_pad       in      0.0000   0.0000    1.43    0.10   --         
+reset_pad      in      0.0000   0.0000    1.43    0.10   --         
+MOSI_pad       inout   0.0243   0.0000    1.43    0.10   --         
+SCLK_pad       inout   0.0243   0.0000    1.43    0.10   --         
+SCS_pad        inout   0.0243   0.0000    1.43    0.10   --         
+TX_UART_pad    inout   0.0243   0.0000    1.43    0.10   --         
+gpio_pad[0]    inout   0.0243   0.0000    1.43    0.10   --         
+gpio_pad[1]    inout   0.0243   0.0000    1.43    0.10   --         
+gpio_pad[2]    inout   0.0243   0.0000    1.43    0.10   --         
+gpio_pad[3]    inout   0.0243   0.0000    1.43    0.10   --         
+gpio_pad[4]    inout   0.0243   0.0000    1.43    0.10   --         
+gpio_pad[5]    inout   0.0243   0.0000    1.43    0.10   --         
+gpio_pad[6]    inout   0.0243   0.0000    1.43    0.10   --         
+gpio_pad[7]    inout   0.0243   0.0000    1.43    0.10   --         
+
+1

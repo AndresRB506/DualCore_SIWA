@@ -1,0 +1,81 @@
+//
+//Modulo de interconexion de pads
+// Descomentar los includes para simulaciones comportamentales
+// PADs y Level Shifters
+
+//`include "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC3V/v1_1/verilog/v1_1_0/IO_CELLS_FC3V.v"
+
+//`include "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/verilog/v2_1_0/D_CELLS_HDMV.v"
+
+module pad_ring (// Conexion pads de entrada
+		 input clk_pad,
+		 output clk,
+		 input reset_pad,
+		 output reset,
+		 input MISO_pad,
+		 output MISO,
+		 input RX_UART_pad,
+		 output RX_UART,
+		 input maip_pad,
+		 output maip,
+	// Conexion de pads de salida (se definen 3-state para pegar sin advertencias a los buffers HiZ
+		 inout MOSI_pad,
+		 input MOSI,
+		 inout SCLK_pad,
+		 input SCLK,
+		 inout SCS_pad,
+		 input SCS,
+		 inout TX_UART_pad,
+	         input TX_UART,
+
+		//Bidirectional PADs
+	         inout [7:0] gpio_pad, // Salida al PAD
+		 input [7:0] Reg_GPIO_en, // Habilitacion pad de salida
+       		 output  [7:0] Reg_GPIO_int, // Salida del Buffer desde pin PAD a pin Y
+       		 input [7:0] Reg_GPIO_out // Entrada del Buffer desde pin A a pin PAD
+		
+		
+);
+
+
+// Interconnect signals
+
+logic gnd_en;
+
+// Pads inputs and ouputs always enabled
+
+assign gnd_en = 1'b0;
+
+// PAD inputs
+ICF clk_pad_inst (.PAD(clk_pad), .PI(gnd_en), .PO(), .Y(clk)); // 
+ICF reset_pad_inst (.PAD(reset_pad), .PI(gnd_en), .PO(), .Y(reset)); 
+ICF MISO_pad_inst (.PAD(MISO_pad), .PI(gnd_en), .PO(), .Y(MISO)); 
+ICF RX_UART_pad_inst (.PAD(RX_UART_pad), .PI(gnd_en), .PO(), .Y(RX_UART)); 
+ICF maip_pad_inst (.PAD(maip_pad), .PI(gnd_en), .PO(), .Y(maip)); 
+// PAD outputs
+
+BT2SF MOSI_pad_inst (.PAD(MOSI_pad), .EN(gnd_en), .A(MOSI));
+BT2SF SCLK_pad_inst (.PAD(SCLK_pad), .EN(gnd_en), .A(SCLK));
+BT2SF SCS_pad_inst (.PAD(SCS_pad), .EN(gnd_en), .A(SCS));
+BT2SF TX_UART_pad_inst (.PAD(TX_UART_pad), .EN(gnd_en), .A(TX_UART));
+
+// BID PADs 
+// Check this later for GPIO real directions. For now, an analog pad
+
+genvar pad_i;
+generate
+  for (pad_i=0; pad_i<8; pad_i=pad_i+1)
+	begin:pad_bit
+		BBC2SF inout_pad_inst (.PAD(gpio_pad[pad_i]), .Y(gpio_in[pad_i]), .EN(conf_GPIO_output), .PI(gnd_en), .PO(), .A(gpio_out[pad_i])); 
+        end
+endgenerate
+
+/*genvar pad_i;
+generate
+  for (pad_i=0; pad_i<8; pad_i=pad_i+1)
+	begin:pad_bit
+		APR00DF inout_pad_inst (.PAD(gpio_pad[pad_i])); 
+        end
+endgenerate */
+
+endmodule

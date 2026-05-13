@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module List</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.treetable.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.treetable.js"></script>
+<script type="text/javascript" src="js/.colResizable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    }  });
+  $("#hierarchyTable tbody tr").mousedown(function() {
+    $("tr.selected").removeClass("selected");
+    $("td.selected").removeClass("selected");
+    $(this).addClass("selected");
+    $(this).children().addClass("selected");
+  });
+  $("tr[data-tt-id='hierarchyTable_root']").each(function () {
+    $(this).attr("style", "display:none");
+  });
+  $("tr[data-tt-parent-id='hierarchyTable_root']").each(function () {
+    $(this).attr("style", "display:table-row");
+    $("#hierarchyTable").treetable("expandNode", $(this).attr("data-tt-id"));
+  });
+  $("table").colResizable({    liveDrag:true,
+    fixed:false,
+    draggingClass:"dragging"
+  });
+});
+function expandAll() {
+  $("#hierarchyTable").treetable("expandAll");
+}
+function collapseAll() {
+  if ($("tr[data-tt-parent-id='hierarchyTable_root']").length > 0) {
+    $("tr[data-tt-parent-id='hierarchyTable_root']").each(function () {
+      var nodeId = $(this).attr("data-tt-id");
+      var node = $("#hierarchyTable").treetable("node", nodeId);
+      $("#hierarchyTable").treetable("collapseNodeRecursive", node);
+    });
+  } else {
+    $("#hierarchyTable").treetable("collapseAll");
+  }
+}
+</script>
+</head>
+<body><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Design Module List</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-center">
+<b>Total Module Definition Coverage Summary</b>&nbsp;<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=65>SCORE</td><td nowrap width=65>LINE</td><td nowrap width=65>COND</td><td nowrap width=65>TOGGLE</td><td nowrap width=65>FSM</td><td nowrap width=65>BRANCH</td></tr><tr>
+<td class="s1 cl rt"> 18.23</td>
+<td class="s2 cl rt"> 21.45</td>
+<td class="s1 cl rt"> 10.89</td>
+<td class="s2 cl rt"> 20.37</td>
+<td class="s0 cl rt">  9.72</td>
+<td class="s2 cl rt"> 28.74</td>
+</tr></table><br clear=all>
+<br clear=all>
+Total modules in report: 80<hr>
+<table class="noborder">
+  <tr>
+    <td class="noborder"><input type="button" value="Expand All" onClick="expandAll()"></td>
+    <td class="noborder"><input type="button" value="Collapse All" onClick="collapseAll()"></td>
+  </tr>
+</table>
+<table id="hierarchyTable" border="0" cellpadding="0" cellspacing="0" class="sortable">
+  <thead class="table-header">
+    <tr>
+<th class="alfsrt">NAME</th><th>SCORE</th><th>LINE</th><th>COND</th><th>TOGGLE</th><th>FSM</th><th>BRANCH</th>    </tr>
+  </thead>
+  <tbody>
+    <tr data-tt-id="hierarchyTable_root">
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td>    </tr>
+    <tr data-tt-id="mod_1" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_tristategate_negado"></a>
+<a href="mod1.html" >tristategate_negado</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod1.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod1.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod1.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_7" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_neg_edge"></a>
+<a href="mod7.html" >neg_edge</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod7.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_8" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_rgstr"></a>
+<a href="mod8.html" >prll_rgstr</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod8.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_11" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_d_ltch_no_rst"></a>
+<a href="mod11.html" >prll_d_ltch_no_rst</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod11.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_26" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_mem_latch"></a>
+<a href="mod26.html" >mem_latch</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod26.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod26.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod26.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_31" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_fifo_flops"></a>
+<a href="mod31.html" >fifo_flops</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt"><a href="mod31.html#Line" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod31.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod31.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod31.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_33" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_pos_edge"></a>
+<a href="mod33.html" >pos_edge</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod33.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_36" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_parallel_serial"></a>
+<a href="mod36.html" >parallel_serial</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod36.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_43" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_fifo_ltch_no_rst"></a>
+<a href="mod43.html" >fifo_ltch_no_rst</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt"><a href="mod43.html#Line" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod43.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod43.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod43.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_52" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_bs_ntrfs_n_rbtr"></a>
+<a href="mod52.html" >bs_ntrfs_n_rbtr</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod52.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod52.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod52.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_58" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_bs_ntrfs"></a>
+<a href="mod58.html" >prll_bs_ntrfs</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt"><a href="mod58.html#Line" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod58.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod58.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_76" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_d_ltch"></a>
+<a href="mod76.html" >prll_d_ltch</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod76.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_80" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_bs_ntrfs"></a>
+<a href="mod80.html" >bs_ntrfs</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod80.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod80.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod80.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_83" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_latch_tri_rst1_Hard"></a>
+<a href="mod83.html" >latch_tri_rst1_Hard</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod83.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_59" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_ntrpt_cam_fifo"></a>
+<a href="mod59.html" >ntrpt_cam_fifo</a></td>
+<td class="s0 cl rt">  0.40</td>
+<td class="s0 cl rt"><a href="mod59.html#Line" >  1.61</a></td>
+<td class="s0 cl rt"><a href="mod59.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod59.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod59.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_60" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_fifo_ltch"></a>
+<a href="mod60.html" >fifo_ltch</a></td>
+<td class="s0 cl rt">  0.54</td>
+<td class="s0 cl rt"><a href="mod60.html#Line" >  2.17</a></td>
+<td class="s0 cl rt"><a href="mod60.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod60.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod60.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_53" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_fifo_to_uart_reg"></a>
+<a href="mod53.html" >fifo_to_uart_reg</a></td>
+<td class="s0 cl rt">  1.15</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod53.html#Toggle" >  1.15</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_56" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_uart_to_fifo_reg"></a>
+<a href="mod56.html" >uart_to_fifo_reg</a></td>
+<td class="s0 cl rt">  1.22</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod56.html#Toggle" >  1.22</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_55" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_uart"></a>
+<a href="mod55.html" >uart</a></td>
+<td class="s0 cl rt">  1.36</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod55.html#Toggle" >  1.36</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_21" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_d_rega"></a>
+<a href="mod21.html" >prll_d_rega</a></td>
+<td class="s0 cl rt">  2.78</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod21.html#Toggle" >  2.78</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_54" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_ALU"></a>
+<a href="mod54.html" >ALU</a></td>
+<td class="s0 cl rt">  5.05</td>
+<td class="s0 cl rt"><a href="mod54.html#Line" >  8.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod54.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod54.html#Branch" >  7.14</a></td>
+    </tr>
+    <tr data-tt-id="mod_25" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_d_reg_ena"></a>
+<a href="mod25.html" >prll_d_reg_ena</a></td>
+<td class="s0 cl rt">  5.26</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod25.html#Toggle" >  5.26</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_9" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Write_st_Mchn"></a>
+<a href="mod9.html" >Write_st_Mchn</a></td>
+<td class="s0 cl rt">  5.57</td>
+<td class="s1 cl rt"><a href="mod9.html#Line" > 13.58</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod9.html#Toggle" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#FSM" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#Branch" >  8.70</a></td>
+    </tr>
+    <tr data-tt-id="mod_23" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_tristate_buffer"></a>
+<a href="mod23.html" >tristate_buffer</a></td>
+<td class="s0 cl rt">  5.64</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod23.html#Cond" >  0.00</a></td>
+<td class="s1 cl rt"><a href="mod23.html#Toggle" > 16.92</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod23.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_65" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Read_st_Mchn"></a>
+<a href="mod65.html" >Read_st_Mchn</a></td>
+<td class="s0 cl rt">  6.37</td>
+<td class="s1 cl rt"><a href="mod65.html#Line" > 15.49</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod65.html#Toggle" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod65.html#FSM" >  0.00</a></td>
+<td class="s1 cl rt"><a href="mod65.html#Branch" > 10.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_44" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_topcore_tb"></a>
+<a href="mod44.html" >topcore_tb</a></td>
+<td class="s0 cl rt">  7.26</td>
+<td class="s1 cl rt"><a href="mod44.html#Line" > 16.03</a></td>
+<td class="s0 cl rt"><a href="mod44.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod44.html#Toggle" >  1.90</a></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod44.html#Branch" > 11.11</a></td>
+    </tr>
+    <tr data-tt-id="mod_6" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_topcore_tecriscv"></a>
+<a href="mod6.html" >topcore_tecriscv</a></td>
+<td class="s1 cl rt"> 11.87</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod6.html#Toggle" > 11.87</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_2" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_IS25WP032D"></a>
+<a href="mod2.html" >IS25WP032D</a></td>
+<td class="s1 cl rt"> 14.49</td>
+<td class="s1 cl rt"><a href="mod2.html#Line" > 15.44</a></td>
+<td class="s0 cl rt"><a href="mod2.html#Cond" >  6.37</a></td>
+<td class="s0 cl rt"><a href="mod2.html#Toggle" >  5.00</a></td>
+<td class="s2 cl rt"><a href="mod2.html#FSM" > 20.00</a></td>
+<td class="s2 cl rt"><a href="mod2.html#Branch" > 25.66</a></td>
+    </tr>
+    <tr data-tt-id="mod_22" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_top_spi"></a>
+<a href="mod22.html" >top_spi</a></td>
+<td class="s1 cl rt"> 18.94</td>
+<td class="s2 cl rt"><a href="mod22.html#Line" > 24.52</a></td>
+<td class="s0 cl rt"><a href="mod22.html#Cond" >  0.00</a></td>
+<td class="s3 cl rt"><a href="mod22.html#Toggle" > 39.84</a></td>
+<td class="s1 cl rt"><a href="mod22.html#FSM" > 11.76</a></td>
+<td class="s1 cl rt"><a href="mod22.html#Branch" > 18.57</a></td>
+    </tr>
+    <tr data-tt-id="mod_71" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_control"></a>
+<a href="mod71.html" >control</a></td>
+<td class="s1 cl rt"> 19.21</td>
+<td class="s0 cl rt"><a href="mod71.html#Line" >  9.48</a></td>
+<td class="s2 cl rt"><a href="mod71.html#Cond" > 22.22</a></td>
+<td class="s4 cl rt"><a href="mod71.html#Toggle" > 48.57</a></td>
+<td class="s0 cl rt"><a href="mod71.html#FSM" >  6.13</a></td>
+<td class="s0 cl rt"><a href="mod71.html#Branch" >  9.62</a></td>
+    </tr>
+    <tr data-tt-id="mod_4" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_mux_rd"></a>
+<a href="mod4.html" >mux_rd</a></td>
+<td class="s2 cl rt"> 21.94</td>
+<td class="s2 cl rt"><a href="mod4.html#Line" > 27.27</a></td>
+<td class="s0 cl rt"><a href="mod4.html#Cond" >  0.00</a></td>
+<td class="s4 cl rt"><a href="mod4.html#Toggle" > 47.14</a></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod4.html#Branch" > 13.33</a></td>
+    </tr>
+    <tr data-tt-id="mod_47" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Arbiter"></a>
+<a href="mod47.html" >Arbiter</a></td>
+<td class="s2 cl rt"> 25.00</td>
+<td class="s10 cl rt"><a href="mod47.html#Line" >100.00</a></td>
+<td class="s0 cl rt"><a href="mod47.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod47.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod47.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_49" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_intrfs_cntrl"></a>
+<a href="mod49.html" >prll_intrfs_cntrl</a></td>
+<td class="s2 cl rt"> 25.00</td>
+<td class="s10 cl rt"><a href="mod49.html#Line" >100.00</a></td>
+<td class="s0 cl rt"><a href="mod49.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod49.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod49.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_70" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_latch_tri_estado"></a>
+<a href="mod70.html" >latch_tri_estado</a></td>
+<td class="s2 cl rt"> 25.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod70.html#Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_81" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_rst_lgc"></a>
+<a href="mod81.html" >rst_lgc</a></td>
+<td class="s2 cl rt"> 25.00</td>
+<td class="s10 cl rt"><a href="mod81.html#Line" >100.00</a></td>
+<td class="s0 cl rt"><a href="mod81.html#Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod81.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod81.html#Branch" >  0.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_37" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_log_ftu"></a>
+<a href="mod37.html" >log_ftu</a></td>
+<td class="s2 cl rt"> 25.16</td>
+<td class="s5 cl rt"><a href="mod37.html#Line" > 54.44</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod37.html#Toggle" >  2.97</a></td>
+<td class="s0 cl rt"><a href="mod37.html#FSM" >  0.00</a></td>
+<td class="s4 cl rt"><a href="mod37.html#Branch" > 43.24</a></td>
+    </tr>
+    <tr data-tt-id="mod_79" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_ALU_2"></a>
+<a href="mod79.html" >ALU_2</a></td>
+<td class="s2 cl rt"> 25.41</td>
+<td class="s1 cl rt"><a href="mod79.html#Line" > 17.33</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod79.html#Toggle" > 44.61</a></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod79.html#Branch" > 14.29</a></td>
+    </tr>
+    <tr data-tt-id="mod_50" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_d_reg"></a>
+<a href="mod50.html" >prll_d_reg</a></td>
+<td class="s2 cl rt"> 25.76</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod50.html#Toggle" > 25.76</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_1" data-tt-parent-id="mod_50">
+<td class="wordwrap"><a name="tag_prll_d_reg ( parameter bits=32 ) "></a>
+<a href="mod50.html#69673452" >prll_d_reg ( parameter bits=32 ) </a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod50.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_2" data-tt-parent-id="mod_50">
+<td class="wordwrap"><a name="tag_prll_d_reg ( parameter bits=65 ) "></a>
+<a href="mod50.html#2043580020" >prll_d_reg ( parameter bits=65 ) </a></td>
+<td class="s5 cl rt"> 51.52</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod50.html#Toggle" > 51.52</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_15" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_tec_riscv_bus"></a>
+<a href="mod15.html" >tec_riscv_bus</a></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod15.html#Toggle" > 26.30</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_34" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_latch_rst1"></a>
+<a href="mod34.html" >latch_rst1</a></td>
+<td class="s2 cl rt"> 27.78</td>
+<td class="s5 cl rt"><a href="mod34.html#Line" > 50.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod34.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod34.html#Branch" > 33.33</a></td>
+    </tr>
+    <tr data-tt-id="mod_72" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_dltch_async_rst"></a>
+<a href="mod72.html" >dltch_async_rst</a></td>
+<td class="s2 cl rt"> 27.78</td>
+<td class="s5 cl rt"><a href="mod72.html#Line" > 50.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod72.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod72.html#Branch" > 33.33</a></td>
+    </tr>
+    <tr data-tt-id="mod_82" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_latch_tri_rst0_Hard"></a>
+<a href="mod82.html" >latch_tri_rst0_Hard</a></td>
+<td class="s2 cl rt"> 28.57</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod82.html#Toggle" > 28.57</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_29" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_u_xmit"></a>
+<a href="mod29.html" >u_xmit</a></td>
+<td class="s2 cl rt"> 28.61</td>
+<td class="s5 cl rt"><a href="mod29.html#Line" > 53.19</a></td>
+<td class="s3 cl rt"><a href="mod29.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod29.html#Toggle" >  6.52</a></td>
+<td class="s0 cl rt"><a href="mod29.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod29.html#Branch" > 50.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_51" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Barrel_Shifter"></a>
+<a href="mod51.html" >Barrel_Shifter</a></td>
+<td class="s2 cl rt"> 28.62</td>
+<td class="s4 cl rt"><a href="mod51.html#Line" > 45.42</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod51.html#Toggle" >  3.89</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod51.html#Branch" > 36.54</a></td>
+    </tr>
+    <tr data-tt-id="mod_28" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_u_rec"></a>
+<a href="mod28.html" >u_rec</a></td>
+<td class="s2 cl rt"> 29.86</td>
+<td class="s5 cl rt"><a href="mod28.html#Line" > 57.50</a></td>
+<td class="s3 cl rt"><a href="mod28.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod28.html#Toggle" >  5.68</a></td>
+<td class="s0 cl rt"><a href="mod28.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod28.html#Branch" > 52.78</a></td>
+    </tr>
+    <tr data-tt-id="mod_14" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_log_utf"></a>
+<a href="mod14.html" >log_utf</a></td>
+<td class="s3 cl rt"> 30.69</td>
+<td class="s6 cl rt"><a href="mod14.html#Line" > 60.32</a></td>
+<td class="s3 cl rt"><a href="mod14.html#Cond" > 33.33</a></td>
+<td class="s0 cl rt"><a href="mod14.html#Toggle" >  8.06</a></td>
+<td class="s0 cl rt"><a href="mod14.html#FSM" >  0.00</a></td>
+<td class="s5 cl rt"><a href="mod14.html#Branch" > 51.72</a></td>
+    </tr>
+    <tr data-tt-id="mod_61" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_ntrfs_cntrl_n_rbtr"></a>
+<a href="mod61.html" >ntrfs_cntrl_n_rbtr</a></td>
+<td class="s3 cl rt"> 32.68</td>
+<td class="s7 cl rt"><a href="mod61.html#Line" > 70.59</a></td>
+<td class="s1 cl rt"><a href="mod61.html#Cond" > 15.15</a></td>
+<td class="s0 cl rt"><a href="mod61.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod61.html#Branch" > 45.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_69" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_dltch"></a>
+<a href="mod69.html" >dltch</a></td>
+<td class="s3 cl rt"> 33.33</td>
+<td class="s5 cl rt"><a href="mod69.html#Line" > 50.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod69.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod69.html#Branch" > 50.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_17" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_dff_async_rst_ena"></a>
+<a href="mod17.html" >dff_async_rst_ena</a></td>
+<td class="s3 cl rt"> 34.44</td>
+<td class="s5 cl rt"><a href="mod17.html#Line" > 50.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod17.html#Toggle" > 20.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod17.html#Branch" > 33.33</a></td>
+    </tr>
+    <tr data-tt-id="mod_64" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_ntrfs_cntrl"></a>
+<a href="mod64.html" >ntrfs_cntrl</a></td>
+<td class="s3 cl rt"> 35.36</td>
+<td class="s7 cl rt"><a href="mod64.html#Line" > 71.43</a></td>
+<td class="s2 cl rt"><a href="mod64.html#Cond" > 20.00</a></td>
+<td class="s0 cl rt"><a href="mod64.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod64.html#Branch" > 50.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_0" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_DECO_INSTR"></a>
+<a href="mod0.html" >DECO_INSTR</a></td>
+<td class="s3 cl rt"> 38.87</td>
+<td class="s2 cl rt"><a href="mod0.html#Line" > 27.52</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod0.html#Toggle" > 67.34</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod0.html#Branch" > 21.74</a></td>
+    </tr>
+    <tr data-tt-id="mod_32" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Counter"></a>
+<a href="mod32.html" >Counter</a></td>
+<td class="s3 cl rt"> 38.89</td>
+<td class="s6 cl rt"><a href="mod32.html#Line" > 66.67</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod32.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod32.html#Branch" > 50.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_3" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Timer"></a>
+<a href="mod3.html" >Timer</a></td>
+<td class="s3 cl rt"> 39.38</td>
+<td class="s6 cl rt"><a href="mod3.html#Line" > 66.67</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod3.html#Toggle" >  1.47</a></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod3.html#Branch" > 50.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_42" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_dff_async_rsta"></a>
+<a href="mod42.html" >dff_async_rsta</a></td>
+<td class="s4 cl rt"> 43.06</td>
+<td class="s6 cl rt"><a href="mod42.html#Line" > 66.67</a></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod42.html#Toggle" > 12.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod42.html#Branch" > 50.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_63" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_\$unit::../../TEC_RISCV/TOP/../ALU/ALU_2.sv::../../TEC_RISCV/TOP/../ALU/ALU_Library.sv...@3823586827 "></a>
+<a href="mod63.html" >\$unit::../../TEC_RISCV/TOP/../ALU/ALU_2.sv::../../TEC_RISCV/TOP/../ALU/ALU_Library.sv...@3823586827 </a></td>
+<td class="s4 cl rt"> 44.64</td>
+<td class="s4 cl rt"><a href="mod63.html#Line" > 44.64</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_46" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_top_CPU_riscv"></a>
+<a href="mod46.html" >top_CPU_riscv</a></td>
+<td class="s4 cl rt"> 45.46</td>
+<td class="s5 cl rt"><a href="mod46.html#Line" > 56.52</a></td>
+<td class="s5 cl rt"><a href="mod46.html#Cond" > 50.00</a></td>
+<td class="s2 cl rt"><a href="mod46.html#Toggle" > 28.80</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod46.html#Branch" > 46.51</a></td>
+    </tr>
+    <tr data-tt-id="mod_19" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Banco_registros_latches"></a>
+<a href="mod19.html" >Banco_registros_latches</a></td>
+<td class="s4 cl rt"> 45.55</td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod19.html#Cond" > 66.67</a></td>
+<td class="s2 cl rt"><a href="mod19.html#Toggle" > 24.44</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_78" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_mbc"></a>
+<a href="mod78.html" >mbc</a></td>
+<td class="s4 cl rt"> 46.00</td>
+<td class="s5 cl rt"><a href="mod78.html#Line" > 53.26</a></td>
+<td class="s5 cl rt"><a href="mod78.html#Cond" > 57.50</a></td>
+<td class="s3 cl rt"><a href="mod78.html#Toggle" > 38.49</a></td>
+<td class="s2 cl rt"><a href="mod78.html#FSM" > 24.49</a></td>
+<td class="s5 cl rt"><a href="mod78.html#Branch" > 56.25</a></td>
+    </tr>
+    <tr data-tt-id="mod_20" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Reg_32_bit"></a>
+<a href="mod20.html" >Reg_32_bit</a></td>
+<td class="s4 cl rt"> 47.74</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod20.html#Toggle" > 47.74</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_16" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_CSK_sin_mux"></a>
+<a href="mod16.html" >CSK_sin_mux</a></td>
+<td class="s5 cl rt"> 52.38</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod16.html#Toggle" > 52.38</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_13" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_csr_file"></a>
+<a href="mod13.html" >csr_file</a></td>
+<td class="s5 cl rt"> 53.93</td>
+<td class="s10 cl rt"><a href="mod13.html#Line" >100.00</a></td>
+<td class="s5 cl rt"><a href="mod13.html#Cond" > 50.00</a></td>
+<td class="s1 cl rt"><a href="mod13.html#Toggle" > 15.72</a></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod13.html#Branch" > 50.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_74" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Decodificador"></a>
+<a href="mod74.html" >Decodificador</a></td>
+<td class="s5 cl rt"> 57.81</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"><a href="mod74.html#Toggle" > 57.81</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_1" data-tt-parent-id="mod_74">
+<td class="wordwrap"><a name="tag_Decodificador ( parameter width=12 ) "></a>
+<a href="mod74.html#230221244" >Decodificador ( parameter width=12 ) </a></td>
+<td class="s1 cl rt"> 15.62</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s1 cl rt"><a href="mod74.html#Toggle" > 15.62</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="var_2" data-tt-parent-id="mod_74">
+<td class="wordwrap"><a name="tag_Decodificador ( parameter width=32 ) "></a>
+<a href="mod74.html#302607802" >Decodificador ( parameter width=32 ) </a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod74.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_12" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_latch"></a>
+<a href="mod12.html" >latch</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12.html#Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12.html#Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12.html#Branch" > 66.67</a></td>
+    </tr>
+    <tr data-tt-id="mod_62" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_spi"></a>
+<a href="mod62.html" >spi</a></td>
+<td class="s6 cl rt"> 63.52</td>
+<td class="s8 cl rt"><a href="mod62.html#Line" > 85.62</a></td>
+<td class="s4 cl rt"><a href="mod62.html#Cond" > 48.72</a></td>
+<td class="s6 cl rt"><a href="mod62.html#Toggle" > 64.02</a></td>
+<td class="s5 cl rt"><a href="mod62.html#FSM" > 50.00</a></td>
+<td class="s6 cl rt"><a href="mod62.html#Branch" > 69.23</a></td>
+    </tr>
+    <tr data-tt-id="mod_45" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_serializer"></a>
+<a href="mod45.html" >serializer</a></td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod45.html#Cond" >100.00</a></td>
+<td class="s0 cl rt"><a href="mod45.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod45.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_77" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_fifo_flops_no_full"></a>
+<a href="mod77.html" >fifo_flops_no_full</a></td>
+<td class="s7 cl rt"> 74.51</td>
+<td class="s8 cl rt"><a href="mod77.html#Line" > 88.85</a></td>
+<td class="s7 cl rt"><a href="mod77.html#Cond" > 79.17</a></td>
+<td class="s5 cl rt"><a href="mod77.html#Toggle" > 51.78</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod77.html#Branch" > 78.24</a></td>
+    </tr>
+    <tr data-tt-id="var_1" data-tt-parent-id="mod_77">
+<td class="wordwrap"><a name="tag_fifo_flops_no_full ( parameter depth=2,bits=65 ) "></a>
+<a href="mod77.html#686348317" >fifo_flops_no_full ( parameter depth=2,bits=65 ) </a></td>
+<td class="s7 cl rt"> 76.02</td>
+<td class="s8 cl rt"><a href="mod77.html#Line" > 88.24</a></td>
+<td class="s8 cl rt"><a href="mod77.html#Cond" > 83.33</a></td>
+<td class="s5 cl rt"><a href="mod77.html#Toggle" > 52.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod77.html#Branch" > 80.00</a></td>
+    </tr>
+    <tr data-tt-id="var_2" data-tt-parent-id="mod_77">
+<td class="wordwrap"><a name="tag_fifo_flops_no_full ( parameter depth=3,bits=65 ) "></a>
+<a href="mod77.html#1975814980" >fifo_flops_no_full ( parameter depth=3,bits=65 ) </a></td>
+<td class="s7 cl rt"> 73.00</td>
+<td class="s8 cl rt"><a href="mod77.html#Line" > 89.47</a></td>
+<td class="s7 cl rt"><a href="mod77.html#Cond" > 75.00</a></td>
+<td class="s5 cl rt"><a href="mod77.html#Toggle" > 51.06</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod77.html#Branch" > 76.47</a></td>
+    </tr>
+    <tr data-tt-id="mod_68" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_rd_st_mchn"></a>
+<a href="mod68.html" >prll_rd_st_mchn</a></td>
+<td class="s7 cl rt"> 77.48</td>
+<td class="s8 cl rt"><a href="mod68.html#Line" > 87.50</a></td>
+<td class="s10 cl rt"><a href="mod68.html#Cond" >100.00</a></td>
+<td class="s9 cl rt"><a href="mod68.html#Toggle" > 96.15</a></td>
+<td class="s1 cl rt"><a href="mod68.html#FSM" > 14.29</a></td>
+<td class="s8 cl rt"><a href="mod68.html#Branch" > 89.47</a></td>
+    </tr>
+    <tr data-tt-id="mod_66" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_wt_st_mchn"></a>
+<a href="mod66.html" >prll_wt_st_mchn</a></td>
+<td class="s7 cl rt"> 78.16</td>
+<td class="s9 cl rt"><a href="mod66.html#Line" > 90.00</a></td>
+<td class="s10 cl rt"><a href="mod66.html#Cond" >100.00</a></td>
+<td class="s9 cl rt"><a href="mod66.html#Toggle" > 90.62</a></td>
+<td class="s1 cl rt"><a href="mod66.html#FSM" > 18.18</a></td>
+<td class="s9 cl rt"><a href="mod66.html#Branch" > 92.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_40" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_bs_ntrfs_riscv"></a>
+<a href="mod40.html" >prll_bs_ntrfs_riscv</a></td>
+<td class="s8 cl rt"> 84.19</td>
+<td class="s10 cl rt"><a href="mod40.html#Line" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod40.html#Cond" >100.00</a></td>
+<td class="s5 cl rt"><a href="mod40.html#Toggle" > 52.57</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_67" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Arbiter_st_Mchn"></a>
+<a href="mod67.html" >Arbiter_st_Mchn</a></td>
+<td class="s9 cl rt"> 90.00</td>
+<td class="s10 cl rt"><a href="mod67.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod67.html#Toggle" > 90.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod67.html#Branch" > 80.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_30" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_baud"></a>
+<a href="mod30.html" >baud</a></td>
+<td class="s9 cl rt"> 90.28</td>
+<td class="s10 cl rt"><a href="mod30.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod30.html#Toggle" > 70.83</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod30.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_24" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_Counter_arb"></a>
+<a href="mod24.html" >Counter_arb</a></td>
+<td class="s9 cl rt"> 91.67</td>
+<td class="s10 cl rt"><a href="mod24.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod24.html#Toggle" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod24.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_41" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_latchtriestado"></a>
+<a href="mod41.html" >latchtriestado</a></td>
+<td class="s9 cl rt"> 92.19</td>
+<td class="s10 cl rt"><a href="mod41.html#Line" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod41.html#Cond" >100.00</a></td>
+<td class="s6 cl rt"><a href="mod41.html#Toggle" > 68.75</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod41.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_35" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_prll_intrfs_cntrl_riscv"></a>
+<a href="mod35.html" >prll_intrfs_cntrl_riscv</a></td>
+<td class="s9 cl rt"> 96.41</td>
+<td class="s10 cl rt"><a href="mod35.html#Line" >100.00</a></td>
+<td class="s9 cl rt"><a href="mod35.html#Cond" > 95.65</a></td>
+<td class="s9 cl rt"><a href="mod35.html#Toggle" > 90.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod35.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_73" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_detector_flanco"></a>
+<a href="mod73.html" >detector_flanco</a></td>
+<td class="s9 cl rt"> 97.22</td>
+<td class="s10 cl rt"><a href="mod73.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod73.html#Toggle" > 91.67</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod73.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_5" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_latch_entrada"></a>
+<a href="mod5.html" >latch_entrada</a></td>
+<td class="s9 cl rt"> 99.49</td>
+<td class="s10 cl rt"><a href="mod5.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod5.html#Toggle" > 98.46</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod5.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_10" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_tristategate"></a>
+<a href="mod10.html" >tristategate</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod10.html#Cond" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod10.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod10.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_18" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_dff_async_rst"></a>
+<a href="mod18.html" >dff_async_rst</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt"><a href="mod18.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod18.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod18.html#Branch" >100.00</a></td>
+    </tr>
+    <tr data-tt-id="mod_48" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_csk_bloque"></a>
+<a href="mod48.html" >csk_bloque</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod48.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+    </tr>
+    <tr data-tt-id="mod_75" data-tt-parent-id="hierarchyTable_root">
+<td class="wordwrap"><a name="tag_tri_buf"></a>
+<a href="mod75.html" >tri_buf</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod75.html#Cond" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod75.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod75.html#Branch" >100.00</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+
+<script>
+$("#hierarchyTable").treetable({ expandable: true });
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+Name of design : controlador
+Number of cell instance masters in the library : 73
+Number of cell instances in the design : 4441
+Target IR drop : 180.000 mV
+Processing net VDD ...
+Average power dissipation in controlador :  1000.00 mW
+Power supply voltage :     1.80 V
+Average current in controlador :   555.56 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 36
+Maximum IR drop in controlador : 16.46 mV
+Maximum current in controlador : 25.816 mA
+Processing net VSS ...
+Average power dissipation in controlador :  1000.00 mW
+Power supply voltage :     1.80 V
+Average current in controlador :   555.56 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 36
+Maximum IR drop in controlador : 15.53 mV
+Maximum current in controlador : 25.827 mA
+Memory usage for design data :      38100.992 Kbytes
+Overall takes     0.08 seconds

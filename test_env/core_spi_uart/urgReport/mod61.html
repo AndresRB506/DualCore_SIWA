@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: ntrfs_cntrl_n_rbtr</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_ntrfs_cntrl_n_rbtr'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_ntrfs_cntrl_n_rbtr')">ntrfs_cntrl_n_rbtr</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s3 cl rt"> 32.68</td>
+<td class="s7 cl rt"><a href="mod61.html#Line" > 70.59</a></td>
+<td class="s1 cl rt"><a href="mod61.html#Cond" > 15.15</a></td>
+<td class="s0 cl rt"><a href="mod61.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod61.html#Branch" > 45.00</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod61.html#inst_tag_4288"  onclick="showContent('inst_tag_4288')">bs_ntrfs_n_rbtr.cntrl</a></td>
+<td class="s3 cl rt"> 32.68</td>
+<td class="s7 cl rt"><a href="mod61.html#Line" > 70.59</a></td>
+<td class="s1 cl rt"><a href="mod61.html#Cond" > 15.15</a></td>
+<td class="s0 cl rt"><a href="mod61.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod61.html#Branch" > 45.00</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_ntrfs_cntrl_n_rbtr'>
+<hr>
+<a name="inst_tag_4288"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy13.html#tag_urg_inst_4288" >bs_ntrfs_n_rbtr.cntrl</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s3 cl rt"> 32.68</td>
+<td class="s7 cl rt"><a href="mod61.html#Line" > 70.59</a></td>
+<td class="s1 cl rt"><a href="mod61.html#Cond" > 15.15</a></td>
+<td class="s0 cl rt"><a href="mod61.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod61.html#Branch" > 45.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s0 cl rt">  9.50</td>
+<td class="s1 cl rt"> 18.18</td>
+<td class="s1 cl rt"> 13.51</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s1 cl rt"> 15.79</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td><a href="mod52.html#inst_tag_4279" >bs_ntrfs_n_rbtr</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod24.html#inst_tag_2998" id="tag_urg_inst_2998">arb_cntr</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod67.html#inst_tag_4298" id="tag_urg_inst_4298">arb_st_mchn</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_1.html#inst_tag_6418" id="tag_urg_inst_6418">bs_bsy_tri_buf</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_6.html#inst_tag_1422" id="tag_urg_inst_1422">bs_grnt_dly</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod75_1.html#inst_tag_6419" id="tag_urg_inst_6419">buf_trn_chng</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod32.html#inst_tag_3020" id="tag_urg_inst_3020">counter_r</a></td>
+<td class="s3 cl rt"> 38.89</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod32.html#inst_tag_3019" id="tag_urg_inst_3019">counter_w</a></td>
+<td class="s3 cl rt"> 38.89</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod65.html#inst_tag_4293" id="tag_urg_inst_4293">rdstmchn</a></td>
+<td class="s0 cl rt">  5.36</td>
+<td class="s1 cl rt"> 13.75</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  7.69</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod9.html#inst_tag_54" id="tag_urg_inst_54">wtstmchn</a></td>
+<td class="s0 cl rt">  4.78</td>
+<td class="s1 cl rt"> 12.22</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  6.90</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_ntrfs_cntrl_n_rbtr'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod61.html" >ntrfs_cntrl_n_rbtr</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s7"><td class="lf">TOTAL</td><td></td><td>17</td><td>12</td><td>70.59</td></tr>
+<tr class="s0"><td class="lf">ALWAYS</td><td>698</td><td>1</td><td>0</td><td>0.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>704</td><td>16</td><td>12</td><td>75.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+697                         always @(posedge clk)begin
+698        <font color = "red">0/1     ==>        bs_grnt_pre = (cnt_rbtr == ntrfs_id)?{1'b1}:{1'b0};</font>
+699                         end
+700                         
+701                        dff_async_rst bs_grnt_dly(.data(bs_grnt_pre),.clk(clk),.reset(reset),.q(bs_grnt));
+702                     
+703                         always @(*) begin
+704        1/1                 trn_chng_pre = rst_w|| trn_chng_nthng_t_snd;
+705        1/1                 c_a = bs_grnt &amp;&amp; ~bs_rqst;
+706        1/1                 rd_cmp_a = (s_cmp)?count_r:D_in[pckg_sz-1:pckg_sz-8];
+707        1/1                 rd_cmp_b = (s_cmp)?pckg_sz-1:ntrfs_id;
+708                      
+709        1/1               rd_cmp_out = (rd_cmp_a == rd_cmp_b)?{1'b1}:{1'b0};   
+710        1/1               bdcst = (D_in[pckg_sz-1:pckg_sz-8]=={8{1'b1}})?{1'b1}:{1'b0};
+711                     
+712        1/1              case(s_ds_r)
+713        1/1                 2'b00:  cond_r = ~bs_grnt &amp;&amp; bs_bsy;
+714        <font color = "red">0/1     ==>         2'b01:  cond_r = rd_cmp_out || bdcst;</font>
+715        <font color = "red">0/1     ==>         2'b10:  cond_r = rd_cmp_out;</font>
+716        1/1                 default:  cond_r = 0;
+717                         endcase
+718                     
+719        1/1             case(s_ds_w)
+720        <font color = "red">0/1     ==>         2'b00:  cond_w = bs_grnt &amp;&amp; rdi;</font>
+721        <font color = "red">0/1     ==>         2'b01:  cond_w = cnt_eq_w;</font>
+722        1/1                 2'b10:  cond_w = pndng;
+723        1/1                 default:  cond_w = 0;
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod61.html" >ntrfs_cntrl_n_rbtr</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s1"><td class="lf">Conditions</td><td>33</td><td>5</td><td>15.15</td></tr>
+<tr class="s1"><td class="lf">Logical</td><td>33</td><td>5</td><td>15.15</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       683
+ EXPRESSION (en_w &amp;&amp; clk)
+             --1-    -2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       684
+ EXPRESSION (en_r &amp;&amp; clk)
+             --1-    -2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       685
+ EXPRESSION ((count_w == pckg_sz) ? ({1'b1}) : ({1'b0}))
+             ----------1---------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       698
+ EXPRESSION ((cnt_rbtr == ntrfs_id) ? ({1'b1}) : ({1'b0}))
+             -----------1----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       704
+ EXPRESSION (rst_w || trn_chng_nthng_t_snd)
+             --1--    ----------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       705
+ EXPRESSION (bs_grnt &amp;&amp; ((~bs_rqst)))
+             ---1---    ------2-----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       706
+ EXPRESSION (s_cmp ? count_r : D_in[(pckg_sz - 1):(pckg_sz - 8)])
+             --1--
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       707
+ EXPRESSION (s_cmp ? ((pckg_sz - 1)) : ntrfs_id)
+             --1--
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       709
+ EXPRESSION ((rd_cmp_a == rd_cmp_b) ? ({1'b1}) : ({1'b0}))
+             -----------1----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       710
+ EXPRESSION ((D_in[(pckg_sz - 1):(pckg_sz - 8)] == {8 {1'b1}}) ? ({1'b1}) : ({1'b0}))
+             ------------------------1------------------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       713
+ EXPRESSION (((~bs_grnt)) &amp;&amp; bs_bsy)
+             ------1-----    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       714
+ EXPRESSION (rd_cmp_out || bdcst)
+             -----1----    --2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       720
+ EXPRESSION (bs_grnt &amp;&amp; rdi)
+             ---1---    -2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod61.html" >ntrfs_cntrl_n_rbtr</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Totals</td>
+<td class="rt">39</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">146</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">73</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">73</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Ports</td>
+<td class="rt">15</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">44</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">22</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">22</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">24</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">102</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">51</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">51</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>D_in[31:24]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bs_grnt</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bs_bsy</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>trn_chng</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INOUT</td>
+</tr><tr>
+<td>rst_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst_r</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>p_s_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>p_s_r</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>en_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>en_r</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>bs_rqst</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>trn_chng_pre</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cnt_rbtr[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>count_w[5:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>count_r[5:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s_ds_r[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s_ds_w[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cond_r</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cond_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rst_cntr_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rst_cntr_r</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdi</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_cntr_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_cntr_r</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cnt_eq_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>s_cmp</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rd_cmp_out</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bdcst</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bs_bsy_pre</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rd_cmp_a[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rd_cmp_b[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>c_a</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>trn_chng_nthng_t_snd</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>bs_grnt_pre</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod61.html" >ntrfs_cntrl_n_rbtr</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s4">
+<td>Branches</td>
+<td></td>
+<td class="rt">20</td>
+<td class="rt">9</td>
+<td class="rt">45.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">685</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s0">
+<td>TERNARY</td>
+<td class="rt">698</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">706</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">707</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">709</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">710</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>CASE</td>
+<td class="rt">712</td>
+<td class="rt">4</td>
+<td class="rt">2</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>CASE</td>
+<td class="rt">719</td>
+<td class="rt">4</td>
+<td class="rt">2</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+685            wire cnt_eq_w = (count_w == pckg_sz)?{1'b1}:{1'b0};
+                                                   <font color = "red">-1-</font>  
+                                                   <font color = "red">==></font>  
+                                                   <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+698              bs_grnt_pre = (cnt_rbtr == ntrfs_id)?{1'b1}:{1'b0};
+                                                     <font color = "red">-1-</font>  
+                                                     <font color = "red">==></font>  
+                                                     <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+706               rd_cmp_a = (s_cmp)?count_r:D_in[pckg_sz-1:pckg_sz-8];
+                                    <font color = "red">-1-</font>  
+                                    <font color = "green">==></font>  
+                                    <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+707               rd_cmp_b = (s_cmp)?pckg_sz-1:ntrfs_id;
+                                    <font color = "red">-1-</font>  
+                                    <font color = "green">==></font>  
+                                    <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+709             rd_cmp_out = (rd_cmp_a == rd_cmp_b)?{1'b1}:{1'b0};   
+                                                   <font color = "red">-1-</font>  
+                                                   <font color = "red">==></font>  
+                                                   <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+710             bdcst = (D_in[pckg_sz-1:pckg_sz-8]=={8{1'b1}})?{1'b1}:{1'b0};
+                                                              <font color = "red">-1-</font>  
+                                                              <font color = "red">==></font>  
+                                                              <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+712            case(s_ds_r)
+               <font color = "red">-1-</font>  
+713               2'b00:  cond_r = ~bs_grnt && bs_bsy;
+           <font color = "green">       ==></font>
+714               2'b01:  cond_r = rd_cmp_out || bdcst;
+           <font color = "red">       ==></font>
+715               2'b10:  cond_r = rd_cmp_out;
+           <font color = "red">       ==></font>
+716               default:  cond_r = 0;
+           <font color = "green">       ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b01 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+719           case(s_ds_w)
+              <font color = "red">-1-</font>  
+720               2'b00:  cond_w = bs_grnt && rdi;
+           <font color = "red">       ==></font>
+721               2'b01:  cond_w = cnt_eq_w;
+           <font color = "red">       ==></font>
+722               2'b10:  cond_w = pndng;
+           <font color = "green">       ==></font>
+723               default:  cond_w = 0;
+           <font color = "green">       ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>2'b00 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b01 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_4288">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_ntrfs_cntrl_n_rbtr">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

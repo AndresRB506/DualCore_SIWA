@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Wed Mar 27 16:17:48 2019
+****************************************
+
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+    XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db)
+    IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db)
+
+Number of ports:                           98
+Number of nets:                           131
+Number of cells:                            2
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros/black boxes:               1
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:              77514.148849
+Buf/Inv area:                    10227.980043
+Noncombinational area:          245089.181694
+Macro/Black Box area:           500899.062500
+Net Interconnect area:           21179.654945
+
+Total cell area:                823502.393044
+Total area:                     844682.047988
+1

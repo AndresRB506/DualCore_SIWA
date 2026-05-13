@@ -1,0 +1,5 @@
+export project_base="~/Proyectos-Actuales/chip-design/imd/micro_hdl";
+export icc_work_area="$project_base/TEC_RISCV/FIFO_Latches_Phy";
+export dc_work_area="$project_base/TEC_RISCV/FIFO_Latches_Syn";
+export proy_name_icc="Fifo_latches";
+export xfab_tech="/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018";

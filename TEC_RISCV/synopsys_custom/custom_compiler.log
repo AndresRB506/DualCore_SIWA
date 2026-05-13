@@ -1,0 +1,144 @@
+[13:30:37.01] /r giWindowId 0
+[13:30:37.01] /r giWindowGeometry 600x300
+[13:30:37.03] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c                 Version N-2017.12-3 for linux64 - Jan 31, 2018 
+              /c 
+              /c                     Copyright (c) 2004 - 2018 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c             or distribution of this software is strictly prohibited.
+              /c 
+              /c Build  (OPT) Config 4027322 compiled on Wed Jan 31 15:06:13 2018 for RHEL64 6.6
+              /c Invocation: /mnt/vol_NFS_Zener/tools/synopsys/apps/customcompiler/N-2017.12-3/linux64/platform/bin/cdesigner
+              /c Execution time: Mon Nov 19 13:30:32 2018
+              /c Host: zener
+              /c Working directory: /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV
+              /c 
+[13:30:49.24] /w Warning: The file 'lib.defs' does not exist in search path (DATA_MANAGEMENT-013)
+[13:30:49.24] /r giShowFrameTabs true
+[13:30:49.24] /r giWindowId 1
+[13:30:49.24] /r giWindowGeometry 1040x800
+[13:31:23.48] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[13:31:23.49] /# 
+[13:31:23.49] /i dm::openLibraryManager
+[13:31:23.49] /r giWindowId 2
+[13:31:23.50] /r giWindowGeometry 660x600+50+75
+[13:31:23.60] /o oa:0x198d6b20
+[13:32:09.98] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[13:32:09.98] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[13:32:16.49] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[13:32:16.49] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[13:32:35.36] /# gi::executeAction dmShowAddLibrary -in [gi::getWindows 2]
+[13:32:35.36] /i dm::showAddLibrary -parent 2
+[13:32:35.36] /e Error: Command 'dm::showAddLibrary' requires at least one of the Advanced features, which are not currently checked out. (COMMAND-007)
+[13:32:43.18] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[13:32:43.18] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[13:32:47.94] /# gi::executeAction dmShowNewCell -in [gi::getWindows 2]
+[13:32:47.94] /i dm::showNewCell -parent 2
+[13:32:47.97] /o oa:0x198ba630
+[13:32:47.99] /i gi::setActiveDialog [gi::getDialogs {dmNewCell} -parent [gi::getWindows 2]]
+[13:32:48.28] /i db::setAttr geometry -of [gi::getDialogs {dmNewCell} -parent [gi::getWindows 2]] -value 448x227+725+362
+[13:33:53.78] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+623+133
+[13:33:54.10] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+622+133
+[13:36:19.53] /i gi::closeWindows [gi::getDialogs {dmNewCell} -parent [gi::getWindows 2]]
+[13:36:25.74] /# gi::executeAction dmShowNewLibrary -in [gi::getWindows 2]
+[13:36:25.74] /i dm::showNewLibrary -parent 2
+[13:36:25.80] /o oa:0x19713f60
+[13:36:25.83] /i gi::setActiveDialog [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:36:26.09] /i db::setAttr geometry -of [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]] -value 458x467+903+260
+[13:36:32.44] /i gi::setField {libName} -value {Prueba} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:36:33.86] /i gi::pressButton {libDirBrowse} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:37:26.81] /r giFileDialog reject ../cdesign
+[13:37:29.84] /i gi::pressButton {libDirBrowse} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:37:40.53] /r giFileDialog accept ../
+[13:37:50.94] /i gi::setField {libDir} -value {..} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:37:51.11] /i gi::setField {libTypeIcc} -value {true} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:37:51.40] /i db::setAttr geometry -of [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]] -value 458x423+903+260
+[13:37:57.40] /i gi::pressButton {iccTechFileBrowse} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:38:00.72] /r giFileDialog reject .
+[13:38:04.01] /i gi::setField {libTypeFileSys} -value {true} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:38:04.29] /i db::setAttr geometry -of [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]] -value 458x467+903+260
+[13:38:06.41] /i gi::setField {techTypeFile} -value {true} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:38:16.55] /i gi::pressButton {techFileBrowse} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:39:38.70] /r giFileDialog reject TOP_PHY_PR/synopsys_tools.sh
+[13:39:40.11] /i gi::closeWindows [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:39:51.34] /# gi::executeAction dmShowNewLibrary -in [gi::getWindows 2]
+[13:39:51.34] /i dm::showNewLibrary -parent 2
+[13:39:51.39] /o oa:0x1b96d220
+[13:39:51.43] /i gi::setActiveDialog [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:39:51.69] /i db::setAttr geometry -of [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]] -value 458x467+901+234
+[13:39:58.96] /i gi::setField {techTypeDefault} -value {true} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:40:06.91] /i gi::setField {libName} -value {Prueba} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:40:08.19] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewLibrary} -parent [gi::getWindows 2]]
+[13:40:08.22] /# dm::createLib Prueba -path {../Prueba} -dmSystem oaDMFileSys
+[13:40:08.24] /# db::importTechFile /mnt/vol_NFS_Zener/tools/synopsys/apps/customcompiler/N-2017.12-3/auxx/tech/cdesigner_1.0.tf -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] Prueba]]; oa::save [oa::TechFind [oa::ScalarName [oa::CdbaNS] Prueba]]
+[13:40:08.29] /m Information: set default manufacturing grid to the default value 0.005um for the imported technology library Prueba. (TECH_IO-098)
+[13:40:08.31] /m Information: Technology file /mnt/vol_NFS_Zener/tools/synopsys/apps/customcompiler/N-2017.12-3/auxx/tech/cdesigner_1.0.tf is successfully imported into lib Prueba. (TECH_IO-099)
+[13:40:08.35] /# oa::close [oa::TechFind [oa::ScalarName [oa::CdbaNS] Prueba]]
+[13:40:10.63] /i gi::setCurrentIndex {libs} -index {Prueba} -in [gi::getWindows 2]
+[13:40:10.71] /i gi::setItemSelection {libs} -index {Prueba} -in [gi::getWindows 2]
+[13:40:23.80] /i gi::setCurrentIndex {cellCategories} -index {Uncategorized} -in [gi::getWindows 2]
+[13:40:23.80] /i gi::setItemSelection {cellCategories} -index {Uncategorized} -in [gi::getWindows 2]
+[13:40:31.45] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[13:40:31.45] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[13:40:32.87] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[13:40:32.87] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[13:40:33.53] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[13:40:33.53] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[13:40:37.41] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[13:40:37.41] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[13:40:40.20] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[13:40:40.21] /i gi::setActiveWindow 1
+[13:40:40.21] /i gi::setActiveWindow 1 -raise true
+[13:40:49.27] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/saConsole} -in [gi::getWindows 1]
+[13:40:49.27] /# 
+[13:40:49.27] /i sa::showConsole -session [sa::createSession]
+[13:41:52.07] /o Information: The current action was interrupted. Two more interrupts will exit the process.
+              /c 
+[13:41:53.59] /m Information: License 'SAE' checked out. (LICENSE-003)
+[13:41:53.67] /r giWindowId 3
+[13:41:53.67] /r giWindowGeometry 600x500
+[13:41:53.97] /o oa:0x226237f0
+[13:41:54.05] /m Information: Launching Background sae_shell Server Process "cd /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV && sae_shell -log sae_shell_session0_job1 -libDefFile /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/lib.defs"
+[13:42:01.71] /i gi::setCurrentIndex {outputsTable} -index {0,0} -in [gi::getWindows 3]
+[13:42:01.81] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[13:42:01.84] /i gi::setActiveWindow 1
+[13:42:01.85] /i gi::setActiveWindow 1 -raise true
+[13:42:01.87] /m Information: License 'SAE' checked in. (LICENSE-004)
+[13:42:03.79] /m Information: Received ready-for-commands signal from background job 'sae_shell_session0_job1' after 9 seconds.
+[13:42:12.07] /# gi::executeAction dbShowImportStream -in [gi::getWindows 1]
+[13:42:12.07] /i db::showImportStream
+[13:42:12.13] /o oa:0x224de160
+[13:42:12.18] /i gi::setActiveDialog [gi::getDialogs {dbImportStream}]
+[13:42:12.41] /i db::setAttr geometry -of [gi::getDialogs {dbImportStream}] -value 610x567+645+217
+[13:42:15.50] /i gi::pressButton {runDirectoryBrowse} -in [gi::getDialogs {dbImportStream}]
+[13:42:23.58] /r giFileDialog accept ../Prueba
+[13:42:26.08] /i gi::pressButton {fileNameBrowse} -in [gi::getDialogs {dbImportStream}]
+[13:42:41.74] /r giFileDialog accept TOP_PHY_PR/back_end/Tec_Riscv_pads_phy.gds
+[13:47:58.96] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+982+325
+[13:49:16.36] /i gi::setField {topCellName} -value {top_riscv_tec_pads} -in [gi::getDialogs {dbImportStream}]
+[13:49:16.49] /i gi::pressButton {libDirBrowse} -in [gi::getDialogs {dbImportStream}]
+[13:49:22.92] /r giFileDialog accept ../Prueba
+[13:49:31.87] /i gi::setField {libName} -value {Prueba} -in [gi::getDialogs {dbImportStream}]
+[13:49:38.51] /i gi::pressButton {ok} -in [gi::getDialogs {dbImportStream}]
+[13:49:38.54] /# xt::createJob importStream  -type batch -cmdLine " cd \"/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/Prueba\"; importStream -logFile /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/Prueba/importStream.rgarcia.19_11_13_49_38.log -gds /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end/Tec_Riscv_pads_phy.gds -lib Prueba -cell top_riscv_tec_pads -view layout -libDefFile /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/lib.defs -id 40c03462 -detectVias  -hierDepth 20 -layerMappingMode filter -propSeparator , " -runDesc "Translates GDSII data to the OpenAccess database." -exitProc "data_io::exit_proc" -files "/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/Prueba/importStream.rgarcia.19_11_13_49_38.log"
+[13:49:38.54] /m Information: "Starting Stream Import." (DATA_IO_COMMANDS-001)
+[13:49:40.29] /e Error: "Stream import finished with exit status: failed." (DATA_IO_COMMANDS-003)
+[13:50:00.07] /# gi::executeAction dbShowImportStream -in [gi::getWindows 1]
+[13:50:00.07] /i db::showImportStream
+[13:50:00.08] /o oa:0x226b98b0
+[13:50:00.13] /i gi::setActiveDialog [gi::getDialogs {dbImportStream}]
+[13:50:00.39] /i db::setAttr geometry -of [gi::getDialogs {dbImportStream}] -value 610x567+645+217
+[13:50:02.36] /i gi::setActiveTab {tabWidget} -tabName {mapFiles} -in [gi::getDialogs {dbImportStream}]
+[13:50:57.35] /i gi::setActiveTab {tabWidget} -tabName {main} -in [gi::getDialogs {dbImportStream}]
+[13:50:59.39] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+643+293
+[13:51:00.51] /i exit
+[13:51:00.55] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[13:51:00.82] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 419x181+741+410
+[13:51:02.45] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[13:51:02.90] /o Shutdown time: Mon Nov 19 13:51:02 2018
+[13:51:02.90] /o Elapsed session real time: 20.43 minutes
+[13:51:02.90] /o Session terminated. Log is at /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/synopsys_custom/logs/ccompiler.rgarcia.2018_11_19_133032_1476.log

@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: latch</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_latch'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_latch')">latch</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12.html#Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12.html#Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12.html#Branch" > 66.67</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../Register_File/Biblioteca.v')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../Register_File/Biblioteca.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_520"  onclick="showContent('inst_tag_520')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[0].rf0.latch_Mie_Time.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_520_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_0.html#inst_tag_520_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_520_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_561"  onclick="showContent('inst_tag_561')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[0].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_561_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_0.html#inst_tag_561_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_561_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_593"  onclick="showContent('inst_tag_593')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[0].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_593_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_0.html#inst_tag_593_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_593_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_625"  onclick="showContent('inst_tag_625')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_GPIO[0].rf11.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_625_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_1.html#inst_tag_625_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_625_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_663"  onclick="showContent('inst_tag_663')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[0].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_663_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_1.html#inst_tag_663_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_663_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_695"  onclick="showContent('inst_tag_695')">topcore_tb.uut.TOP.Reg_file.Reg_csr.full_range_level_shift[0].rf16.latch_full_range.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_695_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_2.html#inst_tag_695_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_695_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_703"  onclick="showContent('inst_tag_703')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[0].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_703_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_2.html#inst_tag_703_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_703_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_735"  onclick="showContent('inst_tag_735')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[0].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_735_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_2.html#inst_tag_735_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_735_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_3.html#inst_tag_767"  onclick="showContent('inst_tag_767')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Trigge[0].rf18.latch_IS_Trigger.latch1</a></td>
+<td class="s5 cl rt"> 55.56</td>
+<td class="s7 cl rt"><a href="mod12_3.html#inst_tag_767_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod12_3.html#inst_tag_767_Toggle" > 25.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_3.html#inst_tag_767_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_521"  onclick="showContent('inst_tag_521')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[1].rf1.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_521_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_521_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_521_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_522"  onclick="showContent('inst_tag_522')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[4].rf4.latch_Mie_analogic.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_522_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_522_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_522_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_523"  onclick="showContent('inst_tag_523')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[8].rf12.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_523_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_523_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_523_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_524"  onclick="showContent('inst_tag_524')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[9].rf12.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_524_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_524_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_524_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_525"  onclick="showContent('inst_tag_525')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[10].rf12.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_525_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_525_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_525_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_526"  onclick="showContent('inst_tag_526')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[11].rf12.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_526_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_526_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_526_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_527"  onclick="showContent('inst_tag_527')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[12].rf12.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_527_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_527_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_527_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_528"  onclick="showContent('inst_tag_528')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[13].rf12.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_528_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_528_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_528_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_529"  onclick="showContent('inst_tag_529')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[14].rf12.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_529_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_529_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_529_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_530"  onclick="showContent('inst_tag_530')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Mie[15].rf12.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_530_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_530_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_530_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_531"  onclick="showContent('inst_tag_531')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[2].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_531_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_531_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_531_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_532"  onclick="showContent('inst_tag_532')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[3].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_532_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_532_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_532_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_533"  onclick="showContent('inst_tag_533')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[4].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_533_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_533_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_533_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_534"  onclick="showContent('inst_tag_534')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[5].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_534_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_534_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_534_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_535"  onclick="showContent('inst_tag_535')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[6].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_535_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_535_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_535_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_536"  onclick="showContent('inst_tag_536')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[7].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_536_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_536_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_536_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_537"  onclick="showContent('inst_tag_537')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[8].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_537_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_537_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_537_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_538"  onclick="showContent('inst_tag_538')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[9].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_538_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_538_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_538_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_539"  onclick="showContent('inst_tag_539')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[10].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_539_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_539_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_539_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_540"  onclick="showContent('inst_tag_540')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[11].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_540_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_540_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_540_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_541"  onclick="showContent('inst_tag_541')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[12].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_541_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_541_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_541_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_542"  onclick="showContent('inst_tag_542')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[13].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_542_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_542_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_542_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_543"  onclick="showContent('inst_tag_543')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[14].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_543_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_543_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_543_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_544"  onclick="showContent('inst_tag_544')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[15].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_544_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_544_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_544_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_545"  onclick="showContent('inst_tag_545')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[16].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_545_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_545_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_545_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_546"  onclick="showContent('inst_tag_546')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[17].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_546_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_546_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_546_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_547"  onclick="showContent('inst_tag_547')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[18].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_547_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_547_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_547_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_548"  onclick="showContent('inst_tag_548')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[19].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_548_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_548_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_548_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_549"  onclick="showContent('inst_tag_549')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[20].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_549_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_549_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_549_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_550"  onclick="showContent('inst_tag_550')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[21].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_550_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_550_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_550_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_551"  onclick="showContent('inst_tag_551')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[22].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_551_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_551_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_551_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_552"  onclick="showContent('inst_tag_552')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[23].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_552_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_552_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_552_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_553"  onclick="showContent('inst_tag_553')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[24].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_553_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_553_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_553_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_554"  onclick="showContent('inst_tag_554')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[25].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_554_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_554_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_554_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_555"  onclick="showContent('inst_tag_555')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[26].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_555_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_555_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_555_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_556"  onclick="showContent('inst_tag_556')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[27].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_556_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_556_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_556_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_557"  onclick="showContent('inst_tag_557')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[28].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_557_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_557_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_557_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_558"  onclick="showContent('inst_tag_558')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[29].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_558_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_558_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_558_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_559"  onclick="showContent('inst_tag_559')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[30].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_559_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_559_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_559_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_560"  onclick="showContent('inst_tag_560')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mepc[31].rf8.latches_mepc.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_560_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_560_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_560_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_562"  onclick="showContent('inst_tag_562')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[1].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_562_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_562_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_562_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_563"  onclick="showContent('inst_tag_563')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[2].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_563_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_563_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_563_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_564"  onclick="showContent('inst_tag_564')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[3].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_564_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_564_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_564_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_565"  onclick="showContent('inst_tag_565')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[4].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_565_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_565_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_565_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_566"  onclick="showContent('inst_tag_566')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[5].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_566_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_566_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_566_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_567"  onclick="showContent('inst_tag_567')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[6].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_567_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_567_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_567_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_568"  onclick="showContent('inst_tag_568')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[7].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_568_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_568_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_568_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_569"  onclick="showContent('inst_tag_569')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[8].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_569_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_569_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_569_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_570"  onclick="showContent('inst_tag_570')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[9].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_570_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_570_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_570_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_571"  onclick="showContent('inst_tag_571')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[10].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_571_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_571_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_571_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_572"  onclick="showContent('inst_tag_572')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[11].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_572_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_572_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_572_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_573"  onclick="showContent('inst_tag_573')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[12].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_573_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_573_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_573_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_574"  onclick="showContent('inst_tag_574')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[13].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_574_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_574_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_574_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_575"  onclick="showContent('inst_tag_575')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[14].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_575_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_575_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_575_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_576"  onclick="showContent('inst_tag_576')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[15].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_576_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_576_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_576_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_577"  onclick="showContent('inst_tag_577')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[16].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_577_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_577_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_577_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_578"  onclick="showContent('inst_tag_578')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[17].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_578_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_578_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_578_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_579"  onclick="showContent('inst_tag_579')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[18].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_579_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_579_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_579_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_580"  onclick="showContent('inst_tag_580')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[19].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_580_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_580_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_580_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_581"  onclick="showContent('inst_tag_581')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[20].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_581_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_581_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_581_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_582"  onclick="showContent('inst_tag_582')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[21].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_582_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_582_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_582_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_583"  onclick="showContent('inst_tag_583')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[22].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_583_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_583_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_583_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_584"  onclick="showContent('inst_tag_584')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[23].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_584_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_584_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_584_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_585"  onclick="showContent('inst_tag_585')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[24].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_585_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_585_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_585_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_586"  onclick="showContent('inst_tag_586')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[25].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_586_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_586_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_586_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_587"  onclick="showContent('inst_tag_587')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[26].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_587_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_587_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_587_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_588"  onclick="showContent('inst_tag_588')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[27].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_588_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_588_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_588_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_589"  onclick="showContent('inst_tag_589')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[28].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_589_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_589_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_589_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_590"  onclick="showContent('inst_tag_590')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[29].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_590_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_590_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_590_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_591"  onclick="showContent('inst_tag_591')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[30].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_591_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_591_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_591_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_592"  onclick="showContent('inst_tag_592')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interruption1[31].latches_interruption1.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_592_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_592_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_592_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_594"  onclick="showContent('inst_tag_594')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[1].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_594_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_594_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_594_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_595"  onclick="showContent('inst_tag_595')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[2].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_595_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_595_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_595_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_596"  onclick="showContent('inst_tag_596')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[3].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_596_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_596_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_596_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_597"  onclick="showContent('inst_tag_597')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[4].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_597_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_597_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_597_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_598"  onclick="showContent('inst_tag_598')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[5].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_598_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_598_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_598_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_599"  onclick="showContent('inst_tag_599')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[6].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_599_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_599_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_599_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_600"  onclick="showContent('inst_tag_600')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[7].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_600_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_600_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_600_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_0.html#inst_tag_601"  onclick="showContent('inst_tag_601')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[8].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_0.html#inst_tag_601_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_0.html#inst_tag_601_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_0.html#inst_tag_601_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_602"  onclick="showContent('inst_tag_602')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[9].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_602_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_602_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_602_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_603"  onclick="showContent('inst_tag_603')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[10].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_603_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_603_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_603_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_604"  onclick="showContent('inst_tag_604')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[11].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_604_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_604_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_604_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_605"  onclick="showContent('inst_tag_605')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[12].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_605_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_605_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_605_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_606"  onclick="showContent('inst_tag_606')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[13].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_606_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_606_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_606_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_607"  onclick="showContent('inst_tag_607')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[14].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_607_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_607_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_607_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_608"  onclick="showContent('inst_tag_608')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[15].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_608_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_608_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_608_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_609"  onclick="showContent('inst_tag_609')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[16].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_609_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_609_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_609_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_610"  onclick="showContent('inst_tag_610')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[17].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_610_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_610_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_610_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_611"  onclick="showContent('inst_tag_611')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[18].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_611_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_611_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_611_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_612"  onclick="showContent('inst_tag_612')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[19].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_612_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_612_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_612_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_613"  onclick="showContent('inst_tag_613')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[20].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_613_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_613_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_613_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_614"  onclick="showContent('inst_tag_614')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[21].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_614_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_614_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_614_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_615"  onclick="showContent('inst_tag_615')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[22].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_615_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_615_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_615_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_616"  onclick="showContent('inst_tag_616')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[23].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_616_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_616_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_616_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_617"  onclick="showContent('inst_tag_617')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[24].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_617_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_617_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_617_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_618"  onclick="showContent('inst_tag_618')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[25].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_618_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_618_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_618_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_619"  onclick="showContent('inst_tag_619')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[26].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_619_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_619_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_619_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_620"  onclick="showContent('inst_tag_620')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[27].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_620_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_620_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_620_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_621"  onclick="showContent('inst_tag_621')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[28].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_621_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_621_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_621_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_622"  onclick="showContent('inst_tag_622')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[29].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_622_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_622_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_622_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_623"  onclick="showContent('inst_tag_623')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[30].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_623_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_623_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_623_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_624"  onclick="showContent('inst_tag_624')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_interrup2[31].latches_mcause.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_624_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_624_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_624_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_626"  onclick="showContent('inst_tag_626')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_GPIO[1].rf11.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_626_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_626_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_626_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_627"  onclick="showContent('inst_tag_627')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_GPIO[2].rf11.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_627_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_627_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_627_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_628"  onclick="showContent('inst_tag_628')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_GPIO[3].rf11.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_628_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_628_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_628_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_629"  onclick="showContent('inst_tag_629')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_GPIO[4].rf11.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_629_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_629_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_629_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_630"  onclick="showContent('inst_tag_630')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_GPIO[5].rf11.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_630_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_630_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_630_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_631"  onclick="showContent('inst_tag_631')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_GPIO[6].rf11.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_631_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_631_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_631_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_632"  onclick="showContent('inst_tag_632')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_GPIO[7].rf11.latch_Mie_IO.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_632_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_632_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_632_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_633"  onclick="showContent('inst_tag_633')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[2].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_633_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_633_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_633_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_634"  onclick="showContent('inst_tag_634')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[3].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_634_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_634_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_634_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_635"  onclick="showContent('inst_tag_635')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[4].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_635_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_635_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_635_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_636"  onclick="showContent('inst_tag_636')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[5].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_636_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_636_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_636_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_637"  onclick="showContent('inst_tag_637')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[6].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_637_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_637_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_637_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_638"  onclick="showContent('inst_tag_638')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[7].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_638_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_638_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_638_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_639"  onclick="showContent('inst_tag_639')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[8].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_639_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_639_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_639_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_640"  onclick="showContent('inst_tag_640')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[9].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_640_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_640_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_640_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_641"  onclick="showContent('inst_tag_641')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[10].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_641_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_641_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_641_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_642"  onclick="showContent('inst_tag_642')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[11].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_642_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_642_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_642_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_643"  onclick="showContent('inst_tag_643')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[12].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_643_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_643_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_643_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_644"  onclick="showContent('inst_tag_644')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[13].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_644_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_644_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_644_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_645"  onclick="showContent('inst_tag_645')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[14].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_645_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_645_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_645_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_646"  onclick="showContent('inst_tag_646')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[15].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_646_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_646_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_646_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_647"  onclick="showContent('inst_tag_647')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[16].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_647_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_647_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_647_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_648"  onclick="showContent('inst_tag_648')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[17].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_648_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_648_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_648_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_649"  onclick="showContent('inst_tag_649')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[18].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_649_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_649_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_649_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_650"  onclick="showContent('inst_tag_650')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[19].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_650_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_650_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_650_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_651"  onclick="showContent('inst_tag_651')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[20].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_651_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_651_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_651_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_652"  onclick="showContent('inst_tag_652')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[21].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_652_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_652_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_652_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_653"  onclick="showContent('inst_tag_653')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[22].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_653_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_653_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_653_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_654"  onclick="showContent('inst_tag_654')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[23].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_654_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_654_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_654_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_655"  onclick="showContent('inst_tag_655')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[24].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_655_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_655_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_655_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_656"  onclick="showContent('inst_tag_656')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[25].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_656_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_656_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_656_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_657"  onclick="showContent('inst_tag_657')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[26].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_657_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_657_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_657_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_658"  onclick="showContent('inst_tag_658')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[27].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_658_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_658_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_658_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_659"  onclick="showContent('inst_tag_659')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[28].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_659_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_659_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_659_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_660"  onclick="showContent('inst_tag_660')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[29].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_660_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_660_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_660_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_661"  onclick="showContent('inst_tag_661')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[30].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_661_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_661_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_661_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_662"  onclick="showContent('inst_tag_662')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Regsitrio_mvtec[31].rf14.latches_mvtec.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_662_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_662_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_662_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_664"  onclick="showContent('inst_tag_664')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[1].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_664_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_664_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_664_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_665"  onclick="showContent('inst_tag_665')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[2].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_665_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_665_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_665_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_666"  onclick="showContent('inst_tag_666')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[3].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_666_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_666_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_666_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_667"  onclick="showContent('inst_tag_667')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[4].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_667_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_667_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_667_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_668"  onclick="showContent('inst_tag_668')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[5].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_668_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_668_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_668_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_669"  onclick="showContent('inst_tag_669')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[6].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_669_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_669_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_669_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_670"  onclick="showContent('inst_tag_670')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[7].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_670_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_670_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_670_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_671"  onclick="showContent('inst_tag_671')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[8].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_671_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_671_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_671_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_672"  onclick="showContent('inst_tag_672')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[9].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_672_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_672_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_672_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_673"  onclick="showContent('inst_tag_673')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[10].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_673_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_673_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_673_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_674"  onclick="showContent('inst_tag_674')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[11].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_674_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_674_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_674_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_675"  onclick="showContent('inst_tag_675')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[12].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_675_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_675_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_675_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_676"  onclick="showContent('inst_tag_676')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[13].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_676_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_676_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_676_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_677"  onclick="showContent('inst_tag_677')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[14].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_677_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_677_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_677_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_678"  onclick="showContent('inst_tag_678')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[15].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_678_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_678_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_678_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_679"  onclick="showContent('inst_tag_679')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[16].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_679_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_679_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_679_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_680"  onclick="showContent('inst_tag_680')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[17].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_680_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_680_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_680_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_681"  onclick="showContent('inst_tag_681')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[18].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_681_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_681_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_681_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_682"  onclick="showContent('inst_tag_682')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[19].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_682_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_682_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_682_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_1.html#inst_tag_683"  onclick="showContent('inst_tag_683')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[20].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_1.html#inst_tag_683_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_1.html#inst_tag_683_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_1.html#inst_tag_683_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_684"  onclick="showContent('inst_tag_684')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[21].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_684_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_684_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_684_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_685"  onclick="showContent('inst_tag_685')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[22].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_685_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_685_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_685_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_686"  onclick="showContent('inst_tag_686')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[23].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_686_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_686_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_686_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_687"  onclick="showContent('inst_tag_687')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[24].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_687_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_687_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_687_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_688"  onclick="showContent('inst_tag_688')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[25].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_688_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_688_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_688_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_689"  onclick="showContent('inst_tag_689')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[26].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_689_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_689_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_689_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_690"  onclick="showContent('inst_tag_690')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[27].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_690_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_690_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_690_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_691"  onclick="showContent('inst_tag_691')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[28].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_691_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_691_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_691_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_692"  onclick="showContent('inst_tag_692')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[29].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_692_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_692_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_692_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_693"  onclick="showContent('inst_tag_693')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[30].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_693_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_693_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_693_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_694"  onclick="showContent('inst_tag_694')">topcore_tb.uut.TOP.Reg_file.Reg_csr.Registro_Comparacion[31].latch_Comparacion.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_694_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_694_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_694_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_696"  onclick="showContent('inst_tag_696')">topcore_tb.uut.TOP.Reg_file.Reg_csr.full_range_level_shift[1].rf16.latch_full_range.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_696_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_696_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_696_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_697"  onclick="showContent('inst_tag_697')">topcore_tb.uut.TOP.Reg_file.Reg_csr.full_range_level_shift[2].rf16.latch_full_range.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_697_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_697_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_697_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_698"  onclick="showContent('inst_tag_698')">topcore_tb.uut.TOP.Reg_file.Reg_csr.full_range_level_shift[3].rf16.latch_full_range.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_698_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_698_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_698_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_699"  onclick="showContent('inst_tag_699')">topcore_tb.uut.TOP.Reg_file.Reg_csr.full_range_level_shift[4].rf16.latch_full_range.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_699_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_699_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_699_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_700"  onclick="showContent('inst_tag_700')">topcore_tb.uut.TOP.Reg_file.Reg_csr.full_range_level_shift[5].rf16.latch_full_range.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_700_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_700_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_700_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_701"  onclick="showContent('inst_tag_701')">topcore_tb.uut.TOP.Reg_file.Reg_csr.full_range_level_shift[6].rf16.latch_full_range.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_701_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_701_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_701_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_702"  onclick="showContent('inst_tag_702')">topcore_tb.uut.TOP.Reg_file.Reg_csr.full_range_level_shift[7].rf16.latch_full_range.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_702_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_702_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_702_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_704"  onclick="showContent('inst_tag_704')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[1].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_704_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_704_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_704_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_705"  onclick="showContent('inst_tag_705')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[2].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_705_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_705_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_705_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_706"  onclick="showContent('inst_tag_706')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[3].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_706_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_706_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_706_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_707"  onclick="showContent('inst_tag_707')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[4].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_707_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_707_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_707_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_708"  onclick="showContent('inst_tag_708')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[5].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_708_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_708_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_708_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_709"  onclick="showContent('inst_tag_709')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[6].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_709_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_709_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_709_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_710"  onclick="showContent('inst_tag_710')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[7].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_710_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_710_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_710_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_711"  onclick="showContent('inst_tag_711')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[8].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_711_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_711_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_711_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_712"  onclick="showContent('inst_tag_712')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[9].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_712_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_712_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_712_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_713"  onclick="showContent('inst_tag_713')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[10].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_713_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_713_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_713_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_714"  onclick="showContent('inst_tag_714')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[11].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_714_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_714_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_714_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_715"  onclick="showContent('inst_tag_715')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[12].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_715_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_715_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_715_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_716"  onclick="showContent('inst_tag_716')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[13].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_716_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_716_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_716_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_717"  onclick="showContent('inst_tag_717')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[14].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_717_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_717_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_717_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_718"  onclick="showContent('inst_tag_718')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[15].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_718_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_718_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_718_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_719"  onclick="showContent('inst_tag_719')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[16].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_719_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_719_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_719_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_720"  onclick="showContent('inst_tag_720')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[17].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_720_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_720_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_720_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_721"  onclick="showContent('inst_tag_721')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[18].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_721_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_721_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_721_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_722"  onclick="showContent('inst_tag_722')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[19].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_722_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_722_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_722_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_723"  onclick="showContent('inst_tag_723')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[20].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_723_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_723_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_723_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_724"  onclick="showContent('inst_tag_724')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[21].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_724_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_724_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_724_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_725"  onclick="showContent('inst_tag_725')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[22].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_725_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_725_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_725_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_726"  onclick="showContent('inst_tag_726')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[23].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_726_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_726_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_726_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_727"  onclick="showContent('inst_tag_727')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[24].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_727_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_727_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_727_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_728"  onclick="showContent('inst_tag_728')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[25].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_728_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_728_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_728_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_729"  onclick="showContent('inst_tag_729')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[26].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_729_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_729_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_729_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_730"  onclick="showContent('inst_tag_730')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[27].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_730_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_730_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_730_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_731"  onclick="showContent('inst_tag_731')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[28].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_731_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_731_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_731_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_732"  onclick="showContent('inst_tag_732')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[29].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_732_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_732_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_732_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_733"  onclick="showContent('inst_tag_733')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[30].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_733_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_733_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_733_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_734"  onclick="showContent('inst_tag_734')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Va[31].latch_IS_Val.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_734_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_734_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_734_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_736"  onclick="showContent('inst_tag_736')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[1].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_736_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_736_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_736_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_737"  onclick="showContent('inst_tag_737')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[2].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_737_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_737_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_737_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_738"  onclick="showContent('inst_tag_738')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[3].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_738_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_738_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_738_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_739"  onclick="showContent('inst_tag_739')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[4].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_739_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_739_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_739_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_740"  onclick="showContent('inst_tag_740')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[5].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_740_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_740_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_740_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_741"  onclick="showContent('inst_tag_741')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[6].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_741_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_741_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_741_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_742"  onclick="showContent('inst_tag_742')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[7].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_742_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_742_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_742_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_743"  onclick="showContent('inst_tag_743')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[8].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_743_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_743_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_743_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_744"  onclick="showContent('inst_tag_744')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[9].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_744_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_744_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_744_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_745"  onclick="showContent('inst_tag_745')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[10].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_745_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_745_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_745_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_746"  onclick="showContent('inst_tag_746')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[11].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_746_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_746_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_746_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_747"  onclick="showContent('inst_tag_747')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[12].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_747_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_747_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_747_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_748"  onclick="showContent('inst_tag_748')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[13].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_748_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_748_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_748_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_749"  onclick="showContent('inst_tag_749')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[14].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_749_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_749_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_749_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_750"  onclick="showContent('inst_tag_750')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[15].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_750_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_750_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_750_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_751"  onclick="showContent('inst_tag_751')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[16].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_751_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_751_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_751_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_752"  onclick="showContent('inst_tag_752')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[17].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_752_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_752_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_752_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_753"  onclick="showContent('inst_tag_753')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[18].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_753_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_753_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_753_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_754"  onclick="showContent('inst_tag_754')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[19].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_754_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_754_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_754_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_755"  onclick="showContent('inst_tag_755')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[20].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_755_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_755_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_755_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_756"  onclick="showContent('inst_tag_756')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[21].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_756_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_756_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_756_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_757"  onclick="showContent('inst_tag_757')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[22].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_757_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_757_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_757_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_758"  onclick="showContent('inst_tag_758')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[23].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_758_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_758_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_758_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_759"  onclick="showContent('inst_tag_759')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[24].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_759_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_759_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_759_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_760"  onclick="showContent('inst_tag_760')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[25].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_760_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_760_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_760_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_761"  onclick="showContent('inst_tag_761')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[26].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_761_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_761_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_761_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_762"  onclick="showContent('inst_tag_762')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[27].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_762_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_762_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_762_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_763"  onclick="showContent('inst_tag_763')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[28].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_763_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_763_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_763_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_764"  onclick="showContent('inst_tag_764')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[29].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_764_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_764_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_764_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_2.html#inst_tag_765"  onclick="showContent('inst_tag_765')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[30].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_2.html#inst_tag_765_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_2.html#inst_tag_765_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_2.html#inst_tag_765_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_3.html#inst_tag_766"  onclick="showContent('inst_tag_766')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Confi[31].latch_IS_Config.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_3.html#inst_tag_766_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_3.html#inst_tag_766_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_3.html#inst_tag_766_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_3.html#inst_tag_768"  onclick="showContent('inst_tag_768')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Trigge[1].rf18.latch_IS_Trigger.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_3.html#inst_tag_768_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_3.html#inst_tag_768_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_3.html#inst_tag_768_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_3.html#inst_tag_769"  onclick="showContent('inst_tag_769')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Trigge[2].rf18.latch_IS_Trigger.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_3.html#inst_tag_769_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_3.html#inst_tag_769_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_3.html#inst_tag_769_Branch" > 66.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12_3.html#inst_tag_770"  onclick="showContent('inst_tag_770')">topcore_tb.uut.TOP.Reg_file.Reg_csr.IS_Trigge[3].rf18.latch_IS_Trigger.latch1</a></td>
+<td class="s5 cl rt"> 59.72</td>
+<td class="s7 cl rt"><a href="mod12_3.html#inst_tag_770_Line" > 75.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"><a href="mod12_3.html#inst_tag_770_Toggle" > 37.50</a></td>
+<td class="wht cl rt"></td>
+<td class="s6 cl rt"><a href="mod12_3.html#inst_tag_770_Branch" > 66.67</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_latch'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod12.html" >latch</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s7"><td class="lf">TOTAL</td><td></td><td>4</td><td>3</td><td>75.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>13</td><td>4</td><td>3</td><td>75.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+12                      	always @ (clk, d, rst)
+13         2/2          		if (rst) q &lt;= 1'b0;
+14         <font color = "red">1/2     ==>  		else if (clk) q &lt;= d;</font>
+                        MISSING_ELSE
+</pre>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod12.html" >latch</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s2">
+<td>Totals</td>
+<td class="rt">4</td>
+<td class="rt">1</td>
+<td class="rt">25.00 </td>
+</tr><tr class="s3">
+<td>Total Bits</td>
+<td class="rt">8</td>
+<td class="rt">3</td>
+<td class="rt">37.50 </td>
+</tr><tr class="s2">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">4</td>
+<td class="rt">1</td>
+<td class="rt">25.00 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">4</td>
+<td class="rt">2</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s2">
+<td>Ports</td>
+<td class="rt">4</td>
+<td class="rt">1</td>
+<td class="rt">25.00 </td>
+</tr><tr class="s3">
+<td>Port Bits</td>
+<td class="rt">8</td>
+<td class="rt">3</td>
+<td class="rt">37.50 </td>
+</tr><tr class="s2">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">4</td>
+<td class="rt">1</td>
+<td class="rt">25.00 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">4</td>
+<td class="rt">2</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>d</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod12.html" >latch</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s6">
+<td>Branches</td>
+<td></td>
+<td class="rt">3</td>
+<td class="rt">2</td>
+<td class="rt">66.67 </td>
+</tr><tr class="s6">
+<td>IF</td>
+<td class="rt">13</td>
+<td class="rt">3</td>
+<td class="rt">2</td>
+<td class="rt">66.67 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+13         		if (rst) q <= 1'b0;
+           		<font color = "green">-1-</font>  
+           <font color = "green">		==></font>
+14         		else if (clk) q <= d;
+           		     <font color = "red">-2-</font>  
+           <font color = "red">		==></font>
+           		MISSING_ELSE
+           <font color = "green">		==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul>
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

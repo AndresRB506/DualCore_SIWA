@@ -1,0 +1,486 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_dump_var_vpdg('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vcsd_dump_var_vpdg')
+ANF: vcsd_begin_no_value_var_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: scsd_fgp_get_is_cpu_affinity_disabled('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
+ANF: vdi_dt_get_vlog_variant_size_array_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vdi_dt_get_vlog_variant_size_array_info')
+ANF: vdi_flat_node_get_total_bit_size('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vdi_flat_node_get_total_bit_size')
+ANF: vhdi_dt_get_type('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_dt_get_vhdl_integer_range_info('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_dt_get_vhdl_integer_range_info')
+ANF: vhdi_def_traverse_module('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_set_int_subtype('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_set_int_subtype')
+ANF: vhdi_set_fixed_point('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_set_fixed_point')
+ANF: vhdi_get_fsdb_option('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+VCS compile option:
+ option[0]: /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida
+ option[1]: -sml=verdi
+ option[2]: +UVM_VERDI_TRACE=UVM_AWARE
+ option[3]: +fsdb+gate=off
+ option[4]: -ucli2Proc
+ option[5]: -ucli
+ option[6]: -l
+ option[7]: /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/verdiLog/sim.log
+ option[8]: /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/bin/vcs1
+ option[9]: -Mcc=gcc
+ option[10]: -Mcplusplus=g++
+ option[11]: -Masflags=
+ option[12]: -Mcfl= -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -DVCS -O -I/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/include 
+ option[13]: -Mxllcflags=
+ option[14]: -Mxcflags= -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -I/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/include
+ option[15]: -Mldflags= -rdynamic 
+ option[16]: -Mout=salida
+ option[17]: -Mamsrun=
+ option[18]: -Mvcsaceobjs=
+ option[19]: -Mobjects= /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/lib/libvirsim.so /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/lib/liberrorinf.so /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/lib/libsnpsmalloc.so /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/lib/libvfs.so /mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/share/PLI/VCS/linux64/pli.a 
+ option[20]: -Mexternalobj=
+ option[21]: -Msaverestoreobj=/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/lib/vcs_save_restore_new.o
+ option[22]: -Mcrt0=
+ option[23]: -Mcrtn=
+ option[24]: -Mcsrc=/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/dpi/uvm_dpi.cc 
+ option[25]: -Mupdate
+ option[26]: -Msyslibs=-ldl -lm 
+ option[27]: +define+UVM_VCS_RECORD
+ option[28]: +incdir+/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/vcs
+ option[29]: /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/uvm_pkg.sv
+ option[30]: /mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv
+ option[31]: -kdb
+ option[32]: -Xufe=2steps
+ option[33]: -ova_cov
+ option[34]: -cm
+ option[35]: line+cond+fsm+tgl+assert+branch+property_path
+ option[36]: -ntb_opts
+ option[37]: uvm-1.2
+ option[38]: +incdir+/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.2/
+ option[39]: -cm_report
+ option[40]: unencrypted_hierarchies+svpackages+noinitial
+ option[41]: -lca
+ option[42]: -debug_access+all+bc
+ option[43]: +vpi
+ option[44]: +vcsd
+ option[45]: +memcbk
+ option[46]: +itf+/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2/linux64/lib/vcsdp.tab
+ option[47]: -debug_region+cell
+ option[48]: +vcs+flush+all
+ option[49]: +warn=all
+ option[50]: -timescale=1ns/10ps
+ option[51]: -full64
+ option[52]: -P
+ option[53]: /mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/share/PLI/VCS/linux64/novas.tab
+ option[54]: -o
+ option[55]: salida
+ option[56]: 
+ option[57]: -sverilog
+ option[58]: -gen_obj
+ option[59]: +incdir+../../Verificacion_RISCV_TEC/TEC_RISCV/TOP
+ option[60]: +incdir+../../TEC_RISCV/SPI
+ option[61]: +incdir+../../TEC_RISCV/UART
+ option[62]: testbench.svh
+ option[63]: timescale=1ns/10ps
+Chronologic Simulation VCS Release U-2023.03-SP2_Full64
+Linux 4.18.0-553.5.1.el8_10.x86_64 #1 SMP Tue May 21 03:13:04 EDT 2024 x86_64
+CPU cores: 24
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8305 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		262144
+memorylocked		64 kbytes
+maxproc		191705
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+LC_ALL=C
+LD_LIBRARY_PATH=
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+SYS_INST_DIR=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2
+SSH_CONNECTION=172.21.7.108 64230 172.21.8.7 22
+XDG_MENU_PREFIX=gnome-
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+LANG=C
+HISTCONTROL=ignoredups
+DISPLAY=:28
+VNCDESKTOP=redhat003:28 (jiespinoza)
+HOSTNAME=redhat003
+VCS_STACK_EXEC=true
+OLDPWD=/home/jiespinoza/Javier
+COLORTERM=truecolor
+SNPSLMD_LICENSE_FILE=27000@172.21.9.211
+SSH_AUTH_SOCK=/tmp/ssh-eZuMKWTlfld0/agent.2532768
+which_declare=declare -f
+XDG_SESSION_ID=112
+NOVAS_SYNC_MOTIF_DISP=
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+USER=jiespinoza
+VCS_EXEC_DONE=1
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/722c8e73_e181_4fac_a78a_6cb3a4785c86
+PWD=/home/jiespinoza/Javier/TFG_SIWA_ENV/src
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+HOME=/home/jiespinoza
+SSH_AGENT_PID=2532838
+SSH_CLIENT=172.21.7.108 64230 22
+VCS_PATHMAP_PRELOAD_DONE=1
+XNLSPATH=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/etc/access/nls
+XDG_DATA_DIRS=/home/jiespinoza/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+GJS_DEBUG_OUTPUT=stderr
+SPS_XFONT_PATH=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/XFont
+LOADEDMODULES=
+SSH_TTY=/dev/pts/10
+MAIL=/var/spool/mail/jiespinoza
+LD_NOVERSION=1
+QT_PLUGIN_PATH=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/platform/LINUXAMD64/lib/Qt/plugins
+SHELL=/bin/bash
+TERM=xterm-256color
+VTE_VERSION=5204
+QT_IM_MODULE=ibus
+XMODIFIERS=@im=none
+XDG_CURRENT_DESKTOP=GNOME
+GNOME_TERMINAL_SERVICE=:1.71
+VERDI_HOME=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2
+SHLVL=4
+MANPATH=:
+SPS_FONT_PATH=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/font
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+VERDI_ORIGNAL_LD_LIBRARY_PATH=
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LOGNAME=jiespinoza
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-hp28WtQlbQ,guid=82b5c52adadb834a6331f54a66b3bdfa
+SPS_RGB_PATH=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/etc/rgb
+XDG_RUNTIME_DIR=/run/user/1181
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MALLOC_ARENA_MAX=1
+PATH=/home/jiespinoza/.local/bin:/home/jiespinoza/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin
+VCS_HOME=/mnt/vol_synopsys2023/synopsys/vcs/U-2023.03-SP2
+MODULESHOME=/usr/share/Modules
+HISTSIZE=1000
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+SYS_PROG_NAME=verdi
+NOVASHLPPATH=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/doc
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1
+}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+BASH_FUNC_ml%%=() {  module ml "$@"
+}
+NOVAS_LC_ALL=C
+SIMV_DAIDIR_PATH=/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/./salida.daidir
+NOVAS_SIGNAL_BASE_EXTRACTION=1
+SIGNAL_BASE_EXTRACTION=1
+NOVAS_VERDI_SVTB_BETA=1
+VERDI_SVTB_BETA=1
+NOVAS_VERDI_SVTB_ALPHA=1
+VERDI_SVTB_ALPHA=1
+NOVAS_VERDI_TB_HT=1
+VERDI_TB_HT=1
+NOVAS_WAVE_REDRAW_ALLVC=1
+WAVE_REDRAW_ALLVC=1
+NOVAS_TCL_LIBRARY=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/etc/access/tcl86_library
+TCL_LIBRARY=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/etc/access/tcl86_library
+XKEYSYMDB=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/etc/access/XKeysymDB2.1
+XLOCALEDIR=/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/etc/access/locale
+NOVAS_SIGNAL_BASED_BA=0
+SIGNAL_BASED_BA=0
+SNPS_SIM_DEFAULT_GUI=verdi
+FSDB_FILE=/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter_1.fsdb
+VCS_UCLI_STDIN_BLOCKING=1
+FSDB_VHDL_PROTECTED=1
+FSDB_RD_IR_ENABLE=1
+FSDB_SVA_STATUS=1
+VCS_STOP_SAFE=1
+DVE_SIM_SELECT_LOOP=on
+FLEXLM_BORROWFILE=/home/jiespinoza/.redhat003-borrow.txt
+Runtime command line arguments:
+argv[0]=/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida
+argv[1]=-sml=verdi
+argv[2]=+UVM_VERDI_TRACE=UVM_AWARE
+argv[3]=+fsdb+gate=off
+argv[4]=-ucli2Proc
+argv[5]=-ucli
+argv[6]=-l
+argv[7]=/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/verdiLog/sim.log
+282 profile - 100
+          CPU/Mem usage: 0.020 sys,  0.080 user,  367.27M mem
+283 Elapsed time:    0:00:01    Wed Aug  7 12:44:45 2024
+284 User CPU time used: 0 seconds
+285 System CPU time used: 0 seconds
+286 pliAppInit
+287 ndpGetenv(FSDB_FILE): /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter_1.fsdb
+288 ndpGetenv(FSDB_SVA_STATUS): 1
+289 ndpGetenv(FSDB_VHDL_PROTECTED): 1
+290 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+291 FSDB_GATE & FSDB_RTL is disabled.
+292 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+293 Enable Parallel Dumping.
+294 pliAppMiscSet: New Sim Round
+295 pliEntryInit
+296 LIBSSCORE=found /mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202303.so through $NOVAS_HOME setting.
+297 FSDB Dumper for VCS, Release Verdi_U-2023.03-SP2, Linux x86_64/64bit, 08/28/2023
+298 (C) 1996 - 2023 by Synopsys, Inc.
+299 sps_tcl_fsdbDumpfile_main at 0
+300 argv[0]: /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter_1.fsdb
+301 *Verdi* : Create FSDB file '/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter_1.fsdb'
+302 [spi_vcs_vd_ppi_create_root]: no upf option
+303 compile option from '/mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/salida.daidir/vcs_rebuild'.
+304   "vcs '-kdb' '-ova_cov' '-cm' 'line+cond+fsm+tgl+assert+branch+property_path' '-ntb_opts' 'uvm-1.2' '-cm_report' 'unencrypted_hierarchies+svpackages+noinitial' '-sverilog' '-lca' '-Mupdate' '-debug_all' '+vcs+flush+all' '+warn=all' '-timescale=1ns/10ps' '-full64' '-P' '/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/share/PLI/VCS/linux64/novas.tab' '/mnt/vol_synopsys2023/synopsys/verdi/U-2023.03-SP2/share/PLI/VCS/linux64/pli.a' '+incdir+../../Verificacion_RISCV_TEC/TEC_RISCV/TOP' '+incdir+../../TEC_RISCV/SPI' '+incdir+../../TEC_RISCV/UART' '-CFLAGS' '-DVCS' 'testbench.svh' '-o' 'salida' '+UVM_VERBOSITY=UVM_DEBUG' 2>&1"
+305 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+306 *Verdi* : Flush all FSDB Files at 0 ps.
+307 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+308 *Verdi* : Flush all FSDB Files at 0 ps.
+309 DVDI_is_vir_unload_enabled is enable
+310 FSDB_VCS_ENABLE_NATIVE_VC is enable
+311 sps_tcl_fsdbDumpvars_vd_main
+312 argv[0]: 1
+313 argv[1]: tb_top.dut_if
+314 argv[2]: +all
+315 argv[3]: +trace_process
+316 *Verdi* : Begin traversing the scope (tb_top.dut_if), layer (1).
+317 *Verdi* : Enable +trace_process and +all dumping.
+318 *Verdi* : End of traversing.
+319 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.100 sys,  0.360 user,  486.77M mem
+                   incr: 0.000 sys,  0.000 user,  3.67M mem
+                   accu: 0.000 sys,  0.000 user,  3.67M mem
+              accu incr: 0.000 sys,  0.000 user,  3.67M mem
+
+          Count usage: 13 var,  13 idcode,  13 callback
+                 incr: 13 var,  13 idcode,  13 callback
+                 accu: 13 var,  13 idcode,  13 callback
+            accu incr: 13 var,  13 idcode,  13 callback
+320 Elapsed time:    0:01:31    Wed Aug  7 12:46:15 2024
+321 User CPU time used: 0 seconds
+322 System CPU time used: 0 seconds
+323 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.100 sys,  0.360 user,  487.82M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
+                   accu: 0.000 sys,  0.000 user,  4.73M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
+
+          Count usage: 13 var,  13 idcode,  13 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 13 var,  13 idcode,  13 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+324 Elapsed time:    0:01:31    Wed Aug  7 12:46:15 2024
+325 User CPU time used: 0 seconds
+326 System CPU time used: 0 seconds
+327 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+328 *Verdi* : Flush all FSDB Files at 0 ps.
+329 sps_tcl_fsdbDumpflush_vd_main at 519375000 : N/A(0)
+330 *Verdi* : Flush all FSDB Files at 519,375,000 ps.
+331 End of simulation at 519375000
+332 Memory usage: 517.984 M
+333 Maximum resident set size: 188 MB
+334 Hard page faults: 14
+335 Soft page faults: 11403
+336 Elapsed time:    0:04:17    Wed Aug  7 12:49:01 2024
+337 User CPU time used: 3 seconds
+338 System CPU time used: 0 seconds
+339 Begin FSDB profile info:
+340 FSDB Writer : bc1(103886) bcn(816) mtf/stf(0/4)
+FSDB Writer elapsed time : flush(0.070998) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+341 End FSDB profile info
+342 FSDB closed. Name: /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter_1.fsdb Size: 18102
+343 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+344                      - BlockUsed:4 Acquire:0 BufferUsed:2867260
+345                      - Flush:9 Expand:0 ProducerWait:0 ConsumerWait:2
+346                      - MainProducerTime:4.080280049 TotalConsumerTime:0.017639893
+347                      - ElapsedTime:256.794057000
+348 Producer   0 profile - BlockUsed:5 Acquire:0 BufferUsed:2867260
+349 Consumer   0 profile - Affinity:-1 CPUTime:0.017639893 LifeTime:161.164537757 (0.00%)
+350                      - BlockUsed:5 Acquire:0 BufferUsed:2867260
+351 SimExit
+352 Elapsed time:    0:04:17    Wed Aug  7 12:49:01 2024
+353 User CPU time used: 3 seconds
+354 System CPU time used: 0 seconds
+355 Sim process exit
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                365 Elapsed time: 1031:28:55    Fri Aug  9 18:32:25 2024
+366 User CPU time used: 18 seconds
+367 System CPU time used: 0 seconds
+368 Sim process exit
+369 Memory usage: 518.517 M
+370 Maximum resident set size: 274 MB
+371 Hard page faults: 211
+372 Soft page faults: 11811
+373 Elapsed time: 1031:28:55    Fri Aug  9 18:32:25 2024
+374 User CPU time used: 18 seconds
+375 System CPU time used: 0 seconds
+376 Begin FSDB profile info:
+377 FSDB Writer : bc1(152836) bcn(824) mtf/stf(0/6)
+FSDB Writer elapsed time : flush(0.215718) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+378 End FSDB profile info
+379 FSDB closed. Name: /mnt/vol_NFS_rh003/estudiantes/Javier_Espinoza/TFG_SIWA_ENV/src/inter.fsdb Size: -1
+380 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+381                      - BlockUsed:7 Acquire:0 BufferUsed:4188102
+382                      - Flush:13 Expand:0 ProducerWait:0 ConsumerWait:5
+383                      - MainProducerTime:19.545862796 TotalConsumerTime:0.009336725
+384                      - ElapsedTime:3713333.490982000
+385 Producer   0 profile - BlockUsed:8 Acquire:0 BufferUsed:4188102
+386 Consumer   0 profile - Affinity:-1 CPUTime:0.009336725 LifeTime:3713281.654855670 (0.00%)
+387                      - BlockUsed:8 Acquire:0 BufferUsed:4188102
+388 SimExit

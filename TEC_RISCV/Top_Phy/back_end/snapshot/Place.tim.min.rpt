@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : timing
+        -path full_clock
+        -delay min
+        -physical
+        -derate
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -crosstalk_delta
+        -capacitance
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Tue Oct  2 12:49:06 2018
+****************************************
+
+Information: Some cells in the design are using inferred operating conditions.
+
+  Startpoint: top_riscv_soc/SPI/spi1/flag_edge_detector_reg_1_
+              (falling edge-triggered flip-flop clocked by CLK)
+  Endpoint: top_riscv_soc/SPI/spi1/flag_edge_detector_reg_0_
+            (falling edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+   ao - always_on
+
+  Point                                       Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock CLK (fall edge)                                                                                    25.000     25.000                                            
+  clock network delay (ideal)                                                                               1.000     26.000                                            
+  top_riscv_soc/SPI/spi1/flag_edge_detector_reg_1_/CN (DFFRQHDLLX0)
+                                                                   0.000     0.050     0.000                0.000     26.000 f    (NO LOCATION)                         1.80
+  top_riscv_soc/SPI/spi1/flag_edge_detector_reg_1_/Q (DFFRQHDLLX0)           0.268                          0.552     26.552 r    (NO LOCATION)                         1.80
+  top_riscv_soc/SPI/spi1/flag_edge_detector[1] (net)
+                                                3        0.015                                              0.000     26.552 r    [0.00,0.02]                           
+  top_riscv_soc/SPI/spi1/flag_edge_detector_reg_0_/D (DFFRQHDLLX0)
+                                                                   0.000     0.268     0.000                0.000     26.553 r    (NO LOCATION)                         1.80
+  data arrival time                                                                                                   26.553                                            
+
+  clock CLK (fall edge)                                                                                    25.000     25.000                                            
+  clock network delay (ideal)                                                                               1.000     26.000                                            
+  clock uncertainty                                                                                         0.100     26.100                                            
+  top_riscv_soc/SPI/spi1/flag_edge_detector_reg_0_/CN (DFFRQHDLLX0)                                         0.000     26.100 f                                          
+  library hold time                                                                                         0.129     26.229                                            
+  data required time                                                                                                  26.229                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                  26.229                                            
+  data arrival time                                                                                                  -26.553                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                          0.324                                            
+
+
+1

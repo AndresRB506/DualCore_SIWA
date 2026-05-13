@@ -1,0 +1,77 @@
+Command: vcs -Mupdate Test_mux.sv -full64 -debug_all -sverilog -l log +lint=TFIPC-L \
++lint=PCWM
+                         Chronologic VCS (TM)
+      Version M-2017.03-SP2-5_Full64 -- Mon Feb 18 09:20:20 2019
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'Test_mux.sv'
+Parsing included file '../../FIFO_Latches/fifo.sv'.
+Back to file 'Test_mux.sv'.
+Parsing included file '../../BUS/Library.sv'.
+Back to file 'Test_mux.sv'.
+Parsing included file '../Router_library.sv'.
+
+Warning-[IPDW] Identifier previously declared
+../Router_library.sv, 27
+  Second declaration for identifier 'pndng_i' ignored
+  Identifier 'pndng_i' previously declared as wire. [../Router_library.sv, 23]
+
+Back to file 'Test_mux.sv'.
+Top Level Modules:
+       fifo_ltch
+       fifo_ltch_no_rst
+       ntrpt_cam_fifo
+       mem_latch
+       bs_gnrtr
+       bs_gnrtr_n_rbtr
+       prll_rgstr
+       prll_bs_gnrtr_n_rbtr_fifo
+       bs_ntrfs_n_rbtr_fpga
+       auxiliar_flg_gnrtr
+       Or_prmtrzbl
+       router__bus_gnrtr
+       router
+TimeScale is 1 ns / 1 ns
+
+Lint-[PCWM-L] Port connection width mismatch
+../Router_library.sv, 49
+"Router_arbiter #(num_ntrfs, pck_sz) arbitro( .reset (reset),  .clk (clk),  .pndng_i (pndng_i),  .data_out_i (data_out_i),  .trn (trn),  .push_i (push_i),  .pop_i (pop_i),  .data_in_i (data_in_i));"
+  The following 3-bit expression is connected to 2-bit port "trn" of module 
+  "Router_arbiter", instance "arbitro".
+  Expression: trn
+  The expression is from module router__bus_gnrtr
+
+
+Error-[TCF-IOOO] Invalid operands of operator
+../Router_library.sv, 227
+"(pndng_i == {num_ntrfs {1'b0}})"
+  Invalid operands of operator '=='.
+
+
+Error-[PCTM] Port connection type mismatch
+../Router_library.sv, 231
+"param_mux_single_bit #($clog2(num_ntrfs)) pndng_mx( .select (trn),  .input_signal (pndng_i),  .out (pndng));"
+  The following expression is illegally connected to port "input_signal" of 
+  module "param_mux_single_bit", instance "pndng_mx". The type of the port 
+  does not match that of the port connect.
+  	Expression: wire pndng_i[(num_ntrfs - 1):0];
+  	Port      : wire [((2 ** num_slct_lns) - 1):0] input_signal;
+
+
+Warning-[SIOB] Select index out of bounds
+../../BUS/Library.sv, 1072
+"D_push[(bits - 1):(bits - 8)]"
+  The select index is out of declared bounds : [0:0].
+  In module instance : _bus_[0].ntrfs[0].prll_bus_instance 
+  _bus_[0].ntrfs[1].prll_bus_instance _bus_[0].ntrfs[2].prll_bus_instance 
+  _bus_[0].ntrfs[3].prll_bus_instance 
+  In module : prll_bs_ntrfs.
+
+2 warnings
+2 errors
+CPU time: .357 seconds to compile

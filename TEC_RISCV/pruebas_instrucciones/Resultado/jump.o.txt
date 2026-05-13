@@ -1,0 +1,19 @@
+TRAP     :illegal_instruction pc:0x10208 badaddr:0x10208
+instret  :                 2 time     :0x0000389875025735
+pc       :0x00010208 fcsr     :0x00000000
+ra       :0x00010058
+sp       :0x7fffff64 gp       :0x59ad4e3a
+tp       :0xb68e2ee0 t0       :0xcbd82646
+t1       :0x0ffd9a0a t2       :0xe12c5045
+s0       :0x8bcf49d3 s1       :0xfcda090e
+a0       :0xfa269867 a1       :0xc76466c5
+a2       :0x021aa4b6 a3       :0x411de06b
+a4       :0xd94ec9a6 a5       :0xd6ef39d6
+a6       :0xeb8072ef a7       :0x58e0e5fe
+s2       :0xec3611a4 s3       :0x78170f24
+s4       :0x9a57d043 s5       :0x81785ec7
+s6       :0xdd820d5c s7       :0xadfe6e84
+s8       :0x9dc5a61c s9       :0x655c98ca
+s10      :0xb37f6c92 s11      :0x067e86ea
+t3       :0x5e3fa739 t4       :0xfd219044
+t5       :0x4172c5c8 t6       :0x3919e5dd

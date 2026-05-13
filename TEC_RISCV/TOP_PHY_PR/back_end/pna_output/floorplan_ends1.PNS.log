@@ -1,0 +1,17 @@
+Target IR drop : 180.000 mV
+Processing net VDD_1V8 ...
+Average power dissipation in floorplan_ends1 :   150.00 mW
+Power supply voltage :     1.80 V
+Average current in floorplan_ends1 :    83.33 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in floorplan_ends1 : 15.43 mV
+Maximum current in floorplan_ends1 : 27.989 mA
+Processing net VSS ...
+Average power dissipation in floorplan_ends1 :   150.00 mW
+Power supply voltage :     1.80 V
+Average current in floorplan_ends1 :    83.33 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 5
+Maximum IR drop in floorplan_ends1 : 15.37 mV
+Maximum current in floorplan_ends1 : 29.201 mA
+Memory usage for design data :      43933.696 Kbytes
+Overall takes     0.21 seconds

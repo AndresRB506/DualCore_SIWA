@@ -1,0 +1,18 @@
+Warning: Clock network timing may not be up-to-date since only 0.000000 percentage of clock nets are routed. (TIM-233)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Tue Oct  2 12:51:12 2018
+****************************************
+
+Information: Some cells in the design are using inferred operating conditions.
+
+Information: Percent of Arnoldi-based delays =  0.00%
+No paths.
+
+1

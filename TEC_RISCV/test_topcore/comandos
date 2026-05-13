@@ -1,0 +1,4 @@
+python memory.py
+vcs -gui -sverilog -Mupdate -debug_all +vcs+flush+all +warn=all -timescale=1ns/10ps -R -full64 +incdir+../test_topcore +incdir+../TOP +incdir+../TOPCORE +incdir+../SPI +incdir+../UART topcore_tb.sv
+./simv > aux/sim.txt
+rm -rf csrc/ DVEfiles/ inter.vpd  simv simv.daidir/ swave_compile_done ucli.key  vcs.log  verilog.dump ac_check.err log

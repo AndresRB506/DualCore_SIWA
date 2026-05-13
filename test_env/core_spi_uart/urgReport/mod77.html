@@ -1,0 +1,5432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: fifo_flops_no_full</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_fifo_flops_no_full'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_fifo_flops_no_full')">fifo_flops_no_full</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 74.51</td>
+<td class="s8 cl rt"><a href="mod77.html#Line" > 88.85</a></td>
+<td class="s7 cl rt"><a href="mod77.html#Cond" > 79.17</a></td>
+<td class="s5 cl rt"><a href="mod77.html#Toggle" > 51.78</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod77.html#Branch" > 78.24</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../FIFO_Latches/fifo.sv')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../FIFO_Latches/fifo.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod77.html#inst_tag_6816"  onclick="showContent('inst_tag_6816')">topcore_tb.uut.TOP.Bus.fifo_in_uart</a></td>
+<td class="s3 cl rt"> 39.14</td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6816_Line" > 58.82</a></td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6816_Cond" > 50.00</a></td>
+<td class="s0 cl rt"><a href="mod77.html#inst_tag_6816_Toggle" >  1.07</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod77.html#inst_tag_6816_Branch" > 46.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod77.html#inst_tag_6815"  onclick="showContent('inst_tag_6815')">topcore_tb.uut.TOP.Bus.fifo_out_uart</a></td>
+<td class="s4 cl rt"> 45.03</td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6815_Line" > 58.82</a></td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6815_Cond" > 50.00</a></td>
+<td class="s2 cl rt"><a href="mod77.html#inst_tag_6815_Toggle" > 24.64</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod77.html#inst_tag_6815_Branch" > 46.67</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod77.html#inst_tag_6812"  onclick="showContent('inst_tag_6812')">topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></td>
+<td class="s6 cl rt"> 63.49</td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6812_Line" > 89.47</a></td>
+<td class="s7 cl rt"><a href="mod77.html#inst_tag_6812_Cond" > 75.00</a></td>
+<td class="s1 cl rt"><a href="mod77.html#inst_tag_6812_Toggle" > 13.03</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod77.html#inst_tag_6812_Branch" > 76.47</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod77.html#inst_tag_6813"  onclick="showContent('inst_tag_6813')">topcore_tb.uut.TOP.Bus.fifo_out_spi</a></td>
+<td class="s6 cl rt"> 65.66</td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6813_Line" > 88.24</a></td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6813_Cond" > 83.33</a></td>
+<td class="s1 cl rt"><a href="mod77.html#inst_tag_6813_Toggle" > 11.07</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6813_Branch" > 80.00</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod77.html#inst_tag_6811"  onclick="showContent('inst_tag_6811')">topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></td>
+<td class="s7 cl rt"> 72.82</td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6811_Line" > 89.47</a></td>
+<td class="s7 cl rt"><a href="mod77.html#inst_tag_6811_Cond" > 75.00</a></td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6811_Toggle" > 50.35</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod77.html#inst_tag_6811_Branch" > 76.47</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod77.html#inst_tag_6814"  onclick="showContent('inst_tag_6814')">topcore_tb.uut.TOP.Bus.fifo_in_spi</a></td>
+<td class="s7 cl rt"> 75.66</td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6814_Line" > 88.24</a></td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6814_Cond" > 83.33</a></td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6814_Toggle" > 51.07</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6814_Branch" > 80.00</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='inst_tag_6816'>
+<hr>
+<a name="inst_tag_6816"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy9.html#tag_urg_inst_6816" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s3 cl rt"> 39.14</td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6816_Line" > 58.82</a></td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6816_Cond" > 50.00</a></td>
+<td class="s0 cl rt"><a href="mod77.html#inst_tag_6816_Toggle" >  1.07</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod77.html#inst_tag_6816_Branch" > 46.67</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s4 cl rt"> 43.37</td>
+<td class="s6 cl rt"> 66.34</td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="s0 cl rt">  7.31</td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"> 49.82</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4275" id="tag_urg_inst_4275">_dp_[0]._dp2_.D_reg</a></td>
+<td class="s4 cl rt"> 41.70</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  8.42</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4276" id="tag_urg_inst_4276">_dp_[1]._dp3_.D_reg</a></td>
+<td class="s4 cl rt"> 41.70</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  8.42</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_6815'>
+<hr>
+<a name="inst_tag_6815"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy9.html#tag_urg_inst_6815" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s4 cl rt"> 45.03</td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6815_Line" > 58.82</a></td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6815_Cond" > 50.00</a></td>
+<td class="s2 cl rt"><a href="mod77.html#inst_tag_6815_Toggle" > 24.64</a></td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"><a href="mod77.html#inst_tag_6815_Branch" > 46.67</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s4 cl rt"> 46.04</td>
+<td class="s6 cl rt"> 66.34</td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="s1 cl rt"> 18.02</td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"> 49.82</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4273" id="tag_urg_inst_4273">_dp_[0]._dp2_.D_reg</a></td>
+<td class="s4 cl rt"> 47.31</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 25.26</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4274" id="tag_urg_inst_4274">_dp_[1]._dp3_.D_reg</a></td>
+<td class="s4 cl rt"> 41.70</td>
+<td class="s6 cl rt"> 66.67</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  8.42</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_6812'>
+<hr>
+<a name="inst_tag_6812"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy8.html#tag_urg_inst_6812" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 63.49</td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6812_Line" > 89.47</a></td>
+<td class="s7 cl rt"><a href="mod77.html#inst_tag_6812_Cond" > 75.00</a></td>
+<td class="s1 cl rt"><a href="mod77.html#inst_tag_6812_Toggle" > 13.03</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod77.html#inst_tag_6812_Branch" > 76.47</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 75.05</td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s7 cl rt"> 75.00</td>
+<td class="s2 cl rt"> 26.52</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4266" id="tag_urg_inst_4266">_dp_[0]._dp2_.D_reg</a></td>
+<td class="s7 cl rt"> 76.62</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 29.85</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4267" id="tag_urg_inst_4267">_dp_[1]._dp3_.D_reg</a></td>
+<td class="s7 cl rt"> 75.77</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 27.30</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4268" id="tag_urg_inst_4268">_dp_[2]._dp3_.D_reg</a></td>
+<td class="s7 cl rt"> 75.77</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 27.30</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_6813'>
+<hr>
+<a name="inst_tag_6813"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy9.html#tag_urg_inst_6813" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 65.66</td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6813_Line" > 88.24</a></td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6813_Cond" > 83.33</a></td>
+<td class="s1 cl rt"><a href="mod77.html#inst_tag_6813_Toggle" > 11.07</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6813_Branch" > 80.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 76.76</td>
+<td class="s9 cl rt"> 99.51</td>
+<td class="s8 cl rt"> 83.33</td>
+<td class="s2 cl rt"> 25.27</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 98.91</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4269" id="tag_urg_inst_4269">_dp_[0]._dp2_.D_reg</a></td>
+<td class="s7 cl rt"> 76.11</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 28.32</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4270" id="tag_urg_inst_4270">_dp_[1]._dp3_.D_reg</a></td>
+<td class="s7 cl rt"> 75.77</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 27.30</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_6811'>
+<hr>
+<a name="inst_tag_6811"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy7.html#tag_urg_inst_6811" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 72.82</td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6811_Line" > 89.47</a></td>
+<td class="s7 cl rt"><a href="mod77.html#inst_tag_6811_Cond" > 75.00</a></td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6811_Toggle" > 50.35</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod77.html#inst_tag_6811_Branch" > 76.47</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s8 cl rt"> 81.73</td>
+<td class="s9 cl rt"> 99.67</td>
+<td class="s7 cl rt"> 75.00</td>
+<td class="s5 cl rt"> 53.22</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 99.02</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4263" id="tag_urg_inst_4263">_dp_[0]._dp2_.D_reg</a></td>
+<td class="s8 cl rt"> 85.71</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 57.14</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4264" id="tag_urg_inst_4264">_dp_[1]._dp3_.D_reg</a></td>
+<td class="s8 cl rt"> 84.52</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 53.57</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4265" id="tag_urg_inst_4265">_dp_[2]._dp3_.D_reg</a></td>
+<td class="s8 cl rt"> 83.33</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_6814'>
+<hr>
+<a name="inst_tag_6814"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy9.html#tag_urg_inst_6814" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 75.66</td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6814_Line" > 88.24</a></td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6814_Cond" > 83.33</a></td>
+<td class="s5 cl rt"><a href="mod77.html#inst_tag_6814_Toggle" > 51.07</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod77.html#inst_tag_6814_Branch" > 80.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s8 cl rt"> 84.11</td>
+<td class="s9 cl rt"> 99.51</td>
+<td class="s8 cl rt"> 83.33</td>
+<td class="s5 cl rt"> 54.71</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 98.91</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 26.30</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod15.html#inst_tag_773" >Bus</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4271" id="tag_urg_inst_4271">_dp_[0]._dp2_.D_reg</a></td>
+<td class="s8 cl rt"> 85.71</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 57.14</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod50.html#inst_tag_4272" id="tag_urg_inst_4272">_dp_[1]._dp3_.D_reg</a></td>
+<td class="s8 cl rt"> 84.52</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 53.57</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_fifo_flops_no_full'>
+<a name="Line"></a>
+Line Coverage for Module : <a name="1975814980"></a>
+<a href="mod77.html" >fifo_flops_no_full ( parameter depth=3,bits=65 ) </a><br clear=all>
+Line Coverage for Module self-instances : 
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td></tr><tr>
+<td class="s7 cl rt"> 72.82</td>
+<td class="s8 cl rt"> 89.47</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6811_Line" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td></tr><tr>
+<td class="s6 cl rt"> 63.49</td>
+<td class="s8 cl rt"> 89.47</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6812_Line" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></span></div>
+<br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">TOTAL</td><td></td><td>19</td><td>17</td><td>89.47</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>263</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>277</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>283</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>288</td><td>10</td><td>8</td><td>80.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>309</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+262                              always@(*)begin
+263        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+264                              end    
+265                            end else begin: _dp3_
+266                              prll_d_reg #(bits) D_reg(.clk(clk_gen),.reset(rst),.D_in(q[i-1]),.D_out(q[i]));
+267                              always@(*)begin
+268        2/2                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+269                              end    
+270                            end
+271                         end
+272                       endgenerate
+273                     
+274                       generate
+275                       for(i=0;i&lt;depth-2;i=i+1)begin:_nu_
+276                         always@(*)begin
+277        1/1                aux_mux_or[i]=aux_mux[i] | aux_mux_or[i+1];
+278                         end
+279                       end
+280                       endgenerate
+281                     
+282                       always@(*)begin
+283        1/1              aux_mux_or[depth-2] = aux_mux [depth-1]|aux_mux[depth-2];
+284        1/1              Dout=aux_mux_or[0];  
+285                       end
+286                     
+287                       always@(*)begin
+288        1/1              case({push,pop})
+289        1/1                2'b00: nxt_count &lt;= count;
+290                           2'b01: begin
+291        1/1                  if(count == 0) begin
+292        1/1                    nxt_count &lt;= 0;
+293                             end else begin
+294        1/1                    nxt_count &lt;=count - 1;
+295                             end
+296                           end
+297                           2'b10:begin
+298        1/1                   if(count == depth)begin
+299        <font color = "red">0/1     ==>             nxt_count &lt;= count;</font>
+300                              end else begin
+301        1/1                     nxt_count &lt;= count+1;
+302                             end
+303                           end
+304        <font color = "red">0/1     ==>        2'b11: nxt_count &lt;= count;</font>
+                        MISSING_DEFAULT
+305                         endcase
+306        1/1              pndng &lt;= (count==0)?{1'b0}:{1'b1};
+307                     end
+308                       always@(posedge clk or posedge rst)begin
+309        1/1              if(rst) begin
+310        1/1                count = 0;
+311                         end else begin
+312        1/1                count = nxt_count;
+</pre>
+<hr>
+<a name="Line"></a>
+Line Coverage for Module : <a name="686348317"></a>
+<a href="mod77.html" >fifo_flops_no_full ( parameter depth=2,bits=65 ) </a><br clear=all>
+Line Coverage for Module self-instances : 
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td></tr><tr>
+<td class="s6 cl rt"> 65.66</td>
+<td class="s8 cl rt"> 88.24</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6813_Line" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td></tr><tr>
+<td class="s7 cl rt"> 75.66</td>
+<td class="s8 cl rt"> 88.24</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6814_Line" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td></tr><tr>
+<td class="s4 cl rt"> 45.03</td>
+<td class="s5 cl rt"> 58.82</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6815_Line" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td></tr><tr>
+<td class="s3 cl rt"> 39.14</td>
+<td class="s5 cl rt"> 58.82</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6816_Line" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></span></div>
+<br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">TOTAL</td><td></td><td>17</td><td>15</td><td>88.24</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>263</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>283</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>288</td><td>10</td><td>8</td><td>80.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>309</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+262                              always@(*)begin
+263        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+264                              end    
+265                            end else begin: _dp3_
+266                              prll_d_reg #(bits) D_reg(.clk(clk_gen),.reset(rst),.D_in(q[i-1]),.D_out(q[i]));
+267                              always@(*)begin
+268        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+269                              end    
+270                            end
+271                         end
+272                       endgenerate
+273                     
+274                       generate
+275                       for(i=0;i&lt;depth-2;i=i+1)begin:_nu_
+276                         always@(*)begin
+277                           aux_mux_or[i]=aux_mux[i] | aux_mux_or[i+1];
+278                         end
+279                       end
+280                       endgenerate
+281                     
+282                       always@(*)begin
+283        1/1              aux_mux_or[depth-2] = aux_mux [depth-1]|aux_mux[depth-2];
+284        1/1              Dout=aux_mux_or[0];  
+285                       end
+286                     
+287                       always@(*)begin
+288        1/1              case({push,pop})
+289        1/1                2'b00: nxt_count &lt;= count;
+290                           2'b01: begin
+291        1/1                  if(count == 0) begin
+292        1/1                    nxt_count &lt;= 0;
+293                             end else begin
+294        1/1                    nxt_count &lt;=count - 1;
+295                             end
+296                           end
+297                           2'b10:begin
+298        1/1                   if(count == depth)begin
+299        <font color = "red">0/1     ==>             nxt_count &lt;= count;</font>
+300                              end else begin
+301        1/1                     nxt_count &lt;= count+1;
+302                             end
+303                           end
+304        <font color = "red">0/1     ==>        2'b11: nxt_count &lt;= count;</font>
+                        MISSING_DEFAULT
+305                         endcase
+306        1/1              pndng &lt;= (count==0)?{1'b0}:{1'b1};
+307                     end
+308                       always@(posedge clk or posedge rst)begin
+309        1/1              if(rst) begin
+310        1/1                count = 0;
+311                         end else begin
+312        1/1                count = nxt_count;
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a name="1975814980"></a>
+<a href="mod77.html" >fifo_flops_no_full ( parameter depth=3,bits=65 ) </a><br clear=all>
+Cond Coverage for Module self-instances : 
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>COND</td></tr><tr>
+<td class="s7 cl rt"> 72.82</td>
+<td class="s7 cl rt"> 75.00</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6811_Cond" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>COND</td></tr><tr>
+<td class="s6 cl rt"> 63.49</td>
+<td class="s7 cl rt"> 75.00</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6812_Cond" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></span></div>
+<br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s7"><td class="lf">Conditions</td><td>8</td><td>6</td><td>75.00</td></tr>
+<tr class="s7"><td class="lf">Logical</td><td>8</td><td>6</td><td>75.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION ((count == (0 + 1)) ? q[0] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (1 + 1)) ? q[1] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (2 + 1)) ? q[2] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       306
+ EXPRESSION ((count == 3'b0) ? ({1'b0}) : ({1'b1}))
+             -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a name="686348317"></a>
+<a href="mod77.html" >fifo_flops_no_full ( parameter depth=2,bits=65 ) </a><br clear=all>
+Cond Coverage for Module self-instances : 
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>COND</td></tr><tr>
+<td class="s6 cl rt"> 65.66</td>
+<td class="s8 cl rt"> 83.33</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6813_Cond" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>COND</td></tr><tr>
+<td class="s7 cl rt"> 75.66</td>
+<td class="s8 cl rt"> 83.33</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6814_Cond" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>COND</td></tr><tr>
+<td class="s4 cl rt"> 45.03</td>
+<td class="s5 cl rt"> 50.00</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6815_Cond" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>COND</td></tr><tr>
+<td class="s3 cl rt"> 39.14</td>
+<td class="s5 cl rt"> 50.00</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6816_Cond" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></span></div>
+<br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">Conditions</td><td>6</td><td>5</td><td>83.33</td></tr>
+<tr class="s8"><td class="lf">Logical</td><td>6</td><td>5</td><td>83.33</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION ((count == (0 + 1)) ? q[0] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (1 + 1)) ? q[1] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       306
+ EXPRESSION ((count == 2'b0) ? ({1'b0}) : ({1'b1}))
+             -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a name="1975814980"></a>
+<a href="mod77.html" >fifo_flops_no_full ( parameter depth=3,bits=65 ) </a><br clear=all>
+Toggle Coverage for Module self-instances : 
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>TOGGLE</td></tr><tr>
+<td class="s7 cl rt"> 72.82</td>
+<td class="s5 cl rt"> 50.35</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6811_Toggle" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>TOGGLE</td></tr><tr>
+<td class="s6 cl rt"> 63.49</td>
+<td class="s1 cl rt"> 13.03</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6812_Toggle" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></span></div>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Totals</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>Total Bits</td>
+<td class="rt">284</td>
+<td class="rt">145</td>
+<td class="rt">51.06 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">142</td>
+<td class="rt">72</td>
+<td class="rt">50.70 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">142</td>
+<td class="rt">73</td>
+<td class="rt">51.41 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">4</td>
+<td class="rt">57.14 </td>
+</tr><tr class="s5">
+<td>Port Bits</td>
+<td class="rt">270</td>
+<td class="rt">139</td>
+<td class="rt">51.48 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">135</td>
+<td class="rt">69</td>
+<td class="rt">51.11 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">135</td>
+<td class="rt">70</td>
+<td class="rt">51.85 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">1</td>
+<td class="rt">33.33 </td>
+</tr><tr class="s4">
+<td>Signal Bits</td>
+<td class="rt">14</td>
+<td class="rt">6</td>
+<td class="rt">42.86 </td>
+</tr><tr class="s4">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">7</td>
+<td class="rt">3</td>
+<td class="rt">42.86 </td>
+</tr><tr class="s4">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">7</td>
+<td class="rt">3</td>
+<td class="rt">42.86 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>Din[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[64:61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Dout[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>count[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>nxt_count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>nxt_count[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_gen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a name="686348317"></a>
+<a href="mod77.html" >fifo_flops_no_full ( parameter depth=2,bits=65 ) </a><br clear=all>
+Toggle Coverage for Module self-instances : 
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>TOGGLE</td></tr><tr>
+<td class="s6 cl rt"> 65.66</td>
+<td class="s1 cl rt"> 11.07</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6813_Toggle" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>TOGGLE</td></tr><tr>
+<td class="s7 cl rt"> 75.66</td>
+<td class="s5 cl rt"> 51.07</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6814_Toggle" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>TOGGLE</td></tr><tr>
+<td class="s4 cl rt"> 45.03</td>
+<td class="s2 cl rt"> 24.64</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6815_Toggle" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>TOGGLE</td></tr><tr>
+<td class="s3 cl rt"> 39.14</td>
+<td class="s0 cl rt">  1.07</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6816_Toggle" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></span></div>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Totals</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>Total Bits</td>
+<td class="rt">280</td>
+<td class="rt">147</td>
+<td class="rt">52.50 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">140</td>
+<td class="rt">73</td>
+<td class="rt">52.14 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">140</td>
+<td class="rt">74</td>
+<td class="rt">52.86 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">4</td>
+<td class="rt">57.14 </td>
+</tr><tr class="s5">
+<td>Port Bits</td>
+<td class="rt">270</td>
+<td class="rt">141</td>
+<td class="rt">52.22 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">135</td>
+<td class="rt">70</td>
+<td class="rt">51.85 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">135</td>
+<td class="rt">71</td>
+<td class="rt">52.59 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">1</td>
+<td class="rt">33.33 </td>
+</tr><tr class="s6">
+<td>Signal Bits</td>
+<td class="rt">10</td>
+<td class="rt">6</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>Din[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Dout[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>count[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>nxt_count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>nxt_count[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_gen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a name="1975814980"></a>
+<a href="mod77.html" >fifo_flops_no_full ( parameter depth=3,bits=65 ) </a><br clear=all>
+Branch Coverage for Module self-instances : 
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 72.82</td>
+<td class="s7 cl rt"> 76.47</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6811_Branch" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 63.49</td>
+<td class="s7 cl rt"> 76.47</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6812_Branch" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></span></div>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Branches</td>
+<td></td>
+<td class="rt">17</td>
+<td class="rt">13</td>
+<td class="rt">76.47 </td>
+</tr><tr class="s7">
+<td>CASE</td>
+<td class="rt">288</td>
+<td class="rt">7</td>
+<td class="rt">5</td>
+<td class="rt">71.43 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">306</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">309</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">263</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+288            case({push,pop})
+               <font color = "red">-1-</font>  
+289              2'b00: nxt_count <= count;
+           <font color = "green">      ==></font>
+290              2'b01: begin
+291                if(count == 0) begin
+                   <font color = "green">-2-</font>  
+292                  nxt_count <= 0;
+           <font color = "green">          ==></font>
+293                end else begin
+294                  nxt_count <=count - 1;
+           <font color = "green">          ==></font>
+295                end
+296              end
+297              2'b10:begin
+298                 if(count == depth)begin
+                    <font color = "red">-3-</font>  
+299                   nxt_count <= count;
+           <font color = "red">           ==></font>
+300                 end else begin
+301                   nxt_count <= count+1;
+           <font color = "green">           ==></font>
+302                end
+303              end
+304              2'b11: nxt_count <= count;
+           <font color = "red">      ==></font>
+                 MISSING_DEFAULT
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306            pndng <= (count==0)?{1'b0}:{1'b1};
+                                  <font color = "green">-1-</font>  
+                                  <font color = "green">==></font>  
+                                  <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+309            if(rst) begin
+               <font color = "green">-1-</font>  
+310              count = 0;
+           <font color = "green">      ==></font>
+311            end else begin
+312              count = nxt_count;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+263                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "green">-1-</font>  
+                                             <font color = "green">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             
+           <font color = "red">Warning: the following expressions can not be annotated
+</font>           <font color = "red">-1- ((count == (2 + 1))) ? ...;  
+           </font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a name="686348317"></a>
+<a href="mod77.html" >fifo_flops_no_full ( parameter depth=2,bits=65 ) </a><br clear=all>
+Branch Coverage for Module self-instances : 
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 65.66</td>
+<td class="s8 cl rt"> 80.00</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6813_Branch" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>BRANCH</td></tr><tr>
+<td class="s7 cl rt"> 75.66</td>
+<td class="s8 cl rt"> 80.00</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6814_Branch" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>BRANCH</td></tr><tr>
+<td class="s4 cl rt"> 45.03</td>
+<td class="s4 cl rt"> 46.67</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6815_Branch" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></span></div>
+<br clear=all>
+<div>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>BRANCH</td></tr><tr>
+<td class="s3 cl rt"> 39.14</td>
+<td class="s4 cl rt"> 46.67</td>
+</tr></table>
+<span class=inst><a href="mod77.html#inst_tag_6816_Branch" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></span></div>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Branches</td>
+<td></td>
+<td class="rt">15</td>
+<td class="rt">12</td>
+<td class="rt">80.00 </td>
+</tr><tr class="s7">
+<td>CASE</td>
+<td class="rt">288</td>
+<td class="rt">7</td>
+<td class="rt">5</td>
+<td class="rt">71.43 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">306</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">309</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">263</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+288            case({push,pop})
+               <font color = "red">-1-</font>  
+289              2'b00: nxt_count <= count;
+           <font color = "green">      ==></font>
+290              2'b01: begin
+291                if(count == 0) begin
+                   <font color = "green">-2-</font>  
+292                  nxt_count <= 0;
+           <font color = "green">          ==></font>
+293                end else begin
+294                  nxt_count <=count - 1;
+           <font color = "green">          ==></font>
+295                end
+296              end
+297              2'b10:begin
+298                 if(count == depth)begin
+                    <font color = "red">-3-</font>  
+299                   nxt_count <= count;
+           <font color = "red">           ==></font>
+300                 end else begin
+301                   nxt_count <= count+1;
+           <font color = "green">           ==></font>
+302                end
+303              end
+304              2'b11: nxt_count <= count;
+           <font color = "red">      ==></font>
+                 MISSING_DEFAULT
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306            pndng <= (count==0)?{1'b0}:{1'b1};
+                                  <font color = "green">-1-</font>  
+                                  <font color = "green">==></font>  
+                                  <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+309            if(rst) begin
+               <font color = "green">-1-</font>  
+310              count = 0;
+           <font color = "green">      ==></font>
+311            end else begin
+312              count = nxt_count;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+263                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "green">-1-</font>  
+                                             <font color = "green">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_6816'>
+<a name="inst_tag_6816_Line"></a>
+<b>Line Coverage for Instance : <a href="mod77.html#inst_tag_6816" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">TOTAL</td><td></td><td>17</td><td>10</td><td>58.82</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>263</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>283</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s3"><td class="lf">ALWAYS</td><td>288</td><td>10</td><td>3</td><td>30.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>309</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+262                              always@(*)begin
+263        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+264                              end    
+265                            end else begin: _dp3_
+266                              prll_d_reg #(bits) D_reg(.clk(clk_gen),.reset(rst),.D_in(q[i-1]),.D_out(q[i]));
+267                              always@(*)begin
+268        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+269                              end    
+270                            end
+271                         end
+272                       endgenerate
+273                     
+274                       generate
+275                       for(i=0;i&lt;depth-2;i=i+1)begin:_nu_
+276                         always@(*)begin
+277                           aux_mux_or[i]=aux_mux[i] | aux_mux_or[i+1];
+278                         end
+279                       end
+280                       endgenerate
+281                     
+282                       always@(*)begin
+283        1/1              aux_mux_or[depth-2] = aux_mux [depth-1]|aux_mux[depth-2];
+284        1/1              Dout=aux_mux_or[0];  
+285                       end
+286                     
+287                       always@(*)begin
+288        1/1              case({push,pop})
+289        1/1                2'b00: nxt_count &lt;= count;
+290                           2'b01: begin
+291        <font color = "red">0/1     ==>          if(count == 0) begin</font>
+292        <font color = "red">0/1     ==>            nxt_count &lt;= 0;</font>
+293                             end else begin
+294        <font color = "red">0/1     ==>            nxt_count &lt;=count - 1;</font>
+295                             end
+296                           end
+297                           2'b10:begin
+298        <font color = "red">0/1     ==>           if(count == depth)begin</font>
+299        <font color = "red">0/1     ==>             nxt_count &lt;= count;</font>
+300                              end else begin
+301        <font color = "red">0/1     ==>             nxt_count &lt;= count+1;</font>
+302                             end
+303                           end
+304        <font color = "red">0/1     ==>        2'b11: nxt_count &lt;= count;</font>
+                        MISSING_DEFAULT
+305                         endcase
+306        1/1              pndng &lt;= (count==0)?{1'b0}:{1'b1};
+307                     end
+308                       always@(posedge clk or posedge rst)begin
+309        1/1              if(rst) begin
+310        1/1                count = 0;
+311                         end else begin
+312        1/1                count = nxt_count;
+</pre>
+<hr>
+<a name="inst_tag_6816_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod77.html#inst_tag_6816" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">Conditions</td><td>6</td><td>3</td><td>50.00</td></tr>
+<tr class="s5"><td class="lf">Logical</td><td>6</td><td>3</td><td>50.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION ((count == (0 + 1)) ? q[0] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (1 + 1)) ? q[1] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       306
+ EXPRESSION ((count == 2'b0) ? ({1'b0}) : ({1'b1}))
+             -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_6816_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod77.html#inst_tag_6816" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s1">
+<td>Totals</td>
+<td class="rt">10</td>
+<td class="rt">1</td>
+<td class="rt">10.00 </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">280</td>
+<td class="rt">3</td>
+<td class="rt">1.07  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">140</td>
+<td class="rt">1</td>
+<td class="rt">0.71  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">140</td>
+<td class="rt">2</td>
+<td class="rt">1.43  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s1">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">1</td>
+<td class="rt">14.29 </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">270</td>
+<td class="rt">3</td>
+<td class="rt">1.11  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">135</td>
+<td class="rt">1</td>
+<td class="rt">0.74  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">135</td>
+<td class="rt">2</td>
+<td class="rt">1.48  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">5</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">5</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>Din[64:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Dout[64:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>count[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>nxt_count[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_gen</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_6816_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod77.html#inst_tag_6816" >topcore_tb.uut.TOP.Bus.fifo_in_uart</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s4">
+<td>Branches</td>
+<td></td>
+<td class="rt">15</td>
+<td class="rt">7</td>
+<td class="rt">46.67 </td>
+</tr><tr class="s2">
+<td>CASE</td>
+<td class="rt">288</td>
+<td class="rt">7</td>
+<td class="rt">2</td>
+<td class="rt">28.57 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">306</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">309</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">263</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+288            case({push,pop})
+               <font color = "red">-1-</font>  
+289              2'b00: nxt_count <= count;
+           <font color = "green">      ==></font>
+290              2'b01: begin
+291                if(count == 0) begin
+                   <font color = "red">-2-</font>  
+292                  nxt_count <= 0;
+           <font color = "red">          ==></font>
+293                end else begin
+294                  nxt_count <=count - 1;
+           <font color = "red">          ==></font>
+295                end
+296              end
+297              2'b10:begin
+298                 if(count == depth)begin
+                    <font color = "red">-3-</font>  
+299                   nxt_count <= count;
+           <font color = "red">           ==></font>
+300                 end else begin
+301                   nxt_count <= count+1;
+           <font color = "red">           ==></font>
+302                end
+303              end
+304              2'b11: nxt_count <= count;
+           <font color = "red">      ==></font>
+                 MISSING_DEFAULT
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b01 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b01 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306            pndng <= (count==0)?{1'b0}:{1'b1};
+                                  <font color = "red">-1-</font>  
+                                  <font color = "green">==></font>  
+                                  <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+309            if(rst) begin
+               <font color = "green">-1-</font>  
+310              count = 0;
+           <font color = "green">      ==></font>
+311            end else begin
+312              count = nxt_count;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+263                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_6815'>
+<a name="inst_tag_6815_Line"></a>
+<b>Line Coverage for Instance : <a href="mod77.html#inst_tag_6815" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">TOTAL</td><td></td><td>17</td><td>10</td><td>58.82</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>263</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>283</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s3"><td class="lf">ALWAYS</td><td>288</td><td>10</td><td>3</td><td>30.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>309</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+262                              always@(*)begin
+263        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+264                              end    
+265                            end else begin: _dp3_
+266                              prll_d_reg #(bits) D_reg(.clk(clk_gen),.reset(rst),.D_in(q[i-1]),.D_out(q[i]));
+267                              always@(*)begin
+268        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+269                              end    
+270                            end
+271                         end
+272                       endgenerate
+273                     
+274                       generate
+275                       for(i=0;i&lt;depth-2;i=i+1)begin:_nu_
+276                         always@(*)begin
+277                           aux_mux_or[i]=aux_mux[i] | aux_mux_or[i+1];
+278                         end
+279                       end
+280                       endgenerate
+281                     
+282                       always@(*)begin
+283        1/1              aux_mux_or[depth-2] = aux_mux [depth-1]|aux_mux[depth-2];
+284        1/1              Dout=aux_mux_or[0];  
+285                       end
+286                     
+287                       always@(*)begin
+288        1/1              case({push,pop})
+289        1/1                2'b00: nxt_count &lt;= count;
+290                           2'b01: begin
+291        <font color = "red">0/1     ==>          if(count == 0) begin</font>
+292        <font color = "red">0/1     ==>            nxt_count &lt;= 0;</font>
+293                             end else begin
+294        <font color = "red">0/1     ==>            nxt_count &lt;=count - 1;</font>
+295                             end
+296                           end
+297                           2'b10:begin
+298        <font color = "red">0/1     ==>           if(count == depth)begin</font>
+299        <font color = "red">0/1     ==>             nxt_count &lt;= count;</font>
+300                              end else begin
+301        <font color = "red">0/1     ==>             nxt_count &lt;= count+1;</font>
+302                             end
+303                           end
+304        <font color = "red">0/1     ==>        2'b11: nxt_count &lt;= count;</font>
+                        MISSING_DEFAULT
+305                         endcase
+306        1/1              pndng &lt;= (count==0)?{1'b0}:{1'b1};
+307                     end
+308                       always@(posedge clk or posedge rst)begin
+309        1/1              if(rst) begin
+310        1/1                count = 0;
+311                         end else begin
+312        1/1                count = nxt_count;
+</pre>
+<hr>
+<a name="inst_tag_6815_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod77.html#inst_tag_6815" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">Conditions</td><td>6</td><td>3</td><td>50.00</td></tr>
+<tr class="s5"><td class="lf">Logical</td><td>6</td><td>3</td><td>50.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION ((count == (0 + 1)) ? q[0] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (1 + 1)) ? q[1] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       306
+ EXPRESSION ((count == 2'b0) ? ({1'b0}) : ({1'b1}))
+             -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_6815_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod77.html#inst_tag_6815" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s1">
+<td>Totals</td>
+<td class="rt">10</td>
+<td class="rt">1</td>
+<td class="rt">10.00 </td>
+</tr><tr class="s2">
+<td>Total Bits</td>
+<td class="rt">280</td>
+<td class="rt">69</td>
+<td class="rt">24.64 </td>
+</tr><tr class="s2">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">140</td>
+<td class="rt">34</td>
+<td class="rt">24.29 </td>
+</tr><tr class="s2">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">140</td>
+<td class="rt">35</td>
+<td class="rt">25.00 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s1">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">1</td>
+<td class="rt">14.29 </td>
+</tr><tr class="s2">
+<td>Port Bits</td>
+<td class="rt">270</td>
+<td class="rt">69</td>
+<td class="rt">25.56 </td>
+</tr><tr class="s2">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">135</td>
+<td class="rt">34</td>
+<td class="rt">25.19 </td>
+</tr><tr class="s2">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">135</td>
+<td class="rt">35</td>
+<td class="rt">25.93 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">5</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">5</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>Din[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Dout[64:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>count[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>nxt_count[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_gen</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_6815_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod77.html#inst_tag_6815" >topcore_tb.uut.TOP.Bus.fifo_out_uart</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s4">
+<td>Branches</td>
+<td></td>
+<td class="rt">15</td>
+<td class="rt">7</td>
+<td class="rt">46.67 </td>
+</tr><tr class="s2">
+<td>CASE</td>
+<td class="rt">288</td>
+<td class="rt">7</td>
+<td class="rt">2</td>
+<td class="rt">28.57 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">306</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">309</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">263</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+288            case({push,pop})
+               <font color = "red">-1-</font>  
+289              2'b00: nxt_count <= count;
+           <font color = "green">      ==></font>
+290              2'b01: begin
+291                if(count == 0) begin
+                   <font color = "red">-2-</font>  
+292                  nxt_count <= 0;
+           <font color = "red">          ==></font>
+293                end else begin
+294                  nxt_count <=count - 1;
+           <font color = "red">          ==></font>
+295                end
+296              end
+297              2'b10:begin
+298                 if(count == depth)begin
+                    <font color = "red">-3-</font>  
+299                   nxt_count <= count;
+           <font color = "red">           ==></font>
+300                 end else begin
+301                   nxt_count <= count+1;
+           <font color = "red">           ==></font>
+302                end
+303              end
+304              2'b11: nxt_count <= count;
+           <font color = "red">      ==></font>
+                 MISSING_DEFAULT
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b01 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b01 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306            pndng <= (count==0)?{1'b0}:{1'b1};
+                                  <font color = "red">-1-</font>  
+                                  <font color = "green">==></font>  
+                                  <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+309            if(rst) begin
+               <font color = "green">-1-</font>  
+310              count = 0;
+           <font color = "green">      ==></font>
+311            end else begin
+312              count = nxt_count;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+263                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_6812'>
+<a name="inst_tag_6812_Line"></a>
+<b>Line Coverage for Instance : <a href="mod77.html#inst_tag_6812" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">TOTAL</td><td></td><td>19</td><td>17</td><td>89.47</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>263</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>277</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>283</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>288</td><td>10</td><td>8</td><td>80.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>309</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+262                              always@(*)begin
+263        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+264                              end    
+265                            end else begin: _dp3_
+266                              prll_d_reg #(bits) D_reg(.clk(clk_gen),.reset(rst),.D_in(q[i-1]),.D_out(q[i]));
+267                              always@(*)begin
+268        2/2                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+269                              end    
+270                            end
+271                         end
+272                       endgenerate
+273                     
+274                       generate
+275                       for(i=0;i&lt;depth-2;i=i+1)begin:_nu_
+276                         always@(*)begin
+277        1/1                aux_mux_or[i]=aux_mux[i] | aux_mux_or[i+1];
+278                         end
+279                       end
+280                       endgenerate
+281                     
+282                       always@(*)begin
+283        1/1              aux_mux_or[depth-2] = aux_mux [depth-1]|aux_mux[depth-2];
+284        1/1              Dout=aux_mux_or[0];  
+285                       end
+286                     
+287                       always@(*)begin
+288        1/1              case({push,pop})
+289        1/1                2'b00: nxt_count &lt;= count;
+290                           2'b01: begin
+291        1/1                  if(count == 0) begin
+292        1/1                    nxt_count &lt;= 0;
+293                             end else begin
+294        1/1                    nxt_count &lt;=count - 1;
+295                             end
+296                           end
+297                           2'b10:begin
+298        1/1                   if(count == depth)begin
+299        <font color = "red">0/1     ==>             nxt_count &lt;= count;</font>
+300                              end else begin
+301        1/1                     nxt_count &lt;= count+1;
+302                             end
+303                           end
+304        <font color = "red">0/1     ==>        2'b11: nxt_count &lt;= count;</font>
+                        MISSING_DEFAULT
+305                         endcase
+306        1/1              pndng &lt;= (count==0)?{1'b0}:{1'b1};
+307                     end
+308                       always@(posedge clk or posedge rst)begin
+309        1/1              if(rst) begin
+310        1/1                count = 0;
+311                         end else begin
+312        1/1                count = nxt_count;
+</pre>
+<hr>
+<a name="inst_tag_6812_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod77.html#inst_tag_6812" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s7"><td class="lf">Conditions</td><td>8</td><td>6</td><td>75.00</td></tr>
+<tr class="s7"><td class="lf">Logical</td><td>8</td><td>6</td><td>75.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION ((count == (0 + 1)) ? q[0] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (1 + 1)) ? q[1] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (2 + 1)) ? q[2] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       306
+ EXPRESSION ((count == 3'b0) ? ({1'b0}) : ({1'b1}))
+             -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_6812_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod77.html#inst_tag_6812" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Totals</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s1">
+<td>Total Bits</td>
+<td class="rt">284</td>
+<td class="rt">37</td>
+<td class="rt">13.03 </td>
+</tr><tr class="s1">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">142</td>
+<td class="rt">17</td>
+<td class="rt">11.97 </td>
+</tr><tr class="s1">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">142</td>
+<td class="rt">20</td>
+<td class="rt">14.08 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">4</td>
+<td class="rt">57.14 </td>
+</tr><tr class="s1">
+<td>Port Bits</td>
+<td class="rt">270</td>
+<td class="rt">31</td>
+<td class="rt">11.48 </td>
+</tr><tr class="s1">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">135</td>
+<td class="rt">14</td>
+<td class="rt">10.37 </td>
+</tr><tr class="s1">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">135</td>
+<td class="rt">17</td>
+<td class="rt">12.59 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">1</td>
+<td class="rt">33.33 </td>
+</tr><tr class="s4">
+<td>Signal Bits</td>
+<td class="rt">14</td>
+<td class="rt">6</td>
+<td class="rt">42.86 </td>
+</tr><tr class="s4">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">7</td>
+<td class="rt">3</td>
+<td class="rt">42.86 </td>
+</tr><tr class="s4">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">7</td>
+<td class="rt">3</td>
+<td class="rt">42.86 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>Din[33:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[38:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[39]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[59:57]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[64:60]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Dout[56:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[59:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[61:60]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>count[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>nxt_count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>nxt_count[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_gen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_6812_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod77.html#inst_tag_6812" >topcore_tb.uut.TOP.Bus.fifo_in_mbc</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Branches</td>
+<td></td>
+<td class="rt">17</td>
+<td class="rt">13</td>
+<td class="rt">76.47 </td>
+</tr><tr class="s7">
+<td>CASE</td>
+<td class="rt">288</td>
+<td class="rt">7</td>
+<td class="rt">5</td>
+<td class="rt">71.43 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">306</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">309</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">263</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+288            case({push,pop})
+               <font color = "red">-1-</font>  
+289              2'b00: nxt_count <= count;
+           <font color = "green">      ==></font>
+290              2'b01: begin
+291                if(count == 0) begin
+                   <font color = "green">-2-</font>  
+292                  nxt_count <= 0;
+           <font color = "green">          ==></font>
+293                end else begin
+294                  nxt_count <=count - 1;
+           <font color = "green">          ==></font>
+295                end
+296              end
+297              2'b10:begin
+298                 if(count == depth)begin
+                    <font color = "red">-3-</font>  
+299                   nxt_count <= count;
+           <font color = "red">           ==></font>
+300                 end else begin
+301                   nxt_count <= count+1;
+           <font color = "green">           ==></font>
+302                end
+303              end
+304              2'b11: nxt_count <= count;
+           <font color = "red">      ==></font>
+                 MISSING_DEFAULT
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306            pndng <= (count==0)?{1'b0}:{1'b1};
+                                  <font color = "green">-1-</font>  
+                                  <font color = "green">==></font>  
+                                  <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+309            if(rst) begin
+               <font color = "green">-1-</font>  
+310              count = 0;
+           <font color = "green">      ==></font>
+311            end else begin
+312              count = nxt_count;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+263                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "green">-1-</font>  
+                                             <font color = "green">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             
+           <font color = "red">Warning: the following expressions can not be annotated
+</font>           <font color = "red">-1- ((count == (2 + 1))) ? ...;  
+           </font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_6813'>
+<a name="inst_tag_6813_Line"></a>
+<b>Line Coverage for Instance : <a href="mod77.html#inst_tag_6813" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">TOTAL</td><td></td><td>17</td><td>15</td><td>88.24</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>263</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>283</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>288</td><td>10</td><td>8</td><td>80.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>309</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+262                              always@(*)begin
+263        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+264                              end    
+265                            end else begin: _dp3_
+266                              prll_d_reg #(bits) D_reg(.clk(clk_gen),.reset(rst),.D_in(q[i-1]),.D_out(q[i]));
+267                              always@(*)begin
+268        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+269                              end    
+270                            end
+271                         end
+272                       endgenerate
+273                     
+274                       generate
+275                       for(i=0;i&lt;depth-2;i=i+1)begin:_nu_
+276                         always@(*)begin
+277                           aux_mux_or[i]=aux_mux[i] | aux_mux_or[i+1];
+278                         end
+279                       end
+280                       endgenerate
+281                     
+282                       always@(*)begin
+283        1/1              aux_mux_or[depth-2] = aux_mux [depth-1]|aux_mux[depth-2];
+284        1/1              Dout=aux_mux_or[0];  
+285                       end
+286                     
+287                       always@(*)begin
+288        1/1              case({push,pop})
+289        1/1                2'b00: nxt_count &lt;= count;
+290                           2'b01: begin
+291        1/1                  if(count == 0) begin
+292        1/1                    nxt_count &lt;= 0;
+293                             end else begin
+294        1/1                    nxt_count &lt;=count - 1;
+295                             end
+296                           end
+297                           2'b10:begin
+298        1/1                   if(count == depth)begin
+299        <font color = "red">0/1     ==>             nxt_count &lt;= count;</font>
+300                              end else begin
+301        1/1                     nxt_count &lt;= count+1;
+302                             end
+303                           end
+304        <font color = "red">0/1     ==>        2'b11: nxt_count &lt;= count;</font>
+                        MISSING_DEFAULT
+305                         endcase
+306        1/1              pndng &lt;= (count==0)?{1'b0}:{1'b1};
+307                     end
+308                       always@(posedge clk or posedge rst)begin
+309        1/1              if(rst) begin
+310        1/1                count = 0;
+311                         end else begin
+312        1/1                count = nxt_count;
+</pre>
+<hr>
+<a name="inst_tag_6813_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod77.html#inst_tag_6813" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">Conditions</td><td>6</td><td>5</td><td>83.33</td></tr>
+<tr class="s8"><td class="lf">Logical</td><td>6</td><td>5</td><td>83.33</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION ((count == (0 + 1)) ? q[0] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (1 + 1)) ? q[1] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       306
+ EXPRESSION ((count == 2'b0) ? ({1'b0}) : ({1'b1}))
+             -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_6813_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod77.html#inst_tag_6813" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Totals</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s1">
+<td>Total Bits</td>
+<td class="rt">280</td>
+<td class="rt">31</td>
+<td class="rt">11.07 </td>
+</tr><tr class="s1">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">140</td>
+<td class="rt">15</td>
+<td class="rt">10.71 </td>
+</tr><tr class="s1">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">140</td>
+<td class="rt">16</td>
+<td class="rt">11.43 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">4</td>
+<td class="rt">57.14 </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">270</td>
+<td class="rt">25</td>
+<td class="rt">9.26  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">135</td>
+<td class="rt">12</td>
+<td class="rt">8.89  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">135</td>
+<td class="rt">13</td>
+<td class="rt">9.63  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">1</td>
+<td class="rt">33.33 </td>
+</tr><tr class="s6">
+<td>Signal Bits</td>
+<td class="rt">10</td>
+<td class="rt">6</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>Din[56:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[59:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[61:60]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Dout[56:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[59:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[61:60]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[62]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[64:63]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>count[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>nxt_count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>nxt_count[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_gen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_6813_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod77.html#inst_tag_6813" >topcore_tb.uut.TOP.Bus.fifo_out_spi</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Branches</td>
+<td></td>
+<td class="rt">15</td>
+<td class="rt">12</td>
+<td class="rt">80.00 </td>
+</tr><tr class="s7">
+<td>CASE</td>
+<td class="rt">288</td>
+<td class="rt">7</td>
+<td class="rt">5</td>
+<td class="rt">71.43 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">306</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">309</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">263</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+288            case({push,pop})
+               <font color = "red">-1-</font>  
+289              2'b00: nxt_count <= count;
+           <font color = "green">      ==></font>
+290              2'b01: begin
+291                if(count == 0) begin
+                   <font color = "green">-2-</font>  
+292                  nxt_count <= 0;
+           <font color = "green">          ==></font>
+293                end else begin
+294                  nxt_count <=count - 1;
+           <font color = "green">          ==></font>
+295                end
+296              end
+297              2'b10:begin
+298                 if(count == depth)begin
+                    <font color = "red">-3-</font>  
+299                   nxt_count <= count;
+           <font color = "red">           ==></font>
+300                 end else begin
+301                   nxt_count <= count+1;
+           <font color = "green">           ==></font>
+302                end
+303              end
+304              2'b11: nxt_count <= count;
+           <font color = "red">      ==></font>
+                 MISSING_DEFAULT
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306            pndng <= (count==0)?{1'b0}:{1'b1};
+                                  <font color = "green">-1-</font>  
+                                  <font color = "green">==></font>  
+                                  <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+309            if(rst) begin
+               <font color = "green">-1-</font>  
+310              count = 0;
+           <font color = "green">      ==></font>
+311            end else begin
+312              count = nxt_count;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+263                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "green">-1-</font>  
+                                             <font color = "green">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_6811'>
+<a name="inst_tag_6811_Line"></a>
+<b>Line Coverage for Instance : <a href="mod77.html#inst_tag_6811" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">TOTAL</td><td></td><td>19</td><td>17</td><td>89.47</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>263</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>277</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>283</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>288</td><td>10</td><td>8</td><td>80.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>309</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+262                              always@(*)begin
+263        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+264                              end    
+265                            end else begin: _dp3_
+266                              prll_d_reg #(bits) D_reg(.clk(clk_gen),.reset(rst),.D_in(q[i-1]),.D_out(q[i]));
+267                              always@(*)begin
+268        2/2                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+269                              end    
+270                            end
+271                         end
+272                       endgenerate
+273                     
+274                       generate
+275                       for(i=0;i&lt;depth-2;i=i+1)begin:_nu_
+276                         always@(*)begin
+277        1/1                aux_mux_or[i]=aux_mux[i] | aux_mux_or[i+1];
+278                         end
+279                       end
+280                       endgenerate
+281                     
+282                       always@(*)begin
+283        1/1              aux_mux_or[depth-2] = aux_mux [depth-1]|aux_mux[depth-2];
+284        1/1              Dout=aux_mux_or[0];  
+285                       end
+286                     
+287                       always@(*)begin
+288        1/1              case({push,pop})
+289        1/1                2'b00: nxt_count &lt;= count;
+290                           2'b01: begin
+291        1/1                  if(count == 0) begin
+292        1/1                    nxt_count &lt;= 0;
+293                             end else begin
+294        1/1                    nxt_count &lt;=count - 1;
+295                             end
+296                           end
+297                           2'b10:begin
+298        1/1                   if(count == depth)begin
+299        <font color = "red">0/1     ==>             nxt_count &lt;= count;</font>
+300                              end else begin
+301        1/1                     nxt_count &lt;= count+1;
+302                             end
+303                           end
+304        <font color = "red">0/1     ==>        2'b11: nxt_count &lt;= count;</font>
+                        MISSING_DEFAULT
+305                         endcase
+306        1/1              pndng &lt;= (count==0)?{1'b0}:{1'b1};
+307                     end
+308                       always@(posedge clk or posedge rst)begin
+309        1/1              if(rst) begin
+310        1/1                count = 0;
+311                         end else begin
+312        1/1                count = nxt_count;
+</pre>
+<hr>
+<a name="inst_tag_6811_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod77.html#inst_tag_6811" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s7"><td class="lf">Conditions</td><td>8</td><td>6</td><td>75.00</td></tr>
+<tr class="s7"><td class="lf">Logical</td><td>8</td><td>6</td><td>75.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION ((count == (0 + 1)) ? q[0] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (1 + 1)) ? q[1] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (2 + 1)) ? q[2] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       306
+ EXPRESSION ((count == 3'b0) ? ({1'b0}) : ({1'b1}))
+             -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_6811_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod77.html#inst_tag_6811" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Totals</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>Total Bits</td>
+<td class="rt">284</td>
+<td class="rt">143</td>
+<td class="rt">50.35 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">142</td>
+<td class="rt">71</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">142</td>
+<td class="rt">72</td>
+<td class="rt">50.70 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">4</td>
+<td class="rt">57.14 </td>
+</tr><tr class="s5">
+<td>Port Bits</td>
+<td class="rt">270</td>
+<td class="rt">137</td>
+<td class="rt">50.74 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">135</td>
+<td class="rt">68</td>
+<td class="rt">50.37 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">135</td>
+<td class="rt">69</td>
+<td class="rt">51.11 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">1</td>
+<td class="rt">33.33 </td>
+</tr><tr class="s4">
+<td>Signal Bits</td>
+<td class="rt">14</td>
+<td class="rt">6</td>
+<td class="rt">42.86 </td>
+</tr><tr class="s4">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">7</td>
+<td class="rt">3</td>
+<td class="rt">42.86 </td>
+</tr><tr class="s4">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">7</td>
+<td class="rt">3</td>
+<td class="rt">42.86 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>Din[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[64:61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Dout[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[64:61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>count[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>nxt_count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>nxt_count[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_gen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_6811_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod77.html#inst_tag_6811" >topcore_tb.uut.TOP.Bus.fifo_out_mbc</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Branches</td>
+<td></td>
+<td class="rt">17</td>
+<td class="rt">13</td>
+<td class="rt">76.47 </td>
+</tr><tr class="s7">
+<td>CASE</td>
+<td class="rt">288</td>
+<td class="rt">7</td>
+<td class="rt">5</td>
+<td class="rt">71.43 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">306</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">309</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">263</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+288            case({push,pop})
+               <font color = "red">-1-</font>  
+289              2'b00: nxt_count <= count;
+           <font color = "green">      ==></font>
+290              2'b01: begin
+291                if(count == 0) begin
+                   <font color = "green">-2-</font>  
+292                  nxt_count <= 0;
+           <font color = "green">          ==></font>
+293                end else begin
+294                  nxt_count <=count - 1;
+           <font color = "green">          ==></font>
+295                end
+296              end
+297              2'b10:begin
+298                 if(count == depth)begin
+                    <font color = "red">-3-</font>  
+299                   nxt_count <= count;
+           <font color = "red">           ==></font>
+300                 end else begin
+301                   nxt_count <= count+1;
+           <font color = "green">           ==></font>
+302                end
+303              end
+304              2'b11: nxt_count <= count;
+           <font color = "red">      ==></font>
+                 MISSING_DEFAULT
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306            pndng <= (count==0)?{1'b0}:{1'b1};
+                                  <font color = "green">-1-</font>  
+                                  <font color = "green">==></font>  
+                                  <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+309            if(rst) begin
+               <font color = "green">-1-</font>  
+310              count = 0;
+           <font color = "green">      ==></font>
+311            end else begin
+312              count = nxt_count;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+263                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "green">-1-</font>  
+                                             <font color = "green">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             
+           <font color = "red">Warning: the following expressions can not be annotated
+</font>           <font color = "red">-1- ((count == (2 + 1))) ? ...;  
+           </font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_6814'>
+<a name="inst_tag_6814_Line"></a>
+<b>Line Coverage for Instance : <a href="mod77.html#inst_tag_6814" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">TOTAL</td><td></td><td>17</td><td>15</td><td>88.24</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>263</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>283</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>288</td><td>10</td><td>8</td><td>80.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>309</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+262                              always@(*)begin
+263        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+264                              end    
+265                            end else begin: _dp3_
+266                              prll_d_reg #(bits) D_reg(.clk(clk_gen),.reset(rst),.D_in(q[i-1]),.D_out(q[i]));
+267                              always@(*)begin
+268        1/1                     aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+269                              end    
+270                            end
+271                         end
+272                       endgenerate
+273                     
+274                       generate
+275                       for(i=0;i&lt;depth-2;i=i+1)begin:_nu_
+276                         always@(*)begin
+277                           aux_mux_or[i]=aux_mux[i] | aux_mux_or[i+1];
+278                         end
+279                       end
+280                       endgenerate
+281                     
+282                       always@(*)begin
+283        1/1              aux_mux_or[depth-2] = aux_mux [depth-1]|aux_mux[depth-2];
+284        1/1              Dout=aux_mux_or[0];  
+285                       end
+286                     
+287                       always@(*)begin
+288        1/1              case({push,pop})
+289        1/1                2'b00: nxt_count &lt;= count;
+290                           2'b01: begin
+291        1/1                  if(count == 0) begin
+292        1/1                    nxt_count &lt;= 0;
+293                             end else begin
+294        1/1                    nxt_count &lt;=count - 1;
+295                             end
+296                           end
+297                           2'b10:begin
+298        1/1                   if(count == depth)begin
+299        <font color = "red">0/1     ==>             nxt_count &lt;= count;</font>
+300                              end else begin
+301        1/1                     nxt_count &lt;= count+1;
+302                             end
+303                           end
+304        <font color = "red">0/1     ==>        2'b11: nxt_count &lt;= count;</font>
+                        MISSING_DEFAULT
+305                         endcase
+306        1/1              pndng &lt;= (count==0)?{1'b0}:{1'b1};
+307                     end
+308                       always@(posedge clk or posedge rst)begin
+309        1/1              if(rst) begin
+310        1/1                count = 0;
+311                         end else begin
+312        1/1                count = nxt_count;
+</pre>
+<hr>
+<a name="inst_tag_6814_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod77.html#inst_tag_6814" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">Conditions</td><td>6</td><td>5</td><td>83.33</td></tr>
+<tr class="s8"><td class="lf">Logical</td><td>6</td><td>5</td><td>83.33</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       263
+ EXPRESSION ((count == (0 + 1)) ? q[0] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       268
+ EXPRESSION ((count == (1 + 1)) ? q[1] : ({bits {1'b0}}))
+             ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       306
+ EXPRESSION ((count == 2'b0) ? ({1'b0}) : ({1'b1}))
+             -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_6814_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod77.html#inst_tag_6814" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s5">
+<td>Totals</td>
+<td class="rt">10</td>
+<td class="rt">5</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>Total Bits</td>
+<td class="rt">280</td>
+<td class="rt">143</td>
+<td class="rt">51.07 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">140</td>
+<td class="rt">71</td>
+<td class="rt">50.71 </td>
+</tr><tr class="s5">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">140</td>
+<td class="rt">72</td>
+<td class="rt">51.43 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">4</td>
+<td class="rt">57.14 </td>
+</tr><tr class="s5">
+<td>Port Bits</td>
+<td class="rt">270</td>
+<td class="rt">137</td>
+<td class="rt">50.74 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">135</td>
+<td class="rt">68</td>
+<td class="rt">50.37 </td>
+</tr><tr class="s5">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">135</td>
+<td class="rt">69</td>
+<td class="rt">51.11 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">1</td>
+<td class="rt">33.33 </td>
+</tr><tr class="s6">
+<td>Signal Bits</td>
+<td class="rt">10</td>
+<td class="rt">6</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr><tr class="s6">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">5</td>
+<td class="rt">3</td>
+<td class="rt">60.00 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>Din[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Din[64:61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>Dout[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[3:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[11:7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[14:12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[19:16]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[31:20]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[33:32]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[39:34]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[56:40]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[60:57]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>Dout[64:61]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>push</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pndng</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>count[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>nxt_count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>nxt_count[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>clk_gen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_6814_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod77.html#inst_tag_6814" >topcore_tb.uut.TOP.Bus.fifo_in_spi</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Branches</td>
+<td></td>
+<td class="rt">15</td>
+<td class="rt">12</td>
+<td class="rt">80.00 </td>
+</tr><tr class="s7">
+<td>CASE</td>
+<td class="rt">288</td>
+<td class="rt">7</td>
+<td class="rt">5</td>
+<td class="rt">71.43 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">306</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">309</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">263</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">268</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+288            case({push,pop})
+               <font color = "red">-1-</font>  
+289              2'b00: nxt_count <= count;
+           <font color = "green">      ==></font>
+290              2'b01: begin
+291                if(count == 0) begin
+                   <font color = "green">-2-</font>  
+292                  nxt_count <= 0;
+           <font color = "green">          ==></font>
+293                end else begin
+294                  nxt_count <=count - 1;
+           <font color = "green">          ==></font>
+295                end
+296              end
+297              2'b10:begin
+298                 if(count == depth)begin
+                    <font color = "red">-3-</font>  
+299                   nxt_count <= count;
+           <font color = "red">           ==></font>
+300                 end else begin
+301                   nxt_count <= count+1;
+           <font color = "green">           ==></font>
+302                end
+303              end
+304              2'b11: nxt_count <= count;
+           <font color = "red">      ==></font>
+                 MISSING_DEFAULT
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306            pndng <= (count==0)?{1'b0}:{1'b1};
+                                  <font color = "green">-1-</font>  
+                                  <font color = "green">==></font>  
+                                  <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+309            if(rst) begin
+               <font color = "green">-1-</font>  
+310              count = 0;
+           <font color = "green">      ==></font>
+311            end else begin
+312              count = nxt_count;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+263                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "green">-1-</font>  
+                                             <font color = "green">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268                   aux_mux[i]=(count==i+1)?q[i]:{bits{1'b0}};
+                                             <font color = "red">-1-</font>  
+                                             <font color = "red">==></font>  
+                                             <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_6811">
+    <li>
+      <a href="#inst_tag_6811_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_6811_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_6811_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_6811_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="inst_tag_6812">
+    <li>
+      <a href="#inst_tag_6812_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_6812_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_6812_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_6812_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="inst_tag_6813">
+    <li>
+      <a href="#inst_tag_6813_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_6813_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_6813_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_6813_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="inst_tag_6814">
+    <li>
+      <a href="#inst_tag_6814_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_6814_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_6814_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_6814_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="inst_tag_6815">
+    <li>
+      <a href="#inst_tag_6815_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_6815_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_6815_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_6815_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="inst_tag_6816">
+    <li>
+      <a href="#inst_tag_6816_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_6816_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_6816_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_6816_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_fifo_flops_no_full">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

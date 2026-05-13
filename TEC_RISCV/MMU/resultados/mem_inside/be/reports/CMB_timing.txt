@@ -1,0 +1,100 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CMB
+Version: N-2017.09-SP4
+Date   : Tue Jun 26 18:17:04 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: typ_1_80V_25C   Library: D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 25/25/25
+
+Information: Percent of Arnoldi-based delays = 20.57%
+
+  Startpoint: address[2] (input port clocked by reloj)
+  Endpoint: inst_controller/maq_core/Data_Read_core_reg_20_
+            (rising edge-triggered flip-flop clocked by reloj)
+  Path Group: reloj
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock reloj (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             3.00       3.00
+  input external delay                                    2.00       5.00 f
+  address[2] (in)                                         1.78 @     6.78 f
+  inst_controller/Address[2] (controlador_bus_sz80_Adrs_Data_sz32_Intr_D_sz72_cod_sz8_mem_adrs_sz11_bs_adrs_sz24_cant_io5_fifo_int_depth3_watch_dog_sz32_fifo_int_sz72)
+                                                          0.00       6.78 f
+  inst_controller/maq_core/Address[2] (core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11)
+                                                          0.00       6.78 f
+  inst_controller/maq_core/U270/Q (NA2I1HDLLX0)           0.87 @     7.65 f
+  inst_controller/maq_core/U271/Q (NO22HDLLX0)            0.34 &     7.99 f
+  inst_controller/maq_core/U272/Q (AO221HDLLX0)           0.54 &     8.53 f
+  inst_controller/maq_core/U273/Q (OA221HDLLX0)           0.27 &     8.80 f
+  inst_controller/maq_core/U274/Q (AO221HDLLX0)           0.57 &     9.37 f
+  inst_controller/maq_core/U275/Q (OA221HDLLX0)           0.27 &     9.64 f
+  inst_controller/maq_core/U276/Q (AO221HDLLX0)           0.56 &    10.20 f
+  inst_controller/maq_core/U277/Q (OA221HDLLX0)           0.26 &    10.46 f
+  inst_controller/maq_core/U278/Q (AO221HDLLX0)           0.57 &    11.03 f
+  inst_controller/maq_core/U279/Q (OA221HDLLX0)           0.30 &    11.32 f
+  inst_controller/maq_core/U280/Q (AO221HDLLX0)           0.60 &    11.93 f
+  inst_controller/maq_core/U281/Q (OA221HDLLX0)           0.33 &    12.25 f
+  inst_controller/maq_core/U282/Q (AO221HDLLX0)           0.63 &    12.89 f
+  inst_controller/maq_core/U283/Q (OA221HDLLX0)           0.32 &    13.21 f
+  inst_controller/maq_core/U284/Q (AO221HDLLX0)           0.61 &    13.82 f
+  inst_controller/maq_core/U285/Q (OA221HDLLX0)           0.37 &    14.18 f
+  inst_controller/maq_core/U286/Q (AO221HDLLX0)           0.77 &    14.95 f
+  inst_controller/maq_core/U287/Q (OA221HDLLX0)           0.45 &    15.40 f
+  inst_controller/maq_core/U288/Q (AO221HDLLX0)           0.73 &    16.13 f
+  inst_controller/maq_core/U289/Q (OA221HDLLX0)           0.34 &    16.47 f
+  inst_controller/maq_core/U290/Q (AO221HDLLX0)           1.48 &    17.95 f
+  inst_controller/maq_core/U291/Q (OA221HDLLX0)           0.61 &    18.55 f
+  inst_controller/maq_core/U292/Q (AO221HDLLX0)           1.06 &    19.62 f
+  inst_controller/maq_core/U293/Q (OA221HDLLX0)           0.50 &    20.12 f
+  inst_controller/maq_core/U294/Q (AO221HDLLX0)           0.64 &    20.75 f
+  inst_controller/maq_core/U295/Q (OA221HDLLX0)           0.32 &    21.08 f
+  inst_controller/maq_core/U296/Q (AO221HDLLX0)           0.64 &    21.72 f
+  inst_controller/maq_core/U297/Q (OA221HDLLX0)           0.30 &    22.02 f
+  inst_controller/maq_core/U298/Q (AN221HDLLX0)           0.49 &    22.51 r
+  inst_controller/maq_core/U299/Q (ON22HDLLX0)            0.31 &    22.81 f
+  inst_controller/maq_core/U301/Q (ON211HDLLX0)           5.06 &    27.88 r
+  inst_controller/maq_core/U1386/Q (NO2HDLLX0)            3.04 &    30.91 f
+  inst_controller/maq_core/U1009/Q (AN222HDLLX0)          4.30 &    35.22 r
+  inst_controller/maq_core/U1008/Q (NA3HDLLX0)            2.20 &    37.41 f
+  inst_controller/maq_core/U1007/Q (NO2HDLLX0)            1.97 &    39.38 r
+  inst_controller/maq_core/U1001/Q (ON21HDLLX0)           0.56 &    39.95 f
+  inst_controller/maq_core/U929/Q (NO3HDLLX0)             0.89 &    40.83 r
+  inst_controller/maq_core/U194/Q (AN21HDLLX0)            0.24 &    41.08 f
+  inst_controller/maq_core/U199/Q (ON21HDLLX0)            1.71 &    42.79 r
+  inst_controller/maq_core/U853/Q (INHDLLX0)              1.88 &    44.66 f
+  inst_controller/maq_core/U849/Q (NO3HDLLX0)             1.71 &    46.37 r
+  inst_controller/maq_core/U24/Q (NO3I2HDLLX0)            5.04 &    51.42 r
+  inst_controller/maq_core/U744/Q (AN22HDLLX0)            1.62 &    53.03 f
+  inst_controller/maq_core/U742/Q (NA4HDLLX0)             0.94 &    53.97 r
+  inst_controller/maq_core/Data_Read_core_reg_20_/D (DFRRQHDLLX0)
+                                                          0.00 &    53.97 r
+  data arrival time                                                 53.97
+
+  clock reloj (rise edge)                                50.00      50.00
+  clock network delay (ideal)                             3.00      53.00
+  clock uncertainty                                      -0.50      52.50
+  inst_controller/maq_core/Data_Read_core_reg_20_/C (DFRRQHDLLX0)
+                                                          0.00      52.50 r
+  library setup time                                     -0.20      52.30
+  data required time                                                52.30
+  --------------------------------------------------------------------------
+  data required time                                                52.30
+  data arrival time                                                -53.97
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.68
+
+
+1

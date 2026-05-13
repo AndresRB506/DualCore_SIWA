@@ -1,0 +1,16 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   ASSERT 
+ 85.45  85.45 --     
+
+
+Total modules in report: 5
+-------------------------------------------------------------------------------
+SCORE  LINE   ASSERT NAME           
+ 23.68  23.68 --     uvm_pkg        
+ 97.33  97.33 --     ALU_2          
+ 99.27  99.27 --     Barrel_Shifter 
+100.00 100.00 --     alu_if         
+--     --     --     tbench_top     
+

@@ -1,0 +1,17 @@
+Target IR drop : 180.000 mV
+Processing net VDD_1V8 ...
+Average power dissipation in powerplan_ends1 :   150.00 mW
+Power supply voltage :     1.80 V
+Average current in powerplan_ends1 :    83.33 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 44
+Maximum IR drop in powerplan_ends1 : 11.16 mV
+Maximum current in powerplan_ends1 : 15.592 mA
+Processing net VSS ...
+Average power dissipation in powerplan_ends1 :   150.00 mW
+Power supply voltage :     1.80 V
+Average current in powerplan_ends1 :    83.33 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 54
+Maximum IR drop in powerplan_ends1 : 16.51 mV
+Maximum current in powerplan_ends1 : 16.418 mA
+Memory usage for design data :      44957.696 Kbytes
+Overall takes     0.55 seconds

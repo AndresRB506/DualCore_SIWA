@@ -1,0 +1,60 @@
+//////////////////////Metrics Report//////////////////////////
+
+---General Information---
+Program Size: 488B
+Program Size (Instruction Quantity): 122
+Total Executed Instructions: 122
+Loading Program Time: 3450300.000000ns
+Loading Program Cycle Quantity: 69009
+Execution Program Time: 109550.000000ns
+Execution Program Cycle Quantity: 2191
+
+--- CPI Measurement Results---
+Instruction | Average CPI
+   LUI      |  12.000000
+   AUIPC    |  5.000000
+   JAL      |  0.000000
+   JALR     |  0.000000
+   BEQ      |  0.000000
+   BNE      |  0.000000
+   BLT      |  0.000000
+   BGE      |  0.000000
+   BLTU     |  0.000000
+   BGEU     |  0.000000
+   LB       |  4.867925
+   LH       |  0.000000
+   LW       |  0.000000
+   LBU      |  0.000000
+   LHU      |  0.000000
+   SB       |  8.647059
+   SH       |  0.000000
+   SW       |  0.000000
+   ADDI     |  12.515152
+   SLTI     |  0.000000
+   SLTIU    |  0.000000
+   XORI     |  0.000000
+   ORI      |  0.000000
+   ANDI     |  0.000000
+   SLLI     |  0.000000
+   SRLI     |  0.000000
+   SRAI     |  0.000000
+   ADD      |  14.000000
+   SUB      |  0.000000
+   SLL      |  0.000000
+   SLT      |  0.000000
+   SLTU     |  0.000000
+   XOR      |  0.000000
+   SRL      |  0.000000
+   SRA      |  0.000000
+   OR       |  0.000000
+   AND      |  0.000000
+   FENCE    |  5.000000
+   FENCE.I  |  0.000000
+   ECALL    |  0.000000
+   EBREAK   |  0.000000
+   CSRRW    |  0.000000
+   CSRRS    |  0.000000
+   CSRRC    |  0.000000
+   CSRRWI   |  0.000000
+   CSRRSI   |  0.000000
+   CSRRCI   |  0.000000

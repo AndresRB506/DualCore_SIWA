@@ -1,0 +1,12 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/INTERCONEXIONES/BACKUP/INTERCONNECT_RISCV
+SystemC=FALSE
+UUM=FALSE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+ENV="SYNOPSYS_SIM_SETUP=/mnt/vol_NFS_Zener/WD_ESPEC/brodriguez/VLSI/design/synopsys_sim.setup" 
+TOP=bs_gnrtr bs_gnrtr_n_rbtr prll_rgstr prll_bs_gnrtr_n_rbtr_fifo bs_gnrtr_n_rbtr_fpga Sim_bs_systm 
+OPTION=-ssz -ssv -ssy -ssz -ssv -ssy -ssz -ssv -ssy 

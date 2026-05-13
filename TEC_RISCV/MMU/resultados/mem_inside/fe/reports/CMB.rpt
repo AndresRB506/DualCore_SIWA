@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : CMB
+Version: N-2017.09-SP4
+Date   : Thu Jun 21 16:58:54 2018
+****************************************
+
+
+   min_delay/hold ('reloj' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   memoria/A[0]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[1]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[2]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[3]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[4]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[5]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[6]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[7]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[8]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[9]                 4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/A[10]                4.58           4.04 r        -0.54  (VIOLATED)
+   memoria/D[0]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[1]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[2]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[3]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[4]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[5]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[6]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[7]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[8]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[9]                 4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[10]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[11]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[12]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[13]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[14]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[15]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[16]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[17]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[18]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[19]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[20]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[21]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[22]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[23]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[24]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[25]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[26]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[27]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[28]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[29]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[30]                4.23           3.85 r        -0.38  (VIOLATED)
+   memoria/D[31]                4.23           3.85 r        -0.38  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   CMB                          0.00       637370.31      -637370.31
+                                                                    (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   CMB                          0.00       89860.65       -89860.65 (VIOLATED)
+
+
+1

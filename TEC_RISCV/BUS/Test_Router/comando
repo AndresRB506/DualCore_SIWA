@@ -1,0 +1,4 @@
+source synopsys_tools.sh; 
+rm -rf csrc log simv* swave_compile_done ucli.key deleteme  DVEfiles  inter.vpd;
+//vcs -Mupdate  Test_bus.sv  -full64 -debug_all -notice -sverilog -l log +lint=TFIPC-L +lint=PCWM;
+vcs -Mupdate  Test_mesh.sv  -full64 -debug_all -notice -sverilog -l log +lint=TFIPC-L +lint=PCWM;

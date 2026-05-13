@@ -1,0 +1,86 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Wed Mar 27 16:04:06 2019
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+  Startpoint: top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q_reg
+              (positive level-sensitive latch clocked by CLK')
+  Endpoint: top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/q_reg
+            (positive level-sensitive latch clocked by CLK')
+  Path Group: CLK
+  Path Type: max
+
+  Point                                       Fanout       Cap     Trans      Incr       Path      Voltage
+  --------------------------------------------------------------------------------------------------------
+  clock CLK' (rise edge)                                                     25.00      25.00      
+  clock network delay (ideal)                                                 0.00      25.00      
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q_reg/G (DLHRQHDLLX0)
+                                                                    0.05      0.00      25.00 r    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q_reg/Q (DLHRQHDLLX0)
+                                                                    4.08      3.42      28.42 r    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q (net)
+                                                3         0.27                0.00      28.42 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/latch1/q (latch_240)
+                                                                              0.00      28.42 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/Out_latch (net)
+                                                          0.27                0.00      28.42 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_15__rf12_latch_Mie_IO/Out_latch (latch_tri_rst0_Hard_116)
+                                                                              0.00      28.42 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Reg_GPIO_en[7] (net)
+                                                          0.27                0.00      28.42 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/U68/S (MU2HDLLX0)              4.08      0.00 *    28.42 r    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/U68/Q (MU2HDLLX0)              0.16      1.10      29.52 r    1.80
+  top_riscv_soc/TOP/Reg_file/Reg_csr/wire_GPIO_latch_in[7] (net)
+                                                1         0.01                0.00      29.52 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/In (latch_tri_rst0_Hard_108)
+                                                                              0.00      29.52 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/In (net)
+                                                          0.01                0.00      29.52 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/d (latch_138)
+                                                                              0.00      29.52 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/d (net)
+                                                          0.01                0.00      29.52 r    
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/q_reg/D (DLHRQHDLLX0)
+                                                                    0.16      0.00 *    29.52 r    1.80
+  data arrival time                                                                     29.52      
+
+  clock CLK' (rise edge)                                                     25.00      25.00      
+  clock network delay (ideal)                                                 0.00      25.00      
+  clock uncertainty                                                          -0.10      24.90      
+  top_riscv_soc/TOP/Reg_file/Reg_csr/Regsitrio_GPIO_7__rf11_latch_Mie_IO/latch1/q_reg/G (DLHRQHDLLX0)
+                                                                              0.00      24.90 r    
+  time borrowed from endpoint                                                 4.62      29.52      
+  data required time                                                                    29.52      
+  --------------------------------------------------------------------------------------------------------
+  data required time                                                                    29.52      
+  data arrival time                                                                    -29.52      
+  --------------------------------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                                          0.00      
+
+  Time Borrowing Information
+  ----------------------------------------------------------------------------------
+  CLK' nominal pulse width                                                   25.00                 
+  library setup time                                                         -0.11                 
+  ----------------------------------------------------------------------------------
+  max time borrow                                                            24.89                 
+  ----------------------------------------------------------------------------------
+  actual time borrow                                                          4.62                 
+  clock uncertainty                                                          -0.10                 
+  ----------------------------------------------------------------------------------
+  time given to startpoint                                                    4.52                 
+  ----------------------------------------------------------------------------------
+
+
+1

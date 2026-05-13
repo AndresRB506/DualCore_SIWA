@@ -1,0 +1,34 @@
+Dashboard
+
+Date: Sat Nov 10 14:53:33 2018
+
+User: dpalacios
+
+Version: M-2017.03-SP2-5
+Command line: urg -full64 -format both -lca -dir simv.vdb 
+
+Number of tests: 1
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   ASSERT GROUP  
+ 99.42  98.86 --      99.99 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   ASSERT NAME       
+ 98.86  98.86 --     tbench_top 
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  LINE   ASSERT 
+ 85.45  85.45 --     
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  WEIGHT 
+ 99.99 1      
+

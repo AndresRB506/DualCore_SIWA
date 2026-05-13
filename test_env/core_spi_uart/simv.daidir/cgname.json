@@ -1,0 +1,350 @@
+{
+    "_vcs_unit__4118157499": [
+        "_vcs_unit__4118157499",
+        "cgVPB",
+        "module",
+        1
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "prll_d_reg_0000": [
+        "prll_d_reg_0000",
+        "jJa1f",
+        "module",
+        55
+    ],
+    "prll_d_reg_0001": [
+        "prll_d_reg_0001",
+        "FBWFc",
+        "module",
+        54
+    ],
+    "prll_d_ltch_no_rst_0000": [
+        "prll_d_ltch_no_rst_0000",
+        "iJpid",
+        "module",
+        53
+    ],
+    "prll_d_ltch_0000": [
+        "prll_d_ltch_0000",
+        "eh30K",
+        "module",
+        52
+    ],
+    "neg_edge": [
+        "neg_edge",
+        "k0NrH",
+        "module",
+        51
+    ],
+    "fifo_flops": [
+        "fifo_flops",
+        "PSfyd",
+        "module",
+        50
+    ],
+    "fifo_flops_no_full_0000": [
+        "fifo_flops_no_full_0000",
+        "uqp68",
+        "module",
+        45
+    ],
+    "fifo_flops_no_full_0001": [
+        "fifo_flops_no_full_0001",
+        "u2IL7",
+        "module",
+        43
+    ],
+    "fifo_ltch": [
+        "fifo_ltch",
+        "VC4mS",
+        "module",
+        42
+    ],
+    "fifo_ltch_no_rst": [
+        "fifo_ltch_no_rst",
+        "UUmPf",
+        "module",
+        41
+    ],
+    "rst_lgc": [
+        "rst_lgc",
+        "WLN4t",
+        "module",
+        40
+    ],
+    "ntrpt_cam_fifo": [
+        "ntrpt_cam_fifo",
+        "Guucm",
+        "module",
+        39
+    ],
+    "mem_latch": [
+        "mem_latch",
+        "zUIsQ",
+        "module",
+        38
+    ],
+    "tri_buf": [
+        "tri_buf",
+        "g9v9W",
+        "module",
+        37
+    ],
+    "parallel_serial": [
+        "parallel_serial",
+        "maQnz",
+        "module",
+        36
+    ],
+    "serializer_0000": [
+        "serializer_0000",
+        "yI6HV",
+        "module",
+        35
+    ],
+    "Read_st_Mchn": [
+        "Read_st_Mchn",
+        "LUjI7",
+        "module",
+        34
+    ],
+    "Write_st_Mchn": [
+        "Write_st_Mchn",
+        "atLs2",
+        "module",
+        33
+    ],
+    "bs_ntrfs": [
+        "bs_ntrfs",
+        "tSaKw",
+        "module",
+        32
+    ],
+    "Arbiter": [
+        "Arbiter",
+        "ZQjeY",
+        "module",
+        29
+    ],
+    "Arbiter_st_Mchn": [
+        "Arbiter_st_Mchn",
+        "J8u50",
+        "module",
+        28
+    ],
+    "bs_ntrfs_n_rbtr": [
+        "bs_ntrfs_n_rbtr",
+        "hSZxw",
+        "module",
+        27
+    ],
+    "prll_rgstr": [
+        "prll_rgstr",
+        "hQbYt",
+        "module",
+        26
+    ],
+    "prll_rd_st_mchn": [
+        "prll_rd_st_mchn",
+        "GDATE",
+        "module",
+        25
+    ],
+    "prll_wt_st_mchn": [
+        "prll_wt_st_mchn",
+        "bSefM",
+        "module",
+        24
+    ],
+    "prll_bs_ntrfs": [
+        "prll_bs_ntrfs",
+        "qdMtn",
+        "module",
+        23
+    ],
+    "prll_bs_ntrfs_riscv_0000": [
+        "prll_bs_ntrfs_riscv_0000",
+        "VEx0J",
+        "module",
+        22
+    ],
+    "tec_riscv_bus": [
+        "tec_riscv_bus",
+        "iVz5Y",
+        "module",
+        30
+    ],
+    "DECO_INSTR": [
+        "DECO_INSTR",
+        "DCgbR",
+        "module",
+        31
+    ],
+    "Barrel_Shifter_0000": [
+        "Barrel_Shifter_0000",
+        "ex7vW",
+        "module",
+        21
+    ],
+    "tristate_buffer": [
+        "tristate_buffer",
+        "MAbZJ",
+        "module",
+        20
+    ],
+    "csk_bloque": [
+        "csk_bloque",
+        "Eiy7n",
+        "module",
+        19
+    ],
+    "CSK_sin_mux_0000": [
+        "CSK_sin_mux_0000",
+        "UIEu2",
+        "module",
+        18
+    ],
+    "ALU": [
+        "ALU",
+        "trjvP",
+        "module",
+        17
+    ],
+    "ALU_2": [
+        "ALU_2",
+        "EyNJN",
+        "module",
+        16
+    ],
+    "tristategate": [
+        "tristategate",
+        "CVIdu",
+        "module",
+        15
+    ],
+    "tristategate_negado": [
+        "tristategate_negado",
+        "FPiqB",
+        "module",
+        14
+    ],
+    "latchtriestado": [
+        "latchtriestado",
+        "kjczG",
+        "module",
+        13
+    ],
+    "Decodificador": [
+        "Decodificador",
+        "h8nEf",
+        "module",
+        12
+    ],
+    "Decodificador_0000": [
+        "Decodificador_0000",
+        "ZR4r6",
+        "module",
+        11
+    ],
+    "Reg_32_bit_0000": [
+        "Reg_32_bit_0000",
+        "aZBi0",
+        "module",
+        10
+    ],
+    "Banco_registros_latches": [
+        "Banco_registros_latches",
+        "pGJY8",
+        "module",
+        44
+    ],
+    "mux_rd": [
+        "mux_rd",
+        "j5gQi",
+        "module",
+        46
+    ],
+    "control": [
+        "control",
+        "ai8Aa",
+        "module",
+        47
+    ],
+    "spi": [
+        "spi",
+        "jdG3K",
+        "module",
+        48
+    ],
+    "top_spi": [
+        "top_spi",
+        "ftg4g",
+        "module",
+        49
+    ],
+    "prll_d_rega_0000": [
+        "prll_d_rega_0000",
+        "z8Sfv",
+        "module",
+        9
+    ],
+    "fifo_to_uart_reg_0000": [
+        "fifo_to_uart_reg_0000",
+        "cgAbS",
+        "module",
+        8
+    ],
+    "prll_d_reg_ena_0000": [
+        "prll_d_reg_ena_0000",
+        "hkcup",
+        "module",
+        7
+    ],
+    "uart_to_fifo_reg_0000": [
+        "uart_to_fifo_reg_0000",
+        "N4Bik",
+        "module",
+        6
+    ],
+    "u_rec": [
+        "u_rec",
+        "t5uqz",
+        "module",
+        5
+    ],
+    "uart": [
+        "uart",
+        "bvImI",
+        "module",
+        3
+    ],
+    "topcore_tecriscv": [
+        "topcore_tecriscv",
+        "NCyeQ",
+        "module",
+        56
+    ],
+    "IS25WP032D": [
+        "IS25WP032D",
+        "pCYkB",
+        "module",
+        57
+    ],
+    "topcore_tb": [
+        "topcore_tb",
+        "E3ED6",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        59
+    ]
+}

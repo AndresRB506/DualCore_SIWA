@@ -1,0 +1,16 @@
+\$unit::../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../ALU/ALU_2.sv::../../Verificacion_RISCV_TEC/TEC_RISCV/TOP/../ALU/ALU_Library.sv...@531695411 02
+uvm_custom_install_recording85990
+uvm_custom_install_verdi_recording85990
+fifo_flops85990
+fifo_ltch85990
+fifo_ltch_no_rst85990
+ntrpt_cam_fifo85990
+mem_latch85990
+bs_ntrfs85990
+Arbiter85990
+bs_ntrfs_n_rbtr85990
+prll_rgstr85990
+prll_bs_ntrfs85990
+ALU85990
+tristategate_negado85990
+tb_top85990

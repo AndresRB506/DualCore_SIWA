@@ -1,0 +1,53 @@
+0000000000000000000 core-0   :00010054 (00004097) auipc       ra, pc + 16384     
+ra       :0x00014054
+sp       :0x7fffff54 gp       :0x2045cf89
+tp       :0x6df8e0a6 t0       :0xc46c9cfb
+t1       :0x83251e13 t2       :0x62044efa
+s0       :0xeae3bfb7 s1       :0xfd7cdaa7
+a0       :0xb6fa6379 a1       :0xbd3141b0
+a2       :0x0f844537 a3       :0x6017a2ca
+a4       :0x152fcf81 a5       :0x3d99ee98
+a6       :0xb4425c8e a7       :0x3da79b53
+s2       :0x248de6cb s3       :0xcc4953b8
+s4       :0x735d0d83 s5       :0x2335fabf
+s6       :0x8377ba0b s7       :0xdf66fb00
+s8       :0xe70960fc s9       :0x17252b77
+s10      :0x6ea8da29 s11      :0xd53cb04a
+t3       :0xca8b3de2 t4       :0xcfc60b24
+t5       :0xbc432762 t6       :0x47d0567a
+0000000000000000001 core-0   :00010058 (0000    ) illegal                        
+ra       :0x00014054
+sp       :0x7fffff54 gp       :0x2045cf89
+tp       :0x6df8e0a6 t0       :0xc46c9cfb
+t1       :0x83251e13 t2       :0x62044efa
+s0       :0xeae3bfb7 s1       :0xfd7cdaa7
+a0       :0xb6fa6379 a1       :0xbd3141b0
+a2       :0x0f844537 a3       :0x6017a2ca
+a4       :0x152fcf81 a5       :0x3d99ee98
+a6       :0xb4425c8e a7       :0x3da79b53
+s2       :0x248de6cb s3       :0xcc4953b8
+s4       :0x735d0d83 s5       :0x2335fabf
+s6       :0x8377ba0b s7       :0xdf66fb00
+s8       :0xe70960fc s9       :0x17252b77
+s10      :0x6ea8da29 s11      :0xd53cb04a
+t3       :0xca8b3de2 t4       :0xcfc60b24
+t5       :0xbc432762 t6       :0x47d0567a
+TRAP     :illegal_instruction pc:0x10058 badaddr:0x10058
+instret  :                 1 time     :0x000004b4bef92c46
+pc       :0x00010058 fcsr     :0x00000000
+ra       :0x00014054
+sp       :0x7fffff54 gp       :0x2045cf89
+tp       :0x6df8e0a6 t0       :0xc46c9cfb
+t1       :0x83251e13 t2       :0x62044efa
+s0       :0xeae3bfb7 s1       :0xfd7cdaa7
+a0       :0xb6fa6379 a1       :0xbd3141b0
+a2       :0x0f844537 a3       :0x6017a2ca
+a4       :0x152fcf81 a5       :0x3d99ee98
+a6       :0xb4425c8e a7       :0x3da79b53
+s2       :0x248de6cb s3       :0xcc4953b8
+s4       :0x735d0d83 s5       :0x2335fabf
+s6       :0x8377ba0b s7       :0xdf66fb00
+s8       :0xe70960fc s9       :0x17252b77
+s10      :0x6ea8da29 s11      :0xd53cb04a
+t3       :0xca8b3de2 t4       :0xcfc60b24
+t5       :0xbc432762 t6       :0x47d0567a

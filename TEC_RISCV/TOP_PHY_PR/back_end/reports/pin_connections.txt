@@ -1,0 +1,417 @@
+**************************************************
+Report  : cell_phyiscal
+        -connections
+Version : N-2017.09-SP4
+Cell Name : pad_ring_unplaced.CEL;1
+Date    : Tue Oct  9 13:13:04 2018
+
+**************************************************
+--------------------------------------------------------------------------------
+CONNECTION INFORMATION
+--------------------------------------------------------------------------------
+Connections for cell 'top_riscv_soc':
+    Input Pins          Net
+    ----------------    ------------
+    clk                 clk
+    reset               reset
+    MISO                MISO
+    RX_UART             RX_UART
+    maip                maip
+    Reg_GPIO_int[7]     Reg_GPIO_int[7]
+    Reg_GPIO_int[6]     Reg_GPIO_int[6]
+    Reg_GPIO_int[5]     Reg_GPIO_int[5]
+    Reg_GPIO_int[4]     Reg_GPIO_int[4]
+    Reg_GPIO_int[3]     Reg_GPIO_int[3]
+    Reg_GPIO_int[2]     Reg_GPIO_int[2]
+    Reg_GPIO_int[1]     Reg_GPIO_int[1]
+    Reg_GPIO_int[0]     Reg_GPIO_int[0]
+    VSS                 VSS
+    VDD_1V8             VDD_1V8
+    VDD_1V8SRAM         VDD_1V8SRAM
+
+    Output Pins         Net
+    ----------------    ------------
+    MOSI                MOSI
+    SCLK                SCLK
+    SCS                 SCS
+    TX_UART             TX_UART
+    full_range_level_shifter[7]
+                        full_range_level_shifter[7]
+    full_range_level_shifter[6]
+                        full_range_level_shifter[6]
+    full_range_level_shifter[5]
+                        full_range_level_shifter[5]
+    full_range_level_shifter[4]
+                        full_range_level_shifter[4]
+    full_range_level_shifter[3]
+                        full_range_level_shifter[3]
+    full_range_level_shifter[2]
+                        full_range_level_shifter[2]
+    full_range_level_shifter[1]
+                        full_range_level_shifter[1]
+    full_range_level_shifter[0]
+                        full_range_level_shifter[0]
+    IS_Val[31]          IS_Val[31]
+    IS_Val[30]          IS_Val[30]
+    IS_Val[29]          IS_Val[29]
+    IS_Val[28]          IS_Val[28]
+    IS_Val[27]          IS_Val[27]
+    IS_Val[26]          IS_Val[26]
+    IS_Val[25]          IS_Val[25]
+    IS_Val[24]          IS_Val[24]
+    IS_Val[23]          IS_Val[23]
+    IS_Val[22]          IS_Val[22]
+    IS_Val[21]          IS_Val[21]
+    IS_Val[20]          IS_Val[20]
+    IS_Val[19]          IS_Val[19]
+    IS_Val[18]          IS_Val[18]
+    IS_Val[17]          IS_Val[17]
+    IS_Val[16]          IS_Val[16]
+    IS_Val[15]          IS_Val[15]
+    IS_Val[14]          IS_Val[14]
+    IS_Val[13]          IS_Val[13]
+    IS_Val[12]          IS_Val[12]
+    IS_Val[11]          IS_Val[11]
+    IS_Val[10]          IS_Val[10]
+    IS_Val[9]           IS_Val[9]
+    IS_Val[8]           IS_Val[8]
+    IS_Val[7]           IS_Val[7]
+    IS_Val[6]           IS_Val[6]
+    IS_Val[5]           IS_Val[5]
+    IS_Val[4]           IS_Val[4]
+    IS_Val[3]           IS_Val[3]
+    IS_Val[2]           IS_Val[2]
+    IS_Val[1]           IS_Val[1]
+    IS_Val[0]           IS_Val[0]
+    IS_Config[31]       IS_Config[31]
+    IS_Config[30]       IS_Config[30]
+    IS_Config[29]       IS_Config[29]
+    IS_Config[28]       IS_Config[28]
+    IS_Config[27]       IS_Config[27]
+    IS_Config[26]       IS_Config[26]
+    IS_Config[25]       IS_Config[25]
+    IS_Config[24]       IS_Config[24]
+    IS_Config[23]       IS_Config[23]
+    IS_Config[22]       IS_Config[22]
+    IS_Config[21]       IS_Config[21]
+    IS_Config[20]       IS_Config[20]
+    IS_Config[19]       IS_Config[19]
+    IS_Config[18]       IS_Config[18]
+    IS_Config[17]       IS_Config[17]
+    IS_Config[16]       IS_Config[16]
+    IS_Config[15]       IS_Config[15]
+    IS_Config[14]       IS_Config[14]
+    IS_Config[13]       IS_Config[13]
+    IS_Config[12]       IS_Config[12]
+    IS_Config[11]       IS_Config[11]
+    IS_Config[10]       IS_Config[10]
+    IS_Config[9]        IS_Config[9]
+    IS_Config[8]        IS_Config[8]
+    IS_Config[7]        IS_Config[7]
+    IS_Config[6]        IS_Config[6]
+    IS_Config[5]        IS_Config[5]
+    IS_Config[4]        IS_Config[4]
+    IS_Config[3]        IS_Config[3]
+    IS_Config[2]        IS_Config[2]
+    IS_Config[1]        IS_Config[1]
+    IS_Config[0]        IS_Config[0]
+    IS_Trigger[3]       IS_Trigger[3]
+    IS_Trigger[2]       IS_Trigger[2]
+    IS_Trigger[1]       IS_Trigger[1]
+    IS_Trigger[0]       IS_Trigger[0]
+    Reg_GPIO_en[7]      Reg_GPIO_en[7]
+    Reg_GPIO_en[6]      Reg_GPIO_en[6]
+    Reg_GPIO_en[5]      Reg_GPIO_en[5]
+    Reg_GPIO_en[4]      Reg_GPIO_en[4]
+    Reg_GPIO_en[3]      Reg_GPIO_en[3]
+    Reg_GPIO_en[2]      Reg_GPIO_en[2]
+    Reg_GPIO_en[1]      Reg_GPIO_en[1]
+    Reg_GPIO_en[0]      Reg_GPIO_en[0]
+    Reg_GPIO_out[7]     Reg_GPIO_out[7]
+    Reg_GPIO_out[6]     Reg_GPIO_out[6]
+    Reg_GPIO_out[5]     Reg_GPIO_out[5]
+    Reg_GPIO_out[4]     Reg_GPIO_out[4]
+    Reg_GPIO_out[3]     Reg_GPIO_out[3]
+    Reg_GPIO_out[2]     Reg_GPIO_out[2]
+    Reg_GPIO_out[1]     Reg_GPIO_out[1]
+    Reg_GPIO_out[0]     Reg_GPIO_out[0]
+
+    PG Pins             Net
+    ----------------    ------------
+
+    Diode Pins          Net
+    ----------------    ------------
+
+--------------------------------------------------------------------------------
+CONNECTION INFORMATION
+--------------------------------------------------------------------------------
+Connections for cell 'ucu_anlg1':
+    Input Pins          Net
+    ----------------    ------------
+    clk                 clk
+    reset               reset
+    full_range_level_shifter[7]
+                        full_range_level_shifter[7]
+    full_range_level_shifter[6]
+                        full_range_level_shifter[6]
+    full_range_level_shifter[5]
+                        full_range_level_shifter[5]
+    full_range_level_shifter[4]
+                        full_range_level_shifter[4]
+    full_range_level_shifter[3]
+                        full_range_level_shifter[3]
+    full_range_level_shifter[2]
+                        full_range_level_shifter[2]
+    full_range_level_shifter[1]
+                        full_range_level_shifter[1]
+    full_range_level_shifter[0]
+                        full_range_level_shifter[0]
+    VDD_1V8             VDD_1V8
+    VSS                 VSS
+    VDD_3V3_UCU         VDD_3V3_UCU
+
+    Output Pins         Net
+    ----------------    ------------
+    IS_Val[31]          IS_Val[31]
+    IS_Val[30]          IS_Val[30]
+    IS_Val[29]          IS_Val[29]
+    IS_Val[28]          IS_Val[28]
+    IS_Val[27]          IS_Val[27]
+    IS_Val[26]          IS_Val[26]
+    IS_Val[25]          IS_Val[25]
+    IS_Val[24]          IS_Val[24]
+    IS_Val[23]          IS_Val[23]
+    IS_Val[22]          IS_Val[22]
+    IS_Val[21]          IS_Val[21]
+    IS_Val[20]          IS_Val[20]
+    IS_Val[19]          IS_Val[19]
+    IS_Val[18]          IS_Val[18]
+    IS_Val[17]          IS_Val[17]
+    IS_Val[16]          IS_Val[16]
+    IS_Val[15]          IS_Val[15]
+    IS_Val[14]          IS_Val[14]
+    IS_Val[13]          IS_Val[13]
+    IS_Val[12]          IS_Val[12]
+    IS_Val[11]          IS_Val[11]
+    IS_Val[10]          IS_Val[10]
+    IS_Val[9]           IS_Val[9]
+    IS_Val[8]           IS_Val[8]
+    IS_Val[7]           IS_Val[7]
+    IS_Val[6]           IS_Val[6]
+    IS_Val[5]           IS_Val[5]
+    IS_Val[4]           IS_Val[4]
+    IS_Val[3]           IS_Val[3]
+    IS_Val[2]           IS_Val[2]
+    IS_Val[1]           IS_Val[1]
+    IS_Val[0]           IS_Val[0]
+    IS_Config[31]       IS_Config[31]
+    IS_Config[30]       IS_Config[30]
+    IS_Config[29]       IS_Config[29]
+    IS_Config[28]       IS_Config[28]
+    IS_Config[27]       IS_Config[27]
+    IS_Config[26]       IS_Config[26]
+    IS_Config[25]       IS_Config[25]
+    IS_Config[24]       IS_Config[24]
+    IS_Config[23]       IS_Config[23]
+    IS_Config[22]       IS_Config[22]
+    IS_Config[21]       IS_Config[21]
+    IS_Config[20]       IS_Config[20]
+    IS_Config[19]       IS_Config[19]
+    IS_Config[18]       IS_Config[18]
+    IS_Config[17]       IS_Config[17]
+    IS_Config[16]       IS_Config[16]
+    IS_Config[15]       IS_Config[15]
+    IS_Config[14]       IS_Config[14]
+    IS_Config[13]       IS_Config[13]
+    IS_Config[12]       IS_Config[12]
+    IS_Config[11]       IS_Config[11]
+    IS_Config[10]       IS_Config[10]
+    IS_Config[9]        IS_Config[9]
+    IS_Config[8]        IS_Config[8]
+    IS_Config[7]        IS_Config[7]
+    IS_Config[6]        IS_Config[6]
+    IS_Config[5]        IS_Config[5]
+    IS_Config[4]        IS_Config[4]
+    IS_Config[3]        IS_Config[3]
+    IS_Config[2]        IS_Config[2]
+    IS_Config[1]        IS_Config[1]
+    IS_Config[0]        IS_Config[0]
+    IS_Trigger[3]       IS_Trigger[3]
+    IS_Trigger[2]       IS_Trigger[2]
+    IS_Trigger[1]       IS_Trigger[1]
+    IS_Trigger[0]       IS_Trigger[0]
+    clk_HV              clk_HV
+    reset_HV            reset_HV
+    full_range_level_shifter_HV[7]
+                        full_range_level_shifter_HV[7]
+    full_range_level_shifter_HV[6]
+                        full_range_level_shifter_HV[6]
+    full_range_level_shifter_HV[5]
+                        full_range_level_shifter_HV[5]
+    full_range_level_shifter_HV[4]
+                        full_range_level_shifter_HV[4]
+    full_range_level_shifter_HV[3]
+                        full_range_level_shifter_HV[3]
+    full_range_level_shifter_HV[2]
+                        full_range_level_shifter_HV[2]
+    full_range_level_shifter_HV[1]
+                        full_range_level_shifter_HV[1]
+    full_range_level_shifter_HV[0]
+                        full_range_level_shifter_HV[0]
+    IS_Val_HV[31]       IS_Val_HV[31]
+    IS_Val_HV[30]       IS_Val_HV[30]
+    IS_Val_HV[29]       IS_Val_HV[29]
+    IS_Val_HV[28]       IS_Val_HV[28]
+    IS_Val_HV[27]       IS_Val_HV[27]
+    IS_Val_HV[26]       IS_Val_HV[26]
+    IS_Val_HV[25]       IS_Val_HV[25]
+    IS_Val_HV[24]       IS_Val_HV[24]
+    IS_Val_HV[23]       IS_Val_HV[23]
+    IS_Val_HV[22]       IS_Val_HV[22]
+    IS_Val_HV[21]       IS_Val_HV[21]
+    IS_Val_HV[20]       IS_Val_HV[20]
+    IS_Val_HV[19]       IS_Val_HV[19]
+    IS_Val_HV[18]       IS_Val_HV[18]
+    IS_Val_HV[17]       IS_Val_HV[17]
+    IS_Val_HV[16]       IS_Val_HV[16]
+    IS_Val_HV[15]       IS_Val_HV[15]
+    IS_Val_HV[14]       IS_Val_HV[14]
+    IS_Val_HV[13]       IS_Val_HV[13]
+    IS_Val_HV[12]       IS_Val_HV[12]
+    IS_Val_HV[11]       IS_Val_HV[11]
+    IS_Val_HV[10]       IS_Val_HV[10]
+    IS_Val_HV[9]        IS_Val_HV[9]
+    IS_Val_HV[8]        IS_Val_HV[8]
+    IS_Val_HV[7]        IS_Val_HV[7]
+    IS_Val_HV[6]        IS_Val_HV[6]
+    IS_Val_HV[5]        IS_Val_HV[5]
+    IS_Val_HV[4]        IS_Val_HV[4]
+    IS_Val_HV[3]        IS_Val_HV[3]
+    IS_Val_HV[2]        IS_Val_HV[2]
+    IS_Val_HV[1]        IS_Val_HV[1]
+    IS_Val_HV[0]        IS_Val_HV[0]
+    IS_Config_HV[31]    IS_Config_HV[31]
+    IS_Config_HV[30]    IS_Config_HV[30]
+    IS_Config_HV[29]    IS_Config_HV[29]
+    IS_Config_HV[28]    IS_Config_HV[28]
+    IS_Config_HV[27]    IS_Config_HV[27]
+    IS_Config_HV[26]    IS_Config_HV[26]
+    IS_Config_HV[25]    IS_Config_HV[25]
+    IS_Config_HV[24]    IS_Config_HV[24]
+    IS_Config_HV[23]    IS_Config_HV[23]
+    IS_Config_HV[22]    IS_Config_HV[22]
+    IS_Config_HV[21]    IS_Config_HV[21]
+    IS_Config_HV[20]    IS_Config_HV[20]
+    IS_Config_HV[19]    IS_Config_HV[19]
+    IS_Config_HV[18]    IS_Config_HV[18]
+    IS_Config_HV[17]    IS_Config_HV[17]
+    IS_Config_HV[16]    IS_Config_HV[16]
+    IS_Config_HV[15]    IS_Config_HV[15]
+    IS_Config_HV[14]    IS_Config_HV[14]
+    IS_Config_HV[13]    IS_Config_HV[13]
+    IS_Config_HV[12]    IS_Config_HV[12]
+    IS_Config_HV[11]    IS_Config_HV[11]
+    IS_Config_HV[10]    IS_Config_HV[10]
+    IS_Config_HV[9]     IS_Config_HV[9]
+    IS_Config_HV[8]     IS_Config_HV[8]
+    IS_Config_HV[7]     IS_Config_HV[7]
+    IS_Config_HV[6]     IS_Config_HV[6]
+    IS_Config_HV[5]     IS_Config_HV[5]
+    IS_Config_HV[4]     IS_Config_HV[4]
+    IS_Config_HV[3]     IS_Config_HV[3]
+    IS_Config_HV[2]     IS_Config_HV[2]
+    IS_Config_HV[1]     IS_Config_HV[1]
+    IS_Config_HV[0]     IS_Config_HV[0]
+    IS_Trigger_HV[3]    IS_Trigger_HV[3]
+    IS_Trigger_HV[2]    IS_Trigger_HV[2]
+    IS_Trigger_HV[1]    IS_Trigger_HV[1]
+    IS_Trigger_HV[0]    IS_Trigger_HV[0]
+
+    PG Pins             Net
+    ----------------    ------------
+
+    Diode Pins          Net
+    ----------------    ------------
+
+--------------------------------------------------------------------------------
+CONNECTION INFORMATION
+--------------------------------------------------------------------------------
+Connections for cell 'pad_ring_inst':
+    Input Pins          Net
+    ----------------    ------------
+    clk_pad             clk_pad
+    reset_pad           reset_pad
+    MISO_pad            MISO_pad
+    RX_UART_pad         RX_UART_pad
+    maip_pad            maip_pad
+    MOSI_pad            MOSI_pad
+    MOSI                MOSI
+    SCLK_pad            SCLK_pad
+    SCLK                SCLK
+    SCS_pad             SCS_pad
+    SCS                 SCS
+    TX_UART_pad         TX_UART_pad
+    TX_UART             TX_UART
+    gpio_pad[7]         gpio_pad[7]
+    gpio_pad[6]         gpio_pad[6]
+    gpio_pad[5]         gpio_pad[5]
+    gpio_pad[4]         gpio_pad[4]
+    gpio_pad[3]         gpio_pad[3]
+    gpio_pad[2]         gpio_pad[2]
+    gpio_pad[1]         gpio_pad[1]
+    gpio_pad[0]         gpio_pad[0]
+    Reg_GPIO_en[7]      Reg_GPIO_en[7]
+    Reg_GPIO_en[6]      Reg_GPIO_en[6]
+    Reg_GPIO_en[5]      Reg_GPIO_en[5]
+    Reg_GPIO_en[4]      Reg_GPIO_en[4]
+    Reg_GPIO_en[3]      Reg_GPIO_en[3]
+    Reg_GPIO_en[2]      Reg_GPIO_en[2]
+    Reg_GPIO_en[1]      Reg_GPIO_en[1]
+    Reg_GPIO_en[0]      Reg_GPIO_en[0]
+    Reg_GPIO_out[7]     Reg_GPIO_out[7]
+    Reg_GPIO_out[6]     Reg_GPIO_out[6]
+    Reg_GPIO_out[5]     Reg_GPIO_out[5]
+    Reg_GPIO_out[4]     Reg_GPIO_out[4]
+    Reg_GPIO_out[3]     Reg_GPIO_out[3]
+    Reg_GPIO_out[2]     Reg_GPIO_out[2]
+    Reg_GPIO_out[1]     Reg_GPIO_out[1]
+    Reg_GPIO_out[0]     Reg_GPIO_out[0]
+    VDD_1V8_PADS        VDD_1V8_PADS
+    VSS                 VSS
+    VDD_3V3_PADS        VDD_3V3_PADS
+
+    Output Pins         Net
+    ----------------    ------------
+    clk                 clk
+    reset               reset
+    MISO                MISO
+    RX_UART             RX_UART
+    maip                maip
+    MOSI_pad            MOSI_pad
+    SCLK_pad            SCLK_pad
+    SCS_pad             SCS_pad
+    TX_UART_pad         TX_UART_pad
+    gpio_pad[7]         gpio_pad[7]
+    gpio_pad[6]         gpio_pad[6]
+    gpio_pad[5]         gpio_pad[5]
+    gpio_pad[4]         gpio_pad[4]
+    gpio_pad[3]         gpio_pad[3]
+    gpio_pad[2]         gpio_pad[2]
+    gpio_pad[1]         gpio_pad[1]
+    gpio_pad[0]         gpio_pad[0]
+    Reg_GPIO_int[7]     Reg_GPIO_int[7]
+    Reg_GPIO_int[6]     Reg_GPIO_int[6]
+    Reg_GPIO_int[5]     Reg_GPIO_int[5]
+    Reg_GPIO_int[4]     Reg_GPIO_int[4]
+    Reg_GPIO_int[3]     Reg_GPIO_int[3]
+    Reg_GPIO_int[2]     Reg_GPIO_int[2]
+    Reg_GPIO_int[1]     Reg_GPIO_int[1]
+    Reg_GPIO_int[0]     Reg_GPIO_int[0]
+
+    PG Pins             Net
+    ----------------    ------------
+
+    Diode Pins          Net
+    ----------------    ------------
+
+1

@@ -1,0 +1,473 @@
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3698 designs)            design_routed_ends.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library)
+                              /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+Information: The design has horizontal rows, and Y-symmetry has been used for sites. (MWDC-217)
+Derived Core Area : (176680 177320) (1503320 1345235) is different from CEL Core Area (176680 177320) (1503320 1342120).
+Loaded the voltage area : top_riscv_soc/PD_CORE
+Loaded the voltage area : top_riscv_soc/TOP/PD_SRAM
+Loaded the voltage area : pad_ring_inst/PD_PADS
+Floorplan loading succeeded.
+ 
+****************************************
+Report : design
+        -physical
+Design : top_riscv_tec_pads
+Version: N-2017.09-SP4
+Date   : Fri Oct 19 16:30:01 2018
+****************************************
+
+****************************** P&R Summary ********************************
+Date : Fri Oct 19 16:30:01 2018
+Machine Host Name: zener
+Working Directory: /mnt/vol_NFS_Zener/WD_ESPEC/achacon/Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end
+Library Name:      Tec_Riscv_pads.mw
+Cell Name:         design_routed_ends.CEL;1
+Design Statistics:
+    Number of Macro Cells:         1
+    Number of Module Cells:        11720
+    Number of Pins:                66988
+    Number of IO Pad Cells:        33
+    Number of IO Pins:             76
+    Number of Nets:                9028
+    Average Pins Per Net (Signal): 4.55024
+
+Chip Utilization:
+    Total Macro Cell Area:         500618.50
+    Total Std Cell Area:           321562.93
+    Total Blockage Area:           515397.84
+    Total Pad Cell Area:           499298.00
+    Core Size:     width 1326.64, height 1164.80; area 1545270.27
+    Pad Core Size: width 1360.00, height 1199.99; area 1631993.20
+    Chip Size:     width 1520.00, height 1519.99; area 2310392.40
+    Std cells utilization:         31.22% 
+    Cell/Core Ratio:               53.21%
+    Cell/Chip Ratio:               57.20%
+    Number of Cell Rows:            260
+
+Master Instantiation:
+	MasterName	Type	InstCount
+	=================================
+	BTHHDLLX1	STD	2656
+	DFRRQHDLLX0	STD	1921
+	DLHRQHDLLX0	STD	1272
+	AN22HDLLX0	STD	582
+	INHDLLX0	STD	552
+	AO22HDLLX1	STD	477
+	NA2HDLLX0	STD	442
+	NO2HDLLX0	STD	398
+	BTHHDLLX2	STD	361
+	AO222HDLLX0	STD	259
+	ON21HDLLX0	STD	234
+	LOGIC0HDLL	STD	202
+	AN21HDLLX0	STD	155
+	AN211HDLLX0	STD	129
+	AN32HDLLX0	STD	124
+	MU2HDLLX0	STD	119
+	BUHDLLX1	STD	112
+	ON211HDLLX0	STD	109
+	NA3HDLLX0	STD	86
+	NA4HDLLX0	STD	85
+	AN31HDLLX0	STD	76
+	DFRSQHDLLX0	STD	66
+	NO3HDLLX0	STD	64
+	BUHDLLX0	STD	62
+	ON22HDLLX0	STD	61
+	INHDLLX1	STD	60
+	DFRRHDLLX0	STD	48
+	DLHQHDLLX0	STD	47
+	DFRRQHDLLX4	STD	46
+	INHDLLX2	STD	43
+	NA22HDLLX0	STD	42
+	ON31HDLLX0	STD	42
+	MU2IHDLLX0	STD	42
+	OA22HDLLX0	STD	41
+	AN222HDLLX0	STD	36
+	NO2HDLLX1	STD	33
+	DLLQHDLLX0	STD	32
+	INHDLLX4	STD	30
+	FAHDLLX0	STD	30
+	NO2I1HDLLX0	STD	28
+	EO2HDLLX0	STD	23
+	OA21HDLLX0	STD	23
+	AND2HDLLX0	STD	23
+	INHDLLX6	STD	23
+	NA2I1HDLLX0	STD	22
+	DFFRQHDLLX0	STD	20
+	AN221HDLLX0	STD	19
+	NO2HDLLX2	STD	17
+	INHDLLX8	STD	16
+	NO4I3HDLLX0	STD	15
+	INHDLLX12	STD	15
+	AND2HDLLX2	STD	15
+	AND2HDLLX1	STD	14
+	NO2I1HDLLX1	STD	14
+	NO3HDLLX2	STD	14
+	NO3I2HDLLX0	STD	13
+	AO21HDLLX0	STD	13
+	OA211HDLLX0	STD	12
+	NA3I2HDLLX0	STD	12
+	NA4I3HDLLX0	STD	11
+	DFRQHDLLX0	STD	10
+	NO2I1HDLLX4	STD	10
+	BUHDLLX6	STD	10
+	OR2HDLLX0	STD	8
+	AND3HDLLX0	STD	7
+	DLHQHDLLX1	STD	5
+	NO2I1HDLLX2	STD	5
+	NO22HDLLX0	STD	5
+	AN321HDLLX0	STD	5
+	OA32HDLLX0	STD	5
+	BUHDLLX2	STD	5
+	AO211HDLLX0	STD	5
+	INHDLLX3	STD	5
+	ON21HDLLX1	STD	4
+	AO32HDLLX0	STD	4
+	ON321HDLLX0	STD	4
+	CAGHDLLX0	STD	4
+	NO3HDLLX1	STD	3
+	AND3HDLLX1	STD	3
+	BUHDLLX12	STD	3
+	DLHRQHDLLX1	STD	3
+	NO2HDLLX4	STD	3
+	ON222HDLLX0	STD	3
+	AND4HDLLX0	STD	3
+	AND2HDLLX4	STD	3
+	NO3I2HDLLX1	STD	2
+	OR3HDLLX0	STD	2
+	DFFRHDLLX0	STD	2
+	AN22HDLLX2	STD	2
+	EN3HDLLX0	STD	2
+	OR4HDLLX0	STD	2
+	ON21HDLLX2	STD	2
+	BUHDLLX4	STD	2
+	AO31HDLLX0	STD	2
+	NO4I2HDLLX0	STD	2
+	AN33HDLLX0	STD	2
+	NO3I1HDLLX0	STD	2
+	DLHHDLLX0	STD	2
+	BUHDLLX3	STD	2
+	ON321HDLLX1	STD	1
+	AN221HDLLX1	STD	1
+	ON211HDLLX1	STD	1
+	AN32HDLLX1	STD	1
+	NA22HDLLX1	STD	1
+	AN211HDLLX1	STD	1
+	MU2IHDLLX1	STD	1
+	NA2HDLLX1	STD	1
+	AN22HDLLX1	STD	1
+	LOGIC1HDLL	STD	1
+	NA4HDLLX1	STD	1
+	OA22HDLLX1	STD	1
+	DFRSHDLLX0	STD	1
+	DFRRSQHDLLX0	STD	1
+	AO32HDLLX1	STD	1
+	DFFSQHDLLX0	STD	1
+	DFFRSQHDLLX0	STD	1
+	DFRHDLLX0	STD	1
+	EO3HDLLX0	STD	1
+	OA31HDLLX0	STD	1
+	OA222HDLLX0	STD	1
+	NA4I1HDLLX0	STD	1
+	ON33HDLLX0	STD	1
+	OA221HDLLX0	STD	1
+	DFFRHDLLX1	STD	1
+	OA211HDLLX2	STD	1
+	NA2I1HDLLX4	STD	1
+	NO3I2HDLLX2	STD	1
+	BUHDLLX8	STD	1
+	XSPRAMLP_2048X32_M8P	MACRO	1
+	BBC2SF		IO	8
+	GNDORPADF	IO	6
+	ICF		IO	5
+	VDDCPADF	IO	5
+	BT2SF		IO	4
+	VDDPADF		IO	3
+	VDDORPADF	IO	2
+	CORNERSF	CORNER	2
+	=================================
+
+Timing/Optimization Information:
+
+Global Routing Information:
+    layer MET1, dir Hor, min width = 0.23, min space = 0.23 pitch = 0.56
+    layer MET2, dir Ver, min width = 0.28, min space = 0.28 pitch = 0.56
+    layer MET3, dir Hor, min width = 0.28, min space = 0.28 pitch = 0.56
+    layer MET4, dir Ver, min width = 0.28, min space = 0.28 pitch = 0.56
+    layer METTP, dir Hor, min width = 0.44, min space = 0.46 pitch = 1.12
+    layer METTPL, dir Ver, min width = 3.00, min space = 2.50 pitch = 5.60
+     
+    Average gCell capacity  2.60	 on layer (1)	 MET1
+    Average gCell capacity  4.41	 on layer (2)	 MET2
+    Average gCell capacity  4.47	 on layer (3)	 MET3
+    Average gCell capacity  4.41	 on layer (4)	 MET4
+    Average gCell capacity  1.90	 on layer (5)	 METTP
+    Average gCell capacity  0.36	 on layer (6)	 METTPL
+     
+    Initial. Both Dirs: Overflow =   286 Max = 4 GRCs =   268 (0.11%)
+    Initial. H routing: Overflow =    95 Max = 2 (GRCs =  3) GRCs =    96 (0.08%)
+    Initial. V routing: Overflow =   191 Max = 4 (GRCs =  1) GRCs =   172 (0.15%)
+     
+    phase1. Both Dirs: Overflow =   286 Max = 4 GRCs =   268 (0.11%)
+    phase1. H routing: Overflow =    95 Max = 2 (GRCs =  3) GRCs =    96 (0.08%)
+    phase1. V routing: Overflow =   191 Max = 4 (GRCs =  1) GRCs =   172 (0.15%)
+     
+    phase2. Both Dirs: Overflow =   286 Max = 4 GRCs =   268 (0.11%)
+    phase2. H routing: Overflow =    95 Max = 2 (GRCs =  3) GRCs =    96 (0.08%)
+    phase2. V routing: Overflow =   191 Max = 4 (GRCs =  1) GRCs =   172 (0.15%)
+     
+    phase3. Both Dirs: Overflow =   286 Max = 4 GRCs =   268 (0.11%)
+    phase3. H routing: Overflow =    95 Max = 2 (GRCs =  3) GRCs =    96 (0.08%)
+    phase3. V routing: Overflow =   191 Max = 4 (GRCs =  1) GRCs =   172 (0.15%)
+     
+    Total Wire Length = 16.85
+    Layer MET1 wire length = 4.31
+    Layer MET2 wire length = 5.77
+    Layer MET3 wire length = 6.77
+    Layer MET4 wire length = 0.00
+    Layer METTP wire length = 0.00
+    Layer METTPL wire length = 0.00
+    Total Number of Contacts = 11
+    Via VIA12D_R count = 5
+    Via VIA23D_R count = 6
+    Via VIA34D_R count = 0
+    Via VIA4TD_R count = 0
+    Via VIAT6L_R count = 0
+     
+    Elapsed real time: 0:00:01
+    Elapsed cpu time: sys = 0:00:00 usr = 0:00:02 total = 0:00:02
+    Total Proc Memory(MB): 2874
+
+Track Assignment Information:
+    Number of wires with overlap after iteration 0 = 57 of 107
+
+    Number of wires with overlap after iteration 1 = 35 of 74
+
+    Total MET1 wire length: 26.2
+    Total MET2 wire length: 30.2
+    Total MET3 wire length: 29.7
+    Total MET4 wire length: 0.0
+    Total METTP wire length: 0.0
+    Total METTPL wire length: 0.0
+    Total wire length: 86.1
+
+    Elapsed real time: 0:00:00
+    Elapsed cpu time: sys = 0:00:00 usr = 0:00:00 total = 0:00:00
+    Total Proc Memory(MB): 2882
+
+Detailed Routing Information:
+    
+
+    ---------- Detail route ----------
+
+     
+    Elapsed real time: 0:00:03
+    Elapsed cpu time: sys = 0:00:00 usr = 0:00:10 total = 0:00:11
+    Total Proc Memory(MB): 2047
+     
+    Cumulative run time upto current stage: Elapsed = 0:00:03 CPU = 0:00:11
+     
+    DR finished with 0 open nets, of which 0 are frozen
+    DR finished with 0 violations
+     
+    DRC-SUMMARY:
+    	@@@@@@@ TOTAL VIOLATIONS =	0
+    Total number of nets = 9028
+    0 open nets, of which 0 are frozen
+    Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                     0 ports without pins of 0 cells connected to 0 nets
+                                     0 ports of 0 cover cells connected to 0 non-pg nets
+    Total number of DRCs = 0
+    Total number of antenna violations = 0
+    Total number of voltage-area violations = violations not tracked (relaxed mode)
+    
+
+     
+    Elapsed real time: 0:00:01
+    Elapsed cpu time: sys = 0:00:00 usr = 0:00:01 total = 0:00:01
+    Total Proc Memory(MB): 2047
+     
+    Cumulative run time upto current stage: Elapsed = 0:00:04 CPU = 0:00:12
+    
+
+    ---------- Eco detail route ----------
+
+     
+    Elapsed real time: 0:00:02
+    Elapsed cpu time: sys = 0:00:00 usr = 0:00:08 total = 0:00:08
+    Total Proc Memory(MB): 2882
+     
+    Cumulative run time upto current stage: Elapsed = 0:00:06 CPU = 0:00:20
+     
+    ECO Route finished with 0 open nets, of which 0 are frozen
+    ECO Route finished with 0 violations
+     
+    DRC-SUMMARY:
+    	@@@@@@@ TOTAL VIOLATIONS =	0
+    Total number of nets = 9028
+    0 open nets, of which 0 are frozen
+    Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                     0 ports without pins of 0 cells connected to 0 nets
+                                     0 ports of 0 cover cells connected to 0 non-pg nets
+    Total number of DRCs = 0
+    Total number of antenna violations = 0
+    Total number of voltage-area violations = violations not tracked (relaxed mode)
+    
+
+     
+    Elapsed real time: 0:00:00
+    Elapsed cpu time: sys = 0:00:00 usr = 0:00:00 total = 0:00:00
+    Total Proc Memory(MB): 2882
+     
+    Cumulative run time upto current stage: Elapsed = 0:00:06 CPU = 0:00:20
+     
+    Total Wire Length =                    1271950 micron
+    Total Number of Contacts =             130117
+    Total Number of Wires =                128989
+    Total Number of PtConns =              17963
+    Total Number of Routed Wires =       128989
+    Total Routed Wire Length =           1264842 micron
+    Total Number of Routed Contacts =       130117
+    	Layer          MET1 :      61394 micron
+    	Layer          MET2 :     366434 micron
+    	Layer          MET3 :     506510 micron
+    	Layer          MET4 :     250038 micron
+    	Layer         METTP :      84046 micron
+    	Layer        METTPL :       3528 micron
+    	Via        VIAT6L_R :         60
+    	Via        VIA4TD_R :       4543
+    	Via   VIA4TD_R(rot) :         22
+    	Via        VIA34D_R :      15939
+    	Via        VIA23D_R :      61922
+    	Via        VIA12D_R :      35329
+    	Via   VIA12D_R(rot) :         30
+    	Via        VIA12D_A :      12190
+    	Via   VIA12D_A(rot) :         82
+     
+    Redundant via conversion report:
+    --------------------------------
+
+      Total optimized via conversion rate =  0.00% (0 / 130117 vias)
+     
+        Layer VIA1       =  0.00% (0      / 47631   vias)
+            Un-optimized = 100.00% (47631   vias)
+        Layer VIA2       =  0.00% (0      / 61922   vias)
+            Un-optimized = 100.00% (61922   vias)
+        Layer VIA3       =  0.00% (0      / 15939   vias)
+            Un-optimized = 100.00% (15939   vias)
+        Layer VIATP      =  0.00% (0      / 4565    vias)
+            Un-optimized = 100.00% (4565    vias)
+        Layer VIATPL     =  0.00% (0      / 60      vias)
+            Un-optimized = 100.00% (60      vias)
+     
+      Total double via conversion rate    =  0.00% (0 / 130117 vias)
+     
+        Layer VIA1       =  0.00% (0      / 47631   vias)
+        Layer VIA2       =  0.00% (0      / 61922   vias)
+        Layer VIA3       =  0.00% (0      / 15939   vias)
+        Layer VIATP      =  0.00% (0      / 4565    vias)
+        Layer VIATPL     =  0.00% (0      / 60      vias)
+     
+      The optimized via conversion rate based on total routed via count =  0.00% (0 / 130117 vias)
+     
+        Layer VIA1       =  0.00% (0      / 47631   vias)
+            Un-optimized = 100.00% (47631   vias)
+        Layer VIA2       =  0.00% (0      / 61922   vias)
+            Un-optimized = 100.00% (61922   vias)
+        Layer VIA3       =  0.00% (0      / 15939   vias)
+            Un-optimized = 100.00% (15939   vias)
+        Layer VIATP      =  0.00% (0      / 4565    vias)
+            Un-optimized = 100.00% (4565    vias)
+        Layer VIATPL     =  0.00% (0      / 60      vias)
+            Un-optimized = 100.00% (60      vias)
+     
+
+DRC information: 
+      Voltage area: 539 
+      Total error number: 539
+
+Ring Wiring Statistics:
+    metal5 Wire Length(count):               5195.56(6)
+    metal6 Wire Length(count):               4555.80(6)
+  ==============================================
+    Total Wire Length(count):                9751.36(12)
+    Number of via5 Contacts:             12
+  ==============================================
+    Total Number of Contacts:       12
+
+Stripe Wiring Statistics:
+    metal5 Wire Length(count):              15816.48(20)
+    metal6 Wire Length(count):              14179.00(20)
+  ==============================================
+    Total Wire Length(count):               29995.47(40)
+    Number of via5 Contacts:            195
+  ==============================================
+    Total Number of Contacts:      195
+
+User Wiring Statistics:
+
+PG follow-pin Wiring Statistics:
+    metal1 Wire Length(count):             225337.54(260)
+    metal2 Wire Length(count):                  3.02(1)
+    metal3 Wire Length(count):                  3.22(1)
+    metal4 Wire Length(count):                  5.76(2)
+  ==============================================
+    Total Wire Length(count):              225349.54(264)
+    Number of via1 Contacts:           2074
+    Number of via2 Contacts:           2074
+    Number of via3 Contacts:           2072
+    Number of via4 Contacts:           2071
+    Number of via5 Contacts:           1831
+  ==============================================
+    Total Number of Contacts:    10122
+
+Signal Wiring Statistics:
+    metal1 Wire Length(count):              61522.28(13258)
+    metal2 Wire Length(count):             366435.90(69585)
+    metal3 Wire Length(count):             506509.91(48473)
+    metal4 Wire Length(count):             250038.20(12689)
+    metal5 Wire Length(count):              84045.54(3171)
+    metal6 Wire Length(count):               3528.27(32)
+  ==============================================
+    Total Wire Length(count):             1272080.08(147208)
+
+      Mask Name      Contact Code    Number Of Contacts    Percentage
+        via1        VIA12D_R(111)             35359	       74.2
+        via1        VIA12D_A(112)             12272	       25.8
+        via2        VIA23D_R(121)             61922	        100
+        via3        VIA34D_R(133)             15939	        100
+        via4        VIA4TD_R(141)              4565	        100
+        via5        VIAT6L_R(57)                60	        100
+  ==============================================
+    Total Number of Contacts:    130117
+
+  Horizontal/Vertical Wire Distribution:
+    Layer      Hor. Wire (% of Hor.)     Ver. Wire (% of Ver.)
+    metal1         60267.06 ( 9.21%)          1255.22 ( 0.20%)
+    metal2          5247.72 ( 0.80%)        361188.17 (58.50%)
+    metal3        504871.63 (77.11%)          1638.28 ( 0.27%)
+    metal4           651.15 ( 0.10%)        249387.05 (40.39%)
+    metal5         83664.73 (12.78%)           380.81 ( 0.06%)
+    metal6             5.60 ( 0.00%)          3522.67 ( 0.57%)
+  ==============================================================
+    Total         654707.88                 617372.20
+
+LVS Run Time:
+    Elapsed =    0:00:01, CPU =    0:00:01
+1

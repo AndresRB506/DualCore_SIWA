@@ -1,0 +1,323 @@
+// Synopsys, Inc.
+// User: jiespinoza
+// Date: Sun Aug 25 21:52:10 2024
+
+// ==================================================================================================
+// This config file prototype is produced from the last run using the complete list of extracted fsms.
+// Please note that by providing your own description of the module you are enforcing what will be
+// extracted for that module.
+// Copy this file to your source directory and edit it as described below,
+// then pass the file to VCS using the -cm_fsmcfg command line option.
+// FSMs will be extracted normally for any module not mentioned in this file
+// ==================================================================================================
+// 1. For every module that you want to specify yourself, use:
+//      MODULE==name
+//    -----------------------------------------------------
+//    The following options are defining the behavior on the module level.
+//    -----------------------------------------------------
+//    1.1  You can control what fsms should be used within this module:
+//            FSMS=AUTO
+//            this means that you want VCS to automatically extract all
+//            detectable FSMs from this module.
+//            -----------------------------------------------------
+//            FSMS=EXCLUDE
+//            this means that you want all fsms except the ones from the list that follows
+//            if the list is empty, all fsms will be extracted for this module
+//            -----------------------------------------------------
+//            FSMS=RESTRICT
+//            this means that you want only the fsms from the list that follows
+//            if the list is empty, no fsms will be extracted for this module
+//            -----------------------------------------------------
+//         If none of these options are specified, the program will assume FSMS=RESTRICT
+//         -----------------------------------------------------
+//     1.2 You can specify that the state with the minimal value should be used as a
+//         start state for all sequences in every fsm in the module.
+//            FSMS=START_STATE_DFLT
+//         For any particular fsm you can overwrite this behavior inside its description.
+//    -----------------------------------------------------
+// 2. Each fsm description in the list of fsms should be specified as follows:
+//      2.1 provide the current state variable declaration:
+//          CURRENT= name of the current state variable
+//      -----------------------------------------------------
+//      2.2 if next state variable is different from the current state provide:
+//          NEXT= next state variable
+//          if you don't use NEXT=, the program will assume that CURRENT and NEXT are the same
+//      -----------------------------------------------------
+//      2.3 if you want to provide the restrictive the list of states, provide:
+//          STATES= s0,s1 etc. where s0 is either a name or a value of the state
+//          if you don't use STATES=, the program will assume that you want to use all states
+//      -----------------------------------------------------
+//      2.4 if you want to ignore some states, specify them in the following list:
+//          STATES_X= s0,s1, etc.
+//      -----------------------------------------------------
+//      2.5 if you want to mark, that some states should never be reached, specify them as a list:
+//          STATES_NEVER= s0,s1, etc.
+//      -----------------------------------------------------
+//      2.6 similar to the STATES, if you want to provide the restrictive the list of transitions, specify:
+//          TRANSITIONS= s0->s1,s1->s2, etc.
+//      -----------------------------------------------------
+//      2.7 similar to the STATES_X, if you want to ignore some transitions, specify them in the following list:
+//          TRANSITIONS_X= s0->s1,s1->s2, etc.
+//      -----------------------------------------------------
+//      2.8 similar to the STATES_NEVER,if you want to mark, that some transitions should never occur,
+//          specify them as a list:
+//          TRANSITIONS_NEVER= s0->s1,s1->s2,     etc.
+//      -----------------------------------------------------
+//      2.9 if you want to specify the start state use:
+//          START_STATE= s0
+//      -----------------------------------------------------
+//      Please note:
+//          - that a state in every list can be specified either by name or by value.
+//          - in specifying the transitions you can use * in order to refer to 'any' state.
+// ==================================================================================================
+// Uncomment and modify the following 2 line to override default FSM sequence limits for all FSMs in the design.
+//SEQ_NUMBER_MAX=10000
+//SEQ_LENGTH_MAX=32
+
+MODULE=IS25WP032D
+CURRENT=STATE
+NEXT=STATE
+STATES=AUTO_BOOT_STATE,BAD_CMD_STATE,CMD_STATE,STANDBY_STATE
+TRANSITIONS=AUTO_BOOT_STATE->CMD_STATE,
+AUTO_BOOT_STATE->STANDBY_STATE,
+BAD_CMD_STATE->AUTO_BOOT_STATE,
+BAD_CMD_STATE->CMD_STATE,
+BAD_CMD_STATE->STANDBY_STATE,
+CMD_STATE->AUTO_BOOT_STATE,
+CMD_STATE->BAD_CMD_STATE,
+CMD_STATE->STANDBY_STATE,
+STANDBY_STATE->AUTO_BOOT_STATE,
+STANDBY_STATE->CMD_STATE
+MODULE=log_utf
+CURRENT=state
+NEXT=next_state
+STATES=CARGA,ENVIO,IDLE,STOP
+TRANSITIONS=CARGA->ENVIO,
+CARGA->IDLE,
+ENVIO->IDLE,
+ENVIO->STOP,
+IDLE->CARGA,
+STOP->IDLE
+MODULE=log_utf
+CURRENT=p_state
+NEXT=p_next_state
+STATES=desact_push,desact_rst_push,idle
+TRANSITIONS=desact_push->desact_rst_push,
+desact_push->idle,
+desact_rst_push->idle,
+idle->desact_push
+MODULE=top_spi
+CURRENT=state
+NEXT=state
+STATES='h0,'h1,'h10,'h11,'h12,'h13,'h14,'h15,'h16,'h17,'h18,'h19,'h1a,'h1b,'h1c,'h1d,'h1e,'h1f,'h2,'h20,'h21,'h22,'h23,'h24,'h25,'h26,'h3,'h4,'h5,'h6,'h7,'h8,'h9,'ha,'hb,'hc,'hd,'he,'hf
+TRANSITIONS='h0->'h1,
+'h1->'h0,
+'h1->'h2,
+'h10->'h0,
+'h10->'h11,
+'h11->'h0,
+'h11->'h12,
+'h12->'h0,
+'h12->'h13,
+'h13->'h0,
+'h13->'h14,
+'h14->'h0,
+'h14->'h15,
+'h15->'h0,
+'h15->'h1,
+'h15->'h12,
+'h16->'h0,
+'h16->'h17,
+'h17->'h0,
+'h17->'h18,
+'h18->'h0,
+'h18->'h19,
+'h19->'h0,
+'h19->'h1,
+'h1a->'h0,
+'h1a->'h1b,
+'h1b->'h0,
+'h1b->'h1c,
+'h1c->'h0,
+'h1c->'h1d,
+'h1d->'h0,
+'h1d->'h1e,
+'h1e->'h0,
+'h1e->'h1f,
+'h1f->'h0,
+'h1f->'h20,
+'h2->'h0,
+'h2->'h1,
+'h2->'h16,
+'h2->'h1a,
+'h2->'h3,
+'h2->'h9,
+'h20->'h0,
+'h20->'h21,
+'h21->'h0,
+'h21->'h22,
+'h22->'h0,
+'h22->'h23,
+'h23->'h0,
+'h23->'h20,
+'h23->'h24,
+'h24->'h0,
+'h24->'h25,
+'h25->'h0,
+'h25->'h24,
+'h25->'h26,
+'h26->'h0,
+'h26->'h1,
+'h3->'h0,
+'h3->'h4,
+'h4->'h0,
+'h4->'h5,
+'h5->'h0,
+'h5->'h6,
+'h6->'h0,
+'h6->'h7,
+'h6->'h8,
+'h7->'h0,
+'h7->'h1,
+'h8->'h0,
+'h8->'h1,
+'h9->'h0,
+'h9->'ha,
+'ha->'h0,
+'ha->'hb,
+'hb->'h0,
+'hb->'hc,
+'hc->'h0,
+'hc->'hd,
+'hd->'h0,
+'hd->'he,
+'he->'h0,
+'he->'hf,
+'hf->'h0,
+'hf->'h10
+MODULE=u_rec
+CURRENT=state
+NEXT=next_state
+STATES=r_CENTER,r_PARITY,r_SAMPLE,r_START,r_STOP,r_WAIT
+TRANSITIONS=r_CENTER->r_START,
+r_CENTER->r_WAIT,
+r_PARITY->r_START,
+r_PARITY->r_STOP,
+r_SAMPLE->r_START,
+r_SAMPLE->r_WAIT,
+r_START->r_CENTER,
+r_STOP->r_START,
+r_WAIT->r_PARITY,
+r_WAIT->r_SAMPLE,
+r_WAIT->r_START
+MODULE=u_xmit
+CURRENT=state
+NEXT=next_state
+STATES=x_IDLE,x_PARITY,x_SHIFT,x_START,x_STOP,x_WAIT
+TRANSITIONS=x_IDLE->x_START,
+x_PARITY->x_IDLE,
+x_PARITY->x_STOP,
+x_SHIFT->x_IDLE,
+x_SHIFT->x_WAIT,
+x_START->x_IDLE,
+x_START->x_WAIT,
+x_STOP->x_IDLE,
+x_WAIT->x_IDLE,
+x_WAIT->x_PARITY,
+x_WAIT->x_SHIFT
+MODULE=log_ftu
+CURRENT=state
+NEXT=next_state
+STATES=IDLE,POP_DATA,QTY_BYTE,SEND,START,STOP,WAIT
+TRANSITIONS=IDLE->POP_DATA,
+POP_DATA->IDLE,
+POP_DATA->QTY_BYTE,
+QTY_BYTE->IDLE,
+QTY_BYTE->START,
+SEND->IDLE,
+SEND->WAIT,
+START->IDLE,
+START->WAIT,
+STOP->IDLE,
+WAIT->IDLE,
+WAIT->SEND,
+WAIT->STOP
+MODULE=log_ftu
+CURRENT=p_state
+NEXT=p_next_state
+STATES=desact_pop,desact_rst_pop,idle
+TRANSITIONS=desact_pop->desact_rst_pop,
+desact_pop->idle,
+desact_rst_pop->idle,
+idle->desact_pop
+MODULE=spi
+CURRENT=state
+NEXT=state
+STATES=END,END1,LOAD,OPER,START
+TRANSITIONS=END->END1,
+END->START,
+END1->START,
+LOAD->OPER,
+LOAD->START,
+OPER->END,
+OPER->START,
+START->LOAD
+MODULE=uvm_custom_install_verdi_recording
+CURRENT=user_verbosity
+NEXT=user_verbosity
+STATES=UVM_DEBUG,UVM_FULL,UVM_HIGH,UVM_LOW,UVM_MEDIUM,UVM_NONE
+MODULE=mbc
+CURRENT=state
+NEXT=nxt_state
+STATES=bt_fns,bt_init,bt_kp,bt_png,bt_pop,bt_psh,bt_wr,cln_fifo,mem_cln_rd,mem_cln_wd,mem_error,mem_io,mem_op0,mem_op1,mem_r0,mem_rdy_st,mem_w0,mem_w1,mem_w2,mem_w3,mem_w4,mem_w_io
+TRANSITIONS=bt_fns->bt_init,
+bt_fns->bt_pop,
+bt_fns->cln_fifo,
+bt_init->bt_psh,
+bt_kp->bt_fns,
+bt_kp->bt_init,
+bt_kp->bt_wr,
+bt_png->bt_init,
+bt_png->bt_kp,
+bt_pop->bt_init,
+bt_pop->bt_psh,
+bt_psh->bt_init,
+bt_psh->bt_png,
+bt_wr->bt_init,
+bt_wr->bt_pop,
+cln_fifo->bt_init,
+cln_fifo->mem_rdy_st,
+mem_cln_rd->bt_init,
+mem_cln_rd->mem_cln_wd,
+mem_cln_rd->mem_r0,
+mem_cln_wd->bt_init,
+mem_cln_wd->mem_op0,
+mem_cln_wd->mem_w1,
+mem_error->bt_init,
+mem_error->mem_rdy_st,
+mem_io->bt_init,
+mem_io->mem_op1,
+mem_io->mem_w_io,
+mem_op0->bt_init,
+mem_op0->mem_error,
+mem_op0->mem_io,
+mem_op1->bt_init,
+mem_op1->mem_r0,
+mem_op1->mem_w0,
+mem_r0->bt_init,
+mem_r0->mem_rdy_st,
+mem_rdy_st->bt_init,
+mem_rdy_st->mem_cln_rd,
+mem_w0->bt_init,
+mem_w0->mem_w1,
+mem_w0->mem_w2,
+mem_w1->bt_init,
+mem_w1->mem_rdy_st,
+mem_w2->bt_init,
+mem_w2->mem_w3,
+mem_w3->bt_init,
+mem_w3->mem_w4,
+mem_w4->bt_init,
+mem_w4->mem_w1,
+mem_w_io->bt_init,
+mem_w_io->mem_rdy_st

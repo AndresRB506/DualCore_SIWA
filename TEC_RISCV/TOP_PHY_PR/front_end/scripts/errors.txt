@@ -1,0 +1,652 @@
+On branch master
+Your branch is up-to-date with 'origin/master'.
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+	modified:   ../../../BUS/Test_fifo/Test_fifo.v
+	modified:   ../../../BUS_Micro/Bus_Micro.sv
+	modified:   ../../../DECO_INSTR/DECO_INSTR.sv
+	modified:   ../../../FIFO_Latches/fifo.sv
+	modified:   ../../../MBC/MBC.sv
+	modified:   ../../../Pruebas_hex/prueba.hex
+	modified:   ../../../Pruebas_hex/prueba.o
+	modified:   ../../../Pruebas_hex/prueba.objdmp
+	modified:   ../../../Pruebas_hex/prueba.s
+	modified:   ../../../Register_File/Banco_de_registros_latches.v
+	modified:   ../../../Register_File/Biblioteca.v
+	modified:   ../../../TOP/TecRiscv_top_CPU.sv
+	renamed:    ../source/TOP/Tec_Riscv_pads-syn3.v -> ../../../TOP/Tec_Riscv_pads_syn.v
+	modified:   ../../../TOP/Test_Top_CPU_post_logic_syn.sv
+	modified:   ../../../TOP/Test_Top_CPU_with_spi_uart.sv
+	new file:   ../../../TOP/ac_check.err
+	new file:   ../../../TOP/basic_post_sin.tcl
+	modified:   ../../../TOP/codigo
+	modified:   ../../../TOP/comando
+	modified:   ../../../TOP/control.sv
+	modified:   ../../../TOP/instructions
+	modified:   ../../../TOP/mem_model.txt
+	modified:   ../command.log
+	modified:   ../default.svf
+	deleted:    .dc_syn.tcl.swp
+	modified:   ../source/BUS_Micro/Bus_Micro.sv
+	modified:   ../source/DECO_INSTR/DECO_INSTR.sv
+	modified:   ../source/FIFO_Latches/fifo.sv
+	modified:   ../source/MBC/MBC.sv
+	modified:   ../source/Register_File/Banco_de_registros_latches.v
+	modified:   ../source/Register_File/Biblioteca.v
+	modified:   ../source/TOP/TecRiscv_top_CPU.sv
+	renamed:    ../../../TOP/Tec_Riscv_pads-syn3.v -> ../source/TOP/Tec_Riscv_pads_syn.v
+	modified:   ../source/TOP/Test_Top_CPU_post_logic_syn.sv
+	modified:   ../source/TOP/Test_Top_CPU_with_spi_uart.sv
+	new file:   ../source/TOP/ac_check.err
+	new file:   ../source/TOP/basic_post_sin.tcl
+	modified:   ../source/TOP/codigo
+	modified:   ../source/TOP/comando
+	modified:   ../source/TOP/control.sv
+	modified:   ../source/TOP/instructions
+	modified:   ../source/TOP/mem_model.txt
+	modified:   ../source/UART/scrs/uart.sv
+	modified:   ../../../UART/scrs/uart.sv
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   dc_syn.tcl
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../../../ALU/ALU.v
+	deleted:    ../../../ALU/ALU_2.sv
+	deleted:    ../../../ALU/ALU_Library.sv
+	deleted:    ../../../ALU/ALU_tb.v
+	deleted:    ../../../ALU/Barrel_Shifter.sv
+	deleted:    ../../../ALU/CSA4.sv
+	deleted:    ../../../ALU/CSK_sin_mux.sv
+	deleted:    ../../../ALU/Informe_ALU.pdf
+	deleted:    ../../../ALU/Manchester_carry_chain.sv
+	deleted:    "../../../ALU/Nombres m\303\263dulos"
+	deleted:    ../../../ALU/VCSA.sv
+	deleted:    ../../../ALU/barrel_tb.sv
+	deleted:    ../../../ALU/carry_skip_adder.sv
+	deleted:    ../../../ALU/csk_bloque.sv
+	deleted:    ../../../ALU/test_ALU_2.sv
+	deleted:    ../../../ALU/test_VCSA.sv
+	deleted:    ../../../ALU/test_adder_sin_mux.sv
+	deleted:    ../../../ALU/test_adders.sv
+	deleted:    ../../../ALU/test_cadena.sv
+	deleted:    ../../../ALU/test_top.sv
+	deleted:    ../../../ALU/top.sv
+	deleted:    ../../../BUS/FG_KIT/.synopsys_dc.setup
+	deleted:    ../../../BUS/FG_KIT/DC_script.tcl
+	deleted:    ../../../BUS/FG_KIT/Library.sv
+	deleted:    ../../../BUS/FG_KIT/Lista_senales
+	deleted:    ../../../BUS/FG_KIT/Lista_senales_filtrada
+	deleted:    ../../../BUS/FG_KIT/Test_base
+	deleted:    ../../../BUS/FG_KIT/Test_base.sv
+	deleted:    ../../../BUS/FG_KIT/Test_base_old
+	deleted:    ../../../BUS/FG_KIT/Top_base
+	deleted:    ../../../BUS/FG_KIT/bash_snps_xt018-AMS_2017
+	deleted:    ../../../BUS/FG_KIT/comandos
+	deleted:    ../../../BUS/FG_KIT/list_2_comands.pl
+	deleted:    ../../../BUS/FG_KIT/netlistgen.pl
+	deleted:    ../../../BUS/FG_KIT/parser_transacciones.pl
+	deleted:    ../../../BUS/FG_KIT/script_vcs.bsh
+	deleted:    ../../../BUS/FG_KIT/vcd_signal_list_generator.pl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/ /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/INTERCONEXIONES/BACKUP/FG_KIT_GATE_LEVEL/implement/fe/alib-52/D_CELLS_LL_LP5MOS_typ_1_80V_25C.db.alib
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/.synopsys_dc.setup
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/DC_script.tcl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/D_CELLS_LL.v
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/D_CELLS_LL_no_timing.v
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/Library.sv
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/Lista_senales
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/Lista_senales_filtrada
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/Test_base
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/Test_base.sv
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/Top_base
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/VLG_PRIMITIVES.v
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/bash_snps_xt018-AMS_2017
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/list_2_comands.pl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/mapped_gate_level_netlist.v
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/netlistgen.pl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/parser_transacciones.pl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/script_vcs.bsh
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL/vcd_signal_list_generator.pl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/ /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/INTERCONEXIONES/BACKUP/FG_KIT_GATE_LEVEL/implement/fe/alib-52/D_CELLS_LL_LP5MOS_typ_1_80V_25C.db.alib
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/.synopsys_dc.setup
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/DC_script.tcl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/Library.sv
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/Lista_senales
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/Lista_senales_filtrada
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/Test_base
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/Test_base.sv
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/Top_base
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/bash_snps_xt018-AMS_2017
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/comandos
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/command.log
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/list_2_comands.pl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/mapped_gate_level_netlist.v
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/netlistgen.pl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/parser_transacciones.pl
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/script_vcs.bsh
+	deleted:    ../../../BUS/FG_KIT_GATE_LEVEL_EXPERIMENTO/vcd_signal_list_generator.pl
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/ /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/INTERCONEXIONES/BACKUP/FG_KIT_GATE_LEVEL/implement/fe/alib-52/D_CELLS_LL_LP5MOS_typ_1_80V_25C.db.alib
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/.Library.sv.swp
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/.Test_base_con_fifos.sv.swp
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/DC_script.tcl
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/Library.sv
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/Library_Test.sv
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/Test_base
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/Test_base.sv
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/Test_base_con_fifos.sv
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/Top_base
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/bash_snps_xt018-AMS_2017
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/comandos
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/command.log
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/Makefile
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/Makefile.hsopt
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/SIM_l.o
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/_29023_archive_1.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/_29797_archive_1.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/_31551_archive_1.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/_prev_archive_1.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/_prev_cginfo.json
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/_vcs_const_SIM_0.incr.dat
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/_vcs_etype_SIM_0.incr.dat
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/amcQwB.o
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/archive.3/_29023_archive_1.a
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/archive.3/_29023_archive_1.a.info
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/archive.3/_prev_archive_1.a
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/archive.3/_prev_archive_1.a.info
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/cginfo.json
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/cgproc.29023.json
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/filelist
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/filelist.cu
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/filelist.dpi
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/filelist.hsopt
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/filelist.hsopt.llvm2_0.objs
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/filelist.hsopt.objs
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/filelist.pli
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/hsim/hsim.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/import_dpic.h
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/incr.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/objs/amcQw_d.o
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/product_timestamp
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmapats.c
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmapats.h
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmapats.m
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmapats.o
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmapats_mop.o
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmar.c
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmar.h
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmar.o
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmar0.h
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmar_llvm_0_0.o
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/rmar_llvm_0_1.o
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/csrc/vcspieces.incr
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/list_2_comands.pl
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/netlistgen.pl
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/parser_transacciones.pl
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/script_vcs.bsh
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/.vcs.timestamp
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/_29023_archive_1.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/_29797_archive_1.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/_31551_archive_1.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/_prev_archive_1.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/binmap.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/build_db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/cc/cc_bcode.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/cc/cc_dummy_file
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/cgname.json
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/covg_defs
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/.version
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/HsimSigOptDb.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/dumpcheck.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/dve_debug.db.gz
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/fsearch/.create_fsearch_db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/fsearch/check_fsearch_db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/fsearch/idents_4hLvsc.xml.gz
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/src_files_verilog
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/topmodules
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/debug_dump/vir.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/eblklvl.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/elabmoddb.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/external_functions
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/hslevel_callgraph.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/hslevel_level.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/hslevel_rtime_level.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/nsparam.dat
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/pcc.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/pcxpxmr.dat
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/prof.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/rmapats.dat
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/rmapats.so
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/saifNetInfo.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/simv.kdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/tt.sdb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcs_rebuild
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_master_hsim_elabout.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_hsdef.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_hsim_elab.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_hsim_fegate.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_hsim_lvl.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_hsim_merge.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_hsim_name.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_hsim_uds.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_midd.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_mnmn.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_partition.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_tCEYNb
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_vcselabref.db
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/simv.daidir/vcselab_misc_vpdnodenums
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/ucli.key
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/vcd_file.vcd
+	deleted:    ../../../BUS/INTERCONNECT_RISCV/vcd_signal_list_generator.pl
+	deleted:    ../../../BUS/Library.sv
+	deleted:    ../../../BUS/POWER_AREA_KIT/.synopsys_dc.setup
+	deleted:    ../../../BUS/POWER_AREA_KIT/DC_script.tcl
+	deleted:    ../../../BUS/POWER_AREA_KIT/ICC_script.tcl
+	deleted:    ../../../BUS/POWER_AREA_KIT/Library.sv
+	deleted:    ../../../BUS/POWER_AREA_KIT/Test_base
+	deleted:    ../../../BUS/POWER_AREA_KIT/Top_base
+	deleted:    ../../../BUS/POWER_AREA_KIT/bash_snps_xt018-AMS_2017
+	deleted:    ../../../BUS/POWER_AREA_KIT/comandos
+	deleted:    ../../../BUS/POWER_AREA_KIT/command.log
+	deleted:    ../../../BUS/POWER_AREA_KIT/netlistgen.pl
+	deleted:    ../../../BUS/POWER_AREA_KIT/script_vcs.bsh
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/.synopsys_dc.setup
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/DC_script.tcl
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/ICC.tcl
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/ICC_script.tcl
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/Library.sv
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/Test_base
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/Test_base.sv
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/Top_base
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/bash_snps_xt018-AMS_2017
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/comandos
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/netlistgen.pl
+	deleted:    ../../../BUS/POWER_AREA_PARALLEL/script_vcs.bsh
+	deleted:    ../../../BUS/POWER_AREA_SERIE/.synopsys_dc.setup
+	deleted:    ../../../BUS/POWER_AREA_SERIE/DC_script.tcl
+	deleted:    ../../../BUS/POWER_AREA_SERIE/ICC.tcl
+	deleted:    ../../../BUS/POWER_AREA_SERIE/ICC_script.tcl
+	deleted:    ../../../BUS/POWER_AREA_SERIE/Library.sv
+	deleted:    ../../../BUS/POWER_AREA_SERIE/Test_base
+	deleted:    ../../../BUS/POWER_AREA_SERIE/Top_base
+	deleted:    ../../../BUS/POWER_AREA_SERIE/bash_snps_xt018-AMS_2017
+	deleted:    ../../../BUS/POWER_AREA_SERIE/comandos
+	deleted:    ../../../BUS/POWER_AREA_SERIE/netlistgen.pl
+	deleted:    ../../../BUS/POWER_AREA_SERIE/script_vcs.bsh
+	deleted:    ../../../BUS/Test_bus_controller/Testbench_bus_controller_tb.v
+	deleted:    ../../../BUS/Test_bus_system/Testbench_bus_system_tb.v
+	deleted:    ../../../BUS/Test_bus_system_n_rbtr/Testbench_bus_system_3_nts_tb.v
+	deleted:    ../../../BUS/Test_bus_system_n_rbtr_fpga/Testbench_bus_system_fpga_tb.sv
+	deleted:    ../../../BUS/Test_counter/Testbench_counter_tb_16.v
+	deleted:    ../../../BUS/Test_counter/Testbench_counter_tb_32.v
+	deleted:    ../../../BUS/Test_fg_n_rbtr/Testbench_fg_n_rbtr_tb.sv
+	deleted:    ../../../BUS/Test_fg_n_rbtr/Testbench_fg_n_rbtr_tb_V2.sv
+	deleted:    ../../../BUS/Test_fg_n_rbtr/Testbench_fg_n_rbtr_tb_V3.sv
+	deleted:    ../../../BUS/Test_paralelo_serie/Library.v
+	deleted:    ../../../BUS/Test_paralelo_serie/Testbench_Paralelo_Serie.tb.v
+	deleted:    ../../../BUS/Test_prll_bus_system/Testbench_prll_bus_system_tb.v
+	deleted:    ../../../BUS_Micro/Bus_Micro_lib.sv
+	deleted:    ../../../BUS_Micro/Test_Bus.sv
+	deleted:    ../../../CPU/cpu.sv
+	deleted:    ../../../DECO_INSTR/DECO_INSTR_TB.v
+	deleted:    ../../../FIFO_Latches/DC_script.tcl
+	deleted:    ../../../FIFO_Latches/Test_fifo.v
+	deleted:    ../../../FIFO_Latches/Test_fifo_cam.sv
+	deleted:    ../../../FIFO_Latches/Test_fifo_no_rst.sv
+	deleted:    ../../../FIFO_Latches/Testbench_edge_detectors.v
+	deleted:    ../../../FIFO_Latches/bash_snps_xt018-AMS_2017
+	deleted:    ../../../FIFO_Latches/comand_vcs
+	deleted:    ../../../FIFO_Latches/compile_manual
+	deleted:    ../../../FIFO_Latches/fifo_top.sv
+	deleted:    ../../../FIFO_Latches/inter.vpd
+	deleted:    ../../../FIFO_Latches/log
+	deleted:    ../../../FIFO_Latches/script
+	deleted:    "../../../FIFO_Latches_Syn/C:\\nppdf32Log\\debuglog.txt"
+	deleted:    ../../../FIFO_Latches_Syn/alib-52/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db.alib
+	deleted:    ../../../FIFO_Latches_Syn/default.svf
+	deleted:    ../../../FIFO_Latches_Syn/work/BUFFER_DLY.mr
+	deleted:    ../../../FIFO_Latches_Syn/work/DLTCH.mr
+	deleted:    ../../../FIFO_Latches_Syn/work/FIFO_LTCH_NO_RST.mr
+	deleted:    ../../../FIFO_Latches_Syn/work/FIFO_TOP.mr
+	deleted:    ../../../FIFO_Latches_Syn/work/NEG_EDGE.mr
+	deleted:    ../../../FIFO_Latches_Syn/work/POS_EDGE.mr
+	deleted:    ../../../FIFO_Latches_Syn/work/PRLL_D_LTCH_NO_RST.mr
+	deleted:    ../../../FIFO_Latches_Syn/work/buffer_dly-verilog.pvl
+	deleted:    ../../../FIFO_Latches_Syn/work/buffer_dly-verilog.syn
+	deleted:    ../../../FIFO_Latches_Syn/work/dltch-verilog.pvl
+	deleted:    ../../../FIFO_Latches_Syn/work/dltch-verilog.syn
+	deleted:    ../../../FIFO_Latches_Syn/work/fifo_ltch_no_rst-verilog.pvl
+	deleted:    ../../../FIFO_Latches_Syn/work/fifo_ltch_no_rst-verilog.syn
+	deleted:    ../../../FIFO_Latches_Syn/work/fifo_top-verilog.pvl
+	deleted:    ../../../FIFO_Latches_Syn/work/fifo_top-verilog.syn
+	deleted:    ../../../FIFO_Latches_Syn/work/neg_edge-verilog.pvl
+	deleted:    ../../../FIFO_Latches_Syn/work/neg_edge-verilog.syn
+	deleted:    ../../../FIFO_Latches_Syn/work/pos_edge-verilog.pvl
+	deleted:    ../../../FIFO_Latches_Syn/work/pos_edge-verilog.syn
+	deleted:    ../../../FIFO_Latches_Syn/work/prll_d_ltch_no_rst-verilog.pvl
+	deleted:    ../../../FIFO_Latches_Syn/work/prll_d_ltch_no_rst-verilog.syn
+	deleted:    ../../../Interrupt_Handler/Test_fifo_intr_cntrl.sv
+	deleted:    ../../../Interrupt_Handler/Test_intrup_hndlr.sv
+	deleted:    ../../../Interrupt_Handler/intrpt_hndlr.sv
+	deleted:    ../../../MBC/TEST_MBC.sv
+	deleted:    ../../../MBC/XSPRAMLP_2048X32_M8P.sv
+	deleted:    ../../../Register_File/Reg_32_bit_tb.sv
+	deleted:    ../../../Register_File/Reg_32_bit_tb_pwr.sv
+	deleted:    ../../../Register_File/Test_banco_registros.sv
+	deleted:    ../../../Register_File/prueba_pot.sv
+	deleted:    ../../../SPI/Informe_Proyecto_Final_Microelectronica_SPIBootloader_DiegoSalazar.pdf
+	deleted:    ../../../SPI/README.md
+	deleted:    ../../../SPI/spi.sv
+	deleted:    ../../../SPI/top_spi.sv
+	deleted:    ../../../SPI/topspi_tb.v
+	deleted:    ../../../TOP/IS25WP032D.v
+	deleted:    ../../../TOP/Status.sv
+	deleted:    ../../../TOP/Status_no_spi_uart.sv
+	deleted:    ../../../TOP/Test_Top_CPU_no_spi_uart.sv
+	deleted:    ../../../TOP/XSPRAMLP_2048X32_M8P.sv
+	deleted:    ../../../TOP/memory.py
+	deleted:    ../../../TOP/spi_trans.tcl
+	deleted:    ../../../TOP/topcore_tecriscv.sv
+	modified:   ../../back_end/.__tmp_pns_undo_file.tcl
+	modified:   ../../back_end/command.log
+	deleted:    ../../back_end/filenames.log
+	modified:   ../../back_end/icc_output.txt
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1.lock
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_26
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_27_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_28_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_29_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_30_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_31_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_32_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_33_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_35_tmp@10262zener
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/first_preroute_std_cells:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/first_preroute_std_cells:1_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/first_preroute_std_cells:1_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/first_preroute_std_cells:1_20
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:1_1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:1_16
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:1_17
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:1_21
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:2
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:2_1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:2_16
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:2_17
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:2_21
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:3
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:3_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:3_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:3_18
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:4
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:4.lock
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:4@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:4_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:4_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:4_18
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:4_20_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:5
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:5_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:5_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:5_18
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:6
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:6_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:6_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:6_18
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends:1_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends:1_14
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends:1_18
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pad_ring_placed:1
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pad_ring_placed:1_12
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pad_ring_unplaced:1
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pad_ring_unplaced:1_6
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pg_derived_ok:1
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pg_derived_ok:1_10
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1.lock
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1_13_tmp@10262zener
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1_20
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1_22_tmp@10262zener
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy_metal_blockage:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy_metal_blockage:1_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy_metal_blockage:1_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy_metal_blockage:1_20
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_16
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_17
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_27
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:2
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:2_1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:2_16
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:2_17
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:2_27
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:3
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:3_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:3_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:3_24
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_13
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_14
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_24
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pre_power:1
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pre_power:1.lock
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pre_power:1@10262zener
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pre_power:1_4
+	deleted:    ../../back_end/libs/Tec_Riscv_pads.mw/CEL/pre_power:1_8_tmp@10262zener
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/top_riscv_tec_pads:1
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/top_riscv_tec_pads:1_5
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/voltage_domains_created:1
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/CEL/voltage_domains_created:1_12
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/lib
+	modified:   ../../back_end/libs/Tec_Riscv_pads.mw/lib_bck
+	modified:   ../../back_end/reports/place.con
+	modified:   ../../back_end/reports/place.max.tim
+	modified:   ../../back_end/reports/place.min.tim
+	modified:   ../../back_end/reports/place.qor
+	modified:   ../../back_end/reports/place.qor_snapshot.rpt
+	modified:   ../../back_end/reports/report_power_pin.txt
+	modified:   ../../back_end/scripts/Bounnding_polygon_PD_PADS.txt
+	modified:   ../../back_end/scripts/create_pads.tcl~
+	modified:   ../../back_end/scripts/fix_vdd_ports.tcl~
+	modified:   ../../back_end/scripts/run_all.tcl~
+	modified:   ../../back_end/scripts/top_phy_final.tcl~
+	modified:   ../../back_end/scripts/top_phy_final_lv.tcl
+	deleted:    ../../back_end/scripts/top_phy_opt.tcl~
+	deleted:    ../../back_end/scripts/user_setup.tcl~
+	deleted:    ../../back_end/scripts/xfab_lib_rams.tcl~
+	deleted:    ../../back_end/scripts/xfab_mw_rams.tcl~
+	deleted:    ../../back_end/set_pad_attributes_on_cell_top_riscv_tec_pads.tcl
+	modified:   ../../back_end/snapshot/Place.cons.rpt
+	modified:   ../../back_end/snapshot/Place.info
+	modified:   ../../back_end/snapshot/Place.phys.rpt
+	modified:   ../../back_end/snapshot/Place.qor.rpt
+	modified:   ../../back_end/snapshot/Place.ss.sum
+	modified:   ../../back_end/snapshot/Place.ss.sum.full
+	modified:   ../../back_end/snapshot/Place.ss.sum.full.html
+	modified:   ../../back_end/snapshot/Place.ss.sum.html
+	modified:   ../../back_end/snapshot/Place.tim.max.rpt
+	modified:   ../../back_end/snapshot/Place.tim.min.rpt
+	modified:   ../../back_end/snapshot/index.html
+	modified:   ../../common_setup.tcl~
+	modified:   analyze_rtl.tcl~
+	deleted:    analyze_rtl_ACR.tcl
+	deleted:    dc_setup.tcl~
+	deleted:    dc_syn.tcl~
+	deleted:    run_all_ACR.tcl
+	deleted:    top_constraints.tcl~
+	modified:   ../source/FIFO_Latches/DC_script.tcl~
+	modified:   ../source/TOP/.restartSimSession.tcl.old
+	modified:   ../source/TOP/TecRiscv_top_CPU.sv~
+	modified:   ../source/TOP/control.sv~
+	modified:   ../source/TOP_PADS/top_riscv_tec_pads.sv~
+	modified:   ../source/TOP_PADS/ucu_anlg.sv~
+	modified:   ../source/Tec_Riscv_pads_syn.v
+	modified:   ../source/Tec_Riscv_pads_syn_pg.v
+	modified:   ../../user_setup.tcl~
+	deleted:    ../../user_setup_acr.tcl
+	deleted:    ../../../UART/README
+	deleted:    ../../../UART/scrs/baud.sv
+	deleted:    ../../../UART/scrs/detector_flanco.sv
+	deleted:    ../../../UART/scrs/fifo_to_uart_reg.sv
+	deleted:    ../../../UART/scrs/log_ftu.sv
+	deleted:    ../../../UART/scrs/log_utf.sv
+	deleted:    ../../../UART/scrs/u_rec.sv
+	deleted:    ../../../UART/scrs/u_xmit.sv
+	deleted:    ../../../UART/scrs/uart_to_fifo_reg.sv
+	deleted:    ../../../UART/tb/SV/uart_TB.sv
+	deleted:    ../../../UART/tb/SV/uart_ports.sv
+	deleted:    ../../../UART/tb/SV/uart_sb.sv
+	deleted:    ../../../UART/tb/SV/uart_top.sv
+	deleted:    ../../../UART/tb/SV/uart_txgen.sv
+	deleted:    ../../../UART/tb/uart_rx_tb.v
+	deleted:    ../../../UART/tb/uart_tb.v
+	deleted:    ../../../UART/tb/uart_tx_tb.v
+	modified:   ../../../ucu_phy/back_end/scripts/create_voltage_areas.tcl
+	modified:   ../../../ucu_phy/back_end/scripts/fix_vdd_ports.tcl
+	modified:   ../../../ucu_phy/back_end/scripts/fix_vdd_ports.tcl~
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../../ALU_PHY_Pads/
+	../../../ALU_Phy/back_end/
+	../../../ALU_Phy/common_setup.tcl
+	../../../ALU_Phy/common_setup.tcl~
+	../../../ALU_Phy/filenames.log
+	../../../ALU_Phy/front_end/
+	../../../ALU_Phy/history.txt
+	../../../ALU_Phy/icv.RESULTS
+	../../../ALU_Phy/user_setup.tcl
+	../../../ALU_Phy/user_setup.tcl~
+	../../../ALU_Phy/verificacion_temporizado/
+	../../../Integration/scripts/fe/ALU/
+	../../../Integration/scripts/fe/dc_syn.tcl~
+	../../../Integration/source/ALU/
+	../../../TOP/TecRiscv_top_CPU.sv~
+	../../back_end/buffer.gcts
+	../../back_end/crte_000024243.txt
+	../../back_end/icc_gui.output
+	../../back_end/legalizer_debug_plots/
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_17
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_18
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_61
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_62
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_63
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_64
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_65
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_66
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_67
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/clock_tree_placed:1_69
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/first_preroute_std_cells:1_17
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/first_preroute_std_cells:1_18
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/first_preroute_std_cells:1_26
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:1_18
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends1:1_22
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends:1_17
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/floorplan_ends:1_22
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1_17
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1_18
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy:1_24
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy_metal_blockage:1_17
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy_metal_blockage:1_18
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/power_rail_rdy_metal_blockage:1_26
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_18
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_44
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_45
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_46
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_47
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_48
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_49
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_ends1:1_51
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_17
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_18
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_44
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_45
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_46
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_47
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_48
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_49
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/powerplan_rail_ends:1_51
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_17
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_18
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_61
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_62
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_63
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_64
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_65
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_66
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_67
+	../../back_end/libs/Tec_Riscv_pads.mw/CEL/routed_cell:1_69
+	../../back_end/libs/Tec_Riscv_pads.mw/err/
+	../../back_end/net.acts
+	../../back_end/net.gcts
+	../../back_end/pna_output/
+	../../back_end/reports/list_cells.txt
+	../../back_end/reports/mv_check.txt
+	../../back_end/reports/report_pre_routing.txt
+	../../back_end/scripts/Bounnding_polygon_PD_PADS.txt~
+	../../back_end/scripts/allocate_ports.tcl
+	../../back_end/scripts/allocate_ports.tcl~
+	../../back_end/scripts/create_basic_design.tcl~
+	../../back_end/scripts/create_basic_design_mv.tcl~
+	../../back_end/scripts/create_pads_mv.tcl~
+	../../back_end/scripts/create_voltage_areas.tcl~
+	../../back_end/scripts/create_voltage_areas_mv.tcl~
+	../../back_end/scripts/fix_vdd_ports_mv.tcl~
+	../../back_end/scripts/power_nets_syn.tcl~
+	../../back_end/scripts/set_pad_attributes_on_cells.tcl~
+	../../back_end/scripts/top_phy_final_lv.tcl~
+	../../back_end/top_riscv_tec_pads_port_map.0
+	../../common_setup_typ.tcl~
+	../crte_000018421.txt
+	../db/Tec_Riscv_pads.ddc
+	../db/Tec_Riscv_pads_pre_compile.ddc
+	../db/Tec_Riscv_pads_syn.sdc
+	../db/Tec_Riscv_pads_syn.sdf
+	../db/Tec_Riscv_pads_upf.upf
+	../reports/
+	analyze_rtl_lv.tcl~
+	correct_pg_connections.tcl~
+	correct_pg_connections_lv.tcl~
+	dc_syn_lv.tcl~
+	errors.txt
+	run_all.tcl~
+	../source/MBC/MBC.sv~
+	../source/Register_File/Biblioteca.v~
+	../source/SPI/top_spi.sv~
+	../source/TOP/Status.sv~
+	../source/TOP/spi_trans.tcl~
+	../source/TOPCORE/topcore_tecriscv.sv~
+	../source/TOPRISCV_wt_SPI_UART/TopRISCV_wt_SPI_UART.sv~
+	../source/TOP_PADS/top_riscv_tec_pads_lv.sv
+	../source/TOP_PADS/top_riscv_tec_pads_lv.sv~
+	../source/TOP_PADS/ucu_anlg_ACR.sv~
+	../source/UART/scrs/fifo_to_uart_reg.sv~
+	../source/UART/scrs/uart.sv~
+	../source/UART/scrs/uart_to_fifo_reg.sv~
+	../source/copy-files.txt~
+	../source/lista.txt
+	../work/
+	../../../signoff/
+	../../../ucu_phy/back_end/scripts/create_voltage_areas.tcl~
+

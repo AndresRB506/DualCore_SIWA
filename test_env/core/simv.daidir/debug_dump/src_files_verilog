@@ -1,0 +1,16 @@
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/ALU/ALU_2.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/ALU/ALU_Library.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/BUS_Micro/Bus_Micro.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/BUS_Micro/Bus_Micro_lib.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/DECO_INSTR/DECO_INSTR.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/FIFO_Latches/fifo.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/MBC/MBC.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/Register_File/Banco_de_registros_latches.v
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/Register_File/Biblioteca.v
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/TOP/TecRiscv_top_CPU.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/TOP/XSPRAMLP_2048X32_M8P.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/TEC_RISCV/TOP/control.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core/Reference_Model.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core/Selfcheck.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core/Status.sv
+/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core/topcore_tb.sv

@@ -1,0 +1,17 @@
+set_attribute -type boolean [get_pins pad_ring_inst/clk_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/reset_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/MISO_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/RX_UART_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/maip_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/MOSI_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/SCLK_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/SCS_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/TX_UART_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/pad_bit_0__inout_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/pad_bit_1__inout_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/pad_bit_2__inout_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/pad_bit_3__inout_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/pad_bit_4__inout_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/pad_bit_5__inout_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/pad_bit_6__inout_pad_inst/PAD] is_pad true
+set_attribute -type boolean [get_pins pad_ring_inst/pad_bit_7__inout_pad_inst/PAD] is_pad true

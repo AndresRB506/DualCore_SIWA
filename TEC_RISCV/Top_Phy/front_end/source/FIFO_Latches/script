@@ -1,0 +1,5 @@
+export top_file=" /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/FIFO_Latches/fifo_top.sv";
+export top_name="top_del_sistema";
+export dc_work_area="/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/FIFO_Latches";
+export proy_name="Test_fifo_latches";
+export xfab_tech="/mnt/vol_NFS_Zener/tools/synopsys/pdks/xt018-ams/xt018";

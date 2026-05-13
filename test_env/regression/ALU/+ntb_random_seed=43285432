@@ -1,0 +1,78 @@
+Command: /mnt/vol_NFS_Zener/WD_ESPEC/jmontero/regresion/Verificacion_RISCV_TEC/test_env/regression/ALU/./simv -l +ntb_random_seed=43285432 -cm line+cond+fsm+tgl+assert+branch+property_path +UVM_TESTNAME=test_alu
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version M-2017.03-SP2-5_Full64; Runtime version M-2017.03-SP2-5_Full64;  Nov  5 12:00 2018
+UVM_INFO /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_alu...
+----------------------------------------------------------------
+Name                         Type                    Size  Value
+----------------------------------------------------------------
+uvm_test_top                 test_alu                -     @340 
+  env                        alu_model_env           -     @353 
+    alu_agnt                 alu_agent               -     @368 
+      driver                 alu_driver              -     @410 
+        rsp_port             uvm_analysis_port       -     @429 
+        seq_item_port        uvm_seq_item_pull_port  -     @419 
+      monitor                alu_monitor             -     @387 
+        item_collected_port  uvm_analysis_port       -     @400 
+      sequencer              alu_sequencer           -     @439 
+        rsp_export           uvm_analysis_export     -     @448 
+        seq_item_export      uvm_seq_item_pull_imp   -     @566 
+        arbitration_queue    array                   0     -    
+        lock_queue           array                   0     -    
+        num_last_reqs        integral                32    'd1  
+        num_last_rsps        integral                32    'd1  
+    alu_scb                  alu_scoreboard          -     @377 
+      item_collected_export  uvm_analysis_imp        -     @583 
+----------------------------------------------------------------
+-2147483634 
+UVM_INFO /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_objection.svh(1276) @ 99000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO alu_model_base_test.sv(60) @ 99000: uvm_test_top [test_alu] ---------------------------------------
+UVM_INFO alu_model_base_test.sv(61) @ 99000: uvm_test_top [test_alu] ----           TEST PASS           ----
+UVM_INFO alu_model_base_test.sv(62) @ 99000: uvm_test_top [test_alu] ---------------------------------------
+Total coverage 5.983231e+01
+UVM_INFO /mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_report_server.svh(894) @ 99000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    6
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[test_alu]     3
+
+$finish called from file "/mnt/vol_NFS_Zener/tools/synopsys/apps/vcs-mx2/M-2017.03-SP2-5/etc/uvm-1.2/src/base/uvm_root.svh", line 527.
+$finish at simulation time                99000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 99000 ps
+CPU Time:      6.710 seconds;       Data structure size:   0.4Mb
+Mon Nov  5 12:00:11 2018

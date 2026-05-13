@@ -1,0 +1,15 @@
+[13:41:59.81] /m Information: License 'SAE' checked out. (LICENSE-003)
+[13:42:03.74] /o sae_shell Version Custom Compiler N-2017.12-3
+              /c Build  (OPT) compiled on Wed Jan 31 15:06:13 2018 for RHEL64 6.6
+              /c Execution time: Mon Nov 19 13:41:56 2018
+              /c Host: zener
+              /c 
+              /c Copyright © 2004-2018 Synopsys, Inc.
+              /c This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, or distribution of this software is strictly prohibited.
+              /c 
+              /c 
+[13:42:03.78] /i ::sa::_backgroundSaeShell::signalProcessReady 1542656514
+[13:42:03.78] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::processReady 9
+[13:42:03.78] /i ::sa::_backgroundSaeShell::exit
+[13:42:03.78] /o saeInterBGSaeShell:  ::sa::_backgroundSaeShell::childFormallyExiting
+[13:42:04.41] /m Information: License 'SAE' checked in. (LICENSE-004)

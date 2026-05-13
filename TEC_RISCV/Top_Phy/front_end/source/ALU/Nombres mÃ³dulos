@@ -1,0 +1,3 @@
+La ALU integra los módulos Barrel Shifter y Carry Skip Adder. El módulo combinacional se denomina ALU_2.sv.
+Al conectar el módulo principal con los registros en las entradas y salidas se crea un nuevo módulo denominado top.sv
+Y cuyo test correspondiente es el test_top.sv.

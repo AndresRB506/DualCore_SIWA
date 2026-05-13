@@ -1,0 +1,14 @@
+Comando para correr la simulacion, esta unido compilacion con simulacion y generacion de urg report:
+
+vcs -full64 -ova_cov -cm line+cond+fsm+tgl+path+assert+branch+property_path -cm_pp -cm_report unencrypted_hierarchies+svpackages+noinitial -lca -debug_all -timescale=1ns/1ns +vcs+flush+all +warn=all -debug_access+r -sverilog +incdir+$UVM_HOME/src $UVM_HOME/src/uvm.sv $UVM_HOME/src/dpi/uvm_dpi.cc -CFLAGS -DVCS design.sv testbench.sv
+
+./simv +ntb_random_seed=43285432 -cm line+cond+fsm+tgl+assert+branch+property_path +UVM_TESTNAME=base_test
+
+urg -full64 -format both -lca -dir simv.vdb
+
+Interfaz grafica de Waveform:
+dve -full64 & 
+
+Interfaz grafica de Coverage:
+dve -full64 -cov -covdir simv.vdb &
+

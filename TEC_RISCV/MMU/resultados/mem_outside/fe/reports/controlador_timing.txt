@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : controlador
+Version: N-2017.09-SP4
+Date   : Wed May 30 17:14:47 2018
+****************************************
+
+Operating Conditions: typ_1_80V_25C   Library: D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+Wire Load Model Mode: enclosed
+
+  Startpoint: CLK_sys (clock source 'CLK_sys')
+  Endpoint: clk_mem (output port clocked by CLK_sys)
+  Path Group: CLK_sys
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  controlador        30k                   D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK_sys (fall edge)               25.00      25.00
+  clock source latency                     2.00      27.00 f
+  CLK_sys (in)                            19.97      46.97 f
+  gen_sgnl_U17/Q (INHDLLX0)                0.23      47.20 r
+  gen_sgnl_U16/Q (NO3HDLLX0)               0.20      47.40 f
+  clk_mem (out)                            0.00      47.40 f
+  data arrival time                                  47.40
+
+  clock CLK_sys (rise edge)               50.00      50.00
+  clock network delay (ideal)              3.00      53.00
+  clock uncertainty                       -0.50      52.50
+  output external delay                   -2.00      50.50
+  data required time                                 50.50
+  -----------------------------------------------------------
+  data required time                                 50.50
+  data arrival time                                 -47.40
+  -----------------------------------------------------------
+  slack (MET)                                         3.10
+
+
+1

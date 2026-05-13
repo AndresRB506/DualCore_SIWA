@@ -1,0 +1,6 @@
+#corregir el path en  ./scripts/run_all y  ./scripts/analyze_rtl_lv.tcl; 
+source ../synopsys_tools.sh;
+cd source;
+source copy-files.txt
+cd ..; 
+dc_shell -topo -f scripts/run_all.tcl -output_log_file log_dc_shell.log;

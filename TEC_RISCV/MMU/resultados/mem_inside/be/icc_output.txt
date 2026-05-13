@@ -1,0 +1,22 @@
+icc_shell> gui_start
+ + VUE INFO: Please click Verification->IC Validator VUE in LayoutWindow menu
+to launch VUE.
+
+ + VUE INFO: Found a usable port: 2445
+
+Information: Loaded Icv extension from /mnt/vol_NFS_Zener/tools/synopsys/apps/icvalidator/N-2017.12-SP1-2 (GUI-024)
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+icc_shell> open_mw_lib /mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/Back_end/db/be/CMB/CMB.mw
+{CMB.mw}
+icc_shell> ::iccGUI::open_mw_cel  CMB_routing
+icc_shell> open_mw_cel CMB_routing
+Preparing data for query................... 
+Warning: No valid link library found; check the link_library variable. (IFS-008)
+Information: Opened "CMB_routing.CEL;1" from "/mnt/vol_NFS_Zener/WD_ESPEC/fonsecam/Mem_HD/Back_end/db/be/CMB/CMB.mw" library. (MWUI-068)
+{CMB_routing}
+icc_shell> 
+icc_shell> exit
+icc_shell> exit
+
+Thank you...
+

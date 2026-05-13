@@ -1,0 +1,238 @@
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV. (PSYN-878)
+Warning: The 'ELSGT3VDHSHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSVTDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDLLSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHHHDX3' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ISOTHSHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'RTVLDFRSQHDX2' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSBTUDHLHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Warning: The 'ELSGTDHHHDX1' cell in the '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDMV-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDMV' physical library does not 
+	have corresponding logical cell description. (PSYN-025)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/achacon//Proyectos-Actuales/chip-design/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+Warning: The 'ucu_anlg' cell in the 'ucu_anlg' technology library is being 
+	marked as "dont_use". (PSYN-039)
+Warning: The 'ucu_anlg' cell in the 'ucu_anlg' technology library does not 
+	have corresponding physical cell description. (PSYN-024)
+Information: Loading local_link_library attribute {D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db, D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db, D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db, IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db, XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db, ucu_anlg.db}. (MWDC-290)
+
+  Linking design 'top_riscv_tec_pads'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3738 designs)            design_routed_ends.CEL, etc
+  D_CELLS_HDLL_LPMOS_typ_1_80V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db
+  D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/D_CELLS_HDMV_LS3VD_LPMOS_typ_1_80V_3_30V_25C.db
+  D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/liberty_LPMOS/v2_1_0/PVT_3_30V_1_80V_range/D_CELLS_HDMV_LSU3V_LPMOS_typ_1_80V_3_30V_25C.db
+  IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db
+  XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C (library)
+                              /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db
+  ucu_anlg (library)          /mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/front_end/db/QTM/ucu_anlg.db
+  D_CELLS_HDLL.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb
+  IO_CELLS_F3V.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb
+  D_CELLS_HDMV.sdb (library)  /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDMV.sdb
+  dw_foundation.sldb (library)
+                              /mnt/vol_NFS_Zener/tools/synopsys/apps/icc2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb
+
+Warning: Cell pad_ring_inst/clk_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/reset_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/MISO_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/RX_UART_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/maip_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/MOSI_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/SCLK_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/SCS_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/TX_UART_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_0__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_1__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_2__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_3__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_4__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_5__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_6__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Warning: Cell pad_ring_inst/pad_bit_7__inout_pad_inst is of type padFiller, CornerPad, flipChip or Tap cellbut do not have location. (PSYN-900)
+Floorplan loading succeeded.
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/clk_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/reset_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MISO_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/RX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/maip_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:ICF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/MOSI_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCLK_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/SCS_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/TX_UART_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:BT2SF).   (LIBSETUP-751)
+Information: Apply operating condition old:TYPICAL -> new:typ_1_80V_3_30V_25C (voltage = [vddInt:1.80 gndCommon:0.00 psbCommon:0.00 gndCommonO:0.00 gndCommonR:0.00 ...], process = 1.000000, temperature = 25.000000) to cell pad_ring_inst/pad_bit_0__inout_pad_inst (IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C:APR00DF).   (LIBSETUP-751)
+Information: A total of 17 operating conditions have been inferred.  (LIBSETUP-754)
+--------------------------------------------------------------------------------
+       Clock Gating Style Checks
+--------------------------------------------------------------------------------
+No clock gating style defined yet.
+
+--------------------------------------------------------------------------------
+                         Target Library Subset Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                             Level Shifter Checks
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                        Level Shifter Checks Summary
+--------------------------------------------------------------------------------
+Warning: Found 54 pin to pin connections requiring level shifter(s).  (MV-229)
+Warning: Pin 'top_riscv_soc/UART/u_xmit/U43/Q'(top_riscv_soc/VDD_1V8[LV]) cannot drive 'pad_ring_inst/TX_UART_pad_inst/A'(pad_ring_inst/VDD_3V3[HV]) due to PST voltage range differences (effective strategy is [rule = undefined, threshold = 0.00]). (MV-231)
+Warning: Pin 'top_riscv_soc/SPI/spi1/CS_reg/Q'(top_riscv_soc/VDD_1V8[LV]) cannot drive 'pad_ring_inst/SCS_pad_inst/A'(pad_ring_inst/VDD_3V3[HV]) due to PST voltage range differences (effective strategy is [rule = undefined, threshold = 0.00]). (MV-231)
+Warning: Pin 'top_riscv_soc/SPI/spi1/SCK_reg/Q'(top_riscv_soc/VDD_1V8[LV]) cannot drive 'pad_ring_inst/SCLK_pad_inst/A'(pad_ring_inst/VDD_3V3[HV]) due to PST voltage range differences (effective strategy is [rule = undefined, threshold = 0.00]). (MV-231)
+Warning: Pin 'top_riscv_soc/SPI/spi1/MOSI_reg/Q'(top_riscv_soc/VDD_1V8[LV]) cannot drive 'pad_ring_inst/MOSI_pad_inst/A'(pad_ring_inst/VDD_3V3[HV]) due to PST voltage range differences (effective strategy is [rule = undefined, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/maip_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/U115/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/maip_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/Reg_file/Reg_csr/Registro_Mie_5__rf5_latches_Mip_analogic/latch1/q_reg/D'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/RX_UART_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/u_rec/U79/IN0'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/MISO_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/spi1/MISO1_reg/D'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/U186/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/U118/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/U4/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U15/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U14/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U13/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U11/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U10/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U9/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U8/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U7/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U6/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U5/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U4/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/baud/U3/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/detector_flanco/U4/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/ftu_reg/U2/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/ftu_reg/U1/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/log_ftu/U3/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/u_xmit/U3/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/u_rec/U3/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/log_utf/U3/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/reset_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/log_utf/U28/C'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/U247/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/U243/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/U101/AN'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U27/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U26/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U25/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U24/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U23/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U22/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U21/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U20/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U19/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U18/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U17/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/SPI/U16/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/U6/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/U5/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/U4/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/UART/U3/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/Bus/U18/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/Bus/U17/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/Reg_file/Reg_integer/U3/B'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+Warning: Pin 'pad_ring_inst/clk_pad_inst/Y'(pad_ring_inst/VDD_3V3[HV]) cannot drive 'top_riscv_soc/TOP/Reg_file/Reg_csr/U3/A'(top_riscv_soc/VDD_1V8[LV]) due to PST voltage range differences (effective strategy is [rule = both, threshold = 0.00]). (MV-231)
+
+--------------------------------------------------------------------------------
+                             Power Domain Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                               Always On Checks
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                         Always On Checks Summary
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                 Design And Library Operating Condition Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                        Cell Operating Condition Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+           Power Domain and Operating Condition Consistency Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+--------------------------------------------------------------------------------
+       Power/Ground Pin Connection Checks
+--------------------------------------------------------------------------------
+
+Power/Ground Connection Summary:
+
+P/G net name                P/G pin count
+--------------------------------------------------------------------
+Power net "VDD_1V8":              13448
+Power net "VDD_3V3":              61
+Power net "VDD_1V8SRAM":          1
+Unconnected power pins:           0
+
+Ground net "VSS":                 13493
+Unconnected ground pins:          0
+--------------------------------------------------------------------
+
+Detail list of unconnected power/ground pins: 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+Detail list of unconnected back-bias power/ground pins: 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+       Supply Operating Voltage Checks
+--------------------------------------------------------------------------------
+Error: Supply net VDD_1V8 does not have a defined operating voltage . (UPF-057)
+Error: Supply net VDD_3V3 does not have a defined operating voltage . (UPF-057)
+Error: Supply net VDD_1V8SRAM does not have a defined operating voltage . (UPF-057)
+Error: Supply net VSS does not have a defined operating voltage . (UPF-057)
+Error: Supply net pad_ring_inst/VDD_3V3 does not have a defined operating voltage . (UPF-057)
+Error: Supply net pad_ring_inst/VSS does not have a defined operating voltage . (UPF-057)
+Error: Supply net top_riscv_soc/VDD_1V8 does not have a defined operating voltage . (UPF-057)
+Error: Supply net top_riscv_soc/VSS does not have a defined operating voltage . (UPF-057)
+Error: Supply net top_riscv_soc/VDD_3V3 does not have a defined operating voltage . (UPF-057)
+Error: Supply net top_riscv_soc/TOP/VDD_1V8SRAM does not have a defined operating voltage . (UPF-057)
+Error: Supply net top_riscv_soc/TOP/VSS does not have a defined operating voltage . (UPF-057)
+
+--------------------------------------------------------------------------------
+                          Retention Synthesis Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                          Isolation Synthesis Checks
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+                 Isolation Library Cell PG Pin Checks Summary
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                       Power Domains Root Cells Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+Please review report above for warnings and errors.
+0

@@ -1,0 +1,5 @@
+source ../synopsys_tools.sh;
+cd source;
+source copy-files.txt
+cd ..; 
+dc_shell -topo -f scripts/run_all.tcl;

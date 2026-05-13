@@ -1,0 +1,21 @@
+En este repositorio se encuentran los archivo tanto RTL como de verificación de la unidad UART.
+Para esta se toman en cuenta los archivos fuente realizados en SystemVerilog, y los de verificación .sv, ya que estos contienen la verificación completa.
+
+Los archivos fuente son:
+uart.sv
+baud.sv
+detector_flanco.sv
+fifo2.sv
+fifo_to_uart_reg.sv
+log_ftu.sv
+log_utf.sv
+uart_to_fifo_reg.sv
+u_rec.sv
+u_xmit.sv
+
+Los archivos de verificación son:
+uart_ports.sv
+uart_sb.sv
+uart_TB.sv
+uart_top.sv
+uart_txgen.sv

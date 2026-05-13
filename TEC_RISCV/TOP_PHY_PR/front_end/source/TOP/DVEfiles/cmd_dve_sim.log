@@ -1,0 +1,40 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synopsys::xml set_array_limit <data limit="50" />
+synopsys::xml set_depth_limit <data limit="100" />
+synopsys::xml set_string_limit <data limit="1000" />
+synopsys::xml set_only_active_frame <data value="1" />
+synopsys::xml set_variable_frame_id <data value="1" />
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpVLL6QG
+synUtils::sendTool -active {_icl_start_rpc -version "M-2017.03-SP2-5_Full64" -sync_file /tmp/vcs_dve_rpc.rgarcia.23048}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.rgarcia.23048}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {Test_Top.uut.top_riscv_soc.TOP.Bus.D_pop_mbc Test_Top.uut.top_riscv_soc.TOP.Bus.D_pop_spi Test_Top.uut.top_riscv_soc.TOP.Bus.D_pop_uart Test_Top.uut.top_riscv_soc.TOP.Bus.D_push_mbc Test_Top.uut.top_riscv_soc.TOP.Bus.D_push_spi Test_Top.uut.top_riscv_soc.TOP.Bus.D_push_uart Test_Top.uut.top_riscv_soc.TOP.Bus.clk Test_Top.uut.top_riscv_soc.TOP.Bus.pndng_mbc Test_Top.uut.top_riscv_soc.TOP.Bus.pndng_spi Test_Top.uut.top_riscv_soc.TOP.Bus.pndng_uart Test_Top.uut.top_riscv_soc.TOP.Bus.pop_mbc Test_Top.uut.top_riscv_soc.TOP.Bus.pop_spi Test_Top.uut.top_riscv_soc.TOP.Bus.pop_uart Test_Top.uut.top_riscv_soc.TOP.Bus.push_mbc Test_Top.uut.top_riscv_soc.TOP.Bus.push_spi Test_Top.uut.top_riscv_soc.TOP.Bus.push_uart Test_Top.uut.top_riscv_soc.TOP.Bus.reset } -aggregates  -fid VPD0
+synopsys::run -relative 400000.000000ns
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+synopsys::xml get_stop_data
+synopsys::xml {frames <data updateType="preserve" itemId="none" viewId="Stack.1" />}
+synopsys::xml {locals <data updateType="preserve" itemId="none" frame_id="frame(16713:0:2)" viewId="Local.1" />}
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

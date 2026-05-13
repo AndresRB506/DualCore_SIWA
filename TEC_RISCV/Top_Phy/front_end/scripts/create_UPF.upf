@@ -1,0 +1,56 @@
+set_design_attributes -attribute suppress_iss "TOP COUT"
+#comando para que los dominios de alimentación no sean dependientes
+create_power_domain TOP
+# se crea el dominio de alimentación del CORE
+create_power_domain COUT -elements cout1_inst
+# VDD=1.8V
+create_supply_port VDD
+# Se crea el puerto de conexion al dominio de alimentación
+create_supply_net  VDD   -domain TOP
+# Crea una red de alimentación que solo puede ser utilizada por el dominio en el que se creó
+create_supply_net  VDD   -domain COUT -reuse
+#-reuse option is used to share supply nets between power domains in te same scope
+connect_supply_net VDD   -ports VDD
+# Conecta la red de alimentación con el puerto definido
+set_voltage 1.8 -object_list VDD
+# VSS
+create_supply_port VSS
+create_supply_net  VSS   -domain TOP
+# Crea una red de alimentación que solo puede ser utilizada por el dominio en el que se creó
+create_supply_net  VSS   -domain COUT -reuse
+# Crea una red de alimentación compartida
+connect_supply_net VSS   -ports VSS
+set_voltage 0 -object_list VSS
+# VDDG=3.3V
+create_supply_port VDDGS
+#create_supply_net  VDDGS   -domain TOP
+create_supply_net  VDDGS   -domain COUT
+connect_supply_net VDDGS  -ports VDDGS
+set_voltage 3.3 -object_list VDDGS
+## PRIMARY POWER NETS
+#####################
+set_domain_supply_net TOP   -primary_power_net VDD   -primary_ground_net VSS
+set_domain_supply_net COUT  -primary_power_net VDDGS -primary_ground_net VSS
+## GPRS SETUP
+### level shifter de 1.8V a 3.3V
+####################
+set_level_shifter LSHVFU3VHDX1 -domain TOP  -applies_to outputs -location self
+# level shifter de 3.3V a 1.8V  me parece que esta no se ocupa
+#set_level_shifter LSHVT3VDHDX1 -domain COUT
+#############
+# SWITCH
+#set_isolation gprs_iso_out #  -domain GPRS #  -isolation_power_net VDD -isolation_ground_net VSS #  -clamp_value 1 #  -applies_to outputs
+#set_isolation_control gprs_iso_out #  -domain GPRS #  -isolation_signal PwrCtrl/gprs_iso #  -isolation_sense low #  -location parent
+# RETAIN
+## MULT SETUP
+#############
+# SWITCH
+# ADD PORT STATE INFO
+#####################
+#edbab
+add_port_state VDD   -state {LV  1.8}
+add_port_state VDDGS  -state {HV  3.3}
+add_port_state VSS  -state {GND  0}
+###################################################################################################################################################
+#######################################################creación UPF para ALU#######################################################################
+###################################################################################################################################################

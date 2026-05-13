@@ -1,0 +1,57 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version M-2017.03-SP2-5_Full64; Runtime version M-2017.03-SP2-5_Full64;  Mar 27 15:18 2019
+Doing SDF annotation ...... Done
+VCD+ Writer M-2017.03-SP2-5_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+The file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP/inter.vpd' was opened successfully.
+400000000 ps
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_8_
+    $recrem( posedge RN:350101.89 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_7_
+    $recrem( posedge RN:350101.89 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_6_
+    $recrem( posedge RN:350101.89 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_5_
+    $recrem( posedge RN:350101.89 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_4_
+    $recrem( posedge RN:350101.90 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_3_
+    $recrem( posedge RN:350101.90 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_2_
+    $recrem( posedge RN:350101.89 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_1_
+    $recrem( posedge RN:350101.89 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.uart_clk_reg
+    $recrem( posedge RN:350101.90 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.UART.baud.clk_div_reg_0_
+    $recrem( posedge RN:350101.90 ns, posedge C:350101.99 ns, limits: (0.43 ns,0.02 ns) );
+
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9477: Timing violation in Test_Top.uut.top_riscv_soc.SPI.tspi_send_data_reg
+    $recrem( posedge RN:350102.14 ns, posedge C:350102.15 ns, limits: (0.62 ns,0.02 ns) );
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9396: Timing violation in Test_Top.uut.top_riscv_soc.SPI.tspi_config_en_reg
+    $recrem( posedge RN:350102.14 ns, posedge C:350102.15 ns, limits: (0.58 ns,0.02 ns) );
+
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 9394: Timing violation in Test_Top.uut.top_riscv_soc.TOP.Bus.spi_bs_ntrfs.D_reg_rd.bit__35__prll_regstr_.q_reg
+    $setuphold( posedge C &&& c_SH_D:352509.76 ns, negedge D:352509.57 ns, limits: (0.46 ns,-0.14 ns) );
+
+
+"/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/verilog/v2_1_0/D_CELLS_HDLL.v", 14601: Timing violation in Test_Top.uut.top_riscv_soc.TOP.Alu.complemento_a_2_reg_20_
+    $setuphold( posedge GN:354308.59 ns, posedge D:354308.01 ns, limits: (0.59 ns,-0.14 ns) );
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 400000000 ps
+CPU Time:      2.010 seconds;       Data structure size:  16.1Mb
+Wed Mar 27 15:19:33 2019

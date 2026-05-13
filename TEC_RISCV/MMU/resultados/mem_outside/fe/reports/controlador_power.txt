@@ -1,0 +1,59 @@
+Information: Updating design information... (UID-85)
+Warning: There are 1 switching activity information conflicts. (PWR-19)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Invalid switching activity annotation on constant net(s) is being ignored. (PWR-421)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : controlador
+Version: N-2017.09-SP4
+Date   : Wed May 30 17:14:47 2018
+****************************************
+
+
+Library(s) Used:
+
+    D_CELLS_HDLL_LPMOS_typ_1_80V_25C (File: /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db)
+
+
+Operating Conditions: typ_1_80V_25C   Library: D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+controlador            30k               D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+core_fsm_Address_size32_FIFO_size80_Data_size32_inf_size8_d_intr_size72_adrs_size24_amount_io5_adrs_mem_size11
+                       10k               D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.1965 mW   (96%)
+  Net Switching Power  =  44.8411 uW    (4%)
+                         ---------
+Total Dynamic Power    =   1.2413 mW  (100%)
+
+Cell Leakage Power     =   9.7791 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  2.8041e-04        7.5504e-04            1.6171        1.0355e-03  (   0.08%)
+register           1.1613        6.7328e-03        3.7666e+03            1.1680  (  94.10%)
+sequential     1.2704e-02        2.4751e-04        1.6026e+03        1.2953e-02  (   1.04%)
+combinational  2.2180e-02        3.7106e-02        4.4083e+03        5.9290e-02  (   4.78%)
+--------------------------------------------------------------------------------------------------
+Total              1.1965 mW     4.4841e-02 mW     9.7791e+03 pW         1.2413 mW
+1

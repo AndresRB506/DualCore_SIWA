@@ -1,0 +1,19 @@
+/* ICV_Nettran: RHEL64 N-2017.12-SP1-2.4087669 2018/03/09 */
+/* Created:  3/11/2019  16:32   */
+
+                                  ICV_Nettran 
+
+         Version N-2017.12-SP1-2 for linux64 - Mar 09, 2018 cl#4087669
+
+                    Copyright (c) 1996 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Options: -verilog Tec_Riscv_pads_phy.v -outType SPICE -outName Tec_Riscv_pads_phy.sp 
+
+FATAL: No read access to netlist "Tec_Riscv_pads_phy.v".
+
+ERROR: Errors during translation. See log file icv_nettran.log for listing.
+

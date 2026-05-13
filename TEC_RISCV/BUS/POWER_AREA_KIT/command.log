@@ -1,0 +1,84 @@
+#@ # 
+#@ # Running icc_shell Version L-2016.03-SP3 for linux64 -- Jul 11, 2016
+#@ # Date:   Fri Jan 12 11:48:50 2018
+#@ # Run by: rgarcia@zener
+#@ 
+
+#@ # -- Starting source .synopsys_dc.setup
+
+#@ set cache_read ""
+#@ set cache_write ""
+#@ 
+#@ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#@ #  Library Setup
+#@ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#@ 
+#@ # Modificacion del serch path: las "" definen una lista y permiten variable substitution
+#@ # $nombre_variable -> valor. 
+#@ 
+#@ # El comando siguente concatena al search path los directorios listados
+#@ set proy_home [getenv dc_work_area];
+#@ set tech_home /mnt/vol_NFS_Zener/tools/synopsys/pdks/xt018-ams/xt018;
+#@ #set home_base "$proy_home/implement/fe"
+#@ set search_path "$proy_home"
+#@ set search_path [concat $search_path $proy_home/scripts $proy_home/db $proy_home/source/* $tech_home/diglibs/D_CELLS_LL/v2_0/dc_shell_symb/v2_0_0  $tech_home/diglibs/D_CELLS_LL/v2_0/liberty_LP5MOS/v2_0_3/PVT_1_80V_range $tech_home/diglibs/IO_CELLS_FC1V8/v1_2/dc_shell_symb/v1_2_0 $tech_home/diglibs/IO_CELLS_FC1V8/v1_2/liberty_LP5MOS/v1_2_1/PVT_1_80V_1_80V_range];
+#@ 
+#@ # El comando set establece un valor para una variable. 
+#@ #set synthetic_library [concat "D_CELLS_LL.sdb IO_CELLS_FC1V8.sdb"]
+#@ #set target_library [concat "D_CELLS_LL_LP5MOS_typ_1_80V_25C.db IO_CELLS_FC1V8_LP5MOS_typ_1_80V_1_80V_25C.db"]; #[concat "D_CELLS_LL_LP5MOS_fast_1_20V_25C.db D_CELLS_LL_LP5MOS_typ_1_20V_25C.db"];
+#@ #set link_library "* $target_library $synthetic_library"
+#@ #set symbol_library [concat "D_CELLS_LL.sdb IO_CELLS_FC1V8.sdb"]
+#@ 
+#@ set synthetic_library "D_CELLS_LL.sdb"
+#@ set target_library "D_CELLS_LL_LP5MOS_typ_1_80V_25C.db";
+#@ set link_library "* $target_library $synthetic_library"
+#@ set symbol_library [concat "D_CELLS_LL.sdb"]
+#@ 
+#@ 
+#@ #Work Library Location
+#@ define_design_lib WORK -path "./work"; #ver comentario en linea siguiente
+#@ #para comentar al final de una linea es necesario utilizar ; y luego #.
+#@ 
+#@ 
+#@ 
+#@ ############ NO editar desde aqui para abajo ######## 
+#@ #####################################################
+#@ 
+#@ echo "\n\nSettings:"
+#@ echo "search_path:       $search_path"
+#@ echo "link_library:      $link_library"
+#@ echo "target_library:    $target_library"
+#@ echo "symbol_library:    $symbol_library"
+#@ # enable_write_lib_mode; #Este comando se usa para habilitar DC para escribir bibliotecas.
+#@ # No debe ser usado, si se pretende optimizar un diseño.
+#@ 
+#@ # define_design_lib DEFAULT -path ./analyzed
+#@ 
+#@ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#@ #  History
+#@ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#@ 
+#@ history keep 800
+#@ 
+#@ 
+#@ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#@ #  Aliases
+#@ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#@ 
+#@ alias h history
+#@ alias rc "report_constraint -all_violators"
+#@ alias rt report_timing
+#@ alias ra report_area
+#@ alias page_on {set sh_enable_page_mode true}
+#@ alias page_off {set sh_enable_page_mode false}
+#@ alias fr "remove_design -designs"
+#@ 
+#@ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#@ #  Alib for compile_ultra - Carpeta para archivos temporales para Alib
+#@ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#@ 
+#@ #set alib_library_analysis_path "$proy_home/implement/fe"
+#@ echo "\n\nI am ready...\n"
+#@ # -- End source .synopsys_dc.setup
+
+exit

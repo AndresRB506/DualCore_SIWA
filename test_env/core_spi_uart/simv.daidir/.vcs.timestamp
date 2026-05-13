@@ -1,0 +1,210 @@
+46       
+0 ../TOP/TecRiscv_top_CPU.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../TOP/TecRiscv_top_CPU.sv
+0 ../BUS_Micro/Bus_Micro.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../BUS_Micro/Bus_Micro.sv
+0 ../BUS_Micro/Bus_Micro_lib.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../BUS_Micro/Bus_Micro_lib.sv
+0 ../FIFO_Latches/fifo.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../FIFO_Latches/fifo.sv
+0 ../DECO_INSTR/DECO_INSTR.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../DECO_INSTR/DECO_INSTR.sv
+0 ../ALU/ALU_2.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../ALU/ALU_2.sv
+0 ../ALU/ALU_Library.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../ALU/ALU_Library.sv
+0 ../Register_File/Banco_de_registros_latches.v
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../Register_File/Banco_de_registros_latches.v
+0 ../Register_File/Biblioteca.v
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../Register_File/Biblioteca.v
+0 ../MBC/MBC.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../MBC/MBC.sv
+0 ../TOP/control.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../TOP/control.sv
+0 ../TOP/coremark_mem_model.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../TOP/coremark_mem_model.sv
+0 ../SPI/top_spi.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../SPI/top_spi.sv
+0 ../SPI/spi.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../SPI/spi.sv
+0 ../UART/scrs/uart.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/uart.sv
+0 ../UART/scrs/baud.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/baud.sv
+0 ../UART/scrs/detector_flanco.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/detector_flanco.sv
+0 ../UART/scrs/fifo_to_uart_reg.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/fifo_to_uart_reg.sv
+0 ../UART/scrs/log_ftu.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/log_ftu.sv
+0 ../UART/scrs/log_utf.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/log_utf.sv
+0 ../UART/scrs/uart_to_fifo_reg.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/uart_to_fifo_reg.sv
+0 ../UART/scrs/u_rec.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/u_rec.sv
+0 ../UART/scrs/u_xmit.sv
+0 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/systemverilog/../UART/scrs/u_xmit.sv
+47
++incdir+../../TEC_RISCV/SPI
++incdir+../../TEC_RISCV/TOP
++incdir+../../TEC_RISCV/UART
++itf+/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/vcsdp.tab
++memcbk
++vcs+flush+all
++vcsd
++vpi
++warn=all
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -DVCS -O -I/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libvirsim.so /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/liberrorinf.so /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libsnpsmalloc.so /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libvfs.so /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/VCS/linux64/pli.a
+-Mout=simv
+-Msaverestoreobj=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mupdate
+-Mvcsaceobjs=
+-Mxcflags= -pipe -I/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-cm
+-cm_report
+-debug_access+all+bc
+-debug_region+cell
+-full64
+-gen_obj
+-gui
+-kdb
+-lca
+-ova_cov
+-sverilog
+-timescale=1ns/10ps
+-ucli
+/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/bin/vcs1
+line+cond+fsm+tgl+assert+branch+property_path
+unencrypted_hierarchies+svpackages+noinitial
+/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/VCS/linux64/novas.tab
+top_core_spi_uart.sv
+70
+which_declare=declare -f
+XMODIFIERS=@im=ibus
+XLIBD_LIBERTY_PATH=/mnt/vol_NFS_rh003/xfab_pdks/design/xkit
+XLIBD_INSTALL_PATH=/mnt/vol_NFS_rh003/xfab_pdks/design/xkit/x_all/utilities/XLIBD/v2_0/bin/linux_x86_64/v2_0_6/bin
+XLIBD_INIT_FILE_PATH=/home/rmolina003/XLIBD.ini
+XFAB_UTILS=/mnt/vol_NFS_rh003/xfab_pdks/design/xkit/x_all/synopsys/XFAB_AMS_RefKit-synopsys_CustomCompiler/v2_0_2/utilities
+XDG_SESSION_ID=44
+XDG_RUNTIME_DIR=/run/user/1002
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/rmolina003/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XDG_CURRENT_DESKTOP=GNOME
+VTE_VERSION=5204
+VNCDESKTOP=redhat003:14 (rmolina003)
+VMR_MODE_FLAG=64
+VERDI_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2
+VC_STATIC_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vc_static/T-2022.06-1
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UVM_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/etc/uvm-1.2
+UNAME=/bin/uname
+TOOL_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64
+SYNOPSYS_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys
+SYMBIOTIC_LICENSE=/mnt/vol_NFS_rh003/profesores/rmolina/Symbiotic_EDA/symbiotic-academic-licenses-tech-costa-rica.lic
+SSH_TTY=/dev/pts/13
+SSH_CONNECTION=172.21.7.108 61037 172.21.8.7 22
+SSH_CLIENT=172.21.7.108 61037 22
+SSH_AUTH_SOCK=/tmp/ssh-EEZIamdiu5FF/agent.1408245
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=1408315
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPSLMD_QUEUE=TRUE
+SILICONSMART_HOME=/home/rmolina003/.local/bin:/home/rmolina003/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/customcompiler/R-2020.12-SP1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/customcompiler/R-2020.12-SP1/linux64/:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/wv/R-2020.12-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icvalidator/R-2020.09-SP3-8/bin/LINUX.64:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/finesim/R-2020.12-SP2-4/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/hspice/R-2020.12-SP2/hspice/bin:/mnt/vol_NFS_rh003/xfab_pdks/design/xkit/x_all/synopsys/xenv:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/syn/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icc/S-2021.06-SP3/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icc2/R-2020.09-SP6/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/syn/R-2020.09-SP5-1/linux64/syn/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/prime/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/mw/R-2020.09-SP5-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/lc/R-2020.09-SP5/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vc_static/T-2022.06-1/bin:/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/siliconsmart
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/1408245,unix/unix:/tmp/.ICE-unix/1408245
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+OVA_UUM=0
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+ICV_HOME_DIR=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/icvalidator/R-2020.09-SP3-8
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.71
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/9a8a70e2_6d26_40ef_9380_2921b1281f94
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+FTK_KIT_DIR=/mnt/vol_NFS_rh003/xfab_pdks/design/xkit
+FINESIM_HOME=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/finesim/R-2020.12-SP2-4
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-QX7yYEKdqp,guid=0ee70093c650635301c2946267b6d423
+COLORTERM=truecolor
+CNI_ROOT=/mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/pycells/
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/Modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1_}
+BASH_FUNC_ml%%=() {  module ml "$@"_}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+0
+34
+1729200663 Selfcheck.sv
+1728429662 Reference_Model.sv
+1630961488 instruction_class.sv
+1630961460 coverage_classes.sv
+1630961463 IS25WP032D.v
+1729200287 Status.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/u_xmit.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/u_rec.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/uart_to_fifo_reg.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/log_utf.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/log_ftu.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/fifo_to_uart_reg.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/detector_flanco.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/baud.sv
+1630961649 ../../TEC_RISCV/TOP/../UART/scrs/uart.sv
+1630961566 ../../TEC_RISCV/TOP/../SPI/spi.sv
+1630961566 ../../TEC_RISCV/TOP/../SPI/top_spi.sv
+1646229250 ../../TEC_RISCV/TOP/../TOP/coremark_mem_model.sv
+1630961504 ../../TEC_RISCV/TOP/../TOP/control.sv
+1630961649 ../../TEC_RISCV/TOP/../MBC/MBC.sv
+1630961566 ../../TEC_RISCV/TOP/../Register_File/Biblioteca.v
+1630961566 ../../TEC_RISCV/TOP/../Register_File/Banco_de_registros_latches.v
+1630961499 ../../TEC_RISCV/TOP/../ALU/ALU_Library.sv
+1630961499 ../../TEC_RISCV/TOP/../ALU/ALU_2.sv
+1630961649 ../../TEC_RISCV/TOP/../DECO_INSTR/DECO_INSTR.sv
+1630961649 ../../TEC_RISCV/TOP/../FIFO_Latches/fifo.sv
+1630961649 ../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv
+1630961649 ../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro.sv
+1646228053 ../../TEC_RISCV/TOP/../TOP/TecRiscv_top_CPU.sv
+1630961504 ../../TEC_RISCV/TOP/topcore_tecriscv.sv
+1740036691 top_core_spi_uart.sv
+1635442507 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/include/cm_vcsd.tab
+1631254645 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/VCS/linux64/novas.tab
+1635442368 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/vcsdp.tab
+5
+1635442373 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libvirsim.so
+1635442373 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/liberrorinf.so
+1635442365 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libsnpsmalloc.so
+1635442374 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/vcs/R-2020.12-SP2/linux64/lib/libvfs.so
+1631254645 /mnt/vol_NFS_Pivot/rmolina_installation_files/tools/synopsys/verdi/R-2020.12-SP2/share/PLI/VCS/linux64/pli.a
+1740036752 simv.daidir
+-1 partitionlib

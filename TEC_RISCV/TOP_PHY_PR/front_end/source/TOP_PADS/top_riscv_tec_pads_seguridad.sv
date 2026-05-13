@@ -1,0 +1,115 @@
+// Author Alfonso Chacon Rodriguez
+// Sept 2, 2018
+// Revision 0.1
+// Revision date: 
+// Checks: Ronny Garcia Ramirez
+// 
+
+
+## SoC Core
+`include "../TOP/TecRiscv_top_CPU.sv"
+`include "../SPI/top_spi.sv"
+`include "../UART/scrs/uart.sv"
+
+## PADs y Level Shifters
+`include "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC1V8/v1_0/verilog/v1_0_0/IO_CELLS_FC1V8.v"
+
+`include "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_FC3V/v1_1/verilog/v1_1_0/IO_CELLS_FC3V.v"
+
+`include "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDMV/v2_1/verilog/v2_1_0/D_CELLS_HDMV.v"
+
+
+## Signals with a "_pad" suffix are connected to a IO Pad
+## Signals with a "anlg" suffix are connected to a 3.3V Domain
+## The latter signals will later become internal in order to connect to microDIE's hard macro interface registers
+
+module top_risc_tec_pads(
+	input clk_pad,
+	input reset_pad,
+	input push_anlg,
+	input pop_anlg,
+	//input [64:0] D_push_anlg,
+	input MISO_pad,
+	input RX_UART_pad,
+	//output [64:0] D_pop_anlg,
+	output pndng_anlg,
+	output MOSI_pad,
+	output SCLK_pad,
+	output CS_pad,
+	output TX_UART_pad,
+	input [7:0] gpio_pad
+);
+
+\\ 
+\\ PADS wiring
+logic    clk,
+	reset,
+	MISO,
+	RX_UART,	
+	MOSI,
+	SCLK,
+	CS,
+	TX_UART;
+
+logic	[7:0] gpio;
+
+\\Level shifters wiring
+ 
+logic push_anlg;
+logic 	pop_anlg;
+logic 	pndng_anlg;
+//wire [64:0] D_pop_anlg;
+//wire [64:0] D_push_anlg;
+
+test_ts  top_riscv_soc(
+	.clk(clk),
+	.reset(reset),
+	.push_anlg(push_anlg),
+	.pop_anlg(push_anlg),
+	//.D_push_anlg(push_anlg),
+	.MISO(MISO),
+	.RX_UART(RX_UART),
+	//.D_pop_anlg(D_pop_anlg),
+	.pndng_anlg(pndng_anlg),
+	.MOSI(MOSI),
+	.SCLK(SCLK),
+	.CS(CS),
+	.TX_UART(TX_UART),
+	.gpio(gpio)
+);
+
+// PAD connections
+// PAD_enablers
+
+wire gnd_en;
+
+// PADs' buffers always enabled
+assign  gnd_en=1'b0;
+
+
+// PAD inputs
+ICFA clk_pad_inst (.PAD(clk_pad), .PI(gnd_en), .PO(), .Y(clk)); // 
+ICFA reset_pad_inst (.PAD(reset_pad), .PI(gnd_en), .PO(), .Y(reset)); 
+ICFA MISO_pad_inst (.PAD(MISO_pad), .PI(gnd_en), .PO(), .Y(MISO)); 
+ICFA RX_UART_pad_inst (.PAD(RX_UART_pad), .PI(gnd_en), .PO(), .Y(RX_UART)); 
+
+// PAD outputs
+
+BT2SFA MOSI_pad_inst (.PAD(MOSI_pad), .PI(gnd_en), .PO(), .Y(MOSI));
+BT2SFA SCLK_pad_inst (.PAD(SCLK_pad), .PI(gnd_en), .PO(), .Y(SCLK));
+BT2SFA CS_pad_inst (.PAD(CS_pad), .PI(gnd_en), .PO(), .Y(CS));
+BT2SFA TX_UART_pad_inst (.PAD(TX_UART_pad), .PI(gnd_en), .PO(), .Y(TX_UART));
+
+// BID PADs 
+// Check this later for GPIO real directions
+
+genvar pad_i;
+generate
+  for (pad_i=0; pad_i<8; pad_i=pad_i+1)
+	begin :pad_bit
+		ICFA  (.PAD(gpio_pad[pad_i]), .PI(gnd_en), .PO(), .Y(gpio[pad_i])); 
+        end
+endgenerate
+
+endmodule
+

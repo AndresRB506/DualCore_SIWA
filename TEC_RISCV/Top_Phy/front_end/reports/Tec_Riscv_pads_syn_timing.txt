@@ -1,0 +1,90 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : topcore_tecriscv
+Version: N-2017.09-SP4
+Date   : Thu Oct 11 14:47:46 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: TYPICAL   Library: D_CELLS_HDLL_LPMOS_typ_1_80V_25C
+Wire Load Model Mode: Inactive.
+
+  Startpoint: TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_Mie_IO/latch1/q_reg
+              (positive level-sensitive latch clocked by CLK)
+  Endpoint: TOP/pc_reg_30_
+            (rising edge-triggered flip-flop clocked by CLK')
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  time given to startpoint                               20.40      21.40
+  TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_Mie_IO/latch1/q_reg/D (DLHRQHDLLX1)
+                                                          0.00      21.40 f
+  TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_Mie_IO/latch1/q_reg/Q (DLHRQHDLLX1)
+                                                          0.56      21.96 f
+  TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_Mie_IO/latch1/q (latch_144)
+                                                          0.00      21.96 f
+  TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_Mie_IO/tristategate1/input_x (tristategate_144)
+                                                          0.00      21.96 f
+  TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_Mie_IO/tristategate1/output_x_tri/Q (BTHHDLLX6)
+                                                          0.45 *    22.42 f
+  TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_Mie_IO/tristategate1/output_x (tristategate_144)
+                                                          0.00      22.42 f
+  TOP/Reg_file/Reg_csr/Regsitrio_GPIO_1__rf11_latch_Mie_IO/Out1_tri (latch_tri_rst0_Hard_114)
+                                                          0.00      22.42 f
+  TOP/Reg_file/Reg_csr/Dout1[1] (csr_file_width32_number_reg12)
+                                                          0.00      22.42 f
+  TOP/Reg_file/CSR[1] (Banco_registros_latches)           0.00      22.42 f
+  TOP/U118/Q (NA2HDLLX4)                                  0.23 *    22.65 r
+  TOP/U115/Q (NA2HDLLX4)                                  0.20 *    22.84 f
+  TOP/Alu/B[1] (ALU_2_bits_size32_cntrl_size4)            0.00      22.84 f
+  TOP/Alu/inst_BS/B[1] (Barrel_Shifter)                   0.00      22.84 f
+  TOP/Alu/inst_BS/U204/Q (EO2HDLLX1)                      0.33 *    23.18 r
+  TOP/Alu/inst_BS/U203/Q (NA2I1HDLLX4)                    0.25 *    23.43 r
+  TOP/Alu/inst_BS/U223/Q (INHDLLX3)                       0.09 *    23.52 f
+  TOP/Alu/inst_BS/U221/Q (NO2HDLLX4)                      0.21 *    23.73 r
+  TOP/Alu/inst_BS/U206/Q (BUHDLLX12)                      0.26 *    24.00 r
+  TOP/Alu/inst_BS/genblk3_1__inst_buffer/enable (tristate_buffer_10)
+                                                          0.00      24.00 r
+  TOP/Alu/inst_BS/genblk3_1__inst_buffer/output_x_tri_6_/Q (BTHHDLLX2)
+                                                          0.51 *    24.51 f
+  TOP/Alu/inst_BS/genblk3_1__inst_buffer/output_x[6] (tristate_buffer_10)
+                                                          0.00      24.51 f
+  TOP/Alu/inst_BS/genblk4_8__inst_buffer_s/input_x[30] (tristate_buffer_5)
+                                                          0.00      24.51 f
+  TOP/Alu/inst_BS/genblk4_8__inst_buffer_s/output_x_tri_30_/Q (BTHHDLLX2)
+                                                          0.58 *    25.09 f
+  TOP/Alu/inst_BS/genblk4_8__inst_buffer_s/output_x[30] (tristate_buffer_5)
+                                                          0.00      25.09 f
+  TOP/Alu/inst_BS/U316/Q (NA2HDLLX2)                      0.17 *    25.26 r
+  TOP/Alu/inst_BS/U236/Q (NA2HDLLX2)                      0.10 *    25.36 f
+  TOP/Alu/inst_BS/Y[30] (Barrel_Shifter)                  0.00      25.36 f
+  TOP/Alu/U331/Q (NA2HDLLX2)                              0.12 *    25.49 r
+  TOP/Alu/U56/Q (NA2HDLLX2)                               0.09 *    25.58 f
+  TOP/Alu/OUT[30] (ALU_2_bits_size32_cntrl_size4)         0.00      25.58 f
+  TOP/U109/Q (NA22HDLLX1)                                 0.21 *    25.79 f
+  TOP/pc_reg_30_/D (DFRRQHDLLX4)                          0.00 *    25.79 f
+  data arrival time                                                 25.79
+
+  clock CLK' (rise edge)                                 25.00      25.00
+  clock network delay (ideal)                             1.00      26.00
+  clock uncertainty                                      -0.10      25.90
+  TOP/pc_reg_30_/C (DFRRQHDLLX4)                          0.00      25.90 r
+  library setup time                                     -0.39      25.51
+  data required time                                                25.51
+  --------------------------------------------------------------------------
+  data required time                                                25.51
+  data arrival time                                                -25.79
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.28
+
+
+1

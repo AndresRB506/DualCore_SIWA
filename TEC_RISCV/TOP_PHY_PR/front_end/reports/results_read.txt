@@ -1,0 +1,1186 @@
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_range/D_CELLS_HDLL_LPMOS_typ_1_80V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/liberty_UPF_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/dc_shell_symb/v2_1_0/D_CELLS_HDLL.sdb'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/dc_shell_symb/v2_1_0/IO_CELLS_F3V.sdb'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/syn2/N-2017.09-SP4/libraries/syn/dw_foundation.sldb'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/syn2/N-2017.09-SP4/libraries/syn/gtech.db'
+Loading db file '/mnt/vol_NFS_Zener/tools/synopsys/apps/syn2/N-2017.09-SP4/libraries/syn/standard.sldb'
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/D_CELLS_HDLL/v2_1/synopsys_ICC/v2_1_0/xh018-D_CELLS_HDLL-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_D_CELLS_HDLL. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/diglibs/IO_CELLS_F3V/v2_1/synopsys_ICC/v2_1_0/xh018-IO_CELLS_F3V-synopsys_ICCompiler-v2_1_0/xh018_xx43_MET4_METMID_METTHK_IO_CELLS_F3V. (PSYN-878)
+Information: linking reference library : /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/back_end/db/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.mw. (PSYN-878)
+  Loading link library 'D_CELLS_HDLL_LPMOS_typ_1_80V_25C'
+  Loading link library 'IO_CELLS_F3V_LPMOS_UPF_typ_1_80V_3_30V_25C'
+  Loading link library 'XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C'
+  Loading link library 'gtech'
+Loading sverilog file '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/top_riscv_tec_pads_lv.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/top_riscv_tec_pads_lv.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/topcore_tecriscv.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:129: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:152: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:341: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:342: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:364: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:442: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:443: The delay specification for gate instantiation is ignored. (VER-970)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:471: The delay specification for gate instantiation is ignored. (VER-970)
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../DECO_INSTR/DECO_INSTR.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Banco_de_registros_latches.v
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v:191: Parameter keyword used in local parameter declaration. (VER-329)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v:204: Parameter keyword used in local parameter declaration. (VER-329)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v:558: Parameter keyword used in local parameter declaration. (VER-329)
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:180: the undeclared symbol 'ld_d_read_clk' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:192: Parameter keyword used in local parameter declaration. (VER-329)
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:167: the undeclared symbol 'csr_write' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:168: the undeclared symbol 'rst_tmr' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:266: the undeclared symbol 'clk_bus' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:294: the undeclared symbol 'clk_timer' assumed to have the default net type, which is 'wire'. (VER-936)
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/top_spi.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/uart.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/baud.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/detector_flanco.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/fifo_to_uart_reg.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/uart_to_fifo_reg.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv
+Opening include file /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP_PADS/pad_ring.sv
+
+Inferred memory devices in process
+	in routine dff_async_rst line 12 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine dltch_async_rst line 31 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|        q_reg        | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine dltch line 49 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|        q_reg        | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:181: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:186: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 205 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           210            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_flops line 205 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      pndng_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:263: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:268: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 287 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           288            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_flops_no_full line 308 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:355: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:368: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:361: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 388 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           393            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_ltch line 388 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      pndng_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      full_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:462: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:479: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:468: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 499 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           504            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fifo_ltch_no_rst line 499 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      pndng_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:618: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:642: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:626: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 664 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           669            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ntrpt_cam_fifo line 664 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|      pndng_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv:712: signed to unsigned assignment occurs. (VER-318)
+
+Inferred tri-state devices in process
+	in routine mem_latch line 714 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../FIFO_Latches/fifo.sv'.
+==============================================
+|  Register Name  |       Type       | Width |
+==============================================
+|  datos_out_tri  | Tri-State Buffer |  32   |
+| datos_out_tri2  | Tri-State Buffer |  32   |
+| datos_out_tri3  | Tri-State Buffer |  32   |
+| datos_out_tri4  | Tri-State Buffer |  32   |
+| datos_out_tri5  | Tri-State Buffer |  32   |
+| datos_out_tri6  | Tri-State Buffer |  32   |
+| datos_out_tri7  | Tri-State Buffer |  32   |
+| datos_out_tri8  | Tri-State Buffer |  32   |
+| datos_out_tri9  | Tri-State Buffer |  32   |
+| datos_out_tri10 | Tri-State Buffer |  32   |
+==============================================
+
+Inferred tri-state devices in process
+	in routine tri_buf line 17 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|     b_tri     | Tri-State Buffer |   1   |
+============================================
+
+Inferred tri-state devices in process
+	in routine serializer line 71 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|   s_out_tri   | Tri-State Buffer |   1   |
+============================================
+
+Inferred memory devices in process
+	in routine Counter line 86 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 119 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           120            |    auto/auto     |
+|           136            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 238 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           239            |    auto/auto     |
+|           257            |    auto/auto     |
+===============================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv:385: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 383 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           390            |    auto/auto     |
+|           397            |    auto/auto     |
+===============================================
+
+Inferred tri-state devices in process
+	in routine bs_ntrfs line 465 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|    bus_tri    | Tri-State Buffer |   1   |
+============================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv:522: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine Counter_arb line 518 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred tri-state devices in process
+	in routine Arbiter line 562 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|  bs_bsy_tri   | Tri-State Buffer |   1   |
+============================================
+
+Statistics for case statements in always block at line 636 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           637            |    auto/auto     |
+===============================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv:707: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 703 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           712            |    auto/auto     |
+|           719            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ntrfs_cntrl_n_rbtr line 697 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   bs_grnt_pre_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred tri-state devices in process
+	in routine bs_ntrfs_n_rbtr line 788 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|    bus_tri    | Tri-State Buffer |   1   |
+============================================
+
+Statistics for case statements in always block at line 912 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           913            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 959 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../BUS_Micro/Bus_Micro_lib.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           960            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 87 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../DECO_INSTR/DECO_INSTR.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           100            |    auto/auto     |
+|           249            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine DECO_INSTR line 78 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../DECO_INSTR/DECO_INSTR.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    inst_reg_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[31] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[30] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[29] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[28] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[27] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[26] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[25] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[24] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[23] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[22] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[21] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[20] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[19] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[18] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[17] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[16] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[15] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[14] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[13] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[12] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[11] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[10] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[9] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[8] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[7] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[6] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[5] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[4] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[3] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[2] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[1] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:79: Net salida_mux5[0] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[31] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[30] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[29] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[28] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[27] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[26] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[25] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[24] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[23] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[22] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[21] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[20] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[19] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[18] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[17] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[16] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[15] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[14] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[13] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[12] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[11] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[10] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[9] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[8] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[7] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[6] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[5] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[4] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[3] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[2] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[1] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:109: Net S[0] or a directly connected net may be driven by more than one process or block. (ELAB-405)
+
+Inferred memory devices in process
+	in routine Barrel_Shifter line 10 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    aritmetic_reg    | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|     bandera_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred tri-state devices in process
+	in routine tristate_buffer line 149 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+| output_x_tri  | Tri-State Buffer |  32   |
+============================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:273: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:276: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv:279: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 288 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           289            |    auto/auto     |
+|           246            |    auto/auto     |
+|           271            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ALU line 288 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_Library.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    shift_cod_reg    | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+| complemento_a_2_reg | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv:85: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv:88: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv:91: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 100 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           101            |    auto/auto     |
+|            58            |    auto/auto     |
+|            83            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ALU_2 line 100 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../ALU/ALU_2.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    shift_cod_reg    | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+| complemento_a_2_reg | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine latch line 12 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|        q_reg        | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine latch_rst1 line 28 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|        q_reg        | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred tri-state devices in process
+	in routine tristategate line 45 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+| output_x_tri  | Tri-State Buffer |   1   |
+============================================
+
+Inferred tri-state devices in process
+	in routine tristategate_negado line 60 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+| output_x_tri  | Tri-State Buffer |   1   |
+============================================
+
+Inferred memory devices in process
+	in routine latchtriestado line 79 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|        q_reg        | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred tri-state devices in process
+	in routine latchtriestado line 88 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|   Out1_tri    | Tri-State Buffer |   1   |
+============================================
+
+Inferred tri-state devices in process
+	in routine latchtriestado line 89 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Biblioteca.v'.
+============================================
+| Register Name |       Type       | Width |
+============================================
+|   Out2_tri    | Tri-State Buffer |   1   |
+============================================
+
+Inferred memory devices in process
+	in routine latch_entrada line 108 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../Register_File/Banco_de_registros_latches.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|        q_reg        | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:51: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:52: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:59: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:60: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 114 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           115            |    auto/auto     |
+|           123            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine mbc line 181 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     d_read_reg      | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine mbc line 240 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine mbc line 287 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     rd_fll_reg      | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|       wen_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|       cen_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|      boot_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|    ld_d_read_reg    | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|     mem_rdy_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|     pop_mbc_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|       psh_reg       | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|    error_drs_reg    | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|    cond_sel_reg     | Latch |   4   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|      mbc/67      |   16   |    1    |      4       |
+======================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv:287: Netlist for always_comb block contains a latch. (ELAB-974)
+
+Statistics for case statements in always block at line 570 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../MBC/MBC.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           583            |    auto/auto     |
+===============================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|    mux_rd/571    |   4    |   32    |      2       |
+======================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:303: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:495: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:2302: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:2379: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:2452: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:2525: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:2598: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:2671: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv:2816: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 261 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           278            |    auto/auto     |
+|           545            |    auto/auto     |
+|           2934           |    auto/auto     |
+|           3058           |    auto/auto     |
+|           3189           |    auto/auto     |
+|           3342           |    auto/auto     |
+|           3495           |    auto/auto     |
+|           3648           |    auto/auto     |
+|           3801           |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine control line 261 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv'.
+============================================================================
+|    Register Name     | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+============================================================================
+| write_reg_fl_pre_reg | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+============================================================================
+
+Inferred memory devices in process
+	in routine control line 5179 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   Actv_ntrpt_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine control line 5196 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/control.sv'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+|    enbl_ntrpt_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    r_1_w_0_mbc_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       b_mbc_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       h_mbc_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    enable_mbc_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    pop_intrpt_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| ld_id_instrl_deco_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     ld_addrs_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      s_addrs_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       ld_pc_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       s_csr_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       s_pc1_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      s_reg_w_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       s_alu_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       s_pc2_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      rst_tmr_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   write_reg_fl_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     csr_write_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     cntrl_alu_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     sign_ext_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      inv_r1_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   control/263    |   4    |    2    |      2       |
+======================================================
+
+Inferred memory devices in process
+	in routine Timer line 15 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top_CPU_riscv line 298 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      mtip_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top_CPU_riscv line 360 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     csr_id_reg      | Latch |   4   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine top_CPU_riscv line 406 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    addrs_reg_reg    | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+=======================================================
+| block name/line   | Inputs | Outputs | # sel inputs |
+=======================================================
+| top_CPU_riscv/311 |   16   |   32    |      4       |
+| top_CPU_riscv/361 |   8    |    4    |      3       |
+| top_CPU_riscv/381 |   8    |   32    |      3       |
+| top_CPU_riscv/420 |   4    |   32    |      2       |
+| top_CPU_riscv/439 |   4    |   32    |      2       |
+=======================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../TOP/TecRiscv_top_CPU.sv:360: Netlist for always_comb block contains a latch. (ELAB-974)
+
+Statistics for case statements in always block at line 232 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           264            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine spi line 64 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      conf_reg       | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine spi line 78 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      MISO1_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine spi line 88 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   counter_clk_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       SCK_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine spi line 146 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   bits_count_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine spi line 162 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| flag_edge_detector_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine spi line 173 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_read_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   rx_shiftreg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine spi line 197 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      MOSI_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   tx_shiftreg_reg   | Flip-flop |  64   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine spi line 232 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/spi.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       CS_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   tx_loaddata_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    end_send_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     state0_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|   clk_enable_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   counter_CS_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/top_spi.sv:170: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 84 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/top_spi.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           102            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine top_spi line 84 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../SPI/top_spi.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|      state_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       pop_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       push_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    data_push_reg     | Flip-flop |  65   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     data_pop_reg     | Flip-flop |  61   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  tspi_send_data_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  tspi_config_en_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| tspi_data_config_reg | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   tspi_data_tx_reg   | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     bst_addr_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      t_word_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      index_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     address_reg      | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       data_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine baud line 54 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/baud.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    uart_clk_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     clk_div_reg     | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine detector_flanco line 25 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/detector_flanco.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  flag_detector_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine dff_async_rsta line 37 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/fifo_to_uart_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv:211: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv:225: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 124 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           128            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 170 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           180            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine log_ftu line 81 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cont_byte_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_ftu line 94 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   four_eight_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_ftu line 105 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pop_en_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_ftu line 116 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     p_state_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_ftu line 160 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_ftu.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|    log_ftu/55    |   8    |    8    |      3       |
+======================================================
+Warning:  /mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv:173: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 83 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            87            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 150 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           159            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine log_utf line 64 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     push_en_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_utf line 75 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     p_state_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_utf line 119 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   enable_reg_reg    | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_utf line 128 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cont_byte_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine log_utf line 142 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/log_utf.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine dff_async_rst_ena line 59 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/uart_to_fifo_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 140 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           149            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine u_rec line 79 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rec_datH_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|  rec_datSyncH_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec line 91 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  bitCell_cntrH_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec line 106 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    par_dataH_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec line 118 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  recd_bitCntrH_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec line 132 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_rec line 271 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_rec.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   rec_readyH_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 78 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            79            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 161 in file
+	'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine u_xmit line 90 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  bitCell_cntrH_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit line 106 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| xmit_ShiftRegH_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit line 124 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    bitCountH_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit line 137 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      BitP_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit line 152 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine u_xmit line 297 in file
+		'/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/../UART/scrs/u_xmit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xmit_doneH_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/mnt/vol_NFS_Zener/WD_ESPEC/rgarcia/GIT/TEC_RISCV/TOP_PHY_PR/front_end/source/TOP_PADS/dff_async_rst.db:dff_async_rst'
+Loaded 79 designs.
+Current design is 'dff_async_rst'.
+dff_async_rst dltch_async_rst dltch prll_d_reg prll_d_ltch_no_rst prll_d_ltch pos_edge neg_edge fifo_flops fifo_flops_no_full fifo_ltch fifo_ltch_no_rst rst_lgc ntrpt_cam_fifo mem_latch tri_buf parallel_serial serializer Counter Read_st_Mchn Write_st_Mchn ntrfs_cntrl bs_ntrfs Counter_arb Arbiter Arbiter_st_Mchn ntrfs_cntrl_n_rbtr bs_ntrfs_n_rbtr prll_rgstr prll_rd_st_mchn prll_wt_st_mchn prll_intrfs_cntrl prll_bs_ntrfs prll_intrfs_cntrl_riscv prll_bs_ntrfs_riscv tec_riscv_bus DECO_INSTR Barrel_Shifter tristate_buffer csk_bloque CSK_sin_mux ALU ALU_2 latch latch_rst1 tristategate tristategate_negado latchtriestado latch_tri_estado latch_tri_rst0_Hard latch_tri_rst1_Hard Decodificador csr_file Reg_32_bit Banco_registros_latches latch_entrada mbc mux_rd control Timer top_CPU_riscv spi top_spi baud detector_flanco dff_async_rsta prll_d_rega fifo_to_uart_reg log_ftu log_utf prll_d_reg_ena dff_async_rst_ena uart_to_fifo_reg u_rec u_xmit uart topcore_tecriscv pad_ring top_riscv_tec_pads

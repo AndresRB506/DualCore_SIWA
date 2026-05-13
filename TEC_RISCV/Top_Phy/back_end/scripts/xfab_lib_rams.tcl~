@@ -1,0 +1,35 @@
+#####################################################################################
+# Title:	xfab_lib_rams.tcl
+# Description:	Script de compilacion en la herramienta library compiler de Synopsys
+# 		para generar la biblioteca fisica de las memorias SRAM para el micro-
+#		controlador RISC-V 
+# Dependencies: Ninguna.
+# Project:	Microcontrolador RISC-V
+# Author:	Reinaldo Castro Gonzalez
+# Institution:	Instituto Tecnologico de Costa Rica. DCILab.
+# Date:		20 de Junio de 2018
+# Notes:	Basado en los scripts del Dr. Juan Agustin Rodriguez para la
+#		integración del proyecto SiRPA. 2014
+# Version:	1.0
+# Revision:	20/06/2018
+# Revision:	23/08/2018 ACR Se ajusta a proyecto TOP del RISC-V
+####################################################################################
+
+####################################################################################
+# Variables y punteros para la compilacion y generacion de las bibliotecas logicas #
+####################################################################################
+
+set LIBERTY_HOME "/mnt/vol_NFS_Zener/tools/synopsys/pdks/xh018-ams/XFAB_snps_CustomDesigner_kit_v2_1_0/xh018/spram/XSPRAMLP_2048X32_M8P/v3_1_1/liberty_UPF_LPMOS";
+
+# Vamos al proyecto donde estamos haciendo la sintesis fisica
+
+set LIB_SRAM "/mnt/vol_NFS_Zener/WD_ESPEC/achacon/imd/micro_hdl/TEC_RISCV/Top_Phy/back_end/db"
+# Se lee el archivo liberty
+read_lib "$LIBERTY_HOME/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.lib";
+
+# Se escribe la biblioteca en el formato compilado de Synopsys
+write_lib library -format db -output "$LIBERTY_HOME/XSPRAMLP_2048X32_M8P_UPF_typ_1_80V_25C.db";
+
+# Se sale de la aplicacion
+quit;
+

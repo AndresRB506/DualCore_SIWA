@@ -1,0 +1,117 @@
+
+
+if {$COMPLETE_COMPILE==1} {
+#Estos archivos vienen en formato ddc del directorio $PROY_HOME_SYN/db
+		import_designs -format ddc -top $TOP_MODULE $TOP_FILE_DDC;
+
+# Lectura del archivo de restricciones de temporizado
+		current_design topcore_tecriscv
+
+		read_sdc -version Latest $TOP_FILE_SDC;
+
+		current_design $TOP_MODULE;
+#Vamos a cargar ls restricciones de los modulos
+		propagate_constraints
+
+		open_mw_cel top_riscv_tec_pads
+# Resolución de múltiples instancias y enlaze a las bibliotecas físicas.
+		uniquify_fp_mw_cel
+		link -force
+		save_mw_cel top_riscv_tec_pads
+##################################################################################################
+##### Si el diesnno viene en DDC no hace falta cargar el ambiente UPF
+####################################################################################################
+#load_upf $PROY_HOME_SYN/db/Tec_Riscv_pads_upf.upf
+################################################################################################
+
+##################################################################################################
+##              Conexiones a VDD y GND de todos los dominios ##################
+##################################################################################################
+#set_attribute [get_cells -of_objects ucu_anlg1] is_level_shifter true
+
+		save_mw_cel -as pre_power
+	 }
+
+open_mw_cel top_riscv_tec_pads
+# Este script genera el plan de piso con el anillo de pads y pines
+
+if {$CREATE_FLOORPLAN==1} {
+
+	source ./scripts/create_pads.tcl
+	# Le indicamos a la herramienta que fije y de atributos a los pads y celdas de IO
+	source ./scripts/set_pad_attributes_on_cells.tcl
+
+		#save_mw_cel  pre_power
+		#close_mw_cel pre_power
+
+	save_mw_cel -as pad_ring_unplaced
+	open_mw_cel pad_ring_unplaced
+	close_mw_cel top_riscv_tec_pads
+
+	derive_pg_connection -create_nets
+
+
+	#Revisamos cuales se han creado
+
+	#report_cell_physical -connections
+
+	#Ahora pegamos los pines y lo sties
+
+	source ./scripts/fix_vdd_ports.tcl
+
+	#derive_pg_connection
+	derive_pg_connection
+	derive_pg_connection -tie
+	check_mv_design -verbose > ./reports/mv_check.txt
+	report_power_pin_info [get_cells * -hier] > ./reports/report_power_pin.txt
+
+## Este script deberia remendar todas las malas conexiones a las alimentaciones
+## Revisar cuidadosamente. Salvar para que nos quede todo armadito y conectado
+## Todas las reds PG armadas y conectadas, incluyendo PADS VDD, VSS
+
+	save_mw_cel -as pg_derived_ok
+
+##############################################################################################
+###################### Creacion del plano de piso y anillo de pads ###########################
+##############################################################################################
+	#Usaremos la estrategia para las celdas compactas
+
+	#set physopt_heterogeneous_site_array true
+	#set_pin_physical_constraints -pin_name "level_shifter*" -side 3 -pin_spacing 2.0
+	#set_fp_pin_constraints -use_physical_constraints on
+	set_fp_strategy -unit_tile_name "hdll";
+	#Calculamos un core con 330 filas de celdas estandar
+	set NUM_ROWS 250;
+	set NUM_COLS 294;
+	#set SLIVER_SIZE [expr 4 * $CELL_HEIGHT] ;# espacio entre CORE y PADS
+	set SLIVER_SIZE [expr 30 * $BASIC_TRACK] ;# espacio entre CORE y PADS
+	set CORE_HEIGHT [expr $NUM_ROWS * $CELL_HEIGHT]; ## NUM_ROWS de celdas de altura $CELL_HEIGHT
+	set CORE_WIDTH [expr $NUM_COLS * $CELL_HEIGHT]; ## Lo Hacemos un poco mas alto
+	set_fp_placement_strategy -virtual_IPO on
+	create_floorplan   -start_first_row -control_type width_and_height -core_width $CORE_WIDTH -core_height $CORE_HEIGHT \
+     -core_utilization 0.8 -left_io2core $SLIVER_SIZE -bottom_io2core $SLIVER_SIZE -right_io2core $SLIVER_SIZE -top_io2core $SLIVER_SIZE;
+
+	adjust_fp_floorplan -die_height 1506 -die_origin {0 0} -die_width 1520  \
+    -left_io2core $SLIVER_SIZE -bottom_io2core $SLIVER_SIZE -right_io2core $SLIVER_SIZE -top_io2core $SLIVER_SIZE;
+
+	adjust_fp_io_placement -side l -pitch 104.0 -offset 189.5
+	adjust_fp_io_placement -side b -pitch 104.0 -offset 189.5
+	adjust_fp_io_placement -side t -pitch 104.0 -offset 189.5
+
+
+#adjust_fp_floorplan -die_height 1520 -die_origin {0 0} -die_width 1520  \
+#    -left_io2core $SLIVER_SIZE -bottom_io2core $SLIVER_SIZE -right_io2core $SLIVER_SIZE -top_io2core $SLIVER_SIZE;
+# -left_io2core 20 -bottom_io2core 20 -right_io2core 20 -top_io2core 20
+#set_die_area -coordinate {0 0 1600 1500}
+#adjust_fp_io_placement -side r -spacing 5.0
+
+	save_mw_cel -as pad_ring_placed.CEL
+	close_mw_cel pad_ring_unplaced.CEL
+	open_mw_cel  pad_ring_placed
+
+
+} # Se cierra el IF de si debemos crear el floorplan desde cero
+
+close_mw_cel  pad_ring_placed
+open_mw_cel top_riscv_tec_pads;
+

@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: Write_st_Mchn</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_Write_st_Mchn'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_Write_st_Mchn')">Write_st_Mchn</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s0 cl rt">  5.57</td>
+<td class="s1 cl rt"><a href="mod9.html#Line" > 13.58</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod9.html#Toggle" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#FSM" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#Branch" >  8.70</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv')">/mnt/vol_NFS_Zener/WD_ESPEC/rmolina/riscv_test/Verificacion_RISCV_TEC/test_env/core_spi_uart/../../TEC_RISCV/TOP/../BUS_Micro/Bus_Micro_lib.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod9.html#inst_tag_53"  onclick="showContent('inst_tag_53')">bs_ntrfs.cntrl.wtstmchn</a></td>
+<td class="s0 cl rt">  5.57</td>
+<td class="s1 cl rt"><a href="mod9.html#inst_tag_53_Line" > 13.58</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_53_Toggle" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_53_FSM" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_53_Branch" >  8.70</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod9.html#inst_tag_54"  onclick="showContent('inst_tag_54')">bs_ntrfs_n_rbtr.cntrl.wtstmchn</a></td>
+<td class="s0 cl rt">  5.57</td>
+<td class="s1 cl rt"><a href="mod9.html#inst_tag_54_Line" > 13.58</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_54_Toggle" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_54_FSM" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_54_Branch" >  8.70</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='inst_tag_53'>
+<hr>
+<a name="inst_tag_53"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy16.html#tag_urg_inst_53" >bs_ntrfs.cntrl.wtstmchn</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s0 cl rt">  5.57</td>
+<td class="s1 cl rt"><a href="mod9.html#inst_tag_53_Line" > 13.58</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_53_Toggle" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_53_FSM" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_53_Branch" >  8.70</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s0 cl rt">  4.78</td>
+<td class="s1 cl rt"> 12.22</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  6.90</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s3 cl rt"> 35.36</td>
+<td class="s7 cl rt"> 71.43</td>
+<td class="s2 cl rt"> 20.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 50.00</td>
+<td><a href="mod64.html#inst_tag_4291" >cntrl</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_5.html#inst_tag_1355" id="tag_urg_inst_1355">st0</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_6.html#inst_tag_1356" id="tag_urg_inst_1356">st1</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_6.html#inst_tag_1357" id="tag_urg_inst_1357">st2</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_54'>
+<hr>
+<a name="inst_tag_54"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy13.html#tag_urg_inst_54" >bs_ntrfs_n_rbtr.cntrl.wtstmchn</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s0 cl rt">  5.57</td>
+<td class="s1 cl rt"><a href="mod9.html#inst_tag_54_Line" > 13.58</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_54_Toggle" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_54_FSM" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod9.html#inst_tag_54_Branch" >  8.70</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s0 cl rt">  4.78</td>
+<td class="s1 cl rt"> 12.22</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  6.90</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s3 cl rt"> 32.68</td>
+<td class="s7 cl rt"> 70.59</td>
+<td class="s1 cl rt"> 15.15</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s4 cl rt"> 45.00</td>
+<td><a href="mod61.html#inst_tag_4288" >cntrl</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_6.html#inst_tag_1427" id="tag_urg_inst_1427">st0</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_6.html#inst_tag_1428" id="tag_urg_inst_1428">st1</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod18_6.html#inst_tag_1429" id="tag_urg_inst_1429">st2</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_Write_st_Mchn'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod9.html" >Write_st_Mchn</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s1"><td class="lf">TOTAL</td><td></td><td>81</td><td>11</td><td>13.58</td></tr>
+<tr class="s1"><td class="lf">ALWAYS</td><td>239</td><td>81</td><td>11</td><td>13.58</td></tr>
+</table>
+<pre class="code"><br clear=all>
+238                        always@(*) begin 
+239        1/1             case ({cur_st,condition_w})
+240        <font color = "red">0/1     ==>        4'b0001:  nxt_st = 3'b001;</font>
+241        <font color = "red">0/1     ==>        4'b0000:  nxt_st = 3'b001;</font>
+242        <font color = "red">0/1     ==>        4'b0101:  nxt_st = 3'b100;</font>
+243        <font color = "red">0/1     ==>        4'b0100:  nxt_st = 3'b100;</font>
+244        <font color = "red">0/1     ==>        4'b0011:  nxt_st = 3'b011;</font>
+245        <font color = "red">0/1     ==>        4'b0010:  nxt_st = 3'b001;</font>
+246        <font color = "red">0/1     ==>        4'b0111:  nxt_st = 3'b111;</font>
+247        <font color = "red">0/1     ==>        4'b0110:  nxt_st = 3'b111;</font>
+248        <font color = "red">0/1     ==>        4'b1011:  nxt_st = 3'b010;</font>
+249        <font color = "red">0/1     ==>        4'b1010:  nxt_st = 3'b101;</font>
+250        <font color = "red">0/1     ==>        4'b1001:  nxt_st = 3'b000;</font>
+251        <font color = "red">0/1     ==>        4'b1000:  nxt_st = 3'b100;</font>
+252        <font color = "red">0/1     ==>        4'b1111:  nxt_st = 3'b101;</font>
+253        <font color = "red">0/1     ==>        4'b1110:  nxt_st = 3'b101;</font>
+254        1/1                default:  nxt_st = 3'b000; 
+255                         endcase
+256                       //Output Logic
+257        1/1            case(cur_st)
+258                         3'b000: begin
+259        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+260        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+261        <font color = "red">0/1     ==>              s_ds_w  = 2'b10;</font>
+262        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+263        <font color = "red">0/1     ==>              rst_w = 1'b1;</font>
+264        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+265        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+266        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+267                         end
+268                         3'b001: begin
+269        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+270        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+271        <font color = "red">0/1     ==>              s_ds_w  = 2'b10;</font>
+272        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+273        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+274        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+275        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+276        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+277                         end
+278                         3'b010: begin
+279        <font color = "red">0/1     ==>              bs_bsy = 1'b1;</font>
+280        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+281        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+282        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+283        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+284        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+285        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+286        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+287                         end
+288                         3'b011: begin
+289        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+290        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+291        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+292        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+293        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+294        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+295        <font color = "red">0/1     ==>              en_w = 1'b1;</font>
+296        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+297                         end
+298                         3'b111: begin
+299        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+300        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+301        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+302        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+303        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+304        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+305        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+306        <font color = "red">0/1     ==>              pop = 1'b1;</font>
+307                         end
+308                         3'b101: begin
+309        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+310        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+311        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+312        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+313        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+314        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+315        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+316        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+317                         end
+318                         3'b100: begin
+319        <font color = "red">0/1     ==>              bs_bsy = 1'b1;</font>
+320        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+321        <font color = "red">0/1     ==>              s_ds_w  = 2'b01;</font>
+322        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+323        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+324        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+325        <font color = "red">0/1     ==>              en_w = 1'b1;</font>
+326        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+327                         end
+328                         default: begin
+329        1/1                      bs_bsy = 1'b0;
+330        1/1                      bs_rqst = 1'b0;
+331        1/1                      s_ds_w  = 2'b10;
+332        1/1                      rst_cntr_w = 1'b1;
+333        1/1                      rst_w = 1'b1;
+334        1/1                      p_s_w = 1'b1;
+335        1/1                      en_w = 1'b0;
+336        1/1                      pop = 1'b0;
+</pre>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod9.html" >Write_st_Mchn</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Totals</td>
+<td class="rt">13</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">36</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">18</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">18</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Ports</td>
+<td class="rt">11</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">24</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">6</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">6</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>condition_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bs_bsy</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>bs_rqst</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>s_ds_w[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst_cntr_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>p_s_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>en_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>nxt_st[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cur_st[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod9.html" >Write_st_Mchn</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: cur_st</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">14</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td>(Not included in score)</td>
+</tr><tr class="s0">
+<td>Transitions</td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: cur_st</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>'h0</td>
+<td class="rt">254</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h1</td>
+<td class="rt">240</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h2</td>
+<td class="rt">245</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h3</td>
+<td class="rt">244</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h4</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h5</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h6</td>
+<td class="rt">247</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h7</td>
+<td class="rt">246</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h8</td>
+<td class="rt">251</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h9</td>
+<td class="rt">250</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'ha</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hb</td>
+<td class="rt">248</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'he</td>
+<td class="rt">253</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hf</td>
+<td class="rt">252</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>'h0->'h1</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h2->'h1</td>
+<td class="rt">245</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h5->'h4</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h6->'h7</td>
+<td class="rt">247</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h8->'h4</td>
+<td class="rt">251</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h9->'h0</td>
+<td class="rt">250</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'ha->'h5</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hb->'h2</td>
+<td class="rt">248</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'he->'h5</td>
+<td class="rt">253</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hf->'h5</td>
+<td class="rt">252</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod9.html" >Write_st_Mchn</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Branches</td>
+<td></td>
+<td class="rt">23</td>
+<td class="rt">2</td>
+<td class="rt">8.70  </td>
+</tr><tr class="s0">
+<td>CASE</td>
+<td class="rt">239</td>
+<td class="rt">15</td>
+<td class="rt">1</td>
+<td class="rt">6.67  </td>
+</tr><tr class="s1">
+<td>CASE</td>
+<td class="rt">257</td>
+<td class="rt">8</td>
+<td class="rt">1</td>
+<td class="rt">12.50 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+239           case ({cur_st,condition_w})
+              <font color = "red">-1-</font>  
+240              4'b0001:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+241              4'b0000:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+242              4'b0101:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+243              4'b0100:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+244              4'b0011:  nxt_st = 3'b011;
+           <font color = "red">      ==></font>
+245              4'b0010:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+246              4'b0111:  nxt_st = 3'b111;
+           <font color = "red">      ==></font>
+247              4'b0110:  nxt_st = 3'b111;
+           <font color = "red">      ==></font>
+248              4'b1011:  nxt_st = 3'b010;
+           <font color = "red">      ==></font>
+249              4'b1010:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+250              4'b1001:  nxt_st = 3'b000;
+           <font color = "red">      ==></font>
+251              4'b1000:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+252              4'b1111:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+253              4'b1110:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+254              default:  nxt_st = 3'b000; 
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>4'b0001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0101 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0100 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0110 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1110 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+257          case(cur_st)
+             <font color = "red">-1-</font>  
+258            3'b000: begin
+259                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+260                    bs_rqst = 1'b0;
+261                    s_ds_w  = 2'b10;
+262                    rst_cntr_w = 1'b1;
+263                    rst_w = 1'b1;
+264                    p_s_w = 1'b1;
+265                    en_w = 1'b0;
+266                    pop = 1'b0;
+267            end
+268            3'b001: begin
+269                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+270                    bs_rqst = 1'b0;
+271                    s_ds_w  = 2'b10;
+272                    rst_cntr_w = 1'b0;
+273                    rst_w = 1'b0;
+274                    p_s_w = 1'b1;
+275                    en_w = 1'b0;
+276                    pop = 1'b0;
+277            end
+278            3'b010: begin
+279                    bs_bsy = 1'b1;
+           <font color = "red">            ==></font>
+280                    bs_rqst = 1'b1;
+281                    s_ds_w  = 2'b00;
+282                    rst_cntr_w = 1'b0;
+283                    rst_w = 1'b0;
+284                    p_s_w = 1'b0;
+285                    en_w = 1'b0;
+286                    pop = 1'b0;
+287            end
+288            3'b011: begin
+289                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+290                    bs_rqst = 1'b0;
+291                    s_ds_w  = 2'b00;
+292                    rst_cntr_w = 1'b1;
+293                    rst_w = 1'b0;
+294                    p_s_w = 1'b1;
+295                    en_w = 1'b1;
+296                    pop = 1'b0;
+297            end
+298            3'b111: begin
+299                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+300                    bs_rqst = 1'b1;
+301                    s_ds_w  = 2'b00;
+302                    rst_cntr_w = 1'b1;
+303                    rst_w = 1'b0;
+304                    p_s_w = 1'b0;
+305                    en_w = 1'b0;
+306                    pop = 1'b1;
+307            end
+308            3'b101: begin
+309                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+310                    bs_rqst = 1'b1;
+311                    s_ds_w  = 2'b00;
+312                    rst_cntr_w = 1'b0;
+313                    rst_w = 1'b0;
+314                    p_s_w = 1'b0;
+315                    en_w = 1'b0;
+316                    pop = 1'b0;
+317            end
+318            3'b100: begin
+319                    bs_bsy = 1'b1;
+           <font color = "red">            ==></font>
+320                    bs_rqst = 1'b1;
+321                    s_ds_w  = 2'b01;
+322                    rst_cntr_w = 1'b0;
+323                    rst_w = 1'b0;
+324                    p_s_w = 1'b0;
+325                    en_w = 1'b1;
+326                    pop = 1'b0;
+327            end
+328            default: begin
+329                    bs_bsy = 1'b0;
+           <font color = "green">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>3'b000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b101 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b100 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_53'>
+<a name="inst_tag_53_Line"></a>
+<b>Line Coverage for Instance : <a href="mod9.html#inst_tag_53" >bs_ntrfs.cntrl.wtstmchn</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s1"><td class="lf">TOTAL</td><td></td><td>81</td><td>11</td><td>13.58</td></tr>
+<tr class="s1"><td class="lf">ALWAYS</td><td>239</td><td>81</td><td>11</td><td>13.58</td></tr>
+</table>
+<pre class="code"><br clear=all>
+238                        always@(*) begin 
+239        1/1             case ({cur_st,condition_w})
+240        <font color = "red">0/1     ==>        4'b0001:  nxt_st = 3'b001;</font>
+241        <font color = "red">0/1     ==>        4'b0000:  nxt_st = 3'b001;</font>
+242        <font color = "red">0/1     ==>        4'b0101:  nxt_st = 3'b100;</font>
+243        <font color = "red">0/1     ==>        4'b0100:  nxt_st = 3'b100;</font>
+244        <font color = "red">0/1     ==>        4'b0011:  nxt_st = 3'b011;</font>
+245        <font color = "red">0/1     ==>        4'b0010:  nxt_st = 3'b001;</font>
+246        <font color = "red">0/1     ==>        4'b0111:  nxt_st = 3'b111;</font>
+247        <font color = "red">0/1     ==>        4'b0110:  nxt_st = 3'b111;</font>
+248        <font color = "red">0/1     ==>        4'b1011:  nxt_st = 3'b010;</font>
+249        <font color = "red">0/1     ==>        4'b1010:  nxt_st = 3'b101;</font>
+250        <font color = "red">0/1     ==>        4'b1001:  nxt_st = 3'b000;</font>
+251        <font color = "red">0/1     ==>        4'b1000:  nxt_st = 3'b100;</font>
+252        <font color = "red">0/1     ==>        4'b1111:  nxt_st = 3'b101;</font>
+253        <font color = "red">0/1     ==>        4'b1110:  nxt_st = 3'b101;</font>
+254        1/1                default:  nxt_st = 3'b000; 
+255                         endcase
+256                       //Output Logic
+257        1/1            case(cur_st)
+258                         3'b000: begin
+259        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+260        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+261        <font color = "red">0/1     ==>              s_ds_w  = 2'b10;</font>
+262        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+263        <font color = "red">0/1     ==>              rst_w = 1'b1;</font>
+264        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+265        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+266        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+267                         end
+268                         3'b001: begin
+269        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+270        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+271        <font color = "red">0/1     ==>              s_ds_w  = 2'b10;</font>
+272        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+273        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+274        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+275        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+276        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+277                         end
+278                         3'b010: begin
+279        <font color = "red">0/1     ==>              bs_bsy = 1'b1;</font>
+280        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+281        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+282        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+283        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+284        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+285        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+286        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+287                         end
+288                         3'b011: begin
+289        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+290        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+291        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+292        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+293        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+294        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+295        <font color = "red">0/1     ==>              en_w = 1'b1;</font>
+296        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+297                         end
+298                         3'b111: begin
+299        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+300        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+301        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+302        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+303        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+304        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+305        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+306        <font color = "red">0/1     ==>              pop = 1'b1;</font>
+307                         end
+308                         3'b101: begin
+309        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+310        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+311        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+312        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+313        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+314        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+315        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+316        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+317                         end
+318                         3'b100: begin
+319        <font color = "red">0/1     ==>              bs_bsy = 1'b1;</font>
+320        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+321        <font color = "red">0/1     ==>              s_ds_w  = 2'b01;</font>
+322        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+323        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+324        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+325        <font color = "red">0/1     ==>              en_w = 1'b1;</font>
+326        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+327                         end
+328                         default: begin
+329        1/1                      bs_bsy = 1'b0;
+330        1/1                      bs_rqst = 1'b0;
+331        1/1                      s_ds_w  = 2'b10;
+332        1/1                      rst_cntr_w = 1'b1;
+333        1/1                      rst_w = 1'b1;
+334        1/1                      p_s_w = 1'b1;
+335        1/1                      en_w = 1'b0;
+336        1/1                      pop = 1'b0;
+</pre>
+<hr>
+<a name="inst_tag_53_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod9.html#inst_tag_53" >bs_ntrfs.cntrl.wtstmchn</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Totals</td>
+<td class="rt">13</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">36</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">18</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">18</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Ports</td>
+<td class="rt">11</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">24</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">6</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">6</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>condition_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bs_bsy</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>bs_rqst</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>s_ds_w[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst_cntr_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>p_s_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>en_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>nxt_st[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cur_st[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_53_FSM"></a>
+<b>FSM Coverage for Instance : <a href="mod9.html#inst_tag_53" >bs_ntrfs.cntrl.wtstmchn</a></b><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: cur_st</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">14</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td>(Not included in score)</td>
+</tr><tr class="s0">
+<td>Transitions</td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: cur_st</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>'h0</td>
+<td class="rt">254</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h1</td>
+<td class="rt">240</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h2</td>
+<td class="rt">245</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h3</td>
+<td class="rt">244</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h4</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h5</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h6</td>
+<td class="rt">247</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h7</td>
+<td class="rt">246</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h8</td>
+<td class="rt">251</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h9</td>
+<td class="rt">250</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'ha</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hb</td>
+<td class="rt">248</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'he</td>
+<td class="rt">253</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hf</td>
+<td class="rt">252</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>'h0->'h1</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h2->'h1</td>
+<td class="rt">245</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h5->'h4</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h6->'h7</td>
+<td class="rt">247</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h8->'h4</td>
+<td class="rt">251</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h9->'h0</td>
+<td class="rt">250</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'ha->'h5</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hb->'h2</td>
+<td class="rt">248</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'he->'h5</td>
+<td class="rt">253</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hf->'h5</td>
+<td class="rt">252</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="inst_tag_53_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod9.html#inst_tag_53" >bs_ntrfs.cntrl.wtstmchn</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Branches</td>
+<td></td>
+<td class="rt">23</td>
+<td class="rt">2</td>
+<td class="rt">8.70  </td>
+</tr><tr class="s0">
+<td>CASE</td>
+<td class="rt">239</td>
+<td class="rt">15</td>
+<td class="rt">1</td>
+<td class="rt">6.67  </td>
+</tr><tr class="s1">
+<td>CASE</td>
+<td class="rt">257</td>
+<td class="rt">8</td>
+<td class="rt">1</td>
+<td class="rt">12.50 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+239           case ({cur_st,condition_w})
+              <font color = "red">-1-</font>  
+240              4'b0001:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+241              4'b0000:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+242              4'b0101:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+243              4'b0100:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+244              4'b0011:  nxt_st = 3'b011;
+           <font color = "red">      ==></font>
+245              4'b0010:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+246              4'b0111:  nxt_st = 3'b111;
+           <font color = "red">      ==></font>
+247              4'b0110:  nxt_st = 3'b111;
+           <font color = "red">      ==></font>
+248              4'b1011:  nxt_st = 3'b010;
+           <font color = "red">      ==></font>
+249              4'b1010:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+250              4'b1001:  nxt_st = 3'b000;
+           <font color = "red">      ==></font>
+251              4'b1000:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+252              4'b1111:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+253              4'b1110:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+254              default:  nxt_st = 3'b000; 
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>4'b0001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0101 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0100 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0110 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1110 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+257          case(cur_st)
+             <font color = "red">-1-</font>  
+258            3'b000: begin
+259                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+260                    bs_rqst = 1'b0;
+261                    s_ds_w  = 2'b10;
+262                    rst_cntr_w = 1'b1;
+263                    rst_w = 1'b1;
+264                    p_s_w = 1'b1;
+265                    en_w = 1'b0;
+266                    pop = 1'b0;
+267            end
+268            3'b001: begin
+269                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+270                    bs_rqst = 1'b0;
+271                    s_ds_w  = 2'b10;
+272                    rst_cntr_w = 1'b0;
+273                    rst_w = 1'b0;
+274                    p_s_w = 1'b1;
+275                    en_w = 1'b0;
+276                    pop = 1'b0;
+277            end
+278            3'b010: begin
+279                    bs_bsy = 1'b1;
+           <font color = "red">            ==></font>
+280                    bs_rqst = 1'b1;
+281                    s_ds_w  = 2'b00;
+282                    rst_cntr_w = 1'b0;
+283                    rst_w = 1'b0;
+284                    p_s_w = 1'b0;
+285                    en_w = 1'b0;
+286                    pop = 1'b0;
+287            end
+288            3'b011: begin
+289                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+290                    bs_rqst = 1'b0;
+291                    s_ds_w  = 2'b00;
+292                    rst_cntr_w = 1'b1;
+293                    rst_w = 1'b0;
+294                    p_s_w = 1'b1;
+295                    en_w = 1'b1;
+296                    pop = 1'b0;
+297            end
+298            3'b111: begin
+299                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+300                    bs_rqst = 1'b1;
+301                    s_ds_w  = 2'b00;
+302                    rst_cntr_w = 1'b1;
+303                    rst_w = 1'b0;
+304                    p_s_w = 1'b0;
+305                    en_w = 1'b0;
+306                    pop = 1'b1;
+307            end
+308            3'b101: begin
+309                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+310                    bs_rqst = 1'b1;
+311                    s_ds_w  = 2'b00;
+312                    rst_cntr_w = 1'b0;
+313                    rst_w = 1'b0;
+314                    p_s_w = 1'b0;
+315                    en_w = 1'b0;
+316                    pop = 1'b0;
+317            end
+318            3'b100: begin
+319                    bs_bsy = 1'b1;
+           <font color = "red">            ==></font>
+320                    bs_rqst = 1'b1;
+321                    s_ds_w  = 2'b01;
+322                    rst_cntr_w = 1'b0;
+323                    rst_w = 1'b0;
+324                    p_s_w = 1'b0;
+325                    en_w = 1'b1;
+326                    pop = 1'b0;
+327            end
+328            default: begin
+329                    bs_bsy = 1'b0;
+           <font color = "green">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>3'b000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b101 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b100 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_54'>
+<a name="inst_tag_54_Line"></a>
+<b>Line Coverage for Instance : <a href="mod9.html#inst_tag_54" >bs_ntrfs_n_rbtr.cntrl.wtstmchn</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s1"><td class="lf">TOTAL</td><td></td><td>81</td><td>11</td><td>13.58</td></tr>
+<tr class="s1"><td class="lf">ALWAYS</td><td>239</td><td>81</td><td>11</td><td>13.58</td></tr>
+</table>
+<pre class="code"><br clear=all>
+238                        always@(*) begin 
+239        1/1             case ({cur_st,condition_w})
+240        <font color = "red">0/1     ==>        4'b0001:  nxt_st = 3'b001;</font>
+241        <font color = "red">0/1     ==>        4'b0000:  nxt_st = 3'b001;</font>
+242        <font color = "red">0/1     ==>        4'b0101:  nxt_st = 3'b100;</font>
+243        <font color = "red">0/1     ==>        4'b0100:  nxt_st = 3'b100;</font>
+244        <font color = "red">0/1     ==>        4'b0011:  nxt_st = 3'b011;</font>
+245        <font color = "red">0/1     ==>        4'b0010:  nxt_st = 3'b001;</font>
+246        <font color = "red">0/1     ==>        4'b0111:  nxt_st = 3'b111;</font>
+247        <font color = "red">0/1     ==>        4'b0110:  nxt_st = 3'b111;</font>
+248        <font color = "red">0/1     ==>        4'b1011:  nxt_st = 3'b010;</font>
+249        <font color = "red">0/1     ==>        4'b1010:  nxt_st = 3'b101;</font>
+250        <font color = "red">0/1     ==>        4'b1001:  nxt_st = 3'b000;</font>
+251        <font color = "red">0/1     ==>        4'b1000:  nxt_st = 3'b100;</font>
+252        <font color = "red">0/1     ==>        4'b1111:  nxt_st = 3'b101;</font>
+253        <font color = "red">0/1     ==>        4'b1110:  nxt_st = 3'b101;</font>
+254        1/1                default:  nxt_st = 3'b000; 
+255                         endcase
+256                       //Output Logic
+257        1/1            case(cur_st)
+258                         3'b000: begin
+259        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+260        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+261        <font color = "red">0/1     ==>              s_ds_w  = 2'b10;</font>
+262        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+263        <font color = "red">0/1     ==>              rst_w = 1'b1;</font>
+264        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+265        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+266        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+267                         end
+268                         3'b001: begin
+269        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+270        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+271        <font color = "red">0/1     ==>              s_ds_w  = 2'b10;</font>
+272        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+273        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+274        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+275        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+276        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+277                         end
+278                         3'b010: begin
+279        <font color = "red">0/1     ==>              bs_bsy = 1'b1;</font>
+280        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+281        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+282        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+283        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+284        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+285        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+286        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+287                         end
+288                         3'b011: begin
+289        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+290        <font color = "red">0/1     ==>              bs_rqst = 1'b0;</font>
+291        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+292        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+293        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+294        <font color = "red">0/1     ==>              p_s_w = 1'b1;</font>
+295        <font color = "red">0/1     ==>              en_w = 1'b1;</font>
+296        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+297                         end
+298                         3'b111: begin
+299        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+300        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+301        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+302        <font color = "red">0/1     ==>              rst_cntr_w = 1'b1;</font>
+303        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+304        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+305        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+306        <font color = "red">0/1     ==>              pop = 1'b1;</font>
+307                         end
+308                         3'b101: begin
+309        <font color = "red">0/1     ==>              bs_bsy = 1'b0;</font>
+310        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+311        <font color = "red">0/1     ==>              s_ds_w  = 2'b00;</font>
+312        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+313        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+314        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+315        <font color = "red">0/1     ==>              en_w = 1'b0;</font>
+316        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+317                         end
+318                         3'b100: begin
+319        <font color = "red">0/1     ==>              bs_bsy = 1'b1;</font>
+320        <font color = "red">0/1     ==>              bs_rqst = 1'b1;</font>
+321        <font color = "red">0/1     ==>              s_ds_w  = 2'b01;</font>
+322        <font color = "red">0/1     ==>              rst_cntr_w = 1'b0;</font>
+323        <font color = "red">0/1     ==>              rst_w = 1'b0;</font>
+324        <font color = "red">0/1     ==>              p_s_w = 1'b0;</font>
+325        <font color = "red">0/1     ==>              en_w = 1'b1;</font>
+326        <font color = "red">0/1     ==>              pop = 1'b0;</font>
+327                         end
+328                         default: begin
+329        1/1                      bs_bsy = 1'b0;
+330        1/1                      bs_rqst = 1'b0;
+331        1/1                      s_ds_w  = 2'b10;
+332        1/1                      rst_cntr_w = 1'b1;
+333        1/1                      rst_w = 1'b1;
+334        1/1                      p_s_w = 1'b1;
+335        1/1                      en_w = 1'b0;
+336        1/1                      pop = 1'b0;
+</pre>
+<hr>
+<a name="inst_tag_54_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod9.html#inst_tag_54" >bs_ntrfs_n_rbtr.cntrl.wtstmchn</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Totals</td>
+<td class="rt">13</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">36</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">18</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">18</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Ports</td>
+<td class="rt">11</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">24</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">6</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">6</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>condition_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bs_bsy</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>bs_rqst</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>s_ds_w[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst_cntr_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>rst_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>p_s_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>en_w</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>nxt_st[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cur_st[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_54_FSM"></a>
+<b>FSM Coverage for Instance : <a href="mod9.html#inst_tag_54" >bs_ntrfs_n_rbtr.cntrl.wtstmchn</a></b><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: cur_st</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">14</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td>(Not included in score)</td>
+</tr><tr class="s0">
+<td>Transitions</td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: cur_st</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>'h0</td>
+<td class="rt">254</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h1</td>
+<td class="rt">240</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h2</td>
+<td class="rt">245</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h3</td>
+<td class="rt">244</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h4</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h5</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h6</td>
+<td class="rt">247</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h7</td>
+<td class="rt">246</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h8</td>
+<td class="rt">251</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h9</td>
+<td class="rt">250</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'ha</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hb</td>
+<td class="rt">248</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'he</td>
+<td class="rt">253</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hf</td>
+<td class="rt">252</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>'h0->'h1</td>
+<td class="rt">241</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h2->'h1</td>
+<td class="rt">245</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h5->'h4</td>
+<td class="rt">242</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h6->'h7</td>
+<td class="rt">247</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h8->'h4</td>
+<td class="rt">251</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'h9->'h0</td>
+<td class="rt">250</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'ha->'h5</td>
+<td class="rt">249</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hb->'h2</td>
+<td class="rt">248</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'he->'h5</td>
+<td class="rt">253</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uRed">
+<td nowrap>'hf->'h5</td>
+<td class="rt">252</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="inst_tag_54_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod9.html#inst_tag_54" >bs_ntrfs_n_rbtr.cntrl.wtstmchn</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Branches</td>
+<td></td>
+<td class="rt">23</td>
+<td class="rt">2</td>
+<td class="rt">8.70  </td>
+</tr><tr class="s0">
+<td>CASE</td>
+<td class="rt">239</td>
+<td class="rt">15</td>
+<td class="rt">1</td>
+<td class="rt">6.67  </td>
+</tr><tr class="s1">
+<td>CASE</td>
+<td class="rt">257</td>
+<td class="rt">8</td>
+<td class="rt">1</td>
+<td class="rt">12.50 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+239           case ({cur_st,condition_w})
+              <font color = "red">-1-</font>  
+240              4'b0001:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+241              4'b0000:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+242              4'b0101:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+243              4'b0100:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+244              4'b0011:  nxt_st = 3'b011;
+           <font color = "red">      ==></font>
+245              4'b0010:  nxt_st = 3'b001;
+           <font color = "red">      ==></font>
+246              4'b0111:  nxt_st = 3'b111;
+           <font color = "red">      ==></font>
+247              4'b0110:  nxt_st = 3'b111;
+           <font color = "red">      ==></font>
+248              4'b1011:  nxt_st = 3'b010;
+           <font color = "red">      ==></font>
+249              4'b1010:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+250              4'b1001:  nxt_st = 3'b000;
+           <font color = "red">      ==></font>
+251              4'b1000:  nxt_st = 3'b100;
+           <font color = "red">      ==></font>
+252              4'b1111:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+253              4'b1110:  nxt_st = 3'b101;
+           <font color = "red">      ==></font>
+254              default:  nxt_st = 3'b000; 
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>4'b0001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0101 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0100 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b0110 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>4'b1110 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+257          case(cur_st)
+             <font color = "red">-1-</font>  
+258            3'b000: begin
+259                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+260                    bs_rqst = 1'b0;
+261                    s_ds_w  = 2'b10;
+262                    rst_cntr_w = 1'b1;
+263                    rst_w = 1'b1;
+264                    p_s_w = 1'b1;
+265                    en_w = 1'b0;
+266                    pop = 1'b0;
+267            end
+268            3'b001: begin
+269                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+270                    bs_rqst = 1'b0;
+271                    s_ds_w  = 2'b10;
+272                    rst_cntr_w = 1'b0;
+273                    rst_w = 1'b0;
+274                    p_s_w = 1'b1;
+275                    en_w = 1'b0;
+276                    pop = 1'b0;
+277            end
+278            3'b010: begin
+279                    bs_bsy = 1'b1;
+           <font color = "red">            ==></font>
+280                    bs_rqst = 1'b1;
+281                    s_ds_w  = 2'b00;
+282                    rst_cntr_w = 1'b0;
+283                    rst_w = 1'b0;
+284                    p_s_w = 1'b0;
+285                    en_w = 1'b0;
+286                    pop = 1'b0;
+287            end
+288            3'b011: begin
+289                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+290                    bs_rqst = 1'b0;
+291                    s_ds_w  = 2'b00;
+292                    rst_cntr_w = 1'b1;
+293                    rst_w = 1'b0;
+294                    p_s_w = 1'b1;
+295                    en_w = 1'b1;
+296                    pop = 1'b0;
+297            end
+298            3'b111: begin
+299                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+300                    bs_rqst = 1'b1;
+301                    s_ds_w  = 2'b00;
+302                    rst_cntr_w = 1'b1;
+303                    rst_w = 1'b0;
+304                    p_s_w = 1'b0;
+305                    en_w = 1'b0;
+306                    pop = 1'b1;
+307            end
+308            3'b101: begin
+309                    bs_bsy = 1'b0;
+           <font color = "red">            ==></font>
+310                    bs_rqst = 1'b1;
+311                    s_ds_w  = 2'b00;
+312                    rst_cntr_w = 1'b0;
+313                    rst_w = 1'b0;
+314                    p_s_w = 1'b0;
+315                    en_w = 1'b0;
+316                    pop = 1'b0;
+317            end
+318            3'b100: begin
+319                    bs_bsy = 1'b1;
+           <font color = "red">            ==></font>
+320                    bs_rqst = 1'b1;
+321                    s_ds_w  = 2'b01;
+322                    rst_cntr_w = 1'b0;
+323                    rst_w = 1'b0;
+324                    p_s_w = 1'b0;
+325                    en_w = 1'b1;
+326                    pop = 1'b0;
+327            end
+328            default: begin
+329                    bs_bsy = 1'b0;
+           <font color = "green">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>3'b000 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b001 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b010 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b011 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b101 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b100 </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_53">
+    <li>
+      <a href="#inst_tag_53_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_53_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_53_FSM">FSM</a>    </li>
+    <li>
+      <a href="#inst_tag_53_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="inst_tag_54">
+    <li>
+      <a href="#inst_tag_54_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_54_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_54_FSM">FSM</a>    </li>
+    <li>
+      <a href="#inst_tag_54_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_Write_st_Mchn">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>
