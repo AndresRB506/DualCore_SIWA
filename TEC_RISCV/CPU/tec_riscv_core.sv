@@ -37,6 +37,7 @@
 `include "../DECO_INSTR/DECO_INSTR.sv"
 `include "../ALU/ALU_2.sv"
 `include "../Register_File/Banco_de_registros_latches.v"
+`include "../TOP/Status_dual_stub.sv"
 `include "../TOP/control.sv"
 
 module tec_riscv_core_timer #(

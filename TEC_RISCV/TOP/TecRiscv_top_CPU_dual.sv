@@ -25,11 +25,11 @@
 `ifndef TEC_RISCV_TOP_CPU_DUAL_SV
 `define TEC_RISCV_TOP_CPU_DUAL_SV
 
-`include "../CPU/tec_riscv_core.sv"
-`include "../MBC/mbc_smp_arbiter.sv"
-`include "../MBC/MBC.sv"
-`include "../BUS_Micro/Bus_Micro.sv"
-`include "../TOP/coremark_mem_model.sv"
+`include "tec_riscv_core.sv"
+`include "mbc_smp_arbiter.sv"
+`include "MBC.sv"
+`include "Bus_Micro.sv"
+`include "coremark_mem_model.sv"
 
 module top_CPU_riscv_dual (
     input  wire        clk,
@@ -329,7 +329,7 @@ module top_CPU_riscv_dual (
     coremark_mem_model Memoria_Compartida (
         .Q(Q),
         .D(d),
-        .A(a),
+	.A({1'b0, a}),
         .CLK(clk_mem),
         .CEn(cen),
         .WEn(wen),

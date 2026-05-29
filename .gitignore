@@ -1,0 +1,23 @@
+# Synopsys/VCS generated files
+simv
+simv.daidir/
+csrc/
+ucli.key
+DVEfiles/
+verdiLog/
+vdCovLog/
+novas.*
+*.vpd
+*.vcd
+*.fsdb
+*.log
+*.dump
+
+# Test environment generated outputs
+test_env/**/logs/
+test_env/**/waves/
+test_env/**/results/
+test_env/**/simv
+test_env/**/simv.daidir/
+test_env/**/csrc/
+test_env/**/ucli.key
