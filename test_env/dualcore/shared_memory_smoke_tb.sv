@@ -182,22 +182,39 @@ module shared_memory_smoke_tb;
         end
     endtask
 
-    task automatic print_status(input string label);
-        begin
-            $display("[%0t] %s", $time, label);
-            $display("    core0_enable=%0b core1_enable=%0b mbc_enable=%0b",
-                     DUT.core0_mem_enable,
-                     DUT.core1_mem_enable,
-                     DUT.mbc_enable);
-            $display("    core0_rdy=%0b core1_rdy=%0b mbc_rdy=%0b",
-                     DUT.core0_mem_rdy,
-                     DUT.core1_mem_rdy,
-                     DUT.mbc_mem_rdy);
-            $display("    mbc_address=0x%h mbc_d_write=0x%h",
-                     DUT.mbc_address,
-                     DUT.mbc_d_write);
-        end
-    endtask
+task automatic print_status(input string label);
+    begin
+        $display("[%0t] %s", $time, label);
+        $display("    core0_enable=%0b core1_enable=%0b mbc_enable=%0b",
+                 DUT.core0_mem_enable,
+                 DUT.core1_mem_enable,
+                 DUT.mbc_enable);
+
+        $display("    core0_rdy=%0b core1_rdy=%0b mbc_rdy=%0b",
+                 DUT.core0_mem_rdy,
+                 DUT.core1_mem_rdy,
+                 DUT.mbc_mem_rdy);
+
+        $display("    mbc_address=0x%0h mbc_d_write=0x%0h",
+                 DUT.mbc_address,
+                 DUT.mbc_d_write);
+
+        $display("    MBC: state=%0d nxt_state=%0d cond=%0b cond_sel=%0d",
+                 DUT.Memory_controller_shared.state,
+                 DUT.Memory_controller_shared.nxt_state,
+                 DUT.Memory_controller_shared.cond,
+                 DUT.Memory_controller_shared.cond_sel);
+
+        $display("    MEM: cen=%0b wen=%0b RDY=%0b clk_mem=%0b a=0x%0h d=0x%0h Q=0x%0h",
+                 DUT.cen,
+                 DUT.wen,
+                 DUT.RDY,
+                 DUT.clk_mem,
+                 DUT.a,
+                 DUT.d,
+                 DUT.Q);
+    end
+endtask
 
     // ========================================================
     // Estímulos
@@ -233,6 +250,14 @@ module shared_memory_smoke_tb;
         // ====================================================
         // Test 1: Core 0 solicita memoria
         // ====================================================
+        force DUT.meip = 1'b1;
+        repeat (20) @(posedge clk);
+        print_status("Despues de forzar meip=1");
+
+        force DUT.meip = 1'b0;
+        repeat (20) @(posedge clk);
+        print_status("Despues de soltar meip=0");
+
         $display("\nTEST 1: Solicitud forzada desde Core 0");
 
         force_core0_request(25'h000010, 32'hAAAA_0001, 1'b1);

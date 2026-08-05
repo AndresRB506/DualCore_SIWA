@@ -118,7 +118,7 @@ module mbc_smp_arbiter #(
         grant_valid = 1'b0;
         grant_core  = 1'b0;
 
-        if (state == ARB_IDLE && mbc_mem_rdy) begin
+        if (state == ARB_IDLE) begin
             unique case ({core1_enable, core0_enable})
                 2'b00: begin
                     grant_valid = 1'b0;
@@ -236,41 +236,51 @@ module mbc_smp_arbiter #(
         end
     end
 
-    // ========================================================
-    // Mux hacia el MBC original
-    // ========================================================
-    always_comb begin
-        // Valores por defecto
+// ============================================================
+// Mux hacia el MBC original
+// ============================================================
+always_comb begin
+    // Valores por defecto: mantener la transaccion capturada
+    mbc_address  = latched_address;
+    mbc_d_write  = latched_d_write;
+    mbc_b        = latched_b;
+    mbc_h        = latched_h;
+    mbc_sign_ext = latched_sign_ext;
+    mbc_r_w      = latched_r_w;
+    mbc_enable   = 1'b0;
+
+    // En IDLE, si se concede acceso, se manda la solicitud nueva
+    // directamente al MBC.
+    if (state == ARB_IDLE && grant_valid) begin
+        if (grant_core == 1'b0) begin
+            mbc_address  = core0_address;
+            mbc_d_write  = core0_d_write;
+            mbc_b        = core0_b;
+            mbc_h        = core0_h;
+            mbc_sign_ext = core0_sign_ext;
+            mbc_r_w      = core0_r_w;
+            mbc_enable   = 1'b1;
+        end else begin
+            mbc_address  = core1_address;
+            mbc_d_write  = core1_d_write;
+            mbc_b        = core1_b;
+            mbc_h        = core1_h;
+            mbc_sign_ext = core1_sign_ext;
+            mbc_r_w      = core1_r_w;
+            mbc_enable   = 1'b1;
+        end
+    end else if (state == ARB_BUSY) begin
+        // En BUSY, mantener activa la solicitud ya capturada
+        // hasta que el MBC responda con mbc_mem_rdy.
         mbc_address  = latched_address;
         mbc_d_write  = latched_d_write;
         mbc_b        = latched_b;
         mbc_h        = latched_h;
         mbc_sign_ext = latched_sign_ext;
         mbc_r_w      = latched_r_w;
-        mbc_enable   = 1'b0;
-
-        // En IDLE, si se concede acceso, se manda la solicitud
-        // directamente al MBC por un ciclo.
-        if (state == ARB_IDLE && grant_valid) begin
-            if (grant_core == 1'b0) begin
-                mbc_address  = core0_address;
-                mbc_d_write  = core0_d_write;
-                mbc_b        = core0_b;
-                mbc_h        = core0_h;
-                mbc_sign_ext = core0_sign_ext;
-                mbc_r_w      = core0_r_w;
-                mbc_enable   = core0_enable;
-            end else begin
-                mbc_address  = core1_address;
-                mbc_d_write  = core1_d_write;
-                mbc_b        = core1_b;
-                mbc_h        = core1_h;
-                mbc_sign_ext = core1_sign_ext;
-                mbc_r_w      = core1_r_w;
-                mbc_enable   = core1_enable;
-            end
-        end
+        mbc_enable   = 1'b1;
     end
+end
 
     // ========================================================
     // Demux de respuesta hacia el core correcto
