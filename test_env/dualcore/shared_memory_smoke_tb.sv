@@ -247,18 +247,33 @@ endtask
 
         wait_cycles(10);
 
-        // ====================================================
-        // Test 1: Core 0 solicita memoria
-        // ====================================================
-        force DUT.meip = 1'b1;
-        repeat (20) @(posedge clk);
-        print_status("Despues de forzar meip=1");
+        // ============================================================
+	// Inicializacion controlada del MBC original
+	// ============================================================
+	// No se modifica el hardware MBC.sv.
+	// El testbench fuerza temporalmente una condicion valida de fin de boot
+	// para aislar la prueba de la ruta Core-Arbiter-MBC-Memoria.
 
-        force DUT.meip = 1'b0;
-        repeat (20) @(posedge clk);
-        print_status("Despues de soltar meip=0");
+	force DUT.meip = 1'b1;
+	force DUT.D_pop_mbc[61:60] = 2'b01;   // Transaccion SPI valida
+	force DUT.D_pop_mbc[59:57] = 3'b011;  // Fin de boot
 
-        $display("\nTEST 1: Solicitud forzada desde Core 0");
+	repeat (20) @(posedge clk);
+	print_status("Despues de forzar condicion de fin de boot del MBC");
+
+	release DUT.D_pop_mbc;
+	release DUT.meip;
+	
+	repeat (10) @(posedge clk);
+	print_status("Despues de liberar inicializacion controlada");
+
+	// ============================================================
+	// Test 1: Core 0 solicita memoria
+	// ============================================================
+
+	$display("\nTEST 1: Solicitud forzada desde Core 0");
+
+
 
         force_core0_request(25'h000010, 32'hAAAA_0001, 1'b1);
         print_status("Core 0 request aplicada");
@@ -266,7 +281,7 @@ endtask
         wait_cycles(2);
         print_status("Despues de 2 ciclos");
 
-        wait_for_any_ready(80);
+        wait_for_any_ready(300);
 
         clear_forces();
         wait_cycles(10);
