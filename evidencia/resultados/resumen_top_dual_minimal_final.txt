@@ -1,0 +1,6 @@
+Contains Synopsys proprietary information.
+    - Verificar que no haya errores fatales
+[225000] INFO: Reset liberado. Iniciando simulacion dual-core minima.
+[24975000] INFO: Fin de simulacion minimal dual-core despues de 500 ciclos.
+$finish called from file "top_dual_minimal_tb.sv", line 170.
+$finish at simulation time             24975000

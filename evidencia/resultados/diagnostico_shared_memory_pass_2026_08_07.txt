@@ -1,0 +1,44 @@
+Diagnostico shared_memory_smoke_tb.sv - 07 agosto 2026
+
+La prueba shared_memory_smoke_tb.sv valida la ruta:
+Core 0 / Core 1 -> Arbiter SMP -> MBC original -> respuesta mem_rdy.
+
+El MBC original no fue modificado. Para aislar la prueba de acceso compartido,
+el banco de prueba aplico una inicializacion controlada desde el testbench,
+forzando temporalmente una condicion valida de fin de boot mediante meip y D_pop_mbc.
+
+Resultados observados:
+1. Solicitud individual desde Core 0:
+   - core0_enable = 1
+   - core1_enable = 0
+   - mbc_enable = 1
+   - mbc_address = 0x10
+   - mbc_d_write = 0xaaaa0001
+   - core0_rdy = 1
+   - core1_rdy = 0
+   - mbc_rdy = 1
+
+2. Solicitud individual desde Core 1:
+   - core0_enable = 0
+   - core1_enable = 1
+   - mbc_enable = 1
+   - mbc_address = 0x20
+   - mbc_d_write = 0xbbbb0002
+   - core0_rdy = 0
+   - core1_rdy = 1
+   - mbc_rdy = 1
+
+3. Solicitud simultanea desde Core 0 y Core 1:
+   - core0_enable = 1
+   - core1_enable = 1
+   - mbc_enable = 1
+   - mbc_address = 0x40
+   - mbc_d_write = 0xd1d10004
+   - core0_rdy = 0
+   - core1_rdy = 1
+   - mbc_rdy = 1
+
+Conclusion:
+La prueba finalizo correctamente con el mensaje SHARED MEMORY SMOKE TB FINISHED.
+Se demuestra que el arbitro SMP puede entregar solicitudes individuales y simultaneas
+hacia el MBC original, y que la respuesta mem_rdy se propaga hacia el nucleo atendido.
