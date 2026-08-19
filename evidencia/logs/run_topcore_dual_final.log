@@ -1,0 +1,22 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP2_Full64; Runtime version R-2020.12-SP2_Full64;  Aug 19 15:59 2026
+==============================================
+  TEC-RISC-V / Siwa topcore dual-core TB
+==============================================
+  Objetivo:
+    - Compilar topcore_tecriscv_dual
+    - Integrar top dual + SPI + UART
+    - Revisar señales externas básicas
+==============================================
+[375000] INFO: Reset liberado en topcore dual-core.
+[49975000] INFO: Fin de simulacion topcore dual despues de 1000 ciclos.
+==============================================
+  TOPCORE DUAL BASIC TB FINISHED
+==============================================
+$finish called from file "topcore_dual_tb.sv", line 146.
+$finish at simulation time             49975000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 49975000 ps
+CPU Time:      1.080 seconds;       Data structure size:   2.3Mb
+Wed Aug 19 15:59:59 2026
