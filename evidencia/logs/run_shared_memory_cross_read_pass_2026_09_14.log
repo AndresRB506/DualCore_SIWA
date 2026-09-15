@@ -1,0 +1,223 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP2_Full64; Runtime version R-2020.12-SP2_Full64;  Sep 14 18:04 2026
+============================================================
+ TEC-RISC-V / Siwa Shared Memory Cross Read TB
+============================================================
+ Objetivo:
+   - Core 0 escribe y Core 1 lee
+   - Core 1 escribe y Core 0 lee
+   - Confirmar acceso fisico a memoria
+   - Comparar dato escrito contra dato leido
+============================================================
+[375000] INFO: Reset liberado.
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1575 --> finaliza el fetch
+tiempo: 1675 --> Se detecta un error de instrucción
+
+[1875000] Despues de forzar condicion de fin de boot del MBC
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x0 mbc_d_write=0x00000000 mbc_r_w=1
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 a=0x0 d=0x00000000 Q=0xzzzzzzzz
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2275 --> finaliza el fetch
+
+[2375000] Despues de liberar inicializacion controlada
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x4 mbc_d_write=0x00000000 mbc_r_w=1
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 a=0x1 d=0x00000000 Q=0xzzzzzzzz
+tiempo: 2375 --> Se detecta un error de instrucción
+
+[2476000] Sistema aislado y listo para pruebas dirigidas
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x4 mbc_d_write=0x00000000 mbc_r_w=1
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 a=0x1 d=0x00000000 Q=0xzzzzzzzz
+
+============================================================
+TEST 1: Core 0 escribe -> Core 1 lee
+============================================================
+
+[2576000] WRITE Core 0: addr=0x10 data=0x1234abcd
+TRACE MEM: t=2600000 state=1 mbc_en=1 addr=0x10 a=0x4 d=0x1234abcd Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=1
+[2626000] INFO: Solicitud WRITE Core 0 aceptada por arbitro/MBC.
+TRACE MEM: t=2650000 state=3 mbc_en=1 addr=0x10 a=0x4 d=0x1234abcd Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=0
+TRACE MEM: t=2700000 state=7 mbc_en=1 addr=0x10 a=0x4 d=0x1234abcd Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=0
+[2726000] INFO: Escritura fisica observada: a=0x4 data=0x1234abcd cen=0 wen=0
+TRACE MEM: t=2750000 state=5 mbc_en=1 addr=0x10 a=0x4 d=0x1234abcd Q=0x000002b3 cen=0 wen=0 mbc_r_w=0 mbc_rdy=0
+[2776000] INFO: Escritura Core 0 completada correctamente.
+TRACE MEM: t=2800000 state=1 mbc_en=1 addr=0x10 a=0x4 d=0x1234abcd Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=1
+tiempo: 2825 --> finaliza el fetch
+tiempo: 2825 --> finaliza el fetch
+tiempo: 2825 --> finaliza el fetch
+tiempo: 2925 --> inicia ejecución de ADD
+TRACE MEM: t=2950000 state=5 mbc_en=0 addr=0x10 a=0x4 d=0x1234abcd Q=0x1234abcd cen=0 wen=0 mbc_r_w=0 mbc_rdy=0
+
+[2976000] READ Core 1: addr=0x10
+TRACE MEM: t=3000000 state=1 mbc_en=1 addr=0x10 a=0x4 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=1
+[3026000] INFO: Solicitud READ Core 1 aceptada por arbitro/MBC.
+TRACE MEM: t=3050000 state=3 mbc_en=1 addr=0x10 a=0x4 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=0
+[3076000] INFO: Acceso READ fisico observado: a=0x4 Q=0x1234abcd
+TRACE MEM: t=3100000 state=2 mbc_en=1 addr=0x10 a=0x4 d=0x00000000 Q=0x1234abcd cen=0 wen=1 mbc_r_w=1 mbc_rdy=0
+[3127000] INFO: Lectura Core 1 completada. data=0x1234abcd
+TRACE MEM: t=3150000 state=1 mbc_en=1 addr=0x10 a=0x4 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=1
+tiempo: 3175 --> finaliza el fetch
+tiempo: 3175 --> finaliza el fetch
+tiempo: 3175 --> finaliza el fetch
+
+------------------------------------------------------------
+PASS: Core 0 -> Core 1, addr 0x000010
+      Esperado = 0x1234abcd
+      Leido     = 0x1234abcd
+------------------------------------------------------------
+
+============================================================
+TEST 2: Core 1 escribe -> Core 0 lee
+============================================================
+TRACE MEM: t=3250000 state=2 mbc_en=0 addr=0x10 a=0x4 d=0x00000000 Q=0x1234abcd cen=0 wen=1 mbc_r_w=1 mbc_rdy=0
+tiempo: 3275 --> Se detecta un error de instrucción
+tiempo: 3275 --> Se detecta un error de instrucción
+tiempo: 3275 --> Se detecta un error de instrucción
+
+[3326000] WRITE Core 1: addr=0x20 data=0xa5a55a5a
+TRACE MEM: t=3350000 state=1 mbc_en=1 addr=0x20 a=0x8 d=0xa5a55a5a Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=1
+[3376000] INFO: Solicitud WRITE Core 1 aceptada por arbitro/MBC.
+TRACE MEM: t=3400000 state=3 mbc_en=1 addr=0x20 a=0x8 d=0xa5a55a5a Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=0
+TRACE MEM: t=3450000 state=7 mbc_en=1 addr=0x20 a=0x8 d=0xa5a55a5a Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=0
+[3476000] INFO: Escritura fisica observada: a=0x8 data=0xa5a55a5a cen=0 wen=0
+TRACE MEM: t=3500000 state=5 mbc_en=1 addr=0x20 a=0x8 d=0xa5a55a5a Q=0x000004b3 cen=0 wen=0 mbc_r_w=0 mbc_rdy=0
+[3526000] INFO: Escritura Core 1 completada correctamente.
+TRACE MEM: t=3550000 state=1 mbc_en=1 addr=0x20 a=0x8 d=0xa5a55a5a Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=1
+TRACE MEM: t=3700000 state=5 mbc_en=0 addr=0x20 a=0x8 d=0xa5a55a5a Q=0xa5a55a5a cen=0 wen=0 mbc_r_w=0 mbc_rdy=0
+
+[3726000] READ Core 0: addr=0x20
+TRACE MEM: t=3750000 state=1 mbc_en=1 addr=0x20 a=0x8 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=1
+[3776000] INFO: Solicitud READ Core 0 aceptada por arbitro/MBC.
+TRACE MEM: t=3800000 state=3 mbc_en=1 addr=0x20 a=0x8 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=0
+[3826000] INFO: Acceso READ fisico observado: a=0x8 Q=0xa5a55a5a
+TRACE MEM: t=3850000 state=2 mbc_en=1 addr=0x20 a=0x8 d=0x00000000 Q=0xa5a55a5a cen=0 wen=1 mbc_r_w=1 mbc_rdy=0
+[3877000] INFO: Lectura Core 0 completada. data=0xa5a55a5a
+TRACE MEM: t=3900000 state=1 mbc_en=1 addr=0x20 a=0x8 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=1
+tiempo: 3925 --> finaliza el fetch
+tiempo: 3925 --> finaliza el fetch
+tiempo: 3925 --> finaliza el fetch
+
+------------------------------------------------------------
+PASS: Core 1 -> Core 0, addr 0x000020
+      Esperado = 0xa5a55a5a
+      Leido     = 0xa5a55a5a
+------------------------------------------------------------
+
+============================================================
+TEST 3: Segundo patron Core 0 -> Core 1
+============================================================
+TRACE MEM: t=4000000 state=2 mbc_en=0 addr=0x20 a=0x8 d=0x00000000 Q=0xa5a55a5a cen=0 wen=1 mbc_r_w=1 mbc_rdy=0
+tiempo: 4025 --> Se detecta un error de instrucción
+tiempo: 4025 --> Se detecta un error de instrucción
+tiempo: 4025 --> Se detecta un error de instrucción
+tiempo: 4075 --> finaliza el fetch
+
+[4076000] WRITE Core 0: addr=0x30 data=0xcafebabe
+tiempo: 4076 --> finaliza el fetch
+tiempo: 4076 --> finaliza el fetch
+TRACE MEM: t=4100000 state=1 mbc_en=1 addr=0x30 a=0xc d=0xcafebabe Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=1
+[4126000] INFO: Solicitud WRITE Core 0 aceptada por arbitro/MBC.
+TRACE MEM: t=4150000 state=3 mbc_en=1 addr=0x30 a=0xc d=0xcafebabe Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=0
+tiempo: 4175 --> Se detecta un error de instrucción
+TRACE MEM: t=4200000 state=7 mbc_en=1 addr=0x30 a=0xc d=0xcafebabe Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=0
+[4226000] INFO: Escritura fisica observada: a=0xc data=0xcafebabe cen=0 wen=0
+TRACE MEM: t=4250000 state=5 mbc_en=1 addr=0x30 a=0xc d=0xcafebabe Q=0x000006b3 cen=0 wen=0 mbc_r_w=0 mbc_rdy=0
+[4276000] INFO: Escritura Core 0 completada correctamente.
+TRACE MEM: t=4300000 state=1 mbc_en=1 addr=0x30 a=0xc d=0xcafebabe Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=1
+TRACE MEM: t=4450000 state=5 mbc_en=0 addr=0x30 a=0xc d=0xcafebabe Q=0xcafebabe cen=0 wen=0 mbc_r_w=0 mbc_rdy=0
+
+[4476000] READ Core 1: addr=0x30
+TRACE MEM: t=4500000 state=1 mbc_en=1 addr=0x30 a=0xc d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=1
+[4526000] INFO: Solicitud READ Core 1 aceptada por arbitro/MBC.
+TRACE MEM: t=4550000 state=3 mbc_en=1 addr=0x30 a=0xc d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=0
+[4576000] INFO: Acceso READ fisico observado: a=0xc Q=0xcafebabe
+TRACE MEM: t=4600000 state=2 mbc_en=1 addr=0x30 a=0xc d=0x00000000 Q=0xcafebabe cen=0 wen=1 mbc_r_w=1 mbc_rdy=0
+[4627000] INFO: Lectura Core 1 completada. data=0xcafebabe
+TRACE MEM: t=4650000 state=1 mbc_en=1 addr=0x30 a=0xc d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=1
+tiempo: 4675 --> finaliza el fetch
+tiempo: 4675 --> finaliza el fetch
+tiempo: 4675 --> finaliza el fetch
+
+------------------------------------------------------------
+PASS: Core 0 -> Core 1, addr 0x000030
+      Esperado = 0xcafebabe
+      Leido     = 0xcafebabe
+------------------------------------------------------------
+
+============================================================
+TEST 4: Segundo patron Core 1 -> Core 0
+============================================================
+TRACE MEM: t=4750000 state=2 mbc_en=0 addr=0x30 a=0xc d=0x00000000 Q=0xcafebabe cen=0 wen=1 mbc_r_w=1 mbc_rdy=0
+tiempo: 4775 --> Se detecta un error de instrucción
+tiempo: 4775 --> Se detecta un error de instrucción
+tiempo: 4775 --> Se detecta un error de instrucción
+tiempo: 4825 --> finaliza el fetch
+
+[4826000] WRITE Core 1: addr=0x40 data=0xdeadbeef
+tiempo: 4826 --> finaliza el fetch
+tiempo: 4826 --> finaliza el fetch
+TRACE MEM: t=4850000 state=1 mbc_en=1 addr=0x40 a=0x10 d=0xdeadbeef Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=1
+[4876000] INFO: Solicitud WRITE Core 1 aceptada por arbitro/MBC.
+TRACE MEM: t=4900000 state=3 mbc_en=1 addr=0x40 a=0x10 d=0xdeadbeef Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=0
+tiempo: 4925 --> Se detecta un error de instrucción
+TRACE MEM: t=4950000 state=7 mbc_en=1 addr=0x40 a=0x10 d=0xdeadbeef Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=0
+[4976000] INFO: Escritura fisica observada: a=0x10 data=0xdeadbeef cen=0 wen=0
+TRACE MEM: t=5000000 state=5 mbc_en=1 addr=0x40 a=0x10 d=0xdeadbeef Q=0x000008b3 cen=0 wen=0 mbc_r_w=0 mbc_rdy=0
+[5026000] INFO: Escritura Core 1 completada correctamente.
+TRACE MEM: t=5050000 state=1 mbc_en=1 addr=0x40 a=0x10 d=0xdeadbeef Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=0 mbc_rdy=1
+TRACE MEM: t=5200000 state=5 mbc_en=0 addr=0x40 a=0x10 d=0xdeadbeef Q=0xdeadbeef cen=0 wen=0 mbc_r_w=0 mbc_rdy=0
+
+[5226000] READ Core 0: addr=0x40
+TRACE MEM: t=5250000 state=1 mbc_en=1 addr=0x40 a=0x10 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=1
+[5276000] INFO: Solicitud READ Core 0 aceptada por arbitro/MBC.
+TRACE MEM: t=5300000 state=3 mbc_en=1 addr=0x40 a=0x10 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=0
+[5326000] INFO: Acceso READ fisico observado: a=0x10 Q=0xdeadbeef
+TRACE MEM: t=5350000 state=2 mbc_en=1 addr=0x40 a=0x10 d=0x00000000 Q=0xdeadbeef cen=0 wen=1 mbc_r_w=1 mbc_rdy=0
+[5377000] INFO: Lectura Core 0 completada. data=0xdeadbeef
+TRACE MEM: t=5400000 state=1 mbc_en=1 addr=0x40 a=0x10 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1 mbc_r_w=1 mbc_rdy=1
+tiempo: 5425 --> finaliza el fetch
+tiempo: 5425 --> finaliza el fetch
+tiempo: 5425 --> finaliza el fetch
+
+------------------------------------------------------------
+PASS: Core 1 -> Core 0, addr 0x000040
+      Esperado = 0xdeadbeef
+      Leido     = 0xdeadbeef
+------------------------------------------------------------
+
+============================================================
+ RESUMEN
+============================================================
+ Tests PASS : 4
+ Tests FAIL : 0
+============================================================
+
+============================================================
+ SHARED MEMORY CROSS READ TB PASSED
+============================================================
+$finish called from file "shared_memory_cross_read_tb.sv", line 1363.
+$finish at simulation time              5476000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 5476000 ps
+CPU Time:      1.120 seconds;       Data structure size:   2.2Mb
+Mon Sep 14 18:04:26 2026

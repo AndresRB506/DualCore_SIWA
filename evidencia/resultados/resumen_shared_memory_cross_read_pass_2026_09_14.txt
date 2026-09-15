@@ -1,0 +1,31 @@
+TEST 1: Core 0 escribe -> Core 1 lee
+[2626000] INFO: Solicitud WRITE Core 0 aceptada por arbitro/MBC.
+[2726000] INFO: Escritura fisica observada: a=0x4 data=0x1234abcd cen=0 wen=0
+[3026000] INFO: Solicitud READ Core 1 aceptada por arbitro/MBC.
+[3076000] INFO: Acceso READ fisico observado: a=0x4 Q=0x1234abcd
+[3127000] INFO: Lectura Core 1 completada. data=0x1234abcd
+PASS: Core 0 -> Core 1, addr 0x000010
+TEST 2: Core 1 escribe -> Core 0 lee
+[3376000] INFO: Solicitud WRITE Core 1 aceptada por arbitro/MBC.
+[3476000] INFO: Escritura fisica observada: a=0x8 data=0xa5a55a5a cen=0 wen=0
+[3776000] INFO: Solicitud READ Core 0 aceptada por arbitro/MBC.
+[3826000] INFO: Acceso READ fisico observado: a=0x8 Q=0xa5a55a5a
+[3877000] INFO: Lectura Core 0 completada. data=0xa5a55a5a
+PASS: Core 1 -> Core 0, addr 0x000020
+TEST 3: Segundo patron Core 0 -> Core 1
+[4126000] INFO: Solicitud WRITE Core 0 aceptada por arbitro/MBC.
+[4226000] INFO: Escritura fisica observada: a=0xc data=0xcafebabe cen=0 wen=0
+[4526000] INFO: Solicitud READ Core 1 aceptada por arbitro/MBC.
+[4576000] INFO: Acceso READ fisico observado: a=0xc Q=0xcafebabe
+[4627000] INFO: Lectura Core 1 completada. data=0xcafebabe
+PASS: Core 0 -> Core 1, addr 0x000030
+TEST 4: Segundo patron Core 1 -> Core 0
+[4876000] INFO: Solicitud WRITE Core 1 aceptada por arbitro/MBC.
+[4976000] INFO: Escritura fisica observada: a=0x10 data=0xdeadbeef cen=0 wen=0
+[5276000] INFO: Solicitud READ Core 0 aceptada por arbitro/MBC.
+[5326000] INFO: Acceso READ fisico observado: a=0x10 Q=0xdeadbeef
+[5377000] INFO: Lectura Core 0 completada. data=0xdeadbeef
+PASS: Core 1 -> Core 0, addr 0x000040
+ Tests PASS : 4
+ Tests FAIL : 0
+ SHARED MEMORY CROSS READ TB PASSED
