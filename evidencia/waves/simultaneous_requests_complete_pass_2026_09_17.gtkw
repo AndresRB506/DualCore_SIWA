@@ -1,0 +1,47 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Thu Sep 17 18:24:53 2026
+[*]
+[dumpfile] "/mnt/vol_NFS_rh003/estudiantes/arojas2026/DualCore_SIWA/evidencia/waves/simultaneous_requests_complete_pass_2026_09_17.vcd"
+[dumpfile_mtime] "Thu Sep 17 18:14:32 2026"
+[dumpfile_size] 1250642
+[savefile] "/mnt/vol_NFS_rh003/estudiantes/arojas2026/DualCore_SIWA/evidencia/waves/simultaneous_requests_complete_pass_2026_09_17.gtkw"
+[timestart] 0
+[size] 1920 1126
+[pos] -39 -39
+*-19.462763 4925000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] simultaneous_requests_complete_tb.
+[treeopen] simultaneous_requests_complete_tb.DUT.
+[sst_width] 42
+[signals_width] 289
+[sst_expanded] 0
+[sst_vpaned_height] 339
+@28
+simultaneous_requests_complete_tb.DUT.core0_mem_enable
+@22
+simultaneous_requests_complete_tb.DUT.core0_mem_address[24:0]
+simultaneous_requests_complete_tb.DUT.core0_mem_d_write[31:0]
+@28
+simultaneous_requests_complete_tb.DUT.core0_mem_rdy
+simultaneous_requests_complete_tb.DUT.core1_mem_enable
+@22
+simultaneous_requests_complete_tb.DUT.core1_mem_address[24:0]
+simultaneous_requests_complete_tb.DUT.core1_mem_d_write[31:0]
+@28
+simultaneous_requests_complete_tb.DUT.core1_mem_rdy
+simultaneous_requests_complete_tb.DUT.mbc_enable
+@22
+simultaneous_requests_complete_tb.DUT.mbc_address[24:0]
+simultaneous_requests_complete_tb.DUT.mbc_d_write[31:0]
+@28
+simultaneous_requests_complete_tb.DUT.mbc_r_w
+simultaneous_requests_complete_tb.DUT.mbc_mem_rdy
+@22
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.D[31:0]
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.Q[31:0]
+@28
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.CEn
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.WEn
+[pattern_trace] 1
+[pattern_trace] 0

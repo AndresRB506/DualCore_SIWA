@@ -1,0 +1,181 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP2_Full64; Runtime version R-2020.12-SP2_Full64;  Sep 17 12:09 2026
+============================================================
+ TEC-RISC-V / Siwa Simultaneous Requests Complete TB
+============================================================
+ Objetivo:
+   - Generar solicitudes simultaneas Core 0 / Core 1
+   - Mantener ambas hasta ser atendidas
+   - Verificar dos completions independientes
+   - Verificar routing de respuestas
+   - Verificar que ninguna escritura se pierde
+============================================================
+[375000] INFO: Reset liberado.
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1575 --> finaliza el fetch
+tiempo: 1675 --> Se detecta un error de instrucción
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2275 --> finaliza el fetch
+tiempo: 2375 --> Se detecta un error de instrucción
+
+[2476000] Sistema aislado y listo para solicitudes simultaneas
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x4 mbc_d_write=0x00000000 mbc_r_w=1
+    MBC: state=1 nxt_state=1
+    MEM: cen=1 wen=1 a=0x1 d=0x00000000 Q=0xzzzzzzzz
+
+============================================================
+TEST 1: Solicitudes simultaneas completas
+============================================================
+
+[2576000] Solicitudes simultaneas preparadas:
+    Core 0: addr=0x50 data=0xc0c00050
+    Core 1: addr=0x60 data=0xc1c10060
+[2600000] INFO: Core 0 y Core 1 habilitados simultaneamente.
+[2626000] INFO: Solicitud Core 0 aceptada por arbitro/MBC.
+TRACE: t=2650000 c0_en=1 c1_en=1 mbc_en=1 addr=0x50 data=0xc0c00050 r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x14 d=0xc0c00050 Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=2700000 c0_en=1 c1_en=1 mbc_en=1 addr=0x50 data=0xc0c00050 r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x14 d=0xc0c00050 Q=0xzzzzzzzz cen=1 wen=1
+[2726000] INFO: Escritura fisica Core 0 observada: a=0x14 data=0xc0c00050
+TRACE: t=2750000 c0_en=1 c1_en=1 mbc_en=1 addr=0x50 data=0xc0c00050 r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x14 d=0xc0c00050 Q=0x00000ab3 cen=0 wen=0
+[2776000] PASS parcial: Core 0 atendido completamente.
+TRACE: t=2800000 c0_en=0 c1_en=1 mbc_en=1 addr=0x50 data=0xc0c00050 r_w=0 c0_rdy=1 c1_rdy=0 mbc_rdy=1 a=0x14 d=0xc0c00050 Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 2825 --> finaliza el fetch
+tiempo: 2825 --> finaliza el fetch
+[2826000] INFO: Solicitud Core 1 aceptada por arbitro/MBC.
+TRACE: t=2850000 c0_en=0 c1_en=1 mbc_en=1 addr=0x60 data=0xc1c10060 r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x18 d=0xc1c10060 Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=2900000 c0_en=0 c1_en=1 mbc_en=1 addr=0x60 data=0xc1c10060 r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x18 d=0xc1c10060 Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 2925 --> inicia ejecución de ADD
+[2926000] INFO: Escritura fisica Core 1 observada: a=0x18 data=0xc1c10060
+TRACE: t=2950000 c0_en=0 c1_en=1 mbc_en=1 addr=0x60 data=0xc1c10060 r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x18 d=0xc1c10060 Q=0x00000cb3 cen=0 wen=0
+[2976000] PASS parcial: Core 1 atendido completamente.
+
+------------------------------------------------------------
+PASS: Solicitudes simultaneas completadas sin perdida.
+      Primer nucleo atendido : Core 0
+      Segundo nucleo atendido: Core 1
+------------------------------------------------------------
+TRACE: t=3000000 c0_en=0 c1_en=0 mbc_en=1 addr=0x60 data=0xc1c10060 r_w=0 c0_rdy=0 c1_rdy=1 mbc_rdy=1 a=0x18 d=0xc1c10060 Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 3025 --> finaliza el fetch
+tiempo: 3025 --> finaliza el fetch
+tiempo: 3025 --> finaliza el fetch
+tiempo: 3125 --> inicia ejecución de ADD
+TRACE: t=3150000 c0_en=0 c1_en=0 mbc_en=0 addr=0x60 data=0xc1c10060 r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x18 d=0xc1c10060 Q=0xc1c10060 cen=0 wen=0
+[3176000] READ Core 1: addr=0x50
+TRACE: t=3200000 c0_en=0 c1_en=1 mbc_en=1 addr=0x50 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=1 a=0x14 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=3250000 c0_en=0 c1_en=1 mbc_en=1 addr=0x50 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x14 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=3300000 c0_en=0 c1_en=1 mbc_en=1 addr=0x50 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x14 d=0x00000000 Q=0xc0c00050 cen=0 wen=1
+TRACE: t=3350000 c0_en=0 c1_en=0 mbc_en=1 addr=0x50 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=1 mbc_rdy=1 a=0x14 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+
+PASS: Dato Core 0 conservado despues de contencion
+      Esperado = 0xc0c00050
+      Leido     = 0xc0c00050
+TRACE: t=3450000 c0_en=0 c1_en=0 mbc_en=0 addr=0x50 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x14 d=0x00000000 Q=0xc0c00050 cen=0 wen=1
+tiempo: 3525 --> finaliza el fetch
+[3526000] READ Core 0: addr=0x60
+tiempo: 3526 --> finaliza el fetch
+tiempo: 3526 --> finaliza el fetch
+TRACE: t=3550000 c0_en=1 c1_en=0 mbc_en=1 addr=0x60 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=1 a=0x18 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=3600000 c0_en=1 c1_en=0 mbc_en=1 addr=0x60 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x18 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 3625 --> Se detecta un error de instrucción
+TRACE: t=3650000 c0_en=1 c1_en=0 mbc_en=1 addr=0x60 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x18 d=0x00000000 Q=0xc1c10060 cen=0 wen=1
+TRACE: t=3700000 c0_en=0 c1_en=0 mbc_en=1 addr=0x60 data=0x00000000 r_w=1 c0_rdy=1 c1_rdy=0 mbc_rdy=1 a=0x18 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+
+PASS: Dato Core 1 conservado despues de contencion
+      Esperado = 0xc1c10060
+      Leido     = 0xc1c10060
+
+============================================================
+TEST 2: Segunda ronda de solicitudes simultaneas
+============================================================
+TRACE: t=3800000 c0_en=0 c1_en=0 mbc_en=0 addr=0x60 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x18 d=0x00000000 Q=0xc1c10060 cen=0 wen=1
+tiempo: 3875 --> finaliza el fetch
+
+[3876000] Solicitudes simultaneas preparadas:
+    Core 0: addr=0x70 data=0x1111aaaa
+    Core 1: addr=0x80 data=0x2222bbbb
+[3900000] INFO: Core 0 y Core 1 habilitados simultaneamente.
+tiempo: 3900 --> finaliza el fetch
+tiempo: 3900 --> finaliza el fetch
+[3926000] INFO: Solicitud Core 0 aceptada por arbitro/MBC.
+TRACE: t=3950000 c0_en=1 c1_en=1 mbc_en=1 addr=0x70 data=0x1111aaaa r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x1c d=0x1111aaaa Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 3975 --> Se detecta un error de instrucción
+TRACE: t=4000000 c0_en=1 c1_en=1 mbc_en=1 addr=0x70 data=0x1111aaaa r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x1c d=0x1111aaaa Q=0xzzzzzzzz cen=1 wen=1
+[4026000] INFO: Escritura fisica Core 0 observada: a=0x1c data=0x1111aaaa
+TRACE: t=4050000 c0_en=1 c1_en=1 mbc_en=1 addr=0x70 data=0x1111aaaa r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x1c d=0x1111aaaa Q=0x00000eb3 cen=0 wen=0
+[4076000] PASS parcial: Core 0 atendido completamente.
+TRACE: t=4100000 c0_en=0 c1_en=1 mbc_en=1 addr=0x70 data=0x1111aaaa r_w=0 c0_rdy=1 c1_rdy=0 mbc_rdy=1 a=0x1c d=0x1111aaaa Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 4125 --> finaliza el fetch
+tiempo: 4125 --> finaliza el fetch
+[4126000] INFO: Solicitud Core 1 aceptada por arbitro/MBC.
+TRACE: t=4150000 c0_en=0 c1_en=1 mbc_en=1 addr=0x80 data=0x2222bbbb r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x20 d=0x2222bbbb Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=4200000 c0_en=0 c1_en=1 mbc_en=1 addr=0x80 data=0x2222bbbb r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x20 d=0x2222bbbb Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 4225 --> Se detecta un error de instrucción
+[4226000] INFO: Escritura fisica Core 1 observada: a=0x20 data=0x2222bbbb
+TRACE: t=4250000 c0_en=0 c1_en=1 mbc_en=1 addr=0x80 data=0x2222bbbb r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x20 d=0x2222bbbb Q=0xc1800113 cen=0 wen=0
+[4276000] PASS parcial: Core 1 atendido completamente.
+
+------------------------------------------------------------
+PASS: Solicitudes simultaneas completadas sin perdida.
+      Primer nucleo atendido : Core 0
+      Segundo nucleo atendido: Core 1
+------------------------------------------------------------
+TRACE: t=4300000 c0_en=0 c1_en=0 mbc_en=1 addr=0x80 data=0x2222bbbb r_w=0 c0_rdy=0 c1_rdy=1 mbc_rdy=1 a=0x20 d=0x2222bbbb Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=4450000 c0_en=0 c1_en=0 mbc_en=0 addr=0x80 data=0x2222bbbb r_w=0 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x20 d=0x2222bbbb Q=0x2222bbbb cen=0 wen=0
+[4476000] READ Core 1: addr=0x70
+TRACE: t=4500000 c0_en=0 c1_en=1 mbc_en=1 addr=0x70 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=1 a=0x1c d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=4550000 c0_en=0 c1_en=1 mbc_en=1 addr=0x70 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x1c d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=4600000 c0_en=0 c1_en=1 mbc_en=1 addr=0x70 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x1c d=0x00000000 Q=0x1111aaaa cen=0 wen=1
+TRACE: t=4650000 c0_en=0 c1_en=0 mbc_en=1 addr=0x70 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=1 mbc_rdy=1 a=0x1c d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 4675 --> finaliza el fetch
+tiempo: 4675 --> finaliza el fetch
+tiempo: 4675 --> finaliza el fetch
+
+PASS: Segunda ronda: dato Core 0
+      Esperado = 0x1111aaaa
+      Leido     = 0x1111aaaa
+TRACE: t=4750000 c0_en=0 c1_en=0 mbc_en=0 addr=0x70 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x1c d=0x00000000 Q=0x1111aaaa cen=0 wen=1
+tiempo: 4775 --> Se detecta un error de instrucción
+tiempo: 4775 --> Se detecta un error de instrucción
+tiempo: 4775 --> Se detecta un error de instrucción
+tiempo: 4825 --> finaliza el fetch
+[4826000] READ Core 0: addr=0x80
+tiempo: 4826 --> finaliza el fetch
+tiempo: 4826 --> finaliza el fetch
+TRACE: t=4850000 c0_en=1 c1_en=0 mbc_en=1 addr=0x80 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=1 a=0x20 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+TRACE: t=4900000 c0_en=1 c1_en=0 mbc_en=1 addr=0x80 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x20 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+tiempo: 4925 --> Se detecta un error de instrucción
+TRACE: t=4950000 c0_en=1 c1_en=0 mbc_en=1 addr=0x80 data=0x00000000 r_w=1 c0_rdy=0 c1_rdy=0 mbc_rdy=0 a=0x20 d=0x00000000 Q=0x2222bbbb cen=0 wen=1
+TRACE: t=5000000 c0_en=0 c1_en=0 mbc_en=1 addr=0x80 data=0x00000000 r_w=1 c0_rdy=1 c1_rdy=0 mbc_rdy=1 a=0x20 d=0x00000000 Q=0xzzzzzzzz cen=1 wen=1
+
+PASS: Segunda ronda: dato Core 1
+      Esperado = 0x2222bbbb
+      Leido     = 0x2222bbbb
+
+============================================================
+ RESUMEN
+============================================================
+ Rondas simultaneas PASS : 2
+ Errores detectados      : 0
+============================================================
+
+============================================================
+ SIMULTANEOUS REQUESTS COMPLETE TB PASSED
+============================================================
+$finish called from file "simultaneous_requests_complete_tb.sv", line 1290.
+$finish at simulation time              5076000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 5076000 ps
+CPU Time:      1.220 seconds;       Data structure size:   2.2Mb
+Thu Sep 17 12:09:24 2026

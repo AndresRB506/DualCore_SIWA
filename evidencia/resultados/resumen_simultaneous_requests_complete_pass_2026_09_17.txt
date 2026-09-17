@@ -1,0 +1,33 @@
+   - Generar solicitudes simultaneas Core 0 / Core 1
+[2476000] Sistema aislado y listo para solicitudes simultaneas
+TEST 1: Solicitudes simultaneas completas
+[2576000] Solicitudes simultaneas preparadas:
+[2600000] INFO: Core 0 y Core 1 habilitados simultaneamente.
+[2626000] INFO: Solicitud Core 0 aceptada por arbitro/MBC.
+[2726000] INFO: Escritura fisica Core 0 observada: a=0x14 data=0xc0c00050
+[2776000] PASS parcial: Core 0 atendido completamente.
+[2826000] INFO: Solicitud Core 1 aceptada por arbitro/MBC.
+[2926000] INFO: Escritura fisica Core 1 observada: a=0x18 data=0xc1c10060
+[2976000] PASS parcial: Core 1 atendido completamente.
+PASS: Solicitudes simultaneas completadas sin perdida.
+      Primer nucleo atendido : Core 0
+      Segundo nucleo atendido: Core 1
+PASS: Dato Core 0 conservado despues de contencion
+PASS: Dato Core 1 conservado despues de contencion
+TEST 2: Segunda ronda de solicitudes simultaneas
+[3876000] Solicitudes simultaneas preparadas:
+[3900000] INFO: Core 0 y Core 1 habilitados simultaneamente.
+[3926000] INFO: Solicitud Core 0 aceptada por arbitro/MBC.
+[4026000] INFO: Escritura fisica Core 0 observada: a=0x1c data=0x1111aaaa
+[4076000] PASS parcial: Core 0 atendido completamente.
+[4126000] INFO: Solicitud Core 1 aceptada por arbitro/MBC.
+[4226000] INFO: Escritura fisica Core 1 observada: a=0x20 data=0x2222bbbb
+[4276000] PASS parcial: Core 1 atendido completamente.
+PASS: Solicitudes simultaneas completadas sin perdida.
+      Primer nucleo atendido : Core 0
+      Segundo nucleo atendido: Core 1
+PASS: Segunda ronda: dato Core 0
+PASS: Segunda ronda: dato Core 1
+ Rondas simultaneas PASS : 2
+ Errores detectados      : 0
+ SIMULTANEOUS REQUESTS COMPLETE TB PASSED
