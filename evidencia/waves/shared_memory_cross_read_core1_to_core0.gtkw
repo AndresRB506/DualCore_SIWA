@@ -1,0 +1,82 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Fri Sep 18 00:10:04 2026
+[*]
+[dumpfile] "/mnt/vol_NFS_rh003/estudiantes/arojas2026/DualCore_SIWA/test_env/dualcore/waves/shared_memory_cross_read_tb.vcd"
+[dumpfile_mtime] "Thu Sep 17 22:44:43 2026"
+[dumpfile_size] 1248752
+[savefile] "/mnt/vol_NFS_rh003/estudiantes/arojas2026/DualCore_SIWA/evidencia/waves/shared_memory_cross_read_core1_to_core0.gtkw"
+[timestart] 3300000
+[size] 1920 1126
+[pos] -1 -1
+*-16.334635 3879700 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] shared_memory_cross_read_tb.
+[treeopen] shared_memory_cross_read_tb.DUT.
+[sst_width] 42
+[signals_width] 279
+[sst_expanded] 0
+[sst_vpaned_height] 339
+@200
+-Core 0
+@28
+[color] 2
+shared_memory_cross_read_tb.DUT.core0_mem_enable
+@22
+[color] 2
+shared_memory_cross_read_tb.DUT.core0_mem_address[24:0]
+[color] 2
+shared_memory_cross_read_tb.DUT.core0_mem_d_write[31:0]
+@28
+[color] 2
+shared_memory_cross_read_tb.DUT.core0_mem_r_w
+[color] 2
+shared_memory_cross_read_tb.DUT.core0_mem_rdy
+@22
+[color] 2
+shared_memory_cross_read_tb.DUT.core0_mem_d_read[31:0]
+@200
+-
+-Core 1
+@28
+shared_memory_cross_read_tb.DUT.core1_mem_enable
+@22
+shared_memory_cross_read_tb.DUT.core1_mem_address[24:0]
+shared_memory_cross_read_tb.DUT.core1_mem_d_write[31:0]
+@28
+shared_memory_cross_read_tb.DUT.core1_mem_r_w
+shared_memory_cross_read_tb.DUT.core1_mem_rdy
+@22
+shared_memory_cross_read_tb.DUT.core1_mem_d_read[31:0]
+@200
+-
+-MBC
+@28
+[color] 1
+shared_memory_cross_read_tb.DUT.mbc_enable
+@22
+[color] 1
+shared_memory_cross_read_tb.DUT.mbc_address[24:0]
+[color] 1
+shared_memory_cross_read_tb.DUT.mbc_d_write[31:0]
+@28
+[color] 1
+shared_memory_cross_read_tb.DUT.mbc_r_w
+[color] 1
+shared_memory_cross_read_tb.DUT.mbc_mem_rdy
+@200
+-
+-Memoria
+@22
+[color] 3
+shared_memory_cross_read_tb.DUT.Memoria_Compartida.A[18:0]
+[color] 3
+shared_memory_cross_read_tb.DUT.Memoria_Compartida.D[31:0]
+[color] 3
+shared_memory_cross_read_tb.DUT.Memoria_Compartida.Q[31:0]
+@28
+[color] 3
+shared_memory_cross_read_tb.DUT.Memoria_Compartida.CEn
+[color] 3
+shared_memory_cross_read_tb.DUT.Memoria_Compartida.WEn
+[pattern_trace] 1
+[pattern_trace] 0
