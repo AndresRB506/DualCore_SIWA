@@ -1,0 +1,65 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Thu Sep 17 22:43:23 2026
+[*]
+[dumpfile] "/mnt/vol_NFS_rh003/estudiantes/arojas2026/DualCore_SIWA/test_env/dualcore/waves/mbc_smp_arbiter_tb.vcd"
+[dumpfile_mtime] "Fri Sep 11 16:43:49 2026"
+[dumpfile_size] 5783
+[savefile] "/mnt/vol_NFS_rh003/estudiantes/arojas2026/DualCore_SIWA/evidencia/waves/arbiter_smp_overview.gtkw"
+[timestart] 0
+[size] 1920 1126
+[pos] -27 -1
+*-15.275620 120500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] mbc_smp_arbiter_tb.
+[sst_width] 42
+[signals_width] 246
+[sst_expanded] 0
+[sst_vpaned_height] 339
+@200
+-Core 0
+@28
+[color] 2
+mbc_smp_arbiter_tb.core0_enable
+@22
+[color] 2
+mbc_smp_arbiter_tb.core0_address[24:0]
+[color] 2
+mbc_smp_arbiter_tb.core0_d_write[31:0]
+@28
+[color] 2
+mbc_smp_arbiter_tb.core0_mem_rdy
+@200
+-
+-Core 1
+@28
+mbc_smp_arbiter_tb.core1_enable
+@22
+mbc_smp_arbiter_tb.core1_address[24:0]
+mbc_smp_arbiter_tb.core1_d_write[31:0]
+@28
+mbc_smp_arbiter_tb.core1_mem_rdy
+@200
+-
+-Árbitro
+@28
+[color] 3
+mbc_smp_arbiter_tb.DUT.grant_valid
+@29
+[color] 3
+mbc_smp_arbiter_tb.DUT.grant_core
+@200
+-
+-MBC
+@28
+[color] 1
+mbc_smp_arbiter_tb.mbc_enable
+@22
+[color] 1
+mbc_smp_arbiter_tb.mbc_address[24:0]
+[color] 1
+mbc_smp_arbiter_tb.mbc_d_write[31:0]
+@28
+[color] 1
+mbc_smp_arbiter_tb.mbc_mem_rdy
+[pattern_trace] 1
+[pattern_trace] 0

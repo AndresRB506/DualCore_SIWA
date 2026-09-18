@@ -1,0 +1,92 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Fri Sep 18 00:45:06 2026
+[*]
+[dumpfile] "/mnt/vol_NFS_rh003/estudiantes/arojas2026/DualCore_SIWA/test_env/dualcore/waves/simultaneous_requests_complete_tb.vcd"
+[dumpfile_mtime] "Fri Sep 18 00:14:48 2026"
+[dumpfile_size] 1250642
+[savefile] "/mnt/vol_NFS_rh003/estudiantes/arojas2026/DualCore_SIWA/evidencia/waves/simultaneous_requests_complete_overview.gtkw"
+[timestart] 0
+[size] 1920 1126
+[pos] -39 -39
+*-19.305328 3828000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] simultaneous_requests_complete_tb.DUT.
+[sst_width] 42
+[signals_width] 285
+[sst_expanded] 0
+[sst_vpaned_height] 339
+@200
+-Core 0
+@28
+[color] 2
+simultaneous_requests_complete_tb.DUT.core0_mem_enable
+@22
+[color] 2
+simultaneous_requests_complete_tb.DUT.core0_mem_address[24:0]
+[color] 2
+simultaneous_requests_complete_tb.DUT.core0_mem_d_write[31:0]
+@28
+[color] 2
+simultaneous_requests_complete_tb.DUT.core0_mem_rdy
+@200
+-
+-Core 1
+@28
+simultaneous_requests_complete_tb.DUT.core1_mem_enable
+@22
+simultaneous_requests_complete_tb.DUT.core1_mem_address[24:0]
+simultaneous_requests_complete_tb.DUT.core1_mem_d_write[31:0]
+@28
+simultaneous_requests_complete_tb.DUT.core1_mem_rdy
+@200
+-
+-MBC
+@28
+[color] 1
+simultaneous_requests_complete_tb.DUT.mbc_enable
+@22
+[color] 1
+simultaneous_requests_complete_tb.DUT.mbc_address[24:0]
+[color] 1
+simultaneous_requests_complete_tb.DUT.mbc_d_write[31:0]
+@28
+[color] 1
+simultaneous_requests_complete_tb.DUT.mbc_mem_rdy
+@200
+-
+-Memoria
+@c00022
+[color] 3
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+@28
+(0)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(1)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(2)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(3)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(4)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(5)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(6)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(7)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(8)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(9)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(10)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(11)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(12)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(13)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(14)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(15)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(16)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(17)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+(18)simultaneous_requests_complete_tb.DUT.Memoria_Compartida.A[18:0]
+@1401200
+-group_end
+@22
+[color] 3
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.D[31:0]
+@28
+[color] 3
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.CEn
+[color] 3
+simultaneous_requests_complete_tb.DUT.Memoria_Compartida.WEn
+[pattern_trace] 1
+[pattern_trace] 0

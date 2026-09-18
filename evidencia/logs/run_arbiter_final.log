@@ -1,0 +1,38 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP2_Full64; Runtime version R-2020.12-SP2_Full64;  Aug 19 15:59 2026
+==============================================
+  MBC SMP Arbiter TB
+==============================================
+
+TEST 1: Core 0 request
+[55000] PASS: MBC enable asserted for Core 0
+[55000] PASS: Core 0 address routed to MBC
+[55000] PASS: Core 0 data routed to MBC
+[95000] PASS: Core 0 receives mem_rdy
+[95000] PASS: Core 0 receives read data
+[95000] PASS: Core 1 does not receive Core 0 response
+
+TEST 2: Core 1 request
+[125000] PASS: MBC enable asserted for Core 1
+[125000] PASS: Core 1 address routed to MBC
+[125000] PASS: Core 1 data routed to MBC
+[165000] PASS: Core 1 receives mem_rdy
+[165000] PASS: Core 1 receives read data
+[165000] PASS: Core 0 does not receive Core 1 response
+
+TEST 3: Simultaneous request
+[195000] PASS: MBC enable asserted for simultaneous request
+[195000] INFO: Arbiter selected Core 0 first
+[195000] PASS: Core 0 data selected correctly
+[235000] PASS: Core 0 receives simultaneous response
+
+==============================================
+  ALL MBC SMP ARBITER TESTS PASSED
+==============================================
+$finish called from file "mbc_smp_arbiter_tb.sv", line 301.
+$finish at simulation time               285000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 285000 ps
+CPU Time:      0.970 seconds;       Data structure size:   0.0Mb
+Wed Aug 19 15:59:36 2026

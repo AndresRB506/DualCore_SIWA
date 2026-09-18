@@ -1,0 +1,22 @@
+Contains Synopsys proprietary information.
+    - Detectar mem_rdy
+[375000] INFO: Reset liberado.
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    mbc_address=0x0 mbc_d_write=0x0
+    MBC: state=4 nxt_state=6 cond=1 cond_sel=2
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x0 d=0x0 Q=0xzzzzzzzz
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    mbc_address=0x0 mbc_d_write=0x0
+    MBC: state=6 nxt_state=6 cond=0 cond_sel=2
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x0 d=0x0 Q=0xzzzzzzzz
+TEST 1: Solicitud forzada desde Core 0
+    core0_enable=1 core1_enable=0 mbc_enable=0
+    mbc_address=0x0 mbc_d_write=0x0
+    MBC: state=6 nxt_state=6 cond=0 cond_sel=2
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x0 d=0x0 Q=0xzzzzzzzz
+    core0_enable=1 core1_enable=0 mbc_enable=1
+    mbc_address=0x10 mbc_d_write=0xaaaa0001
+    MBC: state=6 nxt_state=6 cond=0 cond_sel=2
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x0 d=0x0 Q=0xzzzzzzzz
+[6975000] ERROR: No se detecto mem_rdy dentro del timeout.
+Fatal: "shared_memory_smoke_tb.sv", 180: shared_memory_smoke_tb.wait_for_any_ready: at time 6975000 ps

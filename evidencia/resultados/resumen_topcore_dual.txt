@@ -1,0 +1,8 @@
+Contains Synopsys proprietary information.
+  TEC-RISC-V / Siwa topcore dual-core TB
+    - Compilar topcore_tecriscv_dual
+[375000] INFO: Reset liberado en topcore dual-core.
+[49975000] INFO: Fin de simulacion topcore dual despues de 1000 ciclos.
+  TOPCORE DUAL BASIC TB FINISHED
+$finish called from file "topcore_dual_tb.sv", line 146.
+$finish at simulation time             49975000

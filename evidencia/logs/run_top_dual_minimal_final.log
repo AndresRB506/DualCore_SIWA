@@ -1,0 +1,19 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP2_Full64; Runtime version R-2020.12-SP2_Full64;  Aug 19 15:59 2026
+==============================================
+  TEC-RISC-V / Siwa Dual-Core Minimal TB
+==============================================
+  Objetivo:
+    - Compilar top dual-core
+    - Levantar reset
+    - Verificar que no haya errores fatales
+==============================================
+[225000] INFO: Reset liberado. Iniciando simulacion dual-core minima.
+[24975000] INFO: Fin de simulacion minimal dual-core despues de 500 ciclos.
+$finish called from file "top_dual_minimal_tb.sv", line 170.
+$finish at simulation time             24975000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 24975000 ps
+CPU Time:      1.100 seconds;       Data structure size:   2.2Mb
+Wed Aug 19 15:59:47 2026

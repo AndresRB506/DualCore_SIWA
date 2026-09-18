@@ -1,0 +1,45 @@
+Contains Synopsys proprietary information.
+  TEC-RISC-V / Siwa Shared Memory Smoke TB
+    - Detectar mem_rdy
+[375000] INFO: Reset liberado.
+tiempo: 1675 --> Se detecta un error de instrucción
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    mbc_address=0x0 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x0 d=0x0 Q=0xzzzzzzzz
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    mbc_address=0x4 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x1 d=0x0 Q=0xzzzzzzzz
+TEST 1: Solicitud forzada desde Core 0
+    core0_enable=1 core1_enable=0 mbc_enable=0
+    mbc_address=0x4 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x1 d=0x0 Q=0xzzzzzzzz
+tiempo: 2375 --> Se detecta un error de instrucción
+    core0_enable=1 core1_enable=0 mbc_enable=1
+    mbc_address=0x10 mbc_d_write=0xaaaa0001
+    MBC: state=3 nxt_state=2 cond=1 cond_sel=8
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x4 d=0xaaaa0001 Q=0xzzzzzzzz
+[2575000] INFO: Ready detectado. core0_rdy=1 core1_rdy=0 mbc_rdy=1
+TEST 2: Solicitud forzada desde Core 1
+    core0_enable=0 core1_enable=1 mbc_enable=0
+    mbc_address=0x0 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x0 d=0x0 Q=0xzzzzzzzz
+    core0_enable=0 core1_enable=1 mbc_enable=1
+    mbc_address=0x20 mbc_d_write=0xbbbb0002
+    MBC: state=3 nxt_state=2 cond=1 cond_sel=8
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x8 d=0xbbbb0002 Q=0xzzzzzzzz
+[3275000] INFO: Ready detectado. core0_rdy=0 core1_rdy=1 mbc_rdy=1
+TEST 3: Solicitud simultanea Core 0 + Core 1
+    core0_enable=1 core1_enable=1 mbc_enable=0
+    mbc_address=0x4 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x1 d=0x0 Q=0xzzzzzzzz
+    core0_enable=1 core1_enable=1 mbc_enable=1
+    mbc_address=0x40 mbc_d_write=0xd1d10004
+    MBC: state=3 nxt_state=2 cond=1 cond_sel=8
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x10 d=0xd1d10004 Q=0xzzzzzzzz
+[3975000] INFO: Ready detectado. core0_rdy=0 core1_rdy=1 mbc_rdy=1
+  SHARED MEMORY SMOKE TB FINISHED

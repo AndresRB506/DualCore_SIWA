@@ -1,0 +1,23 @@
+Diagnostico shared_memory_smoke_tb.sv - 05 agosto 2026
+
+La prueba shared_memory_smoke_tb.sv fuerza una solicitud desde Core 0 para validar la ruta:
+Core -> Arbiter -> MBC -> Memoria -> mem_rdy.
+
+Resultado observado:
+- core0_enable = 1
+- core1_enable = 0
+- mbc_enable = 1
+- mbc_address = 0x10
+- mbc_d_write = 0xaaaa0001
+- MBC state = 6
+- MBC nxt_state = 6
+- cond = 0
+- cond_sel = 2
+- MEM cen = 1
+- MEM wen = 1
+- MEM RDY = 0
+
+Conclusion:
+La solicitud llega desde Core 0 hasta el MBC a traves del arbitro SMP.
+El pendiente tecnico actual es que el MBC no genera mem_rdy, por lo que la prueba termina por timeout.
+El problema queda localizado en la respuesta del MBC o en su secuencia interna de control/inicializacion, no en la primera etapa del arbitro.

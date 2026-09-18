@@ -1,0 +1,24 @@
+Matriz de pruebas RTL presilicio - SoC Siwa dual-core
+
+TB01 - mbc_smp_arbiter_tb.sv
+Objetivo: Validar el arbitraje SMP entre Core 0, Core 1 y MBC.
+Resultado esperado: Atención de solicitudes individuales y simultáneas.
+Estado: PASS.
+
+TB02 - top_dual_minimal_tb.sv
+Objetivo: Validar integración estructural mínima del top dual-core.
+Resultado esperado: Compilación, elaboración y finalización controlada de simulación.
+Estado: PASS.
+
+TB03 - topcore_dual_tb.sv
+Objetivo: Validar integración del top externo dual-core con periféricos básicos UART/SPI.
+Resultado esperado: Finalización controlada del banco de prueba.
+Estado: PASS.
+
+TB04 - shared_memory_smoke_tb.sv
+Objetivo: Validar ruta Core 0 / Core 1 -> Árbitro SMP -> MBC original -> mem_rdy.
+Resultado esperado: Solicitudes individuales y simultáneas generan respuesta mem_rdy hacia el núcleo atendido.
+Estado: PASS.
+
+Observación:
+El MBC original no fue modificado. La prueba shared_memory_smoke_tb.sv utiliza una inicialización controlada desde el testbench para colocar el MBC en condición operativa y aislar la validación de la ruta Core-Arbiter-MBC-Memoria.

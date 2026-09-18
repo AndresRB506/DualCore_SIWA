@@ -1,0 +1,122 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP2_Full64; Runtime version R-2020.12-SP2_Full64;  Aug 19 16:00 2026
+==============================================
+  TEC-RISC-V / Siwa Shared Memory Smoke TB
+==============================================
+  Objetivo:
+    - Forzar solicitudes de Core 0 y Core 1
+    - Verificar paso por arbitro y MBC
+    - Detectar mem_rdy
+    - Evitar deadlock
+==============================================
+[375000] INFO: Reset liberado.
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1425 --> finaliza el fetch
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1525 --> inicia ejecución de ADD
+tiempo: 1575 --> finaliza el fetch
+tiempo: 1675 --> Se detecta un error de instrucción
+[1875000] Despues de forzar condicion de fin de boot del MBC
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x0 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x0 d=0x0 Q=0xzzzzzzzz
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2125 --> finaliza el fetch
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2225 --> inicia ejecución de ADD
+tiempo: 2275 --> finaliza el fetch
+[2375000] Despues de liberar inicializacion controlada
+    core0_enable=0 core1_enable=0 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x4 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x1 d=0x0 Q=0xzzzzzzzz
+
+TEST 1: Solicitud forzada desde Core 0
+[2375000] Core 0 request aplicada
+    core0_enable=1 core1_enable=0 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x4 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x1 d=0x0 Q=0xzzzzzzzz
+tiempo: 2375 --> Se detecta un error de instrucción
+[2475000] Despues de 2 ciclos
+    core0_enable=1 core1_enable=0 mbc_enable=1
+    core0_rdy=0 core1_rdy=0 mbc_rdy=0
+    mbc_address=0x10 mbc_d_write=0xaaaa0001
+    MBC: state=3 nxt_state=2 cond=1 cond_sel=8
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x4 d=0xaaaa0001 Q=0xzzzzzzzz
+[2575000] INFO: Ready detectado. core0_rdy=1 core1_rdy=0 mbc_rdy=1
+tiempo: 2725 --> finaliza el fetch
+tiempo: 2725 --> finaliza el fetch
+tiempo: 2825 --> inicia ejecución de ADD
+tiempo: 2875 --> finaliza el fetch
+tiempo: 2875 --> finaliza el fetch
+tiempo: 2875 --> finaliza el fetch
+tiempo: 2975 --> inicia ejecución de ADD
+tiempo: 2975 --> inicia ejecución de ADD
+tiempo: 2975 --> inicia ejecución de ADD
+
+TEST 2: Solicitud forzada desde Core 1
+[3075000] Core 1 request aplicada
+    core0_enable=0 core1_enable=1 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x0 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x0 d=0x0 Q=0xzzzzzzzz
+[3175000] Despues de 2 ciclos
+    core0_enable=0 core1_enable=1 mbc_enable=1
+    core0_rdy=0 core1_rdy=0 mbc_rdy=0
+    mbc_address=0x20 mbc_d_write=0xbbbb0002
+    MBC: state=3 nxt_state=2 cond=1 cond_sel=8
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x8 d=0xbbbb0002 Q=0xzzzzzzzz
+[3275000] INFO: Ready detectado. core0_rdy=0 core1_rdy=1 mbc_rdy=1
+tiempo: 3575 --> finaliza el fetch
+tiempo: 3575 --> finaliza el fetch
+tiempo: 3575 --> finaliza el fetch
+tiempo: 3675 --> inicia ejecución de ADD
+tiempo: 3675 --> inicia ejecución de ADD
+tiempo: 3675 --> inicia ejecución de ADD
+tiempo: 3725 --> finaliza el fetch
+
+TEST 3: Solicitud simultanea Core 0 + Core 1
+[3775000] Solicitudes simultaneas aplicadas
+    core0_enable=1 core1_enable=1 mbc_enable=0
+    core0_rdy=1 core1_rdy=1 mbc_rdy=1
+    mbc_address=0x4 mbc_d_write=0x0
+    MBC: state=1 nxt_state=1 cond=0 cond_sel=3
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x1 d=0x0 Q=0xzzzzzzzz
+tiempo: 3775 --> finaliza el fetch
+tiempo: 3825 --> inicia ejecución de ADD
+[3875000] Despues de 2 ciclos
+    core0_enable=1 core1_enable=1 mbc_enable=1
+    core0_rdy=0 core1_rdy=0 mbc_rdy=0
+    mbc_address=0x40 mbc_d_write=0xd1d10004
+    MBC: state=3 nxt_state=2 cond=1 cond_sel=8
+    MEM: cen=1 wen=1 RDY=0 clk_mem=0 a=0x10 d=0xd1d10004 Q=0xzzzzzzzz
+[3975000] INFO: Ready detectado. core0_rdy=0 core1_rdy=1 mbc_rdy=1
+tiempo: 4275 --> finaliza el fetch
+tiempo: 4275 --> finaliza el fetch
+tiempo: 4275 --> finaliza el fetch
+tiempo: 4375 --> inicia ejecución de ADD
+tiempo: 4375 --> inicia ejecución de ADD
+tiempo: 4375 --> inicia ejecución de ADD
+tiempo: 4425 --> finaliza el fetch
+tiempo: 4525 --> inicia ejecución de ADD
+
+==============================================
+  SHARED MEMORY SMOKE TB FINISHED
+==============================================
+$finish called from file "shared_memory_smoke_tb.sv", line 326.
+$finish at simulation time              4975000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 4975000 ps
+CPU Time:      1.090 seconds;       Data structure size:   2.2Mb
+Wed Aug 19 16:00:20 2026
